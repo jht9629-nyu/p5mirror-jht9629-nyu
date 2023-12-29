@@ -1,0 +1,27 @@
+notes.txt
+
+# -- 
+
+# add to .gitignore
+.DS_Store
+downloads/zips
+
+# p5mirror is located in outter directory
+
+../p5mirror/bin/build.sh --user jht9629-nyu --downloads ../p5mirror-jht9629-nyu/downloads
+
+# run downloads shell script
+sh downloads/gen/download.sh
+
+# run unzip shell script
+sh downloads/gen/unzip.sh
+
+# --
+
+241 sketches  
+
+[../../downloads/zips/mo-storage-dashboard copy.zip]
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
