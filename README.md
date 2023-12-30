@@ -1,4 +1,4 @@
-# p5mirror-jht9629-nyu
+# [p5mirror-jht9629-nyu](https://github.com/jht9629-nyu/p5mirror-jht9629-nyu)
 
 mirror of my jht9629-nyu p5js sketches
 
@@ -21,3 +21,7 @@ mirror of my jht9629-nyu p5js sketches
 
 - [downloads/json/collections.json](./downloads/json/collections.json)
 - [downloads/json/sketches.json](./downloads/json/sketches.json)
+
+# github pages
+
+[https://jht9629-nyu.github.io/p5mirror-jht9629-nyu/](https://jht9629-nyu.github.io/p5mirror-jht9629-nyu/)

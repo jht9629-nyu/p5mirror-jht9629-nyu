@@ -1,4 +1,5 @@
-cd p5projects
+cd "../p5mirror-jht9629-nyu/downloads/../p5projects"
+pwd
 #
 echo unzip 1 "mo-storage-dashboard copy-FO6LcuwO-"
 rm -rf "mo-storage-dashboard copy-FO6LcuwO-"
