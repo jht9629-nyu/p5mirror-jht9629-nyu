@@ -1,6 +1,6 @@
 # [p5mirror-jht9629-nyu](https://github.com/jht9629-nyu/p5mirror-jht9629-nyu)
 
-mirror of my jht9629-nyu p5js sketches
+mirror of jht9629-nyu p5js sketches
 
 ## Generated files
 
