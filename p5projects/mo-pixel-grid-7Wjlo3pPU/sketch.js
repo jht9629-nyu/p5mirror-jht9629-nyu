@@ -1,5 +1,5 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/7Wjlo3pPU
-// mo-pixel-grid
+// mo-pixel-grid jht9629 fb_firebase.js
 
 let my = {
   version: 28, // update to verify change on mobile
