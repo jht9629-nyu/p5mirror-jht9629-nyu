@@ -1,4 +1,10 @@
-# [p5mirror](https://github.com/molab-itp/p5mirror)
+# [p5mirror](https://github.com/jht9629-nyu/p5mirror-jht9629-nyu)
+
+replace your-github in this link
+
+- [github pages p5projects-index](https://jht9629-nyu.github.io/p5mirror-jht9629-nyu/p5projects-index.html)
+
+# Notes
 
 mirror your editor.p5js sketches into a git repo
 
