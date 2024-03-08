@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+    
+    <div id="qrcode"></div>
+
+    	<script src="easy.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+	// Options
+	var options = {
+		text: "https://molab-itp.github.io/p5moLibrary/src/qrcode/mo-blackfacts-qrcode.html?group=s4"
+	};
+	
+	// Create QRCode Object
+	new QRCode(document.getElementById("qrcode"), options);
+</script>
+
+  </body>
+</html>
+

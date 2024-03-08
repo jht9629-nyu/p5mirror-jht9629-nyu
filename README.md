@@ -4,6 +4,10 @@ replace your-github in this link
 
 - [github pages p5projects-index](https://jht9629-nyu.github.io/p5mirror-jht9629-nyu/p5projects-index.html)
 
+```
+bin/mirror.sh --user jht9629-nyu
+```
+
 # Notes
 
 mirror your editor.p5js sketches into a git repo
