@@ -27,7 +27,7 @@ function my_init2() {
 }
 
 function localStore_get() {
-  let str = localStorage.getItem('mo-pixel-grid');
+  let str = localStorage.getItem('mo-pix-chip-grid');
   if (!str) {
     return;
   }
@@ -45,7 +45,7 @@ function localStore_set() {
     values[prop] = my[prop];
   }
   let str = JSON.stringify(values);
-  localStorage.setItem('mo-pixel-grid', str);
+  localStorage.setItem('mo-pix-chip-grid', str);
   console.log('localStore_set n str', str.length);
 }
 
@@ -56,24 +56,18 @@ function init_query() {
     my.roomName = my.query.room || my.roomName;
     my.storeFlag = parseFloat(my.query.store || my.storeFlag);
     my.nstep = parseFloat(my.query.nstep || my.nstep);
-    // my.perFrame = parseFloat(my.query.perFrame || my.perFrame);
-    // my.byLine = parseFloat(my.query.byLine || my.byLine);
+    my.isRemote = parseFloat(my.query.remote || my.isRemote);
   }
   console.log('init_query windowHeight', windowHeight, 'windowWidth', windowWidth);
   // my.isPortrait = windowHeight > windowWidth;
-  if (isPortraitView()) {
+
+  if (my.isRemote) {
     my.width = my.vwidth;
     my.height = my.vheight * 4;
   } else {
     my.width = windowWidth;
     my.height = windowHeight;
-    // my.width = displayWidth;
-    // my.height = displayHeight;
   }
-}
-
-function isPortraitView() {
-  return windowHeight > windowWidth;
 }
 
 function nstep_init() {
