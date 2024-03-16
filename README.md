@@ -6,6 +6,7 @@ replace your-github in this link
 
 ```
 bin/mirror.sh --user jht9629-nyu
+bin/build.sh --user jht9629-nyu
 ```
 
 # Notes
