@@ -38,9 +38,7 @@ let a_config = {
   // the "effects" array creates a pull-down menu
   // which offers a first selection of effects added to the VideoKit library,
   // you could add some more !!!!
-  // effects: [
-  // { label: 'a_slit_scan', import_path: 'effects/eff_a_slit_scan.js' },
-  // ],
+  effects: [{ label: 'a_slit_scan', factory: eff_a_slit_scan }],
   // settings for import, will appear in the settings menu
   // SETTINGS will load a save .json file with predefined values
   // for all the settings associated with the effect

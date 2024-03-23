@@ -9213,6 +9213,207 @@
     "id": "7Wjlo3pPU"
   },
   {
+    "name": "mo-storage-dashboard 47",
+    "_id": "Osz28nOS9",
+    "updatedAt": "2024-03-23T18:05:59.389Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "65fe2b3c045341001a7bcd30",
+          "65fe2b3d79a1f0001acb3f3a",
+          "65fe2b3d79a1f0001acb3f3c",
+          "65fe2b3d79a1f0001acb3f36",
+          "65fe2b3d79a1f0001acb3f38",
+          "65fe2b3c634e1f001a4bcc2c",
+          "65fe2b3c634e1f001a4bcc2a",
+          "65fe2b3d79a1f0001acb3f48",
+          "65fe2b3d79a1f0001acb3f4a",
+          "65fe29e0ba516e1782e89fc8",
+          "65fe2b3d79a1f0001acb3f56",
+          "65fe2b3d79a1f0001acb3f4c",
+          "65fe29e0ba516e1782e89fca",
+          "65fe2b3d79a1f0001acb3f46",
+          "65fe2b3c634e1f001a4bcc32"
+        ],
+        "fileType": "folder",
+        "_id": "65fe29e0ba516e1782e89fcb",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe29e0ba516e1782e89fcb"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Osz28nOS9\n// mo-storage-dashboard 47\n\n// https://editor.p5js.org/jht9629-gmail/sketches/VWbtyZTnx\n// mo-storage-dashboard\n// https://molab-itp.github.io/98-MoGallery-p5js/demos/mo-storage-dashboard\n\nfunction setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe29e0ba516e1782e89fc8",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "id": "65fe29e0ba516e1782e89fc8"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe29e0ba516e1782e89fca",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe29e0ba516e1782e89fca"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js\"></script>\n\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" /> -->\n\n    <!-- make the buttons bigger on small screens -->\n    <style>\n      @media only screen and (max-width: 600px) {\n        body,\n        button,\n        select,\n        input {\n          font-size: 5vw;\n        }\n      }\n      html,\n      body {\n        margin: 0;\n        padding: 0;\n      }\n      canvas {\n        display: block;\n      }\n    </style>\n  </head>\n  <body>\n    <main></main>\n\n    <script type=\"module\" src=\"https://molab-itp.github.io/p5moRelease/lib/47/a_lib.js\"></script>\n    <!-- <script type=\"module\" src=\"../../lib/a_lib.js?v=62\"></script> -->\n\n    <script src=\"a_sketch.js\"></script>\n    <script src=\"video_create.js\"></script>\n    <script src=\"draw_number.js\"></script>\n    <script src=\"fstorage_img_download.js\"></script>\n    <script src=\"fstorage_img_upload.js\"></script>\n    <script src=\"fstorage_list.js\"></script>\n    <script src=\"fstorage_sound.js\"></script>\n    <script src=\"my_init.js\"></script>\n    <script src=\"record_state.js\"></script>\n    <script src=\"sound_draw.js\"></script>\n    <script src=\"sound.js\"></script>\n    <script src=\"ui_init.js\"></script>\n    <script src=\"my_init.js\"></script>\n    <!-- ?v=62 included to force reload - bust the cache\n      global search to find updates\n      github.io skips files with underscore prefix\n     -->\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3c634e1f001a4bcc2a",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3c634e1f001a4bcc2a"
+      },
+      {
+        "name": "fstorage_sound.js",
+        "content": "function sound_getBlob() {\n  my.soundBlob = my.soundFile.getBlob();\n  // Upload the sound blob\n  fstorage_sound_upload_blob(my.soundBlob, 0);\n}\n\nfunction fstorage_sound_upload_blob(blob, count) {\n  console.log('fstorage_sound_upload_blob', blob);\n  let { getStorage, ref, uploadBytes } = fireb_.fstorage;\n  my.soundPath = next_soundPath(count);\n  ui_log('fstorage_sound_upload_blob my.soundPath', my.soundPath);\n  const storageRef = ref(getStorage(), my.soundPath);\n  // 'file' comes from the Blob or File API\n  uploadBytes(storageRef, blob)\n    .then((snapshot) => {\n      // ui_log('snapshot.metadata.fullPath ' + snapshot.metadata.fullPath);\n      // console.log('snapshot', snapshot);\n      // console.log('Uploaded path', path);\n      ui_log('upload ', my.soundPath);\n      my.fstorage_sound_upload_completed = 1;\n    })\n    .catch((error) => {\n      // Handle any errors\n      ui_error('fstorage_sound_upload_blob error', error);\n    });\n}\n\nfunction next_soundPath(count) {\n  // console.log('next_soundPath');\n  let str = (count + my.count_base + 1).toString().padStart(my.image_seq_pad, '0');\n  return `${my.dbase_rootPath}/${my.clipsName}/${str}.wav`;\n}\n\nfunction fstorage_sound_download() {\n  // console.log('fstorage_sound_download ');\n  let path = next_soundPath(0);\n  // ui_log('fstorage_sound_download next_imagePath ' + path);\n  let { getStorage, ref, getDownloadURL } = fireb_.fstorage;\n  getDownloadURL(ref(getStorage(), path))\n    .then((url) => {\n      const xhr = new XMLHttpRequest();\n      xhr.responseType = 'blob';\n      xhr.onload = (event) => {\n        const blob = xhr.response;\n        // ui_log('fstorage_sound_download blob ' + blob);\n        ui_log('sound download ' + path);\n        sound_play_blob(blob);\n      };\n      xhr.open('GET', url);\n      xhr.send();\n    })\n    .catch((error) => {\n      // Handle any errors\n      ui_error('fstorage_sound_download error', error);\n    });\n}\nfunction sound_play_blob(blob) {\n  my.sound_download_blob = blob;\n  const reader = new FileReader();\n  reader.onload = function (e) {\n    const srcUrl = e.target.result;\n    // console.log('sound_play_blob srcUrl', srcUrl);\n    my.sound_srcUrl = srcUrl;\n    my.sound_downFile = new p5.SoundFile(\n      srcUrl, //\n      sound_cb_ok,\n      sound_cb_error,\n      sound_cb_while\n    );\n  };\n  reader.readAsDataURL(blob);\n\n  function sound_cb_ok() {\n    // console.log('sound_cb_ok');\n    sound_downloaded();\n  }\n\n  function sound_cb_error(error) {\n    ui_error('sound_cb_error', error);\n  }\n\n  function sound_cb_while(prog) {\n    // console.log('sound_cb_while prog', prog);\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3c634e1f001a4bcc2c",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3c634e1f001a4bcc2c"
+      },
+      {
+        "name": "a_sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Osz28nOS9\n// mo-storage-dashboard 47\n\n// https://editor.p5js.org/jht9629-gmail/sketches/VWbtyZTnx\n// mo-storage-dashboard\n// https://molab-itp.github.io/98-MoGallery-p5js/demos/mo-storage-dashboard\n\n// !!@ update to lib\n// record and play back audio and image sequence to firebase\n\nlet my = {};\nfunction my_setup() {\n  // update to verify change on mobile\n  my.version = '?v=62';\n  // Aspect ratio of video capture/\n  // will be scaled by rezScale\n  my.width = 480;\n  my.height = 640;\n  my.vFlip = 0;\n  my.facingMode = 'user';\n  my.face = 1;\n  my.showVideo = 1;\n  my.soundEnable = 0;\n  my.fcount = 1;\n  my.record = 0;\n  my.replay = 0;\n  my.uid = '-none-';\n  my.rezScale = 1; // scale = 16;\n  my.imageQuality = 1; // imageQuality = 0.01;\n  my.captionScale = 32;\n  my.interval = 1;\n  my.debugLog = 1;\n  my.count_base = 100;\n  my.count_max = 5;\n  my.colors = ['red', 'green', 'gold'];\n  my.colorIndex = 1;\n  my.logLinesMax = 3;\n  my.clipsName = 'clips';\n  my.recordCountDown = {\n    max: 3,\n    next_secs: 0,\n  };\n}\n\nfunction setup() {\n  console.log('mo-storage-video setup');\n  my_setup();\n\n  my_init();\n\n  my.canvas = createCanvas(my.width, my.height);\n\n  ui_init();\n\n  let config = fireb_.init('jht9629');\n  // let config = fireb_.init('jht1493');\n  ui_log('config.projectId', config.projectId);\n\n  fireb_signIn();\n\n  textSize(40);\n}\n\nfunction draw() {\n  //\n  draw_update();\n\n  ui_init_update();\n\n  sound_draw();\n}\n\nfunction draw_update() {\n  if (!video_ready()) return;\n\n  // faster to get entire video frame as an image\n  let img = my.video.get();\n\n  let layer = my.layer;\n\n  if (my.showVideo) {\n    layer.image(img, 0, 0);\n  }\n\n  draw_number(my.count + 1 + my.count_base, { layer });\n  draw_millis(layer);\n  draw_dateISOString(layer);\n\n  if (my.replay) {\n    image(my.replayLayer, 0, 0, width, height);\n  } else {\n    image(layer, 0, 0, width, height);\n  }\n\n  record_state_track();\n\n  if (!my.record_preroll) {\n    draw_count();\n  }\n\n  let now = millis() / 1000;\n  if (now > my.next_secs) {\n    my.next_secs = now + my.interval;\n    update_interval();\n  }\n}\n\nfunction update_interval() {\n  // console.log('update_interval my.count', my.count);\n\n  if (my.replay) {\n    fstorage_img_download();\n    if (my.soundEnable) {\n      sound_playback_start();\n    }\n  } else {\n    sound_playback_stop();\n  }\n\n  if (my.record_preroll) {\n    return;\n  }\n\n  if (my.record) {\n    fstorage_img_upload();\n    if (my.count == 0 && my.soundEnable) {\n      sound_record_start();\n    }\n  }\n\n  if (my.fcount) {\n    if (adjust_count(1) && my.record) {\n      my.record = 0;\n      my.recordChk.checked(0);\n      my.replay = 1;\n      my.replayChk.checked(1);\n      if (my.soundEnable) {\n        sound_record_stop();\n      }\n    }\n  }\n}\n\nfunction adjust_count(delta) {\n  my.count = my.count + delta;\n  let wrap = 0;\n  if (my.count >= my.count_max) {\n    my.count = 0;\n    wrap = 1;\n  } else if (my.count < 0) {\n    my.count = my.count_max - 1;\n    wrap = 1;\n  }\n  return wrap;\n}\n\nfunction fireb_signIn() {\n  let { signInAnonymously, auth } = fireb_;\n  signInAnonymously(auth)\n    .then(() => {\n      ui_log('signInAnonymously OK');\n      my.uid = auth.currentUser.uid;\n    })\n    .catch((error) => {\n      const errorCode = error.code;\n      const errorMessage = error.message;\n      ui_log('fireb_signIn errorCode', errorCode);\n      ui_log('fireb_signIn errorMessage', errorMessage);\n    });\n}\n\n// https://en.wikipedia.org/wiki/15_minutes_of_fame\n// --> 15 seconds\n\n// setInterval will flood out draw when saving and replaying\n// setInterval(update_interval, my.interval * 1000);\n// frameRate(2);\n\n// image(img, x, y, [width], [height])\n// image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight], [fit], [xAlign], [yAlign])\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3c045341001a7bcd30",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": true,
+        "id": "65fe2b3c045341001a7bcd30"
+      },
+      {
+        "name": "video_create.js",
+        "content": "function video_create() {\n  let options = { video: { facingMode: my.facingMode } };\n  my.video = createCapture(options);\n  my.video.size(my.vwidth, my.vheight);\n  my.video.hide();\n}\n\nfunction video_ready() {\n  return my.video.loadedmetadata && my.video.width > 0 && my.video.height > 0;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3c634e1f001a4bcc32",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3c634e1f001a4bcc32"
+      },
+      {
+        "name": "fstorage_img_upload.js",
+        "content": "// https://firebase.google.com/docs/storage/web/upload-files?authuser=0#upload_from_a_blob_or_file\n\nfunction fstorage_img_upload() {\n  // console.log('fstorage_img_upload');\n  let count = my.count;\n  my.layer.elt.toBlob(\n    (blob) => {\n      fstorage_img_upload_blob(blob, count);\n    },\n    my.imageType,\n    my.imageQuality\n  );\n}\n\nfunction fstorage_img_upload_blob(blob, count) {\n  // console.log('fstorage_img_upload_blob', blob);\n  let { getStorage, ref, uploadBytes } = fireb_.fstorage;\n  // let path = `/-mo-1/${fireb_.auth.currentUser.uid}/000`;\n  my.imagePath = next_imagePath(count);\n  // ui_log('fstorage_img_upload_blob my.imagePath', my.imagePath);\n  const storageRef = ref(getStorage(), my.imagePath);\n\n  // 'file' comes from the Blob or File API\n  uploadBytes(storageRef, blob)\n    .then((snapshot) => {\n      // ui_log('snapshot.metadata.fullPath ' + snapshot.metadata.fullPath);\n      // console.log('snapshot', snapshot);\n      // console.log('Uploaded path', path);\n      ui_log('upload ', my.imagePath);\n    })\n    .catch((error) => {\n      // Handle any errors\n      ui_error('fstorage_img_upload_blob error', error);\n    });\n}\n\nfunction next_imagePath(count) {\n  // console.log('next_imagePath');\n  let str = (count + my.count_base + 1).toString().padStart(my.image_seq_pad, '0');\n  return `${my.dbase_rootPath}/${my.clipsName}/${str}${my.imagExt}`;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3d79a1f0001acb3f36",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3d79a1f0001acb3f36"
+      },
+      {
+        "name": "fstorage_list.js",
+        "content": "// https://firebase.google.com/docs/storage/web/list-files#list_all_files\nfunction fstorage_listAll(bucket) {\n  // console.log('fstorage_listAll bucket', bucket);\n  let { getStorage, ref, listAll } = fireb_.fstorage;\n  bucket = bucket || my.dbase_rootPath;\n  console.log('fstorage_listAll bucket', bucket);\n  // Create a reference under which you want to list\n  const listRef = ref(getStorage(), bucket);\n  // console.log('listRef', listRef);\n  // Find all the prefixes and items.\n  listAll(listRef)\n    .then((res) => {\n      res.prefixes.forEach((folderRef) => {\n        // All the prefixes under listRef.\n        // You may call listAll() recursively on them.\n        // console.log('folderRef', folderRef);\n        // console.log('folderRef.path', folderRef.path); // Defined\n        // console.log('bucket', folderRef.bucket);\n        console.log('prefix fullPath', folderRef.fullPath);\n      });\n      res.items.forEach((itemRef) => {\n        // All the items under listRef.\n        // console.log('itemRef', itemRef);\n        console.log('item fullPath', itemRef.fullPath);\n      });\n    })\n    .catch((error) => {\n      // Uh-oh, an error occurred!\n      ui_error('fstorage_listAll error', error);\n    });\n}\n\n// https://firebase.google.com/docs/storage/web/list-files#paginate_list_results\nfunction fstorage_list(bucket) {\n  console.log('fstorage_list bucket', bucket);\n  let { getStorage, ref, list } = fireb_.fstorage;\n  bucket = bucket || my.dbase_rootPath;\n  // Create a reference under which you want to list\n  const listRef = ref(getStorage(), bucket);\n  console.log('listRef', listRef);\n  // Find all the prefixes and items.\n  list(listRef, { maxResults: 100 })\n    .then((res) => {\n      res.prefixes.forEach((folderRef) => {\n        // All the prefixes under listRef.\n        // You may call listAll() recursively on them.\n        // console.log('folderRef', folderRef);\n        // console.log('folderRef.path', folderRef.path); // Defined\n        // console.log('bucket', folderRef.bucket);\n        console.log('prefix fullPath', folderRef.fullPath);\n      });\n      res.items.forEach((itemRef) => {\n        // All the items under listRef.\n        // console.log('itemRef', itemRef);\n        console.log('item fullPath', itemRef.fullPath);\n      });\n    })\n    .catch((error) => {\n      // Uh-oh, an error occurred!\n      ui_error('fstorage_list error', error);\n    });\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3d79a1f0001acb3f38",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3d79a1f0001acb3f38"
+      },
+      {
+        "name": "draw_number.js",
+        "content": "function draw_number(num, opt) {\n  let { layer, right, bottom, frac, noid, captionSize } = opt;\n\n  if (!captionSize) captionSize = my.captionSize;\n  layer.textSize(captionSize);\n\n  let str = num.toString();\n  if (frac) {\n    str = convert_timeFrac(num, frac);\n  }\n  str = str.padStart(my.image_seq_pad, '0');\n\n  let tw = layer.textWidth(str);\n  let th = layer.textLeading();\n  let ta = layer.textAscent();\n\n  let x = 0;\n  let y = 0;\n  if (right) {\n    x = layer.width - tw;\n  } else {\n    tw = layer.width / 2;\n    if (!noid) {\n      str += ' ' + my.uid.substring(0, 7);\n    }\n  }\n  if (bottom) {\n    y = layer.height - th;\n  }\n  let colr = my.colors[my.colorIndex];\n  if (right) colr = 0;\n  layer.fill(colr);\n  layer.rect(x, y, tw, th);\n  layer.fill(255);\n  layer.text(str, x, y + ta);\n}\n\nfunction convert_timeFrac(num, frac) {\n  let sec = int(num);\n  let fsec = int((num - sec) * 100);\n  let min = int(sec / 60);\n  sec -= min * 60;\n  let hours = int(min / 60);\n  min -= hours * 60;\n  // console.log('hours', hours, 'min', min, 'sec', sec, 'num', num);\n  let str = '.' + fsec.toString().padStart(2, 0);\n  if (sec != 0 || min != 0 || hours != 0) {\n    str = sec.toString().padStart(2, '0') + str;\n  }\n  if (min != 0 || hours != 0) {\n    str = min.toString().padStart(2, '0') + ':' + str;\n  }\n  if (hours != 0) {\n    str = hours.toString().padStart(2, '0') + ':' + str;\n  }\n  return str;\n}\n\nfunction draw_dateISOString(layer) {\n  let today = new Date();\n  let str = today.toISOString();\n\n  let capSize = my.captionSize;\n  layer.textSize(capSize);\n\n  let tw = layer.textWidth(str);\n  let th = layer.textLeading();\n  let ta = layer.textAscent();\n\n  let x = layer.width - tw;\n  let y = layer.height - th;\n\n  // let colr = my.colors[my.colorIndex];\n  layer.fill(0);\n  layer.rect(x, y, tw, th);\n  layer.fill(255);\n  layer.text(str, x, y + ta);\n}\n\nfunction draw_millis(layer) {\n  let fmt = { layer, right: 1, small: 1, frac: 2 };\n  draw_number(millis() / 1000, fmt);\n}\n\n// !!@ Always black on transparent\n// function draw_count() {\n//   let fmt = { layer: my.canvas, bottom: 1, noid: 1, captionSize: height / 30 };\n//   draw_number(my.count, fmt);\n//   // textSize(100);\n// }\n\n// !!@ fill and rect not drawn\n//  layer = my.canvas\n// !!@ layer vs. canvas inconsistency\n\n// Draw frame count or file name of last download to canvas\n//\nfunction draw_count() {\n  // let layer = my.canvas;\n  let layer = p5.instance;\n  let str = frame_count_str();\n  let captionSize = height / my.captionScale;\n  layer.textSize(captionSize);\n  let tw = layer.textWidth(str);\n  let th = layer.textLeading();\n  let ta = layer.textAscent();\n  // Draw center top\n  // let x = 0;\n  let x = width / 2 - tw / 2;\n  // let y = height - th;\n  let y = 0;\n  layer.strokeWeight(0);\n  if (my.record) {\n    layer.fill(255, 0, 0);\n  } else {\n    layer.fill(0);\n  }\n  layer.rect(x, y, tw, th);\n  layer.fill(255);\n  layer.text(str, x, y + ta);\n}\n\n// function draw_count() {\n//   let str = frame_count_str();\n//   let captionSize = height / my.captionScale;\n//   textSize(captionSize);\n//   let tw = textWidth(str);\n//   let th = textLeading();\n//   let ta = textAscent();\n//   // let x = 0;\n//   let x = width / 2 - tw / 2;\n//   // let y = height - th;\n//   let y = 0;\n//   fill(0);\n//   rect(x, y, tw, th);\n//   fill(255);\n//   text(str, x, y + ta);\n// }\n\nfunction frame_count_str() {\n  let num = my.count + my.count_base + 1;\n  let str = num.toString();\n  str = str.padStart(my.image_seq_pad, '0');\n  // Select the file name from the last download\n  if (my.replay) {\n    if (my.lastDownloadPath) {\n      let parts = my.lastDownloadPath.split('/');\n      if (parts.length > 0) {\n        str = parts[parts.length - 1];\n      }\n    } else {\n      str = '';\n    }\n  }\n  return str;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3d79a1f0001acb3f3a",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3d79a1f0001acb3f3a"
+      },
+      {
+        "name": "fstorage_img_download.js",
+        "content": "function fstorage_img_download() {\n  // console.log('fstorage_img_download ');\n  let path = next_imagePath(my.count);\n  // my.lastDownloadPath = null;\n  // ui_log('fstorage_img_download next_imagePath ' + path);\n  let { getStorage, ref, getDownloadURL } = fireb_.fstorage;\n  getDownloadURL(ref(getStorage(), path))\n    .then((url) => {\n      // `url` is the download URL for '1.jpeg'\n      // ui_log('fstorage_img_download url', url);\n\n      // This can be downloaded directly:\n      const xhr = new XMLHttpRequest();\n      xhr.responseType = 'blob';\n      xhr.onload = (event) => {\n        const blob = xhr.response;\n        // ui_log('fstorage_img_download blob ' + blob);\n        renderBlobToCanvas(blob);\n        my.lastDownloadPath = path;\n        if (my.img_download_log) {\n          ui_log('download ' + path);\n        }\n      };\n      xhr.open('GET', url);\n      xhr.send();\n\n      // Or inserted into an <img> element\n      // let img = createImg(url, 'img test');\n      // img.setAttribute('src', url);\n    })\n    .catch((error) => {\n      // Handle any errors\n      ui_error('fstorage_getDownloadURL error', error);\n      my.replayLayer.fill(0);\n      my.replayLayer.rect(0, 0, width, height);\n    });\n}\n\n// https://stackoverflow.com/questions/38004917/how-to-render-a-blob-on-a-canvas-element\n// HTMLCanvasElement.prototype.renderImage = function(blob) {\n\nfunction renderBlobToCanvas(blob) {\n  // let elt = my.canvas.elt;\n  // let ctx = elt.getContext('2d');\n  // let ctx = my.canvas.drawingContext;\n  let ctx = my.replayLayer.drawingContext;\n  var img = new Image();\n  img.onload = function () {\n    ctx.drawImage(img, 0, 0, width, height);\n    URL.revokeObjectURL(img.src);\n  };\n  img.src = URL.createObjectURL(blob);\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3d79a1f0001acb3f3c",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3d79a1f0001acb3f3c"
+      },
+      {
+        "name": "ui_init.js",
+        "content": "//\n// my.canvas is created before ui_init call\n//\nfunction ui_init() {\n  ui_init_controls();\n\n  ui_init_update();\n\n  // Move the canvas below all the ui elements\n  let belt = document.querySelector('body');\n  let melt = document.querySelector('main');\n  belt.insertBefore(melt, null);\n}\n\nfunction ui_init_controls() {\n  if (!my.replayName) {\n    video_create();\n  }\n\n  my.verBtn = createButton(my.version.substring(1));\n  my.verBtn.mousePressed(function () {\n    location.reload();\n  });\n\n  create_clipsName_input();\n\n  createElement('br');\n\n  my.soundChk = createCheckbox('Sound', my.soundEnable);\n  my.soundChk.style('display:inline');\n  my.soundChk.changed(function () {\n    my.soundEnable = this.checked();\n    sound_state_update();\n  });\n\n  my.recordChk = createCheckbox('Record', my.record);\n  my.recordChk.style('display:inline');\n  my.recordChk.changed(function () {\n    my.record = this.checked();\n    record_state_update(my.record);\n    sound_state_update();\n  });\n\n  my.replayChk = createCheckbox('Replay', my.replay);\n  my.replayChk.style('display:inline');\n  my.replayChk.changed(function () {\n    my.replay = this.checked();\n    init_counts();\n  });\n\n  createElement('br');\n\n  create_count_selection();\n\n  create_resolution_selection();\n\n  createButton('Color+').mousePressed(function () {\n    my.colorIndex = (my.colorIndex + 1) % my.colors.length;\n  });\n\n  createElement('br');\n\n  if (!my.replayName) {\n    my.faceChk = createCheckbox('Face', my.face);\n    my.faceChk.style('display:inline');\n    my.faceChk.changed(faceChk_action);\n  }\n\n  my.videoChk = createCheckbox('Video', my.showVideo);\n  my.videoChk.style('display:inline');\n  my.videoChk.changed(function () {\n    my.showVideo = this.checked();\n  });\n\n  my.fcountChk = createCheckbox('Count', my.fcount);\n  my.fcountChk.style('display:inline');\n  my.fcountChk.changed(function () {\n    my.fcount = this.checked();\n  });\n\n  createButton('<-1').mousePressed(function () {\n    adjust_count(-1);\n    update_interval();\n  });\n\n  createButton('1+>').mousePressed(function () {\n    adjust_count(1);\n    update_interval();\n  });\n\n  createElement('br');\n}\n\nfunction create_clipsName_input() {\n  let elm = createInput(my.clipsName).input(function () {\n    my.clipsName = this.value();\n    clipsName_update();\n  });\n}\n\nfunction create_count_selection() {\n  let sel = createSelect();\n  sel.option('Count: 3', 3);\n  for (let index = 5; index <= 100; index += index) {\n    sel.option('Count: ' + index, index);\n  }\n  sel.option('Count: 99', 99);\n  sel.selected(my.count_max);\n  sel.changed(function () {\n    let nval = parseFloat(this.value());\n    my.count_max = nval;\n  });\n}\n\nfunction create_resolution_selection() {\n  let sel = createSelect();\n  for (let index = 1; index <= 8; index++) {\n    sel.option('Rez: ' + index, index);\n  }\n  sel.selected(my.rezScale);\n  sel.changed(function () {\n    let nval = parseFloat(this.value());\n    my.rezScale = nval;\n    init_layer();\n    my.video.remove();\n    video_create();\n  });\n}\n\nfunction faceChk_action() {\n  my.face = this.checked();\n  my.facingMode = my.face ? 'user' : 'environment';\n  console.log('my.facingMode', my.facingMode);\n  my.video.remove();\n  video_create();\n}\n\nfunction ui_init_update() {\n  ui_init_update_info();\n  my.ui_last = ui_break('break1');\n}\n\nfunction ui_init_update_info() {\n  // ui_span('updateCount', ' uc:' + my.updateCount);\n  // ui_span('nitems', ' ni:' + my.nitems);\n  if (my.guestName) {\n    ui_span('guestName', ' guestName:' + my.guestName);\n  }\n  if (my.replayName) {\n    ui_span('replayName', ' replayName:' + my.replayName);\n  }\n  if (my.uid) {\n    ui_span('uid', ' uid:' + my.uid);\n  }\n}\n\nfunction ui_break(id) {\n  let elm = select('#' + id);\n  if (!elm) {\n    elm = createElement('br').id(id);\n  }\n  return elm;\n}\n\n// !!@ Move to Lib\nfunction ui_span(id, html) {\n  let span = select('#' + id);\n  if (document.fullscreenElement) {\n    if (span) {\n      span.remove();\n    }\n    return;\n  }\n  if (!span) {\n    span = createSpan().id(id);\n  }\n  span.html(html);\n  return span;\n}\n\n// !!@ Move to Lib\nfunction ui_log(...args) {\n  // if (! my.debugLog) return\n  console.log(...args);\n  if (!my.logLines) {\n    my.logLines = [];\n    my.logSummary_div = createDiv('');\n  }\n  my.logLines.push(args.join(' '));\n  if (my.logLines.length > my.logLinesMax) {\n    my.logLines.splice(0, 1);\n  }\n  my.logSummary_div.html(my.logLines.join('<br/>'));\n}\n\n// !!@ Move to Lib\nfunction ui_error(...args) {\n  ui_log(...args);\n}\n\n// createButton('<-100').mousePressed(function () {\n//   my.count_base -= 100;\n//   if (my.count_base < 0) {\n//     my.count_base = 0;\n//   }\n//   init_counts();\n// });\n\n// createButton('100+>').mousePressed(function () {\n//   my.count_base += 100;\n//   init_counts();\n// });\n\n// createButton('SignIn').mousePressed(function () {\n//   fireb_signIn();\n// });\n\n// createButton('Reset count').mousePressed(function () {\n//   my.count = my.count_base;\n// });\n\n// createButton('Upload').mousePressed(function () {\n//   fstorage_img_upload();\n// });\n\n// my.reloadBtn = createButton('Reload');\n// my.reloadBtn.mousePressed(function () {\n//   location.reload();\n// });\n\n// https://www.htmlsymbols.xyz/unicode/U+FF0B\n// Fullwidth plus sign\n\n// https://www.ssec.wisc.edu/~tomw/java/unicode.html\n\n// function init_replay() {\n//   // console.log('init_replay', my.replay);\n//   my.draw_func = my.replay ? draw_replay : draw_guest;\n// }\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3d79a1f0001acb3f46",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3d79a1f0001acb3f46"
+      },
+      {
+        "name": "my_init.js",
+        "content": "function my_init() {\n  //\n  pixelDensity(1);\n\n  // my.dbase_rootPath\n  // my.dbase_rootPath = '-mo-storage-video-@w-';\n\n  my.dbase_rootPath = '-mo-storage-dashboard-@w-';\n  console.log('my.dbase_rootPath', my.dbase_rootPath);\n\n  init_clipsName();\n\n  if (my.png) {\n    // png image type preserves white background\n    my.imageType = 'image/png';\n    my.imagExt = '.png';\n  } else {\n    // jpeg give black background\n    my.imageType = 'image/jpeg';\n    my.imagExt = '.jpg';\n  }\n  if (windowWidth < 600) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  if (my.vFlip) {\n    let temp = my.width;\n    my.width = my.height;\n    my.height = temp;\n  }\n\n  // image are store in sequence\n  // {my.dbase_rootPath}/clips/${nums}${my.imagExt}\n  my.image_seq_pad = 3;\n\n  init_layer();\n\n  my.next_secs = millis() / 1000 + my.interval;\n\n  init_counts();\n\n  if (my.soundEnable) {\n    sound_init();\n  }\n\n  my.img_download_log = 0;\n}\n\nfunction init_clipsName() {\n  let today = new Date();\n  let str = today.toISOString();\n  clipsName_restore();\n  my.clipsName += '/' + str.substring(0, 10);\n}\n\nfunction clipsName_restore() {\n  let nclipsName = localStorage.getItem('clipsName');\n  console.log('clipsName_restore nclipsName', nclipsName);\n  if (!nclipsName) {\n    return;\n  }\n  my.clipsName = nclipsName;\n}\n\nfunction clipsName_update() {\n  console.log('clipsName_update my.clipsName', my.clipsName);\n  let parts = my.clipsName.split('/');\n  localStorage.setItem('clipsName', parts[0]);\n}\n\nfunction init_layer() {\n  let w = int(my.width / my.rezScale);\n  let h = int(my.height / my.rezScale);\n  my.layer = createGraphics(w, h);\n  my.vwidth = w;\n  my.vheight = h;\n  my.captionSize = my.layer.height / my.captionScale;\n  my.layer.noStroke();\n\n  my.replayLayer = createGraphics(my.width, my.height);\n}\n\nfunction init_counts() {\n  my.count = 0;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3d79a1f0001acb3f48",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3d79a1f0001acb3f48"
+      },
+      {
+        "name": "sound_draw.js",
+        "content": "function sound_draw_init() {\n  my.volhistory = [];\n  my.lastMax = 0;\n}\n\nfunction sound_draw() {\n  let vol;\n  if (!my.soundEnable) {\n    return;\n  }\n  if (my.amp) {\n    vol = my.amp.getLevel();\n  } else if (my.mic) {\n    vol = my.mic.getLevel();\n  } else {\n    return;\n  }\n  // console.log('sound_draw vol', vol);\n  my.volhistory.push(vol);\n  strokeWeight(2);\n  let colr = my.colors[my.colorIndex];\n  stroke(colr);\n  noFill();\n  beginShape();\n  let nowMax = 0;\n  let nowMin = 1;\n  let xline = frameCount % width;\n  let yline = height;\n  let nv = my.volhistory.length;\n  let xoffset = 0;\n  if (nv < width) {\n    // sound wave starts from right edge\n    xoffset = width - nv;\n  }\n  for (let i = 0; i < nv; i++) {\n    let val = my.volhistory[i];\n    let y = map(val, 0, my.lastMax, height, 0);\n    if (Number.isNaN(y)) {\n      // console.log('i', i, 'y', y, 'val', val, 'my.lastMax', my.lastMax);\n      y = 0;\n    }\n    vertex(xoffset + i, y);\n    if (val > my.lastMax) {\n      my.lastMax = val;\n    }\n    if (val > nowMax) {\n      nowMax = val;\n    }\n    // Skip of 0 index to avoid startup zero amplitude\n    if (val < nowMin && i > 0) {\n      nowMin = val;\n      xline = i;\n      yline = y;\n      // console.log('xline', xline, 'yline', yline);\n    }\n  }\n  my.lastMax = nowMax;\n  endShape();\n  if (my.volhistory.length > width) {\n    my.volhistory.splice(0, 1);\n  }\n  let bcolr = my.colors[(my.colorIndex + 1) % my.colors.length];\n  stroke(bcolr);\n  stroke(255, 255, 0);\n  line(0, yline, width, yline);\n  line(xline, yline, xline, height);\n  // console.log('xline', xline, 'yline', yline);\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/pwLiHkndo\n// mic graph\n// graph the volume level of the mic\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3d79a1f0001acb3f4c",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3d79a1f0001acb3f4c"
+      },
+      {
+        "name": "record_state.js",
+        "content": "function record_state_update(newState) {\n  init_counts();\n  my.record_preroll = newState;\n  let now = millis() / 1000;\n  my.recordCountDown.next_secs = now + my.recordCountDown.max;\n  if (newState) {\n    my.replay = 0;\n    my.replayChk.checked(0);\n  } else {\n    my.recordCountDown.next_secs = 0;\n  }\n}\n\nfunction record_state_track() {\n  //\n  let m = height * 0.08;\n  strokeWeight(m);\n  if (my.record && !my.record_preroll) {\n    stroke(255, 0, 0);\n    noFill();\n    rect(0, 0, width, height);\n  }\n  if (!my.record_preroll) {\n    return;\n  }\n  let now = millis() / 1000;\n  if (now > my.recordCountDown.next_secs) {\n    my.record_preroll = 0;\n    return;\n  }\n  let cnt = my.recordCountDown.next_secs - now;\n  cnt = int(cnt + 1);\n  let str = cnt + '';\n  let h = width * 1.4;\n  textSize(h);\n  let w = textSize(str);\n  // console.log('w', w);\n  // let x = (width - w) * 1;\n  let x = width * 0.1;\n  let y = height * 0.8;\n  strokeWeight(m * 0.025);\n  stroke(255, 0, 0);\n  fill(255, 0, 0);\n  text(cnt, x, y);\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3d79a1f0001acb3f4a",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3d79a1f0001acb3f4a"
+      },
+      {
+        "name": "sound.js",
+        "content": "function sound_state_update() {\n  if (my.soundEnable) {\n    sound_init();\n  } else {\n    sound_playback_stop();\n  }\n}\n\nfunction sound_init() {\n  sound_AudioContext_resume();\n  // create an audio in\n  my.mic = new p5.AudioIn();\n  // users must manually enable their browser microphone for recording to work properly!\n  my.mic.start();\n  // create a sound recorder\n  my.recorder = new p5.SoundRecorder();\n  // connect the mic to the recorder\n  my.recorder.setInput(my.mic);\n  // create an empty sound file\n  // that we will use to playback the recording\n  my.soundFile = new p5.SoundFile();\n  my.sound_record_started = 0;\n\n  sound_draw_init();\n}\n\nfunction sound_record_start() {\n  console.log('sound_record_start');\n  if (my.sound_record_started) {\n    return;\n  }\n  my.sound_record_started = 1;\n  // Tell recorder to record to a p5.SoundFile\n  // which we will use for playback\n  my.recorder.record(my.soundFile);\n  // my.amp = new p5.Amplitude();\n  // my.amp.setInput(my.soundFile);\n}\n\nfunction sound_AudioContext_resume() {\n  let aSoundContext = getAudioContext();\n  // console.log('aSoundContext.state', aSoundContext.state);\n  if (aSoundContext.state !== 'running') {\n    aSoundContext.resume();\n  }\n}\n\nfunction sound_record_stop() {\n  console.log('sound_record_stop');\n  my.sound_record_started = 0;\n  // stop recorder, and send the result to soundFile\n  my.recorder.stop();\n  // Prepare for upload\n  my.fstorage_sound_upload_started = 1;\n  my.fstorage_sound_upload_completed = 0;\n  my.sound_downFile = null;\n\n  // Give record a sec before asking for blob\n  setTimeout(sound_getBlob, 1 * 1000);\n}\n\nfunction sound_playback_start() {\n  // console.log('sound_playback_start', my.sound_downFile ? 'soundFile' : '-');\n  // skip if soundfile is already playing\n  if (my.sound_downFile) {\n    return;\n  }\n  // Wait for upload to complete\n  if (\n    my.fstorage_sound_upload_started && //\n    !my.fstorage_sound_upload_completed\n  ) {\n    return;\n  }\n  // download the sound\n  fstorage_sound_download();\n}\n\nfunction sound_playback_stop() {\n  // console.log('sound_playback_stop', my.sound_downFile ? 'soundFile' : '-');\n  if (!my.sound_downFile) {\n    return;\n  }\n  ui_log('sound_playback_stop', my.sound_downFile ? 'soundFile' : '-');\n  // stop the sound and reset vars\n  my.sound_downFile.stop();\n  my.sound_downFile = null;\n  my.sound_download_blob = null;\n  my.amp = null;\n}\n\nfunction sound_downloaded() {\n  my.sound_downFile.play();\n  my.sound_downFile.loop();\n  if (!my.amp) {\n    my.amp = new p5.Amplitude();\n  }\n  my.amp.setInput(my.sound_downFile);\n\n  sound_draw_init();\n}\n\n// https://p5js.org/reference/#/p5.SoundFile\n// new p5.SoundFile(path, [successCallback], [errorCallback], [whileLoadingCallback])\n\n// https://stackoverflow.com/questions/34934862/how-to-replay-an-audio-blob-in-javascript\n// const reader = new FileReader();\n// reader.onload = function(e) {\n//     const srcUrl = e.target.result;\n//     audioNode.src = srcUrl;\n// };\n// reader.readAsDataURL(blob);\n\n// https://p5js.org/reference/#/p5/getAudioContext\n// function draw() {\n//   background(255);\n//   textAlign(CENTER);\n\n//   if (getAudioContext().state !== 'running') {\n//     text('click to start audio', width/2, height/2);\n//   } else {\n//     text('audio is enabled', width/2, height/2);\n//   }\n// }\n// function touchStarted() {\n//   if (getAudioContext().state !== 'running') {\n//     getAudioContext().resume();\n//   }\n//   var synth = new p5.MonoSynth();\n//   synth.play('A4', 0.5, 0, 0.2);\n// }\n\n// startAudioContext\n// userStartAudio\n\n// https://p5js.org/reference/#/p5/userStartAudio\n\n// let a_audioCtx = getAudioContext();\n// a_audioCtx.resume();\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fe2b3d79a1f0001acb3f56",
+        "updatedAt": "2024-03-23T18:05:59.389Z",
+        "createdAt": "2024-03-23T18:05:59.389Z",
+        "isSelectedFile": false,
+        "id": "65fe2b3d79a1f0001acb3f56"
+      }
+    ],
+    "createdAt": "2024-03-23T01:01:23.831Z",
+    "id": "Osz28nOS9"
+  },
+  {
     "name": "mo-storage-dashboard copy",
     "_id": "nni2zh4VR",
     "files": [
@@ -10535,12 +10736,13 @@
   {
     "name": "p5moExamples video 366",
     "_id": "KeRAIMzHN",
-    "updatedAt": "2024-03-22T23:13:37.170Z",
+    "updatedAt": "2024-03-23T18:03:05.342Z",
     "files": [
       {
         "name": "root",
         "content": "",
         "children": [
+          "65ff195411ffb0001923bc6e",
           "65fdcb5a5ab0bb7879489ce1",
           "65fdcb5a5ab0bb7879489ce0",
           "65fdcb5a5ab0bb7879489ce2"
@@ -10548,30 +10750,30 @@
         "fileType": "folder",
         "_id": "65fdcb5a5ab0bb7879489ce3",
         "isSelectedFile": false,
-        "createdAt": "2024-03-22T23:13:37.170Z",
-        "updatedAt": "2024-03-22T23:13:37.170Z",
+        "createdAt": "2024-03-23T18:03:05.342Z",
+        "updatedAt": "2024-03-23T18:03:05.342Z",
         "id": "65fdcb5a5ab0bb7879489ce3"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/KeRAIMzHN\n// p5moExamples video 368\n\nlet videoKit; // home for library routines\n\np5.disableFriendlyErrors = true; // disables FES to improve performance\n\nfunction setup() {\n  // Report startup time for debugging\n  let lapse = window.performance.now() - a_start_now;\n  console.log('setup lapse', lapse);\n  // indicate how long it took to load everything\n\n  // Lowest pixel density for performance\n  pixelDensity(1);\n\n  // Need some starting dimensions for canvas.\n  // Make it small, size will get adjusted by UI (user interface) later in startup\n  createCanvas(100, 100);\n\n  // must call createCanvas before new p5videoKit\n\n  videoKit = new p5videoKit(a_config);\n}\n\nfunction draw() {\n  videoKit.draw();\n}\n\nlet a_config = {\n  // hide_ui: 1,\n  // effects for import, will appear at top of the effect menu\n  // an EFFECT can have many PROPERTIES specific to the effect\n  // for example canvas size, color, cell size,\n  // to see this, choose \"circle\" in Effect1 and Effect2,\n  // then choose different properties like number of circles per frame\n  // or the video source\n  // the \"effects\" array creates a pull-down menu\n  // which offers a first selection of effects added to the VideoKit library,\n  // you could add some more !!!!\n  // effects: [\n  // { label: 'a_slit_scan', import_path: 'effects/eff_a_slit_scan.js' },\n  // ],\n  // settings for import, will appear in the settings menu\n  // SETTINGS will load a save .json file with predefined values\n  // for all the settings associated with the effect\n  // \"settings\" is an array of\n  // settings: [\n  // { label: 'videoKit', import_path: 'settings/videoKit.json' },\n  // ],\n};\n\n// https://molab-itp.github.io/p5moExamples/examples/video/?a=%7B%22setting%22%3A%22%22%2C%22comment%22%3A%22bright%20%7C%20diff%22%2C%22back_color%22%3A200%2C%22room_name%22%3A%22VideoKit-Room-1%22%2C%22patch_layout%22%3A%22Single%22%2C%22canvas_size%22%3A%22960x540%22%2C%22capture_size%22%3A%22default%22%2C%22render_size%22%3A%22Canvas%22%2C%22chat_name%22%3A%22jht%22%2C%22chat_chk%22%3A0%2C%22live_index%22%3A0%2C%22live_chk%22%3A0%2C%22urects_lock%22%3A0%2C%22urects_count%22%3A2%2C%22canvas_resize_ref%22%3A%22%22%2C%22canvas_data_chk%22%3A0%2C%22mediaDiv_states%22%3A%5Bnull%2C%7B%22vis%22%3A0%2C%22mute%22%3A1%7D%5D%2C%22patches%22%3A%5B%7B%22eff_spec%22%3A%7B%22ipatch%22%3A0%2C%22imedia%22%3A1%2C%22eff_label%22%3A%22bright%22%2C%22urect%22%3A%7B%22width%22%3A960%2C%22height%22%3A540%2C%22x0%22%3A0%2C%22y0%22%3A0%7D%7D%2C%22eff_props%22%3A%7B%22ncell%22%3A16%2C%22back_color%22%3A0%2C%22src_color%22%3A255%2C%22fill%22%3A1%2C%22invert%22%3A1%2C%22shape%22%3A%22rect%22%7D%7D%2C%7B%22eff_spec%22%3A%7B%22ipatch%22%3A1%2C%22imedia%22%3A1%2C%22eff_label%22%3A%22diff%22%2C%22urect%22%3A%7B%22width%22%3A960%2C%22height%22%3A540%2C%22x0%22%3A0%2C%22y0%22%3A0%7D%7D%2C%22eff_props%22%3A%7B%22threshold%22%3A16%2C%22period%22%3A0%2C%22back_color%22%3A%22clear%22%2C%22smooth%22%3A0%2C%22hold%22%3A0%7D%7D%5D%7D\n// bright | diff\n\n// https://editor.p5js.org/shawn/sketches/jZQ64AMJc\n// p5LiveMedia Test Video\n// https://github.com/vanevery/p5LiveMedia\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/KeRAIMzHN\n// p5moExamples video 368\n\nlet videoKit; // home for library routines\n\np5.disableFriendlyErrors = true; // disables FES to improve performance\n\nfunction setup() {\n  // Report startup time for debugging\n  let lapse = window.performance.now() - a_start_now;\n  console.log('setup lapse', lapse);\n  // indicate how long it took to load everything\n\n  // Lowest pixel density for performance\n  pixelDensity(1);\n\n  // Need some starting dimensions for canvas.\n  // Make it small, size will get adjusted by UI (user interface) later in startup\n  createCanvas(100, 100);\n\n  // must call createCanvas before new p5videoKit\n\n  videoKit = new p5videoKit(a_config);\n}\n\nfunction draw() {\n  videoKit.draw();\n}\n\nlet a_config = {\n  // hide_ui: 1,\n  // effects for import, will appear at top of the effect menu\n  // an EFFECT can have many PROPERTIES specific to the effect\n  // for example canvas size, color, cell size,\n  // to see this, choose \"circle\" in Effect1 and Effect2,\n  // then choose different properties like number of circles per frame\n  // or the video source\n  // the \"effects\" array creates a pull-down menu\n  // which offers a first selection of effects added to the VideoKit library,\n  // you could add some more !!!!\n  effects: [{ label: 'a_slit_scan', factory: eff_a_slit_scan }],\n  // settings for import, will appear in the settings menu\n  // SETTINGS will load a save .json file with predefined values\n  // for all the settings associated with the effect\n  // \"settings\" is an array of\n  // settings: [\n  // { label: 'videoKit', import_path: 'settings/videoKit.json' },\n  // ],\n};\n\n// https://molab-itp.github.io/p5moExamples/examples/video/?a=%7B%22setting%22%3A%22%22%2C%22comment%22%3A%22bright%20%7C%20diff%22%2C%22back_color%22%3A200%2C%22room_name%22%3A%22VideoKit-Room-1%22%2C%22patch_layout%22%3A%22Single%22%2C%22canvas_size%22%3A%22960x540%22%2C%22capture_size%22%3A%22default%22%2C%22render_size%22%3A%22Canvas%22%2C%22chat_name%22%3A%22jht%22%2C%22chat_chk%22%3A0%2C%22live_index%22%3A0%2C%22live_chk%22%3A0%2C%22urects_lock%22%3A0%2C%22urects_count%22%3A2%2C%22canvas_resize_ref%22%3A%22%22%2C%22canvas_data_chk%22%3A0%2C%22mediaDiv_states%22%3A%5Bnull%2C%7B%22vis%22%3A0%2C%22mute%22%3A1%7D%5D%2C%22patches%22%3A%5B%7B%22eff_spec%22%3A%7B%22ipatch%22%3A0%2C%22imedia%22%3A1%2C%22eff_label%22%3A%22bright%22%2C%22urect%22%3A%7B%22width%22%3A960%2C%22height%22%3A540%2C%22x0%22%3A0%2C%22y0%22%3A0%7D%7D%2C%22eff_props%22%3A%7B%22ncell%22%3A16%2C%22back_color%22%3A0%2C%22src_color%22%3A255%2C%22fill%22%3A1%2C%22invert%22%3A1%2C%22shape%22%3A%22rect%22%7D%7D%2C%7B%22eff_spec%22%3A%7B%22ipatch%22%3A1%2C%22imedia%22%3A1%2C%22eff_label%22%3A%22diff%22%2C%22urect%22%3A%7B%22width%22%3A960%2C%22height%22%3A540%2C%22x0%22%3A0%2C%22y0%22%3A0%7D%7D%2C%22eff_props%22%3A%7B%22threshold%22%3A16%2C%22period%22%3A0%2C%22back_color%22%3A%22clear%22%2C%22smooth%22%3A0%2C%22hold%22%3A0%7D%7D%5D%7D\n// bright | diff\n\n// https://editor.p5js.org/shawn/sketches/jZQ64AMJc\n// p5LiveMedia Test Video\n// https://github.com/vanevery/p5LiveMedia\n",
         "children": [],
         "fileType": "file",
         "_id": "65fdcb5a5ab0bb7879489ce0",
-        "isSelectedFile": true,
-        "createdAt": "2024-03-22T23:13:37.170Z",
-        "updatedAt": "2024-03-22T23:13:37.170Z",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-23T18:03:05.342Z",
+        "updatedAt": "2024-03-23T18:03:05.342Z",
         "id": "65fdcb5a5ab0bb7879489ce0"
       },
       {
         "name": "index.html",
-        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-- v1.7.0 -->\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js\"></script> -->\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js\"></script> -->\n\n    <!-- v1.8.0 -->\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js\"></script> -->\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js\"></script> -->\n\n    <!-- v1.9.0 -->\n    <!-- v1.9.1 -->\n    <!-- v1.9.2 -->\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js\"></script>\n\n    <script src=\"https://p5livemedia.itp.io/simplepeer.min.js\"></script>\n    <script src=\"https://p5livemedia.itp.io/socket.io.js\"></script>\n    <script src=\"https://p5livemedia.itp.io/p5livemedia.js\"></script>\n<!--     <script src=\"https://unpkg.com/ml5@latest/dist/ml5.min.js\"></script> -->\n    <script src=\"https://unpkg.com/ml5@0.12.2/dist/ml5.min.js\"></script>\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n    <script>\n      // track startup time for debugging\n      let a_start_now = window.performance.now();\n    </script>\n\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />  -->\n    <style>\n      @media only screen and (max-width: 600px) {\n        body,\n        button,\n        select,\n        input {\n          font-size: 4vw;\n        }\n      }\n      html,\n      body {\n        margin: 0;\n        padding: 0;\n      }\n      canvas {\n        display: block;\n      }\n    </style>\n    <meta charset=\"utf-8\" />\n  </head>\n\n  <body>\n    <!-- @@[prod][dev] -->\n    <script type=\"module\" src=\"https://molab-itp.github.io/p5moRelease/videoKit/368/a_lib.js\"></script>\n    <!-- <script type=\"module\" src=\"../../p5videoKit/src/videoKit/a_lib.js?v=27\"></script> -->\n\n    <script src=\"sketch.js\"></script>\n    <!-- <div id=\"imsg\" style=\"font-size: 7vw; display: none\"></div> -->\n  </body>\n</html>\n",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <!-- v1.7.0 -->\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js\"></script> -->\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js\"></script> -->\n\n    <!-- v1.8.0 -->\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js\"></script> -->\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js\"></script> -->\n\n    <!-- v1.9.0 -->\n    <!-- v1.9.1 -->\n    <!-- v1.9.2 -->\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js\"></script>\n\n    <script src=\"https://p5livemedia.itp.io/simplepeer.min.js\"></script>\n    <script src=\"https://p5livemedia.itp.io/socket.io.js\"></script>\n    <script src=\"https://p5livemedia.itp.io/p5livemedia.js\"></script>\n    <!--     <script src=\"https://unpkg.com/ml5@latest/dist/ml5.min.js\"></script> -->\n    <script src=\"https://unpkg.com/ml5@0.12.2/dist/ml5.min.js\"></script>\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n    <script>\n      // track startup time for debugging\n      let a_start_now = window.performance.now();\n    </script>\n\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />  -->\n    <style>\n      @media only screen and (max-width: 600px) {\n        body,\n        button,\n        select,\n        input {\n          font-size: 4vw;\n        }\n      }\n      html,\n      body {\n        margin: 0;\n        padding: 0;\n      }\n      canvas {\n        display: block;\n      }\n    </style>\n    <meta charset=\"utf-8\" />\n  </head>\n\n  <body>\n    <!-- @@[prod][dev] -->\n    <script\n      type=\"module\"\n      src=\"https://molab-itp.github.io/p5moRelease/videoKit/368/a_lib.js\"\n    ></script>\n    <!-- <script type=\"module\" src=\"../../p5videoKit/src/videoKit/a_lib.js?v=27\"></script> -->\n\n    <script src=\"eff_a_slit_scan.js\"></script>\n    <script src=\"sketch.js\"></script>\n    <!-- <div id=\"imsg\" style=\"font-size: 7vw; display: none\"></div> -->\n  </body>\n</html>\n",
         "children": [],
         "fileType": "file",
         "_id": "65fdcb5a5ab0bb7879489ce1",
-        "isSelectedFile": false,
-        "createdAt": "2024-03-22T23:13:37.170Z",
-        "updatedAt": "2024-03-22T23:13:37.170Z",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-23T18:03:05.342Z",
+        "updatedAt": "2024-03-23T18:03:05.342Z",
         "id": "65fdcb5a5ab0bb7879489ce1"
       },
       {
@@ -10581,9 +10783,19 @@
         "fileType": "file",
         "_id": "65fdcb5a5ab0bb7879489ce2",
         "isSelectedFile": false,
-        "createdAt": "2024-03-22T23:13:37.170Z",
-        "updatedAt": "2024-03-22T23:13:37.170Z",
+        "createdAt": "2024-03-23T18:03:05.342Z",
+        "updatedAt": "2024-03-23T18:03:05.342Z",
         "id": "65fdcb5a5ab0bb7879489ce2"
+      },
+      {
+        "name": "eff_a_slit_scan.js",
+        "content": "// converting video slit scan to a effect pluging example\n//\n// effects have to be declared as a class\n// convention is that properties in UI\n// appear in meta_props array as drop-downs\n// goal: you don't have to write the code\n// you just have to select the drop-downs\n// save a json with your selections\n\nclass eff_a_slit_scan {\n  static meta_props = [\n    // { prop: 'num_prop', label: 'prop1', selection: [0, 1] },\n    { prop: 'expand', selection: [1, 2, 3] },\n    { prop: 'step', selection: [1, 0.1, 0.2, 2, 4] },\n    { prop: 'period', selection: [-1, 0, 1, 2, 3] },\n  ];\n\n  constructor(props) {\n    //\n    Object.assign(this, props);\n    console.log('eff_a_slit_scan props.expand', props.expand);\n    // console.log('eff_a_slit_scan constructor width, height', width, height);\n\n    this.vw = this.input.width;\n    this.vh = this.input.height;\n    console.log('eff_a_slit_scan constructor input vw vh', this.vw, this.vh);\n\n    this.output = createGraphics(this.vw * this.expand, this.vh);\n    // this.output.background(255);\n\n    this.x = 0;\n\n    this.period_timer = new this.videoKit.PeriodTimer(this.period);\n  }\n  prepareOutput() {\n    this.input.loadPixels();\n    this.output.copy(this.input, this.vw / 2, 0, 1, this.vh, this.x, 0, 1, this.vh);\n    this.x = this.x + this.step;\n    if (this.x > this.output.width) {\n      this.x = 0;\n    }\n    if (this.period_timer.check()) {\n      this.output.clear();\n    }\n  }\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/hw8qkUuAw\n// https://editor.p5js.org/codingtrain/sketches/B1L5j8uk4\n// Slit Scan\n// this is original code that would work in p5js editor\n// and is adapted to the VideoKit plug-in model\n// the sketches in the effects directory plug-in\n// to the video kit\n// certain requirements in order to plug-in:\n// 1. meta_pro array\n// 2. constructor for the class\n// analogous to setup only called once\n// 3. prepareOutput() analogous to draw\n// repeatedly called for every frame\n// This approach allows you to explore and compare\n// the same effect with different settings\n// side by side\n// The dropdown menus make each effect modular\n// allowing you to define your own settings\n// and create you own version of the effect\n\n// let video;\n// let x = 0;\n\n// function setup() {\n//   createCanvas(400, 240);\n//   pixelDensity(1);\n//   video = createCapture(VIDEO);\n//   video.size(320, 240);\n//   background(51);\n// }\n\n// function draw() {\n//   // ?? is this needed\n//   // video.loadPixels();\n//   let w = video.width;\n//   let h = video.height;\n//   copy(video, w/2, 0, 1, h, x, 0, 1, h);\n//   x = x + 1;\n//   if (x > width) {\n//     x = 0;\n//   }\n// }\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65ff195411ffb0001923bc6e",
+        "updatedAt": "2024-03-23T18:03:05.342Z",
+        "createdAt": "2024-03-23T18:03:05.342Z",
+        "id": "65ff195411ffb0001923bc6e"
       }
     ],
     "createdAt": "2024-03-22T18:18:50.566Z",
@@ -13341,207 +13553,6 @@
     "createdAt": "2023-07-30T09:31:17.155Z",
     "updatedAt": "2023-07-30T09:32:56.368Z",
     "id": "uGJhjABpY"
-  },
-  {
-    "name": "Puddle cuticle",
-    "_id": "Osz28nOS9",
-    "updatedAt": "2024-03-23T01:09:43.570Z",
-    "files": [
-      {
-        "name": "root",
-        "content": "",
-        "children": [
-          "65fe2b3c045341001a7bcd30",
-          "65fe2b3d79a1f0001acb3f3a",
-          "65fe2b3d79a1f0001acb3f3c",
-          "65fe2b3d79a1f0001acb3f36",
-          "65fe2b3d79a1f0001acb3f38",
-          "65fe2b3c634e1f001a4bcc2c",
-          "65fe2b3c634e1f001a4bcc2a",
-          "65fe2b3d79a1f0001acb3f48",
-          "65fe2b3d79a1f0001acb3f4a",
-          "65fe29e0ba516e1782e89fc8",
-          "65fe2b3d79a1f0001acb3f56",
-          "65fe2b3d79a1f0001acb3f4c",
-          "65fe29e0ba516e1782e89fca",
-          "65fe2b3d79a1f0001acb3f46",
-          "65fe2b3c634e1f001a4bcc32"
-        ],
-        "fileType": "folder",
-        "_id": "65fe29e0ba516e1782e89fcb",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe29e0ba516e1782e89fcb"
-      },
-      {
-        "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Osz28nOS9\n// mo-storage-dashboard 47\n\n// https://editor.p5js.org/jht9629-gmail/sketches/VWbtyZTnx\n// mo-storage-dashboard\n// https://molab-itp.github.io/98-MoGallery-p5js/demos/mo-storage-dashboard\n\nfunction setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe29e0ba516e1782e89fc8",
-        "isSelectedFile": false,
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "id": "65fe29e0ba516e1782e89fc8"
-      },
-      {
-        "name": "style.css",
-        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe29e0ba516e1782e89fca",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe29e0ba516e1782e89fca"
-      },
-      {
-        "name": "index.html",
-        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js\"></script>\n\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" /> -->\n\n    <!-- make the buttons bigger on small screens -->\n    <style>\n      @media only screen and (max-width: 600px) {\n        body,\n        button,\n        select,\n        input {\n          font-size: 5vw;\n        }\n      }\n      html,\n      body {\n        margin: 0;\n        padding: 0;\n      }\n      canvas {\n        display: block;\n      }\n    </style>\n  </head>\n  <body>\n    <main></main>\n\n    <script type=\"module\" src=\"https://molab-itp.github.io/p5moRelease/lib/47/a_lib.js\"></script>\n    <!-- <script type=\"module\" src=\"../../lib/a_lib.js?v=62\"></script> -->\n\n    <script src=\"a_sketch.js\"></script>\n    <script src=\"video_create.js\"></script>\n    <script src=\"draw_number.js\"></script>\n    <script src=\"fstorage_img_download.js\"></script>\n    <script src=\"fstorage_img_upload.js\"></script>\n    <script src=\"fstorage_list.js\"></script>\n    <script src=\"fstorage_sound.js\"></script>\n    <script src=\"my_init.js\"></script>\n    <script src=\"record_state.js\"></script>\n    <script src=\"sound_draw.js\"></script>\n    <script src=\"sound.js\"></script>\n    <script src=\"ui_init.js\"></script>\n    <script src=\"my_init.js\"></script>\n    <!-- ?v=62 included to force reload - bust the cache\n      global search to find updates\n      github.io skips files with underscore prefix\n     -->\n  </body>\n</html>\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3c634e1f001a4bcc2a",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3c634e1f001a4bcc2a"
-      },
-      {
-        "name": "fstorage_sound.js",
-        "content": "function sound_getBlob() {\n  my.soundBlob = my.soundFile.getBlob();\n  // Upload the sound blob\n  fstorage_sound_upload_blob(my.soundBlob, 0);\n}\n\nfunction fstorage_sound_upload_blob(blob, count) {\n  console.log('fstorage_sound_upload_blob', blob);\n  let { getStorage, ref, uploadBytes } = fireb_.fstorage;\n  my.soundPath = next_soundPath(count);\n  ui_log('fstorage_sound_upload_blob my.soundPath', my.soundPath);\n  const storageRef = ref(getStorage(), my.soundPath);\n  // 'file' comes from the Blob or File API\n  uploadBytes(storageRef, blob)\n    .then((snapshot) => {\n      // ui_log('snapshot.metadata.fullPath ' + snapshot.metadata.fullPath);\n      // console.log('snapshot', snapshot);\n      // console.log('Uploaded path', path);\n      ui_log('upload ', my.soundPath);\n      my.fstorage_sound_upload_completed = 1;\n    })\n    .catch((error) => {\n      // Handle any errors\n      ui_error('fstorage_sound_upload_blob error', error);\n    });\n}\n\nfunction next_soundPath(count) {\n  // console.log('next_soundPath');\n  let str = (count + my.count_base + 1).toString().padStart(my.image_seq_pad, '0');\n  return `${my.dbase_rootPath}/${my.clipsName}/${str}.wav`;\n}\n\nfunction fstorage_sound_download() {\n  // console.log('fstorage_sound_download ');\n  let path = next_soundPath(0);\n  // ui_log('fstorage_sound_download next_imagePath ' + path);\n  let { getStorage, ref, getDownloadURL } = fireb_.fstorage;\n  getDownloadURL(ref(getStorage(), path))\n    .then((url) => {\n      const xhr = new XMLHttpRequest();\n      xhr.responseType = 'blob';\n      xhr.onload = (event) => {\n        const blob = xhr.response;\n        // ui_log('fstorage_sound_download blob ' + blob);\n        ui_log('sound download ' + path);\n        sound_play_blob(blob);\n      };\n      xhr.open('GET', url);\n      xhr.send();\n    })\n    .catch((error) => {\n      // Handle any errors\n      ui_error('fstorage_sound_download error', error);\n    });\n}\nfunction sound_play_blob(blob) {\n  my.sound_download_blob = blob;\n  const reader = new FileReader();\n  reader.onload = function (e) {\n    const srcUrl = e.target.result;\n    // console.log('sound_play_blob srcUrl', srcUrl);\n    my.sound_srcUrl = srcUrl;\n    my.sound_downFile = new p5.SoundFile(\n      srcUrl, //\n      sound_cb_ok,\n      sound_cb_error,\n      sound_cb_while\n    );\n  };\n  reader.readAsDataURL(blob);\n\n  function sound_cb_ok() {\n    // console.log('sound_cb_ok');\n    sound_downloaded();\n  }\n\n  function sound_cb_error(error) {\n    ui_error('sound_cb_error', error);\n  }\n\n  function sound_cb_while(prog) {\n    // console.log('sound_cb_while prog', prog);\n  }\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3c634e1f001a4bcc2c",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3c634e1f001a4bcc2c"
-      },
-      {
-        "name": "a_sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Osz28nOS9\n// mo-storage-dashboard 47\n\n// https://editor.p5js.org/jht9629-gmail/sketches/VWbtyZTnx\n// mo-storage-dashboard\n// https://molab-itp.github.io/98-MoGallery-p5js/demos/mo-storage-dashboard\n\n// !!@ update to lib\n// record and play back audio and image sequence to firebase\n\nlet my = {};\nfunction my_setup() {\n  // update to verify change on mobile\n  my.version = '?v=62';\n  // Aspect ratio of video capture/\n  // will be scaled by rezScale\n  my.width = 480;\n  my.height = 640;\n  my.vFlip = 0;\n  my.facingMode = 'user';\n  my.face = 1;\n  my.showVideo = 1;\n  my.soundEnable = 0;\n  my.fcount = 1;\n  my.record = 0;\n  my.replay = 0;\n  my.uid = '-none-';\n  my.rezScale = 1; // scale = 16;\n  my.imageQuality = 1; // imageQuality = 0.01;\n  my.captionScale = 32;\n  my.interval = 1;\n  my.debugLog = 1;\n  my.count_base = 100;\n  my.count_max = 5;\n  my.colors = ['red', 'green', 'gold'];\n  my.colorIndex = 1;\n  my.logLinesMax = 3;\n  my.clipsName = 'clips';\n  my.recordCountDown = {\n    max: 3,\n    next_secs: 0,\n  };\n}\n\nfunction setup() {\n  console.log('mo-storage-video setup');\n  my_setup();\n\n  my_init();\n\n  my.canvas = createCanvas(my.width, my.height);\n\n  ui_init();\n\n  let config = fireb_.init('jht9629');\n  // let config = fireb_.init('jht1493');\n  ui_log('config.projectId', config.projectId);\n\n  fireb_signIn();\n\n  textSize(40);\n}\n\nfunction draw() {\n  //\n  draw_update();\n\n  ui_init_update();\n\n  sound_draw();\n}\n\nfunction draw_update() {\n  if (!video_ready()) return;\n\n  // faster to get entire video frame as an image\n  let img = my.video.get();\n\n  let layer = my.layer;\n\n  if (my.showVideo) {\n    layer.image(img, 0, 0);\n  }\n\n  draw_number(my.count + 1 + my.count_base, { layer });\n  draw_millis(layer);\n  draw_dateISOString(layer);\n\n  if (my.replay) {\n    image(my.replayLayer, 0, 0, width, height);\n  } else {\n    image(layer, 0, 0, width, height);\n  }\n\n  record_state_track();\n\n  if (!my.record_preroll) {\n    draw_count();\n  }\n\n  let now = millis() / 1000;\n  if (now > my.next_secs) {\n    my.next_secs = now + my.interval;\n    update_interval();\n  }\n}\n\nfunction update_interval() {\n  // console.log('update_interval my.count', my.count);\n\n  if (my.replay) {\n    fstorage_img_download();\n    if (my.soundEnable) {\n      sound_playback_start();\n    }\n  } else {\n    sound_playback_stop();\n  }\n\n  if (my.record_preroll) {\n    return;\n  }\n\n  if (my.record) {\n    fstorage_img_upload();\n    if (my.count == 0 && my.soundEnable) {\n      sound_record_start();\n    }\n  }\n\n  if (my.fcount) {\n    if (adjust_count(1) && my.record) {\n      my.record = 0;\n      my.recordChk.checked(0);\n      my.replay = 1;\n      my.replayChk.checked(1);\n      if (my.soundEnable) {\n        sound_record_stop();\n      }\n    }\n  }\n}\n\nfunction adjust_count(delta) {\n  my.count = my.count + delta;\n  let wrap = 0;\n  if (my.count >= my.count_max) {\n    my.count = 0;\n    wrap = 1;\n  } else if (my.count < 0) {\n    my.count = my.count_max - 1;\n    wrap = 1;\n  }\n  return wrap;\n}\n\nfunction fireb_signIn() {\n  let { signInAnonymously, auth } = fireb_;\n  signInAnonymously(auth)\n    .then(() => {\n      ui_log('signInAnonymously OK');\n      my.uid = auth.currentUser.uid;\n    })\n    .catch((error) => {\n      const errorCode = error.code;\n      const errorMessage = error.message;\n      ui_log('fireb_signIn errorCode', errorCode);\n      ui_log('fireb_signIn errorMessage', errorMessage);\n    });\n}\n\n// https://en.wikipedia.org/wiki/15_minutes_of_fame\n// --> 15 seconds\n\n// setInterval will flood out draw when saving and replaying\n// setInterval(update_interval, my.interval * 1000);\n// frameRate(2);\n\n// image(img, x, y, [width], [height])\n// image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight], [fit], [xAlign], [yAlign])\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3c045341001a7bcd30",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": true,
-        "id": "65fe2b3c045341001a7bcd30"
-      },
-      {
-        "name": "video_create.js",
-        "content": "function video_create() {\n  let options = { video: { facingMode: my.facingMode } };\n  my.video = createCapture(options);\n  my.video.size(my.vwidth, my.vheight);\n  my.video.hide();\n}\n\nfunction video_ready() {\n  return my.video.loadedmetadata && my.video.width > 0 && my.video.height > 0;\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3c634e1f001a4bcc32",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3c634e1f001a4bcc32"
-      },
-      {
-        "name": "fstorage_img_upload.js",
-        "content": "// https://firebase.google.com/docs/storage/web/upload-files?authuser=0#upload_from_a_blob_or_file\n\nfunction fstorage_img_upload() {\n  // console.log('fstorage_img_upload');\n  let count = my.count;\n  my.layer.elt.toBlob(\n    (blob) => {\n      fstorage_img_upload_blob(blob, count);\n    },\n    my.imageType,\n    my.imageQuality\n  );\n}\n\nfunction fstorage_img_upload_blob(blob, count) {\n  // console.log('fstorage_img_upload_blob', blob);\n  let { getStorage, ref, uploadBytes } = fireb_.fstorage;\n  // let path = `/-mo-1/${fireb_.auth.currentUser.uid}/000`;\n  my.imagePath = next_imagePath(count);\n  // ui_log('fstorage_img_upload_blob my.imagePath', my.imagePath);\n  const storageRef = ref(getStorage(), my.imagePath);\n\n  // 'file' comes from the Blob or File API\n  uploadBytes(storageRef, blob)\n    .then((snapshot) => {\n      // ui_log('snapshot.metadata.fullPath ' + snapshot.metadata.fullPath);\n      // console.log('snapshot', snapshot);\n      // console.log('Uploaded path', path);\n      ui_log('upload ', my.imagePath);\n    })\n    .catch((error) => {\n      // Handle any errors\n      ui_error('fstorage_img_upload_blob error', error);\n    });\n}\n\nfunction next_imagePath(count) {\n  // console.log('next_imagePath');\n  let str = (count + my.count_base + 1).toString().padStart(my.image_seq_pad, '0');\n  return `${my.dbase_rootPath}/${my.clipsName}/${str}${my.imagExt}`;\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3d79a1f0001acb3f36",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3d79a1f0001acb3f36"
-      },
-      {
-        "name": "fstorage_list.js",
-        "content": "// https://firebase.google.com/docs/storage/web/list-files#list_all_files\nfunction fstorage_listAll(bucket) {\n  // console.log('fstorage_listAll bucket', bucket);\n  let { getStorage, ref, listAll } = fireb_.fstorage;\n  bucket = bucket || my.dbase_rootPath;\n  console.log('fstorage_listAll bucket', bucket);\n  // Create a reference under which you want to list\n  const listRef = ref(getStorage(), bucket);\n  // console.log('listRef', listRef);\n  // Find all the prefixes and items.\n  listAll(listRef)\n    .then((res) => {\n      res.prefixes.forEach((folderRef) => {\n        // All the prefixes under listRef.\n        // You may call listAll() recursively on them.\n        // console.log('folderRef', folderRef);\n        // console.log('folderRef.path', folderRef.path); // Defined\n        // console.log('bucket', folderRef.bucket);\n        console.log('prefix fullPath', folderRef.fullPath);\n      });\n      res.items.forEach((itemRef) => {\n        // All the items under listRef.\n        // console.log('itemRef', itemRef);\n        console.log('item fullPath', itemRef.fullPath);\n      });\n    })\n    .catch((error) => {\n      // Uh-oh, an error occurred!\n      ui_error('fstorage_listAll error', error);\n    });\n}\n\n// https://firebase.google.com/docs/storage/web/list-files#paginate_list_results\nfunction fstorage_list(bucket) {\n  console.log('fstorage_list bucket', bucket);\n  let { getStorage, ref, list } = fireb_.fstorage;\n  bucket = bucket || my.dbase_rootPath;\n  // Create a reference under which you want to list\n  const listRef = ref(getStorage(), bucket);\n  console.log('listRef', listRef);\n  // Find all the prefixes and items.\n  list(listRef, { maxResults: 100 })\n    .then((res) => {\n      res.prefixes.forEach((folderRef) => {\n        // All the prefixes under listRef.\n        // You may call listAll() recursively on them.\n        // console.log('folderRef', folderRef);\n        // console.log('folderRef.path', folderRef.path); // Defined\n        // console.log('bucket', folderRef.bucket);\n        console.log('prefix fullPath', folderRef.fullPath);\n      });\n      res.items.forEach((itemRef) => {\n        // All the items under listRef.\n        // console.log('itemRef', itemRef);\n        console.log('item fullPath', itemRef.fullPath);\n      });\n    })\n    .catch((error) => {\n      // Uh-oh, an error occurred!\n      ui_error('fstorage_list error', error);\n    });\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3d79a1f0001acb3f38",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3d79a1f0001acb3f38"
-      },
-      {
-        "name": "draw_number.js",
-        "content": "function draw_number(num, opt) {\n  let { layer, right, bottom, frac, noid, captionSize } = opt;\n\n  if (!captionSize) captionSize = my.captionSize;\n  layer.textSize(captionSize);\n\n  let str = num.toString();\n  if (frac) {\n    str = convert_timeFrac(num, frac);\n  }\n  str = str.padStart(my.image_seq_pad, '0');\n\n  let tw = layer.textWidth(str);\n  let th = layer.textLeading();\n  let ta = layer.textAscent();\n\n  let x = 0;\n  let y = 0;\n  if (right) {\n    x = layer.width - tw;\n  } else {\n    tw = layer.width / 2;\n    if (!noid) {\n      str += ' ' + my.uid.substring(0, 7);\n    }\n  }\n  if (bottom) {\n    y = layer.height - th;\n  }\n  let colr = my.colors[my.colorIndex];\n  if (right) colr = 0;\n  layer.fill(colr);\n  layer.rect(x, y, tw, th);\n  layer.fill(255);\n  layer.text(str, x, y + ta);\n}\n\nfunction convert_timeFrac(num, frac) {\n  let sec = int(num);\n  let fsec = int((num - sec) * 100);\n  let min = int(sec / 60);\n  sec -= min * 60;\n  let hours = int(min / 60);\n  min -= hours * 60;\n  // console.log('hours', hours, 'min', min, 'sec', sec, 'num', num);\n  let str = '.' + fsec.toString().padStart(2, 0);\n  if (sec != 0 || min != 0 || hours != 0) {\n    str = sec.toString().padStart(2, '0') + str;\n  }\n  if (min != 0 || hours != 0) {\n    str = min.toString().padStart(2, '0') + ':' + str;\n  }\n  if (hours != 0) {\n    str = hours.toString().padStart(2, '0') + ':' + str;\n  }\n  return str;\n}\n\nfunction draw_dateISOString(layer) {\n  let today = new Date();\n  let str = today.toISOString();\n\n  let capSize = my.captionSize;\n  layer.textSize(capSize);\n\n  let tw = layer.textWidth(str);\n  let th = layer.textLeading();\n  let ta = layer.textAscent();\n\n  let x = layer.width - tw;\n  let y = layer.height - th;\n\n  // let colr = my.colors[my.colorIndex];\n  layer.fill(0);\n  layer.rect(x, y, tw, th);\n  layer.fill(255);\n  layer.text(str, x, y + ta);\n}\n\nfunction draw_millis(layer) {\n  let fmt = { layer, right: 1, small: 1, frac: 2 };\n  draw_number(millis() / 1000, fmt);\n}\n\n// !!@ Always black on transparent\n// function draw_count() {\n//   let fmt = { layer: my.canvas, bottom: 1, noid: 1, captionSize: height / 30 };\n//   draw_number(my.count, fmt);\n//   // textSize(100);\n// }\n\n// !!@ fill and rect not drawn\n//  layer = my.canvas\n// !!@ layer vs. canvas inconsistency\n\n// Draw frame count or file name of last download to canvas\n//\nfunction draw_count() {\n  // let layer = my.canvas;\n  let layer = p5.instance;\n  let str = frame_count_str();\n  let captionSize = height / my.captionScale;\n  layer.textSize(captionSize);\n  let tw = layer.textWidth(str);\n  let th = layer.textLeading();\n  let ta = layer.textAscent();\n  // Draw center top\n  // let x = 0;\n  let x = width / 2 - tw / 2;\n  // let y = height - th;\n  let y = 0;\n  layer.strokeWeight(0);\n  if (my.record) {\n    layer.fill(255, 0, 0);\n  } else {\n    layer.fill(0);\n  }\n  layer.rect(x, y, tw, th);\n  layer.fill(255);\n  layer.text(str, x, y + ta);\n}\n\n// function draw_count() {\n//   let str = frame_count_str();\n//   let captionSize = height / my.captionScale;\n//   textSize(captionSize);\n//   let tw = textWidth(str);\n//   let th = textLeading();\n//   let ta = textAscent();\n//   // let x = 0;\n//   let x = width / 2 - tw / 2;\n//   // let y = height - th;\n//   let y = 0;\n//   fill(0);\n//   rect(x, y, tw, th);\n//   fill(255);\n//   text(str, x, y + ta);\n// }\n\nfunction frame_count_str() {\n  let num = my.count + my.count_base + 1;\n  let str = num.toString();\n  str = str.padStart(my.image_seq_pad, '0');\n  // Select the file name from the last download\n  if (my.replay) {\n    if (my.lastDownloadPath) {\n      let parts = my.lastDownloadPath.split('/');\n      if (parts.length > 0) {\n        str = parts[parts.length - 1];\n      }\n    } else {\n      str = '';\n    }\n  }\n  return str;\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3d79a1f0001acb3f3a",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3d79a1f0001acb3f3a"
-      },
-      {
-        "name": "fstorage_img_download.js",
-        "content": "function fstorage_img_download() {\n  // console.log('fstorage_img_download ');\n  let path = next_imagePath(my.count);\n  // my.lastDownloadPath = null;\n  // ui_log('fstorage_img_download next_imagePath ' + path);\n  let { getStorage, ref, getDownloadURL } = fireb_.fstorage;\n  getDownloadURL(ref(getStorage(), path))\n    .then((url) => {\n      // `url` is the download URL for '1.jpeg'\n      // ui_log('fstorage_img_download url', url);\n\n      // This can be downloaded directly:\n      const xhr = new XMLHttpRequest();\n      xhr.responseType = 'blob';\n      xhr.onload = (event) => {\n        const blob = xhr.response;\n        // ui_log('fstorage_img_download blob ' + blob);\n        renderBlobToCanvas(blob);\n        my.lastDownloadPath = path;\n        if (my.img_download_log) {\n          ui_log('download ' + path);\n        }\n      };\n      xhr.open('GET', url);\n      xhr.send();\n\n      // Or inserted into an <img> element\n      // let img = createImg(url, 'img test');\n      // img.setAttribute('src', url);\n    })\n    .catch((error) => {\n      // Handle any errors\n      ui_error('fstorage_getDownloadURL error', error);\n      my.replayLayer.fill(0);\n      my.replayLayer.rect(0, 0, width, height);\n    });\n}\n\n// https://stackoverflow.com/questions/38004917/how-to-render-a-blob-on-a-canvas-element\n// HTMLCanvasElement.prototype.renderImage = function(blob) {\n\nfunction renderBlobToCanvas(blob) {\n  // let elt = my.canvas.elt;\n  // let ctx = elt.getContext('2d');\n  // let ctx = my.canvas.drawingContext;\n  let ctx = my.replayLayer.drawingContext;\n  var img = new Image();\n  img.onload = function () {\n    ctx.drawImage(img, 0, 0, width, height);\n    URL.revokeObjectURL(img.src);\n  };\n  img.src = URL.createObjectURL(blob);\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3d79a1f0001acb3f3c",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3d79a1f0001acb3f3c"
-      },
-      {
-        "name": "ui_init.js",
-        "content": "//\n// my.canvas is created before ui_init call\n//\nfunction ui_init() {\n  ui_init_controls();\n\n  ui_init_update();\n\n  // Move the canvas below all the ui elements\n  let belt = document.querySelector('body');\n  let melt = document.querySelector('main');\n  belt.insertBefore(melt, null);\n}\n\nfunction ui_init_controls() {\n  if (!my.replayName) {\n    video_create();\n  }\n\n  my.verBtn = createButton(my.version.substring(1));\n  my.verBtn.mousePressed(function () {\n    location.reload();\n  });\n\n  create_clipsName_input();\n\n  createElement('br');\n\n  my.soundChk = createCheckbox('Sound', my.soundEnable);\n  my.soundChk.style('display:inline');\n  my.soundChk.changed(function () {\n    my.soundEnable = this.checked();\n    sound_state_update();\n  });\n\n  my.recordChk = createCheckbox('Record', my.record);\n  my.recordChk.style('display:inline');\n  my.recordChk.changed(function () {\n    my.record = this.checked();\n    record_state_update(my.record);\n    sound_state_update();\n  });\n\n  my.replayChk = createCheckbox('Replay', my.replay);\n  my.replayChk.style('display:inline');\n  my.replayChk.changed(function () {\n    my.replay = this.checked();\n    init_counts();\n  });\n\n  createElement('br');\n\n  create_count_selection();\n\n  create_resolution_selection();\n\n  createButton('Color+').mousePressed(function () {\n    my.colorIndex = (my.colorIndex + 1) % my.colors.length;\n  });\n\n  createElement('br');\n\n  if (!my.replayName) {\n    my.faceChk = createCheckbox('Face', my.face);\n    my.faceChk.style('display:inline');\n    my.faceChk.changed(faceChk_action);\n  }\n\n  my.videoChk = createCheckbox('Video', my.showVideo);\n  my.videoChk.style('display:inline');\n  my.videoChk.changed(function () {\n    my.showVideo = this.checked();\n  });\n\n  my.fcountChk = createCheckbox('Count', my.fcount);\n  my.fcountChk.style('display:inline');\n  my.fcountChk.changed(function () {\n    my.fcount = this.checked();\n  });\n\n  createButton('<-1').mousePressed(function () {\n    adjust_count(-1);\n    update_interval();\n  });\n\n  createButton('1+>').mousePressed(function () {\n    adjust_count(1);\n    update_interval();\n  });\n\n  createElement('br');\n}\n\nfunction create_clipsName_input() {\n  let elm = createInput(my.clipsName).input(function () {\n    my.clipsName = this.value();\n    clipsName_update();\n  });\n}\n\nfunction create_count_selection() {\n  let sel = createSelect();\n  sel.option('Count: 3', 3);\n  for (let index = 5; index <= 100; index += index) {\n    sel.option('Count: ' + index, index);\n  }\n  sel.option('Count: 99', 99);\n  sel.selected(my.count_max);\n  sel.changed(function () {\n    let nval = parseFloat(this.value());\n    my.count_max = nval;\n  });\n}\n\nfunction create_resolution_selection() {\n  let sel = createSelect();\n  for (let index = 1; index <= 8; index++) {\n    sel.option('Rez: ' + index, index);\n  }\n  sel.selected(my.rezScale);\n  sel.changed(function () {\n    let nval = parseFloat(this.value());\n    my.rezScale = nval;\n    init_layer();\n    my.video.remove();\n    video_create();\n  });\n}\n\nfunction faceChk_action() {\n  my.face = this.checked();\n  my.facingMode = my.face ? 'user' : 'environment';\n  console.log('my.facingMode', my.facingMode);\n  my.video.remove();\n  video_create();\n}\n\nfunction ui_init_update() {\n  ui_init_update_info();\n  my.ui_last = ui_break('break1');\n}\n\nfunction ui_init_update_info() {\n  // ui_span('updateCount', ' uc:' + my.updateCount);\n  // ui_span('nitems', ' ni:' + my.nitems);\n  if (my.guestName) {\n    ui_span('guestName', ' guestName:' + my.guestName);\n  }\n  if (my.replayName) {\n    ui_span('replayName', ' replayName:' + my.replayName);\n  }\n  if (my.uid) {\n    ui_span('uid', ' uid:' + my.uid);\n  }\n}\n\nfunction ui_break(id) {\n  let elm = select('#' + id);\n  if (!elm) {\n    elm = createElement('br').id(id);\n  }\n  return elm;\n}\n\n// !!@ Move to Lib\nfunction ui_span(id, html) {\n  let span = select('#' + id);\n  if (document.fullscreenElement) {\n    if (span) {\n      span.remove();\n    }\n    return;\n  }\n  if (!span) {\n    span = createSpan().id(id);\n  }\n  span.html(html);\n  return span;\n}\n\n// !!@ Move to Lib\nfunction ui_log(...args) {\n  // if (! my.debugLog) return\n  console.log(...args);\n  if (!my.logLines) {\n    my.logLines = [];\n    my.logSummary_div = createDiv('');\n  }\n  my.logLines.push(args.join(' '));\n  if (my.logLines.length > my.logLinesMax) {\n    my.logLines.splice(0, 1);\n  }\n  my.logSummary_div.html(my.logLines.join('<br/>'));\n}\n\n// !!@ Move to Lib\nfunction ui_error(...args) {\n  ui_log(...args);\n}\n\n// createButton('<-100').mousePressed(function () {\n//   my.count_base -= 100;\n//   if (my.count_base < 0) {\n//     my.count_base = 0;\n//   }\n//   init_counts();\n// });\n\n// createButton('100+>').mousePressed(function () {\n//   my.count_base += 100;\n//   init_counts();\n// });\n\n// createButton('SignIn').mousePressed(function () {\n//   fireb_signIn();\n// });\n\n// createButton('Reset count').mousePressed(function () {\n//   my.count = my.count_base;\n// });\n\n// createButton('Upload').mousePressed(function () {\n//   fstorage_img_upload();\n// });\n\n// my.reloadBtn = createButton('Reload');\n// my.reloadBtn.mousePressed(function () {\n//   location.reload();\n// });\n\n// https://www.htmlsymbols.xyz/unicode/U+FF0B\n// Fullwidth plus sign\n\n// https://www.ssec.wisc.edu/~tomw/java/unicode.html\n\n// function init_replay() {\n//   // console.log('init_replay', my.replay);\n//   my.draw_func = my.replay ? draw_replay : draw_guest;\n// }\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3d79a1f0001acb3f46",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3d79a1f0001acb3f46"
-      },
-      {
-        "name": "my_init.js",
-        "content": "function my_init() {\n  //\n  pixelDensity(1);\n\n  // my.dbase_rootPath\n  // my.dbase_rootPath = '-mo-storage-video-@w-';\n\n  my.dbase_rootPath = '-mo-storage-dashboard-@w-';\n  console.log('my.dbase_rootPath', my.dbase_rootPath);\n\n  init_clipsName();\n\n  if (my.png) {\n    // png image type preserves white background\n    my.imageType = 'image/png';\n    my.imagExt = '.png';\n  } else {\n    // jpeg give black background\n    my.imageType = 'image/jpeg';\n    my.imagExt = '.jpg';\n  }\n  if (windowWidth < 600) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  if (my.vFlip) {\n    let temp = my.width;\n    my.width = my.height;\n    my.height = temp;\n  }\n\n  // image are store in sequence\n  // {my.dbase_rootPath}/clips/${nums}${my.imagExt}\n  my.image_seq_pad = 3;\n\n  init_layer();\n\n  my.next_secs = millis() / 1000 + my.interval;\n\n  init_counts();\n\n  if (my.soundEnable) {\n    sound_init();\n  }\n\n  my.img_download_log = 0;\n}\n\nfunction init_clipsName() {\n  let today = new Date();\n  let str = today.toISOString();\n  clipsName_restore();\n  my.clipsName += '/' + str.substring(0, 10);\n}\n\nfunction clipsName_restore() {\n  let nclipsName = localStorage.getItem('clipsName');\n  console.log('clipsName_restore nclipsName', nclipsName);\n  if (!nclipsName) {\n    return;\n  }\n  my.clipsName = nclipsName;\n}\n\nfunction clipsName_update() {\n  console.log('clipsName_update my.clipsName', my.clipsName);\n  let parts = my.clipsName.split('/');\n  localStorage.setItem('clipsName', parts[0]);\n}\n\nfunction init_layer() {\n  let w = int(my.width / my.rezScale);\n  let h = int(my.height / my.rezScale);\n  my.layer = createGraphics(w, h);\n  my.vwidth = w;\n  my.vheight = h;\n  my.captionSize = my.layer.height / my.captionScale;\n  my.layer.noStroke();\n\n  my.replayLayer = createGraphics(my.width, my.height);\n}\n\nfunction init_counts() {\n  my.count = 0;\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3d79a1f0001acb3f48",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3d79a1f0001acb3f48"
-      },
-      {
-        "name": "sound_draw.js",
-        "content": "function sound_draw_init() {\n  my.volhistory = [];\n  my.lastMax = 0;\n}\n\nfunction sound_draw() {\n  let vol;\n  if (!my.soundEnable) {\n    return;\n  }\n  if (my.amp) {\n    vol = my.amp.getLevel();\n  } else if (my.mic) {\n    vol = my.mic.getLevel();\n  } else {\n    return;\n  }\n  // console.log('sound_draw vol', vol);\n  my.volhistory.push(vol);\n  strokeWeight(2);\n  let colr = my.colors[my.colorIndex];\n  stroke(colr);\n  noFill();\n  beginShape();\n  let nowMax = 0;\n  let nowMin = 1;\n  let xline = frameCount % width;\n  let yline = height;\n  let nv = my.volhistory.length;\n  let xoffset = 0;\n  if (nv < width) {\n    // sound wave starts from right edge\n    xoffset = width - nv;\n  }\n  for (let i = 0; i < nv; i++) {\n    let val = my.volhistory[i];\n    let y = map(val, 0, my.lastMax, height, 0);\n    if (Number.isNaN(y)) {\n      // console.log('i', i, 'y', y, 'val', val, 'my.lastMax', my.lastMax);\n      y = 0;\n    }\n    vertex(xoffset + i, y);\n    if (val > my.lastMax) {\n      my.lastMax = val;\n    }\n    if (val > nowMax) {\n      nowMax = val;\n    }\n    // Skip of 0 index to avoid startup zero amplitude\n    if (val < nowMin && i > 0) {\n      nowMin = val;\n      xline = i;\n      yline = y;\n      // console.log('xline', xline, 'yline', yline);\n    }\n  }\n  my.lastMax = nowMax;\n  endShape();\n  if (my.volhistory.length > width) {\n    my.volhistory.splice(0, 1);\n  }\n  let bcolr = my.colors[(my.colorIndex + 1) % my.colors.length];\n  stroke(bcolr);\n  stroke(255, 255, 0);\n  line(0, yline, width, yline);\n  line(xline, yline, xline, height);\n  // console.log('xline', xline, 'yline', yline);\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/pwLiHkndo\n// mic graph\n// graph the volume level of the mic\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3d79a1f0001acb3f4c",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3d79a1f0001acb3f4c"
-      },
-      {
-        "name": "record_state.js",
-        "content": "function record_state_update(newState) {\n  init_counts();\n  my.record_preroll = newState;\n  let now = millis() / 1000;\n  my.recordCountDown.next_secs = now + my.recordCountDown.max;\n  if (newState) {\n    my.replay = 0;\n    my.replayChk.checked(0);\n  } else {\n    my.recordCountDown.next_secs = 0;\n  }\n}\n\nfunction record_state_track() {\n  //\n  let m = height * 0.08;\n  strokeWeight(m);\n  if (my.record && !my.record_preroll) {\n    stroke(255, 0, 0);\n    noFill();\n    rect(0, 0, width, height);\n  }\n  if (!my.record_preroll) {\n    return;\n  }\n  let now = millis() / 1000;\n  if (now > my.recordCountDown.next_secs) {\n    my.record_preroll = 0;\n    return;\n  }\n  let cnt = my.recordCountDown.next_secs - now;\n  cnt = int(cnt + 1);\n  let str = cnt + '';\n  let h = width * 1.4;\n  textSize(h);\n  let w = textSize(str);\n  // console.log('w', w);\n  // let x = (width - w) * 1;\n  let x = width * 0.1;\n  let y = height * 0.8;\n  strokeWeight(m * 0.025);\n  stroke(255, 0, 0);\n  fill(255, 0, 0);\n  text(cnt, x, y);\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3d79a1f0001acb3f4a",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3d79a1f0001acb3f4a"
-      },
-      {
-        "name": "sound.js",
-        "content": "function sound_state_update() {\n  if (my.soundEnable) {\n    sound_init();\n  } else {\n    sound_playback_stop();\n  }\n}\n\nfunction sound_init() {\n  sound_AudioContext_resume();\n  // create an audio in\n  my.mic = new p5.AudioIn();\n  // users must manually enable their browser microphone for recording to work properly!\n  my.mic.start();\n  // create a sound recorder\n  my.recorder = new p5.SoundRecorder();\n  // connect the mic to the recorder\n  my.recorder.setInput(my.mic);\n  // create an empty sound file\n  // that we will use to playback the recording\n  my.soundFile = new p5.SoundFile();\n  my.sound_record_started = 0;\n\n  sound_draw_init();\n}\n\nfunction sound_record_start() {\n  console.log('sound_record_start');\n  if (my.sound_record_started) {\n    return;\n  }\n  my.sound_record_started = 1;\n  // Tell recorder to record to a p5.SoundFile\n  // which we will use for playback\n  my.recorder.record(my.soundFile);\n  // my.amp = new p5.Amplitude();\n  // my.amp.setInput(my.soundFile);\n}\n\nfunction sound_AudioContext_resume() {\n  let aSoundContext = getAudioContext();\n  // console.log('aSoundContext.state', aSoundContext.state);\n  if (aSoundContext.state !== 'running') {\n    aSoundContext.resume();\n  }\n}\n\nfunction sound_record_stop() {\n  console.log('sound_record_stop');\n  my.sound_record_started = 0;\n  // stop recorder, and send the result to soundFile\n  my.recorder.stop();\n  // Prepare for upload\n  my.fstorage_sound_upload_started = 1;\n  my.fstorage_sound_upload_completed = 0;\n  my.sound_downFile = null;\n\n  // Give record a sec before asking for blob\n  setTimeout(sound_getBlob, 1 * 1000);\n}\n\nfunction sound_playback_start() {\n  // console.log('sound_playback_start', my.sound_downFile ? 'soundFile' : '-');\n  // skip if soundfile is already playing\n  if (my.sound_downFile) {\n    return;\n  }\n  // Wait for upload to complete\n  if (\n    my.fstorage_sound_upload_started && //\n    !my.fstorage_sound_upload_completed\n  ) {\n    return;\n  }\n  // download the sound\n  fstorage_sound_download();\n}\n\nfunction sound_playback_stop() {\n  // console.log('sound_playback_stop', my.sound_downFile ? 'soundFile' : '-');\n  if (!my.sound_downFile) {\n    return;\n  }\n  ui_log('sound_playback_stop', my.sound_downFile ? 'soundFile' : '-');\n  // stop the sound and reset vars\n  my.sound_downFile.stop();\n  my.sound_downFile = null;\n  my.sound_download_blob = null;\n  my.amp = null;\n}\n\nfunction sound_downloaded() {\n  my.sound_downFile.play();\n  my.sound_downFile.loop();\n  if (!my.amp) {\n    my.amp = new p5.Amplitude();\n  }\n  my.amp.setInput(my.sound_downFile);\n\n  sound_draw_init();\n}\n\n// https://p5js.org/reference/#/p5.SoundFile\n// new p5.SoundFile(path, [successCallback], [errorCallback], [whileLoadingCallback])\n\n// https://stackoverflow.com/questions/34934862/how-to-replay-an-audio-blob-in-javascript\n// const reader = new FileReader();\n// reader.onload = function(e) {\n//     const srcUrl = e.target.result;\n//     audioNode.src = srcUrl;\n// };\n// reader.readAsDataURL(blob);\n\n// https://p5js.org/reference/#/p5/getAudioContext\n// function draw() {\n//   background(255);\n//   textAlign(CENTER);\n\n//   if (getAudioContext().state !== 'running') {\n//     text('click to start audio', width/2, height/2);\n//   } else {\n//     text('audio is enabled', width/2, height/2);\n//   }\n// }\n// function touchStarted() {\n//   if (getAudioContext().state !== 'running') {\n//     getAudioContext().resume();\n//   }\n//   var synth = new p5.MonoSynth();\n//   synth.play('A4', 0.5, 0, 0.2);\n// }\n\n// startAudioContext\n// userStartAudio\n\n// https://p5js.org/reference/#/p5/userStartAudio\n\n// let a_audioCtx = getAudioContext();\n// a_audioCtx.resume();\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fe2b3d79a1f0001acb3f56",
-        "updatedAt": "2024-03-23T01:09:43.570Z",
-        "createdAt": "2024-03-23T01:09:43.570Z",
-        "isSelectedFile": false,
-        "id": "65fe2b3d79a1f0001acb3f56"
-      }
-    ],
-    "createdAt": "2024-03-23T01:01:23.831Z",
-    "id": "Osz28nOS9"
   },
   {
     "name": "Rainbow Canvas",
