@@ -25,7 +25,8 @@ function setup() {
 
 function draw() {
   // background(220);
-  fill("black");
+  // fill("black");
+    fill([187, 165, 61]);
   rect(0, 0, xpos, ylen);
   fill("red");
   rect(xpos % width, 0, xlen, ylen);
