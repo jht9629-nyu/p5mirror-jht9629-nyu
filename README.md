@@ -16,6 +16,23 @@ bin/mirror.sh --user jht9629-nyu --update
 
 # Notes
 
+## How ? Quick start
+
+```
+# Terminal commands to get started
+
+# Install nodejs
+open https://nodejs.org/en/download
+
+# Fork this repo and name it p5mirror-p5name
+# where p5name is our editor.p5js user name
+# run this bash script in the root of your repo
+
+bin/mirror.sh --user p5name
+```
+
+## Why ?
+
 mirror your editor.p5js sketches into a git repo
 
 - Where are my editor.p5js sketches and collections ?
@@ -25,6 +42,23 @@ mirror your editor.p5js sketches into a git repo
   - command line scripts download your p5 sketches with associated media files
   - mark down files generated to list sketches and collections
   - index file generated for your projects for github pages
+
+## Listing of editor.p5js projects
+
+Generated listing of editor.p5js projects
+
+- [p5projects-index](./p5projects-index.md)
+
+<!-- ## github pages setup
+
+replace your-github in this link
+
+- [github pages p5projects-index](https://your-github.github.io/p5mirror-your-github/p5projects-index.html)
+ -->
+
+## Required apps
+
+- https://nodejs.org/en/download
 
 ## Recommended apps
 
@@ -38,8 +72,6 @@ mirror your editor.p5js sketches into a git repo
 
 - https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
-- https://marketplace.visualstudio.com/items?itemName=Swimm.swimm
-
 ## Usage
 
 ```
@@ -51,31 +83,33 @@ mirror your editor.p5js sketches into a git repo
 # in p5mirror-p5name folder, run bin/mirror.sh to
 # download p5js scripts for a user account
 #   and create markdown listing files
-
+#   only projects updated since last mirror are downloaded
+#
 bin/mirror.sh --user p5name
+
+# full update, download all projects
+#
+bin/mirror.sh --user p5name --full
+
+# run in verbose mode to show details of steps for debugging
+#
+bin/mirror.sh --user p5name --verbose
+
 
 ```
 
-## details
+## mirror script details
 
 - See bin/mirror.sh for details steps
 - These steps can be run independantly
 
-# github pages for this repo
-
-[https://molab-itp.github.io/p5mirror/](https://molab-itp.github.io/p5mirror/)
-
-- replace with you repo github.io address
-
-# search p5mirror on github for other repos
+## search p5mirror on github for other repos
 
 [https://github.com/search?q=p5mirror&type=repositories](https://github.com/search?q=p5mirror&type=repositories)
 
 ## Generated files
 
-- [p5projects-index](./p5projects-index.md)
-
-### Listings
+All generated files are stored in the downloads directory
 
 - [downloads/gen/sketches_recent.md](./downloads/gen/sketches_recent.md)
 - [downloads/gen/sketches.md](./downloads/gen/sketches.md)
