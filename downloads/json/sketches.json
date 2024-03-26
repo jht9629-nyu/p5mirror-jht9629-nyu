@@ -7603,20 +7603,20 @@
         ],
         "fileType": "folder",
         "_id": "65b918eee0359f28373cec35",
-        "createdAt": "2024-03-26T14:46:25.135Z",
-        "updatedAt": "2024-03-26T14:46:25.135Z",
+        "createdAt": "2024-03-26T19:06:00.622Z",
+        "updatedAt": "2024-03-26T19:06:00.622Z",
         "isSelectedFile": false,
         "id": "65b918eee0359f28373cec35"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti\n// ims black-n white-1 bounce\n\nlet my = {};\n\nfunction setup() {\n  my.width = 400;\n  my.height = 400;\n  my.xpos = 0;\n  my.ypos = 0;\n  my.xspeed = 1;\n  my.yspeed = 1;\n  // my.xlen = 0;\n  // my.ylen = 0;\n  my.debug = 1;\n  // my.fullScreenBtn = 0;\n  my.startTime = 0;\n  my.changeTime = 1.0;\n\n  if (!my.debug) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  createCanvas(my.width, my.height);\n  noStroke();\n\n  my.fullScreenBtn = createButton(\"Full Screen\");\n  my.fullScreenBtn.mousePressed(full_screen_action);\n  my.fullScreenBtn.style(\"font-size:42px\");\n\n  my.startTime = millis() / 1000.0;\n\n  new_pos();\n\n  // init_dim();\n}\n\nfunction draw() {\n  background(0);\n  // strokeWeight(0);\n  // fill(\"black\");\n  // rect(0, 0, width, height);\n  check_time();\n  \n  strokeWeight(1);\n  stroke(255);\n\n  line(0, my.ypos, width, my.ypos);\n\n  line(my.xpos, 0, my.xpos, height);\n\n  my.ypos += my.yspeed;\n  if (my.ypos > height || my.ypos < 0) {\n    my.yspeed *= -1;\n  }\n  my.xpos += my.xspeed;\n  if (my.xpos > width || my.xpos < 0) {\n    my.xspeed *= -1;\n  }\n}\n\nfunction new_pos() {\n  my.xpos = random(0, width);\n  my.ypos = random(0, height);\n}\n\nfunction check_time() {\n  let now = millis() / 1000;\n  if (now - my.startTime > my.changeTime) {\n    my.startTime = now;\n    new_pos();\n  }\n}\n\n// function init_dim() {\n//   xlen = width / 3;\n//   ylen = height;\n// }\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  my.fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  // init_dim();\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P\n// ims black-n white-1\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti\n// ims black-n white-1 bounce \n\nlet my = {};\n\nfunction setup() {\n  my.width = 400;\n  my.height = 400;\n  my.xpos = 0;\n  my.ypos = 0;\n  my.xspeed = 1;\n  my.yspeed = 1;\n  // my.xlen = 0;\n  // my.ylen = 0;\n  my.debug = 1;\n  // my.fullScreenBtn = 0;\n  my.startTime = 0;\n  my.changeTime = 1.0;\n\n  if (!my.debug) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  createCanvas(my.width, my.height);\n  noStroke();\n\n  my.fullScreenBtn = createButton(\"Full Screen\");\n  my.fullScreenBtn.mousePressed(full_screen_action);\n  my.fullScreenBtn.style(\"font-size:42px\");\n\n  my.startTime = millis() / 1000.0;\n\n  new_pos();\n\n  // init_dim();\n}\n\nfunction draw() {\n  background(0);\n  // strokeWeight(0);\n  // fill(\"black\");\n  // rect(0, 0, width, height);\n  check_time();\n  \n  strokeWeight(1);\n  stroke(255);\n\n  line(0, my.ypos, width, my.ypos);\n\n  line(my.xpos, 0, my.xpos, height);\n\n  my.ypos += my.yspeed;\n  if (my.ypos > height || my.ypos < 0) {\n    my.yspeed *= -1;\n  }\n  my.xpos += my.xspeed;\n  if (my.xpos > width || my.xpos < 0) {\n    my.xspeed *= -1;\n  }\n}\n\nfunction new_pos() {\n  my.xpos = random(0, width);\n  my.ypos = random(0, height);\n}\n\nfunction check_time() {\n  let now = millis() / 1000;\n  if (now - my.startTime > my.changeTime) {\n    my.startTime = now;\n    new_pos();\n  }\n}\n\n// function init_dim() {\n//   xlen = width / 3;\n//   ylen = height;\n// }\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  my.fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  // init_dim();\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P\n// ims black-n white-1\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n",
         "children": [],
         "fileType": "file",
         "_id": "65b918eee0359f28373cec37",
         "isSelectedFile": true,
-        "createdAt": "2024-03-26T14:46:25.135Z",
-        "updatedAt": "2024-03-26T14:46:25.135Z",
+        "createdAt": "2024-03-26T19:06:00.622Z",
+        "updatedAt": "2024-03-26T19:06:00.622Z",
         "id": "65b918eee0359f28373cec37"
       },
       {
@@ -7625,8 +7625,8 @@
         "children": [],
         "fileType": "file",
         "_id": "65b918eee0359f28373cec36",
-        "createdAt": "2024-03-26T14:46:25.135Z",
-        "updatedAt": "2024-03-26T14:46:25.135Z",
+        "createdAt": "2024-03-26T19:06:00.622Z",
+        "updatedAt": "2024-03-26T19:06:00.622Z",
         "isSelectedFile": false,
         "id": "65b918eee0359f28373cec36"
       },
@@ -7636,14 +7636,14 @@
         "children": [],
         "fileType": "file",
         "_id": "65b918eee0359f28373cec38",
-        "createdAt": "2024-03-26T14:46:25.135Z",
-        "updatedAt": "2024-03-26T14:46:25.135Z",
+        "createdAt": "2024-03-26T19:06:00.622Z",
+        "updatedAt": "2024-03-26T19:06:00.622Z",
         "isSelectedFile": false,
         "id": "65b918eee0359f28373cec38"
       }
     ],
     "createdAt": "2024-01-30T15:42:38.685Z",
-    "updatedAt": "2024-03-26T14:46:25.135Z",
+    "updatedAt": "2024-03-26T19:06:00.622Z",
     "id": "Mpgun-Kti"
   },
   {

@@ -123,7 +123,7 @@
 [images shuffle](https://editor.p5js.org/jht9629-nyu/sketches/Sgh9j2tCz)<!-- 2023-07-30T09:07:56.573Z -->  
 [images shuffle iOS](https://editor.p5js.org/jht9629-nyu/sketches/6GTcx_Ia6)<!-- 2023-07-30T09:05:57.067Z -->  
 [IMS - Truchet Vamoss copy](https://editor.p5js.org/jht9629-nyu/sketches/G4K2yaPnz)<!-- 2023-04-06T18:00:10.822Z -->  
-[ims black-n white-1 bounce](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)<!-- 2024-03-26T14:46:25.135Z -->  
+[ims black-n white-1 bounce](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)<!-- 2024-03-26T19:06:00.622Z -->  
 [ims black-n white-1 jump](https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P)<!-- 2024-01-30T15:42:32.105Z -->  
 [ims-03-jht truchet tiles pause copy](https://editor.p5js.org/jht9629-nyu/sketches/CYMdD77ySc)<!-- 2023-04-06T17:49:28.916Z -->  
 [ims01-jht](https://editor.p5js.org/jht9629-nyu/sketches/8N3rb3TMD)<!-- 2024-03-12T15:41:39.534Z -->  

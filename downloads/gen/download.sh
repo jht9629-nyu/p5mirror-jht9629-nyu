@@ -1,0 +1,2 @@
+echo download 1 "ims black-n white-1 bounce-Mpgun-Kti"
+curl -s https://editor.p5js.org/editor/projects/Mpgun-Kti/zip -o "/Users/jht2/Documents/projects/2024/p5mo/p5mirror-jht9629-nyu/downloads/zips/ims black-n white-1 bounce-Mpgun-Kti.zip"

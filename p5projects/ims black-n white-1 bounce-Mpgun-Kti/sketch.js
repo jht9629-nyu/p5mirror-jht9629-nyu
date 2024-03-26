@@ -1,5 +1,5 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti
-// ims black-n white-1 bounce
+// ims black-n white-1 bounce 
 
 let my = {};
 
