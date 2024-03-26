@@ -1,4 +1,4 @@
-# [p5mirror](https://github.com/jht9629-nyu/p5mirror-jht9629-nyu)
+# [p5mirror-jht9629-nyu repo](https://github.com/jht9629-nyu/p5mirror-jht9629-nyu)
 
 replace your-github in this link
 
