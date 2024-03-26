@@ -8,14 +8,14 @@ function setup() {
   my.height = 400;
   my.xpos = 0;
   my.ypos = 0;
-  my.xspeed = 0.1;
-  my.yspeed = 0.1;
+  my.xspeed = 1;
+  my.yspeed = 1;
   // my.xlen = 0;
   // my.ylen = 0;
   my.debug = 1;
   // my.fullScreenBtn = 0;
   my.startTime = 0;
-  my.changeTime = 5.0;
+  my.changeTime = 1.0;
 
   if (!my.debug) {
     my.width = windowWidth;
@@ -40,7 +40,8 @@ function draw() {
   // strokeWeight(0);
   // fill("black");
   // rect(0, 0, width, height);
-
+  check_time();
+  
   strokeWeight(1);
   stroke(255);
 

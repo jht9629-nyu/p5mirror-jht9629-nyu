@@ -46,10 +46,9 @@ function mouseClicked() {
 
   if (mouseX < w) {
     s1 = (s1 + 1) % 3;
-  } else if ( mouseX < w + w) {
+  } else if (mouseX < w + w) {
     s2 = (s2 + 1) % 3;
-  } else 
-  {
+  } else {
     s3 = (s3 + 1) % 3;
   }
   if (s1 == s2 && s2 == s3) {

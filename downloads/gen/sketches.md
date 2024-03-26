@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-278 sketches  
+280 sketches  
 [03-jht-hatviz](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)<!-- 2023-04-09T01:41:50.719Z -->  
 [1.2 draw\_shapes\_ui](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)<!-- 2023-09-16T22:25:20.883Z -->  
 [10PRINT copy](https://editor.p5js.org/jht9629-nyu/sketches/-QATBkoGr)<!-- 2023-10-02T21:30:31.747Z -->  
@@ -123,13 +123,15 @@
 [images shuffle](https://editor.p5js.org/jht9629-nyu/sketches/Sgh9j2tCz)<!-- 2023-07-30T09:07:56.573Z -->  
 [images shuffle iOS](https://editor.p5js.org/jht9629-nyu/sketches/6GTcx_Ia6)<!-- 2023-07-30T09:05:57.067Z -->  
 [IMS - Truchet Vamoss copy](https://editor.p5js.org/jht9629-nyu/sketches/G4K2yaPnz)<!-- 2023-04-06T18:00:10.822Z -->  
-[ims black-n white-1 bounce](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)<!-- 2024-01-30T17:21:04.245Z -->  
+[ims black-n white-1 bounce](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)<!-- 2024-03-26T14:46:25.135Z -->  
 [ims black-n white-1 jump](https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P)<!-- 2024-01-30T15:42:32.105Z -->  
 [ims-03-jht truchet tiles pause copy](https://editor.p5js.org/jht9629-nyu/sketches/CYMdD77ySc)<!-- 2023-04-06T17:49:28.916Z -->  
 [ims01-jht](https://editor.p5js.org/jht9629-nyu/sketches/8N3rb3TMD)<!-- 2024-03-12T15:41:39.534Z -->  
-[ims03-jht scrolling color bars](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)<!-- 2024-03-18T05:40:05.254Z -->  
+[ims03-jht scrolling color bars](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)<!-- 2024-03-26T17:55:32.073Z -->  
 [ims03-jht scrolling color bars v2](https://editor.p5js.org/jht9629-nyu/sketches/zV3BsHs7X)<!-- 2024-02-25T18:36:18.451Z -->  
 [ims03-jht scrolling color time](https://editor.p5js.org/jht9629-nyu/sketches/ZGUqiovgG)<!-- 2023-04-13T14:07:09.470Z -->  
+[ims04-jht scroll color bars](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)<!-- 2024-03-26T18:00:37.149Z -->  
+[ims04-jht scroll color rate](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)<!-- 2024-03-26T18:20:02.438Z -->  
 [input DOM element method](https://editor.p5js.org/jht9629-nyu/sketches/hmwAqitsO)<!-- 2023-10-07T21:47:52.154Z -->  
 [Invincible shame](https://editor.p5js.org/jht9629-nyu/sketches/-P_lpGf16)<!-- 2023-10-08T21:02:13.688Z -->  
 [jht preload  imgs](https://editor.p5js.org/jht9629-nyu/sketches/j4tQqgSxZ)<!-- 2023-07-29T09:17:04.707Z -->  
@@ -237,7 +239,7 @@
 [Spiny heat](https://editor.p5js.org/jht9629-nyu/sketches/7X1wo51f1)<!-- 2023-09-11T21:26:55.344Z -->  
 [storinginput - from java](https://editor.p5js.org/jht9629-nyu/sketches/xM9WSCoMi)<!-- 2023-09-11T17:54:14.051Z -->  
 [Stormy oviraptor](https://editor.p5js.org/jht9629-nyu/sketches/6A3mSelw8)<!-- 2023-10-23T22:29:40.101Z -->  
-[Stupendous tellurium copy](https://editor.p5js.org/jht9629-nyu/sketches/6FRgWWxc_)<!-- 2023-07-29T07:28:42.558Z -->  
+[Stupendous tellurium copy](https://editor.p5js.org/jht9629-nyu/sketches/6FRgWWxc_)<!-- 2024-03-25T17:09:42.481Z -->  
 [system variables width height](https://editor.p5js.org/jht9629-nyu/sketches/m_T2CwLIf)<!-- 2023-07-16T21:01:14.086Z -->  
 [test drive DOM.js v1](https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y)<!-- 2024-03-15T17:44:05.586Z -->  
 [test drive DOM.js v2](https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x)<!-- 2024-03-15T14:22:12.577Z -->  

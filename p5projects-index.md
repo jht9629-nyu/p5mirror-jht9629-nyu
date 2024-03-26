@@ -176,6 +176,8 @@
 - [ims03-jht scrolling color bars v2-zV3BsHs7X](./p5projects/ims03-jht%20scrolling%20color%20bars%20v2-zV3BsHs7X) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zV3BsHs7X)]
 - [ims03-jht scrolling color bars-3VKJ-q8ar](./p5projects/ims03-jht%20scrolling%20color%20bars-3VKJ-q8ar) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)]
 - [ims03-jht scrolling color time-ZGUqiovgG](./p5projects/ims03-jht%20scrolling%20color%20time-ZGUqiovgG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZGUqiovgG)]
+- [ims04-jht scroll color bars-ZpoPuHXRo](./p5projects/ims04-jht%20scroll%20color%20bars-ZpoPuHXRo) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)]
+- [ims04-jht scroll color rate-2pxhnehBV](./p5projects/ims04-jht%20scroll%20color%20rate-2pxhnehBV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)]
 - [input DOM element method-hmwAqitsO](./p5projects/input%20DOM%20element%20method-hmwAqitsO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hmwAqitsO)]
 - [jht preload imgs-j4tQqgSxZ](./p5projects/jht%20preload%20imgs-j4tQqgSxZ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/j4tQqgSxZ)]
 - [let draw pattern-jms7R-njY](./p5projects/let%20draw%20pattern-jms7R-njY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jms7R-njY)]

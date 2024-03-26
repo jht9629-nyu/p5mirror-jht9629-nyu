@@ -1,5 +1,6 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar
 // ims03-jht scrolling color bars
+// color pops on at wrap around
 
 let xstep = 2;
 let xpos = 0;
@@ -8,6 +9,7 @@ let ylen;
 let debug = 1;
 let dim = { width: 400, height: 400 };
 let fullScreenBtn;
+let colorGold = [187, 165, 61];
 
 function setup() {
   if (!debug) {
@@ -26,14 +28,14 @@ function setup() {
 function draw() {
   // background(220);
   // fill("black");
-    fill([187, 165, 61]);
+  fill(colorGold);
   rect(0, 0, xpos, ylen);
   fill("red");
   rect(xpos % width, 0, xlen, ylen);
   fill("green");
   rect((xpos + xlen) % width, 0, xlen, ylen);
   // fill("yellow");
-  fill([187, 165, 61]);
+  fill(colorGold);
   rect((xpos + xlen * 2) % width, 0, xlen, ylen);
 
   xpos = (xpos + xstep) % width;
