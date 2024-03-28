@@ -12,6 +12,7 @@ bin/mirror.sh --user jht9629-nyu --limit 20
 bin/build.sh --user jht9629-nyu --check
 bin/mirror.sh --user jht9629-nyu --update
 bin/mirror.sh --user jht9629-nyu
+bin/mirror.sh --user jht9629-nyu --clean
 
 ```
 
