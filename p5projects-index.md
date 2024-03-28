@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-280 sketches 2024-03-28T00:39:10.304Z
+281 sketches 2024-03-28T20:00:27.245Z
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [1.2 draw\_shapes\_ui-AnDswZ6eY](./p5projects/1.2%20draw_shapes_ui-AnDswZ6eY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)]
@@ -80,6 +80,7 @@
 - [Invincible shame-P\_lpGf16](./p5projects/Invincible%20shame-P_lpGf16) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-P_lpGf16)]
 - [Lying hacksaw-TQyVoswjQ](./p5projects/Lying%20hacksaw-TQyVoswjQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)]
 - [Lying pillow-fbqvrSaz7](./p5projects/Lying%20pillow-fbqvrSaz7) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fbqvrSaz7)]
+- [MazeSpin liberation screens v2-wT957KlMz](./p5projects/MazeSpin%20liberation%20screens%20v2-wT957KlMz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)]
 - [Melanie pong with object array-qfMmYs2br](./p5projects/Melanie%20pong%20with%20object%20array-qfMmYs2br) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qfMmYs2br)]
 - [Melanie pong with object literals-\_8fx3fhlQ](./p5projects/Melanie%20pong%20with%20object%20literals-_8fx3fhlQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_8fx3fhlQ)]
 - [Necessary-forgery-timed-drawing-MbS5C3j-F](./p5projects/Necessary-forgery-timed-drawing-MbS5C3j-F) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/MbS5C3j-F)]

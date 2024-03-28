@@ -8974,6 +8974,136 @@
     "id": "ZKPaZOjf_"
   },
   {
+    "name": "MazeSpin liberation screens v2",
+    "_id": "wT957KlMz",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6605cbe079626d07659dabdf",
+          "6605cbe079626d07659dabe0",
+          "6605cbe079626d07659dabe1",
+          "6605cbe079626d07659dabe2",
+          "6605cbe079626d07659dabe3"
+        ],
+        "fileType": "folder",
+        "_id": "6605cbe079626d07659dabde",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-28T20:00:27.245Z",
+        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "id": "6605cbe079626d07659dabde"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz\n// MazeSpin liberation screens v2\n\nlet my = {};\n\nlet mazeSpin;\n\nfunction setup() {\n  my.width = windowWidth;\n  my.height = windowHeight;\n  my.ncells = 9;\n  my.strokeWeight = 0.5;\n  my.delta = 1;\n  my.step_period = 2;\n  my.pause_period = 2;\n  my.do_spiral = 1;\n  my.do_cycle = 2;\n  my.do_report = 0;\n\n  my.colorIndex = 0;\n  my.colorChangeSecs = 10;\n  my.startTime = millis() / 1000.0;\n\n  createCanvas(my.width, my.height);\n\n  // console.log(\"MazeSpin\", MazeSpin);\n  mazeSpin = new MazeSpin(my);\n  \n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n}\n\nfunction draw() {\n  background(colorPalette[my.colorIndex]);\n  mazeSpin.prepareOutput();\n  image(mazeSpin.output, 0, 0);\n  check_time();\n}\n\nfunction my_setup() {\n  my.width = width;\n  my.height = height;\n  mazeSpin = new MazeSpin(my);\n}\n\nfunction check_time() {\n  let now = millis() / 1000;\n  if (now - my.startTime > my.colorChangeSecs) {\n    my.startTime = now;\n    next_color();\n  }\n}\n\nfunction next_color() {\n  my.colorIndex = (my.colorIndex + 1) % colorPalette.length;\n}\n\nlet colorGold = [187, 165, 61];\n// let colorPalette = [\"red\", \"green\", colorGold, \"black\"];\nlet colorPalette = [\"red\", \"green\", colorGold];\n\nfunction full_screen_action() {\n  fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  my_setup();\n}\n\n// --\n// https://editor.p5js.org/jht9629-gmail/sketches/4pgECdEVG\n// MazeSpin liberation screens\n\n// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n\n// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n\n// https://editor.p5js.org/jht9629-gmail/sketches/-FuOH_EE4\n// MazeSpin\n// converted from p5VideoKit effects import style\n//   to <script src=\"\"> format used in p5VideoKit\n//\n\n// https://github.com/jht1493/p5VideoKit/blob/main/src/effects/maze_spin/MazeSpin.js\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6605cbe079626d07659dabe1",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-28T20:00:27.245Z",
+        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "id": "6605cbe079626d07659dabe1"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n      \n<!--     <script type=\"module\" src=\"MazeSpin.js\"></script> -->\n\n    <script src=\"sub/SecondsTimer.js\"></script>\n    <script src=\"sub/SpiralWalker.js\"></script>\n    <script src=\"sub/array.js\"></script>\n    <script src=\"sub/report.js\"></script>\n    <script src=\"MazeSpin.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6605cbe079626d07659dabe0",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-28T20:00:27.245Z",
+        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "id": "6605cbe079626d07659dabe0"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6605cbe079626d07659dabe2",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-28T20:00:27.245Z",
+        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "id": "6605cbe079626d07659dabe2"
+      },
+      {
+        "name": "MazeSpin.js",
+        "content": "// maze with rotating transition\n\n// import SpiralWalker from './sub/SpiralWalker.js';\n// import SecondsTimer from './sub/SecondsTimer.js';\n// import { report_1ofn, div_report } from './sub/report.js';\n// import { array_zero, array_add, array_random } from './sub/array.js';\n\n// export default \nclass MazeSpin {\n  // this.ncells\n  // this.width = this.width\n  // this.height = this.height\n  // this.strokeWeight = 0.5;\n  // this.delta = 1;\n  // this.step_period = 1.0;\n  // this.pause_period = 1.0; // 0.5;\n  // this.do_cycle = 0;\n  // this.do_spiral\n  constructor(props) {\n    // console.log('MazeSpin props', props);\n    Object.assign(this, props);\n\n    this.now = [];\n    this.next = [];\n    this.random = [];\n\n    this.report_lines = [];\n    this.div;\n\n    this.d = int(this.width / this.ncells);\n\n    this.output = createGraphics(this.width, this.height);\n    if (this.video_color) {\n      this.input_copy = createImage(this.width, this.height);\n    }\n    this.output.noFill();\n    this.output.strokeWeight(this.d * this.strokeWeight);\n\n    let n = this.do_spiral ? this.make_spiral_pts() : this.make_grid_pts();\n\n    array_zero(this.now, n);\n    array_zero(this.next, n);\n    array_zero(this.random, n);\n\n    array_add(this.next, this.delta);\n\n    this.target = this.next;\n\n    this.timer = new SecondsTimer();\n    this.timer.setPeriod(this.step_period);\n    if (this.do_cycle == 0) {\n      this.draw_step = 'draw_maze0_step';\n    } else if (this.do_cycle == 1) {\n      array_random(this.next);\n      this.draw_step = 'draw_maze1_step';\n    } else {\n      this.draw_step = 'draw_maze2_step0';\n    }\n\n    report_1ofn(this);\n    div_report(this, this.target, 'setup');\n  }\n\n  prepareOutput() {\n    // console.log('MazeSpin prepareOutput');\n    if (this.video_color) {\n      // copy(srcImage, sx, sy, sw, sh, dx, dy, dw, dh)\n      this.input_copy.copy(this.input, 0, 0, this.width, this.height, 0, 0, this.width, this.height);\n    }\n    this[this.draw_step]();\n  }\n\n  draw_maze_progress() {\n    this.draw_maze_at(this.timer.progress());\n  }\n\n  draw_maze_still() {\n    this.draw_maze_at(1.0);\n  }\n\n  draw_maze_at(at) {\n    // this.output.background(220);\n    this.output.clear();\n    let tangle = HALF_PI * at;\n    let half = this.d / 2;\n    for (let index = 0; index < this.pts.length; index++) {\n      let [x, y] = this.pts[index];\n      let now = this.now[index];\n      let target = this.target[index];\n      let angle = now == target ? 0 : tangle;\n      if (this.video_color) {\n        let col = this.input_copy.get(x, y);\n        this.output.stroke(col);\n      }\n      if (now) {\n        this.drawLeft(x, y, this.d, half, angle);\n      } else {\n        this.drawRight(x, y, this.d, half, angle);\n      }\n    }\n  }\n\n  // sequential\n  draw_maze0_step() {\n    this.draw_maze_progress();\n    if (this.timer.arrived()) {\n      this.timer.setPeriod(this.pause_period);\n      this.draw_step = 'draw_maze0_pause';\n    }\n  }\n\n  draw_maze0_pause() {\n    this.draw_maze_still();\n    if (this.timer.arrived()) {\n      array_add(this.now, this.delta);\n      array_add(this.next, this.delta);\n      //   div_report(this, this.target, 'draw_maze0_step');\n      this.timer.setPeriod(this.step_period);\n      this.draw_step = 'draw_maze0_step';\n    }\n  }\n\n  // random to random\n  draw_maze1_step() {\n    this.draw_maze_progress();\n    if (this.timer.arrived()) {\n      this.timer.setPeriod(this.pause_period);\n      this.draw_step = 'draw_maze1_pause';\n    }\n  }\n\n  draw_maze1_pause() {\n    this.draw_maze_still();\n    if (this.timer.arrived()) {\n      let oldNow = this.now;\n      this.now = this.next;\n      this.next = oldNow;\n      this.target = this.next;\n      array_random(this.target);\n      this.timer.setPeriod(this.step_period);\n      this.draw_step = 'draw_maze1_step';\n    }\n  }\n\n  // --\n  // sequencail - random - sequential\n  draw_maze2_step0() {\n    this.draw_maze_progress();\n    if (this.timer.arrived()) {\n      this.timer.setPeriod(this.pause_period);\n      this.draw_step = 'draw_maze2_pause0';\n    }\n  }\n\n  draw_maze2_pause0() {\n    this.draw_maze_still();\n    if (this.timer.arrived()) {\n      array_add(this.now, this.delta);\n      array_add(this.next, this.delta);\n      array_random(this.random);\n      this.target = this.random;\n      div_report(this, this.target, 'draw_maze2_step1');\n      this.timer.setPeriod(this.step_period);\n      this.draw_step = 'draw_maze2_step1';\n    }\n  }\n\n  draw_maze2_step1() {\n    this.draw_maze_progress();\n    if (this.timer.arrived()) {\n      this.timer.setPeriod(this.pause_period);\n      this.draw_step = 'draw_maze2_pause2';\n    }\n  }\n\n  draw_maze2_pause2() {\n    this.draw_maze_still();\n    if (this.timer.arrived()) {\n      let now_save = this.now;\n      this.now = this.target;\n      this.target = now_save;\n      div_report(this, this.target, 'draw_maze2_step2');\n      this.timer.setPeriod(this.step_period);\n      this.draw_step = 'draw_maze2_step2';\n    }\n  }\n\n  draw_maze2_step2() {\n    this.draw_maze_progress();\n    if (this.timer.arrived()) {\n      this.timer.setPeriod(this.pause_period);\n      this.draw_step = 'draw_maze2_pause3';\n    }\n  }\n\n  draw_maze2_pause3() {\n    this.draw_maze_still();\n    if (this.timer.arrived()) {\n      this.now = this.target;\n      this.target = this.next;\n      div_report(this, this.target, 'draw_maze2_step0');\n      this.timer.setPeriod(this.step_period);\n      this.draw_step = 'draw_maze2_step0';\n    }\n  }\n\n  // --\n  drawLeft(x, y, len, half, angle) {\n    this.output.push();\n    this.output.translate(x + half, y + half);\n    this.output.rotate(angle);\n    this.output.line(-half + 0, -half + 0, -half + len, -half + len);\n    this.output.pop();\n  }\n\n  drawRight(x, y, len, half, angle) {\n    this.output.push();\n    this.output.translate(x + half, y + half);\n    this.output.rotate(angle);\n    this.output.line(-half + len, -half + 0, -half + 0, -half + len);\n    this.output.pop();\n  }\n\n  // --\n  make_spiral_pts() {\n    this.pts = new SpiralWalker(this).points();\n    return this.pts.length;\n  }\n\n  make_grid_pts() {\n    let pts = [];\n    for (let y = 0; y < this.height; y += this.d) {\n      for (let x = 0; x < this.width; x += this.d) {\n        pts.push([x, y]);\n      }\n    }\n    let n = pts.length;\n    let nw = int(this.width / this.d);\n    let nh = int(this.height / this.d);\n    let half = int(n / 2);\n    // console.log('make_grid_pts n', n, 'half', half);\n    // console.log('make_grid_pts nw', nw, 'nh', nh);\n\n    // let offset = int(nw / 2) + int(nh / 2) * nw;\n    // let npts = [];\n    // for (let index = 0; index < n; index++) {\n    //   npts.push(pts[(index + offset) % n]);\n    // }\n    // this.pts = npts;\n\n    this.pts = pts;\n    return n;\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6605cbe079626d07659dabdf",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-28T20:00:27.245Z",
+        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "id": "6605cbe079626d07659dabdf"
+      },
+      {
+        "name": "sub",
+        "content": "",
+        "children": [
+          "6605cbe079626d07659dabe4",
+          "6605cbe079626d07659dabe5",
+          "6605cbe079626d07659dabe6",
+          "6605cbe079626d07659dabe7"
+        ],
+        "fileType": "folder",
+        "_id": "6605cbe079626d07659dabe3",
+        "isSelectedFile": false,
+        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "createdAt": "2024-03-28T20:00:27.245Z",
+        "id": "6605cbe079626d07659dabe3"
+      },
+      {
+        "name": "array.js",
+        "content": "// operations on an array of bits\n\n// export \nfunction array_zero(arr, n) {\n  // Fill array a_arr with random true/false values\n  for (let index = 0; index < n; index++) {\n    arr[index] = 0;\n  }\n}\n\n// export \nfunction array_add(arr, d) {\n  if (d == 1) {\n    array_incr(arr);\n  } else if (d == -1) {\n    array_decr(arr);\n  } else {\n    console.log('array_add bad d', d);\n  }\n}\n\n// export \nfunction array_decr(arr) {\n  let carry = 0;\n  for (let index = 0; index < arr.length; index++) {\n    let sum = arr[index] + 1 + carry;\n    // sum = 1, 2, 3\n    arr[index] = sum & 1;\n    carry = sum >> 1;\n    // carry = 0 or 1\n  }\n}\n\n// export \nfunction array_incr(arr) {\n  for (let index = 0; index < arr.length; index++) {\n    let sum = arr[index] + 1;\n    // sum is 1 or 2\n    if (sum == 1) {\n      arr[index] = 1;\n      break;\n    }\n    // zero and continue to carry the 2\n    arr[index] = 0;\n  }\n}\n\n// export \nfunction array_random(arr) {\n  for (let index = 0; index < arr.length; index++) {\n    let bit = random([0, 1]);\n    arr[index] = bit;\n  }\n}\n\n// export \nfunction array_copy_to_from(to, from) {\n  for (let index = 0; index < to.length; index++) {\n    to[index] = from[index];\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6605cbe079626d07659dabe6",
+        "isSelectedFile": false,
+        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "createdAt": "2024-03-28T20:00:27.245Z",
+        "id": "6605cbe079626d07659dabe6"
+      },
+      {
+        "name": "report.js",
+        "content": "// report array of bits as BigInt in div\n\n// export \nfunction report_1ofn(my) {\n  if (!my.do_report) return;\n  let bnum = 2n ** BigInt(my.now.length);\n  let bstr = ' 0x' + bnum.toString(16).toUpperCase();\n  let str = '1 of ' + bnum.toLocaleString('en-US') + bstr + '<br/> ';\n  let div = createP('<code style=\"font-size:16px\">' + str + '</code>');\n  // div.style('margin-left:2px');\n}\n\n// export \nfunction div_report(my, arr, msg) {\n  // console.log('div_report', msg);\n  if (!my.do_report) return;\n  if (!my.div) {\n    my.div = createP();\n  }\n  let narr = arr.concat();\n  narr.reverse();\n  let str = narr.join('');\n  let bnum = BigInt('0b' + str);\n  // str = bnum.toLocaleString('en-US') + ' ' + msg + '<br/> ';\n  let bstr;\n  if (bnum >= 256n) {\n    bstr = ' 0x' + bnum.toString(16).toUpperCase();\n  } else {\n    bstr = ' 0b' + bnum.toString(2);\n  }\n  // &nbsp;\n  str = '' + bnum.toLocaleString('en-US') + bstr + '<br/> ';\n  my.report_lines.unshift(str);\n  while (my.report_lines.length > my.do_report) {\n    my.report_lines.pop();\n  }\n  my.div.elt.innerHTML = '<code style=\"font-size:16px\">' + my.report_lines.join('') + '</code>';\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6605cbe079626d07659dabe7",
+        "isSelectedFile": false,
+        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "createdAt": "2024-03-28T20:00:27.245Z",
+        "id": "6605cbe079626d07659dabe7"
+      },
+      {
+        "name": "SecondsTimer.js",
+        "content": "// export default \nclass SecondsTimer {\n  // let timer = SecondsTimer(period)\n  //    period\n  //      = seconds between trigger\n  //      = -1 to never trigger\n  //\n  constructor(period) {\n    this.setPeriod(period);\n  }\n\n  // setPeriod(newPeriod)\n  // establish a new timer period\n  setPeriod(newPeriod) {\n    this.period = newPeriod;\n    this.start();\n  }\n\n  // establish start time\n  start() {\n    this.startSecs = secsTime();\n  }\n\n  // return seconds since start time established\n  lapse() {\n    let nowSecs = secsTime();\n    return nowSecs - this.startSecs;\n  }\n\n  // return truthy 1 if period seconds has passed\n  //    and restart timer if so.\n  arrived() {\n    let nowSecs = secsTime();\n    let lapse = nowSecs - this.startSecs;\n    if (this.period >= 0 && lapse > this.period) {\n      this.startSecs = nowSecs;\n      return 1;\n    }\n    return 0;\n  }\n\n  // return 0 to 1.0 as fraction of time to complete period\n  progress() {\n    return this.lapse() / this.period;\n  }\n}\n\n// return relative time in seconds\nfunction secsTime() {\n  return millis() / 1000;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6605cbe079626d07659dabe4",
+        "isSelectedFile": false,
+        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "createdAt": "2024-03-28T20:00:27.245Z",
+        "id": "6605cbe079626d07659dabe4"
+      },
+      {
+        "name": "SpiralWalker.js",
+        "content": "// create points for a spiral from the center\n\n// export default \nclass SpiralWalker {\n  //\n  // { width: 600, height: 400, d: 10 }\n  constructor(props) {\n    Object.assign(this, props);\n  }\n  points() {\n    // start with single pixel box in the center\n    // Left Top Right Bottom\n    this.L = this.width / 2;\n    this.T = this.height / 2;\n    this.R = this.L;\n    this.B = this.T;\n\n    let nw = this.width / this.d;\n    let nh = this.height / this.d;\n    let n = nw * nh;\n    // console.log('SpiralWalker nw', nw, 'mh', nh, 'n', n);\n\n    this.offset = nw & 1 ? -this.d / 2 : 0;\n    this.px = this.L;\n    this.py = this.T;\n\n    this.grow_box();\n\n    this.pts = [];\n    let d = this.d;\n\n    let more = 1;\n    while (more) {\n      // move up out of box\n      this.nx = this.px;\n      this.ny = this.py - d;\n      this.my_line({ dx: 0, dy: 0 });\n\n      // move right\n      this.nx = this.px + d;\n      while (this.nx < this.R) {\n        this.my_line({ dx: d, dy: 0 });\n      }\n      this.nx -= d;\n\n      // move down\n      this.ny += d;\n      while (this.ny < this.B) {\n        this.my_line({ dx: 0, dy: d });\n      }\n      this.ny -= d;\n\n      // move left\n      this.nx = this.px - d;\n      while (this.nx > this.L) {\n        this.my_line({ dx: -d, dy: 0 });\n      }\n      this.nx += d;\n\n      // move up\n      this.ny -= d;\n      while (this.ny > this.T) {\n        this.my_line({ dx: 0, dy: -d });\n      }\n      this.ny += d;\n\n      this.grow_box();\n\n      let morex = this.px >= 0 && this.px < this.width;\n      let morey = this.py >= 0 && this.py < this.height;\n      more = morex || morey;\n      // more = morex && morey;\n    }\n    // console.log(this.pts)\n\n    // first element repeated for length > 1\n    if (this.pts.length > 1) this.pts.splice(0, 1);\n\n    // console.log('SpiralWalker this.pts.length', this.pts.length);\n\n    return this.pts;\n  }\n\n  my_line({ dx, dy }) {\n    let x = this.nx;\n    let y = this.ny;\n    if (x >= 0 && x < this.width && y >= 0 && y < this.height) {\n      x += this.offset;\n      y += this.offset;\n      this.pts.push([x, y]);\n    }\n    // line(this.nx, this.ny, this.px, this.py);\n    this.px = this.nx;\n    this.py = this.ny;\n    this.nx += dx;\n    this.ny += dy;\n  }\n\n  grow_box() {\n    this.L -= this.d;\n    this.R += this.d;\n    this.T -= this.d;\n    this.B += this.d;\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6605cbe079626d07659dabe5",
+        "isSelectedFile": false,
+        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "createdAt": "2024-03-28T20:00:27.245Z",
+        "id": "6605cbe079626d07659dabe5"
+      }
+    ],
+    "createdAt": "2024-03-28T19:58:24.558Z",
+    "updatedAt": "2024-03-28T20:00:27.245Z",
+    "id": "wT957KlMz"
+  },
+  {
     "name": "Melanie pong with object array",
     "_id": "qfMmYs2br",
     "files": [

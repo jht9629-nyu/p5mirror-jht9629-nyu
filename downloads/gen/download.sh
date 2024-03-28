@@ -1,0 +1,2 @@
+echo download 1 "MazeSpin liberation screens v2-wT957KlMz"
+curl -s https://editor.p5js.org/editor/projects/wT957KlMz/zip -o "/Users/jht2/Documents/projects/2024/p5mo/p5mirror-jht9629-nyu/downloads/zips/MazeSpin liberation screens v2-wT957KlMz.zip"
