@@ -25,8 +25,8 @@ function my_setup() {
 
   my.query = get_url_params();
 
-  // my.roomName = 'room0';
-  my.roomName = 'room1';
+  my.roomName = 'room0';
+  // my.roomName = 'room1';
   if (my.query) {
     my.roomName = my.query.room || my.roomName;
   }

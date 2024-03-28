@@ -20,6 +20,8 @@ function setup() {
   my.width = 400;
   my.height = 400;
   my.n = 3;
+  // =0 for left to right, else right to left scroll
+  my.xtoLeft = 1;
 
   if (!my.debug) {
     my.width = windowWidth;
@@ -59,6 +61,9 @@ function draw() {
     fill(color);
     let x = xpos - my.xlen;
     let y = 0;
+    if (my.xtoLeft) {
+      x = width - x;
+    }
     rect(x, y, my.xlen, my.ylen);
   }
 }

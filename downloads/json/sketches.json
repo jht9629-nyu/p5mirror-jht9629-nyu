@@ -8056,20 +8056,20 @@
         ],
         "fileType": "folder",
         "_id": "66030e0fbecca1a996ef617c",
-        "createdAt": "2024-03-26T18:20:02.438Z",
-        "updatedAt": "2024-03-26T18:20:02.438Z",
+        "createdAt": "2024-03-28T00:39:10.304Z",
+        "updatedAt": "2024-03-28T00:39:10.304Z",
         "isSelectedFile": false,
         "id": "66030e0fbecca1a996ef617c"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n\n// rate adjusted to achieve complete \n// scroll in my.scrollSeconds \n// https://p5js.org/reference/#/p5/deltaTime\n\nlet colorGold = [187, 165, 61];\n\n// double red\n// let colorPalette = [\"red\", \"green\", colorGold];\n// let colorPalette = [\"red\", \"green\", colorGold, \"green\"];\nlet colorPalette = [\"red\", \"green\", colorGold, \"black\"];\n\nlet my = {};\n\nfunction setup() {\n  my.scrollSeconds = 30;\n  my.debug = 1;\n  my.width = 400;\n  my.height = 400;\n  my.n = 3;\n\n  if (!my.debug) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  createCanvas(my.width, my.height);\n  noStroke();\n\n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n  my_setup();\n}\n\nfunction my_setup() {\n  my.xlen = width / my.n;\n  my.ylen = height;\n  my.items = [];\n  let n = my.n + 1;\n  my.wide = my.xlen * n;\n  for (let i = 0; i < n; i++) {\n    let xpos = my.xlen * i;\n    let color = colorPalette[i % colorPalette.length];\n    my.items[i] = { xpos, color };\n  }\n  // for (let item of my.items) { console.log('item', item); }\n}\n\nfunction draw() {\n  let deltaSecs = deltaTime / 1000\n  my.xstep = width * deltaSecs / my.scrollSeconds;\n  // console.log('my.xstep', my.xstep);\n\n  for (let item of my.items) {\n    let { xpos, color } = item;\n    item.xpos = (xpos + my.xstep) % my.wide;\n    fill(color);\n    let x = xpos - my.xlen;\n    let y = 0;\n    rect(x, y, my.xlen, my.ylen);\n  }\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo\n// ims04-jht scroll color bars - no pop \n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n// color pops on at wrap around\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  my_setup();\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n\n// rate adjusted to achieve complete \n// scroll in my.scrollSeconds \n// https://p5js.org/reference/#/p5/deltaTime\n\nlet colorGold = [187, 165, 61];\n\n// double red\n// let colorPalette = [\"red\", \"green\", colorGold];\n// let colorPalette = [\"red\", \"green\", colorGold, \"green\"];\nlet colorPalette = [\"red\", \"green\", colorGold, \"black\"];\n\nlet my = {};\n\nfunction setup() {\n  my.scrollSeconds = 30;\n  my.debug = 1;\n  my.width = 400;\n  my.height = 400;\n  my.n = 3;\n  // =0 for left to right, else right to left scroll\n  my.xtoLeft = 1;\n\n  if (!my.debug) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  createCanvas(my.width, my.height);\n  noStroke();\n\n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n  my_setup();\n}\n\nfunction my_setup() {\n  my.xlen = width / my.n;\n  my.ylen = height;\n  my.items = [];\n  let n = my.n + 1;\n  my.wide = my.xlen * n;\n  for (let i = 0; i < n; i++) {\n    let xpos = my.xlen * i;\n    let color = colorPalette[i % colorPalette.length];\n    my.items[i] = { xpos, color };\n  }\n  // for (let item of my.items) { console.log('item', item); }\n}\n\nfunction draw() {\n  let deltaSecs = deltaTime / 1000\n  my.xstep = width * deltaSecs / my.scrollSeconds;\n  // console.log('my.xstep', my.xstep);\n\n  for (let item of my.items) {\n    let { xpos, color } = item;\n    item.xpos = (xpos + my.xstep) % my.wide;\n    fill(color);\n    let x = xpos - my.xlen;\n    let y = 0;\n    if (my.xtoLeft) {\n      x = width - x;\n    }\n    rect(x, y, my.xlen, my.ylen);\n  }\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo\n// ims04-jht scroll color bars - no pop \n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n// color pops on at wrap around\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  my_setup();\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n",
         "children": [],
         "fileType": "file",
         "_id": "66030e0fbecca1a996ef617e",
         "isSelectedFile": true,
-        "createdAt": "2024-03-26T18:20:02.438Z",
-        "updatedAt": "2024-03-26T18:20:02.438Z",
+        "createdAt": "2024-03-28T00:39:10.304Z",
+        "updatedAt": "2024-03-28T00:39:10.304Z",
         "id": "66030e0fbecca1a996ef617e"
       },
       {
@@ -8078,8 +8078,8 @@
         "children": [],
         "fileType": "file",
         "_id": "66030e0fbecca1a996ef617d",
-        "createdAt": "2024-03-26T18:20:02.438Z",
-        "updatedAt": "2024-03-26T18:20:02.438Z",
+        "createdAt": "2024-03-28T00:39:10.304Z",
+        "updatedAt": "2024-03-28T00:39:10.304Z",
         "isSelectedFile": false,
         "id": "66030e0fbecca1a996ef617d"
       },
@@ -8089,14 +8089,14 @@
         "children": [],
         "fileType": "file",
         "_id": "66030e0fbecca1a996ef617f",
-        "createdAt": "2024-03-26T18:20:02.438Z",
-        "updatedAt": "2024-03-26T18:20:02.438Z",
+        "createdAt": "2024-03-28T00:39:10.304Z",
+        "updatedAt": "2024-03-28T00:39:10.304Z",
         "isSelectedFile": false,
         "id": "66030e0fbecca1a996ef617f"
       }
     ],
     "createdAt": "2024-03-26T18:04:00.207Z",
-    "updatedAt": "2024-03-26T18:20:02.438Z",
+    "updatedAt": "2024-03-28T00:39:10.304Z",
     "id": "2pxhnehBV"
   },
   {
@@ -10547,7 +10547,7 @@
   {
     "name": "p5moExamples lobby",
     "_id": "vP6sWN4Cu",
-    "updatedAt": "2024-03-22T22:42:47.828Z",
+    "updatedAt": "2024-03-27T19:38:12.979Z",
     "files": [
       {
         "name": "root",
@@ -10559,8 +10559,8 @@
         ],
         "fileType": "folder",
         "_id": "65c7ac133d693843ad029853",
-        "createdAt": "2024-03-22T22:42:47.828Z",
-        "updatedAt": "2024-03-22T22:42:47.828Z",
+        "createdAt": "2024-03-27T19:38:12.979Z",
+        "updatedAt": "2024-03-27T19:38:12.979Z",
         "isSelectedFile": false,
         "id": "65c7ac133d693843ad029853"
       },
@@ -10570,8 +10570,8 @@
         "children": [],
         "fileType": "file",
         "_id": "65c7ac133d693843ad029851",
-        "createdAt": "2024-03-22T22:42:47.828Z",
-        "updatedAt": "2024-03-22T22:42:47.828Z",
+        "createdAt": "2024-03-27T19:38:12.979Z",
+        "updatedAt": "2024-03-27T19:38:12.979Z",
         "isSelectedFile": false,
         "id": "65c7ac133d693843ad029851"
       },
@@ -10581,20 +10581,20 @@
         "children": [],
         "fileType": "file",
         "_id": "65c7ac133d693843ad029852",
-        "createdAt": "2024-03-22T22:42:47.828Z",
-        "updatedAt": "2024-03-22T22:42:47.828Z",
+        "createdAt": "2024-03-27T19:38:12.979Z",
+        "updatedAt": "2024-03-27T19:38:12.979Z",
         "isSelectedFile": false,
         "id": "65c7ac133d693843ad029852"
       },
       {
         "name": "a_sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/vP6sWN4Cu\n// p5moExamples lobby 47\n \n// expand circle size to fit as many circles in canvas as possible\n\nlet my = {};\n\n// my.site_devices.length\n// my.site_devices[0].uid\n// my.site_devices[0].dbase.date_s\n// my.site_devices[0].dbase.visit_count\n// my.site_devices[0].dbase.userAgent\n\nfunction my_setup() {\n  my.width = windowWidth;\n  my.height = windowHeight;\n  my.fireb_config = 'jht9629';\n  // my.fireb_config = 'jht1493';\n  // my.fireb_config = 'jhtitp';\n  // my.fireb_config = my_firebaseConfig;\n  my.dbase_rootPath = 'm0-@r-@w-';\n  my.mo_app = 'mo-blackfacts';\n  my.nameDevice = '';\n  my.ndiv = 1;\n\n  my.query = get_url_params();\n\n  // my.roomName = 'room0';\n  my.roomName = 'room1';\n  if (my.query) {\n    my.roomName = my.query.room || my.roomName;\n  }\n}\n\n// Your web app's Firebase configuration\nconst my_firebaseConfig = {\n  apiKey: 'AIzaSyBg2bnuULvLvkd6SOAEetErgNtyGsNIb8c',\n  authDomain: 'jhtitp-2417a.firebaseapp.com',\n  projectId: 'jhtitp-2417a',\n  storageBucket: 'jhtitp-2417a.appspot.com',\n  messagingSenderId: '523385422249',\n  appId: '1:523385422249:web:52df2a4c0803b79c2a04b8',\n};\n\nfunction setup() {\n  my_setup();\n\n  my.canvas = createCanvas(my.width, my.height);\n\n  dbase_app_init({});\n}\n\nfunction draw() {\n  background(200);\n  my.site_devices = dbase_site_devices();\n  if (!my.site_devices) return;\n  let ndevices = my.site_devices.length;\n  if (ndevices != my.last_ndevices) {\n    console.log('ndevices', ndevices);\n    my.ndiv = 1;\n  }\n  my.last_ndevices = ndevices;\n  my.len = width / my.ndiv;\n  my.half = my.len / 2;\n  my.dotLen = my.len / 3;\n  let x0 = my.half;\n  let y = my.half;\n  let x = x0;\n  for (let index = 0; index < ndevices; index++) {\n    let last = index == ndevices - 1;\n    draw_device(index, x, y);\n    if (!last) {\n      x += my.len;\n    }\n    if (x > width) {\n      x = x0;\n      y += my.len;\n      if (y + my.half > height) {\n        my.ndiv += 1;\n        break;\n      }\n    }\n  }\n}\n\nfunction draw_device(index, x, y) {\n  let device = my.site_devices[index];\n  let last = device.index == my.site_devices.length - 1;\n  // Black big circle\n  fill(0);\n  circle(x, y, my.len);\n  // inner green dot marks active device\n  if (dbase_site_isActive(device)) {\n    fill('green');\n    circle(x, y, my.dotLen);\n  }\n  // inner yellow dot marks my device\n  if (device.uid == my.uid) {\n    fill([187, 165, 61]);\n    circle(x, y, my.dotLen);\n  }\n  if (last) {\n    fill('red');\n    circle(x, y, my.dotLen * 0.5);\n  }\n  fill(255);\n  let n = device.index + 1;\n  text(n + '', x, y);\n}\n\nfunction downloadAction() {\n  if (!my.site_devices) return;\n  let str = JSON.stringify(my.site_devices, undefined, 2);\n  downloadToFile('lobby-' + my.mo_app + '-live' + '.json', str);\n  downloadActionShort();\n}\n\nfunction downloadActionShort() {\n  //\n  // remove arrays to short display of summary\n  //\n  for (let device of my.site_devices) {\n    delete device.dbase.update;\n    delete device.dbase.visit;\n  }\n  let str = JSON.stringify(my.site_devices, undefined, 2);\n  downloadToFile('lobby-short-' + my.mo_app + '-live' + '.json', str);\n}\n\n// https://stackoverflow.com/questions/3665115/how-to-create-a-file-in-memory-for-user-to-download-but-not-through-server\nfunction downloadToFile(filename, text) {\n  var element = document.createElement('a');\n  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));\n  element.setAttribute('download', filename);\n  element.style.display = 'none';\n  document.body.appendChild(element);\n  element.click();\n  document.body.removeChild(element);\n}\n\n// F5 to select chrome\n// VS Code menu: Run > Start Debugging\n\n// .vscode/launch.json\n//       \"url\": \"http://localhost:5500/p5moExamples/examples/lobby\",\n\n// https://stackoverflow.com/questions/46945784/how-to-debug-javascript-in-visual-studio-code-with-live-server-running\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/vP6sWN4Cu\n// p5moExamples lobby 47\n \n// expand circle size to fit as many circles in canvas as possible\n\nlet my = {};\n\n// my.site_devices.length\n// my.site_devices[0].uid\n// my.site_devices[0].dbase.date_s\n// my.site_devices[0].dbase.visit_count\n// my.site_devices[0].dbase.userAgent\n\nfunction my_setup() {\n  my.width = windowWidth;\n  my.height = windowHeight;\n  my.fireb_config = 'jht9629';\n  // my.fireb_config = 'jht1493';\n  // my.fireb_config = 'jhtitp';\n  // my.fireb_config = my_firebaseConfig;\n  my.dbase_rootPath = 'm0-@r-@w-';\n  my.mo_app = 'mo-blackfacts';\n  my.nameDevice = '';\n  my.ndiv = 1;\n\n  my.query = get_url_params();\n\n  my.roomName = 'room0';\n  // my.roomName = 'room1';\n  if (my.query) {\n    my.roomName = my.query.room || my.roomName;\n  }\n}\n\n// Your web app's Firebase configuration\nconst my_firebaseConfig = {\n  apiKey: 'AIzaSyBg2bnuULvLvkd6SOAEetErgNtyGsNIb8c',\n  authDomain: 'jhtitp-2417a.firebaseapp.com',\n  projectId: 'jhtitp-2417a',\n  storageBucket: 'jhtitp-2417a.appspot.com',\n  messagingSenderId: '523385422249',\n  appId: '1:523385422249:web:52df2a4c0803b79c2a04b8',\n};\n\nfunction setup() {\n  my_setup();\n\n  my.canvas = createCanvas(my.width, my.height);\n\n  dbase_app_init({});\n}\n\nfunction draw() {\n  background(200);\n  my.site_devices = dbase_site_devices();\n  if (!my.site_devices) return;\n  let ndevices = my.site_devices.length;\n  if (ndevices != my.last_ndevices) {\n    console.log('ndevices', ndevices);\n    my.ndiv = 1;\n  }\n  my.last_ndevices = ndevices;\n  my.len = width / my.ndiv;\n  my.half = my.len / 2;\n  my.dotLen = my.len / 3;\n  let x0 = my.half;\n  let y = my.half;\n  let x = x0;\n  for (let index = 0; index < ndevices; index++) {\n    let last = index == ndevices - 1;\n    draw_device(index, x, y);\n    if (!last) {\n      x += my.len;\n    }\n    if (x > width) {\n      x = x0;\n      y += my.len;\n      if (y + my.half > height) {\n        my.ndiv += 1;\n        break;\n      }\n    }\n  }\n}\n\nfunction draw_device(index, x, y) {\n  let device = my.site_devices[index];\n  let last = device.index == my.site_devices.length - 1;\n  // Black big circle\n  fill(0);\n  circle(x, y, my.len);\n  // inner green dot marks active device\n  if (dbase_site_isActive(device)) {\n    fill('green');\n    circle(x, y, my.dotLen);\n  }\n  // inner yellow dot marks my device\n  if (device.uid == my.uid) {\n    fill([187, 165, 61]);\n    circle(x, y, my.dotLen);\n  }\n  if (last) {\n    fill('red');\n    circle(x, y, my.dotLen * 0.5);\n  }\n  fill(255);\n  let n = device.index + 1;\n  text(n + '', x, y);\n}\n\nfunction downloadAction() {\n  if (!my.site_devices) return;\n  let str = JSON.stringify(my.site_devices, undefined, 2);\n  downloadToFile('lobby-' + my.mo_app + '-live' + '.json', str);\n  downloadActionShort();\n}\n\nfunction downloadActionShort() {\n  //\n  // remove arrays to short display of summary\n  //\n  for (let device of my.site_devices) {\n    delete device.dbase.update;\n    delete device.dbase.visit;\n  }\n  let str = JSON.stringify(my.site_devices, undefined, 2);\n  downloadToFile('lobby-short-' + my.mo_app + '-live' + '.json', str);\n}\n\n// https://stackoverflow.com/questions/3665115/how-to-create-a-file-in-memory-for-user-to-download-but-not-through-server\nfunction downloadToFile(filename, text) {\n  var element = document.createElement('a');\n  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));\n  element.setAttribute('download', filename);\n  element.style.display = 'none';\n  document.body.appendChild(element);\n  element.click();\n  document.body.removeChild(element);\n}\n\n// F5 to select chrome\n// VS Code menu: Run > Start Debugging\n\n// .vscode/launch.json\n//       \"url\": \"http://localhost:5500/p5moExamples/examples/lobby\",\n\n// https://stackoverflow.com/questions/46945784/how-to-debug-javascript-in-visual-studio-code-with-live-server-running\n",
         "children": [],
         "fileType": "file",
         "_id": "65c962af4af997001a7a14d4",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-22T22:42:47.828Z",
-        "createdAt": "2024-03-22T22:42:47.828Z",
+        "updatedAt": "2024-03-27T19:38:12.979Z",
+        "createdAt": "2024-03-27T19:38:12.979Z",
         "id": "65c962af4af997001a7a14d4"
       }
     ],

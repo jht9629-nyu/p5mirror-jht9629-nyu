@@ -131,7 +131,7 @@
 [ims03-jht scrolling color bars v2](https://editor.p5js.org/jht9629-nyu/sketches/zV3BsHs7X)<!-- 2024-02-25T18:36:18.451Z -->  
 [ims03-jht scrolling color time](https://editor.p5js.org/jht9629-nyu/sketches/ZGUqiovgG)<!-- 2023-04-13T14:07:09.470Z -->  
 [ims04-jht scroll color bars](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)<!-- 2024-03-26T18:00:37.149Z -->  
-[ims04-jht scroll color rate](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)<!-- 2024-03-26T18:20:02.438Z -->  
+[ims04-jht scroll color rate](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)<!-- 2024-03-28T00:39:10.304Z -->  
 [input DOM element method](https://editor.p5js.org/jht9629-nyu/sketches/hmwAqitsO)<!-- 2023-10-07T21:47:52.154Z -->  
 [Invincible shame](https://editor.p5js.org/jht9629-nyu/sketches/-P_lpGf16)<!-- 2023-10-08T21:02:13.688Z -->  
 [jht preload  imgs](https://editor.p5js.org/jht9629-nyu/sketches/j4tQqgSxZ)<!-- 2023-07-29T09:17:04.707Z -->  
@@ -166,7 +166,7 @@
 [p5js editor setup let width bug](https://editor.p5js.org/jht9629-nyu/sketches/iOIK7zDHk)<!-- 2024-02-27T17:34:09.707Z -->  
 [p5js editor setup let width bug fix](https://editor.p5js.org/jht9629-nyu/sketches/FOOXmSPz5)<!-- 2024-02-27T17:32:51.830Z -->  
 [p5Live  many](https://editor.p5js.org/jht9629-nyu/sketches/lqMJIQoIs)<!-- 2023-07-26T03:48:05.822Z -->  
-[p5moExamples lobby](https://editor.p5js.org/jht9629-nyu/sketches/vP6sWN4Cu)<!-- 2024-03-22T22:42:47.828Z -->  
+[p5moExamples lobby](https://editor.p5js.org/jht9629-nyu/sketches/vP6sWN4Cu)<!-- 2024-03-27T19:38:12.979Z -->  
 [p5moExamples paint](https://editor.p5js.org/jht9629-nyu/sketches/nBefVKAbH)<!-- 2024-03-14T17:33:03.685Z -->  
 [p5moExamples pixel-grid](https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp)<!-- 2024-03-22T23:13:06.456Z -->  
 [p5moExamples video 366](https://editor.p5js.org/jht9629-nyu/sketches/KeRAIMzHN)<!-- 2024-03-23T18:32:34.166Z -->  
