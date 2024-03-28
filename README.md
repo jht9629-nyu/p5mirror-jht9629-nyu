@@ -7,7 +7,7 @@ replace your-github in this link
 ```
 bin/mirror.sh --user jht9629-nyu
 bin/build.sh --user jht9629-nyu --check
-bin/mirror.sh --user jht9629-nyu --update
+bin/mirror.sh --user jht9629-nyu --full
 bin/mirror.sh --user jht9629-nyu
 bin/mirror.sh --user jht9629-nyu --clean
 
