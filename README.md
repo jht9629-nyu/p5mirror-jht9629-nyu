@@ -91,6 +91,9 @@ bin/mirror.sh --user p5name --full
 #
 bin/mirror.sh --user p5name --verbose
 
+# remove sketches not present online
+#
+bin/mirror.sh --user p5name --clean
 
 ```
 
