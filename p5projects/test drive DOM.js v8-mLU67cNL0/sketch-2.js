@@ -7,7 +7,6 @@
 // !!@ added   let someP5Element = createDiv('one');
 // !!@ TypeError: goBtn.addClass is not a function
 
-let my = { c: 0 };
 
 function setup() {
   createCanvas(400, 100);
@@ -31,6 +30,8 @@ function setup() {
   /* goBtn is a p5 Element. */
 
   goBtn.addClass("nice-button");
+  
+  // !!@ goBtn.addClass undefined
 }
 
 function draw() {

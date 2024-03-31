@@ -1,54 +1,44 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk
 // test drive DOM.js v7
 
-// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding-functions
+// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#binding-functions
 // !!@ Maximum call stack size exceeded
 
-let my = { c: 0 };
+const fieldEnabled = new Binder(false);
 
-function setup() {
-  createCanvas(400, 100);
-
-  const fieldEnabled = new Binder(false);
-
-  const myMain = DOM.set(
-    {
-      div: {
-        style: {
-          background: fieldEnabled.as({
-            true: "green",
-            false: "gray",
-          }),
+const myMain = DOM.set(
+  {
+    div: {
+      style: {
+        background: fieldEnabled.as({
+          true: "green",
+          false: "gray",
+        }),
+      },
+      input: {
+        enabled: fieldEnabled,
+        value: fieldEnabled.as((value) => `The field is: ${value}.`),
+      },
+      button: {
+        class: {
+          //enablebutton: fieldEnabled,
+          // classes passed as object keys can be bound as well.
         },
-        input: {
-          enabled: fieldEnabled,
-          value: fieldEnabled.as((value) => `The field is: ${value}.`),
-        },
-        button: {
-          class: {
-            enablebutton: fieldEnabled, 
-            // classes passed as object keys can be bound as well.
-          },
-          text: "toggle",
-          onclick: () => (fieldEnabled.value = !fieldEnabled.value),
-        },
+        text: "toggle",
+        onclick: () => (fieldEnabled.value = !fieldEnabled.value),
       },
     },
-    "main"
-  );
+  },
+  "main"
+);
 
-  DOM.set({
-    header: {
-      h1: "Example of binding",
-    },
-    main: myMain,
-    footer: "the footer",
-  });
-}
-
-function draw() {
-  background(220);
-}
+DOM.set({
+  header: {
+    h1: "Example of binding",
+  },
+  main: myMain,
+  footer: "the footer",
+});
 
 // --
 // https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq

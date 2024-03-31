@@ -1,37 +1,30 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl
 // test drive DOM.js v3
 // Correct addEventListener listerner --> listener
+// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners
 
-function setup() {
-  createCanvas(400, 100);
-
-  DOM.set({
-    input: {
-      id: "myInput",
-      placeholder: "Type value here",
-      onchange: (event) => alert(myInput.value),
-      click: (event) =>
-        alert(
-          "It recognized event types to add listeners; as well as event methods."
-        ),
+DOM.set({
+  input: {
+    id: "myInput",
+    placeholder: "Type value here",
+    onchange: (event) => alert("myInput onchange: " + myInput.value),
+    click: (event) =>
+      alert(
+        "It recognized event types to add listeners; as well as event methods."
+      ),
+  },
+  button: {
+    id: "goBtn",
+    innerText: "Go",
+    addEventListener: {
+      type: "click",
+      listener: (event) => (myInput.value = "Button pressed"),
     },
-    button: {
-      id: "goBtn",
-      innerText: "Go",
-      addEventListener: {
-        type: "click",
-        listener: (event) => (myInput.value = "Button pressed"),
-      },
-    },
-  });
+  },
+});
 
-  myInput.style.border = "none";
-  goBtn.click();
-}
-
-function draw() {
-  background(220);
-}
+myInput.style.border = "none";
+// goBtn.click();
 
 // --
 // https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x

@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-281 sketches 2024-03-28T20:00:27.245Z
+289 sketches 2024-03-30T23:54:33.027Z
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [1.2 draw\_shapes\_ui-AnDswZ6eY](./p5projects/1.2%20draw_shapes_ui-AnDswZ6eY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)]
@@ -80,6 +80,7 @@
 - [Invincible shame-P\_lpGf16](./p5projects/Invincible%20shame-P_lpGf16) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-P_lpGf16)]
 - [Lying hacksaw-TQyVoswjQ](./p5projects/Lying%20hacksaw-TQyVoswjQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)]
 - [Lying pillow-fbqvrSaz7](./p5projects/Lying%20pillow-fbqvrSaz7) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fbqvrSaz7)]
+- [MazeSpin liberation screens copy-PN3n1CXom](./p5projects/MazeSpin%20liberation%20screens%20copy-PN3n1CXom) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)]
 - [MazeSpin liberation screens v2-wT957KlMz](./p5projects/MazeSpin%20liberation%20screens%20v2-wT957KlMz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)]
 - [Melanie pong with object array-qfMmYs2br](./p5projects/Melanie%20pong%20with%20object%20array-qfMmYs2br) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qfMmYs2br)]
 - [Melanie pong with object literals-\_8fx3fhlQ](./p5projects/Melanie%20pong%20with%20object%20literals-_8fx3fhlQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_8fx3fhlQ)]
@@ -251,6 +252,7 @@
 - [soundFile copy-z6Sg4ZYU3](./p5projects/soundFile%20copy-z6Sg4ZYU3) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/z6Sg4ZYU3)]
 - [storinginput - from java-xM9WSCoMi](./p5projects/storinginput%20-%20from%20java-xM9WSCoMi) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/xM9WSCoMi)]
 - [system variables width height-m\_T2CwLIf](./p5projects/system%20variables%20width%20height-m_T2CwLIf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/m_T2CwLIf)]
+- [test drive DOM.js v1 copy-blOUI9E8f](./p5projects/test%20drive%20DOM.js%20v1%20copy-blOUI9E8f) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/blOUI9E8f)]
 - [test drive DOM.js v1-Bv2yPxl9Y](./p5projects/test%20drive%20DOM.js%20v1-Bv2yPxl9Y) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y)]
 - [test drive DOM.js v2-2sNiJGe1x](./p5projects/test%20drive%20DOM.js%20v2-2sNiJGe1x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x)]
 - [test drive DOM.js v3-IJDh1-znl](./p5projects/test%20drive%20DOM.js%20v3-IJDh1-znl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl)]
@@ -278,6 +280,12 @@
 - [video pixel scan random-3ZwzK2buW](./p5projects/video%20pixel%20scan%20random-3ZwzK2buW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3ZwzK2buW)]
 - [video pixel scan-HRjZBETUA](./p5projects/video%20pixel%20scan-HRjZBETUA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA)]
 - [video pixel-sJM2AMf5T](./p5projects/video%20pixel-sJM2AMf5T) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sJM2AMf5T)]
+- [video scan radial v2-cKzXO8eUG](./p5projects/video%20scan%20radial%20v2-cKzXO8eUG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cKzXO8eUG)]
+- [video scan radial v3-WdNVtxQzf](./p5projects/video%20scan%20radial%20v3-WdNVtxQzf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/WdNVtxQzf)]
+- [video scan radial v4-7vllrM5d5](./p5projects/video%20scan%20radial%20v4-7vllrM5d5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7vllrM5d5)]
+- [video scan radial v5-OReZ4wOR5](./p5projects/video%20scan%20radial%20v5-OReZ4wOR5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/OReZ4wOR5)]
+- [video scan radial v6-nkw-sZXwN](./p5projects/video%20scan%20radial%20v6-nkw-sZXwN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nkw-sZXwN)]
+- [video scan radial v7-i6akdNRS2](./p5projects/video%20scan%20radial%20v7-i6akdNRS2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/i6akdNRS2)]
 - [video-tint-2x2-mobile-erHP1oZMO](./p5projects/video-tint-2x2-mobile-erHP1oZMO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/erHP1oZMO)]
 - [week01 demo-zzhlY9VFr](./p5projects/week01%20demo-zzhlY9VFr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zzhlY9VFr)]
 - [week2, animation copy-bEetf-BC6](./p5projects/week2%2C%20animation%20copy-bEetf-BC6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/bEetf-BC6)]

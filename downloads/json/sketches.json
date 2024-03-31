@@ -8974,6 +8974,136 @@
     "id": "ZKPaZOjf_"
   },
   {
+    "name": "MazeSpin liberation screens copy",
+    "_id": "PN3n1CXom",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "660741ba7b84442973a9848f",
+          "660741ba7b84442973a98490",
+          "660741ba7b84442973a98491",
+          "660741ba7b84442973a98492",
+          "660741ba7b84442973a98493"
+        ],
+        "fileType": "folder",
+        "_id": "660741ba7b84442973a9848e",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-29T22:39:15.748Z",
+        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "id": "660741ba7b84442973a9848e"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-gmail/sketches/4pgECdEVG\n// MazeSpin liberation screens\n\nlet my = {};\n\nlet mazeSpin;\n\nfunction setup() {\n  my.width = 300;\n  my.height = 300;\n  my.ncells = 9;\n  my.strokeWeight = 0.5;\n  my.delta = 1;\n  my.step_period = 2;\n  my.pause_period = 2;\n  my.do_spiral = 1;\n  my.do_cycle = 2;\n  my.do_report = 0;\n  my.alpha = 255;\n  my.do_truchet = 1;\n  \n  my.width = 400;\n  my.height = 400;\n  my.colorIndex = 0;\n  my.colorChangeSecs = 10;\n  my.startTime = millis() / 1000.0;\n\n  createCanvas(my.width, my.height);\n\n  // console.log(\"MazeSpin\", MazeSpin);\n  mazeSpin = new MazeSpin(my);\n\n  fullScreenBtn = createButton('Full Screen').mousePressed(full_screen_action);\n  fullScreenBtn.style('font-size:42px');\n}\n\nfunction draw() {\n  background(colorPalette[my.colorIndex]);\n  mazeSpin.prepareOutput();\n  image(mazeSpin.output, 0, 0);\n  check_time();\n}\n\nfunction my_setup() {\n  my.width = width;\n  my.height = height;\n  mazeSpin = new MazeSpin(my);\n}\n\nfunction check_time() {\n  let now = millis() / 1000;\n  if (now - my.startTime > my.colorChangeSecs) {\n    my.startTime = now;\n    next_color();\n  }\n}\n\nfunction next_color() {\n  my.colorIndex = (my.colorIndex + 1) % colorPalette.length;\n}\n\nlet colorGold = [187, 165, 61];\n// let colorPalette = [\"red\", \"green\", colorGold, \"black\"];\nlet colorPalette = ['red', 'green', colorGold];\n\nfunction full_screen_action() {\n  fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  my_setup();\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n\n// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n\n// https://editor.p5js.org/jht9629-gmail/sketches/-FuOH_EE4\n// MazeSpin\n// converted from p5VideoKit effects import style\n//   to <script src=\"\"> format used in p5VideoKit\n//\n\n// https://github.com/jht1493/p5VideoKit/blob/main/src/effects/maze_spin/MazeSpin.js\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660741ba7b84442973a98491",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-29T22:39:15.748Z",
+        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "id": "660741ba7b84442973a98491"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n      \n<!--     <script type=\"module\" src=\"MazeSpin.js\"></script> -->\n\n    <script src=\"sub/SecondsTimer.js\"></script>\n    <script src=\"sub/SpiralWalker.js\"></script>\n    <script src=\"sub/array.js\"></script>\n    <script src=\"sub/report.js\"></script>\n    <script src=\"MazeSpin.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660741ba7b84442973a98490",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-29T22:39:15.748Z",
+        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "id": "660741ba7b84442973a98490"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660741ba7b84442973a98492",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-29T22:39:15.748Z",
+        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "id": "660741ba7b84442973a98492"
+      },
+      {
+        "name": "MazeSpin.js",
+        "content": "// maze with rotating transition\n\n// https://editor.p5js.org/jht9629-gmail/sketches/-FuOH_EE4\n\n// import SpiralWalker from './sub/SpiralWalker.js?v={{vers}}';\n// import SecondsTimer from './sub/SecondsTimer.js?v={{vers}}';\n// import { report_1ofn, div_report } from './sub/report.js?v={{vers}}';\n// import { array_zero, array_add, array_random } from './sub/array.js?v={{vers}}';\n\nclass MazeSpin {\n  // this.ncells\n  // this.width = this.width\n  // this.height = this.height\n  // this.strokeWeight = 0.5;\n  // this.delta = 1;\n  // this.step_period = 1.0;\n  // this.pause_period = 1.0; // 0.5;\n  // this.do_cycle = 0;\n  // this.do_spiral\n  // this.alpha\n  constructor(props) {\n    // console.log('MazeSpin props', props);\n    Object.assign(this, props);\n\n    this.now = [];\n    this.next = [];\n    this.random = [];\n\n    this.report_lines = [];\n    this.div;\n\n    this.d = int(this.width / this.ncells);\n\n    this.output = createGraphics(this.width, this.height);\n    if (this.video_color) {\n      this.input_copy = createImage(this.width, this.height);\n    }\n    this.output.noFill();\n    this.output.strokeWeight(this.d * this.strokeWeight);\n\n    let n = this.do_spiral ? this.make_spiral_pts() : this.make_grid_pts();\n    array_zero(this.now, n);\n    array_zero(this.next, n);\n    array_zero(this.random, n);\n    array_add(this.next, this.delta);\n    this.target = this.next;\n\n    this.timer = new SecondsTimer();\n    this.timer.setPeriod(this.step_period);\n\n    this.clear_timer = new SecondsTimer();\n    this.clear_timer.setPeriod(this.clear_period);\n\n    if (this.do_cycle == 0) {\n      this.draw_step = 'draw_maze0_step';\n    } else if (this.do_cycle == 1) {\n      array_random(this.next);\n      this.draw_step = 'draw_maze1_step';\n    } else {\n      this.draw_step = 'draw_maze2_step0';\n    }\n\n    report_1ofn(this);\n    div_report(this, this.target, 'setup');\n  }\n\n  prepareOutput() {\n    // console.log('MazeSpin prepareOutput');\n    if (this.video_color) {\n      // copy(srcImage, sx, sy, sw, sh, dx, dy, dw, dh)\n      this.input_copy.copy(this.input, 0, 0, this.width, this.height, 0, 0, this.width, this.height);\n    }\n    this[this.draw_step]();\n  }\n\n  draw_maze_progress() {\n    this.draw_maze_at(this.timer.progress());\n  }\n\n  draw_maze_still() {\n    this.draw_maze_at(1.0);\n  }\n\n  draw_maze_at(at) {\n    // this.output.background(220);\n    // if (this.clear_timer.arrived()) {\n    this.output.clear();\n    // }\n    let tangle = HALF_PI * at;\n    let half = this.d / 2;\n    let drawLeft = this.do_truchet ? 'truchet_drawLeft' : 'line_drawLeft';\n    let drawRight = this.do_truchet ? 'truchet_drawRight' : 'line_drawRight';\n    for (let index = 0; index < this.pts.length; index++) {\n      let [x, y] = this.pts[index];\n      let now = this.now[index];\n      let target = this.target[index];\n      let angle = now == target ? 0 : tangle;\n      if (this.video_color) {\n        let col = this.input_copy.get(x, y);\n        col[3] = this.alpha;\n        this.output.stroke(col);\n      }\n      if (now) {\n        this[drawLeft](x, y, this.d, half, angle);\n      } else {\n        this[drawRight](x, y, this.d, half, angle);\n      }\n    }\n  }\n\n  // sequential\n  draw_maze0_step() {\n    this.draw_maze_progress();\n    if (this.timer.arrived()) {\n      this.timer.setPeriod(this.pause_period);\n      this.draw_step = 'draw_maze0_pause';\n    }\n  }\n\n  draw_maze0_pause() {\n    this.draw_maze_still();\n    if (this.timer.arrived()) {\n      array_add(this.now, this.delta);\n      array_add(this.next, this.delta);\n      div_report(this, this.target, 'draw_maze0_step');\n      this.timer.setPeriod(this.step_period);\n      this.draw_step = 'draw_maze0_step';\n    }\n  }\n\n  // random to random\n  draw_maze1_step() {\n    this.draw_maze_progress();\n    if (this.timer.arrived()) {\n      this.timer.setPeriod(this.pause_period);\n      this.draw_step = 'draw_maze1_pause';\n    }\n  }\n\n  draw_maze1_pause() {\n    this.draw_maze_still();\n    if (this.timer.arrived()) {\n      let oldNow = this.now;\n      this.now = this.next;\n      this.next = oldNow;\n      this.target = this.next;\n      array_random(this.target);\n      div_report(this, this.target, 'draw_maze1_step');\n      this.timer.setPeriod(this.step_period);\n      this.draw_step = 'draw_maze1_step';\n    }\n  }\n\n  // --\n  // sequencail - random - sequential\n  draw_maze2_step0() {\n    this.draw_maze_progress();\n    if (this.timer.arrived()) {\n      this.timer.setPeriod(this.pause_period);\n      this.draw_step = 'draw_maze2_pause0';\n    }\n  }\n\n  draw_maze2_pause0() {\n    this.draw_maze_still();\n    if (this.timer.arrived()) {\n      array_add(this.now, this.delta);\n      array_add(this.next, this.delta);\n      array_random(this.random);\n      this.target = this.random;\n      div_report(this, this.target, 'draw_maze2_step1');\n      this.timer.setPeriod(this.step_period);\n      this.draw_step = 'draw_maze2_step1';\n    }\n  }\n\n  draw_maze2_step1() {\n    this.draw_maze_progress();\n    if (this.timer.arrived()) {\n      this.timer.setPeriod(this.pause_period);\n      this.draw_step = 'draw_maze2_pause2';\n    }\n  }\n\n  draw_maze2_pause2() {\n    this.draw_maze_still();\n    if (this.timer.arrived()) {\n      let now_save = this.now;\n      this.now = this.target;\n      this.target = now_save;\n      div_report(this, this.target, 'draw_maze2_step2');\n      this.timer.setPeriod(this.step_period);\n      this.draw_step = 'draw_maze2_step2';\n    }\n  }\n\n  draw_maze2_step2() {\n    this.draw_maze_progress();\n    if (this.timer.arrived()) {\n      this.timer.setPeriod(this.pause_period);\n      this.draw_step = 'draw_maze2_pause3';\n    }\n  }\n\n  draw_maze2_pause3() {\n    this.draw_maze_still();\n    if (this.timer.arrived()) {\n      this.now = this.target;\n      this.target = this.next;\n      div_report(this, this.target, 'draw_maze2_step0');\n      this.timer.setPeriod(this.step_period);\n      this.draw_step = 'draw_maze2_step0';\n    }\n  }\n\n  // --\n  line_drawLeft(x, y, len, half, angle) {\n    this.output.push();\n    this.output.translate(x + half, y + half);\n    this.output.rotate(angle);\n    this.output.line(-half + 0, -half + 0, -half + len, -half + len);\n    this.output.pop();\n  }\n\n  line_drawRight(x, y, len, half, angle) {\n    this.output.push();\n    this.output.translate(x + half, y + half);\n    this.output.rotate(angle);\n    this.output.line(-half + len, -half + 0, -half + 0, -half + len);\n    this.output.pop();\n  }\n\n  // --\n  truchet_drawLeft(x, y, len, half, angle) {\n    this.output.push();\n    this.output.translate(x + half, y + half);\n    this.output.rotate(angle);\n    this.output.arc(-half + 0, -half + 0, len, len, 0, d90);\n    this.output.arc(-half + len, -half + len, len, len, d180, d270);\n    this.output.pop();\n  }\n\n  truchet_drawRight(x, y, len, half, angle) {\n    this.output.push();\n    this.output.translate(x + half, y + half);\n    this.output.rotate(angle);\n    this.output.arc(-half + len, -half + 0, len, len, d90, d180);\n    this.output.arc(-half + 0, -half + len, len, len, d270, d360);\n    this.output.pop();\n  }\n\n  // --\n  make_spiral_pts() {\n    this.pts = new SpiralWalker(this).points();\n    return this.pts.length;\n  }\n\n  make_grid_pts() {\n    let pts = [];\n    for (let y = 0; y < this.height; y += this.d) {\n      for (let x = 0; x < this.width; x += this.d) {\n        pts.push([x, y]);\n      }\n    }\n    let n = pts.length;\n    let nw = int(this.width / this.d);\n    let nh = int(this.height / this.d);\n    let half = int(n / 2);\n    // console.log('make_grid_pts n', n, 'half', half);\n    // console.log('make_grid_pts nw', nw, 'nh', nh);\n\n    // let offset = int(nw / 2) + int(nh / 2) * nw;\n    // let npts = [];\n    // for (let index = 0; index < n; index++) {\n    //   npts.push(pts[(index + offset) % n]);\n    // }\n    // this.pts = npts;\n\n    this.pts = pts;\n    return n;\n  }\n}\n\nconst _PI = Math.PI;\nconst _HALF_PI = _PI / 2;\n\nlet d90 = _HALF_PI;\nlet d180 = _HALF_PI * 2;\nlet d270 = _HALF_PI * 3;\nlet d360 = _HALF_PI * 4;\n\n// https://editor.p5js.org/jht9629-nyu/sketches/fWSv5uzke\n// truchet tiles pause copy\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660741ba7b84442973a9848f",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-29T22:39:15.748Z",
+        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "id": "660741ba7b84442973a9848f"
+      },
+      {
+        "name": "sub",
+        "content": "",
+        "children": [
+          "660741ba7b84442973a98494",
+          "660741ba7b84442973a98495",
+          "660741ba7b84442973a98496",
+          "660741ba7b84442973a98497"
+        ],
+        "fileType": "folder",
+        "_id": "660741ba7b84442973a98493",
+        "isSelectedFile": false,
+        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "createdAt": "2024-03-29T22:39:15.748Z",
+        "id": "660741ba7b84442973a98493"
+      },
+      {
+        "name": "array.js",
+        "content": "// operations on an array of bits\n\nfunction array_zero(arr, n) {\n  // Fill array a_arr with random true/false values\n  for (let index = 0; index < n; index++) {\n    arr[index] = 0;\n  }\n}\n\nfunction array_add(arr, d) {\n  if (d == 1) {\n    array_incr(arr);\n  } else if (d == -1) {\n    array_decr(arr);\n  } else {\n    console.log('array_add bad d', d);\n  }\n}\n\nfunction array_decr(arr) {\n  let carry = 0;\n  for (let index = 0; index < arr.length; index++) {\n    let sum = arr[index] + 1 + carry;\n    // sum = 1, 2, 3\n    arr[index] = sum & 1;\n    carry = sum >> 1;\n    // carry = 0 or 1\n  }\n}\n\nfunction array_incr(arr) {\n  for (let index = 0; index < arr.length; index++) {\n    let sum = arr[index] + 1;\n    // sum is 1 or 2\n    if (sum == 1) {\n      arr[index] = 1;\n      break;\n    }\n    // zero and continue to carry the 2\n    arr[index] = 0;\n  }\n}\n\nfunction array_random(arr) {\n  for (let index = 0; index < arr.length; index++) {\n    let bit = random([0, 1]);\n    arr[index] = bit;\n  }\n}\n\nfunction array_copy_to_from(to, from) {\n  for (let index = 0; index < to.length; index++) {\n    to[index] = from[index];\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660741ba7b84442973a98496",
+        "isSelectedFile": false,
+        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "createdAt": "2024-03-29T22:39:15.748Z",
+        "id": "660741ba7b84442973a98496"
+      },
+      {
+        "name": "report.js",
+        "content": "// report array of bits as BigInt in div\n\nfunction report_1ofn(my) {\n  if (!my.do_report) return;\n  let bnum = 2n ** BigInt(my.now.length);\n  let bstr = ' 0x' + bnum.toString(16).toUpperCase();\n  let str = '1 of ' + bnum.toLocaleString('en-US') + bstr + '<br/> ' + parseFloat(bnum) + '<br/> ';\n  let div = createP('<code style=\"font-size:16px\">' + str + '</code>');\n  // div.style('margin-left:2px');\n}\n\nfunction div_report(my, arr, msg) {\n  // console.log('div_report', msg);\n  if (!my.do_report) return;\n  if (!my.div) {\n    my.div = createP();\n  }\n  let narr = arr.concat();\n  narr.reverse();\n  let str = narr.join('');\n  let bnum = BigInt('0b' + str);\n  // str = bnum.toLocaleString('en-US') + ' ' + msg + '<br/> ';\n  let bstr;\n  if (bnum >= 256n) {\n    bstr = ' 0x' + bnum.toString(16).toUpperCase();\n  } else {\n    bstr = ' 0b' + bnum.toString(2);\n  }\n  // &nbsp;\n  str = '' + bnum.toLocaleString('en-US') + bstr + '<br/> ';\n  my.report_lines.unshift(str);\n  while (my.report_lines.length > my.do_report) {\n    my.report_lines.pop();\n  }\n  my.div.elt.innerHTML = '<code style=\"font-size:16px\">' + my.report_lines.join('') + '</code>';\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660741ba7b84442973a98497",
+        "isSelectedFile": false,
+        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "createdAt": "2024-03-29T22:39:15.748Z",
+        "id": "660741ba7b84442973a98497"
+      },
+      {
+        "name": "SecondsTimer.js",
+        "content": "class SecondsTimer {\n  // let timer = SecondsTimer(period)\n  //    period\n  //      = seconds between trigger\n  //      = -1 to never trigger\n  //\n  constructor(period) {\n    this.setPeriod(period);\n  }\n\n  // setPeriod(newPeriod)\n  // establish a new timer period\n  setPeriod(newPeriod) {\n    this.period = newPeriod;\n    this.start();\n  }\n\n  // establish start time\n  start() {\n    this.startSecs = secsTime();\n  }\n\n  // return seconds since start time established\n  lapse() {\n    let nowSecs = secsTime();\n    return nowSecs - this.startSecs;\n  }\n\n  // return truthy 1 if period seconds has passed\n  //    and restart timer if so.\n  arrived() {\n    let nowSecs = secsTime();\n    let lapse = nowSecs - this.startSecs;\n    if (this.period >= 0 && lapse > this.period) {\n      this.startSecs = nowSecs;\n      return 1;\n    }\n    return 0;\n  }\n\n  // return 0 to 1.0 as fraction of time to complete period\n  progress() {\n    return this.lapse() / this.period;\n  }\n}\n\n// return relative time in seconds\nfunction secsTime() {\n  return millis() / 1000;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660741ba7b84442973a98494",
+        "isSelectedFile": false,
+        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "createdAt": "2024-03-29T22:39:15.748Z",
+        "id": "660741ba7b84442973a98494"
+      },
+      {
+        "name": "SpiralWalker.js",
+        "content": "// create points for a spiral from the center\n\nclass SpiralWalker {\n  //\n  // { width: 600, height: 400, d: 10 }\n  constructor(props) {\n    Object.assign(this, props);\n  }\n  points() {\n    // start with single pixel box in the center\n    // Left Top Right Bottom\n    this.L = this.width / 2;\n    this.T = this.height / 2;\n    this.R = this.L;\n    this.B = this.T;\n\n    let nw = this.width / this.d;\n    let nh = this.height / this.d;\n    let n = nw * nh;\n    // console.log('SpiralWalker nw', nw, 'mh', nh, 'n', n);\n\n    this.offset = nw & 1 ? -this.d / 2 : 0;\n    this.px = this.L;\n    this.py = this.T;\n\n    this.grow_box();\n\n    this.pts = [];\n    let d = this.d;\n\n    let more = 1;\n    while (more) {\n      // move up out of box\n      this.nx = this.px;\n      this.ny = this.py - d;\n      this.my_line({ dx: 0, dy: 0 });\n\n      // move right\n      this.nx = this.px + d;\n      while (this.nx < this.R) {\n        this.my_line({ dx: d, dy: 0 });\n      }\n      this.nx -= d;\n\n      // move down\n      this.ny += d;\n      while (this.ny < this.B) {\n        this.my_line({ dx: 0, dy: d });\n      }\n      this.ny -= d;\n\n      // move left\n      this.nx = this.px - d;\n      while (this.nx > this.L) {\n        this.my_line({ dx: -d, dy: 0 });\n      }\n      this.nx += d;\n\n      // move up\n      this.ny -= d;\n      while (this.ny > this.T) {\n        this.my_line({ dx: 0, dy: -d });\n      }\n      this.ny += d;\n\n      this.grow_box();\n\n      let morex = this.px >= 0 && this.px < this.width;\n      let morey = this.py >= 0 && this.py < this.height;\n      more = morex || morey;\n      // more = morex && morey;\n    }\n    // console.log(this.pts)\n\n    // first element repeated for length > 1\n    if (this.pts.length > 1) this.pts.splice(0, 1);\n\n    // console.log('SpiralWalker this.pts.length', this.pts.length);\n\n    return this.pts;\n  }\n\n  my_line({ dx, dy }) {\n    let x = this.nx;\n    let y = this.ny;\n    if (x >= 0 && x < this.width && y >= 0 && y < this.height) {\n      x += this.offset;\n      y += this.offset;\n      this.pts.push([x, y]);\n    }\n    // line(this.nx, this.ny, this.px, this.py);\n    this.px = this.nx;\n    this.py = this.ny;\n    this.nx += dx;\n    this.ny += dy;\n  }\n\n  grow_box() {\n    this.L -= this.d;\n    this.R += this.d;\n    this.T -= this.d;\n    this.B += this.d;\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660741ba7b84442973a98495",
+        "isSelectedFile": false,
+        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "createdAt": "2024-03-29T22:39:15.748Z",
+        "id": "660741ba7b84442973a98495"
+      }
+    ],
+    "createdAt": "2024-03-29T22:33:30.263Z",
+    "updatedAt": "2024-03-29T22:39:15.748Z",
+    "id": "PN3n1CXom"
+  },
+  {
     "name": "MazeSpin liberation screens v2",
     "_id": "wT957KlMz",
     "files": [
@@ -15823,7 +15953,7 @@
   {
     "name": "test drive DOM.js v1",
     "_id": "Bv2yPxl9Y",
-    "updatedAt": "2024-03-15T17:44:05.586Z",
+    "updatedAt": "2024-03-29T15:37:09.092Z",
     "files": [
       {
         "name": "root",
@@ -15837,8 +15967,8 @@
         "fileType": "folder",
         "_id": "65f45611abceec5fd00e92ee",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T17:44:05.586Z",
-        "updatedAt": "2024-03-15T17:44:05.586Z",
+        "createdAt": "2024-03-29T15:37:09.092Z",
+        "updatedAt": "2024-03-29T15:37:09.092Z",
         "id": "65f45611abceec5fd00e92ee"
       },
       {
@@ -15848,8 +15978,8 @@
         "fileType": "file",
         "_id": "65f45611abceec5fd00e92eb",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T17:44:05.586Z",
-        "updatedAt": "2024-03-15T17:44:05.586Z",
+        "createdAt": "2024-03-29T15:37:09.092Z",
+        "updatedAt": "2024-03-29T15:37:09.092Z",
         "id": "65f45611abceec5fd00e92eb"
       },
       {
@@ -15859,8 +15989,8 @@
         "fileType": "file",
         "_id": "65f45611abceec5fd00e92ec",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T17:44:05.586Z",
-        "updatedAt": "2024-03-15T17:44:05.586Z",
+        "createdAt": "2024-03-29T15:37:09.092Z",
+        "updatedAt": "2024-03-29T15:37:09.092Z",
         "id": "65f45611abceec5fd00e92ec"
       },
       {
@@ -15870,24 +16000,93 @@
         "fileType": "file",
         "_id": "65f45611abceec5fd00e92ed",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T17:44:05.586Z",
-        "updatedAt": "2024-03-15T17:44:05.586Z",
+        "createdAt": "2024-03-29T15:37:09.092Z",
+        "updatedAt": "2024-03-29T15:37:09.092Z",
         "id": "65f45611abceec5fd00e92ed"
       },
       {
         "name": "sketch-2.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n// !!@ someElement undefined -- someElement --> id_main\n// !!@ needed to add id_main \n\nfunction setup() {\n  createCanvas(400, 100);\n\n  DOM.set({\n    header: {\n      h1: \"Page built with DOM.set\",\n    },\n    main: {\n      id: \"id_main\",\n      article: {\n        h2: \"main: Basic DOM element\",\n        p: \"<b>This</b> is a paragraph.\",\n      },\n    },\n    footer: {\n      p: \"footer: Made with DOM.js\",\n    },\n  });\n\n  id_main.set({\n    h1: \"Hello world\",\n    p: \"This is a <b>paragraph</b>.\",\n  });\n}\n\nfunction draw() {\n  background(220);\n}\n\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\nDOM.set({\n  header: {\n    h1: \"Page built with DOM.set\",\n  },\n  main: {\n    id: \"someElement\",\n    article: {\n      h2: \"main: Basic DOM element\",\n      p: \"<b>This</b> is a paragraph.\",\n    },\n  },\n  footer: {\n    p: \"footer: Made with DOM.js\",\n  },\n});\n\nsomeElement.set({\n  h1: \"Hello world\",\n  p: \"This is a <b>paragraph</b>.\",\n});\n",
         "children": [],
         "fileType": "file",
         "_id": "65f456f3d76f7c001a46451a",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-15T17:44:05.586Z",
-        "createdAt": "2024-03-15T17:44:05.586Z",
+        "updatedAt": "2024-03-29T15:37:09.092Z",
+        "createdAt": "2024-03-29T15:37:09.092Z",
         "id": "65f456f3d76f7c001a46451a"
       }
     ],
     "createdAt": "2024-03-15T14:08:33.738Z",
     "id": "Bv2yPxl9Y"
+  },
+  {
+    "name": "test drive DOM.js v1 copy",
+    "_id": "blOUI9E8f",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6606da6856511b45590c532b",
+          "6606da6856511b45590c532c",
+          "6606da6856511b45590c532d",
+          "6606da6856511b45590c532e"
+        ],
+        "fileType": "folder",
+        "_id": "6606da6856511b45590c532a",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-29T15:12:06.879Z",
+        "updatedAt": "2024-03-29T15:12:06.879Z",
+        "id": "6606da6856511b45590c532a"
+      },
+      {
+        "name": "sketch-1.js",
+        "content": "function setup() {\n  createCanvas(400, 100);\n\n  DOM.set({\n    header: {\n      h1: \"Page built with DOM.set\",\n    },\n    main: {\n      article: {\n        h2: \"Basic DOM element\",\n        p: \"<b>This</b> is a paragraph.\",\n      },\n    },\n    footer: {\n      p: \"Made with DOM.js\",\n    },\n  });\n}\n\nfunction draw() {\n  background(220);\n}\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6606da6856511b45590c532c",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-29T15:12:06.879Z",
+        "updatedAt": "2024-03-29T15:12:06.879Z",
+        "id": "6606da6856511b45590c532c"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n    <script src=\"https://cdn.jsdelivr.net/gh/lenincompres/DOM.js@latest/DOM.js\"></script>\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch-2.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6606da6856511b45590c532b",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-29T15:12:06.879Z",
+        "updatedAt": "2024-03-29T15:12:06.879Z",
+        "id": "6606da6856511b45590c532b"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6606da6856511b45590c532e",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-29T15:12:06.879Z",
+        "updatedAt": "2024-03-29T15:12:06.879Z",
+        "id": "6606da6856511b45590c532e"
+      },
+      {
+        "name": "sketch-2.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n// !!@ someElement undefined -- someElement --> id_main\n// !!@ needed to add id_main \n\n function setup() {\n  \n  DOM.set({\n    header: {\n      h1: \"Page built with DOM.set\",\n    },\n    main: {\n      id: \"id_main\",\n      article: {\n        h2: \"main: Basic DOM element\",\n        canvas: createCanvas(400,400),\n        p: \"<b>This</b> is a paragraph.\",\n      },\n    },\n    footer: {\n      p: \"footer: Made with DOM.js\",\n    },\n  });\n\n  id_main.set({\n    h1: \"Hello world\",\n    p: \"This is a <b>paragraph</b>.\",\n  });\n }\n\n// function draw() {\n//   background(220);\n// }\n\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6606da6856511b45590c532d",
+        "isSelectedFile": true,
+        "updatedAt": "2024-03-29T15:12:06.879Z",
+        "createdAt": "2024-03-29T15:12:06.879Z",
+        "id": "6606da6856511b45590c532d"
+      }
+    ],
+    "createdAt": "2024-03-29T15:12:40.780Z",
+    "updatedAt": "2024-03-29T15:12:40.780Z",
+    "id": "blOUI9E8f"
   },
   {
     "name": "test drive DOM.js v2",
@@ -15974,8 +16173,8 @@
         "fileType": "folder",
         "_id": "65f45997abceec5fd00e92f4",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T14:31:25.124Z",
-        "updatedAt": "2024-03-15T14:31:25.124Z",
+        "createdAt": "2024-03-29T15:52:33.788Z",
+        "updatedAt": "2024-03-29T15:52:33.788Z",
         "id": "65f45997abceec5fd00e92f4"
       },
       {
@@ -15985,8 +16184,8 @@
         "fileType": "file",
         "_id": "65f45997abceec5fd00e92f6",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T14:31:25.124Z",
-        "updatedAt": "2024-03-15T14:31:25.124Z",
+        "createdAt": "2024-03-29T15:52:33.788Z",
+        "updatedAt": "2024-03-29T15:52:33.788Z",
         "id": "65f45997abceec5fd00e92f6"
       },
       {
@@ -15996,8 +16195,8 @@
         "fileType": "file",
         "_id": "65f45997abceec5fd00e92f5",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T14:31:25.124Z",
-        "updatedAt": "2024-03-15T14:31:25.124Z",
+        "createdAt": "2024-03-29T15:52:33.788Z",
+        "updatedAt": "2024-03-29T15:52:33.788Z",
         "id": "65f45997abceec5fd00e92f5"
       },
       {
@@ -16007,24 +16206,24 @@
         "fileType": "file",
         "_id": "65f45997abceec5fd00e92f8",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T14:31:25.124Z",
-        "updatedAt": "2024-03-15T14:31:25.124Z",
+        "createdAt": "2024-03-29T15:52:33.788Z",
+        "updatedAt": "2024-03-29T15:52:33.788Z",
         "id": "65f45997abceec5fd00e92f8"
       },
       {
         "name": "sketch-2.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  DOM.set({\n    input: {\n      id: \"myInput\",\n      placeholder: \"Type value here\",\n      onchange: (event) => alert(myInput.value),\n      click: (event) =>\n        alert(\n          \"It recognized event types to add listeners; as well as event methods.\"\n        ),\n    },\n    button: {\n      id: \"goBtn\",\n      innerText: \"Go\",\n      addEventListener: {\n        type: \"click\",\n        listener: (event) => (myInput.value = \"Button pressed\"),\n      },\n    },\n  });\n\n  myInput.style.border = \"none\";\n  goBtn.click();\n}\n\nfunction draw() {\n  background(220);\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n\nDOM.set({\n  input: {\n    id: \"myInput\",\n    placeholder: \"Type value here\",\n    onchange: (event) => alert(\"myInput onchange: \" + myInput.value),\n    click: (event) =>\n      alert(\n        \"It recognized event types to add listeners; as well as event methods.\"\n      ),\n  },\n  button: {\n    id: \"goBtn\",\n    innerText: \"Go\",\n    addEventListener: {\n      type: \"click\",\n      listener: (event) => (myInput.value = \"Button pressed\"),\n    },\n  },\n});\n\nmyInput.style.border = \"none\";\n// goBtn.click();\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
         "children": [],
         "fileType": "file",
         "_id": "65f45997abceec5fd00e92f7",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-15T14:31:25.124Z",
-        "createdAt": "2024-03-15T14:31:25.124Z",
+        "updatedAt": "2024-03-29T15:52:33.788Z",
+        "createdAt": "2024-03-29T15:52:33.788Z",
         "id": "65f45997abceec5fd00e92f7"
       }
     ],
     "createdAt": "2024-03-15T14:22:15.910Z",
-    "updatedAt": "2024-03-15T14:31:25.124Z",
+    "updatedAt": "2024-03-29T15:52:33.788Z",
     "id": "IJDh1-znl"
   },
   {
@@ -16043,8 +16242,8 @@
         "fileType": "folder",
         "_id": "65f45bddabceec5fd00e92f9",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T14:38:34.074Z",
-        "updatedAt": "2024-03-15T14:38:34.074Z",
+        "createdAt": "2024-03-29T15:56:50.447Z",
+        "updatedAt": "2024-03-29T15:56:50.447Z",
         "id": "65f45bddabceec5fd00e92f9"
       },
       {
@@ -16054,8 +16253,8 @@
         "fileType": "file",
         "_id": "65f45bddabceec5fd00e92fb",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T14:38:34.074Z",
-        "updatedAt": "2024-03-15T14:38:34.074Z",
+        "createdAt": "2024-03-29T15:56:50.447Z",
+        "updatedAt": "2024-03-29T15:56:50.447Z",
         "id": "65f45bddabceec5fd00e92fb"
       },
       {
@@ -16065,8 +16264,8 @@
         "fileType": "file",
         "_id": "65f45bddabceec5fd00e92fa",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T14:38:34.074Z",
-        "updatedAt": "2024-03-15T14:38:34.074Z",
+        "createdAt": "2024-03-29T15:56:50.447Z",
+        "updatedAt": "2024-03-29T15:56:50.447Z",
         "id": "65f45bddabceec5fd00e92fa"
       },
       {
@@ -16076,24 +16275,24 @@
         "fileType": "file",
         "_id": "65f45bddabceec5fd00e92fd",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T14:38:34.074Z",
-        "updatedAt": "2024-03-15T14:38:34.074Z",
+        "createdAt": "2024-03-29T15:56:50.447Z",
+        "updatedAt": "2024-03-29T15:56:50.447Z",
         "id": "65f45bddabceec5fd00e92fd"
       },
       {
         "name": "sketch-2.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  const myParagraph = DOM.set(\n    {\n      padding: \"0.5em 2em\",\n      backgroundColor: \"lavender\",\n      text: \"Some text\",\n    },\n    \"p\"\n  );\n\n  DOM.set({\n    header: {\n      h1: \"loading an element\",\n      p: \"The element was create before the DOM is set.\",\n    },\n    main: {\n      p: myParagraph,\n    },\n  });\n\n  // --\n\n  myParagraph.set(\n    {\n      padding: \"0.5em 2em\",\n      backgroundColor: \"lavender\",\n    },\n    \"style\"\n  );\n\n  myButton.set(\n    {\n      warning: true,\n      submit: false,\n    },\n    \"class\"\n  );\n\n  mySection.set(\n    {\n      id: \"my-button\",\n    },\n    \"attribute\"\n  );\n\n  myButton.set((e) => runMethod(), \"click\");\n}\n\nfunction draw() {\n  background(220);\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\nconst myParagraph = DOM.set(\n  {\n    padding: \"0.5em 2em\",\n    backgroundColor: \"lavender\",\n    text: \"Some text\",\n  },\n  \"p\"\n);\n\nDOM.set({\n  header: {\n    h1: \"loading an element\",\n    p: \"The element was create before the DOM is set.\",\n  },\n  main: {\n    p: myParagraph,\n  },\n});\n\n// --\n\nmyParagraph.set(\n  {\n    padding: \"0.5em 2em\",\n    backgroundColor: \"lavender\",\n  },\n  \"style\"\n);\n\nmyButton.set(\n  {\n    warning: true,\n    submit: false,\n  },\n  \"class\"\n);\n\nmySection.set(\n  {\n    id: \"my-button\",\n  },\n  \"attribute\"\n);\n\nmyButton.set((e) => runMethod(), \"click\");\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
         "children": [],
         "fileType": "file",
         "_id": "65f45bddabceec5fd00e92fc",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-15T14:38:34.074Z",
-        "createdAt": "2024-03-15T14:38:34.074Z",
+        "updatedAt": "2024-03-29T15:56:50.447Z",
+        "createdAt": "2024-03-29T15:56:50.447Z",
         "id": "65f45bddabceec5fd00e92fc"
       }
     ],
     "createdAt": "2024-03-15T14:31:58.036Z",
-    "updatedAt": "2024-03-15T14:38:34.074Z",
+    "updatedAt": "2024-03-29T15:56:50.447Z",
     "id": "Hl1Tu1U1U"
   },
   {
@@ -16181,8 +16380,8 @@
         "fileType": "folder",
         "_id": "65f47084abceec5fd00e9308",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T16:26:26.531Z",
-        "updatedAt": "2024-03-15T16:26:26.531Z",
+        "createdAt": "2024-03-29T16:22:56.463Z",
+        "updatedAt": "2024-03-29T16:22:56.463Z",
         "id": "65f47084abceec5fd00e9308"
       },
       {
@@ -16192,8 +16391,8 @@
         "fileType": "file",
         "_id": "65f47084abceec5fd00e930a",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T16:26:26.531Z",
-        "updatedAt": "2024-03-15T16:26:26.531Z",
+        "createdAt": "2024-03-29T16:22:56.463Z",
+        "updatedAt": "2024-03-29T16:22:56.463Z",
         "id": "65f47084abceec5fd00e930a"
       },
       {
@@ -16203,8 +16402,8 @@
         "fileType": "file",
         "_id": "65f47084abceec5fd00e9309",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T16:26:26.531Z",
-        "updatedAt": "2024-03-15T16:26:26.531Z",
+        "createdAt": "2024-03-29T16:22:56.463Z",
+        "updatedAt": "2024-03-29T16:22:56.463Z",
         "id": "65f47084abceec5fd00e9309"
       },
       {
@@ -16214,24 +16413,24 @@
         "fileType": "file",
         "_id": "65f47084abceec5fd00e930c",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T16:26:26.531Z",
-        "updatedAt": "2024-03-15T16:26:26.531Z",
+        "createdAt": "2024-03-29T16:22:56.463Z",
+        "updatedAt": "2024-03-29T16:22:56.463Z",
         "id": "65f47084abceec5fd00e930c"
       },
       {
         "name": "sketch-2.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk\n// test drive DOM.js v7\n\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding-functions\n// !!@ Maximum call stack size exceeded\n\nlet my = { c: 0 };\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  const fieldEnabled = new Binder(false);\n\n  const myMain = DOM.set(\n    {\n      div: {\n        style: {\n          background: fieldEnabled.as({\n            true: \"green\",\n            false: \"gray\",\n          }),\n        },\n        input: {\n          enabled: fieldEnabled,\n          value: fieldEnabled.as((value) => `The field is: ${value}.`),\n        },\n        button: {\n          class: {\n            enablebutton: fieldEnabled, \n            // classes passed as object keys can be bound as well.\n          },\n          text: \"toggle\",\n          onclick: () => (fieldEnabled.value = !fieldEnabled.value),\n        },\n      },\n    },\n    \"main\"\n  );\n\n  DOM.set({\n    header: {\n      h1: \"Example of binding\",\n    },\n    main: myMain,\n    footer: \"the footer\",\n  });\n}\n\nfunction draw() {\n  background(220);\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk\n// test drive DOM.js v7\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#binding-functions\n// !!@ Maximum call stack size exceeded\n\nconst fieldEnabled = new Binder(false);\n\nconst myMain = DOM.set(\n  {\n    div: {\n      style: {\n        background: fieldEnabled.as({\n          true: \"green\",\n          false: \"gray\",\n        }),\n      },\n      input: {\n        enabled: fieldEnabled,\n        value: fieldEnabled.as((value) => `The field is: ${value}.`),\n      },\n      button: {\n        class: {\n          //enablebutton: fieldEnabled,\n          // classes passed as object keys can be bound as well.\n        },\n        text: \"toggle\",\n        onclick: () => (fieldEnabled.value = !fieldEnabled.value),\n      },\n    },\n  },\n  \"main\"\n);\n\nDOM.set({\n  header: {\n    h1: \"Example of binding\",\n  },\n  main: myMain,\n  footer: \"the footer\",\n});\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
         "children": [],
         "fileType": "file",
         "_id": "65f47084abceec5fd00e930b",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-15T16:26:26.531Z",
-        "createdAt": "2024-03-15T16:26:26.531Z",
+        "updatedAt": "2024-03-29T16:22:56.463Z",
+        "createdAt": "2024-03-29T16:22:56.463Z",
         "id": "65f47084abceec5fd00e930b"
       }
     ],
     "createdAt": "2024-03-15T16:00:04.553Z",
-    "updatedAt": "2024-03-15T16:26:26.531Z",
+    "updatedAt": "2024-03-29T16:22:56.463Z",
     "id": "66VL3dHNk"
   },
   {
@@ -16250,8 +16449,8 @@
         "fileType": "folder",
         "_id": "65f45ee2abceec5fd00e9303",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T15:08:52.481Z",
-        "updatedAt": "2024-03-15T15:08:52.481Z",
+        "createdAt": "2024-03-29T15:59:56.823Z",
+        "updatedAt": "2024-03-29T15:59:56.823Z",
         "id": "65f45ee2abceec5fd00e9303"
       },
       {
@@ -16261,8 +16460,8 @@
         "fileType": "file",
         "_id": "65f45ee2abceec5fd00e9305",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T15:08:52.481Z",
-        "updatedAt": "2024-03-15T15:08:52.481Z",
+        "createdAt": "2024-03-29T15:59:56.823Z",
+        "updatedAt": "2024-03-29T15:59:56.823Z",
         "id": "65f45ee2abceec5fd00e9305"
       },
       {
@@ -16272,8 +16471,8 @@
         "fileType": "file",
         "_id": "65f45ee2abceec5fd00e9304",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T15:08:52.481Z",
-        "updatedAt": "2024-03-15T15:08:52.481Z",
+        "createdAt": "2024-03-29T15:59:56.823Z",
+        "updatedAt": "2024-03-29T15:59:56.823Z",
         "id": "65f45ee2abceec5fd00e9304"
       },
       {
@@ -16283,24 +16482,24 @@
         "fileType": "file",
         "_id": "65f45ee2abceec5fd00e9307",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T15:08:52.481Z",
-        "updatedAt": "2024-03-15T15:08:52.481Z",
+        "createdAt": "2024-03-29T15:59:56.823Z",
+        "updatedAt": "2024-03-29T15:59:56.823Z",
         "id": "65f45ee2abceec5fd00e9307"
       },
       {
         "name": "sketch-2.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change \n// if input is edited with click \n\nlet my = { c: 0 };\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  const myBinder = new Binder(\"Default value\");\n\n  const myMain = DOM.set(\n    {\n      input: {\n        value: myBinder,\n      },\n      p: {\n        text: myBinder,\n      },\n      button: {\n        text: \"Go Button\",\n        onclick: (event) => (myBinder.value = \"Go was clicked.\" + (my.c++)),\n      },\n    },\n    \"main\"\n  );\n\n  DOM.set({\n    header: {\n      h1: \"Example of binding\",\n    },\n    main: myMain,\n    footer: \"the footer\",\n  });\n}\n\nfunction draw() {\n  background(220);\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n\nlet counter = 0\n\nconst myBinder = new Binder(\"Default value\");\n\nconst myMain = DOM.set(\n  {\n    input: {\n      value: myBinder,\n    },\n    p: {\n      text: myBinder,\n    },\n    button: {\n      text: \"Go Button\",\n      onclick: (event) => (myBinder.value = \"Go was clicked.\" + counter++),\n    },\n  },\n  \"main\"\n);\n\nDOM.set({\n  header: {\n    h1: \"Example of binding\",\n  },\n  main: myMain,\n  footer: \"the footer\",\n});\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
         "children": [],
         "fileType": "file",
         "_id": "65f45ee2abceec5fd00e9306",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-15T15:08:52.481Z",
-        "createdAt": "2024-03-15T15:08:52.481Z",
+        "updatedAt": "2024-03-29T15:59:56.823Z",
+        "createdAt": "2024-03-29T15:59:56.823Z",
         "id": "65f45ee2abceec5fd00e9306"
       }
     ],
     "createdAt": "2024-03-15T14:44:50.439Z",
-    "updatedAt": "2024-03-15T15:08:52.481Z",
+    "updatedAt": "2024-03-29T15:59:56.823Z",
     "id": "DNCSUTBnq"
   },
   {
@@ -16319,8 +16518,8 @@
         "fileType": "folder",
         "_id": "65f476deabceec5fd00e930d",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T16:33:13.102Z",
-        "updatedAt": "2024-03-15T16:33:13.102Z",
+        "createdAt": "2024-03-29T16:03:35.456Z",
+        "updatedAt": "2024-03-29T16:03:35.456Z",
         "id": "65f476deabceec5fd00e930d"
       },
       {
@@ -16330,8 +16529,8 @@
         "fileType": "file",
         "_id": "65f476deabceec5fd00e930f",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T16:33:13.102Z",
-        "updatedAt": "2024-03-15T16:33:13.102Z",
+        "createdAt": "2024-03-29T16:03:35.456Z",
+        "updatedAt": "2024-03-29T16:03:35.456Z",
         "id": "65f476deabceec5fd00e930f"
       },
       {
@@ -16341,8 +16540,8 @@
         "fileType": "file",
         "_id": "65f476deabceec5fd00e930e",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T16:33:13.102Z",
-        "updatedAt": "2024-03-15T16:33:13.102Z",
+        "createdAt": "2024-03-29T16:03:35.456Z",
+        "updatedAt": "2024-03-29T16:03:35.456Z",
         "id": "65f476deabceec5fd00e930e"
       },
       {
@@ -16352,24 +16551,24 @@
         "fileType": "file",
         "_id": "65f476deabceec5fd00e9311",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T16:33:13.102Z",
-        "updatedAt": "2024-03-15T16:33:13.102Z",
+        "createdAt": "2024-03-29T16:03:35.456Z",
+        "updatedAt": "2024-03-29T16:03:35.456Z",
         "id": "65f476deabceec5fd00e9311"
       },
       {
         "name": "sketch-2.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/X1REi2O0H\n// test drive DOM.js v7\n\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#extending-the-htmlelement-class\n// ?? how is this used:\n//   customElements.define(\"my-element\", MyElement);\n\nlet my = { c: 0 };\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  // declares the class\n  class MyElement extends HTMLElement {\n    constructor(startVal) {\n      super();\n\n      this.valueBinder = new Binder(startVal);\n\n      this.set({\n        width: \"fit-content\",\n        padding: \"2em\",\n        margin: \"0 auto\",\n        display: \"block\",\n        textAlign: \"center\",\n        backgroundColor: this.valueBinder.as((v) => (v ? \"green\" : \"red\")),\n        p: {\n          text: this.valueBinder,\n        },\n        button: {\n          text: \"toggle\",\n          onclick: (e) => this.toggle(),\n        },\n      });\n    }\n\n    set value(val) {\n      this.valueBinder.value = val;\n    }\n\n    get value() {\n      return this.valueBinder.value;\n    }\n\n    toggle() {\n      this.value = !this.value;\n    }\n  }\n  customElements.define(\"my-element\", MyElement);\n\n  // instantiate the element\n\n  let myElement = new MyElement(true);\n\n  DOM.set({\n    h1: \"Extended HTML element\",\n    MyElement: myElement,\n  });\n}\n\nfunction draw() {\n  background(220);\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk\n// test drive DOM.js v7\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding-functions\n// !!@ Maximum call stack size exceeded\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/X1REi2O0H\n// test drive DOM.js v7\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#extending-the-htmlelement-class\n// ?? how is this used:\n//   customElements.define(\"my-element\", MyElement);\n\n// declares the class\nclass MyElement extends HTMLElement {\n  constructor(startVal) {\n    super();\n\n    this.valueBinder = new Binder(startVal);\n\n    this.set({\n      width: \"fit-content\",\n      padding: \"2em\",\n      margin: \"0 auto\",\n      display: \"block\",\n      textAlign: \"center\",\n      backgroundColor: this.valueBinder.as((v) => (v ? \"green\" : \"red\")),\n      p: {\n        text: this.valueBinder,\n      },\n      button: {\n        text: \"toggle\",\n        onclick: (e) => this.toggle(),\n      },\n    });\n  }\n\n  set value(val) {\n    this.valueBinder.value = val;\n  }\n\n  get value() {\n    return this.valueBinder.value;\n  }\n\n  toggle() {\n    this.value = !this.value;\n  }\n}\ncustomElements.define(\"my-element\", MyElement);\n\n// instantiate the element\n\nlet myElement = new MyElement(true);\n\nDOM.set({\n  h1: \"Extended HTML element\",\n  MyElement: myElement,\n});\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk\n// test drive DOM.js v7\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding-functions\n// !!@ Maximum call stack size exceeded\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
         "children": [],
         "fileType": "file",
         "_id": "65f476deabceec5fd00e9310",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-15T16:33:13.102Z",
-        "createdAt": "2024-03-15T16:33:13.102Z",
+        "updatedAt": "2024-03-29T16:03:35.456Z",
+        "createdAt": "2024-03-29T16:03:35.456Z",
         "id": "65f476deabceec5fd00e9310"
       }
     ],
     "createdAt": "2024-03-15T16:27:10.867Z",
-    "updatedAt": "2024-03-15T16:33:13.102Z",
+    "updatedAt": "2024-03-29T16:03:35.456Z",
     "id": "X1REi2O0H"
   },
   {
@@ -16388,8 +16587,8 @@
         "fileType": "folder",
         "_id": "65f485a7abceec5fd00e9312",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T17:35:48.530Z",
-        "updatedAt": "2024-03-15T17:35:48.530Z",
+        "createdAt": "2024-03-29T16:15:42.842Z",
+        "updatedAt": "2024-03-29T16:15:42.842Z",
         "id": "65f485a7abceec5fd00e9312"
       },
       {
@@ -16399,8 +16598,8 @@
         "fileType": "file",
         "_id": "65f485a7abceec5fd00e9314",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T17:35:48.530Z",
-        "updatedAt": "2024-03-15T17:35:48.530Z",
+        "createdAt": "2024-03-29T16:15:42.842Z",
+        "updatedAt": "2024-03-29T16:15:42.842Z",
         "id": "65f485a7abceec5fd00e9314"
       },
       {
@@ -16410,8 +16609,8 @@
         "fileType": "file",
         "_id": "65f485a7abceec5fd00e9313",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T17:35:48.530Z",
-        "updatedAt": "2024-03-15T17:35:48.530Z",
+        "createdAt": "2024-03-29T16:15:42.842Z",
+        "updatedAt": "2024-03-29T16:15:42.842Z",
         "id": "65f485a7abceec5fd00e9313"
       },
       {
@@ -16421,24 +16620,24 @@
         "fileType": "file",
         "_id": "65f485a7abceec5fd00e9316",
         "isSelectedFile": false,
-        "createdAt": "2024-03-15T17:35:48.530Z",
-        "updatedAt": "2024-03-15T17:35:48.530Z",
+        "createdAt": "2024-03-29T16:15:42.842Z",
+        "updatedAt": "2024-03-29T16:15:42.842Z",
         "id": "65f485a7abceec5fd00e9316"
       },
       {
         "name": "sketch-2.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/mLU67cNL0\n// test drive DOM.js v8\n\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#domjs-and-p5js\n// !!@ ); --> });\n// !!@ someP5Element undefined\n// !!@ added   let someP5Element = createDiv('one');\n// !!@ TypeError: goBtn.addClass is not a function\n\nlet my = { c: 0 };\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  p5.set({\n    h1: \"Hello world\",\n    p: \"This is a paragraph.\",\n  });\n\n  let someP5Element = createDiv('one');\n  \n  someP5Element.set({\n    h1: \"Hello world\",\n    button: {\n      id: \"goBtn\",\n      text: \"Go\",\n      mouseClicked: (e) => alert(\"Go was clicked.\"),\n    },\n  });\n\n  /* goBtn is a p5 Element. */\n\n  goBtn.addClass(\"nice-button\");\n}\n\nfunction draw() {\n  background(220);\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/X1REi2O0H\n// test drive DOM.js v7\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#extending-the-htmlelement-class\n// ?? how is this used:\n//   customElements.define(\"my-element\", MyElement);\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk\n// test drive DOM.js v7\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding-functions\n// !!@ Maximum call stack size exceeded\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/mLU67cNL0\n// test drive DOM.js v8\n\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#domjs-and-p5js\n// !!@ ); --> });\n// !!@ someP5Element undefined\n// !!@ added   let someP5Element = createDiv('one');\n// !!@ TypeError: goBtn.addClass is not a function\n\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  p5.set({\n    h1: \"Hello world\",\n    p: \"This is a paragraph.\",\n  });\n\n  let someP5Element = createDiv('one');\n  \n  someP5Element.set({\n    h1: \"Hello world\",\n    button: {\n      id: \"goBtn\",\n      text: \"Go\",\n      mouseClicked: (e) => alert(\"Go was clicked.\"),\n    },\n  });\n\n  /* goBtn is a p5 Element. */\n\n  goBtn.addClass(\"nice-button\");\n  \n  // !!@ goBtn.addClass undefined\n}\n\nfunction draw() {\n  background(220);\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/X1REi2O0H\n// test drive DOM.js v7\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#extending-the-htmlelement-class\n// ?? how is this used:\n//   customElements.define(\"my-element\", MyElement);\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk\n// test drive DOM.js v7\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding-functions\n// !!@ Maximum call stack size exceeded\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
         "children": [],
         "fileType": "file",
         "_id": "65f485a7abceec5fd00e9315",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-15T17:35:48.530Z",
-        "createdAt": "2024-03-15T17:35:48.530Z",
+        "updatedAt": "2024-03-29T16:15:42.842Z",
+        "createdAt": "2024-03-29T16:15:42.842Z",
         "id": "65f485a7abceec5fd00e9315"
       }
     ],
     "createdAt": "2024-03-15T17:30:16.119Z",
-    "updatedAt": "2024-03-15T17:35:48.530Z",
+    "updatedAt": "2024-03-29T16:15:42.842Z",
     "id": "mLU67cNL0"
   },
   {
@@ -17617,6 +17816,348 @@
     "createdAt": "2023-05-09T16:03:41.385Z",
     "updatedAt": "2023-05-09T23:54:56.678Z",
     "id": "3ZwzK2buW"
+  },
+  {
+    "name": "video scan radial v2",
+    "_id": "cKzXO8eUG",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "660823b231a523441a83fc8c",
+          "660823b231a523441a83fc8d",
+          "660823b231a523441a83fc8e"
+        ],
+        "fileType": "folder",
+        "_id": "660823b231a523441a83fc8b",
+        "createdAt": "2024-03-30T17:22:33.321Z",
+        "updatedAt": "2024-03-30T17:22:33.321Z",
+        "isSelectedFile": false,
+        "id": "660823b231a523441a83fc8b"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/cKzXO8eUG\n// video scan radial v2\n\nlet nwidth = 640;\nlet nheight = 480;\nlet n = 3;\nlet rcenter = 20;\nlet xgap = nwidth / n;\nlet ygap = nheight / n;\nlet x0;\nlet y0;\nlet capture;\nlet ang = 0;\nlet astep = 1;\nlet xstep = nwidth / n;\nlet ystep = nheight / n;\n\nfunction setup() {\n  createCanvas(nwidth, nheight);\n  capture = createCapture(VIDEO);\n  capture.size(width, height);\n  capture.hide();\n  x0 = int(nwidth / 2);\n  y0 = int(nheight / 2);\n}\n\nfunction draw() {\n  draw_out();\n  // draw_gap()\n}\n\nfunction draw_out() {\n  // colorMode(HSB);\n  strokeWeight(1);\n  // background(255);\n\n  // image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight],\n  let img = capture.get();\n  // image(img, 0, 0, nwidth);\n\n  let r = xgap / 2;\n  let rang = radians(ang);\n  let x1 = r * cos(rang);\n  let y1 = r * sin(rang);\n\n  let c1 = img.get(x0 + x1, y0 + y1);\n  stroke(c1);\n  fill(c1);\n  circle(x0 + x1, y0 + y1, rcenter);\n\n  r = nwidth;\n  let x2 = r * cos(rang);\n  let y2 = r * sin(rang);\n  line(x0 + x1, y0 + y1, x0 + x2, y0 + y2);\n\n  ang = ang + astep;\n  if (ang > 360) {\n    ang = 0;\n    // scan_x0y0()\n    // x0 = random(0,width);\n    // y0 = random(0,height);\n  }\n}\n\nfunction scan_x0y0() {\n  x0 += xstep;\n  if (x0 > width) {\n    x0 = 0;\n    y0 += ystep;\n    if (y0 > height) {\n      y0 = 0;\n    }\n  }\n}\n\nfunction draw_gap() {\n  let img = capture.get();\n  let y1 = y0 - ygap / 2;\n  let y2 = y0 + ygap / 2;\n  let x1 = x0 - xgap / 2;\n  let x2 = x0 + xgap / 2;\n  for (let x = 0; x < img.width; x++) {\n    let c1 = img.get(x, y1);\n    stroke(c1);\n    line(x, 0, x, y1);\n    let c2 = img.get(x, y2);\n    stroke(c2);\n    line(x, y2, x, nheight);\n  }\n  for (let y = y1; y < y2; y++) {\n    let c1 = img.get(x1, y);\n    stroke(c1);\n    line(0, y, x1, y);\n    let c2 = img.get(x2, y);\n    stroke(c2);\n    line(x2, y, nwidth, y);\n  }\n}\n\n// https://editor.p5js.org/jht1900/sketches/-Ypn6ODK_\n// video scan radial\n\n// https://editor.p5js.org/jht1493/sketches/mEXETIijv\n// video scan gap center\n\n// https://editor.p5js.org/jht1493/sketches/oHVI5tU4BP\n// video scan gap\n\n// https://editor.p5js.org/jht1493/sketches/Q9jdcICpW\n// video scan mouseY\n\n// https://editor.p5js.org/jht1493/sketches/gnx2IQn1N\n// video scan\n\n// https://github.com/processing/p5.js/wiki/Beyond-the-canvas#capture-live-video\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660823b231a523441a83fc8d",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-30T17:22:33.321Z",
+        "updatedAt": "2024-03-30T17:22:33.321Z",
+        "id": "660823b231a523441a83fc8d"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660823b231a523441a83fc8c",
+        "createdAt": "2024-03-30T17:22:33.321Z",
+        "updatedAt": "2024-03-30T17:22:33.321Z",
+        "isSelectedFile": false,
+        "id": "660823b231a523441a83fc8c"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660823b231a523441a83fc8e",
+        "createdAt": "2024-03-30T17:22:33.321Z",
+        "updatedAt": "2024-03-30T17:22:33.321Z",
+        "isSelectedFile": false,
+        "id": "660823b231a523441a83fc8e"
+      }
+    ],
+    "createdAt": "2024-03-30T14:37:38.621Z",
+    "updatedAt": "2024-03-30T17:22:33.321Z",
+    "id": "cKzXO8eUG"
+  },
+  {
+    "name": "video scan radial v3",
+    "_id": "WdNVtxQzf",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66084b1731a523441a83fc90",
+          "66084b1731a523441a83fc91",
+          "66084b1731a523441a83fc92"
+        ],
+        "fileType": "folder",
+        "_id": "66084b1731a523441a83fc8f",
+        "createdAt": "2024-03-30T17:45:27.162Z",
+        "updatedAt": "2024-03-30T17:45:27.162Z",
+        "isSelectedFile": false,
+        "id": "66084b1731a523441a83fc8f"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/WdNVtxQzf\n// video scan radial v3\n\nlet nwidth = 640;\nlet nheight = 480;\nlet n = 3;\nlet rcenter = 20;\nlet xgap = nwidth / n;\nlet ygap = nheight / n;\nlet x0;\nlet y0;\nlet capture;\nlet ang = 0;\nlet astep = 1;\nlet xstep = nwidth / n;\nlet ystep = nheight / n;\nlet sw = 10;\n\nfunction setup() {\n  createCanvas(nwidth, nheight);\n  capture = createCapture(VIDEO);\n  capture.size(width, height);\n  capture.hide();\n  x0 = int(nwidth / 2);\n  y0 = int(nheight / 2);\n}\n\nfunction draw() {\n  draw_out();\n}\n\nfunction draw_out() {\n  // colorMode(HSB);\n  strokeWeight(sw);\n  // background(255);\n\n  // image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight],\n  let img = capture.get();\n  // image(img, 0, 0, nwidth);\n\n  let r = xgap / 2;\n  let rang = radians(ang);\n  let x1 = r * cos(rang);\n  let y1 = r * sin(rang);\n\n  let c1 = img.get(x0 + x1, y0 + y1);\n  stroke(c1);\n  fill(c1);\n  circle(x0 + x1, y0 + y1, rcenter);\n\n  r = nwidth;\n  let x2 = r * cos(rang);\n  let y2 = r * sin(rang);\n  line(x0 + x1, y0 + y1, x0 + x2, y0 + y2);\n\n  ang = ang + astep;\n  if (ang > 360) {\n    ang = 0;\n    // scan_x0y0()\n    // x0 = random(0,width);\n    // y0 = random(0,height);\n  }\n}\n\nfunction scan_x0y0() {\n  x0 += xstep;\n  if (x0 > width) {\n    x0 = 0;\n    y0 += ystep;\n    if (y0 > height) {\n      y0 = 0;\n    }\n  }\n}\n\nfunction draw_gap() {\n  let img = capture.get();\n  let y1 = y0 - ygap / 2;\n  let y2 = y0 + ygap / 2;\n  let x1 = x0 - xgap / 2;\n  let x2 = x0 + xgap / 2;\n  for (let x = 0; x < img.width; x++) {\n    let c1 = img.get(x, y1);\n    stroke(c1);\n    line(x, 0, x, y1);\n    let c2 = img.get(x, y2);\n    stroke(c2);\n    line(x, y2, x, nheight);\n  }\n  for (let y = y1; y < y2; y++) {\n    let c1 = img.get(x1, y);\n    stroke(c1);\n    line(0, y, x1, y);\n    let c2 = img.get(x2, y);\n    stroke(c2);\n    line(x2, y, nwidth, y);\n  }\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/cKzXO8eUG\n// video scan radial v2\n\n// https://editor.p5js.org/jht1900/sketches/-Ypn6ODK_\n// video scan radial\n\n// https://editor.p5js.org/jht1493/sketches/mEXETIijv\n// video scan gap center\n\n// https://editor.p5js.org/jht1493/sketches/oHVI5tU4BP\n// video scan gap\n\n// https://editor.p5js.org/jht1493/sketches/Q9jdcICpW\n// video scan mouseY\n\n// https://editor.p5js.org/jht1493/sketches/gnx2IQn1N\n// video scan\n\n// https://github.com/processing/p5.js/wiki/Beyond-the-canvas#capture-live-video\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66084b1731a523441a83fc91",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-30T17:45:27.162Z",
+        "updatedAt": "2024-03-30T17:45:27.162Z",
+        "id": "66084b1731a523441a83fc91"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66084b1731a523441a83fc90",
+        "createdAt": "2024-03-30T17:45:27.162Z",
+        "updatedAt": "2024-03-30T17:45:27.162Z",
+        "isSelectedFile": false,
+        "id": "66084b1731a523441a83fc90"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66084b1731a523441a83fc92",
+        "createdAt": "2024-03-30T17:45:27.162Z",
+        "updatedAt": "2024-03-30T17:45:27.162Z",
+        "isSelectedFile": false,
+        "id": "66084b1731a523441a83fc92"
+      }
+    ],
+    "createdAt": "2024-03-30T17:25:44.099Z",
+    "updatedAt": "2024-03-30T17:45:27.162Z",
+    "id": "WdNVtxQzf"
+  },
+  {
+    "name": "video scan radial v4",
+    "_id": "7vllrM5d5",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66084df317d0578303a484ef",
+          "66084df317d0578303a484f0",
+          "66084df317d0578303a484f1"
+        ],
+        "fileType": "folder",
+        "_id": "66084df317d0578303a484ee",
+        "createdAt": "2024-03-30T17:46:28.098Z",
+        "updatedAt": "2024-03-30T17:46:28.098Z",
+        "isSelectedFile": false,
+        "id": "66084df317d0578303a484ee"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/7vllrM5d5\n// video scan radial v4\n\nlet nwidth = 640;\nlet nheight = 480;\nlet sw = 10;\nlet n = 20;\nlet nfrom = 20;\nlet nto = 1;\nlet rcenter = 20;\nlet x0;\nlet y0;\nlet capture;\nlet ang = 0;\nlet astep = 1;\nlet xgap = nwidth / n;\nlet ygap = nheight / n;\nlet xstep = nwidth / n;\nlet ystep = nheight / n;\n\nfunction setup() {\n  createCanvas(nwidth, nheight);\n  capture = createCapture(VIDEO);\n  capture.size(width, height);\n  capture.hide();\n  x0 = int(nwidth / 2);\n  y0 = int(nheight / 2);\n}\n\nfunction draw() {\n  draw_out();\n}\n\nfunction draw_out() {\n  // colorMode(HSB);\n  strokeWeight(sw);\n  // background(255);\n\n  // image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight],\n  let img = capture.get();\n  // image(img, 0, 0, nwidth);\n\n  let r = xgap / 2;\n  let rang = radians(ang);\n  let x1 = r * cos(rang);\n  let y1 = r * sin(rang);\n\n  let c1 = img.get(x0 + x1, y0 + y1);\n  stroke(c1);\n  fill(c1);\n  circle(x0 + x1, y0 + y1, rcenter);\n\n  r = nwidth;\n  let x2 = r * cos(rang);\n  let y2 = r * sin(rang);\n  line(x0 + x1, y0 + y1, x0 + x2, y0 + y2);\n\n  ang = ang + astep;\n  if (ang > 360) {\n    ang = 0;\n    next_n();\n  }\n}\n\nfunction next_n() {\n  n--;\n  if (n < nto) {\n    n = nfrom;\n  }\n  xgap = nwidth / n;\n  ygap = nheight / n;\n  xstep = nwidth / n;\n  ystep = nheight / n;\n}\n\nfunction scan_x0y0() {\n  x0 += xstep;\n  if (x0 > width) {\n    x0 = 0;\n    y0 += ystep;\n    if (y0 > height) {\n      y0 = 0;\n    }\n  }\n}\n\nfunction draw_gap() {\n  let img = capture.get();\n  let y1 = y0 - ygap / 2;\n  let y2 = y0 + ygap / 2;\n  let x1 = x0 - xgap / 2;\n  let x2 = x0 + xgap / 2;\n  for (let x = 0; x < img.width; x++) {\n    let c1 = img.get(x, y1);\n    stroke(c1);\n    line(x, 0, x, y1);\n    let c2 = img.get(x, y2);\n    stroke(c2);\n    line(x, y2, x, nheight);\n  }\n  for (let y = y1; y < y2; y++) {\n    let c1 = img.get(x1, y);\n    stroke(c1);\n    line(0, y, x1, y);\n    let c2 = img.get(x2, y);\n    stroke(c2);\n    line(x2, y, nwidth, y);\n  }\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/WdNVtxQzf\n// video scan radial v3\n\n// https://editor.p5js.org/jht9629-nyu/sketches/cKzXO8eUG\n// video scan radial v2\n\n// https://editor.p5js.org/jht1900/sketches/-Ypn6ODK_\n// video scan radial\n\n// https://editor.p5js.org/jht1493/sketches/mEXETIijv\n// video scan gap center\n\n// https://editor.p5js.org/jht1493/sketches/oHVI5tU4BP\n// video scan gap\n\n// https://editor.p5js.org/jht1493/sketches/Q9jdcICpW\n// video scan mouseY\n\n// https://editor.p5js.org/jht1493/sketches/gnx2IQn1N\n// video scan\n\n// https://github.com/processing/p5.js/wiki/Beyond-the-canvas#capture-live-video\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66084df317d0578303a484f0",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-30T17:46:28.098Z",
+        "updatedAt": "2024-03-30T17:46:28.098Z",
+        "id": "66084df317d0578303a484f0"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66084df317d0578303a484ef",
+        "createdAt": "2024-03-30T17:46:28.098Z",
+        "updatedAt": "2024-03-30T17:46:28.098Z",
+        "isSelectedFile": false,
+        "id": "66084df317d0578303a484ef"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66084df317d0578303a484f1",
+        "createdAt": "2024-03-30T17:46:28.098Z",
+        "updatedAt": "2024-03-30T17:46:28.098Z",
+        "isSelectedFile": false,
+        "id": "66084df317d0578303a484f1"
+      }
+    ],
+    "createdAt": "2024-03-30T17:37:55.222Z",
+    "updatedAt": "2024-03-30T17:46:28.098Z",
+    "id": "7vllrM5d5"
+  },
+  {
+    "name": "video scan radial v5",
+    "_id": "OReZ4wOR5",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6608508517d0578303a484f3",
+          "6608508517d0578303a484f4",
+          "6608508517d0578303a484f5"
+        ],
+        "fileType": "folder",
+        "_id": "6608508517d0578303a484f2",
+        "createdAt": "2024-03-30T19:31:52.777Z",
+        "updatedAt": "2024-03-30T19:31:52.777Z",
+        "isSelectedFile": false,
+        "id": "6608508517d0578303a484f2"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/OReZ4wOR5\n// video scan radial v5\n\nlet nwidth = 640;\nlet nheight = 480;\nlet sw = 10;\nlet rcenter = 20;\nlet x0;\nlet y0;\nlet capture;\nlet ang = 0;\nlet astep = 1;\nlet faster = 1;\nlet img;\n\nlet n = 20;\nlet nfrom = 20;\nlet nto = 1;\nlet xgap_start = rcenter;\nlet xgap_end = nheight;\nlet xgap = xgap_start;\nlet xstep = rcenter;\nlet outter_radius = nwidth;\nlet secsPerUpdate = 0.1;\nlet secsDelta = 0;\n\nfunction setup() {\n  createCanvas(nwidth, nheight);\n  capture = createCapture(VIDEO);\n  capture.size(width, height);\n  capture.hide();\n  x0 = int(nwidth / 2);\n  y0 = int(nheight / 2);\n}\n\nfunction draw() {\n  strokeWeight(sw);\n  img = capture.get();\n  let more = 1;\n  while (more) {\n    more = draw_out();\n    if (! faster) more = 0;\n  }\n}\n\nfunction draw_out() {\n  // colorMode(HSB);\n\n  let r = xgap / 2;\n  let rang = radians(ang);\n  let x1 = r * cos(rang);\n  let y1 = r * sin(rang);\n\n  let c1 = img.get(x0 + x1, y0 + y1);\n  stroke(c1);\n  fill(c1);\n  circle(x0 + x1, y0 + y1, rcenter);\n\n  r = outter_radius;\n  if (xgap + xstep > xgap_end) {\n    r = nwidth;\n  }\n  if (r > 0) {\n    let x2 = r * cos(rang);\n    let y2 = r * sin(rang);\n    line(x0 + x1, y0 + y1, x0 + x2, y0 + y2);\n  }\n\n  ang = ang + astep;\n  if (ang > 360) {\n    ang = 0;\n    next_step();\n    return 0;\n  }\n  return 1;\n}\n\nfunction next_step() {\n  secsDelta += deltaTime / 1000;\n  if (secsDelta < secsPerUpdate) {\n    return;\n  }\n  secsDelta = 0;\n  xgap += xstep;\n  if (xgap > xgap_end) {\n    xgap = xgap_start;\n    if (capture.loadedmetadata) {\n      outter_radius = -1;\n    }\n  }\n}\n\n// --\n\nfunction scan_x0y0() {\n  x0 += xstep;\n  if (x0 > width) {\n    x0 = 0;\n    y0 += ystep;\n    if (y0 > height) {\n      y0 = 0;\n    }\n  }\n}\n\nfunction draw_gap() {\n  let img = capture.get();\n  let y1 = y0 - ygap / 2;\n  let y2 = y0 + ygap / 2;\n  let x1 = x0 - xgap / 2;\n  let x2 = x0 + xgap / 2;\n  for (let x = 0; x < img.width; x++) {\n    let c1 = img.get(x, y1);\n    stroke(c1);\n    line(x, 0, x, y1);\n    let c2 = img.get(x, y2);\n    stroke(c2);\n    line(x, y2, x, nheight);\n  }\n  for (let y = y1; y < y2; y++) {\n    let c1 = img.get(x1, y);\n    stroke(c1);\n    line(0, y, x1, y);\n    let c2 = img.get(x2, y);\n    stroke(c2);\n    line(x2, y, nwidth, y);\n  }\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7vllrM5d5\n// video scan radial v4\n\n// https://editor.p5js.org/jht9629-nyu/sketches/WdNVtxQzf\n// video scan radial v3\n\n// https://editor.p5js.org/jht9629-nyu/sketches/cKzXO8eUG\n// video scan radial v2\n\n// https://editor.p5js.org/jht1900/sketches/-Ypn6ODK_\n// video scan radial\n\n// https://editor.p5js.org/jht1493/sketches/mEXETIijv\n// video scan gap center\n\n// https://editor.p5js.org/jht1493/sketches/oHVI5tU4BP\n// video scan gap\n\n// https://editor.p5js.org/jht1493/sketches/Q9jdcICpW\n// video scan mouseY\n\n// https://editor.p5js.org/jht1493/sketches/gnx2IQn1N\n// video scan\n\n// https://github.com/processing/p5.js/wiki/Beyond-the-canvas#capture-live-video\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6608508517d0578303a484f4",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-30T19:31:52.777Z",
+        "updatedAt": "2024-03-30T19:31:52.777Z",
+        "id": "6608508517d0578303a484f4"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6608508517d0578303a484f3",
+        "createdAt": "2024-03-30T19:31:52.777Z",
+        "updatedAt": "2024-03-30T19:31:52.777Z",
+        "isSelectedFile": false,
+        "id": "6608508517d0578303a484f3"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6608508517d0578303a484f5",
+        "createdAt": "2024-03-30T19:31:52.777Z",
+        "updatedAt": "2024-03-30T19:31:52.777Z",
+        "isSelectedFile": false,
+        "id": "6608508517d0578303a484f5"
+      }
+    ],
+    "createdAt": "2024-03-30T17:48:53.803Z",
+    "updatedAt": "2024-03-30T19:31:52.777Z",
+    "id": "OReZ4wOR5"
+  },
+  {
+    "name": "video scan radial v6",
+    "_id": "nkw-sZXwN",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66086cd617d0578303a484f7",
+          "66086cd617d0578303a484f8",
+          "66086cd617d0578303a484f9"
+        ],
+        "fileType": "folder",
+        "_id": "66086cd617d0578303a484f6",
+        "createdAt": "2024-03-30T20:02:37.863Z",
+        "updatedAt": "2024-03-30T20:02:37.863Z",
+        "isSelectedFile": false,
+        "id": "66086cd617d0578303a484f6"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/nkw-sZXwN\n// video scan radial v6\n\nlet nwidth = 640;\nlet nheight = 480;\nlet sw = 10;\nlet rcenter = 20;\nlet x0;\nlet y0;\nlet capture;\nlet ang = 0;\nlet astep = 1;\nlet faster = 1;\nlet img;\n\nlet n = 20;\nlet nfrom = 20;\nlet nto = 1;\nlet xgap_start = rcenter;\nlet xgap_end = nheight;\nlet xgap = xgap_start;\nlet xstep = rcenter;\nlet outter_radius = nwidth;\nlet secsPerUpdate = 0.1;\nlet secsDelta = 0;\n\nfunction setup() {\n  createCanvas(nwidth, nheight);\n  capture = createCapture(VIDEO);\n  capture.size(width, height);\n  capture.hide();\n  x0 = int(nwidth / 2);\n  y0 = int(nheight / 2);\n}\n\nfunction draw() {\n  strokeWeight(sw);\n  img = capture.get();\n  let more = 1;\n  while (more) {\n    more = draw_out();\n    if (! faster) more = 0;\n  }\n}\n\nfunction draw_out() {\n  // colorMode(HSB);\n\n  let r = xgap / 2;\n  let rang = radians(ang);\n  let x1 = r * cos(rang);\n  let y1 = r * sin(rang);\n\n  let c1 = img.get(x0 + x1, y0 + y1);\n  stroke(c1);\n  fill(c1);\n  circle(x0 + x1, y0 + y1, rcenter);\n\n  let r2 = xgap_end / 2;\n  if (r2 == r) {\n    x1 = r * cos(rang);\n    y1 = r * sin(rang);\n    let r2 = nwidth;\n    let x2 = r2 * cos(rang);\n    let y2 = r2 * sin(rang);\n    line(x0 + x1, y0 + y1, x0 + x2, y0 + y2);\n  }\n  \n  ang = ang + astep;\n  if (ang > 360) {\n    ang = 0;\n    next_step();\n    return 0;\n  }\n  return 1;\n}\n\nfunction next_step() {\n  secsDelta += deltaTime / 1000;\n  if (secsDelta < secsPerUpdate) {\n    return;\n  }\n  secsDelta = 0;\n  xgap += xstep;\n  if (xgap > xgap_end) {\n    xgap = xgap_start;\n    if (capture.loadedmetadata) {\n      outter_radius = -1;\n    }\n  }\n}\n\n// --\n\nfunction scan_x0y0() {\n  x0 += xstep;\n  if (x0 > width) {\n    x0 = 0;\n    y0 += ystep;\n    if (y0 > height) {\n      y0 = 0;\n    }\n  }\n}\n\nfunction draw_gap() {\n  let img = capture.get();\n  let y1 = y0 - ygap / 2;\n  let y2 = y0 + ygap / 2;\n  let x1 = x0 - xgap / 2;\n  let x2 = x0 + xgap / 2;\n  for (let x = 0; x < img.width; x++) {\n    let c1 = img.get(x, y1);\n    stroke(c1);\n    line(x, 0, x, y1);\n    let c2 = img.get(x, y2);\n    stroke(c2);\n    line(x, y2, x, nheight);\n  }\n  for (let y = y1; y < y2; y++) {\n    let c1 = img.get(x1, y);\n    stroke(c1);\n    line(0, y, x1, y);\n    let c2 = img.get(x2, y);\n    stroke(c2);\n    line(x2, y, nwidth, y);\n  }\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/OReZ4wOR5\n// video scan radial v5\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7vllrM5d5\n// video scan radial v4\n\n// https://editor.p5js.org/jht9629-nyu/sketches/WdNVtxQzf\n// video scan radial v3\n\n// https://editor.p5js.org/jht9629-nyu/sketches/cKzXO8eUG\n// video scan radial v2\n\n// https://editor.p5js.org/jht1900/sketches/-Ypn6ODK_\n// video scan radial\n\n// https://editor.p5js.org/jht1493/sketches/mEXETIijv\n// video scan gap center\n\n// https://editor.p5js.org/jht1493/sketches/oHVI5tU4BP\n// video scan gap\n\n// https://editor.p5js.org/jht1493/sketches/Q9jdcICpW\n// video scan mouseY\n\n// https://editor.p5js.org/jht1493/sketches/gnx2IQn1N\n// video scan\n\n// https://github.com/processing/p5.js/wiki/Beyond-the-canvas#capture-live-video\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66086cd617d0578303a484f8",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-30T20:02:37.863Z",
+        "updatedAt": "2024-03-30T20:02:37.863Z",
+        "id": "66086cd617d0578303a484f8"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66086cd617d0578303a484f7",
+        "createdAt": "2024-03-30T20:02:37.863Z",
+        "updatedAt": "2024-03-30T20:02:37.863Z",
+        "isSelectedFile": false,
+        "id": "66086cd617d0578303a484f7"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66086cd617d0578303a484f9",
+        "createdAt": "2024-03-30T20:02:37.863Z",
+        "updatedAt": "2024-03-30T20:02:37.863Z",
+        "isSelectedFile": false,
+        "id": "66086cd617d0578303a484f9"
+      }
+    ],
+    "createdAt": "2024-03-30T19:49:42.659Z",
+    "updatedAt": "2024-03-30T20:02:37.863Z",
+    "id": "nkw-sZXwN"
+  },
+  {
+    "name": "video scan radial v7",
+    "_id": "i6akdNRS2",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6608708717d0578303a484fb",
+          "6608708717d0578303a484fc",
+          "6608708717d0578303a484fd"
+        ],
+        "fileType": "folder",
+        "_id": "6608708717d0578303a484fa",
+        "createdAt": "2024-03-30T23:54:33.027Z",
+        "updatedAt": "2024-03-30T23:54:33.027Z",
+        "isSelectedFile": false,
+        "id": "6608708717d0578303a484fa"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/i6akdNRS2\n// video scan radial v7\n\n// saveCanvas('video scan radial v7');\n\n// 640 x 480 matches default video capture on desktop\n\nlet cwidth = 640;\nlet cheight = 480;\nlet rcenter = 20;\nlet x0;\nlet y0;\nlet capture;\nlet ang = 0;\nlet astep = 1;\nlet faster = 1;\nlet img;\n\nlet xspan_start = rcenter;\nlet xspan_end = cwidth;\nlet xspan = xspan_start;\nlet xstep = rcenter;\n\nlet secsPerUpdate = 0.1;\nlet secsDelta = 0;\n\nfunction setup() {\n  createCanvas(cwidth, cheight);\n  // flipped require latest p5js 1.9.1\n  // does not appear to affect capture.get\n  // capture.get pixels remain in same orientation\n  // capture = createCapture(VIDEO, {flipped:1});\n  capture = createCapture(VIDEO);\n  capture.size(width, height);\n  capture.hide();\n  x0 = int(cwidth / 2);\n  y0 = int(cheight / 2);\n  calc_xspan_end();\n  strokeWeight(0)\n}\n\nfunction draw() {\n  if (! capture.loadedmetadata) return;\n  \n  img = capture.get();\n  let more = 1;\n  while (more) {\n    more = draw_out();\n    if (! faster) more = 0;\n  }\n}\n\nfunction draw_out() {\n\n  let r = xspan / 2;\n  let rang = radians(ang);\n  let x1 = r * cos(rang);\n  let y1 = r * sin(rang);\n\n  let c1 = img.get(x0 + x1, y0 + y1);\n  fill(c1);\n  circle(x0 + x1, y0 + y1, rcenter);\n  \n  ang = ang + astep;\n  if (ang > 360) {\n    ang = 0;\n    next_step();\n    return 0;\n  }\n  return 1;\n}\n\nfunction next_step() {\n  secsDelta += deltaTime / 1000;\n  if (secsDelta < secsPerUpdate) {\n    return;\n  }\n  secsDelta = 0;\n  xspan += xstep;\n  if (xspan > xspan_end) {\n    xspan = xspan_start;\n  }\n}\n\nfunction calc_xspan_end() {\n  let a = cwidth;\n  let b = cheight;\n  xspan_end = Math.sqrt( a*a + b*b );\n}\n\n// https://github.com/processing/p5.js/wiki/Beyond-the-canvas#capture-live-video\n\n// https://editor.p5js.org/jht1493/sketches/gnx2IQn1N\n// video scan\n\n// https://editor.p5js.org/jht1493/sketches/Q9jdcICpW\n// video scan mouseY\n\n// https://editor.p5js.org/jht1493/sketches/oHVI5tU4BP\n// video scan gap\n\n// https://editor.p5js.org/jht1493/sketches/mEXETIijv\n// video scan gap center\n\n// https://editor.p5js.org/jht1900/sketches/-Ypn6ODK_\n// video scan radial\n\n// https://editor.p5js.org/jht9629-nyu/sketches/cKzXO8eUG\n// video scan radial v2\n\n// https://editor.p5js.org/jht9629-nyu/sketches/WdNVtxQzf\n// video scan radial v3\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7vllrM5d5\n// video scan radial v4\n\n// https://editor.p5js.org/jht9629-nyu/sketches/OReZ4wOR5\n// video scan radial v5\n\n// https://editor.p5js.org/jht9629-nyu/sketches/nkw-sZXwN\n// video scan radial v6\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6608708717d0578303a484fc",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-30T23:54:33.027Z",
+        "updatedAt": "2024-03-30T23:54:33.027Z",
+        "id": "6608708717d0578303a484fc"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6608708717d0578303a484fb",
+        "createdAt": "2024-03-30T23:54:33.027Z",
+        "updatedAt": "2024-03-30T23:54:33.027Z",
+        "isSelectedFile": false,
+        "id": "6608708717d0578303a484fb"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6608708717d0578303a484fd",
+        "createdAt": "2024-03-30T23:54:33.027Z",
+        "updatedAt": "2024-03-30T23:54:33.027Z",
+        "isSelectedFile": false,
+        "id": "6608708717d0578303a484fd"
+      }
+    ],
+    "createdAt": "2024-03-30T20:05:27.970Z",
+    "updatedAt": "2024-03-30T23:54:33.027Z",
+    "id": "i6akdNRS2"
   },
   {
     "name": "video-tint-2x2-mobile",

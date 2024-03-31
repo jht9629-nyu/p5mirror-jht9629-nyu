@@ -4,59 +4,51 @@
 // https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element
 // !!@ myButton undefined
 
-function setup() {
-  createCanvas(400, 100);
+const myParagraph = DOM.set(
+  {
+    padding: "0.5em 2em",
+    backgroundColor: "lavender",
+    text: "Some text",
+  },
+  "p"
+);
 
-  const myParagraph = DOM.set(
-    {
-      padding: "0.5em 2em",
-      backgroundColor: "lavender",
-      text: "Some text",
-    },
-    "p"
-  );
+DOM.set({
+  header: {
+    h1: "loading an element",
+    p: "The element was create before the DOM is set.",
+  },
+  main: {
+    p: myParagraph,
+  },
+});
 
-  DOM.set({
-    header: {
-      h1: "loading an element",
-      p: "The element was create before the DOM is set.",
-    },
-    main: {
-      p: myParagraph,
-    },
-  });
+// --
 
-  // --
+myParagraph.set(
+  {
+    padding: "0.5em 2em",
+    backgroundColor: "lavender",
+  },
+  "style"
+);
 
-  myParagraph.set(
-    {
-      padding: "0.5em 2em",
-      backgroundColor: "lavender",
-    },
-    "style"
-  );
+myButton.set(
+  {
+    warning: true,
+    submit: false,
+  },
+  "class"
+);
 
-  myButton.set(
-    {
-      warning: true,
-      submit: false,
-    },
-    "class"
-  );
+mySection.set(
+  {
+    id: "my-button",
+  },
+  "attribute"
+);
 
-  mySection.set(
-    {
-      id: "my-button",
-    },
-    "attribute"
-  );
-
-  myButton.set((e) => runMethod(), "click");
-}
-
-function draw() {
-  background(220);
-}
+myButton.set((e) => runMethod(), "click");
 
 // --
 // https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl

@@ -1,66 +1,56 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/X1REi2O0H
 // test drive DOM.js v7
 
-// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#extending-the-htmlelement-class
+// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#extending-the-htmlelement-class
 // ?? how is this used:
 //   customElements.define("my-element", MyElement);
 
-let my = { c: 0 };
+// declares the class
+class MyElement extends HTMLElement {
+  constructor(startVal) {
+    super();
 
-function setup() {
-  createCanvas(400, 100);
+    this.valueBinder = new Binder(startVal);
 
-  // declares the class
-  class MyElement extends HTMLElement {
-    constructor(startVal) {
-      super();
-
-      this.valueBinder = new Binder(startVal);
-
-      this.set({
-        width: "fit-content",
-        padding: "2em",
-        margin: "0 auto",
-        display: "block",
-        textAlign: "center",
-        backgroundColor: this.valueBinder.as((v) => (v ? "green" : "red")),
-        p: {
-          text: this.valueBinder,
-        },
-        button: {
-          text: "toggle",
-          onclick: (e) => this.toggle(),
-        },
-      });
-    }
-
-    set value(val) {
-      this.valueBinder.value = val;
-    }
-
-    get value() {
-      return this.valueBinder.value;
-    }
-
-    toggle() {
-      this.value = !this.value;
-    }
+    this.set({
+      width: "fit-content",
+      padding: "2em",
+      margin: "0 auto",
+      display: "block",
+      textAlign: "center",
+      backgroundColor: this.valueBinder.as((v) => (v ? "green" : "red")),
+      p: {
+        text: this.valueBinder,
+      },
+      button: {
+        text: "toggle",
+        onclick: (e) => this.toggle(),
+      },
+    });
   }
-  customElements.define("my-element", MyElement);
 
-  // instantiate the element
+  set value(val) {
+    this.valueBinder.value = val;
+  }
 
-  let myElement = new MyElement(true);
+  get value() {
+    return this.valueBinder.value;
+  }
 
-  DOM.set({
-    h1: "Extended HTML element",
-    MyElement: myElement,
-  });
+  toggle() {
+    this.value = !this.value;
+  }
 }
+customElements.define("my-element", MyElement);
 
-function draw() {
-  background(220);
-}
+// instantiate the element
+
+let myElement = new MyElement(true);
+
+DOM.set({
+  h1: "Extended HTML element",
+  MyElement: myElement,
+});
 
 // --
 // https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk
