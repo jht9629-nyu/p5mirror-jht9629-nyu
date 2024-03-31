@@ -127,7 +127,7 @@
 [ims black-n white-1 jump](https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P)<!-- 2024-01-30T15:42:32.105Z -->  
 [ims-03-jht truchet tiles pause copy](https://editor.p5js.org/jht9629-nyu/sketches/CYMdD77ySc)<!-- 2023-04-06T17:49:28.916Z -->  
 [ims01-jht](https://editor.p5js.org/jht9629-nyu/sketches/8N3rb3TMD)<!-- 2024-03-12T15:41:39.534Z -->  
-[ims03-jht scrolling color bars](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)<!-- 2024-03-26T17:55:32.073Z -->  
+[ims03-jht scrolling color bars](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)<!-- 2024-03-31T18:22:19.647Z -->  
 [ims03-jht scrolling color bars v2](https://editor.p5js.org/jht9629-nyu/sketches/zV3BsHs7X)<!-- 2024-02-25T18:36:18.451Z -->  
 [ims03-jht scrolling color time](https://editor.p5js.org/jht9629-nyu/sketches/ZGUqiovgG)<!-- 2023-04-13T14:07:09.470Z -->  
 [ims04-jht scroll color bars](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)<!-- 2024-03-26T18:00:37.149Z -->  
@@ -143,11 +143,10 @@
 [let variables topleft ellipse](https://editor.p5js.org/jht9629-nyu/sketches/tnEPOHqIP)<!-- 2023-07-16T21:30:05.084Z -->  
 [let variables while](https://editor.p5js.org/jht9629-nyu/sketches/HzDuEq5B4)<!-- 2023-07-16T22:16:19.722Z -->  
 [let variables while y1](https://editor.p5js.org/jht9629-nyu/sketches/KdqhNNLLW)<!-- 2023-07-16T22:18:03.717Z -->  
-[Lying hacksaw](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)<!-- 2024-03-22T20:55:35.828Z -->  
 [Lying pillow](https://editor.p5js.org/jht9629-nyu/sketches/fbqvrSaz7)<!-- 2024-02-28T17:37:52.483Z -->  
 [many circles object literal](https://editor.p5js.org/jht9629-nyu/sketches/mupQOIvCw)<!-- 2023-09-24T19:35:34.510Z -->  
 [match pairs emoji](https://editor.p5js.org/jht9629-nyu/sketches/ZKPaZOjf_)<!-- 2023-08-11T19:07:54.439Z -->  
-[MazeSpin liberation screens copy](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)<!-- 2024-03-29T22:39:15.748Z -->  
+[MazeSpin liberation screens copy](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)<!-- 2024-03-31T17:10:08.633Z -->  
 [MazeSpin liberation screens v2](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)<!-- 2024-03-28T20:00:27.245Z -->  
 [Melanie pong with object array](https://editor.p5js.org/jht9629-nyu/sketches/qfMmYs2br)<!-- 2023-08-02T18:30:00.620Z -->  
 [Melanie pong with object literals](https://editor.p5js.org/jht9629-nyu/sketches/_8fx3fhlQ)<!-- 2023-08-02T18:08:32.872Z -->  
@@ -175,8 +174,9 @@
 [p5moExamples vote](https://editor.p5js.org/jht9629-nyu/sketches/EEafnQwr1)<!-- 2024-03-16T16:37:44.885Z -->  
 [p5moExamples vote copy](https://editor.p5js.org/jht9629-nyu/sketches/B2hlGkA-d)<!-- 2024-03-14T19:38:59.280Z -->  
 [p5moExamples vote\_DOMjs 47](https://editor.p5js.org/jht9629-nyu/sketches/CAgivET8K)<!-- 2024-03-18T18:11:42.095Z -->  
-[p5moLibrary Astronomical 47](https://editor.p5js.org/jht9629-nyu/sketches/iIIAb8KIDr)<!-- 2024-03-22T23:19:19.404Z -->  
+[p5moLibrary Astronomical 47](https://editor.p5js.org/jht9629-nyu/sketches/iIIAb8KIDr)<!-- 2024-03-31T18:40:48.892Z -->  
 [p5moLibrary Astronomical 47 -- corrupt](https://editor.p5js.org/jht9629-nyu/sketches/T8RvLIFc2)<!-- 2024-03-22T23:18:08.590Z -->  
+[p5moLibrary DrawPoints](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)<!-- 2024-03-31T18:42:58.007Z -->  
 [p5moLibrary Heavenly3D](https://editor.p5js.org/jht9629-nyu/sketches/6VM5IMP4m)<!-- 2024-03-22T23:21:12.312Z -->  
 [p5play-starter-code](https://editor.p5js.org/jht9629-nyu/sketches/r7vUnwdUz)<!-- 2023-07-31T01:25:13.847Z -->  
 [p5play-tumbler](https://editor.p5js.org/jht9629-nyu/sketches/UePTr_GLf)<!-- 2023-07-31T01:28:52.505Z -->  

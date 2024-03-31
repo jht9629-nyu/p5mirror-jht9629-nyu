@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-289 sketches 2024-03-30T23:54:33.027Z
+289 sketches 2024-03-31T18:42:58.007Z
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [1.2 draw\_shapes\_ui-AnDswZ6eY](./p5projects/1.2%20draw_shapes_ui-AnDswZ6eY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)]
@@ -78,7 +78,6 @@
 - [IMS - Truchet Vamoss copy-G4K2yaPnz](./p5projects/IMS%20-%20Truchet%20Vamoss%20copy-G4K2yaPnz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/G4K2yaPnz)]
 - [Image Drawing copy-mx-4OoEkk](./p5projects/Image%20Drawing%20copy-mx-4OoEkk) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/mx-4OoEkk)]
 - [Invincible shame-P\_lpGf16](./p5projects/Invincible%20shame-P_lpGf16) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-P_lpGf16)]
-- [Lying hacksaw-TQyVoswjQ](./p5projects/Lying%20hacksaw-TQyVoswjQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)]
 - [Lying pillow-fbqvrSaz7](./p5projects/Lying%20pillow-fbqvrSaz7) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fbqvrSaz7)]
 - [MazeSpin liberation screens copy-PN3n1CXom](./p5projects/MazeSpin%20liberation%20screens%20copy-PN3n1CXom) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)]
 - [MazeSpin liberation screens v2-wT957KlMz](./p5projects/MazeSpin%20liberation%20screens%20v2-wT957KlMz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)]
@@ -216,6 +215,7 @@
 - [p5moExamples vote\_DOMjs 47-CAgivET8K](./p5projects/p5moExamples%20vote_DOMjs%2047-CAgivET8K) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CAgivET8K)]
 - [p5moLibrary Astronomical 47 - corrupt-T8RvLIFc2](./p5projects/p5moLibrary%20Astronomical%2047%20-%20corrupt-T8RvLIFc2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/T8RvLIFc2)]
 - [p5moLibrary Astronomical 47-iIIAb8KIDr](./p5projects/p5moLibrary%20Astronomical%2047-iIIAb8KIDr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/IIAb8KIDr)]
+- [p5moLibrary DrawPoints-TQyVoswjQ](./p5projects/p5moLibrary%20DrawPoints-TQyVoswjQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)]
 - [p5moLibrary Heavenly3D-6VM5IMP4m](./p5projects/p5moLibrary%20Heavenly3D-6VM5IMP4m) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6VM5IMP4m)]
 - [p5play-starter-code-r7vUnwdUz](./p5projects/p5play-starter-code-r7vUnwdUz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r7vUnwdUz)]
 - [p5play-tumbler-UePTr\_GLf](./p5projects/p5play-tumbler-UePTr_GLf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/UePTr_GLf)]

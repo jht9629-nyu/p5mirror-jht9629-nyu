@@ -1,6 +1,6 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar
 // ims03-jht scrolling color bars
-// color pops on at wrap around
+// color pops on at wrap around - no rate regulation
 
 let xstep = 2;
 let xpos = 0;

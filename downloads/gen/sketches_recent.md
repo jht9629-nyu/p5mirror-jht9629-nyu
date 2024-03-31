@@ -1,12 +1,15 @@
 # Sketches for jht9629-nyu
 289 sketches  
+[p5moLibrary DrawPoints](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)<!-- 2024-03-31T18:42:58.007Z -->  
+[p5moLibrary Astronomical 47](https://editor.p5js.org/jht9629-nyu/sketches/iIIAb8KIDr)<!-- 2024-03-31T18:40:48.892Z -->  
+[ims03-jht scrolling color bars](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)<!-- 2024-03-31T18:22:19.647Z -->  
+[MazeSpin liberation screens copy](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)<!-- 2024-03-31T17:10:08.633Z -->  
 [video scan radial v7](https://editor.p5js.org/jht9629-nyu/sketches/i6akdNRS2)<!-- 2024-03-30T23:54:33.027Z -->  
 [video scan radial v6](https://editor.p5js.org/jht9629-nyu/sketches/nkw-sZXwN)<!-- 2024-03-30T20:02:37.863Z -->  
 [video scan radial v5](https://editor.p5js.org/jht9629-nyu/sketches/OReZ4wOR5)<!-- 2024-03-30T19:31:52.777Z -->  
 [video scan radial v4](https://editor.p5js.org/jht9629-nyu/sketches/7vllrM5d5)<!-- 2024-03-30T17:46:28.098Z -->  
 [video scan radial v3](https://editor.p5js.org/jht9629-nyu/sketches/WdNVtxQzf)<!-- 2024-03-30T17:45:27.162Z -->  
 [video scan radial v2](https://editor.p5js.org/jht9629-nyu/sketches/cKzXO8eUG)<!-- 2024-03-30T17:22:33.321Z -->  
-[MazeSpin liberation screens copy](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)<!-- 2024-03-29T22:39:15.748Z -->  
 [test drive DOM.js v6](https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk)<!-- 2024-03-29T16:22:56.463Z -->  
 [test drive DOM.js v8](https://editor.p5js.org/jht9629-nyu/sketches/mLU67cNL0)<!-- 2024-03-29T16:15:42.842Z -->  
 [test drive DOM.js v7](https://editor.p5js.org/jht9629-nyu/sketches/X1REi2O0H)<!-- 2024-03-29T16:03:35.456Z -->  
@@ -20,17 +23,14 @@
 [p5moExamples lobby](https://editor.p5js.org/jht9629-nyu/sketches/vP6sWN4Cu)<!-- 2024-03-27T19:38:12.979Z -->  
 [ims black-n white-1 bounce](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)<!-- 2024-03-26T19:06:00.622Z -->  
 [ims04-jht scroll color bars](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)<!-- 2024-03-26T18:00:37.149Z -->  
-[ims03-jht scrolling color bars](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)<!-- 2024-03-26T17:55:32.073Z -->  
 [Stupendous tellurium copy](https://editor.p5js.org/jht9629-nyu/sketches/6FRgWWxc_)<!-- 2024-03-25T17:09:42.481Z -->  
 [p5moExamples video 366](https://editor.p5js.org/jht9629-nyu/sketches/KeRAIMzHN)<!-- 2024-03-23T18:32:34.166Z -->  
 [mo-storage-dashboard 47](https://editor.p5js.org/jht9629-nyu/sketches/Osz28nOS9)<!-- 2024-03-23T18:05:59.389Z -->  
 [mo-storage-dashboard copy](https://editor.p5js.org/jht9629-nyu/sketches/nni2zh4VR)<!-- 2024-03-23T00:58:25.686Z -->  
 [p5moLibrary Heavenly3D](https://editor.p5js.org/jht9629-nyu/sketches/6VM5IMP4m)<!-- 2024-03-22T23:21:12.312Z -->  
-[p5moLibrary Astronomical 47](https://editor.p5js.org/jht9629-nyu/sketches/iIIAb8KIDr)<!-- 2024-03-22T23:19:19.404Z -->  
 [p5moLibrary Astronomical 47 -- corrupt](https://editor.p5js.org/jht9629-nyu/sketches/T8RvLIFc2)<!-- 2024-03-22T23:18:08.590Z -->  
 [p5moExamples pixel-grid](https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp)<!-- 2024-03-22T23:13:06.456Z -->  
 [Dandelion mustang](https://editor.p5js.org/jht9629-nyu/sketches/23h3z1G82)<!-- 2024-03-22T22:46:38.684Z -->  
-[Lying hacksaw](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)<!-- 2024-03-22T20:55:35.828Z -->  
 [p5moExamples vote\_DOMjs 47](https://editor.p5js.org/jht9629-nyu/sketches/CAgivET8K)<!-- 2024-03-18T18:11:42.095Z -->  
 [DOM.js v11 - array ul](https://editor.p5js.org/jht9629-nyu/sketches/m2Hwah4EP)<!-- 2024-03-16T22:32:03.932Z -->  
 [DOM.js v10 - voteCount span](https://editor.p5js.org/jht9629-nyu/sketches/HrxWO9hRd)<!-- 2024-03-16T21:38:55.803Z -->  

@@ -1,5 +1,7 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/iIIAb8KIDr
 // p5moLibrary Astronomical 47
+// https://molab-itp.github.io/p5moLibrary/src/demo/Astronomical/?v=65
+// https://github.com/molab-itp/p5moLibrary
 
 // Display regions of a Astronomical infographic with animated panning and zooming
 // Shift click to define rect region in left or right pane

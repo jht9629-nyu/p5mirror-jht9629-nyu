@@ -7817,7 +7817,7 @@
   {
     "name": "ims03-jht scrolling color bars",
     "_id": "3VKJ-q8ar",
-    "updatedAt": "2024-03-26T17:55:32.073Z",
+    "updatedAt": "2024-03-31T18:22:19.647Z",
     "files": [
       {
         "name": "root",
@@ -7829,20 +7829,20 @@
         ],
         "fileType": "folder",
         "_id": "6425fe61defa98523b4bbece",
-        "createdAt": "2024-03-26T17:55:32.073Z",
-        "updatedAt": "2024-03-26T17:55:32.073Z",
+        "createdAt": "2024-03-31T18:22:19.647Z",
+        "updatedAt": "2024-03-31T18:22:19.647Z",
         "isSelectedFile": false,
         "id": "6425fe61defa98523b4bbece"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n// color pops on at wrap around\n\nlet xstep = 2;\nlet xpos = 0;\nlet xlen;\nlet ylen;\nlet debug = 1;\nlet dim = { width: 400, height: 400 };\nlet fullScreenBtn;\nlet colorGold = [187, 165, 61];\n\nfunction setup() {\n  if (!debug) {\n    dim.width = windowWidth;\n    dim.height = windowHeight;\n  }\n  createCanvas(dim.width, dim.height);\n  noStroke();\n\n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n  init_dim();\n}\n\nfunction draw() {\n  // background(220);\n  // fill(\"black\");\n  fill(colorGold);\n  rect(0, 0, xpos, ylen);\n  fill(\"red\");\n  rect(xpos % width, 0, xlen, ylen);\n  fill(\"green\");\n  rect((xpos + xlen) % width, 0, xlen, ylen);\n  // fill(\"yellow\");\n  fill(colorGold);\n  rect((xpos + xlen * 2) % width, 0, xlen, ylen);\n\n  xpos = (xpos + xstep) % width;\n}\n\nfunction init_dim() {\n  xlen = width / 3;\n  ylen = height;\n}\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  ui_remove_all();\n  ui_toggleFullScreen();\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  init_dim();\n}\n\nfunction ui_remove_all() {\n  fullScreenBtn.remove();\n}\n\nfunction ui_toggleFullScreen() {\n  fullscreen(1);\n  // if (!document.documentElement.requestFullscreen) {\n  //   console.log(\"NO document.documentElement.requestFullscreen\");\n  //   return;\n  // }\n  // if (!document.fullscreenElement) {\n  //   document.documentElement.requestFullscreen();\n  // } else {\n  //   if (document.exitFullscreen) {\n  //     document.exitFullscreen();\n  //   }\n  // }\n}\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n// color pops on at wrap around - no rate regulation\n\nlet xstep = 2;\nlet xpos = 0;\nlet xlen;\nlet ylen;\nlet debug = 1;\nlet dim = { width: 400, height: 400 };\nlet fullScreenBtn;\nlet colorGold = [187, 165, 61];\n\nfunction setup() {\n  if (!debug) {\n    dim.width = windowWidth;\n    dim.height = windowHeight;\n  }\n  createCanvas(dim.width, dim.height);\n  noStroke();\n\n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n  init_dim();\n}\n\nfunction draw() {\n  // background(220);\n  // fill(\"black\");\n  fill(colorGold);\n  rect(0, 0, xpos, ylen);\n  fill(\"red\");\n  rect(xpos % width, 0, xlen, ylen);\n  fill(\"green\");\n  rect((xpos + xlen) % width, 0, xlen, ylen);\n  // fill(\"yellow\");\n  fill(colorGold);\n  rect((xpos + xlen * 2) % width, 0, xlen, ylen);\n\n  xpos = (xpos + xstep) % width;\n}\n\nfunction init_dim() {\n  xlen = width / 3;\n  ylen = height;\n}\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  ui_remove_all();\n  ui_toggleFullScreen();\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  init_dim();\n}\n\nfunction ui_remove_all() {\n  fullScreenBtn.remove();\n}\n\nfunction ui_toggleFullScreen() {\n  fullscreen(1);\n  // if (!document.documentElement.requestFullscreen) {\n  //   console.log(\"NO document.documentElement.requestFullscreen\");\n  //   return;\n  // }\n  // if (!document.fullscreenElement) {\n  //   document.documentElement.requestFullscreen();\n  // } else {\n  //   if (document.exitFullscreen) {\n  //     document.exitFullscreen();\n  //   }\n  // }\n}\n",
         "children": [],
         "fileType": "file",
         "_id": "6425fe61defa98523b4bbecb",
         "isSelectedFile": true,
-        "createdAt": "2024-03-26T17:55:32.073Z",
-        "updatedAt": "2024-03-26T17:55:32.073Z",
+        "createdAt": "2024-03-31T18:22:19.647Z",
+        "updatedAt": "2024-03-31T18:22:19.647Z",
         "id": "6425fe61defa98523b4bbecb"
       },
       {
@@ -7851,8 +7851,8 @@
         "children": [],
         "fileType": "file",
         "_id": "6425fe61defa98523b4bbecc",
-        "createdAt": "2024-03-26T17:55:32.073Z",
-        "updatedAt": "2024-03-26T17:55:32.073Z",
+        "createdAt": "2024-03-31T18:22:19.647Z",
+        "updatedAt": "2024-03-31T18:22:19.647Z",
         "isSelectedFile": false,
         "id": "6425fe61defa98523b4bbecc"
       },
@@ -7862,8 +7862,8 @@
         "children": [],
         "fileType": "file",
         "_id": "6425fe61defa98523b4bbecd",
-        "createdAt": "2024-03-26T17:55:32.073Z",
-        "updatedAt": "2024-03-26T17:55:32.073Z",
+        "createdAt": "2024-03-31T18:22:19.647Z",
+        "updatedAt": "2024-03-31T18:22:19.647Z",
         "isSelectedFile": false,
         "id": "6425fe61defa98523b4bbecd"
       }
@@ -8737,75 +8737,6 @@
     "id": "KdqhNNLLW"
   },
   {
-    "name": "Lying hacksaw",
-    "_id": "TQyVoswjQ",
-    "updatedAt": "2024-03-22T20:55:35.828Z",
-    "files": [
-      {
-        "name": "root",
-        "content": "",
-        "children": [
-          "65fdedfdd8aaf5001a8f7930",
-          "65fded224ceedc8877aa74df",
-          "65fded224ceedc8877aa74de",
-          "65fded224ceedc8877aa74e0"
-        ],
-        "fileType": "folder",
-        "_id": "65fded224ceedc8877aa74e1",
-        "createdAt": "2024-03-22T20:55:35.828Z",
-        "updatedAt": "2024-03-22T20:55:35.828Z",
-        "isSelectedFile": false,
-        "id": "65fded224ceedc8877aa74e1"
-      },
-      {
-        "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ\n// p5moLibrary DrawPoints\n// https://github.com/molab-itp/p5moLibrary\n\nlet my = {};\n\nfunction my_setup() {\n  my.version = '?v=47';\n  my.width = windowWidth;\n  my.height = windowHeight;\n  // my.width = 640;\n  // my.height = 480;\n  my.save_label = 'plea';\n  // seconds to re-draw points\n  my.lapse = 5;\n  my.xoffset = 0;\n  // my.xoffset = my.width / 2;\n  my.draw_specs = [\n    { color: 'red', strokeWeight: 12 },\n    { color: 'green', strokeWeight: 7 },\n    { color: 'yellow', strokeWeight: 2 },\n  ];\n  my.draw_color = 'white';\n  my.strokeWeight = 10;\n  my.run = 1;\n  // limit number of points in drawing\n  my.npoint_limit = 0; // no limit\n  // npoint_limit = 200;\n  my.timedDrawing = 0;\n  my.staticDrawing = 1;\n\n  // simple test for mobile phone\n  // if (window.screen.width < window.screen.height) {\n  //   my.width = window.screen.width;\n  //   my.height = my.width;\n  //   my.xoffset = 0;\n  // }\n}\n\nfunction setup() {\n  my_setup();\n\n  my.canvas = createCanvas(my.width, my.height);\n\n  my.drawPoints = new DrawPoints(my);\n\n  let urlParams = get_url_params();\n  my.drawPoints.restore_drawing(urlParams);\n\n  ui_init();\n\n  my.canvas.mouseReleased(canvas_mouseReleased);\n  my.canvas.touchEnded(canvas_touchEnded);\n  // my.canvas.touchStarted(canvas_touchStarted); // my.version = 14;\n}\n\nfunction mouseDragged() {\n  // console.log('mouseDragged');\n  my.drawPoints.mouseDragged();\n  let inX = mouseX >= 0 && mouseX < width;\n  let inY = mouseY >= 0 && mouseY < height;\n  let onCanvas = inX && inY;\n  // return false; // required to prevent touch drag moving canvas on mobile\n  return !onCanvas;\n}\n\nfunction canvas_mouseReleased() {\n  // console.log('canvas_mouseReleased');\n  my.drawPoints.mouseReleased();\n}\n\nfunction canvas_touchEnded() {\n  // console.log('canvas_touchEnded');\n  my.drawPoints.mouseReleased();\n}\n\nfunction draw() {\n  background(0);\n\n  my.drawPoints.prepareOutput();\n\n  image(my.drawPoints.output, 0, 0);\n}\n\nfunction ui_init() {\n  let msg = [\n    '(' + my.version.substring(1) + ') drag mouse on the canvas to create line drawing',\n    'press startTimedDraw to re-draw it in ' + my.drawPoints.lapse + ' seconds',\n  ];\n  createDiv(msg.join('<br/>'));\n\n  let runCheckBox = createCheckbox('Run ', my.drawPoints.run).changed(function () {\n    my.drawPoints.run = this.checked();\n  });\n  runCheckBox.style('display:inline;');\n\n  createButton('startTimedDraw').mousePressed(function () {\n    my.drawPoints.startTimedDraw();\n  });\n  createButton('stopTimedDraw').mousePressed(function () {\n    my.drawPoints.stopTimedDraw();\n  });\n  createButton('clearDrawing').mousePressed(function () {\n    my.drawPoints.clearDrawing();\n  });\n\n  createElement('br');\n\n  // createSlider(min, max, oldVal, step)\n  let lapse_slider = createSlider(0, 30, my.drawPoints.lapse).input(function () {\n    my.drawPoints.lapse = this.value();\n    // console.log('create_slider aVal ', aVal, 'type', typeof aVal);\n    valSpan.html(formatNumber(my.drawPoints.lapse) + '');\n    my.drawPoints.startTimedDraw();\n  });\n  lapse_slider.style('width:50%');\n  let valSpan = createSpan(my.drawPoints.lapse + '');\n\n  createElement('br');\n  createSpan('save_label: ');\n\n  createInput(my.drawPoints.save_label).input(function () {\n    my.drawPoints.save_label = this.value();\n    // save_drawing(); // too many saves\n  });\n\n  createButton('restore').mousePressed(function () {\n    my.drawPoints.restore_drawing();\n  });\n  createButton('save').mousePressed(function () {\n    my.drawPoints.save_drawing();\n  });\n  createButton('save_url').mousePressed(function () {\n    my.drawPoints.save_to_url();\n  });\n  createButton('clear_url').mousePressed(function () {\n    my.drawPoints.clear_url();\n  });\n}\n\n// return seconds since start of sketch\nfunction secsTime() {\n  return millis() / 1000;\n}\n\nfunction formatNumber(num) {\n  let prec = 1000;\n  return int(num * prec) / prec;\n}\n\n//\nfunction get_url_params() {\n  let query = window.location.search;\n  // console.log('query |' + query + '|');\n  console.log('query.length', query.length);\n  if (query.length < 1) return null;\n  let params = params_query(query);\n  return params;\n  // let store = params['store'];\n  // console.log('nstore', store);\n  // return store;\n}\n\n// https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams\nfunction params_query(query) {\n  // eg. query='abc=foo&def=%5Basf%5D&xyz=5'\n  // params={abc: \"foo\", def: \"[asf]\", xyz: \"5\"}\n  const urlParams = new URLSearchParams(query);\n  const params = Object.fromEntries(urlParams);\n  return params;\n}\n\n// prevent_scrolling(); !!@ Not used\n// https://alvarotrigo.com/blog/prevent-scroll-on-scrollable-element-js/\nfunction prevent_scrolling() {\n  document.querySelector('body').addEventListener('wheel', preventScroll, { passive: false });\n  function preventScroll(e) {\n    console.log('preventScroll');\n    e.preventDefault();\n    e.stopPropagation();\n    return false;\n  }\n}\n// localStorage.clear()\n\n// https://www.buildingh.org\n\n// https://editor.p5js.org/jht9629-nyu/sketches/MbS5C3j-F\n// Necessary-forgery-DrawPoints\n\n// convert to my.\n// startTimedDraw as slider changes\n// added a_drawings\n// generalize draw_to\n// remove class Point, use object literal for point\n// added funtion lineFrom\n\n// project files created with p5.vscode \"Create p5.js Project\"\n// https://editor.p5js.org/jht9629-nyu/sketches/-t2O5JfBr\n// DrawPoints\n// !!@ p5.js/0.10.2\n\n// TRY: use storeItem / getItem to save drawing locally\n// https://p5js.org/reference/#/p5/storeItem\n// https://p5js.org/reference/#/p5/getItem\n\n// Code! Programming with p5.js\n// The Coding Train / Daniel Shiffman\n// https://thecodingtrain.com/beginners/p5js/7.3-array-of-objects.html\n// https://youtu.be/fBqaA7zRO58\n// https://editor.p5js.org/codingtrain/sketches/1y_xfueO\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fded224ceedc8877aa74de",
-        "isSelectedFile": true,
-        "createdAt": "2024-03-22T20:55:35.828Z",
-        "updatedAt": "2024-03-22T20:55:35.828Z",
-        "id": "65fded224ceedc8877aa74de"
-      },
-      {
-        "name": "index.html",
-        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Drawing Points</title>\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" /> -->\n    <style>\n      html,\n      body {\n        margin: 0;\n        padding: 0;\n      }\n      canvas {\n        display: block;\n      }\n      /* body {\n        overflow-y: hidden;\n      } */\n    </style>\n    <!-- \n    <script src=\"libraries/p5.min.js\"></script>\n    <script src=\"libraries/p5.sound.min.js\"></script> \n    -->\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js\"></script> -->\n  </head>\n\n  <body>\n    <script src=\"DrawPoints.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fded224ceedc8877aa74df",
-        "createdAt": "2024-03-22T20:55:35.828Z",
-        "updatedAt": "2024-03-22T20:55:35.828Z",
-        "isSelectedFile": false,
-        "id": "65fded224ceedc8877aa74df"
-      },
-      {
-        "name": "style.css",
-        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fded224ceedc8877aa74e0",
-        "createdAt": "2024-03-22T20:55:35.828Z",
-        "updatedAt": "2024-03-22T20:55:35.828Z",
-        "isSelectedFile": false,
-        "id": "65fded224ceedc8877aa74e0"
-      },
-      {
-        "name": "DrawPoints.js",
-        "content": "// Draw points store in array drawings\nclass DrawPoints {\n  constructor(props) {\n    console.log('DrawPoints props', props);\n    Object.assign(this, props);\n    this.version = 1;\n    this.drawings = [];\n    this.drawing_index = 0;\n    this.points = null;\n    this.npoints = 0;\n    this.output = createGraphics(this.width, this.height);\n    this.output.noFill();\n  }\n\n  prepareOutput() {\n    if (!this.run) {\n      return;\n    }\n    if (this.staticDrawing) {\n      this.draw_points();\n    }\n    if (this.timedDrawing) {\n      this.draw_timed();\n    }\n  }\n\n  draw_points() {\n    let args = {\n      color: this.draw_color,\n      strokeWeight: this.strokeWeight,\n      stopIndex: this.npoints,\n      xoffset: 0,\n    };\n    this.draw_to(args);\n  }\n\n  draw_timed() {\n    let ncolors = this.draw_specs.length;\n    let npoints = this.npoints;\n    let now = secsTime() - this.startTime;\n    // take lapse seconds n drawings\n    let progress = now / (this.lapse / ncolors);\n    //- take lapse seconds per single drawing\n    //- let progress = now / this.lapse;\n    let stopIndex = int(npoints * progress) % (npoints * ncolors);\n    let spec = this.draw_specs[0];\n    let stepper = (ipoint) => {\n      if (ipoint % npoints == 0) {\n        let icycle = args.icycle;\n        let spec = this.draw_specs[icycle];\n        // let str = formatNumber(progress);\n        // str = str + ' ipoint ' + ipoint + ' stopIndex ' + stopIndex + ' strokeWeight ' + istrokeWeight;\n        // str += ' icycle ' + icycle + ' icolor ' + icolor;\n        // console.log(str);\n        this.output.stroke(spec.color);\n        this.output.strokeWeight(spec.strokeWeight);\n        args.icycle = (args.icycle + 1) % ncolors;\n      }\n    };\n    let args = {\n      color: spec.color,\n      strokeWeight: spec.strokeWeight,\n      stopIndex: stopIndex,\n      xoffset: this.xoffset,\n      stepper: stepper,\n      icycle: 0,\n    };\n    this.draw_to(args);\n  }\n\n  draw_to(args) {\n    this.output.stroke(args.color);\n    this.output.strokeWeight(args.strokeWeight);\n    let stepper = args.stepper;\n    let stopIndex = args.stopIndex;\n    let xoffset = args.xoffset;\n    let ipoint = 0;\n    while (ipoint < stopIndex) {\n      // Draw all points up until stopIndex\n      for (let points of this.drawings) {\n        for (let i = 1; i < points.length; i++) {\n          if (ipoint > stopIndex) return;\n          if (stepper) stepper(ipoint);\n          let prev = points[i - 1];\n          let point = points[i];\n          this.lineFrom(point, prev, xoffset);\n          ipoint++;\n        }\n      }\n      // detect no change\n      if (!ipoint) {\n        console.log('stopIndex_draw No change ipoint', ipoint);\n        break;\n      }\n    }\n  }\n\n  lineFrom(point, prev, xoffset) {\n    this.output.line(prev.x + xoffset, prev.y, point.x + xoffset, point.y);\n  }\n\n  startTimedDraw() {\n    // console.log('startTimedDraw');\n    this.timedDrawing = 1;\n    this.startTime = secsTime();\n    this.calc_npoints();\n    console.log('startTimedDraw this.npoints', this.npoints);\n  }\n\n  calc_npoints() {\n    this.npoints = 0;\n    for (let points of this.drawings) {\n      this.npoints += points.length;\n    }\n  }\n\n  stopTimedDraw() {\n    console.log('stopTimedDraw');\n    this.timedDrawing = 0;\n  }\n\n  clearDrawing() {\n    console.log('clearDrawing');\n    this.drawings = [];\n    this.points = null;\n    this.npoints = 0;\n    this.timedDrawing = 0;\n    this.output.clear();\n    // this.save_drawing();\n  }\n\n  restore_drawing(urlParams) {\n    // console.log('restore_drawing nstore |' + nstore + '|');\n    let store;\n    if (urlParams && urlParams.drawings) {\n      store = this.restore_urlParams(urlParams);\n    } else {\n      store = this.restore_localStorage();\n      if (!store) {\n        store = { drawings: [] };\n      }\n    }\n    this.expand_drawings(store);\n    this.drawings = store.drawings;\n    this.calc_npoints();\n    this.output.clear();\n    console.log('restore_drawing this.npoints', this.npoints);\n    if (urlParams) {\n      this.xoffset = 0;\n      this.staticDrawing = 0;\n      this.startTimedDraw();\n    }\n  }\n\n  restore_urlParams(urlParams) {\n    let store = { drawings: [] };\n    if (urlParams.drawings) {\n      let str = expand_decode(urlParams.drawings);\n      try {\n        store.drawings = JSON.parse(str);\n      } catch (err) {\n        console.log('restore_drawing drawings parse err', err);\n        return;\n      }\n    }\n    if (urlParams.save_label) {\n      this.save_label = urlParams.save_label;\n    }\n    return store;\n  }\n\n  restore_localStorage() {\n    let store;\n    let str = localStorage.getItem(this.save_label);\n    if (!str) return null;\n    console.log('restore_drawing str.length', str.length);\n    // this.drawings = JSON.parse(str);\n    try {\n      store = JSON.parse(str);\n    } catch (err) {\n      console.log('restore_drawing parse err', err);\n      return;\n    }\n    return store;\n  }\n\n  save_drawing() {\n    let store = this.prepareStore();\n    let str = JSON.stringify(store);\n    localStorage.setItem(this.save_label, str);\n    console.log('save_drawing str.length', str.length);\n    // Report full string size. Typically %50 more\n    // let full = JSON.stringify(this.drawings);\n    // console.log('save_drawing full.length', full.length);\n  }\n\n  prepareStore() {\n    let store = {\n      version: this.version,\n      width: this.width,\n      height: this.height,\n      drawings: this.drawings,\n    };\n    this.shrink_drawings(store);\n    return store;\n  }\n\n  save_to_url() {\n    let store = this.prepareStore();\n    let url = new URL(window.location.href);\n    // url.search = '?store=' + encodeURIComponent(str);\n    let str = '?label=' + encodeURIComponent(this.save_label);\n    str += '&version=' + encodeURIComponent(this.version + '');\n    str += '&width=' + encodeURIComponent(this.width + '');\n    str += '&height=' + encodeURIComponent(this.height + '');\n    let dstr = JSON.stringify(store.drawings);\n    str += '&drawings=' + shrink_encode(dstr);\n    url.search = str;\n    console.log(url.href);\n    window.location = url.href;\n  }\n\n  clear_url() {\n    let index = window.location.href.indexOf('?');\n    if (index < 0) return;\n    let nhref = window.location.href.substring(0, index);\n    location.replace(nhref);\n  }\n\n  // Transform drawings to delta array to save on stringify length\n  // [{x: x0, y: y0}, {x: x1, y: y1}, {x: x2, y: y2} ...]\n  //  --> [x0, y0, x1-x0, y1-y0, x2-x0, y2-y0 ...]\n  shrink_drawings(store) {\n    let x0;\n    let y0;\n    let d = store.drawings.map((arr) => {\n      return arr.flatMap((item, index) => {\n        if (index == 0) {\n          x0 = item.x;\n          y0 = item.y;\n          return [x0, y0];\n        }\n        return [item.x - x0, item.y - y0];\n      });\n    });\n    store.drawings = d;\n  }\n\n  expand_drawings(store) {\n    // if (!store.version) return;\n    let x0;\n    let y0;\n    let d = store.drawings.map((arr) => {\n      let narr = [];\n      for (let index = 0; index < arr.length; index += 2) {\n        if (index == 0) {\n          x0 = arr[0];\n          y0 = arr[1];\n          narr.push({ x: x0, y: y0 });\n        } else {\n          narr.push({ x: arr[index] + x0, y: arr[index + 1] + y0 });\n        }\n      }\n      return narr;\n    });\n    store.drawings = d;\n  }\n\n  mouseDragged() {\n    this.staticDrawing = 1;\n\n    if (mouseX < 0 || mouseX > width || mouseY < 0 || mouseY > height) {\n      return;\n    }\n    if (this.npoint_limit && this.npoints >= this.npoint_limit) {\n      console.log('mouseDragged this.npoint_limit', this.npoint_limit, 'this.npoints', this.npoints);\n      return;\n    }\n    if (!this.points) {\n      this.points = [];\n      this.drawings.push(this.points);\n    }\n    let x = int(mouseX);\n    let y = int(mouseY);\n    this.points.push({ x, y });\n    this.npoints++;\n  }\n\n  // Save current drawing and prepare for next group of points\n  mouseReleased() {\n    console.log('DrawPoints mouseReleased');\n    // null points will start fresh point array\n    this.points = null;\n    this.startTimedDraw();\n    this.save_drawing();\n  }\n} // DrawPoints\n\n// encode a few characters to reduce size of url &drawings= param\n// {}[]:,\"+\n// --> mapped to upper case letters\n// ABCDEFGHILKMNOPQRTSTUVWXYZ\n\nlet char0_index = 'A'.charCodeAt(0);\n// let encode_chars = '{}[]:,\"+';\nlet encode_chars = '[],:\"+{}';\nlet encode_dict = {};\nlet decode_dict = {};\nfor (let index = 0; index < encode_chars.length; index++) {\n  let ch1 = encode_chars[index];\n  let ch2 = String.fromCharCode(index + char0_index);\n  encode_dict[ch1] = ch2;\n  decode_dict[ch2] = ch1;\n}\n\nfunction shrink_encode(str) {\n  let nstr = '';\n  let nch;\n  for (let ch of str) {\n    nch = encode_dict[ch];\n    if (!nch) nch = ch;\n    nstr += nch;\n  }\n  // console.log('shrink_encode nstr', nstr);\n  return nstr;\n}\n\nfunction expand_decode(str) {\n  let nstr = '';\n  let nch;\n  for (let ch of str) {\n    nch = decode_dict[ch];\n    if (!nch) nch = ch;\n    nstr += nch;\n  }\n  // console.log('expand_decode nstr', nstr);\n  return nstr;\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65fdedfdd8aaf5001a8f7930",
-        "updatedAt": "2024-03-22T20:55:35.828Z",
-        "createdAt": "2024-03-22T20:55:35.828Z",
-        "isSelectedFile": false,
-        "id": "65fdedfdd8aaf5001a8f7930"
-      }
-    ],
-    "createdAt": "2024-03-22T20:42:14.133Z",
-    "id": "TQyVoswjQ"
-  },
-  {
     "name": "Lying pillow",
     "_id": "fbqvrSaz7",
     "updatedAt": "2024-02-28T17:37:52.483Z",
@@ -8990,8 +8921,8 @@
         "fileType": "folder",
         "_id": "660741ba7b84442973a9848e",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T22:39:15.748Z",
-        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "createdAt": "2024-03-31T17:10:08.633Z",
+        "updatedAt": "2024-03-31T17:10:08.633Z",
         "id": "660741ba7b84442973a9848e"
       },
       {
@@ -9000,9 +8931,9 @@
         "children": [],
         "fileType": "file",
         "_id": "660741ba7b84442973a98491",
-        "isSelectedFile": false,
-        "createdAt": "2024-03-29T22:39:15.748Z",
-        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-31T17:10:08.633Z",
+        "updatedAt": "2024-03-31T17:10:08.633Z",
         "id": "660741ba7b84442973a98491"
       },
       {
@@ -9012,8 +8943,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98490",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T22:39:15.748Z",
-        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "createdAt": "2024-03-31T17:10:08.633Z",
+        "updatedAt": "2024-03-31T17:10:08.633Z",
         "id": "660741ba7b84442973a98490"
       },
       {
@@ -9023,8 +8954,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98492",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T22:39:15.748Z",
-        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "createdAt": "2024-03-31T17:10:08.633Z",
+        "updatedAt": "2024-03-31T17:10:08.633Z",
         "id": "660741ba7b84442973a98492"
       },
       {
@@ -9033,9 +8964,9 @@
         "children": [],
         "fileType": "file",
         "_id": "660741ba7b84442973a9848f",
-        "isSelectedFile": true,
-        "createdAt": "2024-03-29T22:39:15.748Z",
-        "updatedAt": "2024-03-29T22:39:15.748Z",
+        "isSelectedFile": false,
+        "createdAt": "2024-03-31T17:10:08.633Z",
+        "updatedAt": "2024-03-31T17:10:08.633Z",
         "id": "660741ba7b84442973a9848f"
       },
       {
@@ -9050,8 +8981,8 @@
         "fileType": "folder",
         "_id": "660741ba7b84442973a98493",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-29T22:39:15.748Z",
-        "createdAt": "2024-03-29T22:39:15.748Z",
+        "updatedAt": "2024-03-31T17:10:08.633Z",
+        "createdAt": "2024-03-31T17:10:08.633Z",
         "id": "660741ba7b84442973a98493"
       },
       {
@@ -9061,8 +8992,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98496",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-29T22:39:15.748Z",
-        "createdAt": "2024-03-29T22:39:15.748Z",
+        "updatedAt": "2024-03-31T17:10:08.633Z",
+        "createdAt": "2024-03-31T17:10:08.633Z",
         "id": "660741ba7b84442973a98496"
       },
       {
@@ -9072,8 +9003,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98497",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-29T22:39:15.748Z",
-        "createdAt": "2024-03-29T22:39:15.748Z",
+        "updatedAt": "2024-03-31T17:10:08.633Z",
+        "createdAt": "2024-03-31T17:10:08.633Z",
         "id": "660741ba7b84442973a98497"
       },
       {
@@ -9083,8 +9014,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98494",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-29T22:39:15.748Z",
-        "createdAt": "2024-03-29T22:39:15.748Z",
+        "updatedAt": "2024-03-31T17:10:08.633Z",
+        "createdAt": "2024-03-31T17:10:08.633Z",
         "id": "660741ba7b84442973a98494"
       },
       {
@@ -9094,13 +9025,13 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98495",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-29T22:39:15.748Z",
-        "createdAt": "2024-03-29T22:39:15.748Z",
+        "updatedAt": "2024-03-31T17:10:08.633Z",
+        "createdAt": "2024-03-31T17:10:08.633Z",
         "id": "660741ba7b84442973a98495"
       }
     ],
     "createdAt": "2024-03-29T22:33:30.263Z",
-    "updatedAt": "2024-03-29T22:39:15.748Z",
+    "updatedAt": "2024-03-31T17:10:08.633Z",
     "id": "PN3n1CXom"
   },
   {
@@ -11390,8 +11321,8 @@
         ],
         "fileType": "folder",
         "_id": "65fde45c18dc6a54d912f0a4",
-        "createdAt": "2024-03-22T23:19:19.404Z",
-        "updatedAt": "2024-03-22T23:19:19.404Z",
+        "createdAt": "2024-03-31T18:40:48.892Z",
+        "updatedAt": "2024-03-31T18:40:48.892Z",
         "isSelectedFile": false,
         "id": "65fde45c18dc6a54d912f0a4"
       },
@@ -11401,8 +11332,8 @@
         "children": [],
         "fileType": "file",
         "_id": "65fde45c18dc6a54d912f0ac",
-        "createdAt": "2024-03-22T23:19:19.404Z",
-        "updatedAt": "2024-03-22T23:19:19.404Z",
+        "createdAt": "2024-03-31T18:40:48.892Z",
+        "updatedAt": "2024-03-31T18:40:48.892Z",
         "isSelectedFile": false,
         "id": "65fde45c18dc6a54d912f0ac"
       },
@@ -11414,19 +11345,19 @@
         ],
         "fileType": "folder",
         "_id": "65fde45c18dc6a54d912f0a6",
-        "updatedAt": "2024-03-22T23:19:19.404Z",
-        "createdAt": "2024-03-22T23:19:19.404Z",
+        "updatedAt": "2024-03-31T18:40:48.892Z",
+        "createdAt": "2024-03-31T18:40:48.892Z",
         "isSelectedFile": false,
         "id": "65fde45c18dc6a54d912f0a6"
       },
       {
         "name": "a_sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/iIIAb8KIDr\n// p5moLibrary Astronomical 47\n\n// Display regions of a Astronomical infographic with animated panning and zooming\n// Shift click to define rect region in left or right pane\n// Save defined regions in local storage and export as JSON\n\nlet my = {};\n\nfunction preload() {\n  //\n  my.version = '?v=47';\n\n  // jpg not registering. rename\n  \n  my.backgImg = loadImage('assets/The_Celestial_Zoo-1.jpg');\n  \n  // !!@ no show in console\n  console.log('preload my.backgImg width', my.backgImg.width, my.backgImg.height);\n}\n\nfunction setup() {\n  //\n  console.log('setup my.backgImg width', my.backgImg.width, my.backgImg.height);\n  // my.backgImg width 4800 3200\n\n  astro_setup();\n\n  my.animLoop = new Anim({ target: my, time: 15 });\n  if (my.scanFlag) {\n    my.animLoop.start();\n  }\n}\n\nfunction draw() {\n  //\n  // console.log('draw my.backgImg width', my.backgImg.width, my.backgImg.height);\n\n  background(0);\n  my.pane1.render();\n  my.pane0.render();\n  ui_init_update();\n  if (my.mouseTracking) {\n    my.pane.mouseDragged();\n  }\n  draw_crossHairs();\n  drawCycleCount();\n\n  my.animLoop.step({ action: nextRefAction, loop: my.scanFlag });\n}\n\nfunction drawCycleCount() {\n  let lapse = my.animLoop.lapse();\n  let { x0, y0, width, height } = my.pane0;\n  let h = floor(height * 0.025);\n  let y = y0 + height - h;\n  let x = x0;\n  let str = Number(lapse).toFixed(1).padStart(4, '0');\n  str = str + ' ' + my.cycleCount;\n  fill(0);\n  noStroke();\n  rect(x, y, width, h);\n  fill(255);\n  textSize(h);\n  text(str, x, y + h);\n}\n\nfunction formatNum(num) {\n  return Number(num).toLocaleString();\n}\n\nfunction draw_crossHairs() {\n  stroke(255);\n  strokeWeight(1);\n  for (let ment of my.mouseXYs) {\n    line(ment.x, 0, ment.x, height);\n    line(0, ment.y, width, ment.y);\n  }\n  if (my.shiftTracking) {\n    line(mouseX, 0, mouseX, height);\n    line(0, mouseY, width, mouseY);\n  }\n}\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/T8RvLIFc2\n// p5moLibrary Astronomical 47 -- corrupt\n\n// https://github.com/molab-itp/p5moLibrary\n\n// https://editor.p5js.org/jht9629-nyu/sketches/K_xe4i5md\n\n// https://commons.wikimedia.org/wiki/File:The_Celestial_Zoo_infographic_wikimedia.png\n// Infographic listing 210 notable astronomical objects marked on a central\n// logarithmic map of the observable universe. A small view and some distinguishing\n// features are included for each astronomical object\n\n// https://en.wikipedia.org/wiki/Astronomical_object\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/iIIAb8KIDr\n// p5moLibrary Astronomical 47\n// https://molab-itp.github.io/p5moLibrary/src/demo/Astronomical/?v=65\n// https://github.com/molab-itp/p5moLibrary\n\n// Display regions of a Astronomical infographic with animated panning and zooming\n// Shift click to define rect region in left or right pane\n// Save defined regions in local storage and export as JSON\n\nlet my = {};\n\nfunction preload() {\n  //\n  my.version = '?v=47';\n\n  // jpg not registering. rename\n  \n  my.backgImg = loadImage('assets/The_Celestial_Zoo-1.jpg');\n  \n  // !!@ no show in console\n  console.log('preload my.backgImg width', my.backgImg.width, my.backgImg.height);\n}\n\nfunction setup() {\n  //\n  console.log('setup my.backgImg width', my.backgImg.width, my.backgImg.height);\n  // my.backgImg width 4800 3200\n\n  astro_setup();\n\n  my.animLoop = new Anim({ target: my, time: 15 });\n  if (my.scanFlag) {\n    my.animLoop.start();\n  }\n}\n\nfunction draw() {\n  //\n  // console.log('draw my.backgImg width', my.backgImg.width, my.backgImg.height);\n\n  background(0);\n  my.pane1.render();\n  my.pane0.render();\n  ui_init_update();\n  if (my.mouseTracking) {\n    my.pane.mouseDragged();\n  }\n  draw_crossHairs();\n  drawCycleCount();\n\n  my.animLoop.step({ action: nextRefAction, loop: my.scanFlag });\n}\n\nfunction drawCycleCount() {\n  let lapse = my.animLoop.lapse();\n  let { x0, y0, width, height } = my.pane0;\n  let h = floor(height * 0.025);\n  let y = y0 + height - h;\n  let x = x0;\n  let str = Number(lapse).toFixed(1).padStart(4, '0');\n  str = str + ' ' + my.cycleCount;\n  fill(0);\n  noStroke();\n  rect(x, y, width, h);\n  fill(255);\n  textSize(h);\n  text(str, x, y + h);\n}\n\nfunction formatNum(num) {\n  return Number(num).toLocaleString();\n}\n\nfunction draw_crossHairs() {\n  stroke(255);\n  strokeWeight(1);\n  for (let ment of my.mouseXYs) {\n    line(ment.x, 0, ment.x, height);\n    line(0, ment.y, width, ment.y);\n  }\n  if (my.shiftTracking) {\n    line(mouseX, 0, mouseX, height);\n    line(0, mouseY, width, mouseY);\n  }\n}\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/T8RvLIFc2\n// p5moLibrary Astronomical 47 -- corrupt\n\n// https://github.com/molab-itp/p5moLibrary\n\n// https://editor.p5js.org/jht9629-nyu/sketches/K_xe4i5md\n\n// https://commons.wikimedia.org/wiki/File:The_Celestial_Zoo_infographic_wikimedia.png\n// Infographic listing 210 notable astronomical objects marked on a central\n// logarithmic map of the observable universe. A small view and some distinguishing\n// features are included for each astronomical object\n\n// https://en.wikipedia.org/wiki/Astronomical_object\n",
         "children": [],
         "fileType": "file",
         "_id": "65fde45c18dc6a54d912f0a5",
-        "updatedAt": "2024-03-22T23:19:19.404Z",
-        "createdAt": "2024-03-22T23:19:19.404Z",
+        "updatedAt": "2024-03-31T18:40:48.892Z",
+        "createdAt": "2024-03-31T18:40:48.892Z",
         "isSelectedFile": true,
         "id": "65fde45c18dc6a54d912f0a5"
       },
@@ -11436,8 +11367,8 @@
         "children": [],
         "fileType": "file",
         "_id": "65fde45c18dc6a54d912f0a8",
-        "updatedAt": "2024-03-22T23:19:19.404Z",
-        "createdAt": "2024-03-22T23:19:19.404Z",
+        "updatedAt": "2024-03-31T18:40:48.892Z",
+        "createdAt": "2024-03-31T18:40:48.892Z",
         "isSelectedFile": false,
         "id": "65fde45c18dc6a54d912f0a8"
       },
@@ -11447,8 +11378,8 @@
         "children": [],
         "fileType": "file",
         "_id": "65fde45c18dc6a54d912f0aa",
-        "updatedAt": "2024-03-22T23:19:19.404Z",
-        "createdAt": "2024-03-22T23:19:19.404Z",
+        "updatedAt": "2024-03-31T18:40:48.892Z",
+        "createdAt": "2024-03-31T18:40:48.892Z",
         "isSelectedFile": false,
         "id": "65fde45c18dc6a54d912f0aa"
       },
@@ -11458,8 +11389,8 @@
         "children": [],
         "fileType": "file",
         "_id": "65fde45c18dc6a54d912f0ad",
-        "updatedAt": "2024-03-22T23:19:19.404Z",
-        "createdAt": "2024-03-22T23:19:19.404Z",
+        "updatedAt": "2024-03-31T18:40:48.892Z",
+        "createdAt": "2024-03-31T18:40:48.892Z",
         "isSelectedFile": false,
         "id": "65fde45c18dc6a54d912f0ad"
       },
@@ -11469,8 +11400,8 @@
         "children": [],
         "fileType": "file",
         "_id": "65fde45c18dc6a54d912f0a9",
-        "updatedAt": "2024-03-22T23:19:19.404Z",
-        "createdAt": "2024-03-22T23:19:19.404Z",
+        "updatedAt": "2024-03-31T18:40:48.892Z",
+        "createdAt": "2024-03-31T18:40:48.892Z",
         "isSelectedFile": false,
         "id": "65fde45c18dc6a54d912f0a9"
       },
@@ -11480,8 +11411,8 @@
         "children": [],
         "fileType": "file",
         "_id": "65fde45c18dc6a54d912f0ab",
-        "updatedAt": "2024-03-22T23:19:19.404Z",
-        "createdAt": "2024-03-22T23:19:19.404Z",
+        "updatedAt": "2024-03-31T18:40:48.892Z",
+        "createdAt": "2024-03-31T18:40:48.892Z",
         "isSelectedFile": false,
         "id": "65fde45c18dc6a54d912f0ab"
       },
@@ -11493,13 +11424,13 @@
         "_id": "65fde45c18dc6a54d912f0a7",
         "url": "https://assets.editor.p5js.org/60261b883e600f00240bd343/64b24817-e341-42c5-b309-5ec282c53e58.jpg",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-22T23:19:19.404Z",
-        "createdAt": "2024-03-22T23:19:19.404Z",
+        "updatedAt": "2024-03-31T18:40:48.892Z",
+        "createdAt": "2024-03-31T18:40:48.892Z",
         "id": "65fde45c18dc6a54d912f0a7"
       }
     ],
     "createdAt": "2024-03-22T20:04:44.956Z",
-    "updatedAt": "2024-03-22T23:19:19.404Z",
+    "updatedAt": "2024-03-31T18:40:48.892Z",
     "id": "iIIAb8KIDr"
   },
   {
@@ -11632,6 +11563,75 @@
     ],
     "createdAt": "2024-03-22T19:22:48.245Z",
     "id": "T8RvLIFc2"
+  },
+  {
+    "name": "p5moLibrary DrawPoints",
+    "_id": "TQyVoswjQ",
+    "updatedAt": "2024-03-31T18:42:58.007Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "65fdedfdd8aaf5001a8f7930",
+          "65fded224ceedc8877aa74df",
+          "65fded224ceedc8877aa74de",
+          "65fded224ceedc8877aa74e0"
+        ],
+        "fileType": "folder",
+        "_id": "65fded224ceedc8877aa74e1",
+        "createdAt": "2024-03-31T18:42:58.007Z",
+        "updatedAt": "2024-03-31T18:42:58.007Z",
+        "isSelectedFile": false,
+        "id": "65fded224ceedc8877aa74e1"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ\n// p5moLibrary DrawPoints\n// https://molab-itp.github.io/p5moLibrary/src/demo/DrawPoints/?v=65\n// https://github.com/molab-itp/p5moLibrary\n\nlet my = {};\n\nfunction my_setup() {\n  my.version = '?v=47';\n  my.width = windowWidth;\n  my.height = windowHeight;\n  // my.width = 640;\n  // my.height = 480;\n  my.save_label = 'plea';\n  // seconds to re-draw points\n  my.lapse = 5;\n  my.xoffset = 0;\n  // my.xoffset = my.width / 2;\n  my.draw_specs = [\n    { color: 'red', strokeWeight: 12 },\n    { color: 'green', strokeWeight: 7 },\n    { color: 'yellow', strokeWeight: 2 },\n  ];\n  my.draw_color = 'white';\n  my.strokeWeight = 10;\n  my.run = 1;\n  // limit number of points in drawing\n  my.npoint_limit = 0; // no limit\n  // npoint_limit = 200;\n  my.timedDrawing = 0;\n  my.staticDrawing = 1;\n}\n\nfunction setup() {\n  my_setup();\n\n  my.canvas = createCanvas(my.width, my.height);\n\n  my.drawPoints = new DrawPoints(my);\n\n  let urlParams = get_url_params();\n  my.drawPoints.restore_drawing(urlParams);\n\n  ui_init();\n\n  my.canvas.mouseReleased(canvas_mouseReleased);\n  my.canvas.touchEnded(canvas_touchEnded);\n  // my.canvas.touchStarted(canvas_touchStarted); // my.version = 14;\n}\n\nfunction mouseDragged() {\n  // console.log('mouseDragged');\n  my.drawPoints.mouseDragged();\n  let inX = mouseX >= 0 && mouseX < width;\n  let inY = mouseY >= 0 && mouseY < height;\n  let onCanvas = inX && inY;\n  // return false; // required to prevent touch drag moving canvas on mobile\n  return !onCanvas;\n}\n\nfunction canvas_mouseReleased() {\n  // console.log('canvas_mouseReleased');\n  my.drawPoints.mouseReleased();\n}\n\nfunction canvas_touchEnded() {\n  // console.log('canvas_touchEnded');\n  my.drawPoints.mouseReleased();\n}\n\nfunction draw() {\n  background(0);\n\n  my.drawPoints.prepareOutput();\n\n  image(my.drawPoints.output, 0, 0);\n}\n\nfunction ui_init() {\n  let msg = [\n    '(' + my.version.substring(1) + ') drag mouse on the canvas to create line drawing',\n    'press startTimedDraw to re-draw it in ' + my.drawPoints.lapse + ' seconds',\n  ];\n  createDiv(msg.join('<br/>'));\n\n  let runCheckBox = createCheckbox('Run ', my.drawPoints.run).changed(function () {\n    my.drawPoints.run = this.checked();\n  });\n  runCheckBox.style('display:inline;');\n\n  createButton('startTimedDraw').mousePressed(function () {\n    my.drawPoints.startTimedDraw();\n  });\n  createButton('stopTimedDraw').mousePressed(function () {\n    my.drawPoints.stopTimedDraw();\n  });\n  createButton('clearDrawing').mousePressed(function () {\n    my.drawPoints.clearDrawing();\n  });\n\n  createElement('br');\n\n  // createSlider(min, max, oldVal, step)\n  let lapse_slider = createSlider(0, 30, my.drawPoints.lapse).input(function () {\n    my.drawPoints.lapse = this.value();\n    // console.log('create_slider aVal ', aVal, 'type', typeof aVal);\n    valSpan.html(formatNumber(my.drawPoints.lapse) + '');\n    my.drawPoints.startTimedDraw();\n  });\n  lapse_slider.style('width:50%');\n  let valSpan = createSpan(my.drawPoints.lapse + '');\n\n  createElement('br');\n  createSpan('save_label: ');\n\n  createInput(my.drawPoints.save_label).input(function () {\n    my.drawPoints.save_label = this.value();\n    // save_drawing(); // too many saves\n  });\n\n  createButton('restore').mousePressed(function () {\n    my.drawPoints.restore_drawing();\n  });\n  createButton('save').mousePressed(function () {\n    my.drawPoints.save_drawing();\n  });\n  createButton('save_url').mousePressed(function () {\n    my.drawPoints.save_to_url();\n  });\n  createButton('clear_url').mousePressed(function () {\n    my.drawPoints.clear_url();\n  });\n}\n\n// return seconds since start of sketch\nfunction secsTime() {\n  return millis() / 1000;\n}\n\nfunction formatNumber(num) {\n  let prec = 1000;\n  return int(num * prec) / prec;\n}\n\n//\nfunction get_url_params() {\n  let query = window.location.search;\n  // console.log('query |' + query + '|');\n  console.log('query.length', query.length);\n  if (query.length < 1) return null;\n  let params = params_query(query);\n  return params;\n  // let store = params['store'];\n  // console.log('nstore', store);\n  // return store;\n}\n\n// https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams\nfunction params_query(query) {\n  // eg. query='abc=foo&def=%5Basf%5D&xyz=5'\n  // params={abc: \"foo\", def: \"[asf]\", xyz: \"5\"}\n  const urlParams = new URLSearchParams(query);\n  const params = Object.fromEntries(urlParams);\n  return params;\n}\n\n// prevent_scrolling(); !!@ Not used\n// https://alvarotrigo.com/blog/prevent-scroll-on-scrollable-element-js/\nfunction prevent_scrolling() {\n  document.querySelector('body').addEventListener('wheel', preventScroll, { passive: false });\n  function preventScroll(e) {\n    console.log('preventScroll');\n    e.preventDefault();\n    e.stopPropagation();\n    return false;\n  }\n}\n// localStorage.clear()\n\n// https://www.buildingh.org\n\n// https://editor.p5js.org/jht9629-nyu/sketches/MbS5C3j-F\n// Necessary-forgery-DrawPoints\n\n// convert to my.\n// startTimedDraw as slider changes\n// added a_drawings\n// generalize draw_to\n// remove class Point, use object literal for point\n// added funtion lineFrom\n\n// project files created with p5.vscode \"Create p5.js Project\"\n// https://editor.p5js.org/jht9629-nyu/sketches/-t2O5JfBr\n// DrawPoints\n// !!@ p5.js/0.10.2\n\n// TRY: use storeItem / getItem to save drawing locally\n// https://p5js.org/reference/#/p5/storeItem\n// https://p5js.org/reference/#/p5/getItem\n\n// Code! Programming with p5.js\n// The Coding Train / Daniel Shiffman\n// https://thecodingtrain.com/beginners/p5js/7.3-array-of-objects.html\n// https://youtu.be/fBqaA7zRO58\n// https://editor.p5js.org/codingtrain/sketches/1y_xfueO\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fded224ceedc8877aa74de",
+        "isSelectedFile": true,
+        "createdAt": "2024-03-31T18:42:58.007Z",
+        "updatedAt": "2024-03-31T18:42:58.007Z",
+        "id": "65fded224ceedc8877aa74de"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Drawing Points</title>\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" /> -->\n    <style>\n      html,\n      body {\n        margin: 0;\n        padding: 0;\n      }\n      canvas {\n        display: block;\n      }\n      /* body {\n        overflow-y: hidden;\n      } */\n    </style>\n    <!-- \n    <script src=\"libraries/p5.min.js\"></script>\n    <script src=\"libraries/p5.sound.min.js\"></script> \n    -->\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js\"></script> -->\n  </head>\n\n  <body>\n    <script src=\"DrawPoints.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fded224ceedc8877aa74df",
+        "createdAt": "2024-03-31T18:42:58.007Z",
+        "updatedAt": "2024-03-31T18:42:58.007Z",
+        "isSelectedFile": false,
+        "id": "65fded224ceedc8877aa74df"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fded224ceedc8877aa74e0",
+        "createdAt": "2024-03-31T18:42:58.007Z",
+        "updatedAt": "2024-03-31T18:42:58.007Z",
+        "isSelectedFile": false,
+        "id": "65fded224ceedc8877aa74e0"
+      },
+      {
+        "name": "DrawPoints.js",
+        "content": "// Draw points store in array drawings\nclass DrawPoints {\n  constructor(props) {\n    console.log('DrawPoints props', props);\n    Object.assign(this, props);\n    this.version = 1;\n    this.drawings = [];\n    this.drawing_index = 0;\n    this.points = null;\n    this.npoints = 0;\n    this.output = createGraphics(this.width, this.height);\n    this.output.noFill();\n  }\n\n  prepareOutput() {\n    if (!this.run) {\n      return;\n    }\n    if (this.staticDrawing) {\n      this.draw_points();\n    }\n    if (this.timedDrawing) {\n      this.draw_timed();\n    }\n  }\n\n  draw_points() {\n    let args = {\n      color: this.draw_color,\n      strokeWeight: this.strokeWeight,\n      stopIndex: this.npoints,\n      xoffset: 0,\n    };\n    this.draw_to(args);\n  }\n\n  draw_timed() {\n    let ncolors = this.draw_specs.length;\n    let npoints = this.npoints;\n    let now = secsTime() - this.startTime;\n    // take lapse seconds n drawings\n    let progress = now / (this.lapse / ncolors);\n    //- take lapse seconds per single drawing\n    //- let progress = now / this.lapse;\n    let stopIndex = int(npoints * progress) % (npoints * ncolors);\n    let spec = this.draw_specs[0];\n    let stepper = (ipoint) => {\n      if (ipoint % npoints == 0) {\n        let icycle = args.icycle;\n        let spec = this.draw_specs[icycle];\n        // let str = formatNumber(progress);\n        // str = str + ' ipoint ' + ipoint + ' stopIndex ' + stopIndex + ' strokeWeight ' + istrokeWeight;\n        // str += ' icycle ' + icycle + ' icolor ' + icolor;\n        // console.log(str);\n        this.output.stroke(spec.color);\n        this.output.strokeWeight(spec.strokeWeight);\n        args.icycle = (args.icycle + 1) % ncolors;\n      }\n    };\n    let args = {\n      color: spec.color,\n      strokeWeight: spec.strokeWeight,\n      stopIndex: stopIndex,\n      xoffset: this.xoffset,\n      stepper: stepper,\n      icycle: 0,\n    };\n    this.draw_to(args);\n  }\n\n  draw_to(args) {\n    this.output.stroke(args.color);\n    this.output.strokeWeight(args.strokeWeight);\n    let stepper = args.stepper;\n    let stopIndex = args.stopIndex;\n    let xoffset = args.xoffset;\n    let ipoint = 0;\n    while (ipoint < stopIndex) {\n      // Draw all points up until stopIndex\n      for (let points of this.drawings) {\n        for (let i = 1; i < points.length; i++) {\n          if (ipoint > stopIndex) return;\n          if (stepper) stepper(ipoint);\n          let prev = points[i - 1];\n          let point = points[i];\n          this.lineFrom(point, prev, xoffset);\n          ipoint++;\n        }\n      }\n      // detect no change\n      if (!ipoint) {\n        console.log('stopIndex_draw No change ipoint', ipoint);\n        break;\n      }\n    }\n  }\n\n  lineFrom(point, prev, xoffset) {\n    this.output.line(prev.x + xoffset, prev.y, point.x + xoffset, point.y);\n  }\n\n  startTimedDraw() {\n    // console.log('startTimedDraw');\n    this.timedDrawing = 1;\n    this.startTime = secsTime();\n    this.calc_npoints();\n    console.log('startTimedDraw this.npoints', this.npoints);\n  }\n\n  calc_npoints() {\n    this.npoints = 0;\n    for (let points of this.drawings) {\n      this.npoints += points.length;\n    }\n  }\n\n  stopTimedDraw() {\n    console.log('stopTimedDraw');\n    this.timedDrawing = 0;\n  }\n\n  clearDrawing() {\n    console.log('clearDrawing');\n    this.drawings = [];\n    this.points = null;\n    this.npoints = 0;\n    this.timedDrawing = 0;\n    this.output.clear();\n    // this.save_drawing();\n  }\n\n  restore_drawing(urlParams) {\n    // console.log('restore_drawing nstore |' + nstore + '|');\n    let store;\n    if (urlParams && urlParams.drawings) {\n      store = this.restore_urlParams(urlParams);\n    } else {\n      store = this.restore_localStorage();\n      if (!store) {\n        store = { drawings: [] };\n      }\n    }\n    this.expand_drawings(store);\n    this.drawings = store.drawings;\n    this.calc_npoints();\n    this.output.clear();\n    console.log('restore_drawing this.npoints', this.npoints);\n    if (urlParams) {\n      this.xoffset = 0;\n      this.staticDrawing = 0;\n      this.startTimedDraw();\n    }\n  }\n\n  restore_urlParams(urlParams) {\n    let store = { drawings: [] };\n    if (urlParams.drawings) {\n      let str = expand_decode(urlParams.drawings);\n      try {\n        store.drawings = JSON.parse(str);\n      } catch (err) {\n        console.log('restore_drawing drawings parse err', err);\n        return;\n      }\n    }\n    if (urlParams.save_label) {\n      this.save_label = urlParams.save_label;\n    }\n    return store;\n  }\n\n  restore_localStorage() {\n    let store;\n    let str = localStorage.getItem(this.save_label);\n    if (!str) return null;\n    console.log('restore_drawing str.length', str.length);\n    // this.drawings = JSON.parse(str);\n    try {\n      store = JSON.parse(str);\n    } catch (err) {\n      console.log('restore_drawing parse err', err);\n      return;\n    }\n    return store;\n  }\n\n  save_drawing() {\n    let store = this.prepareStore();\n    let str = JSON.stringify(store);\n    localStorage.setItem(this.save_label, str);\n    console.log('save_drawing str.length', str.length);\n    // Report full string size. Typically %50 more\n    // let full = JSON.stringify(this.drawings);\n    // console.log('save_drawing full.length', full.length);\n  }\n\n  prepareStore() {\n    let store = {\n      version: this.version,\n      width: this.width,\n      height: this.height,\n      drawings: this.drawings,\n    };\n    this.shrink_drawings(store);\n    return store;\n  }\n\n  save_to_url() {\n    let store = this.prepareStore();\n    let url = new URL(window.location.href);\n    // url.search = '?store=' + encodeURIComponent(str);\n    let str = '?label=' + encodeURIComponent(this.save_label);\n    str += '&version=' + encodeURIComponent(this.version + '');\n    str += '&width=' + encodeURIComponent(this.width + '');\n    str += '&height=' + encodeURIComponent(this.height + '');\n    let dstr = JSON.stringify(store.drawings);\n    str += '&drawings=' + shrink_encode(dstr);\n    url.search = str;\n    console.log(url.href);\n    window.location = url.href;\n  }\n\n  clear_url() {\n    let index = window.location.href.indexOf('?');\n    if (index < 0) return;\n    let nhref = window.location.href.substring(0, index);\n    location.replace(nhref);\n  }\n\n  // Transform drawings to delta array to save on stringify length\n  // [{x: x0, y: y0}, {x: x1, y: y1}, {x: x2, y: y2} ...]\n  //  --> [x0, y0, x1-x0, y1-y0, x2-x0, y2-y0 ...]\n  shrink_drawings(store) {\n    let x0;\n    let y0;\n    let d = store.drawings.map((arr) => {\n      return arr.flatMap((item, index) => {\n        if (index == 0) {\n          x0 = item.x;\n          y0 = item.y;\n          return [x0, y0];\n        }\n        return [item.x - x0, item.y - y0];\n      });\n    });\n    store.drawings = d;\n  }\n\n  expand_drawings(store) {\n    // if (!store.version) return;\n    let x0;\n    let y0;\n    let d = store.drawings.map((arr) => {\n      let narr = [];\n      for (let index = 0; index < arr.length; index += 2) {\n        if (index == 0) {\n          x0 = arr[0];\n          y0 = arr[1];\n          narr.push({ x: x0, y: y0 });\n        } else {\n          narr.push({ x: arr[index] + x0, y: arr[index + 1] + y0 });\n        }\n      }\n      return narr;\n    });\n    store.drawings = d;\n  }\n\n  mouseDragged() {\n    this.staticDrawing = 1;\n\n    if (mouseX < 0 || mouseX > width || mouseY < 0 || mouseY > height) {\n      return;\n    }\n    if (this.npoint_limit && this.npoints >= this.npoint_limit) {\n      console.log('mouseDragged this.npoint_limit', this.npoint_limit, 'this.npoints', this.npoints);\n      return;\n    }\n    if (!this.points) {\n      this.points = [];\n      this.drawings.push(this.points);\n    }\n    let x = int(mouseX);\n    let y = int(mouseY);\n    this.points.push({ x, y });\n    this.npoints++;\n  }\n\n  // Save current drawing and prepare for next group of points\n  mouseReleased() {\n    console.log('DrawPoints mouseReleased');\n    // null points will start fresh point array\n    this.points = null;\n    this.startTimedDraw();\n    this.save_drawing();\n  }\n} // DrawPoints\n\n// encode a few characters to reduce size of url &drawings= param\n// {}[]:,\"+\n// --> mapped to upper case letters\n// ABCDEFGHILKMNOPQRTSTUVWXYZ\n\nlet char0_index = 'A'.charCodeAt(0);\n// let encode_chars = '{}[]:,\"+';\nlet encode_chars = '[],:\"+{}';\nlet encode_dict = {};\nlet decode_dict = {};\nfor (let index = 0; index < encode_chars.length; index++) {\n  let ch1 = encode_chars[index];\n  let ch2 = String.fromCharCode(index + char0_index);\n  encode_dict[ch1] = ch2;\n  decode_dict[ch2] = ch1;\n}\n\nfunction shrink_encode(str) {\n  let nstr = '';\n  let nch;\n  for (let ch of str) {\n    nch = encode_dict[ch];\n    if (!nch) nch = ch;\n    nstr += nch;\n  }\n  // console.log('shrink_encode nstr', nstr);\n  return nstr;\n}\n\nfunction expand_decode(str) {\n  let nstr = '';\n  let nch;\n  for (let ch of str) {\n    nch = decode_dict[ch];\n    if (!nch) nch = ch;\n    nstr += nch;\n  }\n  // console.log('expand_decode nstr', nstr);\n  return nstr;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "65fdedfdd8aaf5001a8f7930",
+        "updatedAt": "2024-03-31T18:42:58.007Z",
+        "createdAt": "2024-03-31T18:42:58.007Z",
+        "isSelectedFile": false,
+        "id": "65fdedfdd8aaf5001a8f7930"
+      }
+    ],
+    "createdAt": "2024-03-22T20:42:14.133Z",
+    "id": "TQyVoswjQ"
   },
   {
     "name": "p5moLibrary Heavenly3D",
