@@ -1,5 +1,6 @@
 # Sketches for jht9629-nyu
-289 sketches  
+290 sketches  
+[p5moExamples photo booth 52](https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps)<!-- 2024-04-01T01:30:50.841Z -->  
 [p5moLibrary DrawPoints](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)<!-- 2024-03-31T18:42:58.007Z -->  
 [p5moLibrary Astronomical 47](https://editor.p5js.org/jht9629-nyu/sketches/iIIAb8KIDr)<!-- 2024-03-31T18:40:48.892Z -->  
 [ims03-jht scrolling color bars](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)<!-- 2024-03-31T18:22:19.647Z -->  

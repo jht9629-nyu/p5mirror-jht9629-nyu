@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-289 sketches 2024-03-31T18:42:58.007Z
+290 sketches 2024-04-01T01:30:50.841Z
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [1.2 draw\_shapes\_ui-AnDswZ6eY](./p5projects/1.2%20draw_shapes_ui-AnDswZ6eY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)]
@@ -208,6 +208,7 @@
 - [p5js editor setup let width bug-iOIK7zDHk](./p5projects/p5js%20editor%20setup%20let%20width%20bug-iOIK7zDHk) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/iOIK7zDHk)]
 - [p5moExamples lobby-vP6sWN4Cu](./p5projects/p5moExamples%20lobby-vP6sWN4Cu) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vP6sWN4Cu)]
 - [p5moExamples paint-nBefVKAbH](./p5projects/p5moExamples%20paint-nBefVKAbH) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nBefVKAbH)]
+- [p5moExamples photo booth 52-5VKqK34Ps](./p5projects/p5moExamples%20photo%20booth%2052-5VKqK34Ps) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps)]
 - [p5moExamples pixel-grid-CntV1JQNp](./p5projects/p5moExamples%20pixel-grid-CntV1JQNp) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp)]
 - [p5moExamples video 366-KeRAIMzHN](./p5projects/p5moExamples%20video%20366-KeRAIMzHN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/KeRAIMzHN)]
 - [p5moExamples vote copy-B2hlGkA-d](./p5projects/p5moExamples%20vote%20copy-B2hlGkA-d) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/B2hlGkA-d)]

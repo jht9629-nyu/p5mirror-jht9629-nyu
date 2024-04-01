@@ -10910,6 +10910,87 @@
     "id": "nBefVKAbH"
   },
   {
+    "name": "p5moExamples photo booth 52",
+    "_id": "5VKqK34Ps",
+    "updatedAt": "2024-04-01T01:30:50.841Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "660a0bfddc2455001ab55f5b",
+          "660a0bfddc2455001ab55f5d",
+          "660a0bfd0e4047001a444ff3",
+          "660a0b017ffe4856405a5dde",
+          "660a0bfdf2c74c001a341cd1"
+        ],
+        "fileType": "folder",
+        "_id": "660a0b017ffe4856405a5ddf",
+        "createdAt": "2024-04-01T01:30:50.841Z",
+        "updatedAt": "2024-04-01T01:30:50.841Z",
+        "isSelectedFile": false,
+        "id": "660a0b017ffe4856405a5ddf"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660a0b017ffe4856405a5dde",
+        "createdAt": "2024-04-01T01:30:50.841Z",
+        "updatedAt": "2024-04-01T01:30:50.841Z",
+        "isSelectedFile": false,
+        "id": "660a0b017ffe4856405a5dde"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script> -->\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://molab-itp.github.io/p5moRelease/lib/66/style.css\"></script>\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"../../../p5moLibrary/src/lib/style.css?v=53\" /> -->\n\n    <style></style>\n  </head>\n  <body>\n    <main></main>\n\n    <script type=\"module\" src=\"https://molab-itp.github.io/p5moRelease/lib/66/a_lib.js\"></script>\n    <!-- <script type=\"module\" src=\"../../p5moLibrary/src/lib/a_lib.js\"\"></script> -->\n\n    <script src=\"a_my_init.js\"></script>\n    <script src=\"a_sketch.js\"></script>\n    <script src=\"ui_init.js\"></script>\n    <!-- ?v=53 included to force into the cache -->\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660a0bfd0e4047001a444ff3",
+        "updatedAt": "2024-04-01T01:30:50.841Z",
+        "createdAt": "2024-04-01T01:30:50.841Z",
+        "isSelectedFile": false,
+        "id": "660a0bfd0e4047001a444ff3"
+      },
+      {
+        "name": "a_sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps\n// p5moExamples photo booth 52\n\nlet my = {};\n\nfunction setup() {\n  //\n  // Lowest pixel density for small uploads\n  pixelDensity(1);\n\n  my_init();\n\n  my.canvas = createCanvas(my.width, my.height);\n  my.canvas.mouseReleased(canvas_mouseReleased);\n  my.canvas.touchEnded(canvas_mouseReleased);\n\n  my.photo_count = 0;\n\n  ui_init();\n\n  video_create();\n\n  dbase_app_init({ completed: startup_completed });\n\n  // anim_init();\n\n  my.x = 0;\n  my.y = my.height / 2;\n  my.xstep = 1;\n  my.radius = int(my.width / 10);\n}\n\nfunction startup_completed() {\n  //\n  dbase_devices_observe({ observed_key, observed_item, all: 1 });\n\n  function observed_key(key, device) {\n    // console.log('observed_a_device key', key, 'uid', my.uid, 'device', device);\n    console.log('observed_key key', key, 'device.photo_count', device && device.photo_count);\n  }\n\n  function observed_item(device) {\n    console.log('observed_item device.photo_count', device.photo_count);\n    if (device.photo_count != undefined) {\n      if (device.photo_count != my.photo_count) {\n        show_action();\n      }\n      my.photo_count = device.photo_count;\n    }\n  }\n}\n\nfunction draw() {\n  draw_frame();\n\n  // ui_init_update();\n\n  // my.animLoop.step({ action: updateAction });\n}\n\nfunction draw_frame() {\n  if (my.videoFlag && !video_ready()) return;\n\n  background(0);\n\n  if (my.videoFlag) {\n    // faster to get entire video frame as an image\n    my.videoImg = my.video.get();\n    image(my.videoImg, 0, 0);\n  }\n\n  noStroke();\n  fill(my.colors[my.photo_count % my.colors.length]);\n  circle(my.x, my.y, my.radius);\n  my.x = (my.x + my.xstep) % my.width;\n\n  my.photo_count_span.html(my.photo_count);\n}\n\nfunction canvas_mouseReleased() {\n  // console.log('canvas_mouseReleased');\n  track_xy();\n}\n\nfunction track_xy() {\n  let x = mouseX;\n  let y = mouseY;\n}\n\nfunction mouseDragged() {\n  // console.log('mouseDragged');\n  // required to prevent touch drag moving canvas on mobile\n  let onCanvas = mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;\n  if (onCanvas) {\n    track_xy();\n  }\n  // return my.scrollFlag ? true : !onCanvas;\n  return !onCanvas;\n}\n\nfunction windowResized() {\n  // console.log('windowResized windowHeight', windowHeight, 'windowWidth', windowWidth);\n  // my.isPortrait = windowHeight > windowWidth;\n  if (my.isRemote) {\n    return;\n  }\n  resizeCanvas(windowWidth, windowHeight);\n  // console.log('windowResized width', width, 'height', height);\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/twgS6eWRZ\n// pixel-grid\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7Wjlo3pPU\n// mo-pix-chip-grid jht9629 fireb_firebase.js\n\n// https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp\n// p5moExamples pixel-grid 47\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660a0bfddc2455001ab55f5d",
+        "updatedAt": "2024-04-01T01:30:50.841Z",
+        "createdAt": "2024-04-01T01:30:50.841Z",
+        "isSelectedFile": true,
+        "id": "660a0bfddc2455001ab55f5d"
+      },
+      {
+        "name": "a_my_init.js",
+        "content": "//\nfunction my_init() {\n  // updated to verify change on mobile\n  my.version = '?v=53';\n  my.isRemote = 1;\n  my.videoFlag = 1;\n  my.logLoud = 0;\n\n  my.imageQuality = 0.1;\n  my.imageExt = '.jpg';\n  // my.imageExt = '.png';\n  my.thumbWidth = 128;\n\n  // Aspect ratio of video capture on mobile device\n  my.vwidth = 480;\n  my.vheight = 640;\n  my.fireb_config = 'jht9629';\n  // my.fireb_config = 'jht1493';\n  // my.fireb_config = 'jhtitp';\n\n  my.dbase_rootPath = 'm0-@r-@w-';\n  my.mo_app = 'mo-photo';\n  my.roomName = 'room1';\n\n  // my.nameDevice = '';\n\n  if (my.isRemote) {\n    my.width = my.vwidth;\n    my.height = my.vheight;\n  } else {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n\n  my.colorGold = [187, 165, 61];\n  my.colors = [[255, 0, 0], [0, 255, 0], my.colorGold];\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660a0bfddc2455001ab55f5b",
+        "updatedAt": "2024-04-01T01:30:50.841Z",
+        "createdAt": "2024-04-01T01:30:50.841Z",
+        "isSelectedFile": false,
+        "id": "660a0bfddc2455001ab55f5b"
+      },
+      {
+        "name": "ui_init.js",
+        "content": "//\nfunction ui_init() {\n  //\n  my.addBtn = ui_createButton('Add');\n  my.addBtn.mousePressed(add_action);\n\n  my.removeBtn = ui_createButton('Remove');\n  my.removeBtn.mousePressed(remove_action);\n\n  my.showBtn = ui_createButton('Show');\n  my.showBtn.mousePressed(show_action);\n\n  my.photo_count_span = createSpan('' + my.photo_count);\n}\n\nfunction add_action() {\n  console.log('add_action');\n  dbase_update_props({ photo_count: dbase_increment(1) });\n  console.log('add_action photo_count', my.photo_count);\n\n  let layer = my.canvas;\n  let path = photo_path(my.uid, my.photo_count);\n  let imageQuality = my.imageQuality;\n\n  fstorage_upload({ layer, path, imageQuality });\n}\n\nfunction remove_action() {\n  console.log('remove_action my.photo_count', my.photo_count);\n  if (my.photo_count < 1) return;\n\n  let path = photo_path(my.uid, my.photo_count);\n\n  fstorage_remove({ path });\n\n  dbase_update_props({ photo_count: dbase_increment(-1) });\n}\n\nfunction photo_path(uid, count) {\n  let nphoto = count.toString().padStart(3, '0');\n  return uid + '/' + nphoto + my.imageExt;\n}\n\nfunction show_action() {\n  //\n  my.gallery_div = ui_div_empty('igallery');\n  for (let index = 1; index <= my.photo_count; index++) {\n    let path = photo_path(my.uid, index);\n    let imageType = 'image/jpeg';\n\n    fstorage_download_url({ path, imageType, result: url_result });\n  }\n}\n\nfunction url_result(url) {\n  // console.log('url_result', url);\n  let img = createImg(url, 'image');\n  my.gallery_div.child(img);\n  let iwidth = my.thumbWidth;\n  img.style('width: ' + iwidth + 'px;');\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660a0bfdf2c74c001a341cd1",
+        "updatedAt": "2024-04-01T01:30:50.841Z",
+        "createdAt": "2024-04-01T01:30:50.841Z",
+        "isSelectedFile": false,
+        "id": "660a0bfdf2c74c001a341cd1"
+      }
+    ],
+    "createdAt": "2024-04-01T01:17:11.169Z",
+    "id": "5VKqK34Ps"
+  },
+  {
     "name": "p5moExamples pixel-grid",
     "_id": "CntV1JQNp",
     "updatedAt": "2024-03-22T23:13:06.456Z",

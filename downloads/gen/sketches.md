@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-289 sketches  
+290 sketches  
 [03-jht-hatviz](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)<!-- 2023-04-09T01:41:50.719Z -->  
 [1.2 draw\_shapes\_ui](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)<!-- 2023-09-16T22:25:20.883Z -->  
 [10PRINT copy](https://editor.p5js.org/jht9629-nyu/sketches/-QATBkoGr)<!-- 2023-10-02T21:30:31.747Z -->  
@@ -169,6 +169,7 @@
 [p5Live  many](https://editor.p5js.org/jht9629-nyu/sketches/lqMJIQoIs)<!-- 2023-07-26T03:48:05.822Z -->  
 [p5moExamples lobby](https://editor.p5js.org/jht9629-nyu/sketches/vP6sWN4Cu)<!-- 2024-03-27T19:38:12.979Z -->  
 [p5moExamples paint](https://editor.p5js.org/jht9629-nyu/sketches/nBefVKAbH)<!-- 2024-03-14T17:33:03.685Z -->  
+[p5moExamples photo booth 52](https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps)<!-- 2024-04-01T01:30:50.841Z -->  
 [p5moExamples pixel-grid](https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp)<!-- 2024-03-22T23:13:06.456Z -->  
 [p5moExamples video 366](https://editor.p5js.org/jht9629-nyu/sketches/KeRAIMzHN)<!-- 2024-03-23T18:32:34.166Z -->  
 [p5moExamples vote](https://editor.p5js.org/jht9629-nyu/sketches/EEafnQwr1)<!-- 2024-03-16T16:37:44.885Z -->  
