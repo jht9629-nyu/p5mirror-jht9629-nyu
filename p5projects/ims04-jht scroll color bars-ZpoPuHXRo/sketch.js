@@ -46,6 +46,8 @@ function my_setup() {
 
 function draw() {
   for (let item of my.items) {
+  // for (let i = 0; i < my.items.length; i++) {
+  //   let item = my.items[i];
     let { xpos, color } = item;
     item.xpos = (xpos + my.xstep) % my.wide;
     fill(color);

@@ -14,7 +14,7 @@ function setup() {
   my.step_period = 2;
   my.pause_period = 2;
   my.do_spiral = 1;
-  my.do_cycle = 2;
+  my.do_cycle = 0;
   my.do_report = 0;
 
   my.colorIndex = 0;

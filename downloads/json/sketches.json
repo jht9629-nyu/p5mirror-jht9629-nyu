@@ -6066,6 +6066,63 @@
     "id": "DRpj2TQRg"
   },
   {
+    "name": "get_url_params demo",
+    "_id": "5fTCCJ_Sh",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "660bfec995eb380dc6129e7a",
+          "660bfec995eb380dc6129e7b",
+          "660bfec995eb380dc6129e7c"
+        ],
+        "fileType": "folder",
+        "_id": "660bfec995eb380dc6129e78",
+        "createdAt": "2024-04-02T14:45:18.666Z",
+        "updatedAt": "2024-04-02T14:45:18.666Z",
+        "isSelectedFile": false,
+        "id": "660bfec995eb380dc6129e78"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/5fTCCJ_Sh\n// get_url_params demo\n\n\nlet my = {};\n\nfunction my_setup() {\n  my.version = '?v=47';\n  my.width = windowWidth;\n  my.height = windowHeight;\n  // my.width = 640;\n  // my.height = 480;\n}\n\nfunction setup() {\n  my_setup();\n\n  my.canvas = createCanvas(my.width, my.height);\n\n  let urlParams = get_url_params();\n  \n  console.log('urlParams', urlParams);\n}\n\nfunction draw() {\n  background(0);\n\n}\n\n\n//\nfunction get_url_params() {\n  let query = window.location.search;\n  // console.log('query |' + query + '|');\n  console.log('query.length', query.length);\n  if (query.length < 1) return null;\n  let params = params_query(query);\n  return params;\n  // let store = params['store'];\n  // console.log('nstore', store);\n  // return store;\n}\n\n// https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams\nfunction params_query(query) {\n  // eg. query='abc=foo&def=%5Basf%5D&xyz=5'\n  // params={abc: \"foo\", def: \"[asf]\", xyz: \"5\"}\n  const urlParams = new URLSearchParams(query);\n  const params = Object.fromEntries(urlParams);\n  return params;\n}\n\n// localStorage.clear()\n\n// https://www.buildingh.org\n\n// https://editor.p5js.org/jht9629-nyu/sketches/MbS5C3j-F\n// Necessary-forgery-DrawPoints\n\n// convert to my.\n// startTimedDraw as slider changes\n// added a_drawings\n// generalize draw_to\n// remove class Point, use object literal for point\n// added funtion lineFrom\n\n// project files created with p5.vscode \"Create p5.js Project\"\n// https://editor.p5js.org/jht9629-nyu/sketches/-t2O5JfBr\n// DrawPoints\n// !!@ p5.js/0.10.2\n\n// TRY: use storeItem / getItem to save drawing locally\n// https://p5js.org/reference/#/p5/storeItem\n// https://p5js.org/reference/#/p5/getItem\n\n// Code! Programming with p5.js\n// The Coding Train / Daniel Shiffman\n// https://thecodingtrain.com/beginners/p5js/7.3-array-of-objects.html\n// https://youtu.be/fBqaA7zRO58\n// https://editor.p5js.org/codingtrain/sketches/1y_xfueO\n\n// https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ\n// p5moLibrary DrawPoints\n// https://molab-itp.github.io/p5moLibrary/src/demo/DrawPoints/?v=65\n// https://github.com/molab-itp/p5moLibrary\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660bfec995eb380dc6129e7b",
+        "isSelectedFile": true,
+        "createdAt": "2024-04-02T14:45:18.666Z",
+        "updatedAt": "2024-04-02T14:45:18.666Z",
+        "id": "660bfec995eb380dc6129e7b"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Drawing Points</title>\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" /> -->\n    <style>\n      html,\n      body {\n        margin: 0;\n        padding: 0;\n      }\n      canvas {\n        display: block;\n      }\n      /* body {\n        overflow-y: hidden;\n      } */\n    </style>\n    <!-- \n    <script src=\"libraries/p5.min.js\"></script>\n    <script src=\"libraries/p5.sound.min.js\"></script> \n    -->\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js\"></script> -->\n  </head>\n\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660bfec995eb380dc6129e7a",
+        "createdAt": "2024-04-02T14:45:18.666Z",
+        "updatedAt": "2024-04-02T14:45:18.666Z",
+        "isSelectedFile": false,
+        "id": "660bfec995eb380dc6129e7a"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660bfec995eb380dc6129e7c",
+        "createdAt": "2024-04-02T14:45:18.666Z",
+        "updatedAt": "2024-04-02T14:45:18.666Z",
+        "isSelectedFile": false,
+        "id": "660bfec995eb380dc6129e7c"
+      }
+    ],
+    "createdAt": "2024-04-02T12:49:13.595Z",
+    "updatedAt": "2024-04-02T14:45:18.666Z",
+    "id": "5fTCCJ_Sh"
+  },
+  {
     "name": "global variable pattern animation",
     "_id": "hzQ_IGYd8",
     "files": [
@@ -7999,20 +8056,20 @@
         ],
         "fileType": "folder",
         "_id": "66022dd8cba882868a9bece6",
-        "createdAt": "2024-03-26T18:00:37.149Z",
-        "updatedAt": "2024-03-26T18:00:37.149Z",
+        "createdAt": "2024-04-02T14:10:56.778Z",
+        "updatedAt": "2024-04-02T14:10:56.778Z",
         "isSelectedFile": false,
         "id": "66022dd8cba882868a9bece6"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo\n// ims04-jht scroll color bars - no pop \n\nlet colorGold = [187, 165, 61];\n\n// double red\n// let colorPalette = [\"red\", \"green\", colorGold];\n// let colorPalette = [\"red\", \"green\", colorGold, \"green\"];\nlet colorPalette = [\"red\", \"green\", colorGold, \"black\"];\n\nlet my = {};\n\nfunction setup() {\n  my.xstep = 2;\n  my.debug = 1;\n  my.width = 400;\n  my.height = 400;\n  my.n = 3;\n\n  if (!my.debug) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  createCanvas(my.width, my.height);\n  noStroke();\n\n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n  my_setup();\n}\n\nfunction my_setup() {\n  my.xlen = width / my.n;\n  my.ylen = height;\n  my.items = [];\n  let n = my.n + 1;\n  my.wide = my.xlen * n;\n  for (let i = 0; i < n; i++) {\n    let xpos = my.xlen * i;\n    let color = colorPalette[i % colorPalette.length];\n    my.items[i] = { xpos, color };\n  }\n  for (let item of my.items) { console.log('item', item); }\n}\n\nfunction draw() {\n  for (let item of my.items) {\n    let { xpos, color } = item;\n    item.xpos = (xpos + my.xstep) % my.wide;\n    fill(color);\n    let x = xpos - my.xlen;\n    let y = 0;\n    rect(x, y, my.xlen, my.ylen);\n  }\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n// color pops on at wrap around\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  ui_remove_all();\n  ui_toggleFullScreen();\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  my_setup();\n}\n\nfunction ui_remove_all() {\n  fullScreenBtn.remove();\n}\n\nfunction ui_toggleFullScreen() {\n  fullscreen(1);\n  // if (!document.documentElement.requestFullscreen) {\n  //   console.log(\"NO document.documentElement.requestFullscreen\");\n  //   return;\n  // }\n  // if (!document.fullscreenElement) {\n  //   document.documentElement.requestFullscreen();\n  // } else {\n  //   if (document.exitFullscreen) {\n  //     document.exitFullscreen();\n  //   }\n  // }\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo\n// ims04-jht scroll color bars - no pop \n\nlet colorGold = [187, 165, 61];\n\n// double red\n// let colorPalette = [\"red\", \"green\", colorGold];\n// let colorPalette = [\"red\", \"green\", colorGold, \"green\"];\nlet colorPalette = [\"red\", \"green\", colorGold, \"black\"];\n\nlet my = {};\n\nfunction setup() {\n  my.xstep = 2;\n  my.debug = 1;\n  my.width = 400;\n  my.height = 400;\n  my.n = 3;\n\n  if (!my.debug) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  createCanvas(my.width, my.height);\n  noStroke();\n\n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n  my_setup();\n}\n\nfunction my_setup() {\n  my.xlen = width / my.n;\n  my.ylen = height;\n  my.items = [];\n  let n = my.n + 1;\n  my.wide = my.xlen * n;\n  for (let i = 0; i < n; i++) {\n    let xpos = my.xlen * i;\n    let color = colorPalette[i % colorPalette.length];\n    my.items[i] = { xpos, color };\n  }\n  for (let item of my.items) { console.log('item', item); }\n}\n\nfunction draw() {\n  for (let item of my.items) {\n  // for (let i = 0; i < my.items.length; i++) {\n  //   let item = my.items[i];\n    let { xpos, color } = item;\n    item.xpos = (xpos + my.xstep) % my.wide;\n    fill(color);\n    let x = xpos - my.xlen;\n    let y = 0;\n    rect(x, y, my.xlen, my.ylen);\n  }\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n// color pops on at wrap around\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  ui_remove_all();\n  ui_toggleFullScreen();\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  my_setup();\n}\n\nfunction ui_remove_all() {\n  fullScreenBtn.remove();\n}\n\nfunction ui_toggleFullScreen() {\n  fullscreen(1);\n  // if (!document.documentElement.requestFullscreen) {\n  //   console.log(\"NO document.documentElement.requestFullscreen\");\n  //   return;\n  // }\n  // if (!document.fullscreenElement) {\n  //   document.documentElement.requestFullscreen();\n  // } else {\n  //   if (document.exitFullscreen) {\n  //     document.exitFullscreen();\n  //   }\n  // }\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n",
         "children": [],
         "fileType": "file",
         "_id": "66022dd8cba882868a9bece8",
         "isSelectedFile": true,
-        "createdAt": "2024-03-26T18:00:37.149Z",
-        "updatedAt": "2024-03-26T18:00:37.149Z",
+        "createdAt": "2024-04-02T14:10:56.778Z",
+        "updatedAt": "2024-04-02T14:10:56.778Z",
         "id": "66022dd8cba882868a9bece8"
       },
       {
@@ -8021,8 +8078,8 @@
         "children": [],
         "fileType": "file",
         "_id": "66022dd8cba882868a9bece7",
-        "createdAt": "2024-03-26T18:00:37.149Z",
-        "updatedAt": "2024-03-26T18:00:37.149Z",
+        "createdAt": "2024-04-02T14:10:56.778Z",
+        "updatedAt": "2024-04-02T14:10:56.778Z",
         "isSelectedFile": false,
         "id": "66022dd8cba882868a9bece7"
       },
@@ -8032,14 +8089,14 @@
         "children": [],
         "fileType": "file",
         "_id": "66022dd8cba882868a9bece9",
-        "createdAt": "2024-03-26T18:00:37.149Z",
-        "updatedAt": "2024-03-26T18:00:37.149Z",
+        "createdAt": "2024-04-02T14:10:56.778Z",
+        "updatedAt": "2024-04-02T14:10:56.778Z",
         "isSelectedFile": false,
         "id": "66022dd8cba882868a9bece9"
       }
     ],
     "createdAt": "2024-03-26T02:07:20.789Z",
-    "updatedAt": "2024-03-26T18:00:37.149Z",
+    "updatedAt": "2024-04-02T14:10:56.778Z",
     "id": "ZpoPuHXRo"
   },
   {
@@ -8056,8 +8113,8 @@
         ],
         "fileType": "folder",
         "_id": "66030e0fbecca1a996ef617c",
-        "createdAt": "2024-03-28T00:39:10.304Z",
-        "updatedAt": "2024-03-28T00:39:10.304Z",
+        "createdAt": "2024-04-02T14:14:49.011Z",
+        "updatedAt": "2024-04-02T14:14:49.011Z",
         "isSelectedFile": false,
         "id": "66030e0fbecca1a996ef617c"
       },
@@ -8068,8 +8125,8 @@
         "fileType": "file",
         "_id": "66030e0fbecca1a996ef617e",
         "isSelectedFile": true,
-        "createdAt": "2024-03-28T00:39:10.304Z",
-        "updatedAt": "2024-03-28T00:39:10.304Z",
+        "createdAt": "2024-04-02T14:14:49.011Z",
+        "updatedAt": "2024-04-02T14:14:49.011Z",
         "id": "66030e0fbecca1a996ef617e"
       },
       {
@@ -8078,8 +8135,8 @@
         "children": [],
         "fileType": "file",
         "_id": "66030e0fbecca1a996ef617d",
-        "createdAt": "2024-03-28T00:39:10.304Z",
-        "updatedAt": "2024-03-28T00:39:10.304Z",
+        "createdAt": "2024-04-02T14:14:49.011Z",
+        "updatedAt": "2024-04-02T14:14:49.011Z",
         "isSelectedFile": false,
         "id": "66030e0fbecca1a996ef617d"
       },
@@ -8089,14 +8146,14 @@
         "children": [],
         "fileType": "file",
         "_id": "66030e0fbecca1a996ef617f",
-        "createdAt": "2024-03-28T00:39:10.304Z",
-        "updatedAt": "2024-03-28T00:39:10.304Z",
+        "createdAt": "2024-04-02T14:14:49.011Z",
+        "updatedAt": "2024-04-02T14:14:49.011Z",
         "isSelectedFile": false,
         "id": "66030e0fbecca1a996ef617f"
       }
     ],
     "createdAt": "2024-03-26T18:04:00.207Z",
-    "updatedAt": "2024-03-28T00:39:10.304Z",
+    "updatedAt": "2024-04-02T14:14:49.011Z",
     "id": "2pxhnehBV"
   },
   {
@@ -9051,19 +9108,19 @@
         "fileType": "folder",
         "_id": "6605cbe079626d07659dabde",
         "isSelectedFile": false,
-        "createdAt": "2024-03-28T20:00:27.245Z",
-        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "createdAt": "2024-04-02T14:21:28.033Z",
+        "updatedAt": "2024-04-02T14:21:28.033Z",
         "id": "6605cbe079626d07659dabde"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz\n// MazeSpin liberation screens v2\n\nlet my = {};\n\nlet mazeSpin;\n\nfunction setup() {\n  my.width = windowWidth;\n  my.height = windowHeight;\n  my.ncells = 9;\n  my.strokeWeight = 0.5;\n  my.delta = 1;\n  my.step_period = 2;\n  my.pause_period = 2;\n  my.do_spiral = 1;\n  my.do_cycle = 2;\n  my.do_report = 0;\n\n  my.colorIndex = 0;\n  my.colorChangeSecs = 10;\n  my.startTime = millis() / 1000.0;\n\n  createCanvas(my.width, my.height);\n\n  // console.log(\"MazeSpin\", MazeSpin);\n  mazeSpin = new MazeSpin(my);\n  \n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n}\n\nfunction draw() {\n  background(colorPalette[my.colorIndex]);\n  mazeSpin.prepareOutput();\n  image(mazeSpin.output, 0, 0);\n  check_time();\n}\n\nfunction my_setup() {\n  my.width = width;\n  my.height = height;\n  mazeSpin = new MazeSpin(my);\n}\n\nfunction check_time() {\n  let now = millis() / 1000;\n  if (now - my.startTime > my.colorChangeSecs) {\n    my.startTime = now;\n    next_color();\n  }\n}\n\nfunction next_color() {\n  my.colorIndex = (my.colorIndex + 1) % colorPalette.length;\n}\n\nlet colorGold = [187, 165, 61];\n// let colorPalette = [\"red\", \"green\", colorGold, \"black\"];\nlet colorPalette = [\"red\", \"green\", colorGold];\n\nfunction full_screen_action() {\n  fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  my_setup();\n}\n\n// --\n// https://editor.p5js.org/jht9629-gmail/sketches/4pgECdEVG\n// MazeSpin liberation screens\n\n// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n\n// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n\n// https://editor.p5js.org/jht9629-gmail/sketches/-FuOH_EE4\n// MazeSpin\n// converted from p5VideoKit effects import style\n//   to <script src=\"\"> format used in p5VideoKit\n//\n\n// https://github.com/jht1493/p5VideoKit/blob/main/src/effects/maze_spin/MazeSpin.js\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz\n// MazeSpin liberation screens v2\n\nlet my = {};\n\nlet mazeSpin;\n\nfunction setup() {\n  my.width = windowWidth;\n  my.height = windowHeight;\n  my.ncells = 9;\n  my.strokeWeight = 0.5;\n  my.delta = 1;\n  my.step_period = 2;\n  my.pause_period = 2;\n  my.do_spiral = 1;\n  my.do_cycle = 0;\n  my.do_report = 0;\n\n  my.colorIndex = 0;\n  my.colorChangeSecs = 10;\n  my.startTime = millis() / 1000.0;\n\n  createCanvas(my.width, my.height);\n\n  // console.log(\"MazeSpin\", MazeSpin);\n  mazeSpin = new MazeSpin(my);\n  \n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(full_screen_action);\n  fullScreenBtn.style(\"font-size:42px\");\n\n}\n\nfunction draw() {\n  background(colorPalette[my.colorIndex]);\n  mazeSpin.prepareOutput();\n  image(mazeSpin.output, 0, 0);\n  check_time();\n}\n\nfunction my_setup() {\n  my.width = width;\n  my.height = height;\n  mazeSpin = new MazeSpin(my);\n}\n\nfunction check_time() {\n  let now = millis() / 1000;\n  if (now - my.startTime > my.colorChangeSecs) {\n    my.startTime = now;\n    next_color();\n  }\n}\n\nfunction next_color() {\n  my.colorIndex = (my.colorIndex + 1) % colorPalette.length;\n}\n\nlet colorGold = [187, 165, 61];\n// let colorPalette = [\"red\", \"green\", colorGold, \"black\"];\nlet colorPalette = [\"red\", \"green\", colorGold];\n\nfunction full_screen_action() {\n  fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  my_setup();\n}\n\n// --\n// https://editor.p5js.org/jht9629-gmail/sketches/4pgECdEVG\n// MazeSpin liberation screens\n\n// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n\n// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n\n// https://editor.p5js.org/jht9629-gmail/sketches/-FuOH_EE4\n// MazeSpin\n// converted from p5VideoKit effects import style\n//   to <script src=\"\"> format used in p5VideoKit\n//\n\n// https://github.com/jht1493/p5VideoKit/blob/main/src/effects/maze_spin/MazeSpin.js\n",
         "children": [],
         "fileType": "file",
         "_id": "6605cbe079626d07659dabe1",
         "isSelectedFile": true,
-        "createdAt": "2024-03-28T20:00:27.245Z",
-        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "createdAt": "2024-04-02T14:21:28.033Z",
+        "updatedAt": "2024-04-02T14:21:28.033Z",
         "id": "6605cbe079626d07659dabe1"
       },
       {
@@ -9073,8 +9130,8 @@
         "fileType": "file",
         "_id": "6605cbe079626d07659dabe0",
         "isSelectedFile": false,
-        "createdAt": "2024-03-28T20:00:27.245Z",
-        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "createdAt": "2024-04-02T14:21:28.033Z",
+        "updatedAt": "2024-04-02T14:21:28.033Z",
         "id": "6605cbe079626d07659dabe0"
       },
       {
@@ -9084,8 +9141,8 @@
         "fileType": "file",
         "_id": "6605cbe079626d07659dabe2",
         "isSelectedFile": false,
-        "createdAt": "2024-03-28T20:00:27.245Z",
-        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "createdAt": "2024-04-02T14:21:28.033Z",
+        "updatedAt": "2024-04-02T14:21:28.033Z",
         "id": "6605cbe079626d07659dabe2"
       },
       {
@@ -9095,8 +9152,8 @@
         "fileType": "file",
         "_id": "6605cbe079626d07659dabdf",
         "isSelectedFile": false,
-        "createdAt": "2024-03-28T20:00:27.245Z",
-        "updatedAt": "2024-03-28T20:00:27.245Z",
+        "createdAt": "2024-04-02T14:21:28.033Z",
+        "updatedAt": "2024-04-02T14:21:28.033Z",
         "id": "6605cbe079626d07659dabdf"
       },
       {
@@ -9111,8 +9168,8 @@
         "fileType": "folder",
         "_id": "6605cbe079626d07659dabe3",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-28T20:00:27.245Z",
-        "createdAt": "2024-03-28T20:00:27.245Z",
+        "updatedAt": "2024-04-02T14:21:28.033Z",
+        "createdAt": "2024-04-02T14:21:28.033Z",
         "id": "6605cbe079626d07659dabe3"
       },
       {
@@ -9122,8 +9179,8 @@
         "fileType": "file",
         "_id": "6605cbe079626d07659dabe6",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-28T20:00:27.245Z",
-        "createdAt": "2024-03-28T20:00:27.245Z",
+        "updatedAt": "2024-04-02T14:21:28.033Z",
+        "createdAt": "2024-04-02T14:21:28.033Z",
         "id": "6605cbe079626d07659dabe6"
       },
       {
@@ -9133,8 +9190,8 @@
         "fileType": "file",
         "_id": "6605cbe079626d07659dabe7",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-28T20:00:27.245Z",
-        "createdAt": "2024-03-28T20:00:27.245Z",
+        "updatedAt": "2024-04-02T14:21:28.033Z",
+        "createdAt": "2024-04-02T14:21:28.033Z",
         "id": "6605cbe079626d07659dabe7"
       },
       {
@@ -9144,8 +9201,8 @@
         "fileType": "file",
         "_id": "6605cbe079626d07659dabe4",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-28T20:00:27.245Z",
-        "createdAt": "2024-03-28T20:00:27.245Z",
+        "updatedAt": "2024-04-02T14:21:28.033Z",
+        "createdAt": "2024-04-02T14:21:28.033Z",
         "id": "6605cbe079626d07659dabe4"
       },
       {
@@ -9155,13 +9212,13 @@
         "fileType": "file",
         "_id": "6605cbe079626d07659dabe5",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-28T20:00:27.245Z",
-        "createdAt": "2024-03-28T20:00:27.245Z",
+        "updatedAt": "2024-04-02T14:21:28.033Z",
+        "createdAt": "2024-04-02T14:21:28.033Z",
         "id": "6605cbe079626d07659dabe5"
       }
     ],
     "createdAt": "2024-03-28T19:58:24.558Z",
-    "updatedAt": "2024-03-28T20:00:27.245Z",
+    "updatedAt": "2024-04-02T14:21:28.033Z",
     "id": "wT957KlMz"
   },
   {
@@ -18197,8 +18254,8 @@
         ],
         "fileType": "folder",
         "_id": "6608708717d0578303a484fa",
-        "createdAt": "2024-03-30T23:54:33.027Z",
-        "updatedAt": "2024-03-30T23:54:33.027Z",
+        "createdAt": "2024-04-02T14:18:24.879Z",
+        "updatedAt": "2024-04-02T14:18:24.879Z",
         "isSelectedFile": false,
         "id": "6608708717d0578303a484fa"
       },
@@ -18209,8 +18266,8 @@
         "fileType": "file",
         "_id": "6608708717d0578303a484fc",
         "isSelectedFile": true,
-        "createdAt": "2024-03-30T23:54:33.027Z",
-        "updatedAt": "2024-03-30T23:54:33.027Z",
+        "createdAt": "2024-04-02T14:18:24.879Z",
+        "updatedAt": "2024-04-02T14:18:24.879Z",
         "id": "6608708717d0578303a484fc"
       },
       {
@@ -18219,8 +18276,8 @@
         "children": [],
         "fileType": "file",
         "_id": "6608708717d0578303a484fb",
-        "createdAt": "2024-03-30T23:54:33.027Z",
-        "updatedAt": "2024-03-30T23:54:33.027Z",
+        "createdAt": "2024-04-02T14:18:24.879Z",
+        "updatedAt": "2024-04-02T14:18:24.879Z",
         "isSelectedFile": false,
         "id": "6608708717d0578303a484fb"
       },
@@ -18230,14 +18287,14 @@
         "children": [],
         "fileType": "file",
         "_id": "6608708717d0578303a484fd",
-        "createdAt": "2024-03-30T23:54:33.027Z",
-        "updatedAt": "2024-03-30T23:54:33.027Z",
+        "createdAt": "2024-04-02T14:18:24.879Z",
+        "updatedAt": "2024-04-02T14:18:24.879Z",
         "isSelectedFile": false,
         "id": "6608708717d0578303a484fd"
       }
     ],
     "createdAt": "2024-03-30T20:05:27.970Z",
-    "updatedAt": "2024-03-30T23:54:33.027Z",
+    "updatedAt": "2024-04-02T14:18:24.879Z",
     "id": "i6akdNRS2"
   },
   {
