@@ -1,11 +1,12 @@
 # Sketches for jht9629-nyu
-291 sketches  
+292 sketches  
+[p5moExamples photo booth 68](https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps)<!-- 2024-04-05T19:20:08.543Z -->  
+[p5moExamples iframe\_player 47](https://editor.p5js.org/jht9629-nyu/sketches/88yxquMBl)<!-- 2024-04-04T15:07:10.704Z -->  
 [get\_url\_params demo](https://editor.p5js.org/jht9629-nyu/sketches/5fTCCJ_Sh)<!-- 2024-04-02T14:45:18.666Z -->  
 [MazeSpin liberation screens v2](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)<!-- 2024-04-02T14:21:28.033Z -->  
 [video scan radial v7](https://editor.p5js.org/jht9629-nyu/sketches/i6akdNRS2)<!-- 2024-04-02T14:18:24.879Z -->  
 [ims04-jht scroll color rate](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)<!-- 2024-04-02T14:14:49.011Z -->  
 [ims04-jht scroll color bars](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)<!-- 2024-04-02T14:10:56.778Z -->  
-[p5moExamples photo booth 52](https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps)<!-- 2024-04-01T01:30:50.841Z -->  
 [p5moLibrary DrawPoints](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)<!-- 2024-03-31T18:42:58.007Z -->  
 [p5moLibrary Astronomical 47](https://editor.p5js.org/jht9629-nyu/sketches/iIIAb8KIDr)<!-- 2024-03-31T18:40:48.892Z -->  
 [ims03-jht scrolling color bars](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)<!-- 2024-03-31T18:22:19.647Z -->  

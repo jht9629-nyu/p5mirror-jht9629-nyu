@@ -10793,6 +10793,63 @@
     "id": "lqMJIQoIs"
   },
   {
+    "name": "p5moExamples iframe_player 47",
+    "_id": "88yxquMBl",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "660d60601713541f9b3c3159",
+          "660d60601713541f9b3c315a",
+          "660d60601713541f9b3c315b"
+        ],
+        "fileType": "folder",
+        "_id": "660d60601713541f9b3c3158",
+        "createdAt": "2024-04-04T15:07:10.704Z",
+        "updatedAt": "2024-04-04T15:07:10.704Z",
+        "isSelectedFile": false,
+        "id": "660d60601713541f9b3c3158"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/88yxquMBl\n// p5moExamples iframe_player 47\n\n// my.items is play list of p5js sketches\n// which are played in sequence\n// switching every my.perSlideSecs seconds\n// moLibrary is used to save my.item_index in firebase realtime database\n\n// sketches harvested from\n// https://github.com/molab-itp/p5mirror/forks\n\nlet my = {};\n\nfunction my_setup() {\n  my.width = windowWidth;\n  my.height = windowHeight;\n  my.fireb_config = 'jht9629';\n  // my.fireb_config = 'jht1493';\n  // my.fireb_config = 'jhtitp';\n  my.dbase_rootPath = 'm0-@r-@w-';\n  my.roomName = 'room1';\n  my.mo_app = 'mo-iframe_player';\n  my.nameDevice = '';\n\n  my.perSlideSecs = 7;\n  my.perSlideTime = millis();\n\n  my.item_index = 0;\n  my.items = [];\n  my.items.push('https://molab-itp.github.io/p5moExamples/examples/lobby/?v=55&room=room0');\n  my.items.push(\n    'https://leey611.github.io/p5mirror-leey611/p5projects/Bezier%20Curve%20Interactive%20Tangents%20copy-ZfRGzFyhK/'\n  );\n  my.items.push('https://karakkzzk.github.io/p5mirror-karakkzzk/p5projects/Innovative%20crafter-OcjJ4foZE/');\n  my.items.push('https://paulineium.github.io/p5mirror-pk2196/p5projects/ims01-paulineium-CHGZXqDjz/');\n  my.items.push('https://jiaying0412.github.io/p5mirror---jiaying0822/p5projects/ims01-Jiaz-jYTEhmWCm/');\n  my.items.push(\n    'https://newbenjaminb.github.io/p5mirror-bb/p5projects/%20W6.4-1v4%20colliding%20balls%20DONE-VbVQXinn1/'\n  );\n  my.iframe_src = my.items[my.item_index];\n}\n\nfunction setup() {\n  my_setup();\n\n  create_my_iframe();\n\n  // my.canvas = createCanvas(my.width, my.height);\n  noCanvas();\n\n  dbase_app_init({ completed: startup_completed });\n\n  createButton('Next').mousePressed(next_action);\n  createButton('Previous').mousePressed(previous_action);\n  createButton('First').mousePressed(first_action);\n  createSpan(' Index ');\n  my.item_index_span = createSpan(my.item_index);\n  createSpan(' ');\n  my.timer_span = createSpan('');\n\n  // Move the iframe below all the ui elements\n  let body_elt = document.querySelector('body');\n  let other_elt = my.iframe_element.elt;\n  body_elt.insertBefore(other_elt, null);\n}\n\nfunction create_my_iframe() {\n  my.iframe_element = createElement('iframe');\n  item_index_changed();\n}\n\nfunction draw() {\n  //\n  my.item_index_span.html(my.item_index);\n\n  let now = millis();\n  let lapse = (now - my.perSlideTime) / 1000;\n  if (lapse > my.perSlideSecs) {\n    my.perSlideTime = now;\n    next_action();\n  }\n  my.timer_span.html(lapse.toFixed(1));\n}\n\nfunction startup_completed() {\n  console.log('startup_completed');\n\n  dbase_devices_observe({ observed_item, all: 1 });\n\n  function observed_item(device) {\n    console.log('observed_item device', device);\n    if (device.item_index != undefined) {\n      my.item_index = device.item_index;\n      item_index_changed();\n    }\n  }\n}\n\nfunction item_index_changed() {\n  my.iframe_src = my.items[my.item_index];\n  my.iframe_element.elt.src = my.iframe_src;\n  my.iframe_element.elt.width = windowWidth;\n  my.iframe_element.elt.height = windowHeight;\n}\n\nfunction first_action() {\n  dbase_update_props({ item_index: 0 });\n}\n\nfunction next_action() {\n  let last = my.items.length - 1;\n  if (my.item_index >= last) {\n    dbase_update_props({ item_index: 0 });\n  } else {\n    dbase_update_props({ item_index: dbase_increment(1) });\n  }\n}\n\nfunction previous_action() {\n  let last = my.items.length - 1;\n  if (my.item_index <= 0) {\n    dbase_update_props({ item_index: last });\n  } else {\n    dbase_update_props({ item_index: dbase_increment(-1) });\n  }\n}\n\nfunction windowResized() {\n  item_index_changed();\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/23h3z1G82\n// p5moExamples words 47\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660d60601713541f9b3c315a",
+        "isSelectedFile": true,
+        "createdAt": "2024-04-04T15:07:10.704Z",
+        "updatedAt": "2024-04-04T15:07:10.704Z",
+        "id": "660d60601713541f9b3c315a"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script> -->\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://molab-itp.github.io/p5moRelease/lib/47/style.css\" />\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"../../../p5moLibrary/src/lib/style.css\" /> -->\n\n    <style></style>\n  </head>\n  <body>\n    <main></main>\n\n    <script type=\"module\" src=\"https://molab-itp.github.io/p5moRelease/lib/47/a_lib.js\"></script>\n    <!-- <script type=\"module\" src=\"../../../p5moLibrary/src/lib/a_lib.js\"></script> -->\n\n<!--     <script src=\"sketch.js?v=22\"></script> -->\n    <script src=\"sketch.js\"></script>\n\n    <!-- <iframe src=\"https://www.merriam-webster.com/word-of-the-day/2023-01-01\" title=\"Words\"></iframe> -->\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660d60601713541f9b3c3159",
+        "createdAt": "2024-04-04T15:07:10.704Z",
+        "updatedAt": "2024-04-04T15:07:10.704Z",
+        "isSelectedFile": false,
+        "id": "660d60601713541f9b3c3159"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "660d60601713541f9b3c315b",
+        "createdAt": "2024-04-04T15:07:10.704Z",
+        "updatedAt": "2024-04-04T15:07:10.704Z",
+        "isSelectedFile": false,
+        "id": "660d60601713541f9b3c315b"
+      }
+    ],
+    "createdAt": "2024-04-03T13:57:52.827Z",
+    "updatedAt": "2024-04-04T15:07:10.704Z",
+    "id": "88yxquMBl"
+  },
+  {
     "name": "p5moExamples lobby",
     "_id": "vP6sWN4Cu",
     "updatedAt": "2024-03-27T19:38:12.979Z",
@@ -10967,24 +11024,25 @@
     "id": "nBefVKAbH"
   },
   {
-    "name": "p5moExamples photo booth 52",
+    "name": "p5moExamples photo booth 68",
     "_id": "5VKqK34Ps",
-    "updatedAt": "2024-04-01T01:30:50.841Z",
+    "updatedAt": "2024-04-05T19:20:08.543Z",
     "files": [
       {
         "name": "root",
         "content": "",
         "children": [
-          "660a0bfddc2455001ab55f5b",
-          "660a0bfddc2455001ab55f5d",
-          "660a0bfd0e4047001a444ff3",
+          "66104eca3289d2001a8aede1",
+          "66104ecb3289d2001a8aede4",
+          "66104ecb3289d2001a8aeded",
+          "66104ecb24d642001ab24a23",
           "660a0b017ffe4856405a5dde",
-          "660a0bfdf2c74c001a341cd1"
+          "66104ecb3289d2001a8aedea"
         ],
         "fileType": "folder",
         "_id": "660a0b017ffe4856405a5ddf",
-        "createdAt": "2024-04-01T01:30:50.841Z",
-        "updatedAt": "2024-04-01T01:30:50.841Z",
+        "createdAt": "2024-04-05T19:20:08.543Z",
+        "updatedAt": "2024-04-05T19:20:08.543Z",
         "isSelectedFile": false,
         "id": "660a0b017ffe4856405a5ddf"
       },
@@ -10994,54 +11052,65 @@
         "children": [],
         "fileType": "file",
         "_id": "660a0b017ffe4856405a5dde",
-        "createdAt": "2024-04-01T01:30:50.841Z",
-        "updatedAt": "2024-04-01T01:30:50.841Z",
+        "createdAt": "2024-04-05T19:20:08.543Z",
+        "updatedAt": "2024-04-05T19:20:08.543Z",
         "isSelectedFile": false,
         "id": "660a0b017ffe4856405a5dde"
       },
       {
-        "name": "index.html",
-        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script> -->\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://molab-itp.github.io/p5moRelease/lib/66/style.css\"></script>\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"../../../p5moLibrary/src/lib/style.css?v=53\" /> -->\n\n    <style></style>\n  </head>\n  <body>\n    <main></main>\n\n    <script type=\"module\" src=\"https://molab-itp.github.io/p5moRelease/lib/66/a_lib.js\"></script>\n    <!-- <script type=\"module\" src=\"../../p5moLibrary/src/lib/a_lib.js\"\"></script> -->\n\n    <script src=\"a_my_init.js\"></script>\n    <script src=\"a_sketch.js\"></script>\n    <script src=\"ui_init.js\"></script>\n    <!-- ?v=53 included to force into the cache -->\n  </body>\n</html>\n",
+        "name": "a_my_init.js",
+        "content": "//\nfunction my_init() {\n  // updated to verify change on mobile\n  my.version = '?v=63';\n  my.isRemote = 1;\n  my.videoFlag = 1;\n  // show detailed log\n  my.logLoud = 0;\n\n  // Aspect ratio of video capture on mobile device\n  my.vwidth = 480 / 2;\n  my.vheight = 640 / 2;\n  my.fireb_config = 'jht9629';\n  // my.fireb_config = 'jht1493';\n  // my.fireb_config = 'jhtitp';\n\n  my.dbase_rootPath = 'm0-@r-@w-';\n  my.mo_app = 'mo-photo';\n  my.roomName = 'room1';\n\n  // my.nameDevice = '';\n\n  if (my.isRemote) {\n    my.width = my.vwidth;\n    my.height = my.vheight;\n  } else {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n\n  my.colorGold = [187, 165, 61];\n  my.colors = [[255, 0, 0], [0, 255, 0], my.colorGold];\n}\n",
         "children": [],
         "fileType": "file",
-        "_id": "660a0bfd0e4047001a444ff3",
-        "updatedAt": "2024-04-01T01:30:50.841Z",
-        "createdAt": "2024-04-01T01:30:50.841Z",
+        "_id": "66104eca3289d2001a8aede1",
+        "updatedAt": "2024-04-05T19:20:08.543Z",
+        "createdAt": "2024-04-05T19:20:08.543Z",
         "isSelectedFile": false,
-        "id": "660a0bfd0e4047001a444ff3"
+        "id": "66104eca3289d2001a8aede1"
       },
       {
         "name": "a_sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps\n// p5moExamples photo booth 52\n\nlet my = {};\n\nfunction setup() {\n  //\n  // Lowest pixel density for small uploads\n  pixelDensity(1);\n\n  my_init();\n\n  my.canvas = createCanvas(my.width, my.height);\n  my.canvas.mouseReleased(canvas_mouseReleased);\n  my.canvas.touchEnded(canvas_mouseReleased);\n\n  my.photo_count = 0;\n\n  ui_init();\n\n  video_create();\n\n  dbase_app_init({ completed: startup_completed });\n\n  // anim_init();\n\n  my.x = 0;\n  my.y = my.height / 2;\n  my.xstep = 1;\n  my.radius = int(my.width / 10);\n}\n\nfunction startup_completed() {\n  //\n  dbase_devices_observe({ observed_key, observed_item, all: 1 });\n\n  function observed_key(key, device) {\n    // console.log('observed_a_device key', key, 'uid', my.uid, 'device', device);\n    console.log('observed_key key', key, 'device.photo_count', device && device.photo_count);\n  }\n\n  function observed_item(device) {\n    console.log('observed_item device.photo_count', device.photo_count);\n    if (device.photo_count != undefined) {\n      if (device.photo_count != my.photo_count) {\n        show_action();\n      }\n      my.photo_count = device.photo_count;\n    }\n  }\n}\n\nfunction draw() {\n  draw_frame();\n\n  // ui_init_update();\n\n  // my.animLoop.step({ action: updateAction });\n}\n\nfunction draw_frame() {\n  if (my.videoFlag && !video_ready()) return;\n\n  background(0);\n\n  if (my.videoFlag) {\n    // faster to get entire video frame as an image\n    my.videoImg = my.video.get();\n    image(my.videoImg, 0, 0);\n  }\n\n  noStroke();\n  fill(my.colors[my.photo_count % my.colors.length]);\n  circle(my.x, my.y, my.radius);\n  my.x = (my.x + my.xstep) % my.width;\n\n  my.photo_count_span.html(my.photo_count);\n}\n\nfunction canvas_mouseReleased() {\n  // console.log('canvas_mouseReleased');\n  track_xy();\n}\n\nfunction track_xy() {\n  let x = mouseX;\n  let y = mouseY;\n}\n\nfunction mouseDragged() {\n  // console.log('mouseDragged');\n  // required to prevent touch drag moving canvas on mobile\n  let onCanvas = mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;\n  if (onCanvas) {\n    track_xy();\n  }\n  // return my.scrollFlag ? true : !onCanvas;\n  return !onCanvas;\n}\n\nfunction windowResized() {\n  // console.log('windowResized windowHeight', windowHeight, 'windowWidth', windowWidth);\n  // my.isPortrait = windowHeight > windowWidth;\n  if (my.isRemote) {\n    return;\n  }\n  resizeCanvas(windowWidth, windowHeight);\n  // console.log('windowResized width', width, 'height', height);\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/twgS6eWRZ\n// pixel-grid\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7Wjlo3pPU\n// mo-pix-chip-grid jht9629 fireb_firebase.js\n\n// https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp\n// p5moExamples pixel-grid 47\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps\n// p5moExaples photom booth 70\n\n// Capture canvas pixels to cloud as image jpg or png\n\n// [] Show other photobooths\n\nlet my = {};\n\nfunction setup() {\n  my_init();\n\n  // set group to share cloud data\n  my.group = 'group1';\n\n  my.photo_index = 0;\n  my.photo_max = 4;\n  my.photo_list = [];\n  my.slit_scan = 0;\n\n  // my.imageQuality = 1;\n  my.imageQuality = 0.1;\n  my.imageExt = '.jpg';\n  // my.imageExt = '.png';\n  my.thumbWidth = my.vwidth / 2;\n\n  // Lowest pixel density for small uploads\n  pixelDensity(1);\n\n  my.canvas = createCanvas(my.width, my.height);\n  my.canvas.mouseReleased(canvas_mouseReleased);\n  my.canvas.touchEnded(canvas_mouseReleased);\n\n  ui_init();\n\n  video_create();\n\n  dbase_app_init({ completed: startup_completed });\n\n  // for moving circle or video scan line\n  my.x = 0;\n  my.y = my.height / 2;\n  my.xstep = 1;\n  my.radius = int(my.width / 10);\n}\n\nfunction startup_completed() {\n  //\n  // dbase_devices_observe({ observed_key, observed_item, all: 1 });\n  // dbase_app_observe({ observed_item });\n  dbase_group_observe({ observed_key, observed_item });\n\n  function observed_key(key, device) {\n    // console.log('observed_a_device key', key, 'uid', my.uid, 'device', device);\n    // console.log('observed_key key', key, 'device.photo_index', device && device.photo_index);\n  }\n\n  function observed_item(device) {\n    // console.log('observed_item device.photo_index', device.photo_index);\n    // console.log('observed_item device.photo_list', device.photo_list);\n    if (device.photo_list != undefined) {\n      my.photo_list = device.photo_list;\n    }\n    if (device.photo_index != undefined) {\n      my.photo_index = device.photo_index;\n    }\n    show_action();\n  }\n}\n\nfunction draw() {\n  draw_frame();\n  draw_number(my.photo_index + 1);\n}\n\nfunction draw_frame() {\n  if (my.videoFlag && !video_ready()) return;\n\n  if (my.videoFlag) {\n    // faster to get entire video frame as an image\n    my.videoImg = my.video.get();\n  }\n  if (!my.videoImg) {\n    return;\n  }\n  if (my.slit_scan) {\n    draw_scan();\n  } else {\n    draw_video();\n  }\n  my.x = (my.x + my.xstep) % my.width;\n\n  let str = my.photo_list.length + ' ' + my.photo_index;\n  my.photo_count_span.html(str);\n}\n\nfunction draw_scan() {\n  // my.videoImg.loadPixels();\n  let w = my.videoImg.width;\n  let h = my.videoImg.height;\n  copy(my.videoImg, w / 2, 0, 1, h, my.x, 0, 1, h);\n}\n\nfunction draw_video() {\n  // background(0);\n  image(my.videoImg, 0, 0);\n  // Draw circle on video\n  noStroke();\n  let index = my.photo_index + 1;\n  fill(my.colors[index % my.colors.length]);\n  circle(my.x, my.y, my.radius);\n}\n\nfunction draw_number(n) {\n  // Convert number to string\n  let str = n + '';\n  let x = 10;\n  let y = my.height;\n  textSize(50);\n  // Draw black rect background\n  let a = textAscent();\n  let d = textDescent();\n  let h = a + d;\n  let w = textWidth(str);\n  fill(0);\n  rect(x, y - h, w, h);\n  // Draw white text\n  fill(255);\n  // x  y bottom-left corner.\n  text(str, x, y - d);\n}\n\nfunction canvas_mouseReleased() {\n  // console.log('canvas_mouseReleased');\n  track_xy();\n}\n\nfunction track_xy() {\n  let x = mouseX;\n  let y = mouseY;\n}\n\nfunction mouseDragged() {\n  // console.log('mouseDragged');\n  // required to prevent touch drag moving canvas on mobile\n  let onCanvas = mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;\n  if (onCanvas) {\n    track_xy();\n  }\n  // return my.scrollFlag ? true : !onCanvas;\n  return !onCanvas;\n}\n\nfunction windowResized() {\n  // console.log('windowResized windowHeight', windowHeight, 'windowWidth', windowWidth);\n  // my.isPortrait = windowHeight > windowWidth;\n  if (my.isRemote) {\n    return;\n  }\n  resizeCanvas(windowWidth, windowHeight);\n  // console.log('windowResized width', width, 'height', height);\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/twgS6eWRZ\n// pixel-grid\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7Wjlo3pPU\n// mo-pix-chip-grid jht9629 fireb_firebase.js\n\n// https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp\n// p5moExamples pixel-grid 47\n\n// [x] Correct display of images - must hit show button\n// [x] Add --> Take, keep array of n images and upate\n// [x] photo_index\n\n// [x] my.photo_list - show only last n\n//    [ { name: \"\", index: n }, ... ]\n\n// [x] preserve image show order\n",
         "children": [],
         "fileType": "file",
-        "_id": "660a0bfddc2455001ab55f5d",
-        "updatedAt": "2024-04-01T01:30:50.841Z",
-        "createdAt": "2024-04-01T01:30:50.841Z",
+        "_id": "66104ecb3289d2001a8aede4",
+        "updatedAt": "2024-04-05T19:20:08.543Z",
+        "createdAt": "2024-04-05T19:20:08.543Z",
         "isSelectedFile": true,
-        "id": "660a0bfddc2455001ab55f5d"
+        "id": "66104ecb3289d2001a8aede4"
       },
       {
-        "name": "a_my_init.js",
-        "content": "//\nfunction my_init() {\n  // updated to verify change on mobile\n  my.version = '?v=53';\n  my.isRemote = 1;\n  my.videoFlag = 1;\n  my.logLoud = 0;\n\n  my.imageQuality = 0.1;\n  my.imageExt = '.jpg';\n  // my.imageExt = '.png';\n  my.thumbWidth = 128;\n\n  // Aspect ratio of video capture on mobile device\n  my.vwidth = 480;\n  my.vheight = 640;\n  my.fireb_config = 'jht9629';\n  // my.fireb_config = 'jht1493';\n  // my.fireb_config = 'jhtitp';\n\n  my.dbase_rootPath = 'm0-@r-@w-';\n  my.mo_app = 'mo-photo';\n  my.roomName = 'room1';\n\n  // my.nameDevice = '';\n\n  if (my.isRemote) {\n    my.width = my.vwidth;\n    my.height = my.vheight;\n  } else {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n\n  my.colorGold = [187, 165, 61];\n  my.colors = [[255, 0, 0], [0, 255, 0], my.colorGold];\n}\n",
+        "name": "photo.js",
+        "content": "//\n\nfunction photo_name(index) {\n  return index.toString().padStart(3, '0') + my.imageExt;\n}\n\nfunction photo_list_entry(index) {\n  let name = photo_name(index);\n  let uid = my.uid;\n  return { name, index, uid };\n}\n\nfunction photo_path_entry(entry) {\n  return entry.uid + '/' + entry.name;\n}\n\nasync function photo_list_add(entry) {\n  my.photo_list.push(entry);\n  if (my.photo_list.length > my.photo_max) {\n    await photo_list_trim();\n  }\n\n  // Change to photo_list send to cloud\n  dbase_group_update({ photo_list: my.photo_list });\n}\n\nasync function photo_list_trim() {\n  //\n  // remove the first entry in photo_list\n  //\n  let first = my.photo_list.shift();\n  await photo_list_remove_entry(first);\n}\n\nasync function photo_list_remove_entry(entry) {\n  // console.log('photo_list_remove_entry entry', entry);\n\n  let path = photo_path_entry(entry);\n  try {\n    await fstorage_remove({ path });\n    remove_img_index(entry.index);\n  } catch (err) {\n    console.log('show_action err', err);\n  }\n}\n\nfunction remove_img_index(index) {\n  // console.log('remove_img_index index', index);\n  let id = 'id_img_' + index;\n  let img = select('#' + id);\n  // console.log('remove_img_index img', img);\n  if (img) {\n    img.remove();\n  }\n}\n\nasync function show_action() {\n  //\n  // console.log('show_action my.photo_list', my.photo_list);\n  for (let entry of my.photo_list) {\n    let path = photo_path_entry(entry);\n    try {\n      let url = await fstorage_download_url({ path });\n      url_result(url, entry.index);\n    } catch (err) {\n      console.log('show_action err', err);\n    }\n  }\n  function url_result(url, index) {\n    // console.log('url_result index', index, 'url', url);\n    let img = find_img(index);\n    img.elt.src = url;\n  }\n}\n\n// Create image element for an index\n//  or return if already present\n//\nfunction find_img(index) {\n  let id = 'id_img_' + index;\n  let img = select('#' + id);\n  if (!img) {\n    // console.log('show_action id', id);\n    img = createImg('', 'image');\n    img.id(id);\n    // console.log('show_action createImg', img);\n    // my.gallery_div.child(img);\n\n    // Add image as first child to see most recent first\n    my.gallery_div.elt.prepend(img.elt);\n\n    let iwidth = my.thumbWidth;\n    img.style('width: ' + iwidth + 'px;');\n  }\n  return img;\n}\n",
         "children": [],
         "fileType": "file",
-        "_id": "660a0bfddc2455001ab55f5b",
-        "updatedAt": "2024-04-01T01:30:50.841Z",
-        "createdAt": "2024-04-01T01:30:50.841Z",
+        "_id": "66104ecb24d642001ab24a23",
+        "updatedAt": "2024-04-05T19:20:08.543Z",
+        "createdAt": "2024-04-05T19:20:08.543Z",
         "isSelectedFile": false,
-        "id": "660a0bfddc2455001ab55f5b"
+        "id": "66104ecb24d642001ab24a23"
       },
       {
         "name": "ui_init.js",
-        "content": "//\nfunction ui_init() {\n  //\n  my.addBtn = ui_createButton('Add');\n  my.addBtn.mousePressed(add_action);\n\n  my.removeBtn = ui_createButton('Remove');\n  my.removeBtn.mousePressed(remove_action);\n\n  my.showBtn = ui_createButton('Show');\n  my.showBtn.mousePressed(show_action);\n\n  my.photo_count_span = createSpan('' + my.photo_count);\n}\n\nfunction add_action() {\n  console.log('add_action');\n  dbase_update_props({ photo_count: dbase_increment(1) });\n  console.log('add_action photo_count', my.photo_count);\n\n  let layer = my.canvas;\n  let path = photo_path(my.uid, my.photo_count);\n  let imageQuality = my.imageQuality;\n\n  fstorage_upload({ layer, path, imageQuality });\n}\n\nfunction remove_action() {\n  console.log('remove_action my.photo_count', my.photo_count);\n  if (my.photo_count < 1) return;\n\n  let path = photo_path(my.uid, my.photo_count);\n\n  fstorage_remove({ path });\n\n  dbase_update_props({ photo_count: dbase_increment(-1) });\n}\n\nfunction photo_path(uid, count) {\n  let nphoto = count.toString().padStart(3, '0');\n  return uid + '/' + nphoto + my.imageExt;\n}\n\nfunction show_action() {\n  //\n  my.gallery_div = ui_div_empty('igallery');\n  for (let index = 1; index <= my.photo_count; index++) {\n    let path = photo_path(my.uid, index);\n    let imageType = 'image/jpeg';\n\n    fstorage_download_url({ path, imageType, result: url_result });\n  }\n}\n\nfunction url_result(url) {\n  // console.log('url_result', url);\n  let img = createImg(url, 'image');\n  my.gallery_div.child(img);\n  let iwidth = my.thumbWidth;\n  img.style('width: ' + iwidth + 'px;');\n}\n",
+        "content": "//\nfunction ui_init() {\n  //\n  my.effectBtn = ui_createButton('Effect');\n  my.effectBtn.mousePressed(effect_action);\n\n  my.takeBtn = ui_createButton('Take');\n  my.takeBtn.mousePressed(take_action);\n\n  my.removeBtn = ui_createButton('Remove');\n  my.removeBtn.mousePressed(remove_action);\n\n  my.showBtn = ui_createButton('Show');\n  my.showBtn.mousePressed(show_action);\n\n  my.photo_count_span = createSpan('' + my.photo_list.length);\n\n  my.gallery_div = ui_div_empty('igallery');\n}\n\nfunction effect_action() {\n  my.slit_scan = !my.slit_scan;\n}\n\nasync function take_action() {\n  // console.log('take_action');\n\n  let entry = photo_list_entry(my.photo_index + 1);\n  let path = photo_path_entry(entry);\n\n  let layer = my.canvas;\n  let imageQuality = my.imageQuality;\n  try {\n    await fstorage_upload({ path, layer, imageQuality });\n\n    await photo_list_add(entry);\n\n    dbase_group_update({ photo_index: dbase_increment(1) });\n    //\n  } catch (err) {\n    console.log('take_action err', err);\n  }\n}\n\nasync function remove_action() {\n  // console.log('remove_action photo_count', my.photo_list.length);\n  if (my.photo_list.length < 1) {\n    // No more images in the cloud\n    //  zero out photo_index\n    dbase_group_update({ photo_index: 0 });\n    return;\n  }\n  //\n  // remove the last entry in photo_list\n  //\n  let last = my.photo_list.pop();\n  await photo_list_remove_entry(last);\n\n  // Update photo_list in the cloud\n  dbase_group_update({ photo_list: my.photo_list });\n}\n",
         "children": [],
         "fileType": "file",
-        "_id": "660a0bfdf2c74c001a341cd1",
-        "updatedAt": "2024-04-01T01:30:50.841Z",
-        "createdAt": "2024-04-01T01:30:50.841Z",
+        "_id": "66104ecb3289d2001a8aedea",
+        "updatedAt": "2024-04-05T19:20:08.543Z",
+        "createdAt": "2024-04-05T19:20:08.543Z",
         "isSelectedFile": false,
-        "id": "660a0bfdf2c74c001a341cd1"
+        "id": "66104ecb3289d2001a8aedea"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script> -->\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://molab-itp.github.io/p5moRelease/lib/66/style.css\"></script>\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"../../../p5moLibrary/src/lib/style.css?v=63\" /> -->\n\n    <style></style>\n  </head>\n  <body>\n    <main></main>\n\n    <script type=\"module\" src=\"https://molab-itp.github.io/p5moRelease/lib/70/a_lib.js\"></script>\n    <!-- <script type=\"module\" src=\"../../p5moLibrary/src/lib/a_lib.js\"></script> -->\n\n    <script src=\"a_my_init.js\"></script>\n    <script src=\"ui_init.js\"></script>\n    <script src=\"photo.js\"></script>\n    <script src=\"a_sketch.js\"></script>\n    <!-- ?v=63 included to force into the cache -->\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66104ecb3289d2001a8aeded",
+        "updatedAt": "2024-04-05T19:20:08.543Z",
+        "createdAt": "2024-04-05T19:20:08.543Z",
+        "isSelectedFile": false,
+        "id": "66104ecb3289d2001a8aeded"
       }
     ],
     "createdAt": "2024-04-01T01:17:11.169Z",
