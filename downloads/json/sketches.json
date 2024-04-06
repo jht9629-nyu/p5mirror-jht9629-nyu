@@ -11026,7 +11026,7 @@
   {
     "name": "p5moExamples photo booth 68",
     "_id": "5VKqK34Ps",
-    "updatedAt": "2024-04-05T19:20:08.543Z",
+    "updatedAt": "2024-04-05T20:06:38.664Z",
     "files": [
       {
         "name": "root",
@@ -11041,8 +11041,8 @@
         ],
         "fileType": "folder",
         "_id": "660a0b017ffe4856405a5ddf",
-        "createdAt": "2024-04-05T19:20:08.543Z",
-        "updatedAt": "2024-04-05T19:20:08.543Z",
+        "createdAt": "2024-04-05T20:06:38.664Z",
+        "updatedAt": "2024-04-05T20:06:38.664Z",
         "isSelectedFile": false,
         "id": "660a0b017ffe4856405a5ddf"
       },
@@ -11052,8 +11052,8 @@
         "children": [],
         "fileType": "file",
         "_id": "660a0b017ffe4856405a5dde",
-        "createdAt": "2024-04-05T19:20:08.543Z",
-        "updatedAt": "2024-04-05T19:20:08.543Z",
+        "createdAt": "2024-04-05T20:06:38.664Z",
+        "updatedAt": "2024-04-05T20:06:38.664Z",
         "isSelectedFile": false,
         "id": "660a0b017ffe4856405a5dde"
       },
@@ -11063,19 +11063,19 @@
         "children": [],
         "fileType": "file",
         "_id": "66104eca3289d2001a8aede1",
-        "updatedAt": "2024-04-05T19:20:08.543Z",
-        "createdAt": "2024-04-05T19:20:08.543Z",
+        "updatedAt": "2024-04-05T20:06:38.664Z",
+        "createdAt": "2024-04-05T20:06:38.664Z",
         "isSelectedFile": false,
         "id": "66104eca3289d2001a8aede1"
       },
       {
         "name": "a_sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps\n// p5moExaples photom booth 70\n\n// Capture canvas pixels to cloud as image jpg or png\n\n// [] Show other photobooths\n\nlet my = {};\n\nfunction setup() {\n  my_init();\n\n  // set group to share cloud data\n  my.group = 'group1';\n\n  my.photo_index = 0;\n  my.photo_max = 4;\n  my.photo_list = [];\n  my.slit_scan = 0;\n\n  // my.imageQuality = 1;\n  my.imageQuality = 0.1;\n  my.imageExt = '.jpg';\n  // my.imageExt = '.png';\n  my.thumbWidth = my.vwidth / 2;\n\n  // Lowest pixel density for small uploads\n  pixelDensity(1);\n\n  my.canvas = createCanvas(my.width, my.height);\n  my.canvas.mouseReleased(canvas_mouseReleased);\n  my.canvas.touchEnded(canvas_mouseReleased);\n\n  ui_init();\n\n  video_create();\n\n  dbase_app_init({ completed: startup_completed });\n\n  // for moving circle or video scan line\n  my.x = 0;\n  my.y = my.height / 2;\n  my.xstep = 1;\n  my.radius = int(my.width / 10);\n}\n\nfunction startup_completed() {\n  //\n  // dbase_devices_observe({ observed_key, observed_item, all: 1 });\n  // dbase_app_observe({ observed_item });\n  dbase_group_observe({ observed_key, observed_item });\n\n  function observed_key(key, device) {\n    // console.log('observed_a_device key', key, 'uid', my.uid, 'device', device);\n    // console.log('observed_key key', key, 'device.photo_index', device && device.photo_index);\n  }\n\n  function observed_item(device) {\n    // console.log('observed_item device.photo_index', device.photo_index);\n    // console.log('observed_item device.photo_list', device.photo_list);\n    if (device.photo_list != undefined) {\n      my.photo_list = device.photo_list;\n    }\n    if (device.photo_index != undefined) {\n      my.photo_index = device.photo_index;\n    }\n    show_action();\n  }\n}\n\nfunction draw() {\n  draw_frame();\n  draw_number(my.photo_index + 1);\n}\n\nfunction draw_frame() {\n  if (my.videoFlag && !video_ready()) return;\n\n  if (my.videoFlag) {\n    // faster to get entire video frame as an image\n    my.videoImg = my.video.get();\n  }\n  if (!my.videoImg) {\n    return;\n  }\n  if (my.slit_scan) {\n    draw_scan();\n  } else {\n    draw_video();\n  }\n  my.x = (my.x + my.xstep) % my.width;\n\n  let str = my.photo_list.length + ' ' + my.photo_index;\n  my.photo_count_span.html(str);\n}\n\nfunction draw_scan() {\n  // my.videoImg.loadPixels();\n  let w = my.videoImg.width;\n  let h = my.videoImg.height;\n  copy(my.videoImg, w / 2, 0, 1, h, my.x, 0, 1, h);\n}\n\nfunction draw_video() {\n  // background(0);\n  image(my.videoImg, 0, 0);\n  // Draw circle on video\n  noStroke();\n  let index = my.photo_index + 1;\n  fill(my.colors[index % my.colors.length]);\n  circle(my.x, my.y, my.radius);\n}\n\nfunction draw_number(n) {\n  // Convert number to string\n  let str = n + '';\n  let x = 10;\n  let y = my.height;\n  textSize(50);\n  // Draw black rect background\n  let a = textAscent();\n  let d = textDescent();\n  let h = a + d;\n  let w = textWidth(str);\n  fill(0);\n  rect(x, y - h, w, h);\n  // Draw white text\n  fill(255);\n  // x  y bottom-left corner.\n  text(str, x, y - d);\n}\n\nfunction canvas_mouseReleased() {\n  // console.log('canvas_mouseReleased');\n  track_xy();\n}\n\nfunction track_xy() {\n  let x = mouseX;\n  let y = mouseY;\n}\n\nfunction mouseDragged() {\n  // console.log('mouseDragged');\n  // required to prevent touch drag moving canvas on mobile\n  let onCanvas = mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;\n  if (onCanvas) {\n    track_xy();\n  }\n  // return my.scrollFlag ? true : !onCanvas;\n  return !onCanvas;\n}\n\nfunction windowResized() {\n  // console.log('windowResized windowHeight', windowHeight, 'windowWidth', windowWidth);\n  // my.isPortrait = windowHeight > windowWidth;\n  if (my.isRemote) {\n    return;\n  }\n  resizeCanvas(windowWidth, windowHeight);\n  // console.log('windowResized width', width, 'height', height);\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/twgS6eWRZ\n// pixel-grid\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7Wjlo3pPU\n// mo-pix-chip-grid jht9629 fireb_firebase.js\n\n// https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp\n// p5moExamples pixel-grid 47\n\n// [x] Correct display of images - must hit show button\n// [x] Add --> Take, keep array of n images and upate\n// [x] photo_index\n\n// [x] my.photo_list - show only last n\n//    [ { name: \"\", index: n }, ... ]\n\n// [x] preserve image show order\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps\n// p5moExaples photom booth 70\n\n// Capture canvas pixels to cloud as image jpg or png\n\nlet my = {};\n\nfunction setup() {\n  my_init();\n\n  // set group to share cloud data\n  my.group = 'group1';\n\n  my.photo_index = 0;\n  my.photo_max = 4;\n  my.photo_list = [];\n  my.slit_scan = 0;\n\n  // my.imageQuality = 1;\n  my.imageQuality = 0.1;\n  my.imageExt = '.jpg';\n  // my.imageExt = '.png';\n  my.thumbWidth = my.vwidth / 2;\n\n  // Lowest pixel density for small uploads\n  pixelDensity(1);\n\n  my.canvas = createCanvas(my.width, my.height);\n  my.canvas.mouseReleased(canvas_mouseReleased);\n  my.canvas.touchEnded(canvas_mouseReleased);\n\n  ui_init();\n\n  video_create();\n\n  dbase_app_init({ completed: startup_completed });\n\n  // for moving circle or video scan line\n  my.x = 0;\n  my.y = my.height / 2;\n  my.xstep = 1;\n  my.radius = int(my.width / 10);\n}\n\nfunction startup_completed() {\n  //\n  // dbase_devices_observe({ observed_key, observed_item, all: 1 });\n  // dbase_app_observe({ observed_item });\n  dbase_group_observe({ observed_key, observed_item });\n\n  function observed_key(key, device) {\n    // console.log('observed_a_device key', key, 'uid', my.uid, 'device', device);\n    // console.log('observed_key key', key, 'device.photo_index', device && device.photo_index);\n  }\n\n  function observed_item(device) {\n    // console.log('observed_item device.photo_index', device.photo_index);\n    // console.log('observed_item device.photo_list', device.photo_list);\n    if (device.photo_list != undefined) {\n      my.photo_list = device.photo_list;\n    }\n    if (device.photo_index != undefined) {\n      my.photo_index = device.photo_index;\n    }\n    show_action();\n  }\n}\n\nfunction draw() {\n  draw_frame();\n  draw_number(my.photo_index + 1);\n}\n\nfunction draw_frame() {\n  if (my.videoFlag && !video_ready()) return;\n\n  if (my.videoFlag) {\n    // faster to get entire video frame as an image\n    my.videoImg = my.video.get();\n  }\n  if (!my.videoImg) {\n    return;\n  }\n  if (my.slit_scan) {\n    draw_scan();\n  } else {\n    draw_video();\n  }\n  my.x = (my.x + my.xstep) % my.width;\n\n  let str = my.photo_list.length + ' ' + my.photo_index;\n  my.photo_count_span.html(str);\n}\n\nfunction draw_scan() {\n  // my.videoImg.loadPixels();\n  let w = my.videoImg.width;\n  let h = my.videoImg.height;\n  copy(my.videoImg, w / 2, 0, 1, h, my.x, 0, 1, h);\n}\n\nfunction draw_video() {\n  // background(0);\n  image(my.videoImg, 0, 0);\n  // Draw circle on video\n  noStroke();\n  let index = my.photo_index + 1;\n  fill(my.colors[index % my.colors.length]);\n  circle(my.x, my.y, my.radius);\n}\n\nfunction draw_number(n) {\n  // Convert number to string\n  let str = n + '';\n  let x = 10;\n  let y = my.height;\n  textSize(50);\n  // Draw black rect background\n  let a = textAscent();\n  let d = textDescent();\n  let h = a + d;\n  let w = textWidth(str);\n  fill(0);\n  rect(x, y - h, w, h);\n  // Draw white text\n  fill(255);\n  // x  y bottom-left corner.\n  text(str, x, y - d);\n}\n\nfunction canvas_mouseReleased() {\n  // console.log('canvas_mouseReleased');\n  track_xy();\n}\n\nfunction track_xy() {\n  let x = mouseX;\n  let y = mouseY;\n}\n\nfunction mouseDragged() {\n  // console.log('mouseDragged');\n  // required to prevent touch drag moving canvas on mobile\n  let onCanvas = mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;\n  if (onCanvas) {\n    track_xy();\n  }\n  // return my.scrollFlag ? true : !onCanvas;\n  return !onCanvas;\n}\n\nfunction windowResized() {\n  // console.log('windowResized windowHeight', windowHeight, 'windowWidth', windowWidth);\n  // my.isPortrait = windowHeight > windowWidth;\n  if (my.isRemote) {\n    return;\n  }\n  resizeCanvas(windowWidth, windowHeight);\n  // console.log('windowResized width', width, 'height', height);\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/twgS6eWRZ\n// pixel-grid\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7Wjlo3pPU\n// mo-pix-chip-grid jht9629 fireb_firebase.js\n\n// https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp\n// p5moExamples pixel-grid 47\n\n// [x] Correct display of images - must hit show button\n// [x] Add --> Take, keep array of n images and upate\n// [x] photo_index\n\n// [x] my.photo_list - show only last n\n//    [ { name: \"\", index: n }, ... ]\n\n// [x] preserve image show order\n",
         "children": [],
         "fileType": "file",
         "_id": "66104ecb3289d2001a8aede4",
-        "updatedAt": "2024-04-05T19:20:08.543Z",
-        "createdAt": "2024-04-05T19:20:08.543Z",
+        "updatedAt": "2024-04-05T20:06:38.664Z",
+        "createdAt": "2024-04-05T20:06:38.664Z",
         "isSelectedFile": true,
         "id": "66104ecb3289d2001a8aede4"
       },
@@ -11085,8 +11085,8 @@
         "children": [],
         "fileType": "file",
         "_id": "66104ecb24d642001ab24a23",
-        "updatedAt": "2024-04-05T19:20:08.543Z",
-        "createdAt": "2024-04-05T19:20:08.543Z",
+        "updatedAt": "2024-04-05T20:06:38.664Z",
+        "createdAt": "2024-04-05T20:06:38.664Z",
         "isSelectedFile": false,
         "id": "66104ecb24d642001ab24a23"
       },
@@ -11096,8 +11096,8 @@
         "children": [],
         "fileType": "file",
         "_id": "66104ecb3289d2001a8aedea",
-        "updatedAt": "2024-04-05T19:20:08.543Z",
-        "createdAt": "2024-04-05T19:20:08.543Z",
+        "updatedAt": "2024-04-05T20:06:38.664Z",
+        "createdAt": "2024-04-05T20:06:38.664Z",
         "isSelectedFile": false,
         "id": "66104ecb3289d2001a8aedea"
       },
@@ -11107,8 +11107,8 @@
         "children": [],
         "fileType": "file",
         "_id": "66104ecb3289d2001a8aeded",
-        "updatedAt": "2024-04-05T19:20:08.543Z",
-        "createdAt": "2024-04-05T19:20:08.543Z",
+        "updatedAt": "2024-04-05T20:06:38.664Z",
+        "createdAt": "2024-04-05T20:06:38.664Z",
         "isSelectedFile": false,
         "id": "66104ecb3289d2001a8aeded"
       }

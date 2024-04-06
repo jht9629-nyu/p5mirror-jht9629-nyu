@@ -3,8 +3,6 @@
 
 // Capture canvas pixels to cloud as image jpg or png
 
-// [] Show other photobooths
-
 let my = {};
 
 function setup() {
