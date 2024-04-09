@@ -1,10 +1,17 @@
 cd "/Users/jht2/Documents/projects/2024/p5mo/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "p5moExamples photo booth 68-5VKqK34Ps"
-rm -rf "./p5moExamples photo booth 68-5VKqK34Ps"
-mkdir "./p5moExamples photo booth 68-5VKqK34Ps"
-pushd "./p5moExamples photo booth 68-5VKqK34Ps" > /dev/null
-unzip -q "../../downloads/zips/p5moExamples photo booth 68-5VKqK34Ps"
+echo unzip 1 "p5moExamples photo booth 70-5VKqK34Ps"
+rm -rf "./p5moExamples photo booth 70-5VKqK34Ps"
+mkdir "./p5moExamples photo booth 70-5VKqK34Ps"
+pushd "./p5moExamples photo booth 70-5VKqK34Ps" > /dev/null
+unzip -q "../../downloads/zips/p5moExamples photo booth 70-5VKqK34Ps"
+popd > /dev/null
+#
+echo unzip 2 "p5moExamples pixel-grid-CntV1JQNp"
+rm -rf "./p5moExamples pixel-grid-CntV1JQNp"
+mkdir "./p5moExamples pixel-grid-CntV1JQNp"
+pushd "./p5moExamples pixel-grid-CntV1JQNp" > /dev/null
+unzip -q "../../downloads/zips/p5moExamples pixel-grid-CntV1JQNp"
 popd > /dev/null
 
 cd ..
