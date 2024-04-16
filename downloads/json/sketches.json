@@ -8978,8 +8978,8 @@
         "fileType": "folder",
         "_id": "660741ba7b84442973a9848e",
         "isSelectedFile": false,
-        "createdAt": "2024-03-31T17:10:08.633Z",
-        "updatedAt": "2024-03-31T17:10:08.633Z",
+        "createdAt": "2024-04-13T12:39:55.764Z",
+        "updatedAt": "2024-04-13T12:39:55.764Z",
         "id": "660741ba7b84442973a9848e"
       },
       {
@@ -8989,8 +8989,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98491",
         "isSelectedFile": true,
-        "createdAt": "2024-03-31T17:10:08.633Z",
-        "updatedAt": "2024-03-31T17:10:08.633Z",
+        "createdAt": "2024-04-13T12:39:55.764Z",
+        "updatedAt": "2024-04-13T12:39:55.764Z",
         "id": "660741ba7b84442973a98491"
       },
       {
@@ -9000,8 +9000,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98490",
         "isSelectedFile": false,
-        "createdAt": "2024-03-31T17:10:08.633Z",
-        "updatedAt": "2024-03-31T17:10:08.633Z",
+        "createdAt": "2024-04-13T12:39:55.764Z",
+        "updatedAt": "2024-04-13T12:39:55.764Z",
         "id": "660741ba7b84442973a98490"
       },
       {
@@ -9011,8 +9011,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98492",
         "isSelectedFile": false,
-        "createdAt": "2024-03-31T17:10:08.633Z",
-        "updatedAt": "2024-03-31T17:10:08.633Z",
+        "createdAt": "2024-04-13T12:39:55.764Z",
+        "updatedAt": "2024-04-13T12:39:55.764Z",
         "id": "660741ba7b84442973a98492"
       },
       {
@@ -9022,8 +9022,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a9848f",
         "isSelectedFile": false,
-        "createdAt": "2024-03-31T17:10:08.633Z",
-        "updatedAt": "2024-03-31T17:10:08.633Z",
+        "createdAt": "2024-04-13T12:39:55.764Z",
+        "updatedAt": "2024-04-13T12:39:55.764Z",
         "id": "660741ba7b84442973a9848f"
       },
       {
@@ -9038,8 +9038,8 @@
         "fileType": "folder",
         "_id": "660741ba7b84442973a98493",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-31T17:10:08.633Z",
-        "createdAt": "2024-03-31T17:10:08.633Z",
+        "updatedAt": "2024-04-13T12:39:55.764Z",
+        "createdAt": "2024-04-13T12:39:55.764Z",
         "id": "660741ba7b84442973a98493"
       },
       {
@@ -9049,8 +9049,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98496",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-31T17:10:08.633Z",
-        "createdAt": "2024-03-31T17:10:08.633Z",
+        "updatedAt": "2024-04-13T12:39:55.764Z",
+        "createdAt": "2024-04-13T12:39:55.764Z",
         "id": "660741ba7b84442973a98496"
       },
       {
@@ -9060,8 +9060,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98497",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-31T17:10:08.633Z",
-        "createdAt": "2024-03-31T17:10:08.633Z",
+        "updatedAt": "2024-04-13T12:39:55.764Z",
+        "createdAt": "2024-04-13T12:39:55.764Z",
         "id": "660741ba7b84442973a98497"
       },
       {
@@ -9071,8 +9071,8 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98494",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-31T17:10:08.633Z",
-        "createdAt": "2024-03-31T17:10:08.633Z",
+        "updatedAt": "2024-04-13T12:39:55.764Z",
+        "createdAt": "2024-04-13T12:39:55.764Z",
         "id": "660741ba7b84442973a98494"
       },
       {
@@ -9082,13 +9082,13 @@
         "fileType": "file",
         "_id": "660741ba7b84442973a98495",
         "isSelectedFile": false,
-        "updatedAt": "2024-03-31T17:10:08.633Z",
-        "createdAt": "2024-03-31T17:10:08.633Z",
+        "updatedAt": "2024-04-13T12:39:55.764Z",
+        "createdAt": "2024-04-13T12:39:55.764Z",
         "id": "660741ba7b84442973a98495"
       }
     ],
     "createdAt": "2024-03-29T22:33:30.263Z",
-    "updatedAt": "2024-03-31T17:10:08.633Z",
+    "updatedAt": "2024-04-13T12:39:55.764Z",
     "id": "PN3n1CXom"
   },
   {
@@ -18023,6 +18023,63 @@
     "createdAt": "2023-05-09T16:03:41.385Z",
     "updatedAt": "2023-05-09T23:54:56.678Z",
     "id": "3ZwzK2buW"
+  },
+  {
+    "name": "video radial perlin pix",
+    "_id": "J2p8pZTNH",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "661c4ebc9c4d6159365e336f",
+          "661c4ebc9c4d6159365e3370",
+          "661c4ebc9c4d6159365e3371"
+        ],
+        "fileType": "folder",
+        "_id": "661c4ebc9c4d6159365e336e",
+        "createdAt": "2024-04-14T21:47:06.065Z",
+        "updatedAt": "2024-04-14T21:47:06.065Z",
+        "isSelectedFile": false,
+        "id": "661c4ebc9c4d6159365e336e"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/J2p8pZTNH\n// video radial perlin pix\n\nlet npix = 64;\nlet nwidth = 640;\nlet nheight = 480;\nlet xgap = nwidth / 9;\nlet ygap = nheight / 9;\nlet x0;\nlet y0;\nlet capture;\nlet ang = 0;\nlet astep = 0.1;\nlet astart = 0; //180;\nlet aend = 360;\nlet rscale = 2;\nlet routterScale = 1\n\nlet phase = 0;\nlet zoff = 0;\nlet noiseMax = 5;\n\nlet img2;\n\nfunction setup() {\n  createCanvas(nwidth, nheight);\n  capture = createCapture(VIDEO);\n  capture.size(width, height);\n  capture.hide();\n  x0 = int(nwidth / 2);\n  y0 = int(nheight / 2);\n}\n\nfunction draw() {\n  // colorMode(HSB);\n  strokeWeight(1);\n  // background(0);\n\n  // image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight],\n  let img = capture.get();\n  img2 = img.get();\n  img2.resize(npix,0);\n  image(img2, 0, 0, nwidth, nheight);\n  \n  draw_rad(img)\n  // draw_noise()\n}\n\nfunction draw_rad(img) {\n  for (let ang = astart; ang < aend; ang += astep) {\n    let r1 = xgap / 2;\n    let rang = radians(ang);\n    // let x1 = r1 * cos(rang);\n    // let y1 = r1 * sin(rang);\n\n    let xoff = map(cos(rang + phase), -1, 1, 0, noiseMax);\n    let yoff = map(sin(rang + phase), -1, 1, 0, noiseMax);\n    let r2 = map(noise(xoff, yoff, zoff), 0, 1, r1, r1 * rscale);\n    let x1 = r2 * cos(rang);\n    let y1 = r2 * sin(rang);\n\n    let c1 = img.get(x0 + x1, y0 + y1);\n    stroke(c1);\n    fill(x1);\n    fill(0);\n    circle(x0 + x1, y0 + y1, 5);\n\n    let r3 = nwidth * routterScale + random(-5,5);\n    let x2 = r3 * cos(rang);\n    let y2 = r3 * sin(rang);\n    line(x0 + x1, y0 + y1, x0 + x2, y0 + y2);\n  }\n  phase += 0.003;\n  zoff += 0.01;\n}\n\nfunction draw_noise() {\n  // background(0);\n  translate(width / 2, height / 2);\n  stroke(255);\n  strokeWeight(2);\n  noFill();\n  beginShape();\n  // let noiseMax = slider.value();\n  for (let a = 0; a < TWO_PI; a += radians(5)) {\n    let xoff = map(cos(a + phase), -1, 1, 0, noiseMax);\n    let yoff = map(sin(a + phase), -1, 1, 0, noiseMax);\n    let r = map(noise(xoff, yoff, zoff), 0, 1, 100, height / 2);\n    let x = r * cos(a);\n    let y = r * sin(a);\n    vertex(x, y);\n  }\n  endShape(CLOSE);\n  phase += 0.003;\n  zoff += 0.01;\n}\n\n// https://editor.p5js.org/jht1900/sketches/TWxfoAfA6\n// video radial perlin\n\n// https://editor.p5js.org/codingtrain/sketches/sy1p1vnQn\n// Polar Perlin Noise Loop\n\n// https://editor.p5js.org/jht1900/sketches/ydWiCsI2z\n// video radial\n\n// https://editor.p5js.org/jht1900/sketches/-Ypn6ODK_\n// video scan radial\n\n// https://editor.p5js.org/jht1493/sketches/mEXETIijv\n// video scan gap center\n\n// https://editor.p5js.org/jht1493/sketches/oHVI5tU4BP\n// video scan gap\n\n// https://editor.p5js.org/jht1493/sketches/Q9jdcICpW\n// video scan mouseY\n\n// https://editor.p5js.org/jht1493/sketches/gnx2IQn1N\n// video scan\n\n// https://github.com/processing/p5.js/wiki/Beyond-the-canvas#capture-live-video\n\n// https://editor.p5js.org/jht1900/sketches/PLn3zH1Gd\n// video radial perlin pix\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "661c4ebc9c4d6159365e3370",
+        "isSelectedFile": true,
+        "createdAt": "2024-04-14T21:47:06.065Z",
+        "updatedAt": "2024-04-14T21:47:06.065Z",
+        "id": "661c4ebc9c4d6159365e3370"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "661c4ebc9c4d6159365e336f",
+        "createdAt": "2024-04-14T21:47:06.065Z",
+        "updatedAt": "2024-04-14T21:47:06.065Z",
+        "isSelectedFile": false,
+        "id": "661c4ebc9c4d6159365e336f"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "661c4ebc9c4d6159365e3371",
+        "createdAt": "2024-04-14T21:47:06.065Z",
+        "updatedAt": "2024-04-14T21:47:06.065Z",
+        "isSelectedFile": false,
+        "id": "661c4ebc9c4d6159365e3371"
+      }
+    ],
+    "createdAt": "2024-04-14T21:46:36.945Z",
+    "updatedAt": "2024-04-14T21:47:06.065Z",
+    "id": "J2p8pZTNH"
   },
   {
     "name": "video scan radial v2",

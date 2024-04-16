@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-292 sketches  
+293 sketches  
 [03-jht-hatviz](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)<!-- 2023-04-09T01:41:50.719Z -->  
 [1.2 draw\_shapes\_ui](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)<!-- 2023-09-16T22:25:20.883Z -->  
 [10PRINT copy](https://editor.p5js.org/jht9629-nyu/sketches/-QATBkoGr)<!-- 2023-10-02T21:30:31.747Z -->  
@@ -147,7 +147,7 @@
 [Lying pillow](https://editor.p5js.org/jht9629-nyu/sketches/fbqvrSaz7)<!-- 2024-02-28T17:37:52.483Z -->  
 [many circles object literal](https://editor.p5js.org/jht9629-nyu/sketches/mupQOIvCw)<!-- 2023-09-24T19:35:34.510Z -->  
 [match pairs emoji](https://editor.p5js.org/jht9629-nyu/sketches/ZKPaZOjf_)<!-- 2023-08-11T19:07:54.439Z -->  
-[MazeSpin liberation screens copy](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)<!-- 2024-03-31T17:10:08.633Z -->  
+[MazeSpin liberation screens copy](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)<!-- 2024-04-13T12:39:55.764Z -->  
 [MazeSpin liberation screens v2](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)<!-- 2024-04-02T14:21:28.033Z -->  
 [Melanie pong with object array](https://editor.p5js.org/jht9629-nyu/sketches/qfMmYs2br)<!-- 2023-08-02T18:30:00.620Z -->  
 [Melanie pong with object literals](https://editor.p5js.org/jht9629-nyu/sketches/_8fx3fhlQ)<!-- 2023-08-02T18:08:32.872Z -->  
@@ -274,6 +274,7 @@
 [video pixel meter](https://editor.p5js.org/jht9629-nyu/sketches/p0ato8vra)<!-- 2023-05-09T15:45:14.893Z -->  
 [video pixel scan](https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA)<!-- 2023-05-09T16:00:12.100Z -->  
 [video pixel scan random](https://editor.p5js.org/jht9629-nyu/sketches/3ZwzK2buW)<!-- 2023-05-09T23:54:56.678Z -->  
+[video radial perlin pix](https://editor.p5js.org/jht9629-nyu/sketches/J2p8pZTNH)<!-- 2024-04-14T21:47:06.065Z -->  
 [video scan radial v2](https://editor.p5js.org/jht9629-nyu/sketches/cKzXO8eUG)<!-- 2024-03-30T17:22:33.321Z -->  
 [video scan radial v3](https://editor.p5js.org/jht9629-nyu/sketches/WdNVtxQzf)<!-- 2024-03-30T17:45:27.162Z -->  
 [video scan radial v4](https://editor.p5js.org/jht9629-nyu/sketches/7vllrM5d5)<!-- 2024-03-30T17:46:28.098Z -->  
