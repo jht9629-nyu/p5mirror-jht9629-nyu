@@ -5433,6 +5433,63 @@
     "id": "x7bG2j2xZ"
   },
   {
+    "name": "Final Project - imf5487 copy",
+    "_id": "4bX64WHer",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6627b6f0a9c4661f02c73cfd",
+          "6627b6f0a9c4661f02c73cfe",
+          "6627b6f0a9c4661f02c73cff"
+        ],
+        "fileType": "folder",
+        "_id": "6627b6f0a9c4661f02c73cfc",
+        "isSelectedFile": false,
+        "createdAt": "2024-04-23T02:10:49.172Z",
+        "updatedAt": "2024-04-23T02:10:49.172Z",
+        "id": "6627b6f0a9c4661f02c73cfc"
+      },
+      {
+        "name": "sketch.js",
+        "content": "let stemcolor;\n\nvar time;\nvar wait = 4000;\n\nfunction windowResized() {\n  resizeCanvas(windowWidth, windowHeight);\n}\n\nfunction setup() {\n  createCanvas(700, 500);\n  noStroke();\n  stemcolor = color(0, 137, 50);\n  dirtcolor = color(103, 45, 0);\n  time = millis();\n}\n\nfunction draw() {\n  // loop();\n  // background(157, 242, 235);\n  if (millis() - time >= wait) {\n    time = millis();\n    // background(29, 32, 41);\n    background(random(255), random(255), random(255));\n  }\n\n  noStroke();\n  fill(dirtcolor);\n  rect(0, 420, 695, 80);\n\n  fill(255, 201, 0, 255);\n  circle(100, 90, 80);\n\n  stroke(stemcolor);\n  strokeWeight(6);\n  line(600, 300, 600, 700);\n\n  noStroke();\n  translate(600, 300);\n  fill(\"rgb(196,164,221)\");\n  for (let i = 0; i < 10; i++) {\n    ellipse(0, 20, 20, 80);\n    rotate(PI / 5);\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6627b6f0a9c4661f02c73cfe",
+        "isSelectedFile": true,
+        "createdAt": "2024-04-23T02:10:49.172Z",
+        "updatedAt": "2024-04-23T02:10:49.172Z",
+        "id": "6627b6f0a9c4661f02c73cfe"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6627b6f0a9c4661f02c73cfd",
+        "isSelectedFile": false,
+        "createdAt": "2024-04-23T02:10:49.172Z",
+        "updatedAt": "2024-04-23T02:10:49.172Z",
+        "id": "6627b6f0a9c4661f02c73cfd"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6627b6f0a9c4661f02c73cff",
+        "isSelectedFile": false,
+        "createdAt": "2024-04-23T02:10:49.172Z",
+        "updatedAt": "2024-04-23T02:10:49.172Z",
+        "id": "6627b6f0a9c4661f02c73cff"
+      }
+    ],
+    "createdAt": "2024-04-23T13:26:08.598Z",
+    "updatedAt": "2024-04-23T13:26:08.598Z",
+    "id": "4bX64WHer"
+  },
+  {
     "name": "Firebase-createImg-board copy",
     "_id": "ncIe7u-WC",
     "files": [
@@ -8155,6 +8212,63 @@
     "createdAt": "2024-03-26T18:04:00.207Z",
     "updatedAt": "2024-04-02T14:14:49.011Z",
     "id": "2pxhnehBV"
+  },
+  {
+    "name": "ims05-Ambra copy",
+    "_id": "Xp0RDXLSwr",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6627b96672b893319f158086",
+          "6627b96672b893319f158087",
+          "6627b96672b893319f158088"
+        ],
+        "fileType": "folder",
+        "_id": "6627b96672b893319f158085",
+        "isSelectedFile": false,
+        "createdAt": "2024-04-23T13:39:33.160Z",
+        "updatedAt": "2024-04-23T13:39:33.160Z",
+        "id": "6627b96672b893319f158085"
+      },
+      {
+        "name": "sketch.js",
+        "content": "let capture;\nlet mirrorButton;\nlet mirror = true;\nlet scale_factor = 0.5\n\nfunction setup() {\n  background(255);\n  \n  createCanvas(640 * scale_factor, 480 * scale_factor);\n  capture = createCapture(VIDEO);\n  capture.size(640 * scale_factor, 480 * scale_factor);\n  capture.hide();\n  \n  mirrorButton = createButton('Toggle Mirror');\n  mirrorButton.position(10, 10);\n  mirrorButton.mousePressed(toggleMirror);\n}\n\nfunction draw() {\n  if (mirror) {\n    translate(width, 0);\n    scale(-1, 1);\n  }\n  \n  image(capture, 0, 0, width, height);\n  capture.loadPixels();\n  \n  \n  let emojis = ['❤️','🧡','💛','💚', '💙','💜','🖤','🤍','🤎','🌈'];\n  \n//   function mapColorToEmoji(r, g, b) {\n    \n//   }\n  \n  // let emojis = convertToEmoji(capture.pixels, charValuePairs, range, isInverted, isColored);\n  \n  let faceData = getFaceData(); \n  \n  if (faceData) {\n    let pixels = capture.get(faceData.x, faceData.y, faceData.width, faceData.height);\n    pixels.loadPixels();\n    \n      textSize(10);\n\n    for (let y = 0; y < pixels.height; y++) {\n      for (let x = 0; x < pixels.width; x++) {\n        let index = (x + y * pixels.width) * 4;\n        let r = pixels.pixels[index];\n        let g = pixels.pixels[index + 1];\n        let b = pixels.pixels[index + 2];\n        let brightnessValue = (r + g + b) / 3;\n        let emojiIndex = floor(map(brightnessValue, 0, 255, 0, emojis.length));\n        emojiIndex = constrain(emojiIndex, 0, emojis.length - 1);\n        let emoji = emojis[emojiIndex];\n        text(emoji, faceData.x + x * 10, faceData.y + y * 10);\n      }\n    }\n  }\n}\n\n\nfunction getFaceData() {\n  \n  return {\n    x: 0,\n    y: 0,\n    width: 640,\n    height: 480,\n  };\n}\n\nfunction toggleMirror() {\n  mirror = !mirror;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6627b96672b893319f158087",
+        "isSelectedFile": true,
+        "createdAt": "2024-04-23T13:39:33.160Z",
+        "updatedAt": "2024-04-23T13:39:33.160Z",
+        "id": "6627b96672b893319f158087"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6627b96672b893319f158086",
+        "isSelectedFile": false,
+        "createdAt": "2024-04-23T13:39:33.160Z",
+        "updatedAt": "2024-04-23T13:39:33.160Z",
+        "id": "6627b96672b893319f158086"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6627b96672b893319f158088",
+        "isSelectedFile": false,
+        "createdAt": "2024-04-23T13:39:33.160Z",
+        "updatedAt": "2024-04-23T13:39:33.160Z",
+        "id": "6627b96672b893319f158088"
+      }
+    ],
+    "createdAt": "2024-04-23T13:36:39.442Z",
+    "updatedAt": "2024-04-23T13:39:33.160Z",
+    "id": "Xp0RDXLSwr"
   },
   {
     "name": "input DOM element method",
@@ -11026,7 +11140,7 @@
   {
     "name": "p5moExamples photo booth 70",
     "_id": "5VKqK34Ps",
-    "updatedAt": "2024-04-09T01:56:58.576Z",
+    "updatedAt": "2024-04-19T14:17:43.933Z",
     "files": [
       {
         "name": "root",
@@ -11041,8 +11155,8 @@
         ],
         "fileType": "folder",
         "_id": "660a0b017ffe4856405a5ddf",
-        "createdAt": "2024-04-09T01:56:58.576Z",
-        "updatedAt": "2024-04-09T01:56:58.576Z",
+        "createdAt": "2024-04-19T14:17:43.933Z",
+        "updatedAt": "2024-04-19T14:17:43.933Z",
         "isSelectedFile": false,
         "id": "660a0b017ffe4856405a5ddf"
       },
@@ -11052,8 +11166,8 @@
         "children": [],
         "fileType": "file",
         "_id": "660a0b017ffe4856405a5dde",
-        "createdAt": "2024-04-09T01:56:58.576Z",
-        "updatedAt": "2024-04-09T01:56:58.576Z",
+        "createdAt": "2024-04-19T14:17:43.933Z",
+        "updatedAt": "2024-04-19T14:17:43.933Z",
         "isSelectedFile": false,
         "id": "660a0b017ffe4856405a5dde"
       },
@@ -11063,8 +11177,8 @@
         "children": [],
         "fileType": "file",
         "_id": "66104eca3289d2001a8aede1",
-        "updatedAt": "2024-04-09T01:56:58.576Z",
-        "createdAt": "2024-04-09T01:56:58.576Z",
+        "updatedAt": "2024-04-19T14:17:43.933Z",
+        "createdAt": "2024-04-19T14:17:43.933Z",
         "isSelectedFile": false,
         "id": "66104eca3289d2001a8aede1"
       },
@@ -11074,9 +11188,9 @@
         "children": [],
         "fileType": "file",
         "_id": "66104ecb3289d2001a8aede4",
-        "updatedAt": "2024-04-09T01:56:58.576Z",
-        "createdAt": "2024-04-09T01:56:58.576Z",
-        "isSelectedFile": true,
+        "updatedAt": "2024-04-19T14:17:43.933Z",
+        "createdAt": "2024-04-19T14:17:43.933Z",
+        "isSelectedFile": false,
         "id": "66104ecb3289d2001a8aede4"
       },
       {
@@ -11085,8 +11199,8 @@
         "children": [],
         "fileType": "file",
         "_id": "66104ecb24d642001ab24a23",
-        "updatedAt": "2024-04-09T01:56:58.576Z",
-        "createdAt": "2024-04-09T01:56:58.576Z",
+        "updatedAt": "2024-04-19T14:17:43.933Z",
+        "createdAt": "2024-04-19T14:17:43.933Z",
         "isSelectedFile": false,
         "id": "66104ecb24d642001ab24a23"
       },
@@ -11096,20 +11210,20 @@
         "children": [],
         "fileType": "file",
         "_id": "66104ecb3289d2001a8aedea",
-        "updatedAt": "2024-04-09T01:56:58.576Z",
-        "createdAt": "2024-04-09T01:56:58.576Z",
+        "updatedAt": "2024-04-19T14:17:43.933Z",
+        "createdAt": "2024-04-19T14:17:43.933Z",
         "isSelectedFile": false,
         "id": "66104ecb3289d2001a8aedea"
       },
       {
         "name": "index.html",
-        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script> -->\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://molab-itp.github.io/p5moRelease/lib/66/style.css\"></script>\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"../../../p5moLibrary/src/lib/style.css?v=63\" /> -->\n\n    <style></style>\n  </head>\n  <body>\n    <main></main>\n\n    <script type=\"module\" src=\"https://molab-itp.github.io/p5moRelease/lib/70/a_lib.js\"></script>\n    <!-- <script type=\"module\" src=\"../../p5moLibrary/src/lib/a_lib.js\"></script> -->\n\n    <script src=\"a_my_init.js\"></script>\n    <script src=\"ui_init.js\"></script>\n    <script src=\"photo.js\"></script>\n    <script src=\"a_sketch.js\"></script>\n    <!-- ?v=63 included to force into the cache -->\n  </body>\n</html>\n",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js\"></script> -->\n\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://molab-itp.github.io/p5moRelease/lib/66/style.css\" />\n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"../../../p5moLibrary/src/lib/style.css?v=63\" /> -->\n\n    <style></style>\n  </head>\n  <body>\n    <main></main>\n\n    <script type=\"module\" src=\"https://molab-itp.github.io/p5moRelease/lib/70/a_lib.js\"></script>\n    <!-- <script type=\"module\" src=\"../../p5moLibrary/src/lib/a_lib.js\"></script> -->\n\n    <script src=\"a_my_init.js\"></script>\n    <script src=\"ui_init.js\"></script>\n    <script src=\"photo.js\"></script>\n    <script src=\"a_sketch.js\"></script>\n    <!-- ?v=63 included to force into the cache -->\n  </body>\n</html>\n",
         "children": [],
         "fileType": "file",
         "_id": "66104ecb3289d2001a8aeded",
-        "updatedAt": "2024-04-09T01:56:58.576Z",
-        "createdAt": "2024-04-09T01:56:58.576Z",
-        "isSelectedFile": false,
+        "updatedAt": "2024-04-19T14:17:43.933Z",
+        "createdAt": "2024-04-19T14:17:43.933Z",
+        "isSelectedFile": true,
         "id": "66104ecb3289d2001a8aeded"
       }
     ],
