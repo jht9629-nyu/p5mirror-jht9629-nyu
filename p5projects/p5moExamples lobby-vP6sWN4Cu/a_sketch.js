@@ -19,7 +19,7 @@ function my_setup() {
   // my.fireb_config = 'jhtitp';
   // my.fireb_config = my_firebaseConfig;
   my.dbase_rootPath = 'm0-@r-@w-';
-  my.mo_app = 'mo-blackfacts';
+  my.mo_app = 'mo-videoplayer';
   my.nameDevice = '';
   my.ndiv = 1;
 

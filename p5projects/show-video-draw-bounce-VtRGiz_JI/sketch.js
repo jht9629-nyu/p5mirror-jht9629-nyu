@@ -10,7 +10,7 @@ function setup() {
   my.width = my.vwidth; // match canvas to video dimensions
   my.height = my.vheight;
   my.face = true; // camera face front or back
-  my.brushSize = 10;
+  my.brushSize = 50;
 
   bounce_init();
   

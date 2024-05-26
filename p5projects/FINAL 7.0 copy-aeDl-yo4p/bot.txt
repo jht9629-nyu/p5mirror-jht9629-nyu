@@ -1,0 +1,46 @@
+! version = 2.0
+
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
++ [*] place [*]
+- Hello, Anna.
+
++ [*] hi|hello|holo|yo [*]
+- Hello! I'm AI-239, your guide in the digital self-creation journey. What's your name?
+
++ [*] my name is [*]
+% what's your name
+- Nice to meet you, <star>! Let's get started. Do you want your digital self to be similar to you or different?
+
++ [*] *similar* [*]
+- Great! What are some traits you definitely want to carry over to your digital self?
+
++ [*] *different* [*]
+- Interesting! What are some traits you would like your digital self to have that are different from your own?
+
++ [*] *extroverted* [*]
+- Extroverted, got it! How about the appearance? Any specific style or features you're interested in?
+
++ [*] I want * hair and * eyes [*]
+- <star1> hair and <star2> eyes, a striking combination! What activities or adventures do you envision for your digital self?
+
++ [*] I want my digital self to be able to [*]
+- Noted, your digital self will have the ability to <star>. Lastly, what personal dreams or challenges do you hope your digital self will help you achieve or overcome?
+
++ [*] I hope my digital self can help me [*]
+- Understood, your digital self will assist you in <star>. Thank you for sharing this information with me. Give me a moment to process this.

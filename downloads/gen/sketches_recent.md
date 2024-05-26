@@ -1,9 +1,30 @@
 # Sketches for jht9629-nyu
-295 sketches  
+313 sketches  
+[test drive DOM.js v11 inputs](https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15)<!-- 2024-05-25T04:45:57.441Z -->  
+[test drive DOM.js v10 inputs](https://editor.p5js.org/jht9629-nyu/sketches/G3arjv8UF)<!-- 2024-05-25T00:43:50.999Z -->  
+[Fibonacci sequence (visualisation)](https://editor.p5js.org/jht9629-nyu/sketches/Q-O6WsDdt)<!-- 2024-05-19T21:22:46.790Z -->  
+[show-video-draw-scan](https://editor.p5js.org/jht9629-nyu/sketches/kwcjsVzRM)<!-- 2024-05-19T19:11:10.064Z -->  
+[show-video-draw-bounce](https://editor.p5js.org/jht9629-nyu/sketches/VtRGiz_JI)<!-- 2024-05-19T17:25:33.304Z -->  
+[p5moExamples lobby](https://editor.p5js.org/jht9629-nyu/sketches/vP6sWN4Cu)<!-- 2024-05-07T20:49:26.961Z -->  
+[Firebase-createImg-slide-show](https://editor.p5js.org/jht9629-nyu/sketches/FHDOjD2fW)<!-- 2024-05-01T19:41:07.836Z -->  
+[Mature sheep](https://editor.p5js.org/jht9629-nyu/sketches/hmPJyOAk1)<!-- 2024-05-01T18:58:44.377Z -->  
+[p5moExamples shout 71](https://editor.p5js.org/jht9629-nyu/sketches/NEIgP4oAE)<!-- 2024-05-01T15:53:49.422Z -->  
+[CORS bug demo](https://editor.p5js.org/jht9629-nyu/sketches/EY7PtpKAG)<!-- 2024-05-01T01:47:04.108Z -->  
+[FINAL 6.0 - VIDEO CAPTURE copy](https://editor.p5js.org/jht9629-nyu/sketches/0R-3Egd0o)<!-- 2024-04-29T15:39:25.744Z -->  
+[FINAL 7.0 copy](https://editor.p5js.org/jht9629-nyu/sketches/aeDl-yo4p)<!-- 2024-04-29T15:17:04.115Z -->  
+[Aware mortarboard](https://editor.p5js.org/jht9629-nyu/sketches/Yyaf-yPvn)<!-- 2024-04-29T13:22:20.455Z -->  
+[Glass chokeberry](https://editor.p5js.org/jht9629-nyu/sketches/e2B51X-9p)<!-- 2024-04-29T13:17:19.661Z -->  
+[videoKit copy](https://editor.p5js.org/jht9629-nyu/sketches/xSrdePcOW)<!-- 2024-04-28T23:13:00.042Z -->  
+[videoKit copy](https://editor.p5js.org/jht9629-nyu/sketches/tJp3lU5zf)<!-- 2024-04-28T23:04:03.765Z -->  
+[video scan radial v6-1](https://editor.p5js.org/jht9629-nyu/sketches/ZyRuMxSDy)<!-- 2024-04-26T17:56:11.486Z -->  
+[video radial perlin pix](https://editor.p5js.org/jht9629-nyu/sketches/J2p8pZTNH)<!-- 2024-04-26T17:32:19.463Z -->  
+[Acceleration Ball Bounce](https://editor.p5js.org/jht9629-nyu/sketches/wOBMJbldS)<!-- 2024-04-25T22:01:23.146Z -->  
+[CC 166: ASCII video](https://editor.p5js.org/jht9629-nyu/sketches/rT1nziONm)<!-- 2024-04-25T21:50:05.338Z -->  
+[11.7: Slit-Scan p5.js v1.9.2](https://editor.p5js.org/jht9629-nyu/sketches/5ykrFbLkp)<!-- 2024-04-25T21:16:35.580Z -->  
+[11.7: Slit-Scan p5.js v1.7.0](https://editor.p5js.org/jht9629-nyu/sketches/u9tE8NdA2)<!-- 2024-04-25T21:09:00.867Z -->  
 [ims05-Ambra copy](https://editor.p5js.org/jht9629-nyu/sketches/Xp0RDXLSwr)<!-- 2024-04-23T13:39:33.160Z -->  
 [Final Project - imf5487 copy](https://editor.p5js.org/jht9629-nyu/sketches/4bX64WHer)<!-- 2024-04-23T13:26:08.598Z -->  
 [p5moExamples photo booth 70](https://editor.p5js.org/jht9629-nyu/sketches/5VKqK34Ps)<!-- 2024-04-19T14:17:43.933Z -->  
-[video radial perlin pix](https://editor.p5js.org/jht9629-nyu/sketches/J2p8pZTNH)<!-- 2024-04-14T21:47:06.065Z -->  
 [MazeSpin liberation screens copy](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)<!-- 2024-04-13T12:39:55.764Z -->  
 [p5moExamples pixel-grid](https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp)<!-- 2024-04-07T16:46:58.233Z -->  
 [p5moExamples iframe\_player 47](https://editor.p5js.org/jht9629-nyu/sketches/88yxquMBl)<!-- 2024-04-04T15:07:10.704Z -->  
@@ -28,7 +49,6 @@
 [test drive DOM.js v3](https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl)<!-- 2024-03-29T15:52:33.788Z -->  
 [test drive DOM.js v1](https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y)<!-- 2024-03-29T15:37:09.092Z -->  
 [test drive DOM.js v1 copy](https://editor.p5js.org/jht9629-nyu/sketches/blOUI9E8f)<!-- 2024-03-29T15:12:40.780Z -->  
-[p5moExamples lobby](https://editor.p5js.org/jht9629-nyu/sketches/vP6sWN4Cu)<!-- 2024-03-27T19:38:12.979Z -->  
 [ims black-n white-1 bounce](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)<!-- 2024-03-26T19:06:00.622Z -->  
 [Stupendous tellurium copy](https://editor.p5js.org/jht9629-nyu/sketches/6FRgWWxc_)<!-- 2024-03-25T17:09:42.481Z -->  
 [p5moExamples video 366](https://editor.p5js.org/jht9629-nyu/sketches/KeRAIMzHN)<!-- 2024-03-23T18:32:34.166Z -->  
@@ -157,7 +177,6 @@
 [draw-video](https://editor.p5js.org/jht9629-nyu/sketches/L5Vr53NQl)<!-- 2023-08-16T13:31:08.953Z -->  
 [draw-share-multi](https://editor.p5js.org/jht9629-nyu/sketches/mCr2W68mc)<!-- 2023-08-16T13:30:07.722Z -->  
 [show-video-jitter](https://editor.p5js.org/jht9629-nyu/sketches/uKHKJ1yqX)<!-- 2023-08-15T14:00:18.418Z -->  
-[show-video-draw-bounce](https://editor.p5js.org/jht9629-nyu/sketches/VtRGiz_JI)<!-- 2023-08-15T13:47:51.179Z -->  
 [draw-share](https://editor.p5js.org/jht9629-nyu/sketches/fEp51pBhA)<!-- 2023-08-14T14:19:14.595Z -->  
 [Pong Chaos startup mostly](https://editor.p5js.org/jht9629-nyu/sketches/9Ss9owTn5)<!-- 2023-08-13T17:10:31.538Z -->  
 [match pairs emoji](https://editor.p5js.org/jht9629-nyu/sketches/ZKPaZOjf_)<!-- 2023-08-11T19:07:54.439Z -->  
@@ -276,7 +295,6 @@
 [Simple Draw](https://editor.p5js.org/jht9629-nyu/sketches/oVJEGvodF)<!-- 2023-05-11T13:22:30.602Z -->  
 [rotationX](https://editor.p5js.org/jht9629-nyu/sketches/G6Zr5SBuq)<!-- 2023-05-11T04:07:26.445Z -->  
 [acceleration-scope](https://editor.p5js.org/jht9629-nyu/sketches/Rdb_xgkkW)<!-- 2023-05-11T03:19:39.323Z -->  
-[Acceleration Ball Bounce](https://editor.p5js.org/jht9629-nyu/sketches/wOBMJbldS)<!-- 2023-05-10T22:36:01.209Z -->  
 [Rainbow Canvas](https://editor.p5js.org/jht9629-nyu/sketches/lNRQmapgz)<!-- 2023-05-10T22:02:50.800Z -->  
 [video pixel](https://editor.p5js.org/jht9629-nyu/sketches/sJM2AMf5T)<!-- 2023-05-10T00:20:57.826Z -->  
 [video pixel scan random](https://editor.p5js.org/jht9629-nyu/sketches/3ZwzK2buW)<!-- 2023-05-09T23:54:56.678Z -->  

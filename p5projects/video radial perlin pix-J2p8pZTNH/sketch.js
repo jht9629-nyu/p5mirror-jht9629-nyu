@@ -38,6 +38,7 @@ function draw() {
 
   // image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight],
   let img = capture.get();
+  // draw pixelated center
   img2 = img.get();
   img2.resize(npix,0);
   image(img2, 0, 0, nwidth, nheight);
