@@ -34,6 +34,7 @@ DOM.set([
     tag: "input",
     id: "myInput",
     placeholder: "myInput placeholder",
+    oninput: (event) => console.log("myInput oninput: " + myInput.value),
     onchange: (event) => console.log("myInput onchange: " + myInput.value),
     click: (event) => console.log("myInput click " + myInput.value),
   },
