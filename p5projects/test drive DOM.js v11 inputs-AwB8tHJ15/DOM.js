@@ -1,11 +1,11 @@
 /**
  * Creates DOM structures from a JS object (structure)
  * @author Lenin Compres <lenincompres@gmail.com>
- * @version 1.0.50
+ * @version 1.1.0
  * @repository https://github.com/lenincompres/DOM.js
  */
 
- Element.prototype.get = function (station) {
+Element.prototype.get = function (station) {
   let output;
   if (!station && this.tagName.toLocaleLowerCase() === "input") output = this.value;
   else if (!station || ["content", "inner", "innerhtml", "html"].includes(station)) output = this.innerHTML;
@@ -50,6 +50,8 @@ Element.prototype.set = function (model, ...args) {
   if ([undefined, "create", "assign", "model", "inner", "set"].includes(station)) station = "content";
   const STATION = station;
   station = station.toLowerCase(); // station lowercase
+  // SELECT and input exception
+  if (IS_PRIMITIVE && !model.binders && ["selectedIndex", "value"].includes(STATION)) return this[STATION] = model;
   // css exceptions
   if (STATION === "fontFace") {
     document.body.set({
@@ -257,7 +259,7 @@ Element.prototype.set = function (model, ...args) {
   elt = p5Elem ? elem.elt : elem;
   if (cls.length) elt.classList.add(...cls);
   if (id) elt.setAttribute("id", id);
-  if (!argsType.boolean) this.append(elt);
+  if (argsType.boolean === undefined) this.append(elt);
   ["ready", "onready", "done", "ondone"].forEach(f => {
     if (!model[f]) return this;
     model[f](elem);
@@ -420,7 +422,6 @@ class DOM {
     // checks if the station belongs to the head
     DOM.headTags.includes(station.toLowerCase()) ? document.head.get(station) : document.body.get(station);
   }
-  static create = (...args) => DOM.set(...args);
   // create elements based on an object model
   static set(model = "", ...args) {
     if (!args.includes("css") && !window.DOM_RESETTED) {
@@ -475,8 +476,9 @@ class DOM {
     // waits for the body to load
     window.addEventListener("load", _ => document.body.set(model, ...args));
   }
+  static create = (...args) => DOM.set(...args);
   // returns a new element without appending it to the DOM
-  static element = (model, tag = "section") => DOM.set(model, tag, true);
+  static element = (model, tag = "section") => DOM.set(model, tag, false);
   // returns a new binder
   static binder(value, ...args) {
     let binder = new Binder(value);
@@ -556,7 +558,7 @@ class DOM {
     return qs.split("/");
   }
   static addID = (id, elt) => {
-    if(!isNaN(id)) return console.error("ID's should not be numeric. id: " + id);
+    if (!isNaN(id)) return console.error("ID's should not be numeric. id: " + id);
     if (elt.tagName) elt.setAttribute("id", id);
     if (Array.isArray(elt)) return elt.forEach(e => DOM.addID(id, e));
     if (!window[id]) return window[id] = elt;

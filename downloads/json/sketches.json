@@ -4886,20 +4886,20 @@
         ],
         "fileType": "folder",
         "_id": "649f2874d97bc1c082f9ca54",
-        "createdAt": "2023-07-22T16:52:01.165Z",
-        "updatedAt": "2023-07-22T16:52:01.165Z",
+        "createdAt": "2024-05-29T18:38:05.231Z",
+        "updatedAt": "2024-05-29T18:38:05.231Z",
         "isSelectedFile": false,
         "id": "649f2874d97bc1c082f9ca54"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/bJwxdGIpX\n// draw-rainbow\n\nlet my = {\n  version: 3,\n  width: 393, // canvas width\n  height: 600, // canvas height\n  hue: 0,\n  rainbow: true,\n  rate: 1\n};\n\nfunction setup() {\n  createCanvas(my.width, my.height);\n\n  createDiv(\"Version:\" + my.version);\n}\n\nfunction draw() {\n  fill(\"black\");\n  textSize(64);\n  text(\"Hello screen\", 20, 64);\n  \n}\n\nfunction mouseDragged() {\n  // console.log('mouseDragged');\n  if (my.rainbow) {\n    if (my.hue > 360) {\n      my.hue = 0;\n    } else {\n      my.hue += my.rate;\n    }\n  }\n  colorMode(HSL, 360);\n  // noStroke();\n  // fill(my.hue, 200, 200);\n  // ellipse(mouseX, mouseY, 25, 25);\n  strokeWeight(20);\n  stroke(my.hue, 200, 200);\n  line(mouseX, mouseY, pmouseX, pmouseY);\n\n  // Prevent canvas drag on mobile devices\n  return false;\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/owix6hP8S\n// Simple-Draw\n\n// https://editor.p5js.org/kellylougheed/sketches/ryPlD16wX\n// Rainbow Canvas\n// https://kellylougheed.medium.com/rainbow-paintbrush-in-p5-js-e452d5540b25\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/bJwxdGIpX\n// draw-rainbow\n\nlet my = {\n  version: 3,\n  width: 393, // canvas width\n  height: 600, // canvas height\n  hue: 0,\n  rainbow: true,\n  rate: 1\n};\n\nfunction setup() {\n  createCanvas(my.width, my.height);\n\n  createDiv(\"Version:\" + my.version);\n}\n\nfunction draw() {\n  fill(\"black\");\n  textSize(64);\n  text(\"Hello screen\", 20, 64);\n}\n\nfunction mouseDragged() {\n  // console.log('mouseDragged');\n  if (my.rainbow) {\n    if (my.hue > 360) {\n      my.hue = 0;\n    } else {\n      my.hue += my.rate;\n    }\n  }\n  colorMode(HSL, 360);\n  // noStroke();\n  // fill(my.hue, 200, 200);\n  // ellipse(mouseX, mouseY, 25, 25);\n  strokeWeight(20);\n  stroke(my.hue, 200, 200);\n  line(mouseX, mouseY, pmouseX, pmouseY);\n\n  // Prevent canvas drag on mobile devices\n  return false;\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/owix6hP8S\n// Simple-Draw\n\n// https://editor.p5js.org/kellylougheed/sketches/ryPlD16wX\n// Rainbow Canvas\n// https://kellylougheed.medium.com/rainbow-paintbrush-in-p5-js-e452d5540b25\n",
         "children": [],
         "fileType": "file",
         "_id": "649f2874d97bc1c082f9ca56",
         "isSelectedFile": true,
-        "createdAt": "2023-07-22T16:52:01.165Z",
-        "updatedAt": "2023-07-22T16:52:01.165Z",
+        "createdAt": "2024-05-29T18:38:05.231Z",
+        "updatedAt": "2024-05-29T18:38:05.231Z",
         "id": "649f2874d97bc1c082f9ca56"
       },
       {
@@ -4908,8 +4908,8 @@
         "children": [],
         "fileType": "file",
         "_id": "649f2874d97bc1c082f9ca55",
-        "createdAt": "2023-07-22T16:52:01.165Z",
-        "updatedAt": "2023-07-22T16:52:01.165Z",
+        "createdAt": "2024-05-29T18:38:05.231Z",
+        "updatedAt": "2024-05-29T18:38:05.231Z",
         "isSelectedFile": false,
         "id": "649f2874d97bc1c082f9ca55"
       },
@@ -4919,14 +4919,14 @@
         "children": [],
         "fileType": "file",
         "_id": "649f2874d97bc1c082f9ca57",
-        "createdAt": "2023-07-22T16:52:01.165Z",
-        "updatedAt": "2023-07-22T16:52:01.165Z",
+        "createdAt": "2024-05-29T18:38:05.231Z",
+        "updatedAt": "2024-05-29T18:38:05.231Z",
         "isSelectedFile": false,
         "id": "649f2874d97bc1c082f9ca57"
       }
     ],
     "createdAt": "2023-06-30T19:09:40.593Z",
-    "updatedAt": "2023-07-22T16:52:01.165Z",
+    "updatedAt": "2024-05-29T18:38:05.231Z",
     "id": "bJwxdGIpX"
   },
   {
@@ -5821,6 +5821,63 @@
     "id": "x7bG2j2xZ"
   },
   {
+    "name": "Figma in 30",
+    "_id": "zxQh9muLd",
+    "updatedAt": "2024-05-31T16:33:31.314Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6659ecaf8b6311e0c52f8fa6",
+          "6659ecaf8b6311e0c52f8fa5",
+          "6659ecaf8b6311e0c52f8fa7"
+        ],
+        "fileType": "folder",
+        "_id": "6659ecaf8b6311e0c52f8fa8",
+        "isSelectedFile": false,
+        "createdAt": "2024-05-31T16:33:31.314Z",
+        "updatedAt": "2024-05-31T16:33:31.314Z",
+        "id": "6659ecaf8b6311e0c52f8fa8"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}\n\n// https://www.youtube.com/watch?v=DIfNp1wScwk\n// Learn Figma in 30 Minutes\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6659ecaf8b6311e0c52f8fa5",
+        "isSelectedFile": true,
+        "createdAt": "2024-05-31T16:33:31.314Z",
+        "updatedAt": "2024-05-31T16:33:31.314Z",
+        "id": "6659ecaf8b6311e0c52f8fa5"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n    \n    \n    <div style=\"width: 742px; height: 1117px; position: relative; background: white\">\n  <div style=\"width: 597px; height: 205px; left: 60px; top: 60px; position: absolute; color: black; font-size: 64px; font-family: Poppins; font-weight: 700; text-transform: uppercase; word-wrap: break-word\">Building your dream home</div>\n  <div style=\"width: 588px; height: 0px; left: 64px; top: 735px; position: absolute; border: 4px black solid\"></div>\n  <div style=\"left: 64px; top: 614px; position: absolute; color: black; font-size: 20px; font-family: Poppins; font-weight: 700; text-transform: uppercase; word-wrap: break-word\">Password</div>\n  <div style=\"width: 588px; height: 0px; left: 64px; top: 561px; position: absolute; border: 4px black solid\"></div>\n  <div style=\"left: 64px; top: 440px; position: absolute; color: black; font-size: 20px; font-family: Poppins; font-weight: 700; text-transform: uppercase; word-wrap: break-word\">email address</div>\n  <div style=\"left: 480px; top: 784px; position: absolute; color: black; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word\">Forgot Password</div>\n  <div style=\"left: 203px; top: 1032px; position: absolute\"><span style=\"color: black; font-size: 20px; font-family: Poppins; font-weight: 700; word-wrap: break-word\">Already have account? L</span><span style=\"color: black; font-size: 20px; font-family: Poppins; font-weight: 700; text-decoration: underline; word-wrap: break-word\">ogin</span></div>\n  <div style=\"width: 588px; height: 80px; left: 64px; top: 883px; position: absolute\">\n    <div style=\"width: 588px; height: 80px; left: 0px; top: 0px; position: absolute; background: #C32222\"></div>\n    <div style=\"width: 399px; height: 71px; left: 94px; top: 25px; position: absolute; text-align: center; color: white; font-size: 24px; font-family: Poppins; font-weight: 700; word-wrap: break-word\">Create a account</div>\n  </div>\n</div>\n\n    \n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6659ecaf8b6311e0c52f8fa6",
+        "isSelectedFile": false,
+        "createdAt": "2024-05-31T16:33:31.314Z",
+        "updatedAt": "2024-05-31T16:33:31.314Z",
+        "id": "6659ecaf8b6311e0c52f8fa6"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6659ecaf8b6311e0c52f8fa7",
+        "isSelectedFile": false,
+        "createdAt": "2024-05-31T16:33:31.314Z",
+        "updatedAt": "2024-05-31T16:33:31.314Z",
+        "id": "6659ecaf8b6311e0c52f8fa7"
+      }
+    ],
+    "createdAt": "2024-05-31T16:32:50.953Z",
+    "id": "zxQh9muLd"
+  },
+  {
     "name": "FINAL 6.0 - VIDEO CAPTURE copy",
     "_id": "0R-3Egd0o",
     "files": [
@@ -6320,6 +6377,75 @@
     "createdAt": "2023-06-29T17:01:02.554Z",
     "updatedAt": "2023-06-29T17:13:37.762Z",
     "id": "Y_8087I5S"
+  },
+  {
+    "name": "Futility_Clarity by Carrie Wang",
+    "_id": "wgiqYc19o",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66575c7e3add0b033a1936d2",
+          "66575c7e3add0b033a1936d3",
+          "66575c7e3add0b033a1936d4",
+          "66575c7e3add0b033a1936d5"
+        ],
+        "fileType": "folder",
+        "_id": "66575c7e3add0b033a1936d1",
+        "isSelectedFile": false,
+        "createdAt": "2024-05-29T17:05:27.340Z",
+        "updatedAt": "2024-05-29T17:05:27.340Z",
+        "id": "66575c7e3add0b033a1936d1"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/wgiqYc19o\n// https://editor.p5js.org/re7l/sketches/H1fDxrovm\n// Futility_Clarity by Carrie Wang\n\nlet myRec = new p5.SpeechRec; // new P5.SpeechRec object\nmyRec.continuous = false; // do continuous recognition\nmyRec.interimResults = true; // allow partial recognition (faster, less accurate)\n\nlet r, g, b, a;\n\nlet interval = 1;\nlet speed = 1;\n\nlet gameStopped = 0;\n\nlet capture;\n\n\n\nfunction setup() {\n    pixelDensity(1);\n    createCanvas(windowWidth, windowHeight);\n\n    capture = createCapture(VIDEO);\n    capture.hide();\n\n    myRec.start(); // start engine\n    myRec.onResult = parseResult; // recognition callback\n    myRec.onEnd = restartRec;\n\n}\n\nfunction draw() {\n    background(0);\n\n    push();\n    translate(width, 0); // move to far corner\n    scale(-1.0, 1.0); // flip x-axis backwards\n    image(capture, 0, 0, width, width * capture.height / capture.width);\n    pop();\n\n\n    loadPixels();\n    for (let x = 0; x < width; x += interval) {\n        for (let y = 0; y < height; y += interval) {\n            let index = (x + y * width) * 4;\n            r = pixels[index + 0];\n            g = pixels[index + 1];\n            b = pixels[index + 2];\n            a = pixels[index + 3];\n\n            for (let newX = x; newX < x + interval; newX++) {\n                for (let newY = y; newY < y + interval; newY++) {\n                    let newIndex = (newX + newY * width) * 4;\n                    pixels[newIndex + 0] = r;\n                    pixels[newIndex + 1] = g;\n                    pixels[newIndex + 2] = b;\n                    pixels[newIndex + 3] = a;\n\n                }\n            }\n        }\n    }\n    updatePixels();\n    interval += speed;\n    if (interval >= 200 || interval <= 1) {\n        speed *= -1;\n    }\n\n    if (gameStopped == 0) {\n        fill(255);\n        noStroke();\n        textAlign(CENTER, CENTER);\n        textSize(24);\n        text('GOAL: ACHIEVE 50% CLARITY', width / 2, height / 2 - 20);\n        textSize(14);\n        text('Say \"stop\" to see result.', width / 2, height / 2 + 20);\n    }\n\n    if (gameStopped == 1) {\n        fill(255);\n        noStroke();\n        textAlign(CENTER, CENTER);\n        textSize(24);\n        text('YOU HAVE ACHIEVED ' + (100 - interval / 2) + '% CLARITY \\n' + 'DEVIATION: ' + (100 - interval / 2 - 50), width / 2, height / 2 - 20);\n        textSize(14);\n        text('Say \"restart\" to try again.', width / 2, height / 2 + 20);\n    }\n}\n\n\nfunction parseResult() {\n    // recognition system will often append words into phrases. \n    // so hack here is to only use the last word:\n\n    let lowStr = myRec.resultString.toLowerCase();\n    let mostrecentword = lowStr.split(' ').pop();\n\n\n    // The effects\n    if (mostrecentword.indexOf(\"stop\") !== -1) {\n        speed = 0;\n        gameStopped = 1;\n    } else if (mostrecentword.indexOf(\"restart\") !== -1) {\n        interval = 1;\n        speed = 1;\n        gameStopped = 0;\n    }\n\n    console.log(mostrecentword);\n}\n\n\nfunction restartRec() {\n    print(\"end\");\n    myRec.start();\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66575c7e3add0b033a1936d4",
+        "isSelectedFile": true,
+        "createdAt": "2024-05-29T17:05:27.340Z",
+        "updatedAt": "2024-05-29T17:05:27.340Z",
+        "id": "66575c7e3add0b033a1936d4"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html>\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js\"></script>\n    <script src=\"p5.speech.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66575c7e3add0b033a1936d2",
+        "isSelectedFile": false,
+        "createdAt": "2024-05-29T17:05:27.340Z",
+        "updatedAt": "2024-05-29T17:05:27.340Z",
+        "id": "66575c7e3add0b033a1936d2"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66575c7e3add0b033a1936d5",
+        "isSelectedFile": false,
+        "createdAt": "2024-05-29T17:05:27.340Z",
+        "updatedAt": "2024-05-29T17:05:27.340Z",
+        "id": "66575c7e3add0b033a1936d5"
+      },
+      {
+        "name": "p5.speech.js",
+        "content": "/*! p5.speech.js v0.0.1 2015-06-12 */\n/**\n * @module p5.speech\n * @submodule p5.speech\n * @for p5.speech\n * @main\n */\n/**\n *  p5.speech\n *  R. Luke DuBois (dubois@nyu.edu)\n *  ABILITY Lab / Brooklyn Experimental Media Center\n *  New York University\n *  The MIT License (MIT).\n *  \n *  https://github.com/IDMNYU/p5.js-speech\n *\n *  Web Speech API: https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html\n *  Web Speech Recognition API: https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html\n */\n(function (root, factory) {\n  if (typeof define === 'function' && define.amd)\n    define('p5.speech', ['p5'], function (p5) { (factory(p5));});\n  else if (typeof exports === 'object')\n    factory(require('../p5'));\n  else\n    factory(root['p5']);\n}(this, function (p5) {\n// =============================================================================\n//                         p5.Speech\n// =============================================================================\n\n\n  /**\n   * Base class for a Speech Synthesizer\n   *\n   * @class p5.Speech\n   * @constructor\n   */\n  p5.Speech = function(_dv) {\n\n    //\n    // speech synthesizers consist of a single synthesis engine\n    // per window instance, and a variable number of 'utterance'\n    // objects, which can be cached and re-used for, e.g.\n    // auditory UI.\n    //\n    // this implementation assumes a monolithic (one synth, \n    // one phrase at a time) system.\n    //\n\n    // make a speech synthizer (this will load voices):\n    this.synth = window.speechSynthesis;\n\n    // make an utterance to use with this synthesizer:\n    this.utterance = new SpeechSynthesisUtterance();\n\n    this.isLoaded = 0; // do we have voices yet?\n\n    // do we queue new utterances upon firing speak() \n    // or interrupt what's speaking:\n    this.interrupt = false; \n\n    // callback properties to be filled in within the p5 sketch\n    // if the author needs custom callbacks:\n    this.onLoad; // fires when voices are loaded and synth is ready\n    this.onStart; // fires when an utterance begins...\n    this.onPause; // ...is paused...\n    this.onResume; // ...resumes...\n    this.onEnd; // ...and ends.\n\n    this.voices = []; // array of available voices (dependent on browser/OS)\n\n    // first parameter of constructor is an initial voice selector\n    this.initvoice;\n    if(_dv !== undefined) this.initvoice=_dv;\n\n    var that = this; // some bullshit\n\n    // onvoiceschanged() fires automatically when the synthesizer\n    // is configured and has its voices loaded.  you don't need\n    // to wait for this if you're okay with the default voice.\n    // \n    // we use this function to load the voice array and bind our\n    // custom callback functions.\n    window.speechSynthesis.onvoiceschanged = function() {\n      if(that.isLoaded==0) { // run only once\n        that.voices = window.speechSynthesis.getVoices();\n        that.isLoaded = 1; // we're ready\n        console.log(\"p5.Speech: voices loaded!\");\n\n        if(that.initvoice!=undefined) {\n          that.setVoice(that.initvoice); // set a custom initial voice\n          console.log(\"p5.Speech: initial voice: \" + that.initvoice);\n        }\n\n        // fire custom onLoad() callback, if it exists:\n        if(that.onLoad!=undefined) that.onLoad();\n\n        //\n        // bind other custom callbacks:\n        //\n\n        that.utterance.onstart = function(e) {\n          //console.log(\"STARTED\");\n          if(that.onStart!=undefined) that.onStart(e);        \n        };\n        that.utterance.onpause = function(e) {\n          //console.log(\"PAUSED\");\n          if(that.onPause!=undefined) that.onPause(e);        \n        };\n        that.utterance.onresume = function(e) {\n          //console.log(\"RESUMED\");\n          if(that.onResume!=undefined) that.onResume(e);        \n        };\n        that.utterance.onend = function(e) {\n          //console.log(\"ENDED\");\n          if(that.onEnd!=undefined) that.onEnd(e);        \n        };\n      }\n    };\n\n  };     // end p5.Speech constructor\n\n\n  // listVoices() - dump voice names to javascript console:\n  p5.Speech.prototype.listVoices = function() {\n    if(this.isLoaded)\n    {\n      for(var i = 0;i<this.voices.length;i++)\n      {\n        console.log(this.voices[i].name);\n      }\n    }\n    else\n    {\n    \tconsole.log(\"p5.Speech: voices not loaded yet!\")\n    }\n  };\n\n  // setVoice() - assign voice to speech synthesizer, by name\n  // (using voices found in the voices[] array), or by index.\n  p5.Speech.prototype.setVoice = function(_v) {\n    // type check so you can set by label or by index:\n    if(typeof(_v)=='string') this.utterance.voice = this.voices.filter(function(v) { return v.name == _v; })[0];\n    else if(typeof(_v)=='number') this.utterance.voice = this.voices[Math.min(Math.max(_v,0),this.voices.length-1)];\n  };\n\n  // volume of voice. API range 0.0-1.0.\n  p5.Speech.prototype.setVolume = function(_v) {\n    this.utterance.volume = Math.min(Math.max(_v, 0.0), 1.0);\n  };\n\n  // rate of voice.  not all voices support this feature.\n  // API range 0.1-2.0.  voice will crash out of bounds.\n  p5.Speech.prototype.setRate = function(_v) {\n    this.utterance.rate = Math.min(Math.max(_v, 0.1), 2.0);\n  };\n\n  // pitch of voice.  not all voices support this feature.\n  // API range >0.0-2.0.  voice will crash out of bounds.\n  p5.Speech.prototype.setPitch = function(_v) {\n    this.utterance.pitch = Math.min(Math.max(_v, 0.01), 2.0);\n  };\n\n  // sets the language of the voice.\n  p5.Speech.prototype.setLang = function(_lang) {\n    this.utterance.lang = _lang;\n}\n\n  // speak a phrase through the current synthesizer:\n  p5.Speech.prototype.speak = function(_phrase) {\n    if(this.interrupt) this.synth.cancel();\n    this.utterance.text = _phrase;\n\n    this.synth.speak(this.utterance);\n  };\n\n  // not working...\n  p5.Speech.prototype.pause = function() {\n    this.synth.pause();\n  };\n\n  // not working...\n  p5.Speech.prototype.resume = function() {\n    this.synth.resume();\n  };\n\n  // stop current utterance:\n  p5.Speech.prototype.stop = function() {\n    // not working...\n    //this.synth.stop();\n    this.synth.cancel();\n  };\n\n  // kill synthesizer completely, clearing any queued utterances:\n  p5.Speech.prototype.cancel = function() {\n    this.synth.cancel(); // KILL SYNTH\n  };\n\n// =============================================================================\n//                         p5.SpeechRec\n// =============================================================================\n\n\n  /**\n   * Base class for a Speech Recognizer\n   *\n   * @class p5.SpeechRec\n   * @constructor\n   */\n  p5.SpeechRec = function(_lang) {\n\n    //\n    // speech recognition consists of a recognizer object per \n    // window instance that returns a JSON object containing\n    // recognition.  this JSON object grows when the synthesizer\n    // is in 'continuous' mode, with new recognized phrases\n    // appended into an internal array.\n    //\n    // this implementation returns the full JSON, but also a set\n    // of simple, query-ready properties containing the most\n    // recently recognized speech.\n    //\n\n    // make a recognizer object.\n    if('webkitSpeechRecognition' in window) {\n      this.rec = new webkitSpeechRecognition();\n    }\n    else {\n      this.rec = new Object();\n      console.log(\"p5.SpeechRec: webkitSpeechRecognition not supported in this browser.\");\n    }\n\n    // first parameter is language model (defaults to empty=U.S. English)\n    // no list of valid models in API, but it must use BCP-47.\n    // here's some hints:\n    // http://stackoverflow.com/questions/14257598/what-are-language-codes-for-voice-recognition-languages-in-chromes-implementati\n    if(_lang !== undefined) this.rec.lang=_lang;\n\n    // callback properties to be filled in within the p5 sketch\n    // if the author needs custom callbacks:\n    this.onResult; // fires when something has been recognized\n    this.onStart; // fires when the recognition system is started...\n    this.onError; // ...has a problem (e.g. the mic is shut off)...\n    this.onEnd; // ...and ends (in non-continuous mode).\n\n    // recognizer properties:\n\n    // continous mode means the object keeps recognizing speech,\n    // appending new tokens to the internal JSON.\n    this.continuous = false; \n    // interimResults means the object will report (i.e. fire its\n    // onresult() callback) more frequently, rather than at pauses\n    // in microphone input.  this gets you quicker, but less accurate,\n    // results.\n    this.interimResults = false;\n\n    // result data:\n\n    // resultJSON:\n    // this is a full JSON returned by onresult().  it consists of a \n    // SpeechRecognitionEvent object, which contains a (wait for it)\n    // SpeechRecognitionResultList.  this is an array.  in continuous\n    // mode, it will be appended to, not cleared.  each element is a \n    // SpeechRecognition result, which contains a (groan)\n    // SpeechRecognitionAlternative, containing a 'transcript' property.\n    // the 'transcript' is the recognized phrase.  have fun.\n    this.resultJSON; \n    // resultValue:\n    // validation flag which indicates whether the recognizer succeeded.  \n    // this is *not* a metric of speech clarity, but rather whether the\n    // speech recognition system successfully connected to and received\n    // a response from the server.  you can construct an if() around this\n    // if you're feeling worried.\n    this.resultValue; \n    // resultValue:\n    // the 'transcript' of the most recently recognized speech as a simple\n    // string.  this will be blown out and replaced at every firing of the\n    // onresult() callback.\n    this.resultString; \n    // resultConfidence:\n    // the 'confidence' (0-1) of the most recently recognized speech, e.g.\n    // that it reflects what was actually spoken.  you can use this to filter\n    // out potentially bogus recognition tokens.\n    this.resultConfidence; \n\n    var that = this; // some bullshit\n\n    // onresult() fires automatically when the recognition engine\n    // detects speech, or times out trying.\n    // \n    // it fills up a JSON array internal to the webkitSpeechRecognition\n    // object.  we reference it over in our struct here, and also copy \n    // out the most recently detected phrase and confidence value.\n    this.rec.onresult = function(e) { \n      that.resultJSON = e; // full JSON of callback event\n      that.resultValue = e.returnValue; // was successful?\n      // store latest result in top-level object struct\n      that.resultString = e.results[e.results.length-1][0].transcript.trim();\n      that.resultConfidence = e.results[e.results.length-1][0].confidence;\n      if(that.onResult!=undefined) that.onResult();\n    };\n\n    // fires when the recognition system starts (i.e. when you 'allow'\n    // the mic to be used in the browser).\n    this.rec.onstart = function(e) {\n      if(that.onStart!=undefined) that.onStart(e);\n    };\n    // fires on a client-side error (server-side errors are expressed \n    // by the resultValue in the JSON coming back as 'false').\n    this.rec.onerror = function(e) {\n      if(that.onError!=undefined) that.onError(e);\n    };\n    // fires when the recognition finishes, in non-continuous mode.\n    this.rec.onend = function() {\n      if(that.onEnd!=undefined) that.onEnd();\n    };\n\n  }; // end p5.SpeechRec constructor\n\n  // start the speech recognition engine.  this will prompt a \n  // security dialog in the browser asking for permission to \n  // use the microphone.  this permission will persist throughout\n  // this one 'start' cycle.  if you need to recognize speech more\n  // than once, use continuous mode rather than firing start() \n  // multiple times in a single script.\n  p5.SpeechRec.prototype.start = function() {\n    if('webkitSpeechRecognition' in window) {\n      this.rec.continuous = this.continuous;\n      this.rec.interimResults = this.interimResults;\n      this.rec.start();\n    }\n  };\n\n}));\n\n/*\ntodo:\n* fix callbacks (pause, resume) in synthesizer.\n* support speech grammar models for scoped auditory UI.\n* support markdown, boundaries, etc for better synthesis tracking.\n* support utterance parser for long phrases.\n*/\n\n// EOF\n\n\n\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66575c7e3add0b033a1936d3",
+        "isSelectedFile": false,
+        "createdAt": "2024-05-29T17:05:27.340Z",
+        "updatedAt": "2024-05-29T17:05:27.340Z",
+        "id": "66575c7e3add0b033a1936d3"
+      }
+    ],
+    "createdAt": "2024-05-29T16:49:02.489Z",
+    "updatedAt": "2024-05-29T17:05:27.340Z",
+    "id": "wgiqYc19o"
   },
   {
     "name": "Game States",
@@ -6874,6 +7000,114 @@
     "id": "hzQ_IGYd8"
   },
   {
+    "name": "GSP p12",
+    "_id": "kSKBFc7kM",
+    "updatedAt": "2024-05-30T19:55:32.798Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6658d763d9ff7ad94efc689f",
+          "6658d763d9ff7ad94efc689e",
+          "6658d763d9ff7ad94efc68a0"
+        ],
+        "fileType": "folder",
+        "_id": "6658d763d9ff7ad94efc68a1",
+        "createdAt": "2024-05-30T19:55:32.798Z",
+        "updatedAt": "2024-05-30T19:55:32.798Z",
+        "id": "6658d763d9ff7ad94efc68a1"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  // createCanvas(480, 120);\n  createCanvas(windowWidth, windowHeight);\n}\nfunction draw() {\n  if (mouseIsPressed) {\n    fill(0);\n  } else {\n    fill(255);\n  }\n  ellipse(mouseX, mouseY, 80, 80);\n}\n\n\n// 12 Make_Getting-Started-with-p5dotjs\n\n// https://openlab.citytech.cuny.edu/mtec1101-hd88-sp2022/files/2019/03/Make_Getting-Started-with-p5dotjs.pdf\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658d763d9ff7ad94efc689e",
+        "isSelectedFile": true,
+        "createdAt": "2024-05-30T19:55:32.798Z",
+        "updatedAt": "2024-05-30T19:55:32.798Z",
+        "id": "6658d763d9ff7ad94efc689e"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658d763d9ff7ad94efc689f",
+        "createdAt": "2024-05-30T19:55:32.798Z",
+        "updatedAt": "2024-05-30T19:55:32.798Z",
+        "id": "6658d763d9ff7ad94efc689f"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658d763d9ff7ad94efc68a0",
+        "createdAt": "2024-05-30T19:55:32.798Z",
+        "updatedAt": "2024-05-30T19:55:32.798Z",
+        "id": "6658d763d9ff7ad94efc68a0"
+      }
+    ],
+    "createdAt": "2024-05-30T19:46:32.490Z",
+    "id": "kSKBFc7kM"
+  },
+  {
+    "name": "GSP p19-23",
+    "_id": "8PvuBvggo",
+    "updatedAt": "2024-05-30T19:55:27.283Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6658d824d9ff7ad94efc68a3",
+          "6658d824d9ff7ad94efc68a2",
+          "6658d824d9ff7ad94efc68a4"
+        ],
+        "fileType": "folder",
+        "_id": "6658d824d9ff7ad94efc68a5",
+        "createdAt": "2024-05-30T19:55:27.283Z",
+        "updatedAt": "2024-05-30T19:55:27.283Z",
+        "id": "6658d824d9ff7ad94efc68a5"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(480, 120);\n}\nfunction draw() {\n  background(204);\n\n//   point(240, 60);\n\n//   line(20, 50, 420, 110);\n\n//   quad(158, 55, 199, 14, 392, 66, 351, 107);\n//   triangle(347, 54, 392, 9, 392, 66);\n//   triangle(158, 55, 290, 91, 290, 112);\n\n//   rect(180, 60, 220, 40);\n\n  arc(90, 60, 80, 80, 0, HALF_PI);\n  arc(190, 60, 80, 80, 0, PI + HALF_PI);\n  arc(290, 60, 80, 80, PI, TWO_PI + HALF_PI);\n  arc(390, 60, 80, 80, QUARTER_PI, PI + QUARTER_PI);\n}\n\n// 19 - 23 Make_Getting-Started-with-p5dotjs\n\n// https://openlab.citytech.cuny.edu/mtec1101-hd88-sp2022/files/2019/03/Make_Getting-Started-with-p5dotjs.pdf\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658d824d9ff7ad94efc68a2",
+        "isSelectedFile": true,
+        "createdAt": "2024-05-30T19:55:27.283Z",
+        "updatedAt": "2024-05-30T19:55:27.283Z",
+        "id": "6658d824d9ff7ad94efc68a2"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658d824d9ff7ad94efc68a3",
+        "createdAt": "2024-05-30T19:55:27.283Z",
+        "updatedAt": "2024-05-30T19:55:27.283Z",
+        "id": "6658d824d9ff7ad94efc68a3"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658d824d9ff7ad94efc68a4",
+        "createdAt": "2024-05-30T19:55:27.283Z",
+        "updatedAt": "2024-05-30T19:55:27.283Z",
+        "id": "6658d824d9ff7ad94efc68a4"
+      }
+    ],
+    "createdAt": "2024-05-30T19:48:58.513Z",
+    "id": "8PvuBvggo"
+  },
+  {
     "name": "hello-p5-song",
     "_id": "NeWYQtl2J",
     "updatedAt": "2023-08-02T15:09:43.632Z",
@@ -7400,6 +7634,60 @@
     "createdAt": "2023-09-18T20:55:29.873Z",
     "updatedAt": "2023-09-18T21:01:54.101Z",
     "id": "JH6A8CFo2"
+  },
+  {
+    "name": "if, boolean - match",
+    "_id": "miVmKSy3t",
+    "updatedAt": "2024-05-30T16:12:27.551Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6658a5360841fa8383afb1e4",
+          "6658a5360841fa8383afb1e3",
+          "6658a5360841fa8383afb1e5"
+        ],
+        "fileType": "folder",
+        "_id": "6658a5360841fa8383afb1e6",
+        "createdAt": "2024-05-30T16:12:27.551Z",
+        "updatedAt": "2024-05-30T16:12:27.551Z",
+        "id": "6658a5360841fa8383afb1e6"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/miVmKSy3t\n// if, boolean - match\n\nlet s1 = 0;\nlet s2 = 0;\nlet s3 = 0;\nlet match = 0;\n\nfunction setup() {\n  createCanvas(600, 390);\n  s1 = random([0, 1, 2]);\n  s2 = random([0, 1, 2]);\n  s3 = random([0, 1, 2]);\n}\n\nfunction draw() {\n  background(200);\n  textSize(100);\n  text(s1, 100, 200);\n  text(s2, 250, 200);\n  text(s3, 400, 200);\n\n  line(100, 0, 100, height);\n  line(250, 0, 250, height);\n  line(400, 0, 400, height);\n\n  if (match) {\n    text('Match!', 100, 300);\n  }\n}\n\nfunction mouseClicked() {\n  // text(s1, 10, 100);\n  if (mouseX < 250) {\n    s1 = (s1 + 1) % 3;\n  }\n  if (mouseX > 250 && mouseX < 400) {\n    s2 = (s2 + 1) % 3;\n  }\n  if (mouseX > 400 && mouseX < 600) {\n    s3 = (s3 + 1) % 3;\n  }\n  // if (s1 == s2 && s2 == s3) {\n  //   match = 1;\n  // } else {\n  //   match = 0;\n  // }\n  match = s1 == s2 && s2 == s3;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658a5360841fa8383afb1e3",
+        "isSelectedFile": true,
+        "createdAt": "2024-05-30T16:12:27.551Z",
+        "updatedAt": "2024-05-30T16:12:27.551Z",
+        "id": "6658a5360841fa8383afb1e3"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658a5360841fa8383afb1e4",
+        "createdAt": "2024-05-30T16:12:27.551Z",
+        "updatedAt": "2024-05-30T16:12:27.551Z",
+        "id": "6658a5360841fa8383afb1e4"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658a5360841fa8383afb1e5",
+        "createdAt": "2024-05-30T16:12:27.551Z",
+        "updatedAt": "2024-05-30T16:12:27.551Z",
+        "id": "6658a5360841fa8383afb1e5"
+      }
+    ],
+    "createdAt": "2024-05-30T16:11:39.470Z",
+    "id": "miVmKSy3t"
   },
   {
     "name": "image  array sin",
@@ -9545,6 +9833,387 @@
     "id": "KdqhNNLLW"
   },
   {
+    "name": "lit demo storage v3",
+    "_id": "W_42_8Enr",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "665f74f210dd48377ae751a3",
+          "665f74f210dd48377ae751a4",
+          "665f74f210dd48377ae751a5",
+          "66605d6e0e0626001a750671",
+          "665f74f210dd48377ae751a6",
+          "665f74f210dd48377ae751a7"
+        ],
+        "fileType": "folder",
+        "_id": "665f74f210dd48377ae751a2",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-05T12:44:04.043Z",
+        "updatedAt": "2024-06-05T12:44:04.043Z",
+        "id": "665f74f210dd48377ae751a2"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/W_42_8Enr\n// lit demo storage v3\n\n// localStorage used to preserve settings\n// Lit demo of UI input elements\n// reference: https://lit.dev/tutorials/intro-to-lit/#8\n\n// Button\n// text input\n// Slider\n// checkbox\n// radio button row\n// selection\n// color\n\nlet my = {};\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  // store new LitDemo html element\n  // defined in lit-demo.js\n  my.lit = createElement('lit-demo');\n  my.lit.attribute('sliderValue', 50);\n  my.lit.attribute('colorValue', '#8080FF');\n  my.lit.attribute('shapeValue', 'triangle');\n\n  // createElement('lit-demo');\n\n  my.yoffset = 0;\n\n  restoreStore();\n}\n\nfunction draw() {\n  // background('#FF00FF');\n\n  // use color picker value for the background color\n  background(my.lit.elt.colorValue);\n\n  // draw a rect shape in the middle of the canvas\n  // that tracks the slider value from left to right\n  let len = 50 + my.lit.elt._counter;\n  let x = (my.lit.elt.sliderValue / 100) * width;\n  let y = (height - len) / 2;\n  if (my.lit.elt.checkBoxValue) {\n    my.yoffset = (my.yoffset + 1) % height;\n    y = my.yoffset;\n  }\n\n  fill(my.lit.elt.radioValue);\n\n  let shape = my.lit.elt.shapeValue;\n  if (shape == 'rect') {\n    rect(x - len / 2, y, len, len);\n  } else if (shape == 'circle') {\n    circle(x, y + len / 2, len);\n  } else {\n    draw_triangle(x, y, len);\n  }\n\n  storeUpdateCheck();\n}\n\nfunction draw_triangle(x, y, len) {\n  let x1 = x - len;\n  let y1 = y + len;\n  let x2 = x + len;\n  let y2 = y1;\n  let x3 = x;\n  let y3 = y;\n  triangle(x1, y1, x2, y2, x3, y3);\n}\n\n// https://lit.dev/tutorials/intro-to-lit/#8\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Ne1xB_wOz\n// lit try v2\n\n// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n\n// https://lit.dev/learn/#filter=tutorial\n\n// https://lit.dev/tutorials/reactivity/#7\n// click to animate\n// https://developer.mozilla.org/en-US/docs/Web/API/Element/animate\n// https://codepen.io/rachelnabors/pen/rxpmJL/?editors=0010\n//  Down the Rabbit Hole (with Web Animations API)\n// https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=cover&range-start-percentage=0&range-end-name=cover&range-end-percentage=100&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=reveal&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes\n// Also check out the View Timeline Ranges Visualizer, which shows exactly what the different values mean in an easy visual format.\n\n// https://editor.p5js.org/jht9629-nyu/sketches/HureJsyBs\n// lit demo v3\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665f74f210dd48377ae751a5",
+        "isSelectedFile": true,
+        "createdAt": "2024-06-05T12:44:04.043Z",
+        "updatedAt": "2024-06-05T12:44:04.043Z",
+        "id": "665f74f210dd48377ae751a5"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script> -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />\n    <meta charset=\"utf-8\" />\n\n    <script type=\"module\" src=\"lit-demo.js\"></script>\n  </head>\n  <body>\n    <main></main>\n    <script src=\"store.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665f74f210dd48377ae751a3",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-05T12:44:04.043Z",
+        "updatedAt": "2024-06-05T12:44:04.043Z",
+        "id": "665f74f210dd48377ae751a3"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665f74f210dd48377ae751a6",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-05T12:44:04.043Z",
+        "updatedAt": "2024-06-05T12:44:04.043Z",
+        "id": "665f74f210dd48377ae751a6"
+      },
+      {
+        "name": "todo-list.js",
+        "content": "// import {LitElement, html, css} from 'lit';\nimport { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';\n// https://lit.dev/tutorials/intro-to-lit/#8\n// https://lit.dev/docs/getting-started/#use-bundles\n\nexport class ToDoList extends LitElement {\n  static properties = {\n    _listItems: { state: true },\n    hideCompleted: {},\n  };\n  static styles = css`\n    .completed {\n      text-decoration-line: line-through;\n      color: #777;\n    }\n  `;\n\n  constructor() {\n    super();\n    this._listItems = [\n      { text: 'Make to-do list', completed: true },\n      { text: 'Complete Lit tutorial', completed: false },\n    ];\n    this.hideCompleted = false;\n  }\n\n  render() {\n    const items = this.hideCompleted ? this._listItems.filter((item) => !item.completed) : this._listItems;\n    const todos = html`\n      <ul>\n        ${items.map(\n          (item) => html` <li class=${item.completed ? 'completed' : ''} @click=${() => this.toggleCompleted(item)}>\n            ${item.text}\n          </li>`\n        )}\n      </ul>\n    `;\n    const caughtUpMessage = html` <p>You're all caught up!</p> `;\n    const todosOrMessage = items.length > 0 ? todos : caughtUpMessage;\n\n    return html`\n      <h2>To Do</h2>\n      ${todosOrMessage}\n      <input id=\"newitem\" aria-label=\"New item\" />\n      <button @click=${this.addToDo}>Add</button>\n      <br />\n      <label>\n        <input type=\"checkbox\" @change=${this.setHideCompleted} ?checked=${this.hideCompleted} />\n        Hide completed\n      </label>\n    `;\n  }\n\n  toggleCompleted(item) {\n    item.completed = !item.completed;\n    this.requestUpdate();\n  }\n\n  setHideCompleted(e) {\n    this.hideCompleted = e.target.checked;\n  }\n\n  get input() {\n    return this.renderRoot?.querySelector('#newitem') ?? null;\n  }\n\n  addToDo() {\n    this._listItems = [...this._listItems, { text: this.input.value, completed: false }];\n    this.input.value = '';\n  }\n}\ncustomElements.define('todo-list', ToDoList);\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665f74f210dd48377ae751a7",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-05T12:44:04.043Z",
+        "updatedAt": "2024-06-05T12:44:04.043Z",
+        "id": "665f74f210dd48377ae751a7"
+      },
+      {
+        "name": "lit-demo.js",
+        "content": "//\n// Lit for UI input elements\n// reference: https://lit.dev/tutorials/intro-to-lit/#8\n\n// button\n// text input\n// slider -- input range\n// checkbox\n// radio button row\n// selection\n// color\n\nimport { LitElement, html } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';\n\nexport class LitDemo extends LitElement {\n  static properties = {\n    _counter: { state: true },\n    sliderValue: { type: Number },\n    checkBoxValue: { type: Boolean },\n    radioValue: {},\n    shapeValue: {},\n    colorValue: {},\n    updateCount: { state: true },\n  };\n\n  constructor() {\n    super();\n    this._counter = 0;\n    this.sliderValue = 30;\n    this.checkBoxValue = false;\n    this.radioValue = 'gold';\n    this.shapeValue = 'rect';\n    this.colorValue = '#ffff00';\n    this.updateCount = 0;\n  }\n\n  render() {\n    this.updateCount++;\n    return html`\n      <h2>Lit Demo Storage -- localStorage used to preserve settings</h2>\n      <br />\n      <input id=\"id_counterInput\" value=${'counter=' + this._counter} />\n      <button @click=${this.updateUpClickEvent} @mousedown=${this.updateUpMouseDownEvent}>Update Up</button>\n      <button @click=${this.updateDownClickEvent}>Update Down</button>\n      <br />\n      <label>\n        <input type=\"range\" min=\"0\" max=\"100\" value=${this.sliderValue} @input=${this.sliderInputEvent} />\n        sliderValue ${this.sliderValue}\n      </label>\n      <br />\n      <label>\n        <input type=\"checkbox\" @change=${this.checkBoxChangeEvent} ?checked=${this.checkBoxValue} />\n        checkBoxValue\n      </label>\n      <fieldset @change=${this.radioChangeEvent}>\n        <legend>Select a radioValue:</legend>\n        <label>\n          <input type=\"radio\" name=\"drone\" value=\"red\" ?checked=${this.radioValue == 'red'} />\n          Red\n        </label>\n        <label>\n          <input type=\"radio\" name=\"drone\" value=\"green\" ?checked=${this.radioValue == 'green'} />\n          Green\n        </label>\n        <label>\n          <input type=\"radio\" name=\"drone\" value=\"gold\" ?checked=${this.radioValue == 'gold'} />\n          Gold\n        </label>\n      </fieldset>\n      <label>\n        Choose a shapeValue:\n        <select name=\"pets\" @change=${this.shapeChangeEvent}>\n          <option value=\"\">--Please choose an option--</option>\n          <option value=\"rect\" ?selected=${this.shapeValue == 'rect'}>Rect</option>\n          <option value=\"circle\" ?selected=${this.shapeValue == 'circle'}>Circle</option>\n          <option value=\"triangle\" ?selected=${this.shapeValue == 'triangle'}>Triangle</option>\n        </select>\n      </label>\n      <br />\n      <label>\n        Choose a colorValue\n        <input type=\"color\" name=\"head\" value=${this.colorValue} @input=${this.colorInputEvent} />\n      </label>\n    `;\n  }\n\n  colorInputEvent(event) {\n    // console.log('colorInputEvent event', event);\n    this.colorValue = event.target.value;\n  }\n\n  shapeChangeEvent(event) {\n    // console.log('shapeChangeEvent event.target.value', event.target.value, typeof event.target.value);\n    this.shapeValue = event.target.value;\n  }\n\n  radioChangeEvent(event) {\n    // console.log('radioChangeEvent event.target.value', event.target.value);\n    this.radioValue = event.target.value;\n  }\n\n  checkBoxChangeEvent(event) {\n    // console.log('checkBoxChangeEvent event.target.checked', event.target.checked);\n    this.checkBoxValue = event.target.checked;\n  }\n\n  sliderInputEvent(event) {\n    // console.log('sliderInputEvent event.target', event.target);\n    this.sliderValue = parseFloat(event.target.value);\n  }\n\n  updateUpClickEvent(event) {\n    // console.log('updateClickEvent event.target', event.target);\n    this._counter += 1;\n    this.input.value = 'counter=' + this._counter;\n  }\n\n  updateUpMouseDownEvent(event) {\n    console.log('updateUpMouseDownEvent event.target', event.target);\n  }\n\n  updateDownClickEvent(event) {\n    // console.log('updateDownClickEvent event', event);\n    this._counter -= 1;\n    this.input.value = 'counter=' + this._counter;\n  }\n\n  get input() {\n    return this.renderRoot?.querySelector('#id_counterInput') ?? null;\n  }\n}\ncustomElements.define('lit-demo', LitDemo);\n\n// https://editor.p5js.org/jht9629-nyu/sketches/HureJsyBs\n// lit demo v3\n\n// https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event\n// https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event\n\n// https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665f74f210dd48377ae751a4",
+        "isSelectedFile": false,
+        "updatedAt": "2024-06-05T12:44:04.043Z",
+        "createdAt": "2024-06-05T12:44:04.043Z",
+        "id": "665f74f210dd48377ae751a4"
+      },
+      {
+        "name": "store.js",
+        "content": "//\nlet storeKey = 'lit';\n\n// my.lit.elt.constructor.properties\n\nfunction restoreStore() {\n  //\n  my.updateCount = 0;\n  let str = localStorage.getItem(storeKey);\n  if (!str) return;\n  let obj = JSON.parse(str);\n  if (!obj) return;\n  // console.log('restoreStore obj', obj);\n\n  let target = my.lit.elt;\n  for (let prop in obj) {\n    target[prop] = obj[prop];\n  }\n}\n\nfunction storeUpdateCheck() {\n  if (my.updateCount != my.lit.elt.updateCount) {\n    // console.log('checkForChanges my.lit.elt.updateCount', my.lit.elt.updateCount);\n    my.updateCount = my.lit.elt.updateCount;\n    saveStore();\n  }\n}\n\nfunction saveStore() {\n  //\n  let obj = {};\n  let props = my.lit.elt.constructor.properties;\n  let source = my.lit.elt;\n  for (let prop in props) {\n    obj[prop] = source[prop];\n  }\n  let str = JSON.stringify(obj, null, 2);\n  // console.log('saveStore str', str);\n  localStorage.setItem(storeKey, str);\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66605d6e0e0626001a750671",
+        "isSelectedFile": false,
+        "updatedAt": "2024-06-05T12:44:04.043Z",
+        "createdAt": "2024-06-05T12:44:04.043Z",
+        "id": "66605d6e0e0626001a750671"
+      }
+    ],
+    "createdAt": "2024-06-04T20:11:30.145Z",
+    "updatedAt": "2024-06-05T12:44:04.043Z",
+    "id": "W_42_8Enr"
+  },
+  {
+    "name": "lit demo v3",
+    "_id": "HureJsyBs",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "665cb99dbb6fc80c8e625aa5",
+          "665d3ea11615670019ab93fb",
+          "665cb99dbb6fc80c8e625aa6",
+          "665cb99dbb6fc80c8e625aa7",
+          "665cb99dbb6fc80c8e625aa8"
+        ],
+        "fileType": "folder",
+        "_id": "665cb99dbb6fc80c8e625aa4",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-04T15:56:46.960Z",
+        "updatedAt": "2024-06-04T15:56:46.960Z",
+        "id": "665cb99dbb6fc80c8e625aa4"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/HureJsyBs\n// lit demo v3\n\n// Lit demo of UI input elements\n// reference: https://lit.dev/tutorials/intro-to-lit/#8\n\n// Button\n// text input\n// Slider\n// checkbox\n// radio button row\n// selection\n// color\n\nlet my = {};\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  // store new LitDemo html element\n  // defined in lit-demo.js\n  my.lit = createElement('lit-demo');\n\n  // createElement('todo-list');\n\n  // createElement('lit-demo');\n}\n\nfunction draw() {\n  // background('#FF00FF');\n\n  // use color picker value for the background color\n  background(my.lit.elt._colorValue);\n\n  // draw a rect shape in the middle of the canvas\n  // that tracks the slider value from left to right\n  let len = 50;\n  let x = (my.lit.elt._sliderValue / 100) * width;\n  let y = (height - len) / 2;\n  rect(x - len / 2, y, len, len);\n}\n\n// https://lit.dev/tutorials/intro-to-lit/#8\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Ne1xB_wOz\n// lit try v2\n\n// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n\n// https://lit.dev/learn/#filter=tutorial\n\n// https://lit.dev/tutorials/reactivity/#7\n// click to animate\n// https://developer.mozilla.org/en-US/docs/Web/API/Element/animate\n// https://codepen.io/rachelnabors/pen/rxpmJL/?editors=0010\n//  Down the Rabbit Hole (with Web Animations API)\n// https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=cover&range-start-percentage=0&range-end-name=cover&range-end-percentage=100&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=reveal&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes\n// Also check out the View Timeline Ranges Visualizer, which shows exactly what the different values mean in an easy visual format.\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665cb99dbb6fc80c8e625aa6",
+        "isSelectedFile": true,
+        "createdAt": "2024-06-04T15:56:46.960Z",
+        "updatedAt": "2024-06-04T15:56:46.960Z",
+        "id": "665cb99dbb6fc80c8e625aa6"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script> -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />\n    <meta charset=\"utf-8\" />\n\n    <script type=\"module\" src=\"todo-list.js\"></script>\n    <script type=\"module\" src=\"lit-demo.js\"></script>\n\n    <!-- <style>\n      body {\n        font-family: 'Open Sans', sans-serif;\n        font-size: 1.5em;\n        padding-left: 0.5em;\n      }\n    </style>\n     -->\n  </head>\n  <body>\n    <main></main>\n    <script src=\"sketch.js\"></script>\n\n    <!--     <todo-list></todo-list> -->\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665cb99dbb6fc80c8e625aa5",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-04T15:56:46.960Z",
+        "updatedAt": "2024-06-04T15:56:46.960Z",
+        "id": "665cb99dbb6fc80c8e625aa5"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665cb99dbb6fc80c8e625aa7",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-04T15:56:46.960Z",
+        "updatedAt": "2024-06-04T15:56:46.960Z",
+        "id": "665cb99dbb6fc80c8e625aa7"
+      },
+      {
+        "name": "todo-list.js",
+        "content": "// import {LitElement, html, css} from 'lit';\nimport { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';\n// https://lit.dev/tutorials/intro-to-lit/#8\n// https://lit.dev/docs/getting-started/#use-bundles\n\nexport class ToDoList extends LitElement {\n  static properties = {\n    _listItems: { state: true },\n    hideCompleted: {},\n  };\n  static styles = css`\n    .completed {\n      text-decoration-line: line-through;\n      color: #777;\n    }\n  `;\n\n  constructor() {\n    super();\n    this._listItems = [\n      { text: 'Make to-do list', completed: true },\n      { text: 'Complete Lit tutorial', completed: false },\n    ];\n    this.hideCompleted = false;\n  }\n\n  render() {\n    const items = this.hideCompleted ? this._listItems.filter((item) => !item.completed) : this._listItems;\n    const todos = html`\n      <ul>\n        ${items.map(\n          (item) => html` <li class=${item.completed ? 'completed' : ''} @click=${() => this.toggleCompleted(item)}>\n            ${item.text}\n          </li>`\n        )}\n      </ul>\n    `;\n    const caughtUpMessage = html` <p>You're all caught up!</p> `;\n    const todosOrMessage = items.length > 0 ? todos : caughtUpMessage;\n\n    return html`\n      <h2>To Do</h2>\n      ${todosOrMessage}\n      <input id=\"newitem\" aria-label=\"New item\" />\n      <button @click=${this.addToDo}>Add</button>\n      <br />\n      <label>\n        <input type=\"checkbox\" @change=${this.setHideCompleted} ?checked=${this.hideCompleted} />\n        Hide completed\n      </label>\n    `;\n  }\n\n  toggleCompleted(item) {\n    item.completed = !item.completed;\n    this.requestUpdate();\n  }\n\n  setHideCompleted(e) {\n    this.hideCompleted = e.target.checked;\n  }\n\n  get input() {\n    return this.renderRoot?.querySelector('#newitem') ?? null;\n  }\n\n  addToDo() {\n    this._listItems = [...this._listItems, { text: this.input.value, completed: false }];\n    this.input.value = '';\n  }\n}\ncustomElements.define('todo-list', ToDoList);\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665cb99dbb6fc80c8e625aa8",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-04T15:56:46.960Z",
+        "updatedAt": "2024-06-04T15:56:46.960Z",
+        "id": "665cb99dbb6fc80c8e625aa8"
+      },
+      {
+        "name": "lit-demo.js",
+        "content": "//\n// Lit for UI input elements\n// reference: https://lit.dev/tutorials/intro-to-lit/#8\n\n// button\n// text input\n// slider -- input range\n// checkbox\n// radio button row\n// selection\n// color\n\nimport { LitElement, html } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';\n\nexport class LitDemo extends LitElement {\n  static properties = {\n    _counter: { state: true },\n    _sliderValue: { state: true },\n    _checkBoxValue: { state: true },\n    _radioValue: { state: true },\n    _petSelectionValue: { state: true },\n    _colorValue: { state: true },\n  };\n\n  constructor() {\n    super();\n    this._counter = 0;\n    this._sliderValue = 30;\n    this._checkBoxValue = true;\n    this._radioValue = 'louie';\n    this._petSelectionValue = 'dog';\n    this._colorValue = '#ffff00';\n  }\n\n  render() {\n    return html`\n      <h2>Lit Demo counter=${this._counter}</h2>\n      <input id=\"id_counterInput\" value=${'counter=' + this._counter} />\n      <button @click=${this.updateClickEvent}>Update</button> <br />\n      <label>\n        <input  type=\"range\" min=\"0\" max=\"100\" value=${this._sliderValue} @input=${this.sliderInputEvent} />\n        _sliderValue ${this._sliderValue}\n      </label>\n      <br />\n      <label>\n        <input type=\"checkbox\" @change=${this.checkBoxChangeEvent} ?checked=${this._checkBoxValue} />\n        _checkBoxValue\n      </label>\n      <fieldset @change=${this.radioChangeEvent}>\n        <legend>Select a _radioValue:</legend>\n        <label>\n          <input type=\"radio\" id=\"huey\" name=\"drone\" value=\"huey\" ?checked=${this._radioValue == 'huey'} />\n          Huey\n        </label>\n        <label>\n          <input type=\"radio\" id=\"dewey\" name=\"drone\" value=\"dewey\" ?checked=${this._radioValue == 'dewey'} />\n          Dewey\n        </label>\n        <label>\n          <input type=\"radio\" id=\"louie\" name=\"drone\" value=\"louie\" ?checked=${this._radioValue == 'louie'} />\n          Louie\n        </label>\n      </fieldset>\n      <label>\n        Choose a pet for _petSelectionValue:\n        <select name=\"pets\" @change=${this.petChangeEvent}>\n          <option value=\"\">--Please choose an option--</option>\n          <option value=\"dog\" ?selected=${this._petSelectionValue == 'dog'}>Dog</option>\n          <option value=\"cat\" ?selected=${this._petSelectionValue == 'cat'}>Cat</option>\n          <option value=\"ape\" ?selected=${this._petSelectionValue == 'ape'}>Ape</option>\n        </select>\n      </label>\n      <br />\n      <label>\n        Choose a color for _colorValue\n        <input type=\"color\" name=\"head\" value=${this._colorValue} @input=${this.colorChangeEvent} />\n      </label>\n    `;\n  }\n\n  colorChangeEvent(event) {\n    // console.log('colorChangeEvent event', event);\n    console.log('colorChangeEvent event.target', event.target);\n    console.log('colorChangeEvent event.target.value', event.target.value, typeof event.target.value);\n    this._colorValue = event.target.value;\n  }\n\n  petChangeEvent(event) {\n    // console.log('petChangeEvent event', event);\n    console.log('petChangeEvent event.target', event.target);\n    console.log('petChangeEvent event.target.value', event.target.value, typeof event.target.value);\n    this._petSelectionValue = event.target.value;\n  }\n\n  radioChangeEvent(event) {\n    // console.log('radioChangeEvent event', event);\n    // console.log('radioChangeEvent event.target', event.target);\n    console.log('radioChangeEvent event.target.value', event.target.value);\n    this._radioValue = event.target.value;\n  }\n\n  checkBoxChangeEvent(event) {\n    console.log('checkBoxChangeEvent event', event);\n    console.log('checkBoxChangeEvent event.target', event.target);\n    console.log('checkBoxChangeEvent event.target.checked', event.target.checked);\n    this._checkBoxValue = event.target.checked;\n  }\n\n  sliderInputEvent(event) {\n    // console.log('sliderInputEvent event', event);\n    // console.log('sliderInputEvent event.target', event.target);\n    this._sliderValue = parseFloat(event.target.value);\n  }\n\n  updateClickEvent(event) {\n    // console.log('updateClickEvent event', event);\n    console.log('updateClickEvent event.target', event.target);\n    this._counter += 1;\n    this.input.value = 'counter=' + this._counter;\n  }\n\n  get input() {\n    return this.renderRoot?.querySelector('#id_counterInput') ?? null;\n  }\n}\ncustomElements.define('lit-demo', LitDemo);\n\n// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n\n/* -- DOM Reference\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color\n\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date\n\n*/\n\n// <input\n// id=\"id_input2\"\n// type=\"range\"\n// min=\"0\"\n// max=\"100\"\n// value=${this._sliderValue}\n// @input=${this.sliderInputEvent}\n// @change=${this.sliderChangeEvent}\n// />\n// <label for=\"id_input2\">_sliderValue ${this._sliderValue}</label> <br />\n\n// @change=${this.sliderChangeEvent}\n// sliderChangeEvent(event) {\n//   // console.log('sliderChangeEvent event', event);\n//   // console.log('sliderChangeEvent event.target', event.target);\n//   console.log('sliderChangeEvent event.target.value', event.target.value, typeof event.target.value);\n// }\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665d3ea11615670019ab93fb",
+        "isSelectedFile": false,
+        "updatedAt": "2024-06-04T15:56:46.960Z",
+        "createdAt": "2024-06-04T15:56:46.960Z",
+        "id": "665d3ea11615670019ab93fb"
+      }
+    ],
+    "createdAt": "2024-06-02T18:27:41.968Z",
+    "updatedAt": "2024-06-04T15:56:46.960Z",
+    "id": "HureJsyBs"
+  },
+  {
+    "name": "lit demo v3 copy",
+    "_id": "3gXCkmG_F6",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "665dda20cb895e1468554cbf",
+          "665dda20cb895e1468554cc0",
+          "665dda20cb895e1468554cc1",
+          "665dda20cb895e1468554cc2",
+          "665dda20cb895e1468554cc3"
+        ],
+        "fileType": "folder",
+        "_id": "665dda20cb895e1468554cbe",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-03T15:33:43.894Z",
+        "updatedAt": "2024-06-03T15:33:43.894Z",
+        "id": "665dda20cb895e1468554cbe"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/HureJsyBs\n// lit demo v3\n\n// demo of Lit html inputs\n// Button\n// text input\n// Slider\n// checkbox\n// radio button row\n// selection\n// color\n\nlet my = {}\n\nfunction setup() {\n  createCanvas(400, 40);\n\n  // createElement('todo-list');\n\n  my.lit = createElement('lit-demo');\n\n  createElement('todo-list');\n}\n\nfunction draw() {\n  background('red');\n}\n\n// https://lit.dev/tutorials/intro-to-lit/#8\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Ne1xB_wOz\n// lit try v2\n\n// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665dda20cb895e1468554cc1",
+        "isSelectedFile": true,
+        "createdAt": "2024-06-03T15:33:43.894Z",
+        "updatedAt": "2024-06-03T15:33:43.894Z",
+        "id": "665dda20cb895e1468554cc1"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script> -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />\n    <meta charset=\"utf-8\" />\n\n    <script type=\"module\" src=\"todo-list.js\"></script>\n    <script type=\"module\" src=\"lit-demo.js\"></script>\n\n    <!-- <style>\n      body {\n        font-family: 'Open Sans', sans-serif;\n        font-size: 1.5em;\n        padding-left: 0.5em;\n      }\n    </style>\n     -->\n  </head>\n  <body>\n    <main></main>\n    <script src=\"sketch.js\"></script>\n\n    <!--     <todo-list></todo-list> -->\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665dda20cb895e1468554cbf",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-03T15:33:43.894Z",
+        "updatedAt": "2024-06-03T15:33:43.894Z",
+        "id": "665dda20cb895e1468554cbf"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665dda20cb895e1468554cc2",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-03T15:33:43.894Z",
+        "updatedAt": "2024-06-03T15:33:43.894Z",
+        "id": "665dda20cb895e1468554cc2"
+      },
+      {
+        "name": "todo-list.js",
+        "content": "// import {LitElement, html, css} from 'lit';\nimport { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';\n// https://lit.dev/tutorials/intro-to-lit/#8\n// https://lit.dev/docs/getting-started/#use-bundles\n\nexport class ToDoList extends LitElement {\n  static properties = {\n    _listItems: { state: true },\n    hideCompleted: {},\n  };\n  static styles = css`\n    .completed {\n      text-decoration-line: line-through;\n      color: #777;\n    }\n  `;\n\n  constructor() {\n    super();\n    this._listItems = [\n      { text: 'Make to-do list', completed: true },\n      { text: 'Complete Lit tutorial', completed: false },\n    ];\n    this.hideCompleted = false;\n  }\n\n  render() {\n    const items = this.hideCompleted ? this._listItems.filter((item) => !item.completed) : this._listItems;\n    const todos = html`\n      <ul>\n        ${items.map(\n          (item) => html` <li class=${item.completed ? 'completed' : ''} @click=${() => this.toggleCompleted(item)}>\n            ${item.text}\n          </li>`\n        )}\n      </ul>\n    `;\n    const caughtUpMessage = html` <p>You're all caught up!</p> `;\n    const todosOrMessage = items.length > 0 ? todos : caughtUpMessage;\n\n    return html`\n      <h2>To Do</h2>\n      ${todosOrMessage}\n      <input id=\"newitem\" aria-label=\"New item\" />\n      <button @click=${this.addToDo}>Add</button>\n      <br />\n      <label>\n        <input type=\"checkbox\" @change=${this.setHideCompleted} ?checked=${this.hideCompleted} />\n        Hide completed\n      </label>\n    `;\n  }\n\n  toggleCompleted(item) {\n    item.completed = !item.completed;\n    this.requestUpdate();\n  }\n\n  setHideCompleted(e) {\n    this.hideCompleted = e.target.checked;\n  }\n\n  get input() {\n    return this.renderRoot?.querySelector('#newitem') ?? null;\n  }\n\n  addToDo() {\n    this._listItems = [...this._listItems, { text: this.input.value, completed: false }];\n    this.input.value = '';\n  }\n}\ncustomElements.define('todo-list', ToDoList);\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665dda20cb895e1468554cc3",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-03T15:33:43.894Z",
+        "updatedAt": "2024-06-03T15:33:43.894Z",
+        "id": "665dda20cb895e1468554cc3"
+      },
+      {
+        "name": "lit-demo.js",
+        "content": "//\n// Lit for basic UI elements\n// Button\n// text input\n// Slider\n// checkbox\n// radio button row\n// selection\n// color\n\nimport { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';\n\nexport class LitDemo extends LitElement {\n  static properties = {\n    _counter: {},\n    _value2: {},\n    _value3: {},\n    _value4: {},\n    _value5: {},\n    _value6: {},\n  };\n  static styles = css`\n    /* .completed { text-decoration-line: line-through; color: #777; } */\n  `;\n\n  constructor() {\n    super();\n    this._counter = 0;\n    this._value2 = 30;\n    this._value3 = true;\n    this._value4 = 'louie';\n    this._value5 = 'dog';\n    this._value6 = '#ffff00';\n  }\n\n  render() {\n    return html`\n      <h2>Lit Demo counter=${this._counter}</h2>\n      <input id=\"id_input1\" value=${'counter=' + this._counter} />\n      <button @click=${this.update1Action}>Update</button> <br />\n      <input\n        id=\"id_input2\"\n        type=\"range\"\n        min=\"0\"\n        max=\"100\"\n        value=${this._value2}\n        @input=${this.input2Action}\n        @change=${this.change2Action}\n      />\n      <label for=\"id_input2\">Value2 ${this._value2}</label> <br />\n      <label>\n        <input type=\"checkbox\" @change=${this.change3Action} ?checked=${this._value3} />\n        Value3\n      </label>\n      <fieldset @change=${this.change4Action}>\n        <legend>Select a Value4:</legend>\n        <label>\n          <input type=\"radio\" id=\"huey\" name=\"drone\" value=\"huey\" ?checked=${this._value4 == 'huey'} />\n          Huey\n        </label>\n        <label>\n          <input type=\"radio\" id=\"dewey\" name=\"drone\" value=\"dewey\" ?checked=${this._value4 == 'dewey'} />\n          Dewey\n        </label>\n        <label>\n          <input type=\"radio\" id=\"louie\" name=\"drone\" value=\"louie\" ?checked=${this._value4 == 'louie'} />\n          Louie\n        </label>\n      </fieldset>\n      <label>\n        Choose a pet for Value5:\n        <select name=\"pets\" @change=${this.change5Action}>\n          <option value=\"\">--Please choose an option--</option>\n          <option value=\"dog\" ?selected=${this._value5 == 'dog'}>Dog</option>\n          <option value=\"cat\" ?selected=${this._value5 == 'cat'}>Cat</option>\n          <option value=\"ape\" ?selected=${this._value5 == 'ape'}>Ape</option>\n        </select>\n      </label>\n      <br />\n      <label>\n        Choose a color for Value6\n        <input type=\"color\" name=\"head\" value=${this._value6} @change=${this.change6Action} />\n      </label>\n    `;\n  }\n\n  change6Action(event) {\n    // console.log('change6Action event', event);\n    console.log('change6Action event.target', event.target);\n    console.log('change6Action event.target.value', event.target.value, typeof event.target.value);\n    this._value6 = event.target.value;\n  }\n\n  change5Action(event) {\n    // console.log('change5Action event', event);\n    console.log('change5Action event.target', event.target);\n    console.log('change5Action event.target.value', event.target.value, typeof event.target.value);\n    this._value5 = event.target.value;\n  }\n\n  change4Action(event) {\n    // console.log('change4Action event', event);\n    // console.log('change4Action event.target', event.target);\n    console.log('change4Action event.target.value', event.target.value);\n    this._value4 = event.target.value;\n  }\n\n  change3Action(event) {\n    console.log('change3Action event', event);\n    console.log('change3Action event.target', event.target);\n    console.log('change3Action event.target.checked', event.target.checked);\n    this._value3 = event.target.checked;\n  }\n\n  input2Action(event) {\n    // console.log('input2Action event', event);\n    // console.log('input2Action event.target', event.target);\n    this._value2 = parseFloat(event.target.value);\n  }\n  change2Action(event) {\n    // console.log('change2Action event', event);\n    // console.log('change2Action event.target', event.target);\n    console.log('change2Action event.target.value', event.target.value, typeof event.target.value);\n  }\n\n  update1Action(event) {\n    // console.log('update1Action event', event);\n    console.log('update1Action event.target', event.target);\n    this._counter += 1;\n    this.input.value = 'counter=' + this._counter;\n  }\n\n  get input() {\n    return this.renderRoot?.querySelector('#id_input1') ?? null;\n  }\n}\ncustomElements.define('lit-demo', LitDemo);\n\n// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n\n/* -- DOM Reference\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color\n\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset\n  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date\n\n*/\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665dda20cb895e1468554cc0",
+        "isSelectedFile": false,
+        "updatedAt": "2024-06-03T15:33:43.894Z",
+        "createdAt": "2024-06-03T15:33:43.894Z",
+        "id": "665dda20cb895e1468554cc0"
+      }
+    ],
+    "createdAt": "2024-06-03T14:58:40.910Z",
+    "updatedAt": "2024-06-03T15:33:43.894Z",
+    "id": "3gXCkmG_F6"
+  },
+  {
+    "name": "lit try v1",
+    "_id": "ph3r7SnYK",
+    "updatedAt": "2024-05-28T07:28:20.528Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "665586fefaffe4693c2db2f1",
+          "665586fefaffe4693c2db2f2",
+          "665586fefaffe4693c2db2f0"
+        ],
+        "fileType": "folder",
+        "_id": "665586fefaffe4693c2db2f3",
+        "isSelectedFile": false,
+        "createdAt": "2024-05-28T07:28:20.528Z",
+        "updatedAt": "2024-05-28T07:28:20.528Z",
+        "id": "665586fefaffe4693c2db2f3"
+      },
+      {
+        "name": "todo-list.js",
+        "content": "// import {LitElement, html, css} from 'lit';\nimport { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';\n// https://lit.dev/tutorials/intro-to-lit/#8\n// https://lit.dev/docs/getting-started/#use-bundles\n\n// TypeError: Cannot read properties of undefined (reading '_report')\n\nexport class ToDoList extends LitElement {\n  static properties = {\n    _listItems: { state: true },\n    hideCompleted: {},\n  };\n  static styles = css`\n    .completed {\n      text-decoration-line: line-through;\n      color: #777;\n    }\n  `;\n\n  constructor() {\n    super();\n    this._listItems = [\n      { text: 'Make to-do list', completed: true },\n      { text: 'Complete Lit tutorial', completed: false },\n    ];\n    this.hideCompleted = false;\n  }\n\n  render() {\n    const items = this.hideCompleted ? this._listItems.filter((item) => !item.completed) : this._listItems;\n    const todos = html`\n      <ul>\n        ${items.map(\n          (item) => html` <li class=${item.completed ? 'completed' : ''} @click=${() => this.toggleCompleted(item)}>\n            ${item.text}\n          </li>`\n        )}\n      </ul>\n    `;\n    const caughtUpMessage = html` <p>You're all caught up!</p> `;\n    const todosOrMessage = items.length > 0 ? todos : caughtUpMessage;\n\n    return html`\n      <h2>To Do</h2>\n      ${todosOrMessage}\n      <input id=\"newitem\" aria-label=\"New item\" />\n      <button @click=${this.addToDo}>Add</button>\n      <br />\n      <label>\n        <input type=\"checkbox\" @change=${this.setHideCompleted} ?checked=${this.hideCompleted} />\n        Hide completed\n      </label>\n    `;\n  }\n\n  toggleCompleted(item) {\n    item.completed = !item.completed;\n    this.requestUpdate();\n  }\n\n  setHideCompleted(e) {\n    this.hideCompleted = e.target.checked;\n  }\n\n  get input() {\n    return this.renderRoot?.querySelector('#newitem') ?? null;\n  }\n\n  addToDo() {\n    this._listItems = [...this._listItems, { text: this.input.value, completed: false }];\n    this.input.value = '';\n  }\n}\ncustomElements.define('todo-list', ToDoList);\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665586fefaffe4693c2db2f0",
+        "isSelectedFile": true,
+        "createdAt": "2024-05-28T07:28:20.528Z",
+        "updatedAt": "2024-05-28T07:28:20.528Z",
+        "id": "665586fefaffe4693c2db2f0"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html>\n  <head>\n    <script type=\"module\" src=\"todo-list.js\"></script>\n    <style>\n      body {\n        font-family: 'Open Sans', sans-serif;\n        font-size: 1.5em;\n        padding-left: 0.5em;\n      }\n    </style>\n  </head>\n  <body>\n    <todo-list></todo-list>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665586fefaffe4693c2db2f1",
+        "isSelectedFile": false,
+        "createdAt": "2024-05-28T07:28:20.528Z",
+        "updatedAt": "2024-05-28T07:28:20.528Z",
+        "id": "665586fefaffe4693c2db2f1"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665586fefaffe4693c2db2f2",
+        "isSelectedFile": false,
+        "createdAt": "2024-05-28T07:28:20.528Z",
+        "updatedAt": "2024-05-28T07:28:20.528Z",
+        "id": "665586fefaffe4693c2db2f2"
+      }
+    ],
+    "createdAt": "2024-05-28T07:26:33.242Z",
+    "id": "ph3r7SnYK"
+  },
+  {
+    "name": "lit try v2",
+    "_id": "Ne1xB_wOz",
+    "updatedAt": "2024-06-01T20:25:35.105Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "665587e6335bc2270f32b171",
+          "665587e6335bc2270f32b170",
+          "665587e6335bc2270f32b172",
+          "66558832335bc2270f32b174"
+        ],
+        "fileType": "folder",
+        "_id": "665587e6335bc2270f32b173",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-01T20:25:35.105Z",
+        "updatedAt": "2024-06-01T20:25:35.105Z",
+        "id": "665587e6335bc2270f32b173"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Ne1xB_wOz\n// lit try v2 \n\n// ToDoList example added to p5js\n\nfunction setup() {\n  createCanvas(400, 40);\n}\n\nfunction draw() {\n  background('red');\n}\n\n// https://lit.dev/tutorials/intro-to-lit/#8\n\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665587e6335bc2270f32b170",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-01T20:25:35.105Z",
+        "updatedAt": "2024-06-01T20:25:35.105Z",
+        "id": "665587e6335bc2270f32b170"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n    <script type=\"module\" src=\"todo-list.js\"></script>\n    \n    <style>\n      body {\n        font-family: 'Open Sans', sans-serif;\n        font-size: 1.5em;\n        padding-left: 0.5em;\n      }\n    </style>\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n    \n    <todo-list></todo-list>\n\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665587e6335bc2270f32b171",
+        "isSelectedFile": true,
+        "createdAt": "2024-06-01T20:25:35.105Z",
+        "updatedAt": "2024-06-01T20:25:35.105Z",
+        "id": "665587e6335bc2270f32b171"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665587e6335bc2270f32b172",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-01T20:25:35.105Z",
+        "updatedAt": "2024-06-01T20:25:35.105Z",
+        "id": "665587e6335bc2270f32b172"
+      },
+      {
+        "name": "todo-list.js",
+        "content": "// import {LitElement, html, css} from 'lit';\nimport { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';\n// https://lit.dev/tutorials/intro-to-lit/#8\n// https://lit.dev/docs/getting-started/#use-bundles\n\nexport class ToDoList extends LitElement {\n  static properties = {\n    _listItems: { state: true },\n    hideCompleted: {},\n  };\n  static styles = css`\n    .completed {\n      text-decoration-line: line-through;\n      color: #777;\n    }\n  `;\n\n  constructor() {\n    super();\n    this._listItems = [\n      { text: 'Make to-do list', completed: true },\n      { text: 'Complete Lit tutorial', completed: false },\n    ];\n    this.hideCompleted = false;\n  }\n\n  render() {\n    const items = this.hideCompleted ? this._listItems.filter((item) => !item.completed) : this._listItems;\n    const todos = html`\n      <ul>\n        ${items.map(\n          (item) => html` <li class=${item.completed ? 'completed' : ''} @click=${() => this.toggleCompleted(item)}>\n            ${item.text}\n          </li>`\n        )}\n      </ul>\n    `;\n    const caughtUpMessage = html` <p>You're all caught up!</p> `;\n    const todosOrMessage = items.length > 0 ? todos : caughtUpMessage;\n\n    return html`\n      <h2>To Do</h2>\n      ${todosOrMessage}\n      <input id=\"newitem\" aria-label=\"New item\" />\n      <button @click=${this.addToDo}>Add</button>\n      <br />\n      <label>\n        <input type=\"checkbox\" @change=${this.setHideCompleted} ?checked=${this.hideCompleted} />\n        Hide completed\n      </label>\n    `;\n  }\n\n  toggleCompleted(item) {\n    item.completed = !item.completed;\n    this.requestUpdate();\n  }\n\n  setHideCompleted(e) {\n    this.hideCompleted = e.target.checked;\n  }\n\n  get input() {\n    return this.renderRoot?.querySelector('#newitem') ?? null;\n  }\n\n  addToDo() {\n    this._listItems = [...this._listItems, { text: this.input.value, completed: false }];\n    this.input.value = '';\n  }\n}\ncustomElements.define('todo-list', ToDoList);\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66558832335bc2270f32b174",
+        "isSelectedFile": false,
+        "createdAt": "2024-06-01T20:25:35.105Z",
+        "updatedAt": "2024-06-01T20:25:35.105Z",
+        "id": "66558832335bc2270f32b174"
+      }
+    ],
+    "createdAt": "2024-05-28T07:31:07.110Z",
+    "id": "Ne1xB_wOz"
+  },
+  {
     "name": "Lying pillow",
     "_id": "fbqvrSaz7",
     "updatedAt": "2024-02-28T17:37:52.483Z",
@@ -10261,6 +10930,60 @@
     "createdAt": "2023-10-31T14:32:01.548Z",
     "updatedAt": "2023-10-31T15:53:48.349Z",
     "id": "pwLiHkndo"
+  },
+  {
+    "name": "Midi skateboard",
+    "_id": "a-eGj5GxX",
+    "updatedAt": "2024-05-30T16:26:41.171Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6658a8b1670adc13d6df65c1",
+          "6658a8b1670adc13d6df65c0",
+          "6658a8b1670adc13d6df65c2"
+        ],
+        "fileType": "folder",
+        "_id": "6658a8b1670adc13d6df65c3",
+        "createdAt": "2024-05-30T16:26:41.171Z",
+        "updatedAt": "2024-05-30T16:26:41.171Z",
+        "id": "6658a8b1670adc13d6df65c3"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/a-eGj5GxX\n// mouse rect\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);\n}\n\nfunction draw() {\n  background(220,1);\n  noStroke()\n  fill(mouseX,0,mouseY)\n  rect(width/2-mouseX/2,height/2-mouseY/2,mouseX, mouseY)\n}",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658a8b1670adc13d6df65c0",
+        "isSelectedFile": true,
+        "createdAt": "2024-05-30T16:26:41.171Z",
+        "updatedAt": "2024-05-30T16:26:41.171Z",
+        "id": "6658a8b1670adc13d6df65c0"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658a8b1670adc13d6df65c1",
+        "createdAt": "2024-05-30T16:26:41.171Z",
+        "updatedAt": "2024-05-30T16:26:41.171Z",
+        "id": "6658a8b1670adc13d6df65c1"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658a8b1670adc13d6df65c2",
+        "createdAt": "2024-05-30T16:26:41.171Z",
+        "updatedAt": "2024-05-30T16:26:41.171Z",
+        "id": "6658a8b1670adc13d6df65c2"
+      }
+    ],
+    "createdAt": "2024-05-30T16:26:30.318Z",
+    "id": "a-eGj5GxX"
   },
   {
     "name": "mo-pixel-grid",
@@ -13192,6 +13915,63 @@
     "createdAt": "2023-07-31T01:25:18.103Z",
     "updatedAt": "2023-07-31T01:28:52.505Z",
     "id": "UePTr_GLf"
+  },
+  {
+    "name": "pages",
+    "_id": "ZR8mNfmUZ",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "665778ba21315ec5cb9a36eb",
+          "665778ba21315ec5cb9a36ec",
+          "665778ba21315ec5cb9a36ed"
+        ],
+        "fileType": "folder",
+        "_id": "665778ba21315ec5cb9a36ea",
+        "createdAt": "2024-05-29T19:33:10.317Z",
+        "updatedAt": "2024-05-29T19:33:10.317Z",
+        "isSelectedFile": false,
+        "id": "665778ba21315ec5cb9a36ea"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/ZR8mNfmUZ\n// pages\n\nlet my = { };\n\nfunction setup() {\n  \n  my.version = 2;\n  my.width = 393; // canvas width\n  my.height = 600; // canvas height\n  my.counter = 1;\n\n  createCanvas(my.width, my.height);\n\n  createDiv(\"Press the mouse to advance to next page\");\n  createDiv(\"Version:\" + my.version);\n}\n\nfunction draw() {\n  background(255);\n  \n  fill(\"black\");\n  textSize(64);\n  text(\"Page \"+my.counter, 20, 64);\n  \n  if (my.counter == 1) {\n    draw_page1();\n  }\n  if (my.counter == 2) {\n    draw_page2();\n  }\n  if (my.counter == 3) {\n    draw_page3();\n  }\n}\n\nfunction mousePressed() {\n  my.counter = my.counter + 1;\n  if (my.counter > 4) { \n    my.counter = 1;\n  }\n}\n\nfunction draw_page1() {\n  fill(\"red\");\n  let x0 = width / 2;\n  let y0 = height / 2;\n  rect(x0 - 50, y0 - 50, 100, 100);\n}\n\nfunction draw_page2() {\n  fill(\"green\");\n  let x0 = width / 2;\n  let y0 = height / 2;\n  circle(x0, y0, width);\n}\n\nfunction draw_page3() {\n  fill(\"gold\");\n  let x0 = width / 2;\n  let y0 = height / 2;\n  let x1 = x0 - 100;\n  let y1 = y0 + 100;\n  let x2 = x0 + 100;\n  let y2 = y1;\n  let x3 = x0 ;\n  let y3 = y0 - 100;\n  triangle(x1, y1, x2, y2, x3, y3)\n}\n\n\n\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665778ba21315ec5cb9a36ec",
+        "isSelectedFile": true,
+        "createdAt": "2024-05-29T19:33:10.317Z",
+        "updatedAt": "2024-05-29T19:33:10.317Z",
+        "id": "665778ba21315ec5cb9a36ec"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>    \n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" /> -->\n    <style>\n      html, body {\n        margin: 0;\n        padding: 0;\n      }\n\n      canvas {\n        display: block;\n      }\n    </style>\n\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665778ba21315ec5cb9a36eb",
+        "createdAt": "2024-05-29T19:33:10.317Z",
+        "updatedAt": "2024-05-29T19:33:10.317Z",
+        "isSelectedFile": false,
+        "id": "665778ba21315ec5cb9a36eb"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "665778ba21315ec5cb9a36ed",
+        "createdAt": "2024-05-29T19:33:10.317Z",
+        "updatedAt": "2024-05-29T19:33:10.317Z",
+        "isSelectedFile": false,
+        "id": "665778ba21315ec5cb9a36ed"
+      }
+    ],
+    "createdAt": "2024-05-29T18:49:30.136Z",
+    "updatedAt": "2024-05-29T19:33:10.317Z",
+    "id": "ZR8mNfmUZ"
   },
   {
     "name": "Patch neem by bigmouthflower",
@@ -17286,8 +18066,8 @@
         "fileType": "folder",
         "_id": "6651352946816bf876284c07",
         "isSelectedFile": false,
-        "createdAt": "2024-05-27T01:14:39.445Z",
-        "updatedAt": "2024-05-27T01:14:39.445Z",
+        "createdAt": "2024-06-03T04:03:10.080Z",
+        "updatedAt": "2024-06-03T04:03:10.080Z",
         "id": "6651352946816bf876284c07"
       },
       {
@@ -17297,8 +18077,8 @@
         "fileType": "file",
         "_id": "6651352946816bf876284c08",
         "isSelectedFile": false,
-        "createdAt": "2024-05-27T01:14:39.445Z",
-        "updatedAt": "2024-05-27T01:14:39.445Z",
+        "createdAt": "2024-06-03T04:03:10.080Z",
+        "updatedAt": "2024-06-03T04:03:10.080Z",
         "id": "6651352946816bf876284c08"
       },
       {
@@ -17308,24 +18088,24 @@
         "fileType": "file",
         "_id": "6651352946816bf876284c0a",
         "isSelectedFile": false,
-        "createdAt": "2024-05-27T01:14:39.445Z",
-        "updatedAt": "2024-05-27T01:14:39.445Z",
+        "createdAt": "2024-06-03T04:03:10.080Z",
+        "updatedAt": "2024-06-03T04:03:10.080Z",
         "id": "6651352946816bf876284c0a"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n  // Button\n  // text input\n  // Slider\n  // checkbox\n  // radio button row\n  // selection\n  // color, note difference Safari vs. Chrome\n\n// I prefer DOM.set array style, \n//  less prone to error from duplicate propery names\n\nlet counter = 0;\n\n\n// function render() {\nDOM.set([\n  //\n  // Button\n  {\n    tag: \"button\",\n    id: \"changeBtn\",\n    text: \"Change Button\",\n    onclick: (event) => {\n      counter++;\n      myInput.value = \"Button pressed \" + counter;\n    },\n  },\n  { tag: \"br\" },\n  //\n  // text input\n  {\n    tag: \"input\",\n    id: \"myInput\",\n    placeholder: \"myInput placeholder\",\n    oninput: (event) => console.log(\"myInput oninput: \" + myInput.value),\n    onchange: (event) => console.log(\"myInput onchange: \" + myInput.value),\n    click: (event) => console.log(\"myInput click \" + myInput.value),\n  },\n  { tag: \"br\" },\n  //\n  // Slider\n  {\n    tag: \"input\",\n    id: \"myInput2\",\n    type: \"range\",\n    min: 0,\n    max: 100,\n    // step: \"any\",\n    value: 50,\n    // placeholder: \"myInput2 placeholder\",\n    oninput: (event) => {\n      console.log(\"myInput2 oninput: \" + myInput2.value);\n      // myInput2_span.textContent = myInput2.value;\n      myInput2_label.textContent = \"myInput2 oninput: \" + myInput2.value;\n    },\n    onchange: (event) => {\n      console.log(\"myInput2 onchange: \" + myInput2.value);\n      // myInput2_span.textContent = myInput2.value;\n      // myInput2_label.textContent = myInput2.value;\n    },\n  },\n  {\n    tag: \"label\",\n    id: \"myInput2_label\",\n    for: \"myInput2\",\n    text: \"50\",\n  },\n  // {\n  //   tag: \"span\",\n  //   id: \"myInput2_span\",\n  //   text: \"50\",\n  // },\n  { tag: \"br\" },\n  //\n  // checkbox\n  {\n    tag: \"input\",\n    type: \"checkbox\",\n    id: \"myInput3\",\n    placeholder: \"myInput3 placeholder\",\n    onchange: (event) => console.log(\"myInput3 onchange: \" + myInput3.checked),\n  },\n  {\n    tag: \"label\",\n    id: \"myInput3_label\",\n    for: \"myInput3\",\n    text: \"Checkbox\",\n  },\n  { tag: \"br\" },\n  //\n  // radio button row\n  {\n    tag: \"input\",\n    type: \"radio\",\n    id: \"myInput4\",\n    name: \"drone\",\n    onchange: (event) => console.log(\"myInput4 onchange: \" + myInput4.checked),\n  },\n  {\n    tag: \"label\",\n    id: \"myInput4_label\",\n    for: \"myInput4\",\n    text: \"Heuy\",\n  },\n  {\n    tag: \"input\",\n    type: \"radio\",\n    id: \"myInput5\",\n    name: \"drone\",\n    onchange: (event) => console.log(\"myInput5 onchange: \" + myInput5.checked),\n  },\n  {\n    tag: \"label\",\n    id: \"myInput5_label\",\n    for: \"myInput5\",\n    text: \"Dewey\",\n  },\n  {\n    tag: \"input\",\n    type: \"radio\",\n    id: \"myInput6\",\n    name: \"drone\",\n    onchange: (event) => console.log(\"myInput6 onchange: \" + myInput6.checked),\n  },\n  {\n    tag: \"label\",\n    id: \"myInput6_label\",\n    for: \"myInput6\",\n    text: \"Louie\",\n  },\n  { tag: \"br\" },\n  //\n  // selection\n  {\n    tag: \"label\",\n    id: \"myInput7_label\",\n    for: \"myInput7\",\n    text: \"Choose a pet:\",\n  },\n  {\n    tag: \"select\",\n    id: \"myInput7\",\n    onchange: (event) => console.log(\"myInput7 onchange: \" + myInput7.value),\n    elements: [\n      {\n        tag: \"option\",\n        value: \"dog\",\n        text: \"Dog\",\n      },\n      {\n        tag: \"option\",\n        value: \"cat\",\n        text: \"Cat\",\n      },\n      {\n        tag: \"option\",\n        value: \"hamster\",\n        text: \"Hamster\",\n      },\n    ],\n  },\n  { tag: \"br\" },\n  //\n  // color\n  {\n    tag: \"label\",\n    id: \"myInput8_label\",\n    for: \"myInput8\",\n    text: \"Choose a color:\",\n  },\n  {\n    tag: \"input\",\n    type: \"color\",\n    id: \"myInput8\",\n    value: \"#FFFF00\",\n    onchange: (event) => console.log(\"myInput8 onchange: \" + myInput8.value),\n  },\n\n]);\n\n// myInput.style.border = \"none\";\n// changeBtn.click();\n\nmyInput3.checked = true;\n\n// }\n\n// function setup() {\n// render()\n// }\n\n/* -- DOM Reference\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/select\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset\n*/\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/G3arjv8UF\n// test drive DOM.js v10 inputs\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n\n  // Button\n  // text input\n  // Slider\n  // checkbox\n  // radio button row\n  // selection\n  // color, note difference Safari vs. Chrome\n\n// I prefer DOM.set array style, \n//  less prone to error from duplicate propery names\n\nlet counter = 0;\n\n\n// function render() {\nDOM.set([\n  //\n  // Button\n  {\n    tag: \"button\",\n    id: \"changeBtn\",\n    text: \"Change Button\",\n    onclick: (event) => {\n      // console.log('changeBtn event', event);\n      console.log('changeBtn event.target', event.target);\n      counter++;\n      myInput.value = \"Button pressed \" + counter;\n    },\n  },\n  { tag: \"br\" },\n  //\n  // text input\n  {\n    tag: \"input\",\n    id: \"myInput\",\n    placeholder: \"myInput placeholder\",\n    oninput: (event) => console.log(\"myInput oninput: \" + myInput.value),\n    onchange: (event) => console.log(\"myInput onchange: \" + myInput.value),\n    click: (event) => console.log(\"myInput click \" + myInput.value),\n  },\n  { tag: \"br\" },\n  //\n  // Slider\n  {\n    tag: \"input\",\n    id: \"myInput2\",\n    type: \"range\",\n    min: 0,\n    max: 100,\n    // step: \"any\",\n    value: 50,\n    // placeholder: \"myInput2 placeholder\",\n    oninput: (event) => {\n      console.log(\"myInput2 oninput: \" + myInput2.value);\n      // myInput2_span.textContent = myInput2.value;\n      myInput2_label.textContent = \"myInput2 oninput: \" + myInput2.value;\n    },\n    onchange: (event) => {\n      console.log(\"myInput2 onchange: \" + myInput2.value);\n      // myInput2_span.textContent = myInput2.value;\n      // myInput2_label.textContent = myInput2.value;\n    },\n  },\n  {\n    tag: \"label\",\n    id: \"myInput2_label\",\n    for: \"myInput2\",\n    text: \"50\",\n  },\n  // {\n  //   tag: \"span\",\n  //   id: \"myInput2_span\",\n  //   text: \"50\",\n  // },\n  { tag: \"br\" },\n  //\n  // checkbox\n  {\n    tag: \"input\",\n    type: \"checkbox\",\n    id: \"myInput3\",\n    placeholder: \"myInput3 placeholder\",\n    onchange: (event) => console.log(\"myInput3 onchange: \" + myInput3.checked),\n  },\n  {\n    tag: \"label\",\n    id: \"myInput3_label\",\n    for: \"myInput3\",\n    text: \"Checkbox\",\n  },\n  { tag: \"br\" },\n  //\n  // radio button row\n  {\n    tag: \"input\",\n    type: \"radio\",\n    id: \"myInput4\",\n    name: \"drone\",\n    onchange: (event) => console.log(\"myInput4 onchange: \" + myInput4.checked),\n  },\n  {\n    tag: \"label\",\n    id: \"myInput4_label\",\n    for: \"myInput4\",\n    text: \"Heuy\",\n  },\n  {\n    tag: \"input\",\n    type: \"radio\",\n    id: \"myInput5\",\n    name: \"drone\",\n    onchange: (event) => console.log(\"myInput5 onchange: \" + myInput5.checked),\n  },\n  {\n    tag: \"label\",\n    id: \"myInput5_label\",\n    for: \"myInput5\",\n    text: \"Dewey\",\n  },\n  {\n    tag: \"input\",\n    type: \"radio\",\n    id: \"myInput6\",\n    name: \"drone\",\n    onchange: (event) => console.log(\"myInput6 onchange: \" + myInput6.checked),\n  },\n  {\n    tag: \"label\",\n    id: \"myInput6_label\",\n    for: \"myInput6\",\n    text: \"Louie\",\n  },\n  { tag: \"br\" },\n  //\n  // selection\n  {\n    tag: \"label\",\n    id: \"myInput7_label\",\n    for: \"myInput7\",\n    text: \"Choose a pet:\",\n  },\n  {\n    tag: \"select\",\n    id: \"myInput7\",\n    onchange: (event) => console.log(\"myInput7 onchange: \" + myInput7.value),\n    elements: [\n      {\n        tag: \"option\",\n        value: \"dog\",\n        text: \"Dog\",\n      },\n      {\n        tag: \"option\",\n        value: \"cat\",\n        text: \"Cat\",\n      },\n      {\n        tag: \"option\",\n        value: \"hamster\",\n        text: \"Hamster\",\n      },\n    ],\n  },\n  { tag: \"br\" },\n  //\n  // color\n  {\n    tag: \"label\",\n    id: \"myInput8_label\",\n    for: \"myInput8\",\n    text: \"Choose a color:\",\n  },\n  {\n    tag: \"input\",\n    type: \"color\",\n    id: \"myInput8\",\n    value: \"#FFFF00\",\n    onchange: (event) => console.log(\"myInput8 onchange: \" + myInput8.value),\n  },\n\n]);\n\n// myInput.style.border = \"none\";\n// changeBtn.click();\n\nmyInput3.checked = true;\n\n// }\n\n// function setup() {\n// render()\n// }\n\n/* -- DOM Reference\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/select\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset\n*/\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/G3arjv8UF\n// test drive DOM.js v10 inputs\n",
         "children": [],
         "fileType": "file",
         "_id": "6651352946816bf876284c09",
         "isSelectedFile": true,
-        "updatedAt": "2024-05-27T01:14:39.445Z",
-        "createdAt": "2024-05-27T01:14:39.445Z",
+        "updatedAt": "2024-06-03T04:03:10.080Z",
+        "createdAt": "2024-06-03T04:03:10.080Z",
         "id": "6651352946816bf876284c09"
       }
     ],
     "createdAt": "2024-05-25T00:47:37.507Z",
-    "updatedAt": "2024-05-27T01:14:39.445Z",
+    "updatedAt": "2024-06-03T04:03:10.080Z",
     "id": "AwB8tHJ15"
   },
   {
@@ -18771,6 +19551,60 @@
     "createdAt": "2023-11-06T22:23:51.997Z",
     "updatedAt": "2023-11-13T18:10:28.998Z",
     "id": "D1lGG8qKZ"
+  },
+  {
+    "name": "Uncovered snap",
+    "_id": "1qrEj3-wr",
+    "updatedAt": "2024-05-30T16:07:51.763Z",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6658a4470841fa8383afb1e0",
+          "6658a4470841fa8383afb1df",
+          "6658a4470841fa8383afb1e1"
+        ],
+        "fileType": "folder",
+        "_id": "6658a4470841fa8383afb1e2",
+        "createdAt": "2024-05-30T16:07:51.763Z",
+        "updatedAt": "2024-05-30T16:07:51.763Z",
+        "id": "6658a4470841fa8383afb1e2"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-gmail/sketches/1qrEj3-wr\n// mouse ellipse\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight - 50);\n  // createA('../rect','next')\n}\n\nfunction draw() {\n  background(220, 5);\n  noStroke();\n  fill(mouseX, 0, mouseY);\n  ellipse(width / 2, height / 2, mouseX, mouseY);\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658a4470841fa8383afb1df",
+        "isSelectedFile": true,
+        "createdAt": "2024-05-30T16:07:51.763Z",
+        "updatedAt": "2024-05-30T16:07:51.763Z",
+        "id": "6658a4470841fa8383afb1df"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658a4470841fa8383afb1e0",
+        "createdAt": "2024-05-30T16:07:51.763Z",
+        "updatedAt": "2024-05-30T16:07:51.763Z",
+        "id": "6658a4470841fa8383afb1e0"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6658a4470841fa8383afb1e1",
+        "createdAt": "2024-05-30T16:07:51.763Z",
+        "updatedAt": "2024-05-30T16:07:51.763Z",
+        "id": "6658a4470841fa8383afb1e1"
+      }
+    ],
+    "createdAt": "2024-05-30T16:07:44.803Z",
+    "id": "1qrEj3-wr"
   },
   {
     "name": "video meter rgb long",
@@ -20419,5 +21253,62 @@
     "createdAt": "2023-10-10T19:26:35.203Z",
     "updatedAt": "2023-10-10T19:26:35.203Z",
     "id": "B6L5fhfSn"
+  },
+  {
+    "name": "xpos counter",
+    "_id": "FGY0TBrSEf",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66577652baa706cb04a347d6",
+          "66577652baa706cb04a347d7",
+          "66577652baa706cb04a347d8"
+        ],
+        "fileType": "folder",
+        "_id": "66577652baa706cb04a347d5",
+        "createdAt": "2024-05-29T18:48:22.849Z",
+        "updatedAt": "2024-05-29T18:48:22.849Z",
+        "isSelectedFile": false,
+        "id": "66577652baa706cb04a347d5"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/FGY0TBrSEf\n// xpos counter\n\nlet my = { };\n\nfunction setup() {\n  \n  my.version = 2;\n  my.width = 393; // canvas width\n  my.height = 600; // canvas height\n  my.xpos = 0;\n  my.xstep = 10;\n\n  createCanvas(my.width, my.height);\n\n  createDiv(\"Version:\" + my.version);\n}\n\nfunction draw() {\n  background(255);\n  \n  fill(\"red\");\n  textSize(64);\n  text(\"Hello screen\", 20, 64);\n  \n  fill('yellow');\n  rect(my.xpos, height / 2, 10, 10);\n  \n  my.xpos = my.xpos + my.xstep;\n  if (my.xpos > width) { \n    my.xpos = 0;\n  }\n}\n\n\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66577652baa706cb04a347d7",
+        "isSelectedFile": true,
+        "createdAt": "2024-05-29T18:48:22.849Z",
+        "updatedAt": "2024-05-29T18:48:22.849Z",
+        "id": "66577652baa706cb04a347d7"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>    \n    <!-- <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" /> -->\n    <style>\n      html, body {\n        margin: 0;\n        padding: 0;\n      }\n\n      canvas {\n        display: block;\n      }\n    </style>\n\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66577652baa706cb04a347d6",
+        "createdAt": "2024-05-29T18:48:22.849Z",
+        "updatedAt": "2024-05-29T18:48:22.849Z",
+        "isSelectedFile": false,
+        "id": "66577652baa706cb04a347d6"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66577652baa706cb04a347d8",
+        "createdAt": "2024-05-29T18:48:22.849Z",
+        "updatedAt": "2024-05-29T18:48:22.849Z",
+        "isSelectedFile": false,
+        "id": "66577652baa706cb04a347d8"
+      }
+    ],
+    "createdAt": "2024-05-29T18:39:14.419Z",
+    "updatedAt": "2024-05-29T18:48:22.849Z",
+    "id": "FGY0TBrSEf"
   }
 ]

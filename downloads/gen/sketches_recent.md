@@ -1,6 +1,21 @@
 # Sketches for jht9629-nyu
-313 sketches  
-[test drive DOM.js v11 inputs](https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15)<!-- 2024-05-27T01:14:39.445Z -->  
+327 sketches  
+[lit demo storage v3](https://editor.p5js.org/jht9629-nyu/sketches/W_42_8Enr)<!-- 2024-06-05T12:44:04.043Z -->  
+[lit demo v3](https://editor.p5js.org/jht9629-nyu/sketches/HureJsyBs)<!-- 2024-06-04T15:56:46.960Z -->  
+[lit demo v3 copy](https://editor.p5js.org/jht9629-nyu/sketches/3gXCkmG_F6)<!-- 2024-06-03T15:33:43.894Z -->  
+[test drive DOM.js v11 inputs](https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15)<!-- 2024-06-03T04:03:10.080Z -->  
+[lit try v2](https://editor.p5js.org/jht9629-nyu/sketches/Ne1xB_wOz)<!-- 2024-06-01T20:25:35.105Z -->  
+[Figma in 30](https://editor.p5js.org/jht9629-nyu/sketches/zxQh9muLd)<!-- 2024-05-31T16:33:31.314Z -->  
+[GSP p12](https://editor.p5js.org/jht9629-nyu/sketches/kSKBFc7kM)<!-- 2024-05-30T19:55:32.798Z -->  
+[GSP p19-23](https://editor.p5js.org/jht9629-nyu/sketches/8PvuBvggo)<!-- 2024-05-30T19:55:27.283Z -->  
+[Midi skateboard](https://editor.p5js.org/jht9629-nyu/sketches/a-eGj5GxX)<!-- 2024-05-30T16:26:41.171Z -->  
+[if, boolean - match](https://editor.p5js.org/jht9629-nyu/sketches/miVmKSy3t)<!-- 2024-05-30T16:12:27.551Z -->  
+[Uncovered snap](https://editor.p5js.org/jht9629-nyu/sketches/1qrEj3-wr)<!-- 2024-05-30T16:07:51.763Z -->  
+[pages](https://editor.p5js.org/jht9629-nyu/sketches/ZR8mNfmUZ)<!-- 2024-05-29T19:33:10.317Z -->  
+[xpos counter](https://editor.p5js.org/jht9629-nyu/sketches/FGY0TBrSEf)<!-- 2024-05-29T18:48:22.849Z -->  
+[draw-rainbow](https://editor.p5js.org/jht9629-nyu/sketches/bJwxdGIpX)<!-- 2024-05-29T18:38:05.231Z -->  
+[Futility\_Clarity by Carrie Wang](https://editor.p5js.org/jht9629-nyu/sketches/wgiqYc19o)<!-- 2024-05-29T17:05:27.340Z -->  
+[lit try v1](https://editor.p5js.org/jht9629-nyu/sketches/ph3r7SnYK)<!-- 2024-05-28T07:28:20.528Z -->  
 [test drive DOM.js v10 inputs](https://editor.p5js.org/jht9629-nyu/sketches/G3arjv8UF)<!-- 2024-05-25T00:43:50.999Z -->  
 [Fibonacci sequence (visualisation)](https://editor.p5js.org/jht9629-nyu/sketches/Q-O6WsDdt)<!-- 2024-05-19T21:22:46.790Z -->  
 [show-video-draw-scan](https://editor.p5js.org/jht9629-nyu/sketches/kwcjsVzRM)<!-- 2024-05-19T19:11:10.064Z -->  
@@ -244,7 +259,6 @@
 [day1](https://editor.p5js.org/jht9629-nyu/sketches/Fq7pag-yO)<!-- 2023-07-24T15:31:51.089Z -->  
 [console.log frameCount](https://editor.p5js.org/jht9629-nyu/sketches/O2Pgf8nC5)<!-- 2023-07-23T23:07:23.632Z -->  
 [show-video-face-ui](https://editor.p5js.org/jht9629-nyu/sketches/MsutfNZq-)<!-- 2023-07-22T17:04:58.127Z -->  
-[draw-rainbow](https://editor.p5js.org/jht9629-nyu/sketches/bJwxdGIpX)<!-- 2023-07-22T16:52:01.165Z -->  
 [pattern-animation-shape](https://editor.p5js.org/jht9629-nyu/sketches/1Tc2xb_4m)<!-- 2023-07-20T15:25:55.037Z -->  
 [pattern animation random colors](https://editor.p5js.org/jht9629-nyu/sketches/Xha1utfMM)<!-- 2023-07-20T15:18:59.496Z -->  
 [simple-draw](https://editor.p5js.org/jht9629-nyu/sketches/owix6hP8S)<!-- 2023-07-20T14:42:23.266Z -->  

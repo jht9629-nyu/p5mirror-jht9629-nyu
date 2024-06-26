@@ -1,5 +1,6 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15
 // test drive DOM.js v11 inputs
+
   // Button
   // text input
   // Slider
@@ -23,6 +24,8 @@ DOM.set([
     id: "changeBtn",
     text: "Change Button",
     onclick: (event) => {
+      // console.log('changeBtn event', event);
+      console.log('changeBtn event.target', event.target);
       counter++;
       myInput.value = "Button pressed " + counter;
     },

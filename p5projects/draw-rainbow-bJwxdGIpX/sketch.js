@@ -20,7 +20,6 @@ function draw() {
   fill("black");
   textSize(64);
   text("Hello screen", 20, 64);
-  
 }
 
 function mouseDragged() {
