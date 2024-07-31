@@ -18,10 +18,24 @@ let epiLineColor = "green";
 let epiCircleColor = [10, 10, 10, 100];
 let drawWeight = 2;
 let deltaFt;
+let run = 1;
+let step;
+let centerX;
+let centerY;
 
 function setup() {
   createCanvas(windowWidth, windowHeight - 30);
-  createDiv("Draw something!");
+  createSpan("Draw something!");
+  let runCbox = createCheckbox("Run", run);
+  runCbox.changed(function () {
+    run = this.checked();
+  });
+  runCbox.style("display:inline");
+  createButton("Step").mousePressed(function () {
+    step = 1;
+  });
+  centerX = width / 2;
+  centerY = height / 2;
 }
 
 function draw() {
@@ -34,35 +48,40 @@ function draw() {
 }
 
 function trackMouse() {
+  if (mouseOutsideCanvas()) return;
+
   // Add current mouse loc to drawing array
-  let x = mouseX - width / 2;
-  let y = mouseY - height / 2;
-  let point = { x, y };
-  drawing.push(point);
+  let x = mouseX - centerX;
+  let y = mouseY - centerY;
+  drawing.push({ x, y });
 
   strokeWeight(drawWeight);
   stroke(trackColor);
   noFill();
   beginShape();
-  for (let v of drawing) {
-    vertex(v.x + width / 2, v.y + height / 2);
+  for (let elm of drawing) {
+    vertex(elm.x + centerX, elm.y + centerY);
   }
   endShape();
 }
 
+function mouseOutsideCanvas() {
+  return mouseX < 0 || mouseX > width || mouseY < 0 || mouseY > height;
+}
+
 function draw_path() {
-  let x1 = width / 2;
+  let x1 = centerX;
   let y1 = height / 8;
   let x2 = width / 8;
-  let y2 = height / 2;
+  let y2 = centerY;
 
   let vx = epiCycles(time, x1, y1, 0, fourierX);
   let vy = epiCycles(time, x2, y2, HALF_PI, fourierY);
   let v = { x: vx.x, y: vy.y };
-
-  // adds the specified elements to the beginning of an array
-  path.unshift(v);
-
+  if (run || step) {
+    // adds the specified elements to the beginning of an array
+    path.unshift(v);
+  }
   strokeWeight(epiWeight);
   stroke(vxyColor);
   line(vx.x, vx.y, v.x, v.y);
@@ -72,27 +91,30 @@ function draw_path() {
   stroke(drawColor);
   beginShape();
   noFill();
-  for (let i = 0; i < path.length; i++) {
-    vertex(path[i].x, path[i].y);
+  for (let elm of path) {
+    vertex(elm.x, elm.y);
   }
   endShape();
 
-  time += deltaFt;
-  if (time > TWO_PI) {
-    time = 0;
-    path = [];
+  if (run || step) {
+    time += deltaFt;
+    if (time > TWO_PI) {
+      time = 0;
+      path = [];
+    }
   }
+  step = 0;
 }
 
 // var time is used to determine x, y
 function epiCycles(time, x, y, rotation, fourier) {
   // parameters x and y modified in this loop
-  for (let i = 0; i < fourier.length; i++) {
+  for (let elm of fourier) {
     let prevx = x;
     let prevy = y;
-    let freq = fourier[i].freq;
-    let radius = fourier[i].amp;
-    let phase = fourier[i].phase;
+    let freq = elm.freq;
+    let radius = elm.amp;
+    let phase = elm.phase;
     x += radius * cos(freq * time + phase + rotation);
     y += radius * sin(freq * time + phase + rotation);
     strokeWeight(epiWeight);
@@ -109,6 +131,7 @@ function epiCycles(time, x, y, rotation, fourier) {
 }
 
 function mousePressed() {
+  if (mouseOutsideCanvas()) return;
   state = USER;
   drawing = [];
   time = 0;
@@ -116,12 +139,13 @@ function mousePressed() {
 }
 
 function mouseReleased() {
+  if (mouseOutsideCanvas()) return;
   state = FOURIER;
   let xx = [];
   let yy = [];
-  for (let i = 0; i < drawing.length; i++) {
-    xx.push(drawing[i].x);
-    yy.push(drawing[i].y);
+  for (let elm of drawing) {
+    xx.push(elm.x);
+    yy.push(elm.y);
   }
   fourierX = dft(xx);
   fourierY = dft(yy);
@@ -143,3 +167,4 @@ function mouseReleased() {
 // https://youtu.be/n9nfTxp_APM
 
 // replace createVector with {x, y}
+// use for (let elm of

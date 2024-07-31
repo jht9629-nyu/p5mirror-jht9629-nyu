@@ -8151,19 +8151,19 @@
         "fileType": "folder",
         "isSelectedFile": false,
         "_id": "66a9232473a9109139a4d0c4",
-        "createdAt": "2024-07-31T02:39:21.485Z",
-        "updatedAt": "2024-07-31T02:39:21.485Z",
+        "createdAt": "2024-07-31T03:42:33.524Z",
+        "updatedAt": "2024-07-31T03:42:33.524Z",
         "id": "66a9232473a9109139a4d0c4"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/cxDbkJUyx\n// Fourier Transform and Epicycles -codingtrain\n\nconst USER = 0;\nconst FOURIER = 1;\n\nlet fourierX;\nlet fourierY;\nlet time = 0;\nlet path = [];\nlet drawing = [];\nlet state = -1;\nlet trackColor = 0;\nlet drawColor = 0;\nlet epiWeight = 1;\nlet vxyColor = \"gold\";\nlet epiLineColor = \"green\";\nlet epiCircleColor = [10, 10, 10, 100];\nlet drawWeight = 2;\nlet deltaFt;\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight - 30);\n  createDiv(\"Draw something!\");\n}\n\nfunction draw() {\n  background(255);\n  if (state == USER) {\n    trackMouse();\n  } else if (state == FOURIER) {\n    draw_path();\n  }\n}\n\nfunction trackMouse() {\n  // Add current mouse loc to drawing array\n  let x = mouseX - width / 2;\n  let y = mouseY - height / 2;\n  let point = { x, y };\n  drawing.push(point);\n\n  strokeWeight(drawWeight);\n  stroke(trackColor);\n  noFill();\n  beginShape();\n  for (let v of drawing) {\n    vertex(v.x + width / 2, v.y + height / 2);\n  }\n  endShape();\n}\n\nfunction draw_path() {\n  let x1 = width / 2;\n  let y1 = height / 8;\n  let x2 = width / 8;\n  let y2 = height / 2;\n\n  let vx = epiCycles(time, x1, y1, 0, fourierX);\n  let vy = epiCycles(time, x2, y2, HALF_PI, fourierY);\n  let v = { x: vx.x, y: vy.y };\n\n  // adds the specified elements to the beginning of an array\n  path.unshift(v);\n\n  strokeWeight(epiWeight);\n  stroke(vxyColor);\n  line(vx.x, vx.y, v.x, v.y);\n  line(vy.x, vy.y, v.x, v.y);\n\n  strokeWeight(drawWeight);\n  stroke(drawColor);\n  beginShape();\n  noFill();\n  for (let i = 0; i < path.length; i++) {\n    vertex(path[i].x, path[i].y);\n  }\n  endShape();\n\n  time += deltaFt;\n  if (time > TWO_PI) {\n    time = 0;\n    path = [];\n  }\n}\n\n// var time is used to determine x, y\nfunction epiCycles(time, x, y, rotation, fourier) {\n  // parameters x and y modified in this loop\n  for (let i = 0; i < fourier.length; i++) {\n    let prevx = x;\n    let prevy = y;\n    let freq = fourier[i].freq;\n    let radius = fourier[i].amp;\n    let phase = fourier[i].phase;\n    x += radius * cos(freq * time + phase + rotation);\n    y += radius * sin(freq * time + phase + rotation);\n    strokeWeight(epiWeight);\n    // strokeWeight(0);\n    stroke(epiCircleColor);\n    // fill(epiCircleColor);\n    noFill();\n    ellipse(prevx, prevy, radius * 2);\n    // stroke(255);\n    stroke(epiLineColor);\n    line(prevx, prevy, x, y);\n  }\n  return { x, y };\n}\n\nfunction mousePressed() {\n  state = USER;\n  drawing = [];\n  time = 0;\n  path = [];\n}\n\nfunction mouseReleased() {\n  state = FOURIER;\n  let xx = [];\n  let yy = [];\n  for (let i = 0; i < drawing.length; i++) {\n    xx.push(drawing[i].x);\n    yy.push(drawing[i].y);\n  }\n  fourierX = dft(xx);\n  fourierY = dft(yy);\n\n  fourierX.sort((a, b) => b.amp - a.amp);\n  fourierY.sort((a, b) => b.amp - a.amp);\n\n  deltaFt = TWO_PI / fourierY.length;\n}\n\n// https://editor.p5js.org/codingtrain/sketches/jawHqwfda\n// CC 130.2: Drawing with Fourier Transform and Epicycles\n// https://thecodingtrain.com/challenges/130-drawing-with-fourier-transform-and-epicycles\n\n// CC 130.2: Drawing with Fourier Transform and Epicycles -codingtrain\n// Coding Challenge 130.2: Drawing with Fourier Transform and Epicycles\n// Daniel Shiffman\n// https://thecodingtrain.com/CodingChallenges/130.2-fourier-transform-drawing.html\n// https://youtu.be/n9nfTxp_APM\n\n// replace createVector with {x, y}\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/cxDbkJUyx\n// Fourier Transform and Epicycles -codingtrain\n\nconst USER = 0;\nconst FOURIER = 1;\n\nlet fourierX;\nlet fourierY;\nlet time = 0;\nlet path = [];\nlet drawing = [];\nlet state = -1;\nlet trackColor = 0;\nlet drawColor = 0;\nlet epiWeight = 1;\nlet vxyColor = \"gold\";\nlet epiLineColor = \"green\";\nlet epiCircleColor = [10, 10, 10, 100];\nlet drawWeight = 2;\nlet deltaFt;\nlet run = 1;\nlet step;\nlet centerX;\nlet centerY;\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight - 30);\n  createSpan(\"Draw something!\");\n  let runCbox = createCheckbox(\"Run\", run);\n  runCbox.changed(function () {\n    run = this.checked();\n  });\n  runCbox.style(\"display:inline\");\n  createButton(\"Step\").mousePressed(function () {\n    step = 1;\n  });\n  centerX = width / 2;\n  centerY = height / 2;\n}\n\nfunction draw() {\n  background(255);\n  if (state == USER) {\n    trackMouse();\n  } else if (state == FOURIER) {\n    draw_path();\n  }\n}\n\nfunction trackMouse() {\n  if (mouseOutsideCanvas()) return;\n\n  // Add current mouse loc to drawing array\n  let x = mouseX - centerX;\n  let y = mouseY - centerY;\n  drawing.push({ x, y });\n\n  strokeWeight(drawWeight);\n  stroke(trackColor);\n  noFill();\n  beginShape();\n  for (let elm of drawing) {\n    vertex(elm.x + centerX, elm.y + centerY);\n  }\n  endShape();\n}\n\nfunction mouseOutsideCanvas() {\n  return mouseX < 0 || mouseX > width || mouseY < 0 || mouseY > height;\n}\n\nfunction draw_path() {\n  let x1 = centerX;\n  let y1 = height / 8;\n  let x2 = width / 8;\n  let y2 = centerY;\n\n  let vx = epiCycles(time, x1, y1, 0, fourierX);\n  let vy = epiCycles(time, x2, y2, HALF_PI, fourierY);\n  let v = { x: vx.x, y: vy.y };\n  if (run || step) {\n    // adds the specified elements to the beginning of an array\n    path.unshift(v);\n  }\n  strokeWeight(epiWeight);\n  stroke(vxyColor);\n  line(vx.x, vx.y, v.x, v.y);\n  line(vy.x, vy.y, v.x, v.y);\n\n  strokeWeight(drawWeight);\n  stroke(drawColor);\n  beginShape();\n  noFill();\n  for (let elm of path) {\n    vertex(elm.x, elm.y);\n  }\n  endShape();\n\n  if (run || step) {\n    time += deltaFt;\n    if (time > TWO_PI) {\n      time = 0;\n      path = [];\n    }\n  }\n  step = 0;\n}\n\n// var time is used to determine x, y\nfunction epiCycles(time, x, y, rotation, fourier) {\n  // parameters x and y modified in this loop\n  for (let elm of fourier) {\n    let prevx = x;\n    let prevy = y;\n    let freq = elm.freq;\n    let radius = elm.amp;\n    let phase = elm.phase;\n    x += radius * cos(freq * time + phase + rotation);\n    y += radius * sin(freq * time + phase + rotation);\n    strokeWeight(epiWeight);\n    // strokeWeight(0);\n    stroke(epiCircleColor);\n    // fill(epiCircleColor);\n    noFill();\n    ellipse(prevx, prevy, radius * 2);\n    // stroke(255);\n    stroke(epiLineColor);\n    line(prevx, prevy, x, y);\n  }\n  return { x, y };\n}\n\nfunction mousePressed() {\n  if (mouseOutsideCanvas()) return;\n  state = USER;\n  drawing = [];\n  time = 0;\n  path = [];\n}\n\nfunction mouseReleased() {\n  if (mouseOutsideCanvas()) return;\n  state = FOURIER;\n  let xx = [];\n  let yy = [];\n  for (let elm of drawing) {\n    xx.push(elm.x);\n    yy.push(elm.y);\n  }\n  fourierX = dft(xx);\n  fourierY = dft(yy);\n\n  fourierX.sort((a, b) => b.amp - a.amp);\n  fourierY.sort((a, b) => b.amp - a.amp);\n\n  deltaFt = TWO_PI / fourierY.length;\n}\n\n// https://editor.p5js.org/codingtrain/sketches/jawHqwfda\n// CC 130.2: Drawing with Fourier Transform and Epicycles\n// https://thecodingtrain.com/challenges/130-drawing-with-fourier-transform-and-epicycles\n\n// CC 130.2: Drawing with Fourier Transform and Epicycles -codingtrain\n// Coding Challenge 130.2: Drawing with Fourier Transform and Epicycles\n// Daniel Shiffman\n// https://thecodingtrain.com/CodingChallenges/130.2-fourier-transform-drawing.html\n// https://youtu.be/n9nfTxp_APM\n\n// replace createVector with {x, y}\n// use for (let elm of\n",
         "children": [],
         "fileType": "file",
         "isSelectedFile": true,
         "_id": "66a9232473a9109139a4d0c7",
-        "createdAt": "2024-07-31T02:39:21.485Z",
-        "updatedAt": "2024-07-31T02:39:21.485Z",
+        "createdAt": "2024-07-31T03:42:33.524Z",
+        "updatedAt": "2024-07-31T03:42:33.524Z",
         "id": "66a9232473a9109139a4d0c7"
       },
       {
@@ -8173,8 +8173,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66a9232473a9109139a4d0c6",
-        "createdAt": "2024-07-31T02:39:21.485Z",
-        "updatedAt": "2024-07-31T02:39:21.485Z",
+        "createdAt": "2024-07-31T03:42:33.524Z",
+        "updatedAt": "2024-07-31T03:42:33.524Z",
         "id": "66a9232473a9109139a4d0c6"
       },
       {
@@ -8184,8 +8184,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66a9232473a9109139a4d0c8",
-        "createdAt": "2024-07-31T02:39:21.485Z",
-        "updatedAt": "2024-07-31T02:39:21.485Z",
+        "createdAt": "2024-07-31T03:42:33.524Z",
+        "updatedAt": "2024-07-31T03:42:33.524Z",
         "id": "66a9232473a9109139a4d0c8"
       },
       {
@@ -8195,13 +8195,13 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66a9232473a9109139a4d0c5",
-        "createdAt": "2024-07-31T02:39:21.485Z",
-        "updatedAt": "2024-07-31T02:39:21.485Z",
+        "createdAt": "2024-07-31T03:42:33.524Z",
+        "updatedAt": "2024-07-31T03:42:33.524Z",
         "id": "66a9232473a9109139a4d0c5"
       }
     ],
     "createdAt": "2024-07-30T17:30:12.603Z",
-    "updatedAt": "2024-07-31T02:39:21.485Z",
+    "updatedAt": "2024-07-31T03:42:33.524Z",
     "id": "cxDbkJUyx"
   },
   {
