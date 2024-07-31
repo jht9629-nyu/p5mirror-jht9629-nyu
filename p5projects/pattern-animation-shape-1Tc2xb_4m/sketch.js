@@ -20,9 +20,9 @@ function draw() {
   // ellipse(x, y, 10, 10)
   
   // change the global variables for x,y location
-  x += 10;
+  x = x + 10;
   if (x > width) {
     x = 0;
-    y += 10;
+    y = y + 10;
   }
 }

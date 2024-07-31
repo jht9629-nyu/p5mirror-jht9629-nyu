@@ -1,61 +1,61 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/ZR8mNfmUZ
-// pages
+// pages - mousePressed to next page
 
-let my = { };
+let page = 1;
+let lastPage = 3;
 
 function setup() {
   
-  my.version = 2;
-  my.width = 393; // canvas width
-  my.height = 600; // canvas height
-  my.counter = 1;
-
-  createCanvas(my.width, my.height);
+  createCanvas(windowWidth, windowHeight-30);
 
   createDiv("Press the mouse to advance to next page");
-  createDiv("Version:" + my.version);
 }
 
 function draw() {
   background(255);
   
-  fill("black");
-  textSize(64);
-  text("Page "+my.counter, 20, 64);
+  // drawHeader();
+
+  if (page == 1) {
+    drawPage1();
+  }
+  if (page == 2) {
+    drawPage2();
+  }
   
-  if (my.counter == 1) {
-    draw_page1();
-  }
-  if (my.counter == 2) {
-    draw_page2();
-  }
-  if (my.counter == 3) {
-    draw_page3();
-  }
+  drawHeader();
 }
 
 function mousePressed() {
-  my.counter = my.counter + 1;
-  if (my.counter > 4) { 
-    my.counter = 1;
+  page = page + 1;
+  if (page > lastPage) { 
+    page = 1;
   }
 }
 
-function draw_page1() {
+function drawHeader() {
+  fill("black");
+  textSize(64);
+  text("Page "+page, 20, 64);
+  // fill("red");
+  // text("Hello class", 20, 150);
+}
+
+function drawPage1() {
   fill("red");
   let x0 = width / 2;
   let y0 = height / 2;
   rect(x0 - 50, y0 - 50, 100, 100);
 }
 
-function draw_page2() {
+function drawPage2() {
   fill("green");
   let x0 = width / 2;
   let y0 = height / 2;
   circle(x0, y0, width);
 }
 
-function draw_page3() {
+function drawPage3() {
   fill("gold");
   let x0 = width / 2;
   let y0 = height / 2;
@@ -68,5 +68,8 @@ function draw_page3() {
   triangle(x1, y1, x2, y2, x3, y3)
 }
 
+// TRY: fix last page bug
+// TRY: code page3
+// TRY: remix with knock-knock joke
 
-
+// https://p5js.org/reference/p5/mousePressed/

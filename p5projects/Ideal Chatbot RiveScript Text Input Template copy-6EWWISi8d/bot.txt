@@ -1,0 +1,35 @@
+! version = 2.0
+
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub where's = where is
+
+////// PLEASE NOTE: everything you put here can be accessed by anyone with the link. Please do not include any personal and/or sensitive information.
+
++ [*] what topic are we discussing [*]
+- History of AI? Is AI good or bad? What is AI?
++ [*] can you expound on the artificial part of your name and intelligence [*]
+- Artificial = algorithm, based in computer
++ [*] what is an algorithm [*]
+- Intelligence = is an aspiration - promise of understanding.
++ [*] what is an aspiration [*]
+- An algorithm is a set of instructions to accomplish a task.
++ [*] are you saying that your ultimate goal is simply to be an algorithm that reflects some understanding [*]
+- An aspiration is a goal.
++ [*] that is not clear can your clarify and expound on that thought [*]
+- No, i am already an algorithm. intelligence is an aspiration beyond my control and is in the eye or perception of the beholder.
++ [*] but people or dumb so is your intelligence is limited by peoples understanding [*]
+- intelligence is the aspiration of AI - it can only is not something that can be delivered only judged by the receiver.
+

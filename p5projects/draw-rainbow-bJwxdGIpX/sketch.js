@@ -1,19 +1,15 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/bJwxdGIpX
 // draw-rainbow
 
-let my = {
-  version: 3,
-  width: 393, // canvas width
-  height: 600, // canvas height
-  hue: 0,
-  rainbow: true,
-  rate: 1
-};
+let hue = 0;
+let rate = 1;
 
 function setup() {
-  createCanvas(my.width, my.height);
+  createCanvas(windowWidth, windowHeight - 30);
 
-  createDiv("Version:" + my.version);
+  createDiv("Rainbow Draw v1");
+
+  colorMode(HSL, 360);
 }
 
 function draw() {
@@ -24,19 +20,12 @@ function draw() {
 
 function mouseDragged() {
   // console.log('mouseDragged');
-  if (my.rainbow) {
-    if (my.hue > 360) {
-      my.hue = 0;
-    } else {
-      my.hue += my.rate;
-    }
-  }
-  colorMode(HSL, 360);
+  hue = (hue + rate) % 360
   // noStroke();
-  // fill(my.hue, 200, 200);
+  // fill(hue, 200, 200);
   // ellipse(mouseX, mouseY, 25, 25);
   strokeWeight(20);
-  stroke(my.hue, 200, 200);
+  stroke(hue, 200, 200);
   line(mouseX, mouseY, pmouseX, pmouseY);
 
   // Prevent canvas drag on mobile devices

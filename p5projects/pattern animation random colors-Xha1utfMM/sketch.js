@@ -7,7 +7,8 @@ let w1;
 let h1;
 
 function setup() {
-  createCanvas(300, 600);
+  // size canvas to accommodate mobile window
+  createCanvas(windowWidth, windowHeight);
   x1 = 0;
   y1 = 0;
   w1 = width / 10;
@@ -16,20 +17,20 @@ function setup() {
 }
 
 function draw() {
-  // background(220);
+  // background(220);  // TRY enabling
 
   let r = random(255);
   let g = random(255);
   let b = random(255);
-  let a = 255;
+  let a = 255;  // Alpha - TRY other values 0 to 255
 
   fill(r, g, b, a);
   rect(x1, y1, w1, h1);
 
-  x1 += w1;
+  x1 = x1 + w1;
   if (x1 >= width) {
     x1 = 0;
-    y1 += h1;
+    y1 = y1 + h1;
     if (y1 > height) {
       y1 = 0;
     }

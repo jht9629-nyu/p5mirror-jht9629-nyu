@@ -1,16 +1,10 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/owix6hP8S
 // simple-draw
 
-let my = {
-  version: 2,
-  width: 393, // canvas width
-  height: 600, // canvas height
-};
-
 function setup() {
-  createCanvas(my.width, my.height);
+  createCanvas(windowWidth, windowHeight-30);
 
-  createDiv("Version:" + my.version);
+  createDiv("Simple Draw v1");
 }
 
 function draw() {

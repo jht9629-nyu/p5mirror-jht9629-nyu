@@ -1,7 +1,7 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/jMHNj7slF
 // show-video-draw
 
-let my = {};
+let my = {}; 
 
 function setup() {
   my.version = 4; // update to verify change on mobile

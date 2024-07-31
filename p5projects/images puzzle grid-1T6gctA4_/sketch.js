@@ -19,6 +19,7 @@ function preload() {
   // select a random image to preload
   my.image_name = random(my.image_names);
   my.srcImage = loadImage(my.image_name);
+  console.log('my.image_name', my.image_name);
 }
 
 function setup() {

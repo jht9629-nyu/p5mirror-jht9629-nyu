@@ -1,0 +1,28 @@
+! version = 2.0
+
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub where's = where is
+
+////// PLEASE NOTE: everything you put here can be accessed by anyone with the link. Please do not include any personal and/or sensitive information.
+
++ [*] cat [*]
+- meow meow
++ [*] dog [*]
+- woof woof
++ *
+- speak up
++ *
+- i don't hear you

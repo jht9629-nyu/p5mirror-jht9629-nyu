@@ -1,0 +1,99 @@
+! version = 2.0
+
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+
+//1:1 TRIGGERS
++ simple trigger
+- simple response
+
+//RANDOM RESPONSES
++ one trigger
+- random response one
+- random reponse two
+
+//ALTERNATIVE TRIGGERS
++ (alternative trigger one|alternative trigger two)
+- You just said <star>.
+
+//KEYWORD TRIGGER
++ [*] keyword [*]
+- You just said the keyword.
+
+//CATCHALL TRIGGER AND RESPONSE
++ *
+- This is a catchall response.
+
+//WILDCARD
++ * is a wildcard
+- <star> is the wildcard.
+
+//SET AND GET USER VARIABLE
++ * is my user variable
+- <set uservariable=<star>>I will remember <get uservariable> as your user variable.
+
+//CONDITIONAL STATEMENT
++ what is my user variable
+* <get uservariable> == undefined => I don't know your user variable.
+- Your user variable is <get uservariable>.
+
+//SHORT DISCUSSION
++ lets start a short discussion
+- What do you want to talk about?
+
++ *
+% what do you want to talk about
+- I am not good at talking about <star>.
+
+
+//TOPICS
++ show me a topic
+- No problem. Now we are entering a topic about chatbots.{topic=chatbots}
+
+> topic chatbots
+  
+  + i [love|like] chatbots
+  - Amazing. Me too! {topic=random}
+  
+  + *
+  - Say that you love chatbots or we can't end this topic.
+
+< topic
+
+//OPERATION TAGS
++ i want points
+- <set points=0>Your points have been reset to 0.
+
++ give me 5 points
+- <add points=5>Ok. Your balance is now <get points>.
+
++ subtract 2 points
+- <sub points=2>Ok. Your balance is now <get points>. 
+
+
+
+
+
+
+
+
+
+
+
+
+

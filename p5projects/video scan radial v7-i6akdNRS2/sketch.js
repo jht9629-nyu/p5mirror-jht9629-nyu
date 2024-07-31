@@ -5,8 +5,8 @@
 
 // 640 x 480 matches default video capture on desktop
 
-let cwidth = 640;
-let cheight = 480;
+let cwidth = 480;
+let cheight = 640;
 let rcenter = 20;
 let x0;
 let y0;
@@ -36,22 +36,21 @@ function setup() {
   x0 = int(cwidth / 2);
   y0 = int(cheight / 2);
   calc_xspan_end();
-  strokeWeight(0)
+  strokeWeight(0);
 }
 
 function draw() {
-  if (! capture.loadedmetadata) return;
-  
+  if (!capture.loadedmetadata) return;
+
   img = capture.get();
   let more = 1;
   while (more) {
     more = draw_out();
-    if (! faster) more = 0;
+    if (!faster) more = 0;
   }
 }
 
 function draw_out() {
-
   let r = xspan / 2;
   let rang = radians(ang);
   let x1 = r * cos(rang);
@@ -60,7 +59,7 @@ function draw_out() {
   let c1 = img.get(x0 + x1, y0 + y1);
   fill(c1);
   circle(x0 + x1, y0 + y1, rcenter);
-  
+
   ang = ang + astep;
   if (ang > 360) {
     ang = 0;
@@ -85,7 +84,7 @@ function next_step() {
 function calc_xspan_end() {
   let a = cwidth;
   let b = cheight;
-  xspan_end = Math.sqrt( a*a + b*b );
+  xspan_end = Math.sqrt(a * a + b * b);
 }
 
 // https://github.com/processing/p5.js/wiki/Beyond-the-canvas#capture-live-video

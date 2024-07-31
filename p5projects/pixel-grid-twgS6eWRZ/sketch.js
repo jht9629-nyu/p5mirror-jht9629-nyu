@@ -7,14 +7,15 @@ let my = {
   vheight: 640,
   face: 1,
   scrolling: 1,
-  nstep: 16,
+  nstep: 64,
   margin: 0.1,
 };
 
 function setup() {
   my_init();
 
-  createCanvas(my.width, my.height);
+  // createCanvas(my.width, my.height);
+  createCanvas(windowWidth, windowHeight-40);
   background(255);
   noStroke();
 
