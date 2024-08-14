@@ -8,21 +8,24 @@ let lastPage = 3;
 
 let mySound;
 let myFunky;
-let myRainbow;
+let myScales;
 let myAfterGlowSound;
 
 function preload() {
-  myFunky = loadSound('funky.mp3');
-  myRainbow = loadSound('rainbow.mp3');
-  myAfterGlowSound = loadSound('afterglow.mp3');
+  myFunky = loadSound("funky.mp3");
+  myScales = loadSound("scales.mp3");
+  myAfterGlowSound = loadSound("afterglow.mp3");
   // mySound = myFunky;
-  // mySound = myRainbow;
+  // mySound = myScales;
   mySound = myAfterGlowSound;
 }
 
+let msgDiv;
+
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  text("Press the mouse to advance to the next song!", 20, 600);
+  createCanvas(windowWidth, windowHeight-30);
+  // text("Press the mouse to advance to the next song!", 20, 600);
+  msgDiv = createDiv("Press the mouse to advance to the next song!");
   checkSound();
 }
 
@@ -58,6 +61,7 @@ function draw() {
 }
 
 function mousePressed() {
+  console.log("mousePressed");
   page = page + 1;
   if (page > lastPage) {
     page = 1;
@@ -67,15 +71,12 @@ function mousePressed() {
 
 function checkSound() {
   if (page == 1) {
-    startSound( myAfterGlowSound )
-  }
-  else if (page == 2) {
-    startSound( myFunky )
-  }
-  else if (page == 3) {
-    startSound( myRainbow )
-  }
-  else {
+    startSound(myAfterGlowSound);
+  } else if (page == 2) {
+    startSound(myFunky);
+  } else if (page == 3) {
+    startSound(myScales);
+  } else {
     startSound();
   }
 }
@@ -90,6 +91,7 @@ function drawHeader() {
   fill("black");
   textSize(50);
   text("Song " + page, 10, 100);
+  msgDiv.html("Song " + page);
 }
 
 function drawPage1() {

@@ -79,7 +79,7 @@ function draw_path() {
   let vy = epiCycles(time, x2, y2, HALF_PI, fourierY);
   let v = { x: vx.x, y: vy.y };
   if (run || step) {
-    // adds the specified elements to the beginning of an array
+    // add element to the beginning of array
     path.unshift(v);
   }
   strokeWeight(epiWeight);

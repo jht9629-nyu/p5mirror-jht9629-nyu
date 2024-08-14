@@ -1,0 +1,35 @@
+! version = 2.0
+
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub where's = where is
+
+////// PLEASE NOTE: everything you put here can be accessed by anyone with the link. Please do not include any personal and/or sensitive information.
+
++ [*] basketball [*]
+- A standard NBA basket is 10 feet tall. To dunk a basketball, you need to be 10 feet tall.
++ [*] feet [*]
+- I’m sorry. I'm wrong; the tallest person ever recorded was 8 feet 11 inches tall.
++ [*] smart [*]
+- Humans often make mistakes. Why can’t I?
++ [*] answers [*]
+- I answer based on data provided to me, including your responses. I am learning to better answer your questions.
++ [*] wrong [*]
+- Nothing is totally reliable, not even me. Isn't your ability to fact-check information valuable?
++ [*] guess [*]
+- Thinking for yourself is important. That's how I was created, anyway.
+
++ *
+- Try saying something else.

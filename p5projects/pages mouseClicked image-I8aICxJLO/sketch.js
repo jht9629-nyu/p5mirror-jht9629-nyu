@@ -53,7 +53,10 @@ function drawPage1() {
   let y0 = height / 2;
   // Draw the image.
   // image(img1, x0, y0);
-  image(img1, 0, 0, width, height);
+  let x = mouseX - img1.width;
+  let y = mouseY - img1.height;
+  // image(img1, x, y, width, height);
+  image(img1, x, y);
 }
 
 function drawPage2() {
