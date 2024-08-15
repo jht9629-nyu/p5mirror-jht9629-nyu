@@ -1,6 +1,8 @@
 # Sketches for jht9629-nyu
-447 sketches  
-[faceMesh mesh\_nits v7 mask](https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy)<!-- 2024-08-15T05:14:15.773Z -->  
+449 sketches  
+[faceMesh mesh\_nits v8 bestill](https://editor.p5js.org/jht9629-nyu/sketches/_3QMiI-fM)<!-- 2024-08-15T17:04:53.712Z -->  
+[faceMesh mesh\_nits v8 inner](https://editor.p5js.org/jht9629-nyu/sketches/uOjmgYoZJ)<!-- 2024-08-15T06:16:39.711Z -->  
+[faceMesh mesh\_nits v7 mask](https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy)<!-- 2024-08-15T05:41:18.167Z -->  
 [faceMesh mesh\_nits v6 -- stray mask](https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ)<!-- 2024-08-15T02:44:03.805Z -->  
 [faceMesh mesh\_nits v4](https://editor.p5js.org/jht9629-nyu/sketches/p4Uu0B2sk)<!-- 2024-08-15T02:18:39.597Z -->  
 [faceMesh mesh\_nits v5](https://editor.p5js.org/jht9629-nyu/sketches/nDEtGRehq)<!-- 2024-08-15T01:47:31.208Z -->  

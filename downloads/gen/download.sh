@@ -1,2 +1,6 @@
-echo download 1 "faceMesh mesh_nits v7 mask-PuoF9-3xy"
+echo download 1 "faceMesh mesh_nits v8 bestill-_3QMiI-fM"
+curl -s https://editor.p5js.org/editor/projects/_3QMiI-fM/zip -o "/Users/jht2/Documents/projects/2024/p5mo/p5mirror-jht9629-nyu/downloads/zips/faceMesh mesh_nits v8 bestill-_3QMiI-fM.zip"
+echo download 2 "faceMesh mesh_nits v8 inner-uOjmgYoZJ"
+curl -s https://editor.p5js.org/editor/projects/uOjmgYoZJ/zip -o "/Users/jht2/Documents/projects/2024/p5mo/p5mirror-jht9629-nyu/downloads/zips/faceMesh mesh_nits v8 inner-uOjmgYoZJ.zip"
+echo download 3 "faceMesh mesh_nits v7 mask-PuoF9-3xy"
 curl -s https://editor.p5js.org/editor/projects/PuoF9-3xy/zip -o "/Users/jht2/Documents/projects/2024/p5mo/p5mirror-jht9629-nyu/downloads/zips/faceMesh mesh_nits v7 mask-PuoF9-3xy.zip"

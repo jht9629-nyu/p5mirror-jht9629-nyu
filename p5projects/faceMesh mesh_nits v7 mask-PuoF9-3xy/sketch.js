@@ -25,6 +25,7 @@ function setup() {
   // Create the webcam video and hide it
   video = createCapture(VIDEO, { flipped: flipH });
   video.size(640, 480);
+  // video.size(1920, 1080);
   video.hide();
   // Start detecting faces from the webcam video
   faceMesh.detectStart(video, function (results) {
@@ -79,7 +80,7 @@ function draw() {
   image(my.output, 0, 0);
 
   if (my.face1) {
-    draw_mouth_shape_output(my.face1, my.videoMask);
+    draw_shape_layer(my.face1, my.videoMask);
     video.mask(my.videoMask);
 
     let { x: x0, y: y0 } = transInversePt({ x: 0, y: 0 });
@@ -107,7 +108,7 @@ function transInversePt(pt) {
   return { x, y };
 }
 
-function draw_mouth_shape_output(face, layer) {
+function draw_shape_layer(face, layer) {
   layer.clear();
   layer.fill([255, 255, 255, 255]);
 
