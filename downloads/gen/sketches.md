@@ -137,7 +137,7 @@
 [faceMesh mesh\_nits v4](https://editor.p5js.org/jht9629-nyu/sketches/p4Uu0B2sk)<!-- 2024-08-15T02:18:39.597Z -->  
 [faceMesh mesh\_nits v5](https://editor.p5js.org/jht9629-nyu/sketches/nDEtGRehq)<!-- 2024-08-15T01:47:31.208Z -->  
 [faceMesh mesh\_nits v6 -- stray mask](https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ)<!-- 2024-08-15T02:44:03.805Z -->  
-[faceMesh mesh\_nits v7 mask](https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy)<!-- 2024-08-15T03:50:34.728Z -->  
+[faceMesh mesh\_nits v7 mask](https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy)<!-- 2024-08-15T05:14:15.773Z -->  
 [faceMesh-keypoints --ml5](https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl)<!-- 2024-08-13T01:43:28.980Z -->  
 [faceMesh-keypoints --ml5](https://editor.p5js.org/jht9629-nyu/sketches/L6iIpOR5H)<!-- 2024-08-13T01:41:18.216Z -->  
 [Fancy Pong Chords](https://editor.p5js.org/jht9629-nyu/sketches/5Y1WTyVd-)<!-- 2023-08-05T09:59:09.801Z -->  

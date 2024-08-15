@@ -8799,8 +8799,8 @@
         "fileType": "folder",
         "isSelectedFile": false,
         "_id": "66bd6b78da372d03efebb7ae",
-        "createdAt": "2024-08-15T03:50:34.728Z",
-        "updatedAt": "2024-08-15T03:50:34.728Z",
+        "createdAt": "2024-08-15T05:14:15.773Z",
+        "updatedAt": "2024-08-15T05:14:15.773Z",
         "id": "66bd6b78da372d03efebb7ae"
       },
       {
@@ -8810,19 +8810,19 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66bd6b78da372d03efebb7b4",
-        "createdAt": "2024-08-15T03:50:34.728Z",
-        "updatedAt": "2024-08-15T03:50:34.728Z",
+        "createdAt": "2024-08-15T05:14:15.773Z",
+        "updatedAt": "2024-08-15T05:14:15.773Z",
         "id": "66bd6b78da372d03efebb7b4"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy\n// faceMesh mesh_nits v7 mask\n\nlet flipH = true;\nlet faceMesh;\nlet video;\nlet faces = [];\nlet options = {\n  maxFaces: 1,\n  refineLandmarks: false,\n  flipHorizontal: flipH,\n};\n\nlet my = {};\n\nfunction preload() {\n  // Load the faceMesh model\n  faceMesh = ml5.faceMesh(options);\n}\n\nfunction setup() {\n  // createCanvas(640, 480);\n  createCanvas(windowWidth, windowHeight);\n  // Create the webcam video and hide it\n  video = createCapture(VIDEO, { flipped: flipH });\n  video.size(640, 480);\n  video.hide();\n  // Start detecting faces from the webcam video\n  faceMesh.detectStart(video, function (results) {\n    // Callback function for when faceMesh outputs data\n    // Save the output to the faces variable\n    faces = results;\n  });\n\n  my.input = video;\n  // my.output = createGraphics(video.width, video.height);\n  my.output = createGraphics(width, height);\n  my.output.noStroke();\n  my.mar_h = 5; // height margin in percent\n  my.mar_w = 5;\n  // my.align = \"center\";\n  my.alpha = 255;\n  my.avg_color = [0, 0, 0];\n\n  faceMeshPairsToNits();\n\n  createVideoMask();\n}\n\nfunction createVideoMask() {\n  my.videoMask = createGraphics(video.width, video.height);\n  my.videoMask.clear();\n  // my.videoMask.fill(255,255,255,255);\n  // my.videoMask.rect(100,100,200,200);\n}\n\nfunction draw() {\n  // Draw the webcam video\n  // image(video, 0, 0, width, height);\n\n  // background(255);\n\n  my.output.clear();\n\n  // Draw all the tracked face points\n  for (let face of faces) {\n    // draw_face_circle(face);\n    draw_face_mesh(face);\n    draw_mouth_shape(face);\n    draw_lips_line(face);\n    draw_eye_shape(face);\n    draw_eye_lines(face);\n    my.face1 = face;\n  }\n\n  background(my.avg_color);\n  image(my.output, 0, 0);\n\n  if (my.face1) {\n    draw_mouth_shape_output(my.face1, my.videoMask);\n    video.mask(my.videoMask);\n    let { x: x0, y: y0 } = transPt({ x: 0, y: 0 });\n    let { x: w, y: h } = transPt({ x: video.width, y: video.height });\n    image(video, 0, 0);\n    // image(video, 0, 0, width, height, 0, 0, video.width, video.height);\n    // image(video, x0, y0, w, h, 0, 0, video.width, video.height);\n    // image(video, 0, 0, w, h, 0, 0, video.width, video.height);\n    // console.log('x0, y0, w, h', x0, y0, w, h);\n  }\n}\n\n// image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight]\n\nfunction transPt_xxx(pt) {\n  let { x, y } = pt;\n  x = (x - my.x0k) * my.rx + my.x0;\n  y = (y - my.y0k) * my.ry + my.y0;\n  return { x, y };\n}\n\nfunction draw_mouth_shape_output(face, layer) {\n  layer.clear();\n  layer.fill([255, 255, 255, 255]);\n  \n  layer.beginShape();\n  draw_vertex_layer(lips_out_top, face, layer);\n  draw_vertex_layer(lips_out_bot, face, layer);\n  layer.endShape();\n  \n  layer.beginShape();\n  draw_vertex_layer(left_eye_top, face, layer);\n  draw_vertex_layer(left_eye_bot, face, layer);\n  layer.endShape();\n\n  my.output.beginShape();\n  draw_vertex_layer(right_eye_top, face, layer);\n  draw_vertex_layer(right_eye_bot, face, layer);\n  layer.endShape();\n}\n\nfunction draw_vertex_layer(lp, face, layer) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    // let { x, y } = transPt(face.keypoints[ki]);\n    let { x, y } = face.keypoints[ki];\n    layer.vertex(x, y);\n  }\n}\n\nfunction draw_lips_line(face) {\n  my.output.strokeWeight(3);\n  my.output.stroke(255, 0, 0);\n  draw_line(lips_out_top, face);\n\n  my.output.stroke(0, 255, 0);\n  draw_line(lips_out_bot, face);\n\n  my.output.stroke(255, 255, 0);\n  draw_line(lips_in_top, face);\n\n  my.output.stroke(0, 255, 255);\n  draw_line(lips_in_bot, face);\n\n  // my.output.stroke(0, 255, 0);\n  my.output.stroke(255, 255, 255);\n  draw_points(face.lips.keypoints);\n}\n\nfunction draw_eye_shape(face) {\n  my.output.strokeWeight(0);\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(left_eye_top, face);\n  draw_vertex(left_eye_bot, face);\n  my.output.endShape();\n\n  my.output.beginShape();\n  draw_vertex(right_eye_top, face);\n  draw_vertex(right_eye_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_eye_lines(face) {\n  my.output.strokeWeight(1);\n  my.output.stroke(\"gold\");\n\n  draw_line(left_eye_top, face);\n  draw_line(left_eye_bot, face);\n  draw_line(right_eye_top, face);\n  draw_line(right_eye_bot, face);\n}\n\nfunction draw_mouth_shape(face) {\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(lips_in_top, face);\n  draw_vertex(lips_in_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_vertex(lp, face) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = transPt(face.keypoints[ki]);\n    my.output.vertex(x, y);\n  }\n}\n\nfunction transPt(pt) {\n  let { x, y } = pt;\n  x = (x - my.x0k) * my.rx + my.x0;\n  y = (y - my.y0k) * my.ry + my.y0;\n  return { x, y };\n}\n\nfunction draw_points(points) {\n  for (let point of points) {\n    let { x, y } = transPt(point);\n    my.output.fill(0, 255, 0);\n    my.output.circle(x, y, 2);\n  }\n}\n\nfunction draw_line(lp, face) {\n  let px, py;\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = transPt(face.keypoints[ki]);\n    if (i != 0) {\n      my.output.line(px, py, x, y);\n    }\n    px = x;\n    py = y;\n  }\n}\n\nfunction draw_face_circle(face) {\n  for (let keypoint of face.keypoints) {\n    let { x, y } = transPt(keypoint);\n    fill(0, 255, 0);\n    noStroke();\n    circle(x, y, 2);\n  }\n}\n\nfunction draw_face_mesh(face) {\n  drawFaceMesh(my, face.keypoints);\n}\n\nfunction faceMeshPairsToNits() {\n  // Extract the x coordinate from FACE_MESH_PAIRS\n  mesh_nits = FACE_MESH_PAIRS.map((xy) => xy[0]);\n}\n\n// https://editor.p5js.org/ml5/sketches/lCurUW1TT\n// faceMesh-keypoints --ml5\n/*\n * 👋 Hello! This is an ml5.js example made and shared with ❤️.\n * Learn more about the ml5.js project: https://ml5js.org/\n * ml5.js license and Code of Conduct: https://github.com/ml5js/ml5-next-gen/blob/main/LICENSE.md\n *\n * This example demonstrates face tracking on live video through ml5.faceMesh.\n */\n\n// https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl\n// faceMesh-keypoints --ml5 copy\n\n// https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6\n// faceMesh mesh_nits\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz\n// faceMesh mesh_nits v2\n// scale to height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/hFnQmY-Jy\n// faceMesh mesh_nits v3\n// fit to width\n\n// frameRate()\n// 36.63003701391713\n\n// https://editor.p5js.org/jht9629-nyu/sketches/p4Uu0B2sk\n// faceMesh mesh_nits v4\n// fill to width and height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/nDEtGRehq\n// faceMesh mesh_nits v5\n\n// https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ\n// faceMesh mesh_nits v6 -- stray mask\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy\n// faceMesh mesh_nits v7 mask\n\nlet flipH = true;\nlet faceMesh;\nlet video;\nlet faces = [];\nlet options = {\n  maxFaces: 1,\n  refineLandmarks: false,\n  flipHorizontal: flipH,\n};\n\nlet my = {};\n\nfunction preload() {\n  // Load the faceMesh model\n  faceMesh = ml5.faceMesh(options);\n}\n\nfunction setup() {\n  // pixelDensity(1);\n  // createCanvas(640, 480);\n  createCanvas(windowWidth, windowHeight);\n  // Create the webcam video and hide it\n  video = createCapture(VIDEO, { flipped: flipH });\n  video.size(640, 480);\n  video.hide();\n  // Start detecting faces from the webcam video\n  faceMesh.detectStart(video, function (results) {\n    // Callback function for when faceMesh outputs data\n    // Save the output to the faces variable\n    faces = results;\n  });\n\n  my.input = video;\n  // my.output = createGraphics(video.width, video.height);\n  my.output = createGraphics(width, height);\n  my.output.noStroke();\n  my.mar_h = 5; // height margin in percent\n  my.mar_w = 5;\n  // my.align = \"center\";\n  my.alpha = 255;\n  my.avg_color = [0, 0, 0];\n\n  faceMeshPairsToNits();\n\n  createVideoMask();\n}\n\nfunction createVideoMask() {\n  my.videoMask = createGraphics(video.width, video.height);\n  my.videoMask.clear();\n  // my.videoMask.fill(255,255,255,255);\n  // my.videoMask.rect(100,100,200,200);\n  my.videoBuff = createGraphics(video.width, video.height);\n}\n\nfunction draw() {\n  // Draw the webcam video\n  // image(video, 0, 0, width, height);\n\n  // background(255);\n\n  my.output.clear();\n\n  // Draw all the tracked face points\n  for (let face of faces) {\n    // draw_face_circle(face);\n    draw_face_mesh(face);\n    // draw_mouth_shape(face);\n    // draw_lips_line(face);\n    // draw_eye_shape(face);\n    // draw_eye_lines(face);\n    my.face1 = face;\n  }\n\n  background(my.avg_color);\n  image(my.output, 0, 0);\n\n  if (my.face1) {\n    draw_mouth_shape_output(my.face1, my.videoMask);\n    video.mask(my.videoMask);\n\n    let { x: x0, y: y0 } = transInversePt({ x: 0, y: 0 });\n    my.videoBuff.clear();\n    my.videoBuff.image(video, 0, 0, my.xlen, my.ylen, x0, y0, my.xlen, my.ylen);\n\n    // image(my.videoBuff, 0, 0);\n\n    let w = my.xlen * my.rx;\n    let h = my.ylen * my.ry;\n    image(my.videoBuff, 0, 0, w, h, 0, 0, my.xlen, my.ylen);\n\n    // console.log('x0, y0, w, h', x0, y0, w, h);\n  }\n}\n\n// image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight]\n\nfunction transInversePt(pt) {\n  let { x, y } = pt;\n  // x = (x - my.x0k) * my.rx + my.x0;\n  // y = (y - my.y0k) * my.ry + my.y0;\n  x = my.x0k + (x - my.x0) / my.rx;\n  y = my.y0k + (y - my.y0) / my.ry;\n  return { x, y };\n}\n\nfunction draw_mouth_shape_output(face, layer) {\n  layer.clear();\n  layer.fill([255, 255, 255, 255]);\n\n  layer.beginShape();\n  draw_vertex_layer(lips_out_top, face, layer);\n  draw_vertex_layer(lips_out_bot, face, layer);\n  layer.endShape();\n\n  layer.beginShape();\n  draw_vertex_layer(left_eye_top, face, layer);\n  draw_vertex_layer(left_eye_bot, face, layer);\n  layer.endShape();\n\n  my.output.beginShape();\n  draw_vertex_layer(right_eye_top, face, layer);\n  draw_vertex_layer(right_eye_bot, face, layer);\n  layer.endShape();\n}\n\nfunction draw_vertex_layer(lp, face, layer) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    // let { x, y } = transPt(face.keypoints[ki]);\n    let { x, y } = face.keypoints[ki];\n    layer.vertex(x, y);\n  }\n}\n\nfunction draw_lips_line(face) {\n  my.output.strokeWeight(3);\n  my.output.stroke(255, 0, 0);\n  draw_line(lips_out_top, face);\n\n  my.output.stroke(0, 255, 0);\n  draw_line(lips_out_bot, face);\n\n  my.output.stroke(255, 255, 0);\n  draw_line(lips_in_top, face);\n\n  my.output.stroke(0, 255, 255);\n  draw_line(lips_in_bot, face);\n\n  // my.output.stroke(0, 255, 0);\n  my.output.stroke(255, 255, 255);\n  draw_points(face.lips.keypoints);\n}\n\nfunction draw_eye_shape(face) {\n  my.output.strokeWeight(0);\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(left_eye_top, face);\n  draw_vertex(left_eye_bot, face);\n  my.output.endShape();\n\n  my.output.beginShape();\n  draw_vertex(right_eye_top, face);\n  draw_vertex(right_eye_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_eye_lines(face) {\n  my.output.strokeWeight(1);\n  my.output.stroke(\"gold\");\n\n  draw_line(left_eye_top, face);\n  draw_line(left_eye_bot, face);\n  draw_line(right_eye_top, face);\n  draw_line(right_eye_bot, face);\n}\n\nfunction draw_mouth_shape(face) {\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(lips_in_top, face);\n  draw_vertex(lips_in_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_vertex(lp, face) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = transPt(face.keypoints[ki]);\n    my.output.vertex(x, y);\n  }\n}\n\nfunction transPt(pt) {\n  let { x, y } = pt;\n  x = (x - my.x0k) * my.rx + my.x0;\n  y = (y - my.y0k) * my.ry + my.y0;\n  return { x, y };\n}\n\nfunction draw_points(points) {\n  for (let point of points) {\n    let { x, y } = transPt(point);\n    my.output.fill(0, 255, 0);\n    my.output.circle(x, y, 2);\n  }\n}\n\nfunction draw_line(lp, face) {\n  let px, py;\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = transPt(face.keypoints[ki]);\n    if (i != 0) {\n      my.output.line(px, py, x, y);\n    }\n    px = x;\n    py = y;\n  }\n}\n\nfunction draw_face_circle(face) {\n  for (let keypoint of face.keypoints) {\n    let { x, y } = transPt(keypoint);\n    fill(0, 255, 0);\n    noStroke();\n    circle(x, y, 2);\n  }\n}\n\nfunction draw_face_mesh(face) {\n  drawFaceMesh(my, face.keypoints);\n}\n\nfunction faceMeshPairsToNits() {\n  // Extract the x coordinate from FACE_MESH_PAIRS\n  mesh_nits = FACE_MESH_PAIRS.map((xy) => xy[0]);\n}\n\n// https://editor.p5js.org/ml5/sketches/lCurUW1TT\n// faceMesh-keypoints --ml5\n/*\n * 👋 Hello! This is an ml5.js example made and shared with ❤️.\n * Learn more about the ml5.js project: https://ml5js.org/\n * ml5.js license and Code of Conduct: https://github.com/ml5js/ml5-next-gen/blob/main/LICENSE.md\n *\n * This example demonstrates face tracking on live video through ml5.faceMesh.\n */\n\n// https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl\n// faceMesh-keypoints --ml5 copy\n\n// https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6\n// faceMesh mesh_nits\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz\n// faceMesh mesh_nits v2\n// scale to height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/hFnQmY-Jy\n// faceMesh mesh_nits v3\n// fit to width\n\n// frameRate()\n// 36.63003701391713\n\n// https://editor.p5js.org/jht9629-nyu/sketches/p4Uu0B2sk\n// faceMesh mesh_nits v4\n// fill to width and height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/nDEtGRehq\n// faceMesh mesh_nits v5\n\n// https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ\n// faceMesh mesh_nits v6 -- stray mask\n",
         "children": [],
         "fileType": "file",
-        "isSelectedFile": false,
+        "isSelectedFile": true,
         "_id": "66bd6b78da372d03efebb7b6",
-        "createdAt": "2024-08-15T03:50:34.728Z",
-        "updatedAt": "2024-08-15T03:50:34.728Z",
+        "createdAt": "2024-08-15T05:14:15.773Z",
+        "updatedAt": "2024-08-15T05:14:15.773Z",
         "id": "66bd6b78da372d03efebb7b6"
       },
       {
@@ -8832,19 +8832,19 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66bd6b78da372d03efebb7b0",
-        "createdAt": "2024-08-15T03:50:34.728Z",
-        "updatedAt": "2024-08-15T03:50:34.728Z",
+        "createdAt": "2024-08-15T05:14:15.773Z",
+        "updatedAt": "2024-08-15T05:14:15.773Z",
         "id": "66bd6b78da372d03efebb7b0"
       },
       {
         "name": "drawFaceMesh.js",
-        "content": "\n// my.output\n// my.mar_w\n// my.mar_h \n// my.align\n// my.alpha\n// my.avg_color[]\n\n// function drawFaceMesh(my, input, predictions) {\nfunction drawFaceMesh(my, keypoints) {\n  \n  let input = my.input.get();\n  if (!input) return;\n  \n  let layer = my.output;\n  let out_w = layer.width;\n  let out_h = layer.height;\n  let mar_w = out_w * (my.mar_w / 100); \n  let mar_h = out_h * (my.mar_h / 100);\n  let rr = out_h / input.height;\n  let align_none = my.align === 'none';\n  let align_center = my.align === 'center';\n  let align_right = my.align === 'right';\n\n  let col_sum = [0, 0, 0];\n  let ncol = 0;\n\n  let y1k = keypoints[10].y;\n  let y2k = keypoints[152].y;\n  let x1k = keypoints[234].x;\n  let x2k = keypoints[454].x;\n\n  let x0k = x1k;\n  let y0k = y1k;\n  let xlen = x2k - x1k;\n  let ylen = y2k - y1k;\n  let rx = (out_w - mar_w * 2) / xlen;\n  let ry = (out_h - mar_h * 2) / ylen;\n  let x0 = 0; // flush left\n  let y0 = mar_h;\n  \n  if (align_right) {\n    x0 = out_w - xlen * rx;\n  } else if (align_center) {\n    x0 = (out_w - xlen * rx) / 2;\n  } else if (align_none) {\n    rx = rr;\n    ry = rr;\n    x0k = 0;\n    y0k = 0;\n  }\n  else { // align left\n    x0 = mar_w;\n  }\n  \n  layer.strokeWeight(0);\n  let n = mesh_nits.length;\n  for (let j = 0; j < n; j += 3) {\n    let {x: x1, y: y1} = keypoints[mesh_nits[j]];\n    let {x: x2, y: y2} = keypoints[mesh_nits[j + 1]];\n    let {x: x3, y: y3} = keypoints[mesh_nits[j + 2]];\n    let col = input.get(x1, y1);\n    col[3] = my.alpha;\n    col_sum[0] += col[0];\n    col_sum[1] += col[1];\n    col_sum[2] += col[2];\n    ncol++;\n    x1 = (x1 - x0k) * rx + x0;\n    y1 = (y1 - y0k) * ry + y0;\n    x2 = (x2 - x0k) * rx + x0;\n    y2 = (y2 - y0k) * ry + y0;\n    x3 = (x3 - x0k) * rx + x0;\n    y3 = (y3 - y0k) * ry + y0;\n    layer.fill(col);\n    layer.triangle(x1, y1, x2, y2, x3, y3);\n  }\n  if (ncol > 0) {\n    my.avg_color[0] = int(col_sum[0] / ncol);\n    my.avg_color[1] = int(col_sum[1] / ncol);\n    my.avg_color[2] = int(col_sum[2] / ncol);\n  }\n  my.x0 = x0;\n  my.y0 = y0;\n  my.x0k = x0k;\n  my.y0k = y0k;\n  my.rx = rx;\n  my.ry = ry;\n}\n\n",
+        "content": "\n// my.output\n// my.mar_w\n// my.mar_h \n// my.align\n// my.alpha\n// my.avg_color[]\n\n// function drawFaceMesh(my, input, predictions) {\nfunction drawFaceMesh(my, keypoints) {\n  \n  let input = my.input.get();\n  if (!input) return;\n  \n  let layer = my.output;\n  let out_w = layer.width;\n  let out_h = layer.height;\n  let mar_w = out_w * (my.mar_w / 100); \n  let mar_h = out_h * (my.mar_h / 100);\n  let rr = out_h / input.height;\n  let align_none = my.align === 'none';\n  let align_center = my.align === 'center';\n  let align_right = my.align === 'right';\n\n  let col_sum = [0, 0, 0];\n  let ncol = 0;\n\n  let y1k = keypoints[10].y;\n  let y2k = keypoints[152].y;\n  let x1k = keypoints[234].x;\n  let x2k = keypoints[454].x;\n\n  let x0k = x1k;\n  let y0k = y1k;\n  let xlen = x2k - x1k;\n  let ylen = y2k - y1k;\n  let rx = (out_w - mar_w * 2) / xlen;\n  let ry = (out_h - mar_h * 2) / ylen;\n  let x0 = 0; // flush left\n  let y0 = mar_h;\n  \n  if (align_right) {\n    x0 = out_w - xlen * rx;\n  } else if (align_center) {\n    x0 = (out_w - xlen * rx) / 2;\n  } else if (align_none) {\n    rx = rr;\n    ry = rr;\n    x0k = 0;\n    y0k = 0;\n  }\n  else { // align left\n    x0 = mar_w;\n  }\n  \n  layer.strokeWeight(0);\n  let n = mesh_nits.length;\n  for (let j = 0; j < n; j += 3) {\n    let {x: x1, y: y1} = keypoints[mesh_nits[j]];\n    let {x: x2, y: y2} = keypoints[mesh_nits[j + 1]];\n    let {x: x3, y: y3} = keypoints[mesh_nits[j + 2]];\n    let col = input.get(x1, y1);\n    col[3] = my.alpha;\n    col_sum[0] += col[0];\n    col_sum[1] += col[1];\n    col_sum[2] += col[2];\n    ncol++;\n    x1 = (x1 - x0k) * rx + x0;\n    y1 = (y1 - y0k) * ry + y0;\n    x2 = (x2 - x0k) * rx + x0;\n    y2 = (y2 - y0k) * ry + y0;\n    x3 = (x3 - x0k) * rx + x0;\n    y3 = (y3 - y0k) * ry + y0;\n    layer.fill(col);\n    layer.triangle(x1, y1, x2, y2, x3, y3);\n  }\n  if (ncol > 0) {\n    my.avg_color[0] = int(col_sum[0] / ncol);\n    my.avg_color[1] = int(col_sum[1] / ncol);\n    my.avg_color[2] = int(col_sum[2] / ncol);\n  }\n  my.x0 = x0;\n  my.y0 = y0;\n  my.x0k = x0k;\n  my.y0k = y0k;\n  my.rx = rx;\n  my.ry = ry;\n  my.xlen = xlen;\n  my.ylen = ylen;\n}\n\n",
         "children": [],
         "fileType": "file",
-        "isSelectedFile": true,
+        "isSelectedFile": false,
         "_id": "66bd6b78da372d03efebb7b2",
-        "createdAt": "2024-08-15T03:50:34.728Z",
-        "updatedAt": "2024-08-15T03:50:34.728Z",
+        "createdAt": "2024-08-15T05:14:15.773Z",
+        "updatedAt": "2024-08-15T05:14:15.773Z",
         "id": "66bd6b78da372d03efebb7b2"
       },
       {
@@ -8854,8 +8854,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66bd6b78da372d03efebb7b5",
-        "createdAt": "2024-08-15T03:50:34.728Z",
-        "updatedAt": "2024-08-15T03:50:34.728Z",
+        "createdAt": "2024-08-15T05:14:15.773Z",
+        "updatedAt": "2024-08-15T05:14:15.773Z",
         "id": "66bd6b78da372d03efebb7b5"
       },
       {
@@ -8865,8 +8865,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66bd6b78da372d03efebb7b1",
-        "createdAt": "2024-08-15T03:50:34.728Z",
-        "updatedAt": "2024-08-15T03:50:34.728Z",
+        "createdAt": "2024-08-15T05:14:15.773Z",
+        "updatedAt": "2024-08-15T05:14:15.773Z",
         "id": "66bd6b78da372d03efebb7b1"
       },
       {
@@ -8876,8 +8876,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66bd6b78da372d03efebb7af",
-        "createdAt": "2024-08-15T03:50:34.728Z",
-        "updatedAt": "2024-08-15T03:50:34.728Z",
+        "createdAt": "2024-08-15T05:14:15.773Z",
+        "updatedAt": "2024-08-15T05:14:15.773Z",
         "id": "66bd6b78da372d03efebb7af"
       },
       {
@@ -8887,13 +8887,13 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66bd6b78da372d03efebb7b3",
-        "createdAt": "2024-08-15T03:50:34.728Z",
-        "updatedAt": "2024-08-15T03:50:34.728Z",
+        "createdAt": "2024-08-15T05:14:15.773Z",
+        "updatedAt": "2024-08-15T05:14:15.773Z",
         "id": "66bd6b78da372d03efebb7b3"
       }
     ],
     "createdAt": "2024-08-15T02:44:08.299Z",
-    "updatedAt": "2024-08-15T03:50:34.728Z",
+    "updatedAt": "2024-08-15T05:14:15.773Z",
     "id": "PuoF9-3xy"
   },
   {

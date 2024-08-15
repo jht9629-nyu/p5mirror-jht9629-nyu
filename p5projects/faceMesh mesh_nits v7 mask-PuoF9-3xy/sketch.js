@@ -19,6 +19,7 @@ function preload() {
 }
 
 function setup() {
+  // pixelDensity(1);
   // createCanvas(640, 480);
   createCanvas(windowWidth, windowHeight);
   // Create the webcam video and hide it
@@ -52,6 +53,7 @@ function createVideoMask() {
   my.videoMask.clear();
   // my.videoMask.fill(255,255,255,255);
   // my.videoMask.rect(100,100,200,200);
+  my.videoBuff = createGraphics(video.width, video.height);
 }
 
 function draw() {
@@ -66,10 +68,10 @@ function draw() {
   for (let face of faces) {
     // draw_face_circle(face);
     draw_face_mesh(face);
-    draw_mouth_shape(face);
-    draw_lips_line(face);
-    draw_eye_shape(face);
-    draw_eye_lines(face);
+    // draw_mouth_shape(face);
+    // draw_lips_line(face);
+    // draw_eye_shape(face);
+    // draw_eye_lines(face);
     my.face1 = face;
   }
 
@@ -79,34 +81,41 @@ function draw() {
   if (my.face1) {
     draw_mouth_shape_output(my.face1, my.videoMask);
     video.mask(my.videoMask);
-    let { x: x0, y: y0 } = transPt({ x: 0, y: 0 });
-    let { x: w, y: h } = transPt({ x: video.width, y: video.height });
-    image(video, 0, 0);
-    // image(video, 0, 0, width, height, 0, 0, video.width, video.height);
-    // image(video, x0, y0, w, h, 0, 0, video.width, video.height);
-    // image(video, 0, 0, w, h, 0, 0, video.width, video.height);
+
+    let { x: x0, y: y0 } = transInversePt({ x: 0, y: 0 });
+    my.videoBuff.clear();
+    my.videoBuff.image(video, 0, 0, my.xlen, my.ylen, x0, y0, my.xlen, my.ylen);
+
+    // image(my.videoBuff, 0, 0);
+
+    let w = my.xlen * my.rx;
+    let h = my.ylen * my.ry;
+    image(my.videoBuff, 0, 0, w, h, 0, 0, my.xlen, my.ylen);
+
     // console.log('x0, y0, w, h', x0, y0, w, h);
   }
 }
 
 // image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight]
 
-function transPt_xxx(pt) {
+function transInversePt(pt) {
   let { x, y } = pt;
-  x = (x - my.x0k) * my.rx + my.x0;
-  y = (y - my.y0k) * my.ry + my.y0;
+  // x = (x - my.x0k) * my.rx + my.x0;
+  // y = (y - my.y0k) * my.ry + my.y0;
+  x = my.x0k + (x - my.x0) / my.rx;
+  y = my.y0k + (y - my.y0) / my.ry;
   return { x, y };
 }
 
 function draw_mouth_shape_output(face, layer) {
   layer.clear();
   layer.fill([255, 255, 255, 255]);
-  
+
   layer.beginShape();
   draw_vertex_layer(lips_out_top, face, layer);
   draw_vertex_layer(lips_out_bot, face, layer);
   layer.endShape();
-  
+
   layer.beginShape();
   draw_vertex_layer(left_eye_top, face, layer);
   draw_vertex_layer(left_eye_bot, face, layer);

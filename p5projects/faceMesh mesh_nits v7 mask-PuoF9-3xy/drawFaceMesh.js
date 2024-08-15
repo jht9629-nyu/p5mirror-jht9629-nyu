@@ -85,5 +85,7 @@ function drawFaceMesh(my, keypoints) {
   my.y0k = y0k;
   my.rx = rx;
   my.ry = ry;
+  my.xlen = xlen;
+  my.ylen = ylen;
 }
 
