@@ -15,7 +15,8 @@ function drawFaceMesh(my, keypoints) {
   let layer = my.output;
   let out_w = layer.width;
   let out_h = layer.height;
-  // let mar_w = out_w * (my.mar_w / 100); // width margin -- not used yet
+  // width margin -- not used yet
+  let mar_w = out_w * (my.mar_w / 100); 
   let mar_h = out_h * (my.mar_h / 100);
   let rr = out_h / input.height;
   let align_none = my.align === 'none';
@@ -46,6 +47,9 @@ function drawFaceMesh(my, keypoints) {
     r1 = rr;
     x0k = 0;
     y0k = 0;
+  }
+  else { // align left
+    x0 = mar_w;
   }
   
   layer.strokeWeight(0);

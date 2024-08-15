@@ -1,11 +1,13 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz
 // faceMesh mesh_nits v2
+// scale to height
 
+let flipH = true;
 let faceMesh;
 let video;
 let faces = [];
 let options = { 
-  maxFaces: 1, refineLandmarks: false, flipHorizontal: false };
+  maxFaces: 1, refineLandmarks: false, flipHorizontal: flipH };
 
 let my = {};
 
@@ -15,19 +17,22 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(640, 480);
+  // createCanvas(640, 480);
+  createCanvas(windowWidth, windowHeight);
   // Create the webcam video and hide it
-  video = createCapture(VIDEO, { flipped: false });
+  video = createCapture(VIDEO, { flipped: flipH });
   video.size(640, 480);
   video.hide();
   // Start detecting faces from the webcam video
   faceMesh.detectStart(video, gotFaces);
 
   my.input = video;
-  my.output = createGraphics(video.width, video.height);
+  // my.output = createGraphics(video.width, video.height);
+  my.output = createGraphics(width, height);
   my.output.noStroke();
-  my.mar_h = 5;
-  my.align = "center";
+  my.mar_h = 5; // height margin in percent
+  my.mar_w = 5;
+  // my.align = "center";
   my.alpha = 255;
   my.avg_color = [0, 0, 0];
 
@@ -49,9 +54,14 @@ function draw() {
     draw_face_mesh(face);
     draw_mouth_shape(face);
     draw_lips_line(face);
+    draw_eye_shape(face);
+    draw_eye_lines(face);
   }
 
   image(my.output, 0, 0);
+  // image(my.output, 0, 0, width, height);
+  // filter(BLUR, 4);
+  // image_scaled_pad(my.output);
 }
 
 // Callback function for when faceMesh outputs data
@@ -60,8 +70,49 @@ function gotFaces(results) {
   faces = results;
 }
 
+function draw_lips_line(face) {
+  my.output.strokeWeight(3);
+  my.output.stroke(255, 0, 0);
+  draw_line(lips_out_top, face);
+  my.output.stroke(0, 255, 0);
+  draw_line(lips_out_bot, face);
+  my.output.stroke(255, 255, 0);
+  draw_line(lips_in_top, face);
+  my.output.stroke(0, 255, 255);
+  draw_line(lips_in_bot, face);
+  // my.output.stroke(0, 255, 0);
+  my.output.stroke(255, 255, 255);
+  draw_points(face.lips.keypoints);
+}
+
+function draw_eye_shape(face) {
+  my.output.strokeWeight(0);
+  my.output.fill(0, 0, 0);
+  
+  my.output.beginShape();
+  draw_vertex(left_eye_top,face);
+  draw_vertex(left_eye_bot,face);
+  my.output.endShape();
+  
+  my.output.beginShape();
+  draw_vertex(right_eye_top,face);
+  draw_vertex(right_eye_bot,face);
+  my.output.endShape();
+}
+
+function draw_eye_lines(face) {
+  my.output.strokeWeight(1);
+  my.output.stroke('gold');
+  
+  draw_line(left_eye_top, face);
+  draw_line(left_eye_bot, face);
+  draw_line(right_eye_top, face);
+  draw_line(right_eye_bot, face);
+}
+
 function draw_mouth_shape(face) {
   my.output.fill(0, 0, 0);
+  
   my.output.beginShape();
   draw_vertex(lips_in_top,face);
   draw_vertex(lips_in_bot,face);
@@ -77,17 +128,6 @@ function draw_vertex(lp, face) {
     y = (y - y0k) * r1 + y0;
     layer.vertex(x, y);
   }
-}
-
-function draw_lips_line(face) {
-  my.output.strokeWeight(3);
-  my.output.stroke(255, 0, 0);
-  draw_line(lips_out_top, face);
-  draw_line(lips_out_bot, face);
-  draw_line(lips_in_top, face);
-  draw_line(lips_in_bot, face);
-  my.output.stroke(0, 255, 0);
-  draw_points(face.lips.keypoints);
 }
 
 function draw_points(points) {

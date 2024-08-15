@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-442 sketches  
+447 sketches  
 [03-jht-hatviz](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)<!-- 2023-04-09T01:41:50.719Z -->  
 [1.2 draw\_shapes\_ui](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)<!-- 2023-09-16T22:25:20.883Z -->  
 [10PRINT copy](https://editor.p5js.org/jht9629-nyu/sketches/-QATBkoGr)<!-- 2023-10-02T21:30:31.747Z -->  
@@ -132,7 +132,12 @@
 [Emoji yu copy](https://editor.p5js.org/jht9629-nyu/sketches/CpBl1AoDw)<!-- 2024-07-29T15:30:15.116Z -->  
 [Enstars Trip Album - Trickstar copy](https://editor.p5js.org/jht9629-nyu/sketches/kPKQiy0j6)<!-- 2024-07-31T14:36:10.734Z -->  
 [faceMesh mesh\_nits](https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6)<!-- 2024-08-13T12:53:58.965Z -->  
-[faceMesh mesh\_nits v2](https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz)<!-- 2024-08-13T21:21:16.088Z -->  
+[faceMesh mesh\_nits v2](https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz)<!-- 2024-08-15T01:07:59.493Z -->  
+[faceMesh mesh\_nits v3](https://editor.p5js.org/jht9629-nyu/sketches/hFnQmY-Jy)<!-- 2024-08-15T01:23:10.153Z -->  
+[faceMesh mesh\_nits v4](https://editor.p5js.org/jht9629-nyu/sketches/p4Uu0B2sk)<!-- 2024-08-15T02:18:39.597Z -->  
+[faceMesh mesh\_nits v5](https://editor.p5js.org/jht9629-nyu/sketches/nDEtGRehq)<!-- 2024-08-15T01:47:31.208Z -->  
+[faceMesh mesh\_nits v6 -- stray mask](https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ)<!-- 2024-08-15T02:44:03.805Z -->  
+[faceMesh mesh\_nits v7 mask](https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy)<!-- 2024-08-15T03:50:34.728Z -->  
 [faceMesh-keypoints --ml5](https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl)<!-- 2024-08-13T01:43:28.980Z -->  
 [faceMesh-keypoints --ml5](https://editor.p5js.org/jht9629-nyu/sketches/L6iIpOR5H)<!-- 2024-08-13T01:41:18.216Z -->  
 [Fancy Pong Chords](https://editor.p5js.org/jht9629-nyu/sketches/5Y1WTyVd-)<!-- 2023-08-05T09:59:09.801Z -->  

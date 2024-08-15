@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[442 sketches 2024-08-13T21:21:16.088Z](./downloads/gen/sketches_recent.md)
+[447 sketches 2024-08-15T03:50:34.728Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [1.2 draw\_shapes\_ui-AnDswZ6eY](./p5projects/1.2%20draw_shapes_ui-AnDswZ6eY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)]
@@ -248,6 +248,11 @@
 - [earth-lat-lon-q14Kn5a0O](./p5projects/earth-lat-lon-q14Kn5a0O) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/q14Kn5a0O)]
 - [earth-xyz-bpsB\_xmSH](./p5projects/earth-xyz-bpsB_xmSH) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/bpsB_xmSH)]
 - [faceMesh mesh\_nits v2-7y2gqHeZz](./p5projects/faceMesh%20mesh_nits%20v2-7y2gqHeZz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz)]
+- [faceMesh mesh\_nits v3-hFnQmY-Jy](./p5projects/faceMesh%20mesh_nits%20v3-hFnQmY-Jy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hFnQmY-Jy)]
+- [faceMesh mesh\_nits v4-p4Uu0B2sk](./p5projects/faceMesh%20mesh_nits%20v4-p4Uu0B2sk) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/p4Uu0B2sk)]
+- [faceMesh mesh\_nits v5-nDEtGRehq](./p5projects/faceMesh%20mesh_nits%20v5-nDEtGRehq) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nDEtGRehq)]
+- [faceMesh mesh\_nits v6 - stray mask-fsOAbI6SJ](./p5projects/faceMesh%20mesh_nits%20v6%20-%20stray%20mask-fsOAbI6SJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ)]
+- [faceMesh mesh\_nits v7 mask-PuoF9-3xy](./p5projects/faceMesh%20mesh_nits%20v7%20mask-PuoF9-3xy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy)]
 - [faceMesh mesh\_nits-PrJvjyxb6](./p5projects/faceMesh%20mesh_nits-PrJvjyxb6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6)]
 - [faceMesh-keypoints -ml5-9fOM25TRl](./p5projects/faceMesh-keypoints%20-ml5-9fOM25TRl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl)]
 - [faceMesh-keypoints -ml5-L6iIpOR5H](./p5projects/faceMesh-keypoints%20-ml5-L6iIpOR5H) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/L6iIpOR5H)]
