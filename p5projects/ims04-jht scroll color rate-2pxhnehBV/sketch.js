@@ -16,7 +16,7 @@ let my = {};
 
 function setup() {
   my.scrollSeconds = 30;
-  my.debug = 1;
+  // my.debug = 1;
   my.width = 400;
   my.height = 400;
   my.n = 3;

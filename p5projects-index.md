@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[449 sketches 2024-08-15T17:04:53.712Z](./downloads/gen/sketches_recent.md)
+[451 sketches 2024-08-17T14:28:22.886Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [1.2 draw\_shapes\_ui-AnDswZ6eY](./p5projects/1.2%20draw_shapes_ui-AnDswZ6eY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)]
@@ -255,6 +255,7 @@
 - [faceMesh mesh\_nits v7 mask-PuoF9-3xy](./p5projects/faceMesh%20mesh_nits%20v7%20mask-PuoF9-3xy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy)]
 - [faceMesh mesh\_nits v8 bestill-\_3QMiI-fM](./p5projects/faceMesh%20mesh_nits%20v8%20bestill-_3QMiI-fM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_3QMiI-fM)]
 - [faceMesh mesh\_nits v8 inner-uOjmgYoZJ](./p5projects/faceMesh%20mesh_nits%20v8%20inner-uOjmgYoZJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/uOjmgYoZJ)]
+- [faceMesh mesh\_nits v9 bars-CMiG5M39F](./p5projects/faceMesh%20mesh_nits%20v9%20bars-CMiG5M39F) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CMiG5M39F)]
 - [faceMesh mesh\_nits-PrJvjyxb6](./p5projects/faceMesh%20mesh_nits-PrJvjyxb6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6)]
 - [faceMesh-keypoints -ml5-9fOM25TRl](./p5projects/faceMesh-keypoints%20-ml5-9fOM25TRl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl)]
 - [faceMesh-keypoints -ml5-L6iIpOR5H](./p5projects/faceMesh-keypoints%20-ml5-L6iIpOR5H) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/L6iIpOR5H)]
@@ -287,6 +288,7 @@
 - [ims03-jht scrolling color time-ZGUqiovgG](./p5projects/ims03-jht%20scrolling%20color%20time-ZGUqiovgG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZGUqiovgG)]
 - [ims04-jht scroll color bars-ZpoPuHXRo](./p5projects/ims04-jht%20scroll%20color%20bars-ZpoPuHXRo) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)]
 - [ims04-jht scroll color rate-2pxhnehBV](./p5projects/ims04-jht%20scroll%20color%20rate-2pxhnehBV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)]
+- [ims04-jht scroll color v2-fo\_qEMenp](./p5projects/ims04-jht%20scroll%20color%20v2-fo_qEMenp) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fo_qEMenp)]
 - [ims05-Ambra copy-Xp0RDXLSwr](./p5projects/ims05-Ambra%20copy-Xp0RDXLSwr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/p0RDXLSwr)]
 - [input DOM element method-hmwAqitsO](./p5projects/input%20DOM%20element%20method-hmwAqitsO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hmwAqitsO)]
 - [jht - Ideal Text Input 2-zj4\_p71s1](./p5projects/jht%20-%20Ideal%20Text%20Input%202-zj4_p71s1) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zj4_p71s1)]
