@@ -6,20 +6,6 @@ mkdir "./faceMesh mesh_nits v9 bars-CMiG5M39F"
 pushd "./faceMesh mesh_nits v9 bars-CMiG5M39F" > /dev/null
 unzip -q "../../downloads/zips/faceMesh mesh_nits v9 bars-CMiG5M39F"
 popd > /dev/null
-#
-echo unzip 2 "ims04-jht scroll color v2-fo_qEMenp"
-rm -rf "./ims04-jht scroll color v2-fo_qEMenp"
-mkdir "./ims04-jht scroll color v2-fo_qEMenp"
-pushd "./ims04-jht scroll color v2-fo_qEMenp" > /dev/null
-unzip -q "../../downloads/zips/ims04-jht scroll color v2-fo_qEMenp"
-popd > /dev/null
-#
-echo unzip 3 "ims04-jht scroll color rate-2pxhnehBV"
-rm -rf "./ims04-jht scroll color rate-2pxhnehBV"
-mkdir "./ims04-jht scroll color rate-2pxhnehBV"
-pushd "./ims04-jht scroll color rate-2pxhnehBV" > /dev/null
-unzip -q "../../downloads/zips/ims04-jht scroll color rate-2pxhnehBV"
-popd > /dev/null
 
 cd ..
 # remove redundant p5.js p5.sound.min.js

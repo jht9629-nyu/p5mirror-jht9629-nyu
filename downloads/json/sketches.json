@@ -9164,8 +9164,8 @@
         "fileType": "folder",
         "isSelectedFile": false,
         "_id": "66c0b2d4399e6881ea22455a",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2d4399e6881ea22455a"
       },
       {
@@ -9173,21 +9173,21 @@
         "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>faceMesh mesh_nits v8 bestill</title>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js\"></script>\n    <script src=\"https://unpkg.com/ml5@1/dist/ml5.min.js\"></script>\n  </head>\n  <body>\n    <script src=\"EYES_MESH.js\"></script>\n    <script src=\"FACE_MESH_PAIRS.js\"></script>\n    <script src=\"LIPS_MESH.js\"></script>\n    <script src=\"bars.js\"></script>\n    <script src=\"bestill.js\"></script>\n    <script src=\"drawFaceMesh.js\"></script>\n    <script src=\"mesh_nits.js\"></script>\n    <script src=\"image.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
         "children": [],
         "fileType": "file",
-        "isSelectedFile": true,
+        "isSelectedFile": false,
         "_id": "66c0b2d4399e6881ea224561",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2d4399e6881ea224561"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/_3QMiI-fM\n// faceMesh mesh_nits v8 bestill\n\nlet flipH = true;\nlet faceMesh;\nlet video;\nlet faces = [];\nlet options = {\n  maxFaces: 1,\n  refineLandmarks: false,\n  flipHorizontal: flipH,\n};\n\nlet my = {};\n\nfunction preload() {\n  // Load the faceMesh model\n  faceMesh = ml5.faceMesh(options);\n}\n\nfunction setup() {\n  // pixelDensity(1);\n  // createCanvas(640, 480);\n  createCanvas(windowWidth, windowHeight);\n  // Create the webcam video and hide it\n  video = createCapture(VIDEO, { flipped: flipH });\n  video.size(640, 480);\n  // video.size(1920, 1080);\n  video.hide();\n  // Start detecting faces from the webcam video\n  faceMesh.detectStart(video, function (results) {\n    // Callback function for when faceMesh outputs data\n    // Save the output to the faces variable\n    faces = results;\n  });\n\n  my.input = video;\n  // my.output = createGraphics(video.width, video.height);\n  my.output = createGraphics(width, height);\n  my.output.noStroke();\n  my.mar_h = 5; // height margin in percent\n  my.mar_w = 5;\n  // my.align = \"center\";\n  my.alpha = 255;\n  my.avg_color = [0, 0, 0];\n\n  faceMeshPairsToNits();\n\n  createVideoMask();\n  \n  my.bestill = new eff_bestill({factor: 10, input: my.output})\n}\n\nfunction createVideoMask() {\n  my.videoMask = createGraphics(video.width, video.height);\n  my.videoMask.clear();\n  // my.videoMask.fill(255,255,255,255);\n  // my.videoMask.rect(100,100,200,200);\n  my.videoBuff = createGraphics(video.width, video.height);\n}\n\nfunction draw() {\n  // Draw the webcam video\n  // image(video, 0, 0, width, height);\n\n  // background(255);\n\n  // my.output.clear();\n  my.output.background(my.avg_color);\n   // my.output.background(0);\n  \n  // Draw all the tracked face points\n  for (let face of faces) {\n    // draw_face_circle(face);\n    draw_face_mesh(face);\n    // draw_mouth_shape(face);\n    // draw_lips_line(face);\n    // draw_eye_shape(face);\n    // draw_eye_lines(face);\n    my.face1 = face;\n  }\n\n  // background(my.avg_color);\n  \n  // image(my.output, 0, 0);\n  my.bestill.prepareOutput();\n  image(my.bestill.output, 0, 0);\n  \n  if (my.face1) {\n    draw_shape_layer(my.face1, my.videoMask);\n    video.mask(my.videoMask);\n\n    let { x: x0, y: y0 } = transInversePt({ x: 0, y: 0 });\n    my.videoBuff.clear();\n    my.videoBuff.image(video, 0, 0, my.xlen, my.ylen, x0, y0, my.xlen, my.ylen);\n\n    // image(my.videoBuff, 0, 0);\n\n    let w = my.xlen * my.rx;\n    let h = my.ylen * my.ry;\n    image(my.videoBuff, 0, 0, w, h, 0, 0, my.xlen, my.ylen);\n\n    // console.log('x0, y0, w, h', x0, y0, w, h);\n  }\n}\n\n// image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight]\n\nfunction transInversePt(pt) {\n  let { x, y } = pt;\n  // x = (x - my.x0k) * my.rx + my.x0;\n  // y = (y - my.y0k) * my.ry + my.y0;\n  x = my.x0k + (x - my.x0) / my.rx;\n  y = my.y0k + (y - my.y0) / my.ry;\n  return { x, y };\n}\n\nfunction draw_shape_layer(face, layer) {\n  layer.clear();\n  layer.fill([255, 255, 255, 255]);\n\n  layer.beginShape();\n  draw_vertex_layer(lips_out_top, face, layer);\n  draw_vertex_layer(lips_out_bot, face, layer);\n  layer.endShape();\n\n  layer.beginShape();\n  draw_vertex_layer(left_eye_top, face, layer);\n  draw_vertex_layer(left_eye_bot, face, layer);\n  layer.endShape();\n\n  my.output.beginShape();\n  draw_vertex_layer(right_eye_top, face, layer);\n  draw_vertex_layer(right_eye_bot, face, layer);\n  layer.endShape();\n}\n\nfunction draw_vertex_layer(lp, face, layer) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    // let { x, y } = transPt(face.keypoints[ki]);\n    let { x, y } = face.keypoints[ki];\n    layer.vertex(x, y);\n  }\n}\n\nfunction draw_lips_line(face) {\n  my.output.strokeWeight(3);\n  my.output.stroke(255, 0, 0);\n  draw_line(lips_out_top, face);\n\n  my.output.stroke(0, 255, 0);\n  draw_line(lips_out_bot, face);\n\n  my.output.stroke(255, 255, 0);\n  draw_line(lips_in_top, face);\n\n  my.output.stroke(0, 255, 255);\n  draw_line(lips_in_bot, face);\n\n  // my.output.stroke(0, 255, 0);\n  my.output.stroke(255, 255, 255);\n  draw_points(face.lips.keypoints);\n}\n\nfunction draw_eye_shape(face) {\n  my.output.strokeWeight(0);\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(left_eye_top, face);\n  draw_vertex(left_eye_bot, face);\n  my.output.endShape();\n\n  my.output.beginShape();\n  draw_vertex(right_eye_top, face);\n  draw_vertex(right_eye_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_eye_lines(face) {\n  my.output.strokeWeight(1);\n  my.output.stroke(\"gold\");\n\n  draw_line(left_eye_top, face);\n  draw_line(left_eye_bot, face);\n  draw_line(right_eye_top, face);\n  draw_line(right_eye_bot, face);\n}\n\nfunction draw_mouth_shape(face) {\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(lips_in_top, face);\n  draw_vertex(lips_in_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_vertex(lp, face) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = transPt(face.keypoints[ki]);\n    my.output.vertex(x, y);\n  }\n}\n\nfunction transPt(pt) {\n  let { x, y } = pt;\n  x = (x - my.x0k) * my.rx + my.x0;\n  y = (y - my.y0k) * my.ry + my.y0;\n  return { x, y };\n}\n\nfunction draw_points(points) {\n  for (let point of points) {\n    let { x, y } = transPt(point);\n    my.output.fill(0, 255, 0);\n    my.output.circle(x, y, 2);\n  }\n}\n\nfunction draw_line(lp, face) {\n  let px, py;\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = transPt(face.keypoints[ki]);\n    if (i != 0) {\n      my.output.line(px, py, x, y);\n    }\n    px = x;\n    py = y;\n  }\n}\n\nfunction draw_face_circle(face) {\n  for (let keypoint of face.keypoints) {\n    let { x, y } = transPt(keypoint);\n    fill(0, 255, 0);\n    noStroke();\n    circle(x, y, 2);\n  }\n}\n\nfunction draw_face_mesh(face) {\n  drawFaceMesh(my, face.keypoints);\n}\n\nfunction faceMeshPairsToNits() {\n  // Extract the x coordinate from FACE_MESH_PAIRS\n  mesh_nits = FACE_MESH_PAIRS.map((xy) => xy[0]);\n}\n\n// https://editor.p5js.org/ml5/sketches/lCurUW1TT\n// faceMesh-keypoints --ml5\n/*\n * 👋 Hello! This is an ml5.js example made and shared with ❤️.\n * Learn more about the ml5.js project: https://ml5js.org/\n * ml5.js license and Code of Conduct: https://github.com/ml5js/ml5-next-gen/blob/main/LICENSE.md\n *\n * This example demonstrates face tracking on live video through ml5.faceMesh.\n */\n\n// https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl\n// faceMesh-keypoints --ml5 copy\n\n// https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6\n// faceMesh mesh_nits\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz\n// faceMesh mesh_nits v2\n// scale to height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/hFnQmY-Jy\n// faceMesh mesh_nits v3\n// fit to width\n\n// frameRate()\n// 36.63003701391713\n\n// https://editor.p5js.org/jht9629-nyu/sketches/p4Uu0B2sk\n// faceMesh mesh_nits v4\n// fill to width and height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/nDEtGRehq\n// faceMesh mesh_nits v5\n\n// https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ\n// faceMesh mesh_nits v6 -- stray mask\n\n// https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy\n// faceMesh mesh_nits v7 mask\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/_3QMiI-fM\n// faceMesh mesh_nits v8 bestill\n\nlet flipH = true;\nlet faceMesh;\nlet video;\nlet faces = [];\nlet options = {\n  maxFaces: 1,\n  refineLandmarks: false,\n  flipHorizontal: flipH,\n};\n\nlet my = {};\n\nfunction preload() {\n  // Load the faceMesh model\n  faceMesh = ml5.faceMesh(options);\n}\n\nfunction setup() {\n  // pixelDensity(1);\n  // createCanvas(640, 480);\n  createCanvas(windowWidth, windowHeight);\n  // Create the webcam video and hide it\n  video = createCapture(VIDEO, { flipped: flipH });\n  video.size(640, 480);\n  // video.size(1920, 1080);\n  video.hide();\n  // Start detecting faces from the webcam video\n  faceMesh.detectStart(video, function (results) {\n    // Callback function for when faceMesh outputs data\n    // Save the output to the faces variable\n    faces = results;\n  });\n\n  my.input = video;\n  // my.output = createGraphics(video.width, video.height);\n  my.output = createGraphics(width, height);\n  my.output.noStroke();\n  my.mar_h = 5; // height margin in percent\n  my.mar_w = 5;\n  // my.align = \"center\";\n  my.alpha = 255;\n  my.avg_color = [0, 0, 0];\n\n  faceMeshPairsToNits();\n\n  createVideoMask();\n  \n  my.bestill = new eff_bestill({factor: 10, input: my.output})\n}\n\nfunction createVideoMask() {\n  my.videoMask = createGraphics(video.width, video.height);\n  my.videoMask.clear();\n  // my.videoMask.fill(255,255,255,255);\n  // my.videoMask.rect(100,100,200,200);\n  my.videoBuff = createGraphics(video.width, video.height);\n}\n\nfunction draw() {\n  // Draw the webcam video\n  // image(video, 0, 0, width, height);\n\n  // background(255);\n\n  // my.output.clear();\n  my.output.background(my.avg_color);\n   // my.output.background(0);\n  \n  // Draw all the tracked face points\n  for (let face of faces) {\n    // draw_face_circle(face);\n    draw_face_mesh(face);\n    draw_mouth_shape(face);\n    draw_lips_line(face);\n    draw_eye_shape(face);\n    draw_eye_lines(face);\n    my.face1 = face;\n  }\n\n  // background(my.avg_color);\n  \n  // image(my.output, 0, 0);\n  my.bestill.prepareOutput();\n  image(my.bestill.output, 0, 0);\n  \n  if (my.face1) {\n    draw_shape_layer(my.face1, my.videoMask);\n    video.mask(my.videoMask);\n\n    let { x: x0, y: y0 } = transInversePt({ x: 0, y: 0 });\n    my.videoBuff.clear();\n    my.videoBuff.image(video, 0, 0, my.xlen, my.ylen, x0, y0, my.xlen, my.ylen);\n\n    // image(my.videoBuff, 0, 0);\n\n    let w = my.xlen * my.rx;\n    let h = my.ylen * my.ry;\n    image(my.videoBuff, 0, 0, w, h, 0, 0, my.xlen, my.ylen);\n\n    // console.log('x0, y0, w, h', x0, y0, w, h);\n  }\n}\n\n// image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight]\n\nfunction transInversePt(pt) {\n  let { x, y } = pt;\n  // x = (x - my.x0k) * my.rx + my.x0;\n  // y = (y - my.y0k) * my.ry + my.y0;\n  x = my.x0k + (x - my.x0) / my.rx;\n  y = my.y0k + (y - my.y0) / my.ry;\n  return { x, y };\n}\n\nfunction draw_shape_layer(face, layer) {\n  layer.clear();\n  layer.fill([255, 255, 255, 255]);\n\n  layer.beginShape();\n  draw_vertex_layer(lips_out_top, face, layer);\n  draw_vertex_layer(lips_out_bot, face, layer);\n  layer.endShape();\n\n  layer.beginShape();\n  draw_vertex_layer(left_eye_top, face, layer);\n  draw_vertex_layer(left_eye_bot, face, layer);\n  layer.endShape();\n\n  my.output.beginShape();\n  draw_vertex_layer(right_eye_top, face, layer);\n  draw_vertex_layer(right_eye_bot, face, layer);\n  layer.endShape();\n}\n\nfunction draw_vertex_layer(lp, face, layer) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    // let { x, y } = transPt(face.keypoints[ki]);\n    let { x, y } = face.keypoints[ki];\n    layer.vertex(x, y);\n  }\n}\n\nfunction draw_lips_line(face) {\n  my.output.strokeWeight(3);\n  my.output.stroke(255, 0, 0);\n  draw_line(lips_out_top, face);\n\n  my.output.stroke(0, 255, 0);\n  draw_line(lips_out_bot, face);\n\n  my.output.stroke(255, 255, 0);\n  draw_line(lips_in_top, face);\n\n  my.output.stroke(0, 255, 255);\n  draw_line(lips_in_bot, face);\n\n  // my.output.stroke(0, 255, 0);\n  my.output.stroke(255, 255, 255);\n  draw_points(face.lips.keypoints);\n}\n\nfunction draw_eye_shape(face) {\n  my.output.strokeWeight(0);\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(left_eye_top, face);\n  draw_vertex(left_eye_bot, face);\n  my.output.endShape();\n\n  my.output.beginShape();\n  draw_vertex(right_eye_top, face);\n  draw_vertex(right_eye_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_eye_lines(face) {\n  my.output.strokeWeight(1);\n  my.output.stroke(\"gold\");\n\n  draw_line(left_eye_top, face);\n  draw_line(left_eye_bot, face);\n  draw_line(right_eye_top, face);\n  draw_line(right_eye_bot, face);\n}\n\nfunction draw_mouth_shape(face) {\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(lips_in_top, face);\n  draw_vertex(lips_in_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_vertex(lp, face) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = transPt(face.keypoints[ki]);\n    my.output.vertex(x, y);\n  }\n}\n\nfunction transPt(pt) {\n  let { x, y } = pt;\n  x = (x - my.x0k) * my.rx + my.x0;\n  y = (y - my.y0k) * my.ry + my.y0;\n  return { x, y };\n}\n\nfunction draw_points(points) {\n  for (let point of points) {\n    let { x, y } = transPt(point);\n    my.output.fill(0, 255, 0);\n    my.output.circle(x, y, 2);\n  }\n}\n\nfunction draw_line(lp, face) {\n  let px, py;\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = transPt(face.keypoints[ki]);\n    if (i != 0) {\n      my.output.line(px, py, x, y);\n    }\n    px = x;\n    py = y;\n  }\n}\n\nfunction draw_face_circle(face) {\n  for (let keypoint of face.keypoints) {\n    let { x, y } = transPt(keypoint);\n    fill(0, 255, 0);\n    noStroke();\n    circle(x, y, 2);\n  }\n}\n\nfunction draw_face_mesh(face) {\n  drawFaceMesh(my, face.keypoints);\n}\n\nfunction faceMeshPairsToNits() {\n  // Extract the x coordinate from FACE_MESH_PAIRS\n  mesh_nits = FACE_MESH_PAIRS.map((xy) => xy[0]);\n}\n\n// https://editor.p5js.org/ml5/sketches/lCurUW1TT\n// faceMesh-keypoints --ml5\n/*\n * 👋 Hello! This is an ml5.js example made and shared with ❤️.\n * Learn more about the ml5.js project: https://ml5js.org/\n * ml5.js license and Code of Conduct: https://github.com/ml5js/ml5-next-gen/blob/main/LICENSE.md\n *\n * This example demonstrates face tracking on live video through ml5.faceMesh.\n */\n\n// https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl\n// faceMesh-keypoints --ml5 copy\n\n// https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6\n// faceMesh mesh_nits\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz\n// faceMesh mesh_nits v2\n// scale to height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/hFnQmY-Jy\n// faceMesh mesh_nits v3\n// fit to width\n\n// frameRate()\n// 36.63003701391713\n\n// https://editor.p5js.org/jht9629-nyu/sketches/p4Uu0B2sk\n// faceMesh mesh_nits v4\n// fill to width and height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/nDEtGRehq\n// faceMesh mesh_nits v5\n\n// https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ\n// faceMesh mesh_nits v6 -- stray mask\n\n// https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy\n// faceMesh mesh_nits v7 mask\n",
         "children": [],
         "fileType": "file",
-        "isSelectedFile": false,
+        "isSelectedFile": true,
         "_id": "66c0b2d4399e6881ea224563",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2d4399e6881ea224563"
       },
       {
@@ -9197,8 +9197,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66c0b2d4399e6881ea22455c",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2d4399e6881ea22455c"
       },
       {
@@ -9208,8 +9208,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66c0b2d4399e6881ea22455f",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2d4399e6881ea22455f"
       },
       {
@@ -9219,8 +9219,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66c0b2d4399e6881ea224562",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2d4399e6881ea224562"
       },
       {
@@ -9230,8 +9230,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66c0b2d4399e6881ea22455d",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2d4399e6881ea22455d"
       },
       {
@@ -9241,8 +9241,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66c0b2d4399e6881ea22455b",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2d4399e6881ea22455b"
       },
       {
@@ -9252,8 +9252,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66c0b2d4399e6881ea224560",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2d4399e6881ea224560"
       },
       {
@@ -9263,8 +9263,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66c0b2d4399e6881ea22455e",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2d4399e6881ea22455e"
       },
       {
@@ -9274,13 +9274,13 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66c0b2f966c5d4bf0bae5d9f",
-        "createdAt": "2024-08-17T14:28:22.886Z",
-        "updatedAt": "2024-08-17T14:28:22.886Z",
+        "createdAt": "2024-08-18T23:49:23.442Z",
+        "updatedAt": "2024-08-18T23:49:23.442Z",
         "id": "66c0b2f966c5d4bf0bae5d9f"
       }
     ],
     "createdAt": "2024-08-17T14:25:24.335Z",
-    "updatedAt": "2024-08-17T14:28:22.886Z",
+    "updatedAt": "2024-08-18T23:49:23.442Z",
     "id": "CMiG5M39F"
   },
   {

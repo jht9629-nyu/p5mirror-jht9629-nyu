@@ -1,6 +1,2 @@
 echo download 1 "faceMesh mesh_nits v9 bars-CMiG5M39F"
 curl -s https://editor.p5js.org/editor/projects/CMiG5M39F/zip -o "/Users/jht2/Documents/projects/2024/p5mo/p5mirror-jht9629-nyu/downloads/zips/faceMesh mesh_nits v9 bars-CMiG5M39F.zip"
-echo download 2 "ims04-jht scroll color v2-fo_qEMenp"
-curl -s https://editor.p5js.org/editor/projects/fo_qEMenp/zip -o "/Users/jht2/Documents/projects/2024/p5mo/p5mirror-jht9629-nyu/downloads/zips/ims04-jht scroll color v2-fo_qEMenp.zip"
-echo download 3 "ims04-jht scroll color rate-2pxhnehBV"
-curl -s https://editor.p5js.org/editor/projects/2pxhnehBV/zip -o "/Users/jht2/Documents/projects/2024/p5mo/p5mirror-jht9629-nyu/downloads/zips/ims04-jht scroll color rate-2pxhnehBV.zip"
