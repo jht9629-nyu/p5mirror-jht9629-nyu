@@ -1,9 +1,12 @@
 # Sketches for jht9629-nyu
-451 sketches  
+453 sketches  
+[Hyper promotion](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)<!-- 2024-08-30T13:35:42.838Z -->  
+[lit demo storage v3](https://editor.p5js.org/jht9629-nyu/sketches/W_42_8Enr)<!-- 2024-08-28T05:06:04.711Z -->  
+[W4: Re-write as a loop - I copy](https://editor.p5js.org/jht9629-nyu/sketches/SBY8znaxT)<!-- 2024-08-27T17:35:20.538Z -->  
+[faceMesh mesh\_nits v8 bestill](https://editor.p5js.org/jht9629-nyu/sketches/_3QMiI-fM)<!-- 2024-08-27T13:53:06.603Z -->  
 [faceMesh mesh\_nits v9 bars](https://editor.p5js.org/jht9629-nyu/sketches/CMiG5M39F)<!-- 2024-08-18T23:49:23.442Z -->  
 [ims04-jht scroll color v2](https://editor.p5js.org/jht9629-nyu/sketches/fo_qEMenp)<!-- 2024-08-17T14:08:43.114Z -->  
 [ims04-jht scroll color rate](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)<!-- 2024-08-17T12:38:59.222Z -->  
-[faceMesh mesh\_nits v8 bestill](https://editor.p5js.org/jht9629-nyu/sketches/_3QMiI-fM)<!-- 2024-08-15T17:04:53.712Z -->  
 [faceMesh mesh\_nits v8 inner](https://editor.p5js.org/jht9629-nyu/sketches/uOjmgYoZJ)<!-- 2024-08-15T06:16:39.711Z -->  
 [faceMesh mesh\_nits v7 mask](https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy)<!-- 2024-08-15T05:41:18.167Z -->  
 [faceMesh mesh\_nits v6 -- stray mask](https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ)<!-- 2024-08-15T02:44:03.805Z -->  
@@ -141,7 +144,6 @@
 [CCL mobile-device-movement](https://editor.p5js.org/jht9629-nyu/sketches/SqgmtgiTg)<!-- 2024-07-19T18:28:02.728Z -->  
 [real pong copy (day 3) copy](https://editor.p5js.org/jht9629-nyu/sketches/32_bqUtVh)<!-- 2024-07-19T01:56:50.368Z -->  
 [Harmless tortellini](https://editor.p5js.org/jht9629-nyu/sketches/prAzhqM4x)<!-- 2024-07-18T15:40:07.489Z -->  
-[lit demo storage v3](https://editor.p5js.org/jht9629-nyu/sketches/W_42_8Enr)<!-- 2024-07-11T21:26:23.855Z -->  
 [animations starfield-planes](https://editor.p5js.org/jht9629-nyu/sketches/2f6U9wtOS)<!-- 2024-07-11T18:19:23.799Z -->  
 [lit demo v3](https://editor.p5js.org/jht9629-nyu/sketches/HureJsyBs)<!-- 2024-06-04T15:56:46.960Z -->  
 [lit demo v3 copy](https://editor.p5js.org/jht9629-nyu/sketches/3gXCkmG_F6)<!-- 2024-06-03T15:33:43.894Z -->  

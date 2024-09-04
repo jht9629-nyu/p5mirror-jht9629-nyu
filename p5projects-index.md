@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[451 sketches 2024-08-18T23:49:23.442Z](./downloads/gen/sketches_recent.md)
+[452 sketches 2024-08-30T13:35:42.838Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [1.2 draw\_shapes\_ui-AnDswZ6eY](./p5projects/1.2%20draw_shapes_ui-AnDswZ6eY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)]
@@ -124,6 +124,7 @@
 - [Glass chokeberry-e2B51X-9p](./p5projects/Glass%20chokeberry-e2B51X-9p) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/e2B51X-9p)]
 - [Harmless tortellini-prAzhqM4x](./p5projects/Harmless%20tortellini-prAzhqM4x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/prAzhqM4x)]
 - [Heathered jackal-3q30yHV1e](./p5projects/Heathered%20jackal-3q30yHV1e) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3q30yHV1e)]
+- [Hyper promotion-Ddt4PnnER](./p5projects/Hyper%20promotion-Ddt4PnnER) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)]
 - [ICM - WK6 - practicing with objects copy-wxcIn0BaK](./p5projects/ICM%20-%20WK6%20-%20practicing%20with%20objects%20copy-wxcIn0BaK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wxcIn0BaK)]
 - [ICM 2023 jht student selector-rpyY0uqRR](./p5projects/ICM%202023%20jht%20student%20selector-rpyY0uqRR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/rpyY0uqRR)]
 - [ICM Week 1 Assignment - Self Portrait copy-Wkl-MS8LU](./p5projects/ICM%20Week%201%20Assignment%20-%20Self%20Portrait%20copy-Wkl-MS8LU) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Wkl-MS8LU)]
@@ -195,6 +196,7 @@
 - [Uncovered snap-1qrEj3-wr](./p5projects/Uncovered%20snap-1qrEj3-wr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1qrEj3-wr)]
 - [Vigil copy-oRVIiwpzr](./p5projects/Vigil%20copy-oRVIiwpzr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/oRVIiwpzr)]
 - [W4 Re-write as a loop - I copy-NLVK9ZI7a](./p5projects/W4%20Re-write%20as%20a%20loop%20-%20I%20copy-NLVK9ZI7a) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/NLVK9ZI7a)]
+- [W4 Re-write as a loop - I copy-SBY8znaxT](./p5projects/W4%20Re-write%20as%20a%20loop%20-%20I%20copy-SBY8znaxT) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/SBY8znaxT)]
 - [W4 Re-write as a loop - III copy-9xwd7Q-Re](./p5projects/W4%20Re-write%20as%20a%20loop%20-%20III%20copy-9xwd7Q-Re) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/9xwd7Q-Re)]
 - [WK11 - MIDI Sequencer with FrameCount Modulo copy-psxT9VR3](./p5projects/WK11%20-%20MIDI%20Sequencer%20with%20FrameCount%20Modulo%20copy-psxT9VR3) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-psxT9VR3)]
 - [WK2 move a circle with random size copy-xYjreHHtl](./p5projects/WK2%20move%20a%20circle%20with%20random%20size%20copy-xYjreHHtl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/xYjreHHtl)]
@@ -255,7 +257,6 @@
 - [faceMesh mesh\_nits v7 mask-PuoF9-3xy](./p5projects/faceMesh%20mesh_nits%20v7%20mask-PuoF9-3xy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy)]
 - [faceMesh mesh\_nits v8 bestill-\_3QMiI-fM](./p5projects/faceMesh%20mesh_nits%20v8%20bestill-_3QMiI-fM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_3QMiI-fM)]
 - [faceMesh mesh\_nits v8 inner-uOjmgYoZJ](./p5projects/faceMesh%20mesh_nits%20v8%20inner-uOjmgYoZJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/uOjmgYoZJ)]
-- [faceMesh mesh\_nits v9 bars-CMiG5M39F](./p5projects/faceMesh%20mesh_nits%20v9%20bars-CMiG5M39F) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CMiG5M39F)]
 - [faceMesh mesh\_nits-PrJvjyxb6](./p5projects/faceMesh%20mesh_nits-PrJvjyxb6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6)]
 - [faceMesh-keypoints -ml5-9fOM25TRl](./p5projects/faceMesh-keypoints%20-ml5-9fOM25TRl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl)]
 - [faceMesh-keypoints -ml5-L6iIpOR5H](./p5projects/faceMesh-keypoints%20-ml5-L6iIpOR5H) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/L6iIpOR5H)]

@@ -8907,41 +8907,33 @@
           "66be1d1daf705dfa61cb1253",
           "66be1d1daf705dfa61cb1254",
           "66be1d1daf705dfa61cb1255",
+          "66cdd930b7cd4d8307b3ba3e",
+          "66cdd956b7cd4d8307b3c8b7",
           "66be1d6465187c40c6ddb3b8",
-          "66be1d1daf705dfa61cb1256",
+          "66cdd9e419fb29a3b1a6c5d7",
+          "66cdd9be6360bf52f76acbb6",
           "66be1d1daf705dfa61cb1257",
           "66be1d1daf705dfa61cb1258",
           "66be1d1daf705dfa61cb1259",
-          "66be1d1daf705dfa61cb125a"
+          "66cdda33b7cd4d8307b466e9"
         ],
         "fileType": "folder",
         "isSelectedFile": false,
         "_id": "66be1d1daf705dfa61cb1252",
-        "createdAt": "2024-08-15T17:04:53.712Z",
-        "updatedAt": "2024-08-15T17:04:53.712Z",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
         "id": "66be1d1daf705dfa61cb1252"
       },
       {
         "name": "index.html",
-        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>faceMesh mesh_nits v8 bestill</title>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js\"></script>\n    <script src=\"https://unpkg.com/ml5@1/dist/ml5.min.js\"></script>\n  </head>\n  <body>\n    <script src=\"EYES_MESH.js\"></script>\n    <script src=\"FACE_MESH_PAIRS.js\"></script>\n    <script src=\"LIPS_MESH.js\"></script>\n    <script src=\"bestill.js\"></script>\n    <script src=\"drawFaceMesh.js\"></script>\n    <script src=\"mesh_nits.js\"></script>\n    <script src=\"image.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>faceMesh mesh_nits v8 bestill</title>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js\"></script>\n    <script src=\"https://unpkg.com/ml5@1/dist/ml5.min.js\"></script>\n  </head>\n  <body>\n    <script src=\"EYES_MESH.js\"></script>\n    <script src=\"FACE_MESH_PAIRS.js\"></script>\n    <script src=\"LIPS_MESH.js\"></script>\n    <script src=\"bars.js\"></script>\n    <script src=\"bestill.js\"></script>\n    <script src=\"mesh_nits.js\"></script>\n    <script src=\"faceMesh.js\"></script>\n    <script src=\"faceMesh_render.js\"></script>\n    <script src=\"image.js\"></script>\n    <script src=\"video.js\"></script>\n    <script src=\"a_sketch.js\"></script>\n  </body>\n</html>\n",
         "children": [],
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66be1d1daf705dfa61cb1258",
-        "createdAt": "2024-08-15T17:04:53.712Z",
-        "updatedAt": "2024-08-15T17:04:53.712Z",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
         "id": "66be1d1daf705dfa61cb1258"
-      },
-      {
-        "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/_3QMiI-fM\n// faceMesh mesh_nits v8 bestill\n\nlet flipH = true;\nlet faceMesh;\nlet video;\nlet faces = [];\nlet options = {\n  maxFaces: 1,\n  refineLandmarks: false,\n  flipHorizontal: flipH,\n};\n\nlet my = {};\n\nfunction preload() {\n  // Load the faceMesh model\n  faceMesh = ml5.faceMesh(options);\n}\n\nfunction setup() {\n  // pixelDensity(1);\n  // createCanvas(640, 480);\n  createCanvas(windowWidth, windowHeight);\n  // Create the webcam video and hide it\n  video = createCapture(VIDEO, { flipped: flipH });\n  video.size(640, 480);\n  // video.size(1920, 1080);\n  video.hide();\n  // Start detecting faces from the webcam video\n  faceMesh.detectStart(video, function (results) {\n    // Callback function for when faceMesh outputs data\n    // Save the output to the faces variable\n    faces = results;\n  });\n\n  my.input = video;\n  // my.output = createGraphics(video.width, video.height);\n  my.output = createGraphics(width, height);\n  my.output.noStroke();\n  my.mar_h = 5; // height margin in percent\n  my.mar_w = 5;\n  // my.align = \"center\";\n  my.alpha = 255;\n  my.avg_color = [0, 0, 0];\n\n  faceMeshPairsToNits();\n\n  createVideoMask();\n  \n  my.bestill = new eff_bestill({factor: 10, input: my.output})\n}\n\nfunction createVideoMask() {\n  my.videoMask = createGraphics(video.width, video.height);\n  my.videoMask.clear();\n  // my.videoMask.fill(255,255,255,255);\n  // my.videoMask.rect(100,100,200,200);\n  my.videoBuff = createGraphics(video.width, video.height);\n}\n\nfunction draw() {\n  // Draw the webcam video\n  // image(video, 0, 0, width, height);\n\n  // background(255);\n\n  // my.output.clear();\n  my.output.background(my.avg_color);\n   // my.output.background(0);\n  \n  // Draw all the tracked face points\n  for (let face of faces) {\n    // draw_face_circle(face);\n    draw_face_mesh(face);\n    // draw_mouth_shape(face);\n    // draw_lips_line(face);\n    // draw_eye_shape(face);\n    // draw_eye_lines(face);\n    my.face1 = face;\n  }\n\n  // background(my.avg_color);\n  \n  // image(my.output, 0, 0);\n  my.bestill.prepareOutput();\n  image(my.bestill.output, 0, 0);\n  \n  if (my.face1) {\n    draw_shape_layer(my.face1, my.videoMask);\n    video.mask(my.videoMask);\n\n    let { x: x0, y: y0 } = transInversePt({ x: 0, y: 0 });\n    my.videoBuff.clear();\n    my.videoBuff.image(video, 0, 0, my.xlen, my.ylen, x0, y0, my.xlen, my.ylen);\n\n    // image(my.videoBuff, 0, 0);\n\n    let w = my.xlen * my.rx;\n    let h = my.ylen * my.ry;\n    image(my.videoBuff, 0, 0, w, h, 0, 0, my.xlen, my.ylen);\n\n    // console.log('x0, y0, w, h', x0, y0, w, h);\n  }\n}\n\n// image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight]\n\nfunction transInversePt(pt) {\n  let { x, y } = pt;\n  // x = (x - my.x0k) * my.rx + my.x0;\n  // y = (y - my.y0k) * my.ry + my.y0;\n  x = my.x0k + (x - my.x0) / my.rx;\n  y = my.y0k + (y - my.y0) / my.ry;\n  return { x, y };\n}\n\nfunction draw_shape_layer(face, layer) {\n  layer.clear();\n  layer.fill([255, 255, 255, 255]);\n\n  layer.beginShape();\n  draw_vertex_layer(lips_out_top, face, layer);\n  draw_vertex_layer(lips_out_bot, face, layer);\n  layer.endShape();\n\n  layer.beginShape();\n  draw_vertex_layer(left_eye_top, face, layer);\n  draw_vertex_layer(left_eye_bot, face, layer);\n  layer.endShape();\n\n  my.output.beginShape();\n  draw_vertex_layer(right_eye_top, face, layer);\n  draw_vertex_layer(right_eye_bot, face, layer);\n  layer.endShape();\n}\n\nfunction draw_vertex_layer(lp, face, layer) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    // let { x, y } = transPt(face.keypoints[ki]);\n    let { x, y } = face.keypoints[ki];\n    layer.vertex(x, y);\n  }\n}\n\nfunction draw_lips_line(face) {\n  my.output.strokeWeight(3);\n  my.output.stroke(255, 0, 0);\n  draw_line(lips_out_top, face);\n\n  my.output.stroke(0, 255, 0);\n  draw_line(lips_out_bot, face);\n\n  my.output.stroke(255, 255, 0);\n  draw_line(lips_in_top, face);\n\n  my.output.stroke(0, 255, 255);\n  draw_line(lips_in_bot, face);\n\n  // my.output.stroke(0, 255, 0);\n  my.output.stroke(255, 255, 255);\n  draw_points(face.lips.keypoints);\n}\n\nfunction draw_eye_shape(face) {\n  my.output.strokeWeight(0);\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(left_eye_top, face);\n  draw_vertex(left_eye_bot, face);\n  my.output.endShape();\n\n  my.output.beginShape();\n  draw_vertex(right_eye_top, face);\n  draw_vertex(right_eye_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_eye_lines(face) {\n  my.output.strokeWeight(1);\n  my.output.stroke(\"gold\");\n\n  draw_line(left_eye_top, face);\n  draw_line(left_eye_bot, face);\n  draw_line(right_eye_top, face);\n  draw_line(right_eye_bot, face);\n}\n\nfunction draw_mouth_shape(face) {\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(lips_in_top, face);\n  draw_vertex(lips_in_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_vertex(lp, face) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = transPt(face.keypoints[ki]);\n    my.output.vertex(x, y);\n  }\n}\n\nfunction transPt(pt) {\n  let { x, y } = pt;\n  x = (x - my.x0k) * my.rx + my.x0;\n  y = (y - my.y0k) * my.ry + my.y0;\n  return { x, y };\n}\n\nfunction draw_points(points) {\n  for (let point of points) {\n    let { x, y } = transPt(point);\n    my.output.fill(0, 255, 0);\n    my.output.circle(x, y, 2);\n  }\n}\n\nfunction draw_line(lp, face) {\n  let px, py;\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = transPt(face.keypoints[ki]);\n    if (i != 0) {\n      my.output.line(px, py, x, y);\n    }\n    px = x;\n    py = y;\n  }\n}\n\nfunction draw_face_circle(face) {\n  for (let keypoint of face.keypoints) {\n    let { x, y } = transPt(keypoint);\n    fill(0, 255, 0);\n    noStroke();\n    circle(x, y, 2);\n  }\n}\n\nfunction draw_face_mesh(face) {\n  drawFaceMesh(my, face.keypoints);\n}\n\nfunction faceMeshPairsToNits() {\n  // Extract the x coordinate from FACE_MESH_PAIRS\n  mesh_nits = FACE_MESH_PAIRS.map((xy) => xy[0]);\n}\n\n// https://editor.p5js.org/ml5/sketches/lCurUW1TT\n// faceMesh-keypoints --ml5\n/*\n * 👋 Hello! This is an ml5.js example made and shared with ❤️.\n * Learn more about the ml5.js project: https://ml5js.org/\n * ml5.js license and Code of Conduct: https://github.com/ml5js/ml5-next-gen/blob/main/LICENSE.md\n *\n * This example demonstrates face tracking on live video through ml5.faceMesh.\n */\n\n// https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl\n// faceMesh-keypoints --ml5 copy\n\n// https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6\n// faceMesh mesh_nits\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz\n// faceMesh mesh_nits v2\n// scale to height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/hFnQmY-Jy\n// faceMesh mesh_nits v3\n// fit to width\n\n// frameRate()\n// 36.63003701391713\n\n// https://editor.p5js.org/jht9629-nyu/sketches/p4Uu0B2sk\n// faceMesh mesh_nits v4\n// fill to width and height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/nDEtGRehq\n// faceMesh mesh_nits v5\n\n// https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ\n// faceMesh mesh_nits v6 -- stray mask\n\n// https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy\n// faceMesh mesh_nits v7 mask\n",
-        "children": [],
-        "fileType": "file",
-        "isSelectedFile": true,
-        "_id": "66be1d1daf705dfa61cb125a",
-        "createdAt": "2024-08-15T17:04:53.712Z",
-        "updatedAt": "2024-08-15T17:04:53.712Z",
-        "id": "66be1d1daf705dfa61cb125a"
       },
       {
         "name": "FACE_MESH_PAIRS.js",
@@ -8950,20 +8942,9 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66be1d1daf705dfa61cb1254",
-        "createdAt": "2024-08-15T17:04:53.712Z",
-        "updatedAt": "2024-08-15T17:04:53.712Z",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
         "id": "66be1d1daf705dfa61cb1254"
-      },
-      {
-        "name": "drawFaceMesh.js",
-        "content": "\n// my.output\n// my.mar_w\n// my.mar_h \n// my.align\n// my.alpha\n// my.avg_color[]\n\n// function drawFaceMesh(my, input, predictions) {\nfunction drawFaceMesh(my, keypoints) {\n  \n  let input = my.input.get();\n  if (!input) return;\n  \n  let layer = my.output;\n  let out_w = layer.width;\n  let out_h = layer.height;\n  let mar_w = out_w * (my.mar_w / 100); \n  let mar_h = out_h * (my.mar_h / 100);\n  let rr = out_h / input.height;\n  let align_none = my.align === 'none';\n  let align_center = my.align === 'center';\n  let align_right = my.align === 'right';\n\n  let col_sum = [0, 0, 0];\n  let ncol = 0;\n\n  let y1k = keypoints[10].y;\n  let y2k = keypoints[152].y;\n  let x1k = keypoints[234].x;\n  let x2k = keypoints[454].x;\n\n  let x0k = x1k;\n  let y0k = y1k;\n  let xlen = x2k - x1k;\n  let ylen = y2k - y1k;\n  let rx = (out_w - mar_w * 2) / xlen;\n  let ry = (out_h - mar_h * 2) / ylen;\n  let x0 = 0; // flush left\n  let y0 = mar_h;\n  \n  if (align_right) {\n    x0 = out_w - xlen * rx;\n  } else if (align_center) {\n    x0 = (out_w - xlen * rx) / 2;\n  } else if (align_none) {\n    rx = rr;\n    ry = rr;\n    x0k = 0;\n    y0k = 0;\n  }\n  else { // align left\n    x0 = mar_w;\n  }\n  \n  layer.strokeWeight(0);\n  let n = mesh_nits.length;\n  for (let j = 0; j < n; j += 3) {\n    let {x: x1, y: y1} = keypoints[mesh_nits[j]];\n    let {x: x2, y: y2} = keypoints[mesh_nits[j + 1]];\n    let {x: x3, y: y3} = keypoints[mesh_nits[j + 2]];\n    let col = input.get(x1, y1);\n    col[3] = my.alpha;\n    col_sum[0] += col[0];\n    col_sum[1] += col[1];\n    col_sum[2] += col[2];\n    ncol++;\n    x1 = (x1 - x0k) * rx + x0;\n    y1 = (y1 - y0k) * ry + y0;\n    x2 = (x2 - x0k) * rx + x0;\n    y2 = (y2 - y0k) * ry + y0;\n    x3 = (x3 - x0k) * rx + x0;\n    y3 = (y3 - y0k) * ry + y0;\n    layer.fill(col);\n    layer.triangle(x1, y1, x2, y2, x3, y3);\n  }\n  if (ncol > 0) {\n    my.avg_color[0] = int(col_sum[0] / ncol);\n    my.avg_color[1] = int(col_sum[1] / ncol);\n    my.avg_color[2] = int(col_sum[2] / ncol);\n  }\n  my.x0 = x0;\n  my.y0 = y0;\n  my.x0k = x0k;\n  my.y0k = y0k;\n  my.rx = rx;\n  my.ry = ry;\n  my.xlen = xlen;\n  my.ylen = ylen;\n}\n\n",
-        "children": [],
-        "fileType": "file",
-        "isSelectedFile": false,
-        "_id": "66be1d1daf705dfa61cb1256",
-        "createdAt": "2024-08-15T17:04:53.712Z",
-        "updatedAt": "2024-08-15T17:04:53.712Z",
-        "id": "66be1d1daf705dfa61cb1256"
       },
       {
         "name": "mesh_nits.js",
@@ -8972,8 +8953,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66be1d1daf705dfa61cb1259",
-        "createdAt": "2024-08-15T17:04:53.712Z",
-        "updatedAt": "2024-08-15T17:04:53.712Z",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
         "id": "66be1d1daf705dfa61cb1259"
       },
       {
@@ -8983,8 +8964,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66be1d1daf705dfa61cb1255",
-        "createdAt": "2024-08-15T17:04:53.712Z",
-        "updatedAt": "2024-08-15T17:04:53.712Z",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
         "id": "66be1d1daf705dfa61cb1255"
       },
       {
@@ -8994,8 +8975,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66be1d1daf705dfa61cb1253",
-        "createdAt": "2024-08-15T17:04:53.712Z",
-        "updatedAt": "2024-08-15T17:04:53.712Z",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
         "id": "66be1d1daf705dfa61cb1253"
       },
       {
@@ -9005,8 +8986,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66be1d1daf705dfa61cb1257",
-        "createdAt": "2024-08-15T17:04:53.712Z",
-        "updatedAt": "2024-08-15T17:04:53.712Z",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
         "id": "66be1d1daf705dfa61cb1257"
       },
       {
@@ -9016,13 +8997,68 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "66be1d6465187c40c6ddb3b8",
-        "createdAt": "2024-08-15T17:04:53.712Z",
-        "updatedAt": "2024-08-15T17:04:53.712Z",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
         "id": "66be1d6465187c40c6ddb3b8"
+      },
+      {
+        "name": "a_sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/_3QMiI-fM\n// faceMesh mesh_nits v8 bestill\n\nlet my = {};\n\nfunction setup() {\n  // createCanvas(640, 480);\n  createCanvas(windowWidth, windowHeight);\n\n  video_init();\n\n  faceMesh_init();\n\n  my.bestill = new eff_bestill({ factor: 10, input: my.output });\n\n  my.bars = new eff_bars({ width: my.video.width, height: my.video.height });\n}\n\nfunction draw() {\n  if (!my.faces) return;\n\n  my.output.background(my.avg_color);\n\n  // Draw all the tracked face points\n  for (let face of my.faces) {\n    // draw_face_circle(face);\n    draw_face_mesh(face);\n    draw_mouth_shape(face);\n    draw_lips_line(face);\n    draw_eye_shape(face);\n    draw_eye_lines(face);\n    my.face1 = face;\n  }\n\n  my.bestill.prepareOutput();\n  image(my.bestill.output, 0, 0);\n\n  // overlayEyesMouth();\n\n  // overlayEyesMouthBars();\n}\n\nfunction draw_shape_layer(face, layer) {\n  layer.clear();\n  layer.fill([255, 255, 255, 255]);\n\n  layer.beginShape();\n  draw_vertex_layer(lips_out_top, face, layer);\n  draw_vertex_layer(lips_out_bot, face, layer);\n  layer.endShape();\n\n  layer.beginShape();\n  draw_vertex_layer(left_eye_top, face, layer);\n  draw_vertex_layer(left_eye_bot, face, layer);\n  layer.endShape();\n\n  my.output.beginShape();\n  draw_vertex_layer(right_eye_top, face, layer);\n  draw_vertex_layer(right_eye_bot, face, layer);\n  layer.endShape();\n}\n\nfunction draw_vertex_layer(lp, face, layer) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    // let { x, y } = faceMesh_inputPtToOutput(face.keypoints[ki]);\n    let { x, y } = face.keypoints[ki];\n    layer.vertex(x, y);\n  }\n}\n\nfunction draw_lips_line(face) {\n  my.output.strokeWeight(my.strokeWeight);\n  my.output.stroke(255, 0, 0);\n  draw_line(lips_out_top, face);\n\n  my.output.stroke(0, 255, 0);\n  draw_line(lips_out_bot, face);\n\n  my.output.stroke(255, 255, 0);\n  draw_line(lips_in_top, face);\n\n  my.output.stroke(0, 255, 255);\n  draw_line(lips_in_bot, face);\n\n  // my.output.stroke(0, 255, 0);\n  my.output.stroke(255, 255, 255);\n  draw_points(face.lips.keypoints);\n}\n\nfunction draw_eye_shape(face) {\n  my.output.strokeWeight(0);\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(left_eye_top, face);\n  draw_vertex(left_eye_bot, face);\n  my.output.endShape();\n\n  my.output.beginShape();\n  draw_vertex(right_eye_top, face);\n  draw_vertex(right_eye_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_eye_lines(face) {\n  my.output.strokeWeight(my.strokeWeight);\n  my.output.stroke('gold');\n\n  draw_line(left_eye_top, face);\n  draw_line(left_eye_bot, face);\n  draw_line(right_eye_top, face);\n  draw_line(right_eye_bot, face);\n}\n\nfunction draw_mouth_shape(face) {\n  my.output.fill(0, 0, 0);\n\n  my.output.beginShape();\n  draw_vertex(lips_in_top, face);\n  draw_vertex(lips_in_bot, face);\n  my.output.endShape();\n}\n\nfunction draw_vertex(lp, face) {\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = faceMesh_inputPtToOutput(face.keypoints[ki]);\n    my.output.vertex(x, y);\n  }\n}\n\nfunction draw_points(points) {\n  for (let point of points) {\n    let { x, y } = faceMesh_inputPtToOutput(point);\n    my.output.fill(0, 255, 0);\n    my.output.circle(x, y, my.strokeWeight);\n  }\n}\n\nfunction draw_line(lp, face) {\n  let px, py;\n  for (let i = 0; i < lp.length; i++) {\n    let ki = lp[i];\n    let { x, y } = faceMesh_inputPtToOutput(face.keypoints[ki]);\n    if (i != 0) {\n      my.output.line(px, py, x, y);\n    }\n    px = x;\n    py = y;\n  }\n}\n\nfunction draw_face_circle(face) {\n  for (let keypoint of face.keypoints) {\n    let { x, y } = faceMesh_inputPtToOutput(keypoint);\n    fill(0, 255, 0);\n    noStroke();\n    circle(x, y, 2);\n  }\n}\n\nfunction draw_face_mesh(face) {\n  faceMesh_render(my, face.keypoints);\n}\n\n// https://editor.p5js.org/ml5/sketches/lCurUW1TT\n// faceMesh-keypoints --ml5\n/*\n * 👋 Hello! This is an ml5.js example made and shared with ❤️.\n * Learn more about the ml5.js project: https://ml5js.org/\n * ml5.js license and Code of Conduct: https://github.com/ml5js/ml5-next-gen/blob/main/LICENSE.md\n *\n * This example demonstrates face tracking on live video through ml5.faceMesh.\n */\n\n// https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl\n// faceMesh-keypoints --ml5 copy\n\n// https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6\n// faceMesh mesh_nits\n\n// https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz\n// faceMesh mesh_nits v2\n// scale to height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/hFnQmY-Jy\n// faceMesh mesh_nits v3\n// fit to width\n\n// frameRate()\n// 36.63003701391713\n\n// https://editor.p5js.org/jht9629-nyu/sketches/p4Uu0B2sk\n// faceMesh mesh_nits v4\n// fill to width and height\n\n// https://editor.p5js.org/jht9629-nyu/sketches/nDEtGRehq\n// faceMesh mesh_nits v5\n\n// https://editor.p5js.org/jht9629-nyu/sketches/fsOAbI6SJ\n// faceMesh mesh_nits v6 -- stray mask\n\n// https://editor.p5js.org/jht9629-nyu/sketches/PuoF9-3xy\n// faceMesh mesh_nits v7 mask\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "66cdd930b7cd4d8307b3ba3e",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
+        "id": "66cdd930b7cd4d8307b3ba3e"
+      },
+      {
+        "name": "bars.js",
+        "content": "let colorPalette = ['red', 'green', 'gold', 'black'];\n\nclass eff_bars {\n  // props = { width, height }\n  constructor(props) {\n    Object.assign(this, props);\n    this.init();\n  }\n  init() {\n    this.scrollSeconds = 30;\n    this.nbars = 3;\n    // =0 for left to right, else right to left scroll\n    this.xtoLeft = 1;\n    this.output = createGraphics(this.width, this.height);\n    this.xlen = this.width / this.nbars;\n    this.ylen = this.height;\n    this.items = [];\n    let n = this.nbars + 1;\n    this.wide = this.xlen * n;\n    for (let i = 0; i < n; i++) {\n      let xpos = this.xlen * i;\n      let color = colorPalette[i % colorPalette.length];\n      this.items[i] = { xpos, color };\n    }\n  }\n  prepareOutput() {\n    let deltaSecs = deltaTime / 1000;\n    this.xstep = (width * deltaSecs) / this.scrollSeconds;\n    // console.log('this.xstep', this.xstep);\n    let layer = this.output;\n    layer.clear();\n    for (let item of this.items) {\n      let { xpos, color } = item;\n      item.xpos = (xpos + this.xstep) % this.wide;\n      layer.fill(color);\n      let x = xpos - this.xlen;\n      let y = 0;\n      if (this.xtoLeft) {\n        x = layer.width - x;\n      }\n      layer.rect(x, y, this.xlen, this.ylen);\n    }\n  }\n}\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo\n// ims04-jht scroll color bars - no pop\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n// color pops on at wrap around\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\n// function full_screen_action() {\n//   fullScreenBtn.remove();\n//   fullscreen(1);\n//   let delay = 3000;\n//   setTimeout(ui_present_window, delay);\n// }\n\n// function ui_present_window() {\n//   resizeCanvas(windowWidth, windowHeight);\n//   my_setup();\n// }\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n\n// https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV\n// ims04-jht scroll color rate\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "66cdd956b7cd4d8307b3c8b7",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
+        "id": "66cdd956b7cd4d8307b3c8b7"
+      },
+      {
+        "name": "faceMesh_render.js",
+        "content": "//\n\n// my.output\n// my.mar_w\n// my.mar_h\n// my.align\n// my.alpha\n// my.avg_color[]\n\n// function faceMesh_render(my, input, predictions) {\nfunction faceMesh_render(my, keypoints) {\n  let input = my.input.get();\n  if (!input) return;\n\n  let layer = my.output;\n  let out_w = layer.width;\n  let out_h = layer.height;\n  let mar_w = out_w * (my.mar_w / 100);\n  let mar_h = out_h * (my.mar_h / 100);\n  let rr = out_h / input.height;\n  let align_none = my.align === 'none';\n  let align_center = my.align === 'center';\n  let align_right = my.align === 'right';\n\n  let col_sum = [0, 0, 0];\n  let ncol = 0;\n\n  let y1k = keypoints[10].y;\n  let y2k = keypoints[152].y;\n  let x1k = keypoints[234].x;\n  let x2k = keypoints[454].x;\n\n  let x0k = x1k;\n  let y0k = y1k;\n  let xlen = x2k - x1k;\n  let ylen = y2k - y1k;\n  let rx = (out_w - mar_w * 2) / xlen;\n  let ry = (out_h - mar_h * 2) / ylen;\n  let x0 = 0; // flush left\n  let y0 = mar_h;\n\n  if (align_right) {\n    x0 = out_w - xlen * rx;\n  } else if (align_center) {\n    x0 = (out_w - xlen * rx) / 2;\n  } else if (align_none) {\n    rx = rr;\n    ry = rr;\n    x0k = 0;\n    y0k = 0;\n  } else {\n    // align left\n    x0 = mar_w;\n  }\n\n  layer.strokeWeight(0);\n  let n = mesh_nits.length;\n  for (let j = 0; j < n; j += 3) {\n    let { x: x1, y: y1 } = keypoints[mesh_nits[j]];\n    let { x: x2, y: y2 } = keypoints[mesh_nits[j + 1]];\n    let { x: x3, y: y3 } = keypoints[mesh_nits[j + 2]];\n    let col = input.get(x1, y1);\n    col[3] = my.alpha;\n    col_sum[0] += col[0];\n    col_sum[1] += col[1];\n    col_sum[2] += col[2];\n    ncol++;\n    x1 = (x1 - x0k) * rx + x0;\n    y1 = (y1 - y0k) * ry + y0;\n    x2 = (x2 - x0k) * rx + x0;\n    y2 = (y2 - y0k) * ry + y0;\n    x3 = (x3 - x0k) * rx + x0;\n    y3 = (y3 - y0k) * ry + y0;\n    layer.fill(col);\n    layer.triangle(x1, y1, x2, y2, x3, y3);\n  }\n  if (ncol > 0) {\n    my.avg_color[0] = int(col_sum[0] / ncol);\n    my.avg_color[1] = int(col_sum[1] / ncol);\n    my.avg_color[2] = int(col_sum[2] / ncol);\n  }\n  my.x0 = x0;\n  my.y0 = y0;\n  my.x0k = x0k;\n  my.y0k = y0k;\n  my.rx = rx;\n  my.ry = ry;\n  my.xlen = xlen;\n  my.ylen = ylen;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "66cdd9be6360bf52f76acbb6",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
+        "id": "66cdd9be6360bf52f76acbb6"
+      },
+      {
+        "name": "faceMesh.js",
+        "content": "//\n\nfunction faceMesh_init() {\n  //\n  let options = {\n    maxFaces: 1,\n    refineLandmarks: false,\n    flipHorizontal: flipH,\n  };\n\n  my.faceMesh = ml5.faceMesh(options, function () {\n    console.log('ml5.faceMesh loaded');\n    // Start detecting faces from the webcam video\n    my.faceMesh.detectStart(my.video, function (results) {\n      // Callback function for when faceMesh outputs data\n      // Save the output to the faces variable\n      if (!my.faces) {\n        console.log('faceMesh.detectStart results.length', results.length);\n      }\n      my.faces = results;\n    });\n  });\n\n  my.input = my.video;\n  my.output = createGraphics(width, height);\n  my.output.noStroke();\n  my.mar_h = 5; // height margin in percent\n  my.mar_w = 5;\n  // my.align = \"center\";\n  my.alpha = 255;\n  my.avg_color = [0, 0, 0];\n  my.strokeWeight = width * 0.01; // strokeWeight\n\n  faceMesh_pairsToNits();\n}\n\nfunction faceMesh_pairsToNits() {\n  // Extract the x coordinate from FACE_MESH_PAIRS\n  mesh_nits = FACE_MESH_PAIRS.map((xy) => xy[0]);\n}\n\nfunction faceMesh_inputPtToOutput(pt) {\n  let { x, y } = pt;\n  x = (x - my.x0k) * my.rx + my.x0;\n  y = (y - my.y0k) * my.ry + my.y0;\n  return { x, y };\n}\n\nfunction faceMesh_outputPtToInput(pt) {\n  let { x, y } = pt;\n  x = my.x0k + (x - my.x0) / my.rx;\n  y = my.y0k + (y - my.y0) / my.ry;\n  return { x, y };\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "66cdd9e419fb29a3b1a6c5d7",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
+        "id": "66cdd9e419fb29a3b1a6c5d7"
+      },
+      {
+        "name": "video.js",
+        "content": "//\n\nlet flipH = true;\n// let video;\n\n// Create the webcam video and hide it\n//\nfunction video_init() {\n  my.video = createCapture(VIDEO, { flipped: flipH });\n  my.video.size(640, 480);\n  // video.size(1920, 1080);\n  my.video.hide();\n\n  video_maskInit();\n}\n\nfunction video_maskInit() {\n  let { width, height } = my.video;\n  my.videoMask = createGraphics(width, height);\n  my.videoMask.clear();\n  // my.videoMask.fill(255,255,255,255);\n  // my.videoMask.rect(100,100,200,200);\n  my.videoBuff = createGraphics(width, height);\n}\n\nfunction overlayEyesMouth() {\n  if (!my.face1) return;\n\n  draw_shape_layer(my.face1, my.videoMask);\n  my.video.mask(my.videoMask);\n\n  let { x: x0, y: y0 } = faceMesh_outputPtToInput({ x: 0, y: 0 });\n  my.videoBuff.clear();\n  my.videoBuff.image(my.video, 0, 0, my.xlen, my.ylen, x0, y0, my.xlen, my.ylen);\n\n  // image(my.videoBuff, 0, 0);\n\n  let w = my.xlen * my.rx;\n  let h = my.ylen * my.ry;\n  image(my.videoBuff, 0, 0, w, h, 0, 0, my.xlen, my.ylen);\n\n  // console.log('x0, y0, w, h', x0, y0, w, h);\n}\n\nfunction overlayEyesMouthBars() {\n  if (!my.face1) return;\n\n  draw_shape_layer(my.face1, my.videoMask);\n  my.bars.prepareOutput();\n  let out = my.bars.output.get();\n  out.mask(my.videoMask);\n\n  let { x: x0, y: y0 } = faceMesh_outputPtToInput({ x: 0, y: 0 });\n  my.videoBuff.clear();\n  my.videoBuff.image(out, 0, 0, my.xlen, my.ylen, x0, y0, my.xlen, my.ylen);\n\n  // image(my.videoBuff, 0, 0);\n\n  let w = my.xlen * my.rx;\n  let h = my.ylen * my.ry;\n  image(my.videoBuff, 0, 0, w, h, 0, 0, my.xlen, my.ylen);\n\n  // console.log('x0, y0, w, h', x0, y0, w, h);\n}\n\n// image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight]\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66cdda33b7cd4d8307b466e9",
+        "createdAt": "2024-08-27T13:53:06.603Z",
+        "updatedAt": "2024-08-27T13:53:06.603Z",
+        "id": "66cdda33b7cd4d8307b466e9"
       }
     ],
     "createdAt": "2024-08-15T15:22:05.250Z",
-    "updatedAt": "2024-08-15T17:04:53.712Z",
+    "updatedAt": "2024-08-27T13:53:06.603Z",
     "id": "_3QMiI-fM"
   },
   {
@@ -11943,6 +11979,60 @@
     ],
     "createdAt": "2023-08-02T15:08:28.107Z",
     "id": "NeWYQtl2J"
+  },
+  {
+    "_id": "Ddt4PnnER",
+    "name": "Hyper promotion",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66d1caa76985cb05886ffc93",
+          "66d1caa76985cb05886ffc92",
+          "66d1caa76985cb05886ffc94"
+        ],
+        "fileType": "folder",
+        "_id": "66d1caa76985cb05886ffc95",
+        "createdAt": "2024-08-30T13:35:42.837Z",
+        "updatedAt": "2024-08-30T13:35:42.837Z",
+        "id": "66d1caa76985cb05886ffc95"
+      },
+      {
+        "name": "sketch.js",
+        "content": "let capture;\n\nfunction setup() {\n  createCanvas(100, 100);\n\n  // Create the video capture with mirrored output.\n  capture = createCapture(VIDEO,{ flipped:true });\n  capture.size(100,100);\n\n  describe('A video stream from the webcam with flipped or mirrored output.');\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66d1caa76985cb05886ffc92",
+        "createdAt": "2024-08-30T13:35:42.838Z",
+        "updatedAt": "2024-08-30T13:35:42.838Z",
+        "id": "66d1caa76985cb05886ffc92"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d1caa76985cb05886ffc93",
+        "createdAt": "2024-08-30T13:35:42.838Z",
+        "updatedAt": "2024-08-30T13:35:42.838Z",
+        "id": "66d1caa76985cb05886ffc93"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d1caa76985cb05886ffc94",
+        "createdAt": "2024-08-30T13:35:42.838Z",
+        "updatedAt": "2024-08-30T13:35:42.838Z",
+        "id": "66d1caa76985cb05886ffc94"
+      }
+    ],
+    "updatedAt": "2024-08-30T13:35:42.838Z",
+    "createdAt": "2024-08-30T13:35:42.838Z",
+    "id": "Ddt4PnnER"
   },
   {
     "_id": "wxcIn0BaK",
@@ -15504,21 +15594,21 @@
           "665f74f210dd48377ae751a7"
         ],
         "fileType": "folder",
-        "_id": "665f74f210dd48377ae751a2",
         "isSelectedFile": false,
-        "createdAt": "2024-07-11T21:26:23.855Z",
-        "updatedAt": "2024-07-11T21:26:23.855Z",
+        "_id": "665f74f210dd48377ae751a2",
+        "createdAt": "2024-08-28T05:06:04.711Z",
+        "updatedAt": "2024-08-28T05:06:04.711Z",
         "id": "665f74f210dd48377ae751a2"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/W_42_8Enr\n// lit demo storage v3\n\n// localStorage used to preserve settings\n// Lit demo of UI input elements\n// reference: https://lit.dev/tutorials/intro-to-lit/#8\n\n// Button\n// text input\n// Slider\n// checkbox\n// radio button row\n// selection\n// color\n\nlet my = {};\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  // store new LitDemo html element\n  // defined in lit-demo.js\n  my.lit = createElement('lit-demo');\n  my.lit.attribute('sliderValue', 50);\n  my.lit.attribute('colorValue', '#8080FF');\n  my.lit.attribute('shapeValue', 'triangle');\n\n  // createElement('lit-demo');\n\n  my.yoffset = 0;\n\n  restoreStore();\n}\n\nfunction draw() {\n  // background('#FF00FF');\n\n  // use color picker value for the background color\n  background(my.lit.elt.colorValue);\n\n  // draw a rect shape in the middle of the canvas\n  // that tracks the slider value from left to right\n  let len = 50 + my.lit.elt._counter;\n  let x = (my.lit.elt.sliderValue / 100) * width;\n  let y = (height - len) / 2;\n  if (my.lit.elt.checkBoxValue) {\n    my.yoffset = (my.yoffset + 1) % height;\n    y = my.yoffset;\n  }\n\n  fill(my.lit.elt.radioValue);\n\n  let shape = my.lit.elt.shapeValue;\n  if (shape == 'rect') {\n    rect(x - len / 2, y, len, len);\n  } else if (shape == 'circle') {\n    circle(x, y + len / 2, len);\n  } else {\n    draw_triangle(x, y, len);\n  }\n\n  storeUpdateCheck();\n}\n\nfunction draw_triangle(x, y, len) {\n  let x1 = x - len;\n  let y1 = y + len;\n  let x2 = x + len;\n  let y2 = y1;\n  let x3 = x;\n  let y3 = y;\n  triangle(x1, y1, x2, y2, x3, y3);\n}\n\n// https://lit.dev/tutorials/intro-to-lit/#8\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Ne1xB_wOz\n// lit try v2\n\n// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n\n// https://lit.dev/learn/#filter=tutorial\n\n// https://lit.dev/tutorials/reactivity/#7\n// click to animate\n// https://developer.mozilla.org/en-US/docs/Web/API/Element/animate\n// https://codepen.io/rachelnabors/pen/rxpmJL/?editors=0010\n//  Down the Rabbit Hole (with Web Animations API)\n// https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=cover&range-start-percentage=0&range-end-name=cover&range-end-percentage=100&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=reveal&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes\n// Also check out the View Timeline Ranges Visualizer, which shows exactly what the different values mean in an easy visual format.\n\n// https://editor.p5js.org/jht9629-nyu/sketches/HureJsyBs\n// lit demo v3\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/W_42_8Enr\n// lit demo storage v3 \n\n// localStorage used to preserve settings\n// Lit demo of UI input elements\n// reference: https://lit.dev/tutorials/intro-to-lit/#8\n\n// Button\n// text input\n// Slider\n// checkbox\n// radio button row\n// selection\n// color\n\nlet my = {};\n\nfunction setup() {\n  createCanvas(400, 100);\n\n  // store new LitDemo html element\n  // defined in lit-demo.js\n  my.lit = createElement('lit-demo');\n  my.lit.attribute('sliderValue', 50);\n  my.lit.attribute('colorValue', '#8080FF');\n  my.lit.attribute('shapeValue', 'triangle');\n\n  // createElement('lit-demo');\n\n  my.yoffset = 0;\n\n  restoreStore();\n}\n\nfunction draw() {\n  // background('#FF00FF');\n\n  // use color picker value for the background color\n  background(my.lit.elt.colorValue);\n\n  // draw a rect shape in the middle of the canvas\n  // that tracks the slider value from left to right\n  let len = 50 + my.lit.elt._counter;\n  let x = (my.lit.elt.sliderValue / 100) * width;\n  let y = (height - len) / 2;\n  if (my.lit.elt.checkBoxValue) {\n    my.yoffset = (my.yoffset + 1) % height;\n    y = my.yoffset;\n  }\n\n  fill(my.lit.elt.radioValue);\n\n  let shape = my.lit.elt.shapeValue;\n  if (shape == 'rect') {\n    rect(x - len / 2, y, len, len);\n  } else if (shape == 'circle') {\n    circle(x, y + len / 2, len);\n  } else {\n    draw_triangle(x, y, len);\n  }\n\n  storeUpdateCheck();\n}\n\nfunction draw_triangle(x, y, len) {\n  let x1 = x - len;\n  let y1 = y + len;\n  let x2 = x + len;\n  let y2 = y1;\n  let x3 = x;\n  let y3 = y;\n  triangle(x1, y1, x2, y2, x3, y3);\n}\n\n// https://lit.dev/tutorials/intro-to-lit/#8\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Ne1xB_wOz\n// lit try v2\n\n// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n\n// https://lit.dev/learn/#filter=tutorial\n\n// https://lit.dev/tutorials/reactivity/#7\n// click to animate\n// https://developer.mozilla.org/en-US/docs/Web/API/Element/animate\n// https://codepen.io/rachelnabors/pen/rxpmJL/?editors=0010\n//  Down the Rabbit Hole (with Web Animations API)\n// https://scroll-driven-animations.style/tools/view-timeline/ranges/#range-start-name=cover&range-start-percentage=0&range-end-name=cover&range-end-percentage=100&view-timeline-axis=block&view-timeline-inset=0&subject-size=smaller&subject-animation=reveal&interactivity=clicktodrag&show-areas=yes&show-fromto=yes&show-labels=yes\n// Also check out the View Timeline Ranges Visualizer, which shows exactly what the different values mean in an easy visual format.\n\n// https://editor.p5js.org/jht9629-nyu/sketches/HureJsyBs\n// lit demo v3\n",
         "children": [],
         "fileType": "file",
-        "_id": "665f74f210dd48377ae751a5",
         "isSelectedFile": false,
-        "createdAt": "2024-07-11T21:26:23.855Z",
-        "updatedAt": "2024-07-11T21:26:23.855Z",
+        "_id": "665f74f210dd48377ae751a5",
+        "createdAt": "2024-08-28T05:06:04.711Z",
+        "updatedAt": "2024-08-28T05:06:04.711Z",
         "id": "665f74f210dd48377ae751a5"
       },
       {
@@ -15526,10 +15616,10 @@
         "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js\"></script>\n    <!-- <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js\"></script> -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />\n    <meta charset=\"utf-8\" />\n\n    <script type=\"module\" src=\"lit-demo.js\"></script>\n  </head>\n  <body>\n    <main></main>\n    <script src=\"store.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
         "children": [],
         "fileType": "file",
+        "isSelectedFile": false,
         "_id": "665f74f210dd48377ae751a3",
-        "isSelectedFile": true,
-        "createdAt": "2024-07-11T21:26:23.855Z",
-        "updatedAt": "2024-07-11T21:26:23.855Z",
+        "createdAt": "2024-08-28T05:06:04.711Z",
+        "updatedAt": "2024-08-28T05:06:04.711Z",
         "id": "665f74f210dd48377ae751a3"
       },
       {
@@ -15537,10 +15627,10 @@
         "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
         "children": [],
         "fileType": "file",
-        "_id": "665f74f210dd48377ae751a6",
         "isSelectedFile": false,
-        "createdAt": "2024-07-11T21:26:23.855Z",
-        "updatedAt": "2024-07-11T21:26:23.855Z",
+        "_id": "665f74f210dd48377ae751a6",
+        "createdAt": "2024-08-28T05:06:04.711Z",
+        "updatedAt": "2024-08-28T05:06:04.711Z",
         "id": "665f74f210dd48377ae751a6"
       },
       {
@@ -15548,10 +15638,10 @@
         "content": "// import {LitElement, html, css} from 'lit';\nimport { LitElement, html, css } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';\n// https://lit.dev/tutorials/intro-to-lit/#8\n// https://lit.dev/docs/getting-started/#use-bundles\n\nexport class ToDoList extends LitElement {\n  static properties = {\n    _listItems: { state: true },\n    hideCompleted: {},\n  };\n  static styles = css`\n    .completed {\n      text-decoration-line: line-through;\n      color: #777;\n    }\n  `;\n\n  constructor() {\n    super();\n    this._listItems = [\n      { text: 'Make to-do list', completed: true },\n      { text: 'Complete Lit tutorial', completed: false },\n    ];\n    this.hideCompleted = false;\n  }\n\n  render() {\n    const items = this.hideCompleted ? this._listItems.filter((item) => !item.completed) : this._listItems;\n    const todos = html`\n      <ul>\n        ${items.map(\n          (item) => html` <li class=${item.completed ? 'completed' : ''} @click=${() => this.toggleCompleted(item)}>\n            ${item.text}\n          </li>`\n        )}\n      </ul>\n    `;\n    const caughtUpMessage = html` <p>You're all caught up!</p> `;\n    const todosOrMessage = items.length > 0 ? todos : caughtUpMessage;\n\n    return html`\n      <h2>To Do</h2>\n      ${todosOrMessage}\n      <input id=\"newitem\" aria-label=\"New item\" />\n      <button @click=${this.addToDo}>Add</button>\n      <br />\n      <label>\n        <input type=\"checkbox\" @change=${this.setHideCompleted} ?checked=${this.hideCompleted} />\n        Hide completed\n      </label>\n    `;\n  }\n\n  toggleCompleted(item) {\n    item.completed = !item.completed;\n    this.requestUpdate();\n  }\n\n  setHideCompleted(e) {\n    this.hideCompleted = e.target.checked;\n  }\n\n  get input() {\n    return this.renderRoot?.querySelector('#newitem') ?? null;\n  }\n\n  addToDo() {\n    this._listItems = [...this._listItems, { text: this.input.value, completed: false }];\n    this.input.value = '';\n  }\n}\ncustomElements.define('todo-list', ToDoList);\n",
         "children": [],
         "fileType": "file",
-        "_id": "665f74f210dd48377ae751a7",
         "isSelectedFile": false,
-        "createdAt": "2024-07-11T21:26:23.855Z",
-        "updatedAt": "2024-07-11T21:26:23.855Z",
+        "_id": "665f74f210dd48377ae751a7",
+        "createdAt": "2024-08-28T05:06:04.711Z",
+        "updatedAt": "2024-08-28T05:06:04.711Z",
         "id": "665f74f210dd48377ae751a7"
       },
       {
@@ -15559,10 +15649,10 @@
         "content": "//\n// Lit for UI input elements\n// reference: https://lit.dev/tutorials/intro-to-lit/#8\n\n// button\n// text input\n// slider -- input range\n// checkbox\n// radio button row\n// selection\n// color\n\nimport { LitElement, html } from 'https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js';\n\nexport class LitDemo extends LitElement {\n  static properties = {\n    _counter: { state: true },\n    sliderValue: { type: Number },\n    checkBoxValue: { type: Boolean },\n    radioValue: {},\n    shapeValue: {},\n    colorValue: {},\n    updateCount: { state: true },\n  };\n\n  constructor() {\n    super();\n    this._counter = 0;\n    this.sliderValue = 30;\n    this.checkBoxValue = false;\n    this.radioValue = 'gold';\n    this.shapeValue = 'rect';\n    this.colorValue = '#ffff00';\n    this.updateCount = 0;\n  }\n\n  render() {\n    this.updateCount++;\n    return html`\n      <h2>Lit Demo Storage -- localStorage used to preserve settings</h2>\n      <br />\n      <input id=\"id_counterInput\" value=${'counter=' + this._counter} />\n      <button @click=${this.updateUpClickEvent} @mousedown=${this.updateUpMouseDownEvent}>Update Up</button>\n      <button @click=${this.updateDownClickEvent}>Update Down</button>\n      <br />\n      <label>\n        <input type=\"range\" min=\"0\" max=\"100\" value=${this.sliderValue} @input=${this.sliderInputEvent} />\n        sliderValue ${this.sliderValue}\n      </label>\n      <br />\n      <label>\n        <input type=\"checkbox\" @change=${this.checkBoxChangeEvent} ?checked=${this.checkBoxValue} />\n        checkBoxValue\n      </label>\n      <fieldset @change=${this.radioChangeEvent}>\n        <legend>Select a radioValue:</legend>\n        <label>\n          <input type=\"radio\" name=\"drone\" value=\"red\" ?checked=${this.radioValue == 'red'} />\n          Red\n        </label>\n        <label>\n          <input type=\"radio\" name=\"drone\" value=\"green\" ?checked=${this.radioValue == 'green'} />\n          Green\n        </label>\n        <label>\n          <input type=\"radio\" name=\"drone\" value=\"gold\" ?checked=${this.radioValue == 'gold'} />\n          Gold\n        </label>\n      </fieldset>\n      <label>\n        Choose a shapeValue:\n        <select name=\"pets\" @change=${this.shapeChangeEvent}>\n          <option value=\"\">--Please choose an option--</option>\n          <option value=\"rect\" ?selected=${this.shapeValue == 'rect'}>Rect</option>\n          <option value=\"circle\" ?selected=${this.shapeValue == 'circle'}>Circle</option>\n          <option value=\"triangle\" ?selected=${this.shapeValue == 'triangle'}>Triangle</option>\n        </select>\n      </label>\n      <br />\n      <label>\n        Choose a colorValue\n        <input type=\"color\" name=\"head\" value=${this.colorValue} @input=${this.colorInputEvent} />\n      </label>\n    `;\n  }\n\n  colorInputEvent(event) {\n    // console.log('colorInputEvent event', event);\n    this.colorValue = event.target.value;\n  }\n\n  shapeChangeEvent(event) {\n    // console.log('shapeChangeEvent event.target.value', event.target.value, typeof event.target.value);\n    this.shapeValue = event.target.value;\n  }\n\n  radioChangeEvent(event) {\n    // console.log('radioChangeEvent event.target.value', event.target.value);\n    this.radioValue = event.target.value;\n  }\n\n  checkBoxChangeEvent(event) {\n    // console.log('checkBoxChangeEvent event.target.checked', event.target.checked);\n    this.checkBoxValue = event.target.checked;\n  }\n\n  sliderInputEvent(event) {\n    // console.log('sliderInputEvent event.target', event.target);\n    this.sliderValue = parseFloat(event.target.value);\n  }\n\n  updateUpClickEvent(event) {\n    // console.log('updateClickEvent event.target', event.target);\n    this._counter += 1;\n    this.input.value = 'counter=' + this._counter;\n  }\n\n  updateUpMouseDownEvent(event) {\n    console.log('updateUpMouseDownEvent event.target', event.target);\n  }\n\n  updateDownClickEvent(event) {\n    // console.log('updateDownClickEvent event', event);\n    this._counter -= 1;\n    this.input.value = 'counter=' + this._counter;\n  }\n\n  get input() {\n    return this.renderRoot?.querySelector('#id_counterInput') ?? null;\n  }\n}\ncustomElements.define('lit-demo', LitDemo);\n\n// https://editor.p5js.org/jht9629-nyu/sketches/HureJsyBs\n// lit demo v3\n\n// https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event\n// https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event\n\n// https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event\n",
         "children": [],
         "fileType": "file",
+        "isSelectedFile": true,
         "_id": "665f74f210dd48377ae751a4",
-        "isSelectedFile": false,
-        "updatedAt": "2024-07-11T21:26:23.855Z",
-        "createdAt": "2024-07-11T21:26:23.855Z",
+        "createdAt": "2024-08-28T05:06:04.711Z",
+        "updatedAt": "2024-08-28T05:06:04.711Z",
         "id": "665f74f210dd48377ae751a4"
       },
       {
@@ -15570,15 +15660,15 @@
         "content": "//\nlet storeKey = 'lit';\n\n// my.lit.elt.constructor.properties\n\nfunction restoreStore() {\n  //\n  my.updateCount = 0;\n  let str = localStorage.getItem(storeKey);\n  if (!str) return;\n  let obj = JSON.parse(str);\n  if (!obj) return;\n  // console.log('restoreStore obj', obj);\n\n  let target = my.lit.elt;\n  for (let prop in obj) {\n    target[prop] = obj[prop];\n  }\n}\n\nfunction storeUpdateCheck() {\n  if (my.updateCount != my.lit.elt.updateCount) {\n    // console.log('checkForChanges my.lit.elt.updateCount', my.lit.elt.updateCount);\n    my.updateCount = my.lit.elt.updateCount;\n    saveStore();\n  }\n}\n\nfunction saveStore() {\n  //\n  let obj = {};\n  let props = my.lit.elt.constructor.properties;\n  let source = my.lit.elt;\n  for (let prop in props) {\n    obj[prop] = source[prop];\n  }\n  let str = JSON.stringify(obj, null, 2);\n  // console.log('saveStore str', str);\n  localStorage.setItem(storeKey, str);\n}\n",
         "children": [],
         "fileType": "file",
-        "_id": "66605d6e0e0626001a750671",
         "isSelectedFile": false,
-        "updatedAt": "2024-07-11T21:26:23.855Z",
-        "createdAt": "2024-07-11T21:26:23.855Z",
+        "_id": "66605d6e0e0626001a750671",
+        "createdAt": "2024-08-28T05:06:04.711Z",
+        "updatedAt": "2024-08-28T05:06:04.711Z",
         "id": "66605d6e0e0626001a750671"
       }
     ],
     "createdAt": "2024-06-04T20:11:30.145Z",
-    "updatedAt": "2024-07-11T21:26:23.855Z",
+    "updatedAt": "2024-08-28T05:06:04.711Z",
     "id": "W_42_8Enr"
   },
   {
@@ -29444,6 +29534,60 @@
     "createdAt": "2024-07-23T15:40:36.051Z",
     "updatedAt": "2024-07-23T15:40:36.051Z",
     "id": "oRVIiwpzr"
+  },
+  {
+    "_id": "SBY8znaxT",
+    "name": "W4: Re-write as a loop - I copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66ce0e25e666fd79bf312be4",
+          "66ce0e25e666fd79bf312be5",
+          "66ce0e25e666fd79bf312be6"
+        ],
+        "fileType": "folder",
+        "_id": "66ce0e25e666fd79bf312be3",
+        "createdAt": "2024-08-27T17:35:20.538Z",
+        "updatedAt": "2024-08-27T17:35:20.538Z",
+        "id": "66ce0e25e666fd79bf312be3"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(100, 100);\n  background(220);\n  for (x = 0; x <= 90; x += 10) {\n    rect(x, 0, 10, 100);\n  }\n}\n  \nfunction xxx() {\n  rect(0, 0, 10, 100);\n  rect(10, 0, 10, 100);\n  rect(20, 0, 10, 100);\n  rect(30, 0, 10, 100);\n  rect(40, 0, 10, 100);\n  rect(50, 0, 10, 100);\n  rect(60, 0, 10, 100);\n  rect(70, 0, 10, 100);\n  rect(80, 0, 10, 100);\n  rect(90, 0, 10, 100);\n}\n\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66ce0e25e666fd79bf312be5",
+        "createdAt": "2024-08-27T17:35:20.538Z",
+        "updatedAt": "2024-08-27T17:35:20.538Z",
+        "id": "66ce0e25e666fd79bf312be5"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66ce0e25e666fd79bf312be4",
+        "createdAt": "2024-08-27T17:35:20.538Z",
+        "updatedAt": "2024-08-27T17:35:20.538Z",
+        "id": "66ce0e25e666fd79bf312be4"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66ce0e25e666fd79bf312be6",
+        "createdAt": "2024-08-27T17:35:20.538Z",
+        "updatedAt": "2024-08-27T17:35:20.538Z",
+        "id": "66ce0e25e666fd79bf312be6"
+      }
+    ],
+    "createdAt": "2024-08-27T17:34:29.228Z",
+    "updatedAt": "2024-08-27T17:35:20.538Z",
+    "id": "SBY8znaxT"
   },
   {
     "_id": "NLVK9ZI7a",
