@@ -1,31 +1,66 @@
 cd "/Users/jht2/Documents/projects/2024/p5mo/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "Hyper promotion-Ddt4PnnER"
-rm -rf "./Hyper promotion-Ddt4PnnER"
-mkdir "./Hyper promotion-Ddt4PnnER"
-pushd "./Hyper promotion-Ddt4PnnER" > /dev/null
-unzip -q "../../downloads/zips/Hyper promotion-Ddt4PnnER"
+echo unzip 1 "week 03 expressions secs()-i2VZolhwz"
+rm -rf "./week 03 expressions secs()-i2VZolhwz"
+mkdir "./week 03 expressions secs()-i2VZolhwz"
+pushd "./week 03 expressions secs()-i2VZolhwz" > /dev/null
+unzip -q "../../downloads/zips/week 03 expressions secs()-i2VZolhwz"
 popd > /dev/null
 #
-echo unzip 2 "lit demo storage v3-W_42_8Enr"
-rm -rf "./lit demo storage v3-W_42_8Enr"
-mkdir "./lit demo storage v3-W_42_8Enr"
-pushd "./lit demo storage v3-W_42_8Enr" > /dev/null
-unzip -q "../../downloads/zips/lit demo storage v3-W_42_8Enr"
+echo unzip 2 "06_rotation-POTnurvBB"
+rm -rf "./06_rotation-POTnurvBB"
+mkdir "./06_rotation-POTnurvBB"
+pushd "./06_rotation-POTnurvBB" > /dev/null
+unzip -q "../../downloads/zips/06_rotation-POTnurvBB"
 popd > /dev/null
 #
-echo unzip 3 "W4 Re-write as a loop - I copy-SBY8znaxT"
-rm -rf "./W4 Re-write as a loop - I copy-SBY8znaxT"
-mkdir "./W4 Re-write as a loop - I copy-SBY8znaxT"
-pushd "./W4 Re-write as a loop - I copy-SBY8znaxT" > /dev/null
-unzip -q "../../downloads/zips/W4 Re-write as a loop - I copy-SBY8znaxT"
+echo unzip 3 "05_multitouch-r1pNFuC1P"
+rm -rf "./05_multitouch-r1pNFuC1P"
+mkdir "./05_multitouch-r1pNFuC1P"
+pushd "./05_multitouch-r1pNFuC1P" > /dev/null
+unzip -q "../../downloads/zips/05_multitouch-r1pNFuC1P"
 popd > /dev/null
 #
-echo unzip 4 "faceMesh mesh_nits v8 bestill-_3QMiI-fM"
-rm -rf "./faceMesh mesh_nits v8 bestill-_3QMiI-fM"
-mkdir "./faceMesh mesh_nits v8 bestill-_3QMiI-fM"
-pushd "./faceMesh mesh_nits v8 bestill-_3QMiI-fM" > /dev/null
-unzip -q "../../downloads/zips/faceMesh mesh_nits v8 bestill-_3QMiI-fM"
+echo unzip 4 "week 03 expressions millis-n4miyKkfv"
+rm -rf "./week 03 expressions millis-n4miyKkfv"
+mkdir "./week 03 expressions millis-n4miyKkfv"
+pushd "./week 03 expressions millis-n4miyKkfv" > /dev/null
+unzip -q "../../downloads/zips/week 03 expressions millis-n4miyKkfv"
+popd > /dev/null
+#
+echo unzip 5 "jht week 01 ex 2 random-VWGjK5A9p"
+rm -rf "./jht week 01 ex 2 random-VWGjK5A9p"
+mkdir "./jht week 01 ex 2 random-VWGjK5A9p"
+pushd "./jht week 01 ex 2 random-VWGjK5A9p" > /dev/null
+unzip -q "../../downloads/zips/jht week 01 ex 2 random-VWGjK5A9p"
+popd > /dev/null
+#
+echo unzip 6 "createCapture VIDEO flipped-Ddt4PnnER"
+rm -rf "./createCapture VIDEO flipped-Ddt4PnnER"
+mkdir "./createCapture VIDEO flipped-Ddt4PnnER"
+pushd "./createCapture VIDEO flipped-Ddt4PnnER" > /dev/null
+unzip -q "../../downloads/zips/createCapture VIDEO flipped-Ddt4PnnER"
+popd > /dev/null
+#
+echo unzip 7 "jht week 01 ex 2-CXOBqb6oj"
+rm -rf "./jht week 01 ex 2-CXOBqb6oj"
+mkdir "./jht week 01 ex 2-CXOBqb6oj"
+pushd "./jht week 01 ex 2-CXOBqb6oj" > /dev/null
+unzip -q "../../downloads/zips/jht week 01 ex 2-CXOBqb6oj"
+popd > /dev/null
+#
+echo unzip 8 "jht week 01 in class-oBBTcsqwh"
+rm -rf "./jht week 01 in class-oBBTcsqwh"
+mkdir "./jht week 01 in class-oBBTcsqwh"
+pushd "./jht week 01 in class-oBBTcsqwh" > /dev/null
+unzip -q "../../downloads/zips/jht week 01 in class-oBBTcsqwh"
+popd > /dev/null
+#
+echo unzip 9 "chatgpt bouncing ball-8uQ3OCxZH"
+rm -rf "./chatgpt bouncing ball-8uQ3OCxZH"
+mkdir "./chatgpt bouncing ball-8uQ3OCxZH"
+pushd "./chatgpt bouncing ball-8uQ3OCxZH" > /dev/null
+unzip -q "../../downloads/zips/chatgpt bouncing ball-8uQ3OCxZH"
 popd > /dev/null
 
 cd ..

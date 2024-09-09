@@ -57,6 +57,114 @@
     "id": "7hzeHDSIl"
   },
   {
+    "_id": "r1pNFuC1P",
+    "name": "05_multitouch",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66dc8482720213777c639ffd",
+          "66dc8482720213777c639ffc",
+          "66dc8482720213777c639ffe"
+        ],
+        "fileType": "folder",
+        "_id": "66dc8482720213777c639fff",
+        "createdAt": "2024-09-07T17:17:45.965Z",
+        "updatedAt": "2024-09-07T17:17:45.965Z",
+        "id": "66dc8482720213777c639fff"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P\n// 05_multitouch\n\n// https://github.com/IDMNYU/DM-GY-6063B-Creative-Coding/blob/master/mobile-examples/05_multitouch/sketch.js\n\nfunction setup() {\n  // createCanvas(displayWidth, displayHeight);\n  createCanvas(windowWidth, windowHeight);\n}\n\nfunction draw() {\n  background(50);\n  noStroke();\n  fill(255, 192);\n  for (var i = 0; i < touches.length; i++) {\n    ellipse(touches[i].x, touches[i].y,\n      100+sin(i+frameCount*0.1)*50,\n      100+sin(i+frameCount*0.1)*50);\n  }\n}\n\nfunction touchMoved() {\n  return false;\n}",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66dc8482720213777c639ffc",
+        "createdAt": "2024-09-07T17:17:45.965Z",
+        "updatedAt": "2024-09-07T17:17:45.965Z",
+        "id": "66dc8482720213777c639ffc"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66dc8482720213777c639ffd",
+        "createdAt": "2024-09-07T17:17:45.965Z",
+        "updatedAt": "2024-09-07T17:17:45.965Z",
+        "id": "66dc8482720213777c639ffd"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66dc8482720213777c639ffe",
+        "createdAt": "2024-09-07T17:17:45.965Z",
+        "updatedAt": "2024-09-07T17:17:45.965Z",
+        "id": "66dc8482720213777c639ffe"
+      }
+    ],
+    "updatedAt": "2024-09-07T17:17:45.965Z",
+    "createdAt": "2024-09-07T16:51:24.318Z",
+    "id": "r1pNFuC1P"
+  },
+  {
+    "_id": "POTnurvBB",
+    "name": "06_rotation",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66dc8abe720213777c63a001",
+          "66dc8abe720213777c63a000",
+          "66dc8abe720213777c63a002"
+        ],
+        "fileType": "folder",
+        "_id": "66dc8abe720213777c63a003",
+        "createdAt": "2024-09-07T17:18:53.887Z",
+        "updatedAt": "2024-09-07T17:18:53.887Z",
+        "id": "66dc8abe720213777c63a003"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/POTnurvBB\n// 06_rotation\n\n// https://github.com/IDMNYU/DM-GY-6063B-Creative-Coding/blob/master/mobile-examples/06_rotation/sketch.js\n\nvar rx = 0;\nvar ry = 0;\nvar rz = 0;\nfunction setup() {\n  createCanvas(displayWidth, displayHeight);\n  rectMode(CENTER);\n  setMoveThreshold(0.1);\n}\n\nfunction draw() {\n  background(50);\n  noStroke();\n  fill(255);\n  push();\n  translate(ry, rx);\n  rotate(rz);\n  rect(0, 0, 150, 150);\n  pop();\n}\n\nfunction deviceMoved() {\n  rx = map(rotationX, -90, 90, 0, displayHeight);\n  ry = map(rotationY, -90, 90, 0, displayWidth);\n  rz = radians(rotationZ);\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66dc8abe720213777c63a000",
+        "createdAt": "2024-09-07T17:18:53.887Z",
+        "updatedAt": "2024-09-07T17:18:53.887Z",
+        "id": "66dc8abe720213777c63a000"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66dc8abe720213777c63a001",
+        "createdAt": "2024-09-07T17:18:53.887Z",
+        "updatedAt": "2024-09-07T17:18:53.887Z",
+        "id": "66dc8abe720213777c63a001"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66dc8abe720213777c63a002",
+        "createdAt": "2024-09-07T17:18:53.887Z",
+        "updatedAt": "2024-09-07T17:18:53.887Z",
+        "id": "66dc8abe720213777c63a002"
+      }
+    ],
+    "updatedAt": "2024-09-07T17:18:53.887Z",
+    "createdAt": "2024-09-07T17:18:29.372Z",
+    "id": "POTnurvBB"
+  },
+  {
     "_id": "AnDswZ6eY",
     "name": "1.2 draw_shapes_ui",
     "files": [
@@ -3952,6 +4060,60 @@
     "id": "p2CYdZGp9"
   },
   {
+    "_id": "8uQ3OCxZH",
+    "name": "chatgpt bouncing ball",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66d9a3e5e75ed39a72c9e4ba",
+          "66d9a3e5e75ed39a72c9e4b9",
+          "66d9a3e5e75ed39a72c9e4bb"
+        ],
+        "fileType": "folder",
+        "_id": "66d9a3e5e75ed39a72c9e4bc",
+        "createdAt": "2024-09-05T15:41:59.043Z",
+        "updatedAt": "2024-09-05T15:41:59.043Z",
+        "id": "66d9a3e5e75ed39a72c9e4bc"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/8uQ3OCxZH\n// chatgpt bouncing ball\n\n// write a p5js bouncing ball sketch\n// https://chatgpt.com/c/66d9a3c0-0930-8002-ab05-3ffd5d7c0c24\n\nlet x, y; // Position of the ball\nlet xSpeed, ySpeed; // Speed of the ball\nlet ballSize = 50; // Size of the ball\n\nfunction setup() {\n  createCanvas(400, 400);\n  x = width / 2;\n  y = height / 2;\n  xSpeed = 5;\n  ySpeed = 3;\n}\n\nfunction draw() {\n  background(220);\n\n  // Move the ball\n  x += xSpeed;\n  y += ySpeed;\n\n  // Check for collision with the walls\n  if (x > width - ballSize / 2 || x < ballSize / 2) {\n    xSpeed *= -1; // Reverse direction on X-axis\n  }\n  if (y > height - ballSize / 2 || y < ballSize / 2) {\n    ySpeed *= -1; // Reverse direction on Y-axis\n  }\n\n  // Draw the ball\n  fill(0, 100, 255);\n  ellipse(x, y, ballSize, ballSize);\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66d9a3e5e75ed39a72c9e4b9",
+        "createdAt": "2024-09-05T15:41:59.043Z",
+        "updatedAt": "2024-09-05T15:41:59.043Z",
+        "id": "66d9a3e5e75ed39a72c9e4b9"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d9a3e5e75ed39a72c9e4ba",
+        "createdAt": "2024-09-05T15:41:59.043Z",
+        "updatedAt": "2024-09-05T15:41:59.043Z",
+        "id": "66d9a3e5e75ed39a72c9e4ba"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d9a3e5e75ed39a72c9e4bb",
+        "createdAt": "2024-09-05T15:41:59.043Z",
+        "updatedAt": "2024-09-05T15:41:59.043Z",
+        "id": "66d9a3e5e75ed39a72c9e4bb"
+      }
+    ],
+    "updatedAt": "2024-09-05T15:41:59.043Z",
+    "createdAt": "2024-09-05T12:28:54.960Z",
+    "id": "8uQ3OCxZH"
+  },
+  {
     "_id": "VB_EmgNTF",
     "name": "checking objects intersection",
     "files": [
@@ -5243,6 +5405,60 @@
     "createdAt": "2024-07-30T15:11:55.068Z",
     "updatedAt": "2024-07-30T15:59:30.436Z",
     "id": "MZfI2vmoC"
+  },
+  {
+    "_id": "Ddt4PnnER",
+    "name": "createCapture VIDEO flipped",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66d1caa76985cb05886ffc93",
+          "66d1caa76985cb05886ffc92",
+          "66d1caa76985cb05886ffc94"
+        ],
+        "fileType": "folder",
+        "_id": "66d1caa76985cb05886ffc95",
+        "createdAt": "2024-09-05T20:46:36.523Z",
+        "updatedAt": "2024-09-05T20:46:36.523Z",
+        "id": "66d1caa76985cb05886ffc95"
+      },
+      {
+        "name": "sketch.js",
+        "content": "let capture;\n\nfunction setup() {\n  createCanvas(100, 100);\n\n  // Create the video capture with mirrored output.\n  capture = createCapture(VIDEO,{ flipped:true });\n  capture.size(100,100);\n\n  describe('A video stream from the webcam with flipped or mirrored output.');\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66d1caa76985cb05886ffc92",
+        "createdAt": "2024-09-05T20:46:36.523Z",
+        "updatedAt": "2024-09-05T20:46:36.523Z",
+        "id": "66d1caa76985cb05886ffc92"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d1caa76985cb05886ffc93",
+        "createdAt": "2024-09-05T20:46:36.523Z",
+        "updatedAt": "2024-09-05T20:46:36.523Z",
+        "id": "66d1caa76985cb05886ffc93"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d1caa76985cb05886ffc94",
+        "createdAt": "2024-09-05T20:46:36.523Z",
+        "updatedAt": "2024-09-05T20:46:36.523Z",
+        "id": "66d1caa76985cb05886ffc94"
+      }
+    ],
+    "updatedAt": "2024-09-05T20:46:36.523Z",
+    "createdAt": "2024-08-30T13:35:42.838Z",
+    "id": "Ddt4PnnER"
   },
   {
     "_id": "WqVG9-Rwn",
@@ -11981,60 +12197,6 @@
     "id": "NeWYQtl2J"
   },
   {
-    "_id": "Ddt4PnnER",
-    "name": "Hyper promotion",
-    "files": [
-      {
-        "name": "root",
-        "content": "",
-        "children": [
-          "66d1caa76985cb05886ffc93",
-          "66d1caa76985cb05886ffc92",
-          "66d1caa76985cb05886ffc94"
-        ],
-        "fileType": "folder",
-        "_id": "66d1caa76985cb05886ffc95",
-        "createdAt": "2024-08-30T13:35:42.837Z",
-        "updatedAt": "2024-08-30T13:35:42.837Z",
-        "id": "66d1caa76985cb05886ffc95"
-      },
-      {
-        "name": "sketch.js",
-        "content": "let capture;\n\nfunction setup() {\n  createCanvas(100, 100);\n\n  // Create the video capture with mirrored output.\n  capture = createCapture(VIDEO,{ flipped:true });\n  capture.size(100,100);\n\n  describe('A video stream from the webcam with flipped or mirrored output.');\n}\n",
-        "children": [],
-        "fileType": "file",
-        "isSelectedFile": true,
-        "_id": "66d1caa76985cb05886ffc92",
-        "createdAt": "2024-08-30T13:35:42.838Z",
-        "updatedAt": "2024-08-30T13:35:42.838Z",
-        "id": "66d1caa76985cb05886ffc92"
-      },
-      {
-        "name": "index.html",
-        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "66d1caa76985cb05886ffc93",
-        "createdAt": "2024-08-30T13:35:42.838Z",
-        "updatedAt": "2024-08-30T13:35:42.838Z",
-        "id": "66d1caa76985cb05886ffc93"
-      },
-      {
-        "name": "style.css",
-        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "66d1caa76985cb05886ffc94",
-        "createdAt": "2024-08-30T13:35:42.838Z",
-        "updatedAt": "2024-08-30T13:35:42.838Z",
-        "id": "66d1caa76985cb05886ffc94"
-      }
-    ],
-    "updatedAt": "2024-08-30T13:35:42.838Z",
-    "createdAt": "2024-08-30T13:35:42.838Z",
-    "id": "Ddt4PnnER"
-  },
-  {
     "_id": "wxcIn0BaK",
     "name": "ICM - WK6 - practicing with objects copy",
     "files": [
@@ -15007,6 +15169,168 @@
     "createdAt": "2023-07-29T08:56:32.698Z",
     "updatedAt": "2023-07-29T09:17:04.707Z",
     "id": "j4tQqgSxZ"
+  },
+  {
+    "_id": "CXOBqb6oj",
+    "name": "jht week 01 ex 2",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66d9ed26667ac45460b415b1",
+          "66d9ed26667ac45460b415b0",
+          "66d9ed26667ac45460b415b2"
+        ],
+        "fileType": "folder",
+        "_id": "66d9ed26667ac45460b415b3",
+        "createdAt": "2024-09-05T20:45:44.605Z",
+        "updatedAt": "2024-09-05T20:45:44.605Z",
+        "id": "66d9ed26667ac45460b415b3"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 200);\n  console.log('in setup');\n}\n\nfunction draw() {\n  console.log('in draw');\n  // background(220);\n  // circle(x,y,r)\n  circle(mouseX,mouseY,100);\n  // noLoop();\n}\n\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66d9ed26667ac45460b415b0",
+        "createdAt": "2024-09-05T20:45:44.605Z",
+        "updatedAt": "2024-09-05T20:45:44.605Z",
+        "id": "66d9ed26667ac45460b415b0"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d9ed26667ac45460b415b1",
+        "createdAt": "2024-09-05T20:45:44.605Z",
+        "updatedAt": "2024-09-05T20:45:44.605Z",
+        "id": "66d9ed26667ac45460b415b1"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d9ed26667ac45460b415b2",
+        "createdAt": "2024-09-05T20:45:44.605Z",
+        "updatedAt": "2024-09-05T20:45:44.605Z",
+        "id": "66d9ed26667ac45460b415b2"
+      }
+    ],
+    "updatedAt": "2024-09-05T20:45:44.605Z",
+    "createdAt": "2024-09-05T17:41:04.259Z",
+    "id": "CXOBqb6oj"
+  },
+  {
+    "_id": "VWGjK5A9p",
+    "name": "jht week 01 ex 2 random",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66d9efb9667ac45460b415b5",
+          "66d9efb9667ac45460b415b6",
+          "66d9efb9667ac45460b415b7"
+        ],
+        "fileType": "folder",
+        "_id": "66d9efb9667ac45460b415b4",
+        "createdAt": "2024-09-07T13:28:47.971Z",
+        "updatedAt": "2024-09-07T13:28:47.971Z",
+        "id": "66d9efb9667ac45460b415b4"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/VWGjK5A9p\n// jht week 01 ex 2 random\n\nfunction setup() {\n  createCanvas(400, 200);\n  console.log('in setup');\n}\n\nfunction draw() {\n  console.log('in draw');\n  // background(220);\n  // circle(x,y,r)\n  circle(random(400),random(200),100);\n  noLoop();\n}\n\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66d9efb9667ac45460b415b6",
+        "createdAt": "2024-09-07T13:28:47.971Z",
+        "updatedAt": "2024-09-07T13:28:47.971Z",
+        "id": "66d9efb9667ac45460b415b6"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d9efb9667ac45460b415b5",
+        "createdAt": "2024-09-07T13:28:47.971Z",
+        "updatedAt": "2024-09-07T13:28:47.971Z",
+        "id": "66d9efb9667ac45460b415b5"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d9efb9667ac45460b415b7",
+        "createdAt": "2024-09-07T13:28:47.971Z",
+        "updatedAt": "2024-09-07T13:28:47.971Z",
+        "id": "66d9efb9667ac45460b415b7"
+      }
+    ],
+    "createdAt": "2024-09-05T17:51:53.342Z",
+    "updatedAt": "2024-09-07T13:28:47.971Z",
+    "id": "VWGjK5A9p"
+  },
+  {
+    "_id": "oBBTcsqwh",
+    "name": "jht week 01 in class",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66d9e6aca356864cfc484c9a",
+          "66d9e6aca356864cfc484c99",
+          "66d9e6aca356864cfc484c9b"
+        ],
+        "fileType": "folder",
+        "_id": "66d9e6aca356864cfc484c9c",
+        "createdAt": "2024-09-05T17:40:48.994Z",
+        "updatedAt": "2024-09-05T17:40:48.994Z",
+        "id": "66d9e6aca356864cfc484c9c"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 200);\n}\n\nfunction draw() {\n  // background(255); // white\n  // background(0); // black\n  background(128); // gray\n  \n  stroke(255)\n  strokeWeight(10);\n  fill(0, 255, 0); // green\n  \n  // rect(x, y, w, h)\n  rect(10, 10, 200, 100);\n  \n  // square(x, y, s, [tl], [tr], [br], [bl])\n  fill(255, 0, 0); // red\n  square(30, 20, 55);\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66d9e6aca356864cfc484c99",
+        "createdAt": "2024-09-05T17:40:48.994Z",
+        "updatedAt": "2024-09-05T17:40:48.994Z",
+        "id": "66d9e6aca356864cfc484c99"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d9e6aca356864cfc484c9a",
+        "createdAt": "2024-09-05T17:40:48.994Z",
+        "updatedAt": "2024-09-05T17:40:48.994Z",
+        "id": "66d9e6aca356864cfc484c9a"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66d9e6aca356864cfc484c9b",
+        "createdAt": "2024-09-05T17:40:48.994Z",
+        "updatedAt": "2024-09-05T17:40:48.994Z",
+        "id": "66d9e6aca356864cfc484c9b"
+      }
+    ],
+    "updatedAt": "2024-09-05T17:40:48.994Z",
+    "createdAt": "2024-09-05T17:14:39.586Z",
+    "id": "oBBTcsqwh"
   },
   {
     "_id": "jms7R-njY",
@@ -29756,6 +30080,114 @@
     "createdAt": "2024-07-29T16:07:59.937Z",
     "updatedAt": "2024-07-29T16:07:59.937Z",
     "id": "PzDY-EpBz"
+  },
+  {
+    "_id": "n4miyKkfv",
+    "name": "week 03 expressions millis",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66dc55146c82ef43b6122f47",
+          "66dc55146c82ef43b6122f48",
+          "66dc55146c82ef43b6122f49"
+        ],
+        "fileType": "folder",
+        "_id": "66dc55146c82ef43b6122f46",
+        "createdAt": "2024-09-07T13:35:29.064Z",
+        "updatedAt": "2024-09-07T13:35:29.064Z",
+        "id": "66dc55146c82ef43b6122f46"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/n4miyKkfv\n// week 03 expressions millis\n\nfunction setup() {\n  createCanvas(400, 200);\n  console.log('in setup');\n  frameRate(1);\n}\n\nfunction draw() {\n  console.log('in draw', millis() / 1000.0, 'fs', frameRate());\n  // background(220);\n  // circle(x,y,r)\n  circle(random(width),random(height),100);\n  // noLoop();\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/VWGjK5A9p\n// jht week 01 ex 2 random\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66dc55146c82ef43b6122f48",
+        "createdAt": "2024-09-07T13:35:29.064Z",
+        "updatedAt": "2024-09-07T13:35:29.064Z",
+        "id": "66dc55146c82ef43b6122f48"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66dc55146c82ef43b6122f47",
+        "createdAt": "2024-09-07T13:35:29.064Z",
+        "updatedAt": "2024-09-07T13:35:29.064Z",
+        "id": "66dc55146c82ef43b6122f47"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66dc55146c82ef43b6122f49",
+        "createdAt": "2024-09-07T13:35:29.064Z",
+        "updatedAt": "2024-09-07T13:35:29.064Z",
+        "id": "66dc55146c82ef43b6122f49"
+      }
+    ],
+    "createdAt": "2024-09-07T13:28:52.160Z",
+    "updatedAt": "2024-09-07T13:35:29.064Z",
+    "id": "n4miyKkfv"
+  },
+  {
+    "_id": "i2VZolhwz",
+    "name": "week 03 expressions secs()",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "66dc590e6c82ef43b6122f4b",
+          "66dc590e6c82ef43b6122f4c",
+          "66dc590e6c82ef43b6122f4d"
+        ],
+        "fileType": "folder",
+        "_id": "66dc590e6c82ef43b6122f4a",
+        "createdAt": "2024-09-07T17:35:59.042Z",
+        "updatedAt": "2024-09-07T17:35:59.042Z",
+        "id": "66dc590e6c82ef43b6122f4a"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/i2VZolhwz\n// week 03 expressions secs()\n\nfunction setup() {\n  createCanvas(400, 200);\n  console.log('in setup');\n  frameRate(1);\n}\n\nfunction draw() {\n  console.log('in draw', secs(), 'fs', frameRate());\n  // background(220);\n  // circle(x,y,r)\n  circle(random(width),random(height),100);\n  // noLoop();\n}\n\nfunction secs() {\n  return millis() / 1000.0;\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/VWGjK5A9p\n// jht week 01 ex 2 random\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "66dc590e6c82ef43b6122f4c",
+        "createdAt": "2024-09-07T17:35:59.042Z",
+        "updatedAt": "2024-09-07T17:35:59.042Z",
+        "id": "66dc590e6c82ef43b6122f4c"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66dc590e6c82ef43b6122f4b",
+        "createdAt": "2024-09-07T17:35:59.042Z",
+        "updatedAt": "2024-09-07T17:35:59.042Z",
+        "id": "66dc590e6c82ef43b6122f4b"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "66dc590e6c82ef43b6122f4d",
+        "createdAt": "2024-09-07T17:35:59.042Z",
+        "updatedAt": "2024-09-07T17:35:59.042Z",
+        "id": "66dc590e6c82ef43b6122f4d"
+      }
+    ],
+    "createdAt": "2024-09-07T13:45:50.935Z",
+    "updatedAt": "2024-09-07T17:35:59.042Z",
+    "id": "i2VZolhwz"
   },
   {
     "_id": "0aB9AAgQt",

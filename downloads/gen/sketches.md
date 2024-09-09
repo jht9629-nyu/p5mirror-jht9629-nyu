@@ -1,6 +1,8 @@
 # Sketches for jht9629-nyu
-453 sketches  
+461 sketches  
 [03-jht-hatviz](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)<!-- 2023-04-09T01:41:50.719Z -->  
+[05\_multitouch](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)<!-- 2024-09-07T17:17:45.965Z -->  
+[06\_rotation](https://editor.p5js.org/jht9629-nyu/sketches/POTnurvBB)<!-- 2024-09-07T17:18:53.887Z -->  
 [1.2 draw\_shapes\_ui](https://editor.p5js.org/jht9629-nyu/sketches/AnDswZ6eY)<!-- 2023-09-16T22:25:20.883Z -->  
 [10PRINT copy](https://editor.p5js.org/jht9629-nyu/sketches/-QATBkoGr)<!-- 2023-10-02T21:30:31.747Z -->  
 [11.3: The Pixel Array](https://editor.p5js.org/jht9629-nyu/sketches/a0HDzoroq)<!-- 2023-11-06T13:47:56.721Z -->  
@@ -66,6 +68,7 @@
 [chat-G pong pause fix](https://editor.p5js.org/jht9629-nyu/sketches/KfLHXuwlr)<!-- 2023-08-24T20:44:43.030Z -->  
 [chat-G Scratch risk](https://editor.p5js.org/jht9629-nyu/sketches/y8_gBGVUS)<!-- 2023-08-24T20:11:10.255Z -->  
 [Chat-with-Me\_Template Simplified copy](https://editor.p5js.org/jht9629-nyu/sketches/p2CYdZGp9)<!-- 2024-07-25T16:02:03.245Z -->  
+[chatgpt bouncing ball](https://editor.p5js.org/jht9629-nyu/sketches/8uQ3OCxZH)<!-- 2024-09-05T15:41:59.043Z -->  
 [checking objects intersection](https://editor.p5js.org/jht9629-nyu/sketches/VB_EmgNTF)<!-- 2023-10-30T21:56:46.451Z -->  
 [CHINO MORENO copy](https://editor.p5js.org/jht9629-nyu/sketches/T8H4WNIkc)<!-- 2024-08-01T14:00:14.554Z -->  
 [CHINO MORENO copy](https://editor.p5js.org/jht9629-nyu/sketches/vdaqiAALd)<!-- 2024-08-01T13:52:43.522Z -->  
@@ -86,6 +89,7 @@
 [console.log frameCount](https://editor.p5js.org/jht9629-nyu/sketches/O2Pgf8nC5)<!-- 2023-07-23T23:07:23.632Z -->  
 [CORS bug demo](https://editor.p5js.org/jht9629-nyu/sketches/EY7PtpKAG)<!-- 2024-05-01T01:47:04.108Z -->  
 [createAudio BUG](https://editor.p5js.org/jht9629-nyu/sketches/MZfI2vmoC)<!-- 2024-07-30T15:59:30.436Z -->  
+[createCapture VIDEO flipped](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)<!-- 2024-09-05T20:46:36.523Z -->  
 [cv-examples: Edge Detection --kylemcdonald](https://editor.p5js.org/jht9629-nyu/sketches/WqVG9-Rwn)<!-- 2024-08-08T23:05:03.086Z -->  
 [Dandelion mustang](https://editor.p5js.org/jht9629-nyu/sketches/23h3z1G82)<!-- 2024-03-22T22:46:38.684Z -->  
 [Day 6 cat gif](https://editor.p5js.org/jht9629-nyu/sketches/0omTMvKnK)<!-- 2024-07-31T00:22:42.945Z -->  
@@ -186,7 +190,6 @@
 [Harmless tortellini](https://editor.p5js.org/jht9629-nyu/sketches/prAzhqM4x)<!-- 2024-07-18T15:40:07.489Z -->  
 [Heathered jackal](https://editor.p5js.org/jht9629-nyu/sketches/3q30yHV1e)<!-- 2024-07-25T18:41:06.070Z -->  
 [hello-p5-song](https://editor.p5js.org/jht9629-nyu/sketches/NeWYQtl2J)<!-- 2023-08-02T15:09:43.632Z -->  
-[Hyper promotion](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)<!-- 2024-08-30T13:35:42.838Z -->  
 [ICM - WK6 - practicing with objects copy](https://editor.p5js.org/jht9629-nyu/sketches/wxcIn0BaK)<!-- 2023-10-23T21:39:54.857Z -->  
 [ICM 2023 jht student selector](https://editor.p5js.org/jht9629-nyu/sketches/rpyY0uqRR)<!-- 2023-10-02T05:27:35.618Z -->  
 [ICM jht student selector textarea](https://editor.p5js.org/jht9629-nyu/sketches/6L3aL1OEy)<!-- 2023-10-16T01:31:34.442Z -->  
@@ -230,6 +233,9 @@
 [ISABELLA still](https://editor.p5js.org/jht9629-nyu/sketches/MQtVfIUpM)<!-- 2024-08-01T14:47:37.001Z -->  
 [jht - Ideal Text Input 2](https://editor.p5js.org/jht9629-nyu/sketches/zj4_p71s1)<!-- 2024-07-25T14:32:07.665Z -->  
 [jht preload  imgs](https://editor.p5js.org/jht9629-nyu/sketches/j4tQqgSxZ)<!-- 2023-07-29T09:17:04.707Z -->  
+[jht week 01 ex 2](https://editor.p5js.org/jht9629-nyu/sketches/CXOBqb6oj)<!-- 2024-09-05T20:45:44.605Z -->  
+[jht week 01 ex 2 random](https://editor.p5js.org/jht9629-nyu/sketches/VWGjK5A9p)<!-- 2024-09-07T13:28:47.971Z -->  
+[jht week 01 in class](https://editor.p5js.org/jht9629-nyu/sketches/oBBTcsqwh)<!-- 2024-09-05T17:40:48.994Z -->  
 [let draw  pattern](https://editor.p5js.org/jht9629-nyu/sketches/jms7R-njY)<!-- 2023-07-16T22:39:07.092Z -->  
 [let me variable pattern animation](https://editor.p5js.org/jht9629-nyu/sketches/76kBiMBMU)<!-- 2023-07-16T22:41:33.743Z -->  
 [let variables](https://editor.p5js.org/jht9629-nyu/sketches/cCVbcQ5KU)<!-- 2023-07-16T21:22:21.717Z -->  
@@ -444,6 +450,8 @@
 [W4: Re-write as a loop - I copy](https://editor.p5js.org/jht9629-nyu/sketches/NLVK9ZI7a)<!-- 2023-09-05T04:06:30.787Z -->  
 [W4: Re-write as a loop - III copy](https://editor.p5js.org/jht9629-nyu/sketches/9xwd7Q-Re)<!-- 2023-09-05T04:07:14.952Z -->  
 [Wall of pandas copy](https://editor.p5js.org/jht9629-nyu/sketches/PzDY-EpBz)<!-- 2024-07-29T16:07:59.937Z -->  
+[week 03 expressions millis](https://editor.p5js.org/jht9629-nyu/sketches/n4miyKkfv)<!-- 2024-09-07T13:35:29.064Z -->  
+[week 03 expressions secs()](https://editor.p5js.org/jht9629-nyu/sketches/i2VZolhwz)<!-- 2024-09-07T17:35:59.042Z -->  
 [Week 2 homework V1 copy copy copy](https://editor.p5js.org/jht9629-nyu/sketches/0aB9AAgQt)<!-- 2023-09-25T19:27:58.062Z -->  
 [week01 demo](https://editor.p5js.org/jht9629-nyu/sketches/zzhlY9VFr)<!-- 2023-09-11T21:08:50.971Z -->  
 [week2, animation copy](https://editor.p5js.org/jht9629-nyu/sketches/bEetf-BC6)<!-- 2023-09-25T20:40:14.378Z -->  

@@ -1,6 +1,14 @@
 # Sketches for jht9629-nyu
-453 sketches  
-[Hyper promotion](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)<!-- 2024-08-30T13:35:42.838Z -->  
+461 sketches  
+[week 03 expressions secs()](https://editor.p5js.org/jht9629-nyu/sketches/i2VZolhwz)<!-- 2024-09-07T17:35:59.042Z -->  
+[06\_rotation](https://editor.p5js.org/jht9629-nyu/sketches/POTnurvBB)<!-- 2024-09-07T17:18:53.887Z -->  
+[05\_multitouch](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)<!-- 2024-09-07T17:17:45.965Z -->  
+[week 03 expressions millis](https://editor.p5js.org/jht9629-nyu/sketches/n4miyKkfv)<!-- 2024-09-07T13:35:29.064Z -->  
+[jht week 01 ex 2 random](https://editor.p5js.org/jht9629-nyu/sketches/VWGjK5A9p)<!-- 2024-09-07T13:28:47.971Z -->  
+[createCapture VIDEO flipped](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)<!-- 2024-09-05T20:46:36.523Z -->  
+[jht week 01 ex 2](https://editor.p5js.org/jht9629-nyu/sketches/CXOBqb6oj)<!-- 2024-09-05T20:45:44.605Z -->  
+[jht week 01 in class](https://editor.p5js.org/jht9629-nyu/sketches/oBBTcsqwh)<!-- 2024-09-05T17:40:48.994Z -->  
+[chatgpt bouncing ball](https://editor.p5js.org/jht9629-nyu/sketches/8uQ3OCxZH)<!-- 2024-09-05T15:41:59.043Z -->  
 [lit demo storage v3](https://editor.p5js.org/jht9629-nyu/sketches/W_42_8Enr)<!-- 2024-08-28T05:06:04.711Z -->  
 [W4: Re-write as a loop - I copy](https://editor.p5js.org/jht9629-nyu/sketches/SBY8znaxT)<!-- 2024-08-27T17:35:20.538Z -->  
 [faceMesh mesh\_nits v8 bestill](https://editor.p5js.org/jht9629-nyu/sketches/_3QMiI-fM)<!-- 2024-08-27T13:53:06.603Z -->  
