@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-550 sketches  
+551 sketches  
 [03-jht-hatviz](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)<!-- 2023-04-09T01:41:50.719Z -->  
 [05\_multitouch](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)<!-- 2024-09-07T17:17:45.965Z -->  
 [06\_rotation](https://editor.p5js.org/jht9629-nyu/sketches/POTnurvBB)<!-- 2024-09-07T17:18:53.887Z -->  
@@ -311,6 +311,7 @@
 [my first sketch](https://editor.p5js.org/jht9629-nyu/sketches/GmkAvUauV)<!-- 2024-07-24T02:29:02.215Z -->  
 [my first sketch copy](https://editor.p5js.org/jht9629-nyu/sketches/1Aw2s7t6f)<!-- 2024-07-24T13:55:49.166Z -->  
 [Necessary-forgery-timed-drawing](https://editor.p5js.org/jht9629-nyu/sketches/MbS5C3j-F)<!-- 2023-04-23T21:46:34.983Z -->  
+[noise detecter copy](https://editor.p5js.org/jht9629-nyu/sketches/GXm_kvVjg5)<!-- 2024-11-14T18:49:39.460Z -->  
 [Onward & Fight\! RPG copy copy](https://editor.p5js.org/jht9629-nyu/sketches/ml8Xk_mG8)<!-- 2024-08-02T14:33:13.812Z -->  
 [p5.Envelope setADSR](https://editor.p5js.org/jht9629-nyu/sketches/RMLnbEz8y)<!-- 2023-08-04T10:55:00.199Z -->  
 [p5.js Code\! - 2.4 random() - Random Square Design copy](https://editor.p5js.org/jht9629-nyu/sketches/M0g7m_9Lp)<!-- 2024-09-12T17:52:33.376Z -->  

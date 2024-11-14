@@ -20286,6 +20286,63 @@
     "id": "MbS5C3j-F"
   },
   {
+    "_id": "GXm_kvVjg5",
+    "name": "noise detecter copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6736463d33ed794bfe62c602",
+          "6736463d33ed794bfe62c603",
+          "6736463d33ed794bfe62c604"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "6736463d33ed794bfe62c601",
+        "createdAt": "2024-11-14T18:49:39.460Z",
+        "updatedAt": "2024-11-14T18:49:39.460Z",
+        "id": "6736463d33ed794bfe62c601"
+      },
+      {
+        "name": "sketch.js",
+        "content": "let mic;\nlet level;\nlet threshold = 0.1;\nlet bgColorLow;\nlet bgColorHigh;\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);  \n  mic = new p5.AudioIn();\n  mic.start();  \n  bgColorLow = color(0, 0, 100); \n  bgColorHigh = color(255, 0, 0);\n}\n\nfunction draw() {\n  level = mic.getLevel();\n  if (level > threshold) {\n    background(bgColorHigh);\n  } else {\n    background(bgColorLow); \n  }  \n  let ellipseSize = map(level, 0, 1, 50, width / 2);\n  fill(255);\n  noStroke();\n  ellipse(width / 2, height / 2, ellipseSize, ellipseSize);\n}\n\nfunction windowResized() {\n  resizeCanvas(windowWidth, windowHeight);\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "6736463d33ed794bfe62c603",
+        "createdAt": "2024-11-14T18:49:39.460Z",
+        "updatedAt": "2024-11-14T18:49:39.460Z",
+        "id": "6736463d33ed794bfe62c603"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6736463d33ed794bfe62c602",
+        "createdAt": "2024-11-14T18:49:39.460Z",
+        "updatedAt": "2024-11-14T18:49:39.460Z",
+        "id": "6736463d33ed794bfe62c602"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6736463d33ed794bfe62c604",
+        "createdAt": "2024-11-14T18:49:39.460Z",
+        "updatedAt": "2024-11-14T18:49:39.460Z",
+        "id": "6736463d33ed794bfe62c604"
+      }
+    ],
+    "createdAt": "2024-11-14T18:49:33.705Z",
+    "updatedAt": "2024-11-14T18:49:39.460Z",
+    "id": "GXm_kvVjg5"
+  },
+  {
     "_id": "ml8Xk_mG8",
     "name": "Onward & Fight! RPG copy copy",
     "files": [

@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[550 sketches 2024-11-08T20:08:42.497Z](./downloads/gen/sketches_recent.md)
+[551 sketches 2024-11-14T18:49:39.460Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [05\_multitouch-r1pNFuC1P](./p5projects/05_multitouch-r1pNFuC1P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)]
@@ -402,6 +402,7 @@
 - [mo-storage-dashboard copy-nni2zh4VR](./p5projects/mo-storage-dashboard%20copy-nni2zh4VR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nni2zh4VR)]
 - [my first sketch copy-1Aw2s7t6f](./p5projects/my%20first%20sketch%20copy-1Aw2s7t6f) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1Aw2s7t6f)]
 - [my first sketch-GmkAvUauV](./p5projects/my%20first%20sketch-GmkAvUauV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/GmkAvUauV)]
+- [noise detecter copy-GXm\_kvVjg5](./p5projects/noise%20detecter%20copy-GXm_kvVjg5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Xm_kvVjg5)]
 - [p5.Envelope setADSR-RMLnbEz8y](./p5projects/p5.Envelope%20setADSR-RMLnbEz8y) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RMLnbEz8y)]
 - [p5.js Code\! - 2.4 random() - Random Square Design copy-M0g7m\_9Lp](./p5projects/p5.js%20Code!%20-%202.4%20random()%20-%20Random%20Square%20Design%20copy-M0g7m_9Lp) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/M0g7m_9Lp)]
 - [p5Live many-lqMJIQoIs](./p5projects/p5Live%20many-lqMJIQoIs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/lqMJIQoIs)]

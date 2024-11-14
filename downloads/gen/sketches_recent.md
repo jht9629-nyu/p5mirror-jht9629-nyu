@@ -1,5 +1,6 @@
 # Sketches for jht9629-nyu
-550 sketches  
+551 sketches  
+[noise detecter copy](https://editor.p5js.org/jht9629-nyu/sketches/GXm_kvVjg5)<!-- 2024-11-14T18:49:39.460Z -->  
 [week 8 picture edit effect v2](https://editor.p5js.org/jht9629-nyu/sketches/SqVCv3XP_)<!-- 2024-11-08T20:08:42.497Z -->  
 [5.17 Matter.js tutorial](https://editor.p5js.org/jht9629-nyu/sketches/LdXXFo6gn)<!-- 2024-11-07T16:03:27.866Z -->  
 [shape drop - trush remix ui](https://editor.p5js.org/jht9629-nyu/sketches/KVC36pYwz)<!-- 2024-10-31T20:38:26.001Z -->  
