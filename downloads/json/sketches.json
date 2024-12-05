@@ -847,6 +847,63 @@
     "id": "5ykrFbLkp"
   },
   {
+    "_id": "ejg95EK-5",
+    "name": "1202combine-Jessie",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6750c69d07cb4fd01c3dde1b",
+          "6750c69d07cb4fd01c3dde1c",
+          "6750c69d07cb4fd01c3dde1d"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "6750c69d07cb4fd01c3dde1a",
+        "createdAt": "2024-12-04T21:20:35.832Z",
+        "updatedAt": "2024-12-04T21:20:35.832Z",
+        "id": "6750c69d07cb4fd01c3dde1a"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jz3407/sketches/RqIfacKp-\n// 1202combine-Jessie\n\n//JESSIE ZHAI\n//SMILE, YOU'RE NOT ON CAMERA\n\nlet bodySegmentation;\nlet bodyPose;\nlet poses = [];\nlet video;\nlet connections;\nlet segmentation;\nlet w = 640;\nlet h = 480;\nlet options = {\n  maskType: \"person\",\n};\nlet webcams = [];\nlet myCam;\nlet thresholdExceeded = false;\nlet rainbowGradient = [];\nlet isHandsTogether = false;\nlet gradientOpacity = 0;\nlet gradientCenter = { x: 0, y: 0 };\n\n\nfunction preload() {\n  bodySegmentation = ml5.bodySegmentation(\"SelfieSegmentation\", options);\n    bodyPose = ml5.bodyPose();\n}\n\nfunction setup() {\n  pixelDensity(1);\n  createCanvas(w, h);\n  getVideoDevices();\n  \n  for (let i = 0; i < 360; i++) {\n    rainbowGradient[i] = color(`hsla(${i}, 100%, 50%, 0.3)`);\n  }\n  \n\n  //start detection in mousePressed() once the canvas is resized based on the current camera selected\n  console.log(\n    \"Press mouse on Canvas to resize Canvas based on connected webcam and start pose detection\"\n  );\n}\n\n// Press mouse to resize Canvas and start pose detection\nfunction mousePressed() {\n  if (webcams.length) {\n    resizeCanvas(myCam.width, myCam.height);\n    bodySegmentation.detectStart(myCam, gotResults);\n  bodyPose.detectStart(myCam, gotPoses);\n  connections = bodyPose.getSkeleton();\n  }\n}\n\n// This function was previously hiding in the draw() loop\n// callback function for body segmentation\nfunction gotResults(result) {\n  segmentation = result;\n  // console.log(\"INSIDEgotresults\")\n}\n\nfunction draw() {\n\n  // if any webcams are detected\n  if (webcams.length) {\n    // Specify camera, check Console\n    myCam = webcams[1];\n\n    image(myCam, 0, 0, width, height);\n\n    if (segmentation) {\n      blendMode(BLEND);\n      background(255, 255, 255);\n    \n\n      image(segmentation.mask, 0, 0, width, height);\n      filter(BLUR, 10);\n      \n      blendMode(ADD);\n      image(myCam, 0, 0, width, height);\n      filter(GRAY);\n      image(segmentation.mask, 0, 0, width, height);\n    }\n  }\n  \n  drawGradient();\n}\n\nfunction drawGradient(){\n  if (poses.length > 0) {\n    let leftWrist = poses[0].keypoints[9];\n    let rightWrist = poses[0].keypoints[10];\n    \n    if (leftWrist.confidence > 0.1 && rightWrist.confidence > 0.1) {\n      let distance = dist(leftWrist.x, leftWrist.y, rightWrist.x, rightWrist.y);\n      isHandsTogether = distance < 100;\n      \n      // Calculate center point between hands\n      gradientCenter.x = (leftWrist.x + rightWrist.x) / 2;\n      gradientCenter.y = (leftWrist.y + rightWrist.y) / 2;\n      \n      if (isHandsTogether && gradientOpacity < 1) {\n        gradientOpacity = min(gradientOpacity + 0.05, 1);\n      } else if (!isHandsTogether && gradientOpacity > 0) {\n        gradientOpacity = max(gradientOpacity - 0.05, 0);\n      }\n    }\n  }\n  \n  // Draw circular rainbow gradient\n  if (gradientOpacity > 0) {\n    let maxRadius = 300;\n    for (let radius = maxRadius; radius > 0; radius -= 2) {\n      let gradientIndex = (frameCount + radius) % 360;\n      let c = rainbowGradient[gradientIndex];\n      c.setAlpha(255 * gradientOpacity * (radius / maxRadius));\n      stroke(c);\n      noFill();\n      circle(gradientCenter.x, gradientCenter.y, radius * 2);\n    }\n  }\n}\n\n\nfunction gotPoses(results) {\n  poses = results;\n  // console.log(\"insidegotposes\");\n}\n\n/*------------------------------------*\\\n  Functions for Video Devices\n\\*------------------------------------*/\n\nfunction getVideoDevices() {\n  navigator.mediaDevices\n    .enumerateDevices()\n    .then((devices) => {\n      return devices.filter((device) => device.kind === \"videoinput\");\n    })\n    .then((filtered) => getVideo(filtered))\n    .catch((err) => {\n      if (err.message.substring(0, 19) === \"cam.getCapabilities\")\n        alert(\n          \"InputDeviceInfo.getCapabilities() is not supported in this browser. Try Chrome or MS Edge.\"\n        );\n      else console.warn(`${err.name}: ${err.message}`);\n    });\n}\n\nfunction getVideo(cams) {\n  for (let cam of cams) {\n    let index = cams.indexOf(cam);\n    let capabilities = cam.getCapabilities();\n    let constraints = {\n      audio: false,\n      video: {\n        deviceId: `${cam.deviceId}`,\n        width: `${capabilities.width.max}`,\n        height: `${capabilities.height.max}`,\n      },\n    };\n    webcams[index] = createCapture(constraints);\n    webcams[index].hide();\n\n    console.log(\n      `Connected camera: webcams[${index}]\\n${cam.label}\\nMax width:\\t${constraints.video.width}\\nMax height:\\t${constraints.video.height}\\n`\n    );\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "6750c69d07cb4fd01c3dde1c",
+        "createdAt": "2024-12-04T21:20:35.832Z",
+        "updatedAt": "2024-12-04T21:20:35.832Z",
+        "id": "6750c69d07cb4fd01c3dde1c"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <script src=\"https://unpkg.com/ml5@1/dist/ml5.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6750c69d07cb4fd01c3dde1b",
+        "createdAt": "2024-12-04T21:20:35.832Z",
+        "updatedAt": "2024-12-04T21:20:35.832Z",
+        "id": "6750c69d07cb4fd01c3dde1b"
+      },
+      {
+        "name": "style.css",
+        "content": "body {\n  margin: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 100vh;\n}\n\ncanvas {\n  border: 1px solid black;\n}",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6750c69d07cb4fd01c3dde1d",
+        "createdAt": "2024-12-04T21:20:35.832Z",
+        "updatedAt": "2024-12-04T21:20:35.832Z",
+        "id": "6750c69d07cb4fd01c3dde1d"
+      }
+    ],
+    "createdAt": "2024-12-04T21:16:13.473Z",
+    "updatedAt": "2024-12-04T21:20:35.832Z",
+    "id": "ejg95EK-5"
+  },
+  {
     "_id": "-imqZQyIkv",
     "name": "17.11_FFT ui - funky",
     "files": [
@@ -1340,6 +1397,168 @@
     "createdAt": "2023-09-18T13:57:43.553Z",
     "updatedAt": "2023-09-18T14:01:30.347Z",
     "id": "Rl63Kstm0"
+  },
+  {
+    "_id": "uiGpjxuK4",
+    "name": "2024-11-21-yoga5.js",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "673ee61d7bada149a8755b92",
+          "673ee61d7bada149a8755b93",
+          "673ee61d7bada149a8755b94",
+          "673ee61d7bada149a8755b95"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "673ee61d7bada149a8755b91",
+        "createdAt": "2024-11-21T07:51:46.631Z",
+        "updatedAt": "2024-11-21T07:51:46.631Z",
+        "id": "673ee61d7bada149a8755b91"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/uiGpjxuK4\n// 2024-11-21-yoga5.js\n\nlet bodyPose;\nlet poses = [];\nlet rightShin,\n  leftShin,\n  rightThigh,\n  leftThigh,\n  rightChest,\n  leftChest,\n  rightArm,\n  leftArm;\n\nlet inPose = false;\nlet corrections = [];\n\nfunction preload() {\n  bodyPose = ml5.bodyPose(\"BlazePose\", { flipped: true });\n}\n\nfunction gotPoses(results) {\n  poses = results;\n}\n\nfunction setup() {\n  createCanvas(640, 480);\n  video = createCapture(VIDEO, { flipped: true });\n  video.hide();\n\n  bodyPose.detectStart(video, gotPoses);\n  angleMode(DEGREES);\n}\n\nfunction draw() {\n  image(video, 0, 0);\n  createClasses();\n}\n\nfunction mouseClicked() {\n  print(poses[0]);\n}\n\nfunction createClasses() {\n  //creates class according to first body detected\n\n  if (poses.length > 0) {\n    const pose = poses[0];\n    rightShin = new RightShin(pose);\n    leftShin = new LeftShin(pose);\n    rightThigh = new RightThigh(pose);\n    leftThigh = new LeftThigh(pose);\n    rightChest = new RightChest(pose);\n    leftChest = new LeftChest(pose);\n    rightArm = new RightArm(pose);\n    leftArm = new LeftArm(pose);\n    // print(\"classes created\")\n\n    // Pose detection conditional\n    if (\n      rightThigh.confidence >= 0.9 &&\n      rightThigh.angle <= 30 &&\n      rightThigh.angle >= -20\n    ) {\n      inPose = true;\n      print(\"pose detected\");\n    } else {\n      inPose = false;\n    }\n    if (inPose) {\n      if (\n        rightShin.confidence > 0.9 &&\n        rightShin.angle >= 110 &&\n        rightShin.confidence > 0.9 &&\n        rightShin.angle <= 70\n      ) {\n        print(\"move knee above ankle\");\n        fill(\"red\");\n        circle(rightThigh.rightKnee.x, rightThigh.rightKnee.y, 30);\n      }\n      if (\n        (rightArm.confidence > 0.9 && rightArm.angle * -1 <= 165) ||\n        (rightArm.confidence > 0.9 && rightArm.angle >= 15)\n      ) {\n        fill(\"red\");\n        circle(rightArm.rightWrist.x, rightArm.rightWrist.y, 30);\n        print(\"straighten your right arm\");\n      }\n      if (\n        (leftArm.confidence > 0.9 && leftArm.angle >= 15) ||\n        (leftArm.confidence > 0.9 && leftArm.angle * -1 >= 15)\n      ) {\n        fill(\"red\");\n        circle(leftArm.leftWrist.x, leftArm.leftWrist.y, 30);\n        print(\"straighten your left arm\" + leftArm.angle);\n      }\n      if (\n        (leftThigh.confidence > 0.9 &&\n          leftThigh.angle >= leftShin.angle + 15) ||\n        (leftThigh.confidence > 0.9 && leftThigh.angle <= leftShin.angle - 15)\n      ) {\n        print(\"straighten left leg\");\n        fill(\"red\");\n        circle(leftThigh.leftKnee.x, leftThigh.leftKnee.y, 30);\n      }\n    }\n  }\n}\n\n// https://troubled-feverfew-aa9.notion.site/yoga5-js-13657a4143dd801d93f7e4645d2a97b2\n// by Dean Issacharoff <dai7591@nyu.edu>\n// https://editor.p5js.org/iss.dean/sketches/bh7KzYj6z\n// yoga5.js by dean\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "673ee61d7bada149a8755b94",
+        "createdAt": "2024-11-21T07:51:46.631Z",
+        "updatedAt": "2024-11-21T07:51:46.631Z",
+        "id": "673ee61d7bada149a8755b94"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://unpkg.com/ml5@1/dist/ml5.min.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n    <script src=\"classes.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "673ee61d7bada149a8755b93",
+        "createdAt": "2024-11-21T07:51:46.631Z",
+        "updatedAt": "2024-11-21T07:51:46.631Z",
+        "id": "673ee61d7bada149a8755b93"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "673ee61d7bada149a8755b95",
+        "createdAt": "2024-11-21T07:51:46.631Z",
+        "updatedAt": "2024-11-21T07:51:46.631Z",
+        "id": "673ee61d7bada149a8755b95"
+      },
+      {
+        "name": "classes.js",
+        "content": "class RightShin {\n  constructor(pose) {\n    if (pose.right_ankle && pose.right_knee) {\n      this.rightAnkle = createVector(pose.right_ankle.x, pose.right_ankle.y);\n      this.rightKnee = createVector(pose.right_knee.x, pose.right_knee.y);\n      this.rightShin = p5.Vector.sub(this.rightAnkle, this.rightKnee);\n      this.angle = this.rightShin.heading();\n      this.confidence = (pose.right_knee.confidence + pose.right_ankle.confidence) / 2;\n    } else {\n      this.angle = NaN;\n      this.confidence = 0;\n    }\n  }\n}\n\nclass LeftShin {\n  constructor(pose) {\n    if (pose.left_ankle && pose.left_knee) {\n      this.leftAnkle = createVector(pose.left_ankle.x, pose.left_ankle.y);\n      this.leftKnee = createVector(pose.left_knee.x, pose.left_knee.y);\n      this.leftShin = p5.Vector.sub(this.leftAnkle, this.leftKnee);\n      this.angle = this.leftShin.heading();\n      this.confidence = (pose.left_knee.confidence + pose.left_ankle.confidence) / 2;\n    } else {\n      this.angle = NaN;\n      this.confidence = 0;\n    }\n  }\n}\n\nclass RightThigh {\n  constructor(pose) {\n    if (pose.right_knee && pose.right_hip) {\n      this.rightKnee = createVector(pose.right_knee.x, pose.right_knee.y);\n      this.rightHip = createVector(pose.right_hip.x, pose.right_hip.y);\n      this.rightThigh = p5.Vector.sub(this.rightKnee, this.rightHip);\n      this.angle = this.rightThigh.heading();\n      this.confidence = (pose.right_knee.confidence + pose.right_hip.confidence) / 2;\n    } else {\n      this.angle = NaN;\n      this.confidence = 0;\n    }\n  }\n}\n\nclass LeftThigh {\n  constructor(pose) {\n    if (pose.left_knee && pose.left_hip) {\n      this.leftKnee = createVector(pose.left_knee.x, pose.left_knee.y);\n      this.leftHip = createVector(pose.left_hip.x, pose.left_hip.y);\n      this.leftThigh = p5.Vector.sub(this.leftKnee, this.leftHip);\n      this.angle = this.leftThigh.heading();\n      this.confidence = (pose.left_knee.confidence + pose.left_hip.confidence) / 2;\n    } else {\n      this.angle = NaN;\n      this.confidence = 0;\n    }\n  }\n}\n\nclass RightChest {\n  constructor(pose) {\n    if (pose.right_hip && pose.right_shoulder) {\n      this.rightHip = createVector(pose.right_hip.x, pose.right_hip.y);\n      this.rightShoulder = createVector(pose.right_shoulder.x, pose.right_shoulder.y);\n      this.rightChest = p5.Vector.sub(this.rightHip, this.rightShoulder);\n      this.angle = this.rightChest.heading();\n      this.confidence = (pose.right_shoulder.confidence + pose.right_hip.confidence) / 2;\n    } else {\n      this.angle = NaN;\n      this.confidence = 0;\n    }\n  }\n}\n\nclass LeftChest {\n  constructor(pose) {\n    if (pose.left_hip && pose.left_shoulder) {\n      this.leftHip = createVector(pose.left_hip.x, pose.left_hip.y);\n      this.leftShoulder = createVector(pose.left_shoulder.x, pose.left_shoulder.y);\n      this.leftChest = p5.Vector.sub(this.leftHip, this.leftShoulder);\n      this.angle = this.leftChest.heading();\n      this.confidence = (pose.left_shoulder.confidence + pose.left_hip.confidence) / 2;\n    } else {\n      this.angle = NaN;\n      this.confidence = 0;\n    }\n  }\n}\n\nclass RightArm {\n  constructor(pose) {\n    if (pose.right_shoulder && pose.right_wrist) {\n      this.rightShoulder = createVector(pose.right_shoulder.x, pose.right_shoulder.y);\n      this.rightWrist = createVector(pose.right_wrist.x, pose.right_wrist.y);\n      this.rightArm = p5.Vector.sub(this.rightShoulder, this.rightWrist);\n      this.angle = this.rightArm.heading();\n      this.confidence = (pose.right_shoulder.confidence + pose.right_wrist.confidence) / 2;\n    } else {\n      this.angle = NaN;\n      this.confidence = 0;\n    }\n  }\n}\n\nclass LeftArm {\n  constructor(pose) {\n    if (pose.left_shoulder && pose.left_wrist) {\n      this.leftShoulder = createVector(pose.left_shoulder.x, pose.left_shoulder.y);\n      this.leftWrist = createVector(pose.left_wrist.x, pose.left_wrist.y);\n      this.leftArm = p5.Vector.sub(this.leftShoulder, this.leftWrist);\n      this.angle = this.leftArm.heading();\n      this.confidence = (pose.left_shoulder.confidence + pose.left_wrist.confidence) / 2;\n    } else {\n      this.angle = NaN;\n      this.confidence = 0;\n    }\n  }\n}",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "673ee61d7bada149a8755b92",
+        "createdAt": "2024-11-21T07:51:46.631Z",
+        "updatedAt": "2024-11-21T07:51:46.631Z",
+        "id": "673ee61d7bada149a8755b92"
+      }
+    ],
+    "createdAt": "2024-11-21T07:49:49.713Z",
+    "updatedAt": "2024-11-21T07:51:46.631Z",
+    "id": "uiGpjxuK4"
+  },
+  {
+    "_id": "R-BDJJkkR",
+    "name": "2024-11-30-Matter Triangle",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "674b2fe2df884676bfc48f76",
+          "674b2fe2df884676bfc48f77",
+          "674b2fe2df884676bfc48f78",
+          "674b2fe2df884676bfc48f79",
+          "674b2fe2df884676bfc48f7a",
+          "674b303ca8560a31bf939a77"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "674b2fe2df884676bfc48f75",
+        "createdAt": "2024-11-30T16:00:26.053Z",
+        "updatedAt": "2024-11-30T16:00:26.053Z",
+        "id": "674b2fe2df884676bfc48f75"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/R-BDJJkkR\n// 2024-11-30-Matter Triangle\n\n    \nconst { Engine, World, Bodies, Composite, Vertices } = Matter;\n\nlet engine;\nlet world;\nlet boxes = [];\nlet ground;\n\nfunction setup() {\n    createCanvas(400, 400);\n    // create an engine\n    engine = Engine.create();\n    world = engine.world;\n    // Engine.run is deprecated\n    ground = new Boundary(200, height, width, 100);\n    Composite.add(world, ground);\n\n}\n    \nfunction mousePressed() {\n    // boxes.push(new Box(mouseX, mouseY, random(10, 40), random(10,40)));\n    boxes.push(new Box(mouseX, mouseY, 50, 50));\n}\n\nfunction draw() {\n    background(51);\n    Engine.update(engine);\n    for (let i = 0; i < boxes.length; i++) {\n        boxes[i].show();\n    }\n    ground.show();\n}\n\n// https://editor.p5js.org/codingtrain/sketches/dian0t-5j\n\n// Coding Train / Daniel Shiffman\n// 15.7 Matter.js tutorial Basic Implemenation\n\n// Youtube: https://www.youtube.com/watch?v=urR596FsU68\n\n// Note that the syntax in the sketch has been updated. Refer to NOC Chapter 6\n\n// let Engine = Matter.Engine,\n//     World = Matter.World,\n//     Bodies = Matter.Bodies;\n\n// https://editor.p5js.org/jht9629-nyu/sketches/LdXXFo6gn\n// 5.17 Matter.js tutorial\n\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "674b2fe2df884676bfc48f79",
+        "createdAt": "2024-11-30T16:00:26.053Z",
+        "updatedAt": "2024-11-30T16:00:26.053Z",
+        "id": "674b2fe2df884676bfc48f79"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n    <script src=\"box.js\"></script>\n    <script src=\"boundary.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "674b2fe2df884676bfc48f78",
+        "createdAt": "2024-11-30T16:00:26.053Z",
+        "updatedAt": "2024-11-30T16:00:26.053Z",
+        "id": "674b2fe2df884676bfc48f78"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "674b2fe2df884676bfc48f7a",
+        "createdAt": "2024-11-30T16:00:26.053Z",
+        "updatedAt": "2024-11-30T16:00:26.053Z",
+        "id": "674b2fe2df884676bfc48f7a"
+      },
+      {
+        "name": "box.js",
+        "content": "class Box {\n  constructor(x, y, w, h) {\n    this.x = x;\n    this.y = y;\n    this.w = w;\n    this.h = h;\n    let options = {\n      friction: 0.3,\n      restitution: 0.6,\n    };\n    // this.body = Bodies.rectangle(this.x, this.y, this.w, this.h, options);\n\n    // Define the triangle vertices\n    this.w = this.w * 0.5;\n    let triangleVertices = Vertices.create(\n      [\n        { x: 0, y: 0 }, // Vertex 1\n        { x: this.w, y: this.h }, // Vertex 2\n        { x: -this.w, y: this.h }, // Vertex 3\n      ],\n      null\n    );\n\n    // Create the triangle body\n    this.body = Bodies.fromVertices(this.x, this.y, triangleVertices);\n\n    Composite.add(world, this.body);\n  }\n\n  show() {\n    let pos = this.body.position;\n    let angle = this.body.angle;\n    push();\n    translate(pos.x, pos.y);\n    rotate(angle);\n    // rectMode(CENTER);\n    strokeWeight(1);\n    stroke(255);\n    fill(127);\n    let x0 = 0;\n    let y0 = 0;\n    let x1 = this.w;\n    let y1 = this.h;\n    let x2 = -this.w;\n    let y2 = this.h;\n    triangle(x0, y0, x1, y1, x2, y2);\n    pop();\n  }\n\n  showRect() {\n    let pos = this.body.position;\n    let angle = this.body.angle;\n    push();\n    translate(pos.x, pos.y);\n    rotate(angle);\n    rectMode(CENTER);\n    strokeWeight(1);\n    stroke(255);\n    fill(127);\n    rect(0, 0, this.w, this.h);\n    pop();\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "674b2fe2df884676bfc48f77",
+        "createdAt": "2024-11-30T16:00:26.053Z",
+        "updatedAt": "2024-11-30T16:00:26.053Z",
+        "id": "674b2fe2df884676bfc48f77"
+      },
+      {
+        "name": "boundary.js",
+        "content": "class Boundary {\n    constructor(x, y, w, h) {\n        this.x = x;\n        this.y = y;\n        this.w = w;\n        this.h = h;\n        let options = {\n            friction: 0.3,\n            restitution: 0.6,\n            isStatic: true\n        }\n        this.body = Bodies.rectangle(this.x, this.y, this.w, this.h, options);\n        Composite.add(world, this.body);\n    }\n\n    show() {\n        let pos = this.body.position;\n        let angle = this.body.angle;\n        push();\n        translate(pos.x, pos.y);\n        rotate(angle);\n        rectMode(CENTER);\n        strokeWeight(1);\n        noStroke();\n        fill(0);\n        rect(0, 0, this.w, this.h);\n        pop();\n    }\n}",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "674b2fe2df884676bfc48f76",
+        "createdAt": "2024-11-30T16:00:26.053Z",
+        "updatedAt": "2024-11-30T16:00:26.053Z",
+        "id": "674b2fe2df884676bfc48f76"
+      },
+      {
+        "name": "triangle.js",
+        "content": "// Import Matter.js\nconst { Engine, Render, Runner, World, Bodies, Vertices } = Matter;\n\n// Create an engine\nconst engine = Engine.create();\nconst world = engine.world;\n\n// Create a renderer\nconst render = Render.create({\n  element: document.body,\n  engine: engine,\n  options: {\n    width: 800,\n    height: 600,\n    wireframes: false, // Use false for solid shapes\n  },\n});\n\n// Define the triangle vertices\nconst triangleVertices = Vertices.create([\n  { x: 0, y: 0 },   // Vertex 1\n  { x: 50, y: 100 }, // Vertex 2\n  { x: -50, y: 100 } // Vertex 3\n], null);\n\n// Create the triangle body\nconst triangle = Bodies.fromVertices(400, 300, triangleVertices, {\n  render: {\n    fillStyle: 'blue', // Triangle fill color\n    strokeStyle: 'black', // Triangle border color\n    lineWidth: 2, // Border thickness\n  }\n});\n\n// Add the triangle to the world\nWorld.add(world, triangle);\n\n// Run the engine and renderer\nEngine.run(engine);\nRender.run(render);\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "674b303ca8560a31bf939a77",
+        "createdAt": "2024-11-30T16:00:26.053Z",
+        "updatedAt": "2024-11-30T16:00:26.053Z",
+        "id": "674b303ca8560a31bf939a77"
+      }
+    ],
+    "createdAt": "2024-11-30T15:31:46.299Z",
+    "updatedAt": "2024-11-30T16:00:26.053Z",
+    "id": "R-BDJJkkR"
   },
   {
     "_id": "1OY9mWiG4",
@@ -16395,21 +16614,21 @@
           "642f047d3bb36654d9f77fd3"
         ],
         "fileType": "folder",
-        "_id": "642f047d3bb36654d9f77fd0",
-        "createdAt": "2023-04-06T17:49:28.916Z",
-        "updatedAt": "2023-04-06T17:49:28.916Z",
         "isSelectedFile": false,
+        "_id": "642f047d3bb36654d9f77fd0",
+        "createdAt": "2024-11-16T15:14:29.032Z",
+        "updatedAt": "2024-11-16T15:14:29.032Z",
         "id": "642f047d3bb36654d9f77fd0"
       },
       {
         "name": "sketch.js",
-        "content": "//https://editor.p5js.org/jht9629-nyu/sketches/CYMdD77ySc\n// jht truchet tiles pause copy\n\n// https://editor.p5js.org/jht9629-gmail/sketches/LnPplI2CR\n// truchet tiles pause\n\nlet len = 40;\nlet a_angle = 0;\nlet a_arr = [];\n// {count: seconds,...}\nlet a_pause_dict = {0: 2.0, 90: 2.0, 180: 2.0, 270: 2.0}\nlet a_pause_start = -1;\nlet a_pause_lapse;\n\nfunction setup() {\n  createCanvas(400, 400);\n  angleMode(DEGREES);\n  noFill();\n  strokeWeight(4);\n  // Fill array a_arr with random true/false values\n  for (let x = 0; x < width; x += len) {\n    for (let y = 0; y < height; y += len) {\n      let odd = random() > 0.5\n      a_arr.push(odd)\n    }\n  }\n}\n\nfunction draw() {\n  let half = len / 2;\n  background(220);\n  let index = 0\n  for (let x = 0; x < width; x += len) {\n    for (let y = 0; y < height; y += len) {\n      let odd = a_arr[index]\n      if (odd) {\n        drawLeft(x, y, half);\n      } else {\n        drawRight(x, y, half);\n      }\n      index++;\n    }\n  }\n  if (check_cycle()) {\n    a_angle = (a_angle + 1) % 360;\n  }\n}\n\n// return true to advance cycle\n// use a_angle to find seconds to pause in a_pause_dict\nfunction check_cycle() {\n  if (a_pause_start > 0) {\n    let now = millis(); \n    if (now - a_pause_start > a_pause_lapse) {\n      a_pause_start = 0;\n      return true;\n    }\n    else {\n      return false\n    }\n  }\n  let lapse = a_pause_dict[a_angle];\n  if (lapse) {\n    a_pause_start = millis();\n    a_pause_lapse = lapse * 1000;\n    return false\n  }\n  else {  \n    return true; \n  }\n}\n\nfunction drawLeft(x, y, half) {\n  push();\n  translate(x + half, y + half);\n  rotate(a_angle);\n  arc(-half + 0, -half + 0, len, len, 0, 90);\n  arc(-half + len, -half + len, len, len, 180, 270);\n  pop();\n}\n\nfunction drawRight(x, y, half) {\n  push();\n  noFill();\n  translate(x + half, y + half);\n  rotate(a_angle);\n  arc(-half + len, -half + 0, len, len, 90, 180);\n  arc(-half + 0, -half + len, len, len, 270, 360);\n  pop();\n}\n\n// https://editor.p5js.org/jht9629-gmail/sketches/EfQDCJ5aR\n// truchet tiles array\n\n// https://editor.p5js.org/jht9629-nyu/sketches/5TSs5XB6o\n// truchet tiles rotate\n\n// https://editor.p5js.org/jht9629-nyu/sketches/1CpIVSqp_d\n// truchet tiles re-factored\n\n// https://editor.p5js.org/jht9629-nyu/sketches/lBrb1cBQ7\n// truchet tiles copy\n\n// https://editor.p5js.org/ambikajo/sketches/cKu3Gn0Po\n// truchet tiles by ambikajo\n",
+        "content": "//https://editor.p5js.org/jht9629-nyu/sketches/CYMdD77ySc\n// jht truchet tiles pause copy\n\n// https://editor.p5js.org/jht9629-gmail/sketches/LnPplI2CR\n// truchet tiles pause\n\nlet len = 40;\nlet a_angle = 0;\nlet a_arr = [];\n// {count: seconds,...}\nlet a_pause_dict = {0: 2.0, 90: 2.0, 180: 2.0, 270: 2.0}\nlet a_pause_start = -1;\nlet a_pause_lapse;\n\nfunction setup() {\n  createCanvas(400, 400);\n  angleMode(DEGREES);\n  noFill();\n  strokeWeight(4);\n  // Fill array a_arr with random true/false values\n  for (let x = 0; x < width; x += len) {\n    for (let y = 0; y < height; y += len) {\n      let odd = random() > 0.5\n      a_arr.push(odd)\n    }\n  }\n}\n\nfunction draw() {\n  let half = len / 2;\n  background(220);\n  let index = 0\n  for (let x = 0; x < width; x += len) {\n    for (let y = 0; y < height; y += len) {\n      let odd = a_arr[index]\n      if (odd) {\n        drawLeft(x, y, half);\n      } else {\n        drawRight(x, y, half);\n      }\n      index++;\n    }\n  }\n  if (check_cycle()) {\n    a_angle = (a_angle + 1) % 360;\n  }\n}\n\n// return true to advance cycle\n// use a_angle to find seconds to pause in a_pause_dict\nfunction check_cycle() {\n  if (a_pause_start > 0) {\n    let now = millis(); \n    if (now - a_pause_start > a_pause_lapse) {\n      a_pause_start = 0;\n      return true;\n    }\n    else {\n      return false\n    }\n  }\n  let lapse = a_pause_dict[a_angle];\n  if (lapse) {\n    a_pause_start = millis();\n    a_pause_lapse = lapse * 1000;\n    return false\n  }\n  else {  \n    return true; \n  }\n}\n\nfunction drawLeft(x, y, half) {\n  push();\n  translate(x + half, y + half);\n  rotate(a_angle);\n  arc(-half + 0, -half + 0, len, len, 0, 90);\n  arc(-half + len, -half + len, len, len, 180, 270);\n  pop();\n}\n\nfunction drawRight(x, y, half) {\n  push();\n  noFill();\n  translate(x + half, y + half);\n  rotate(a_angle);\n  arc(-half + len, -half + 0, len, len, 90, 180);\n  arc(-half + 0, -half + len, len, len, 270, 360);\n  pop();\n}\n\n// https://editor.p5js.org/jht9629-gmail/sketches/EfQDCJ5aR\n// truchet tiles array\n\n// https://editor.p5js.org/jht9629-nyu/sketches/5TSs5XB6o\n// truchet tiles rotate\n\n// https://editor.p5js.org/jht9629-nyu/sketches/1CpIVSqp_d\n// truchet tiles re-factored\n\n// https://editor.p5js.org/jht9629-nyu/sketches/lBrb1cBQ7\n// truchet tiles copy\n\n// https://editor.p5js.org/ambikajo/sketches/cKu3Gn0Po\n// truchet tiles by ambikajo\n\n// Compare and contrast with\n// https://openprocessing.org/sketch/1354815/\n// Truchet in p5js by Vamoss\n\n// https://editor.p5js.org/jht1493/sketches/jK_d9a5uK\n// Truchet Therapeutic - first rev\n\n// https://editor.p5js.org/jht1493/sketches/SQrWvF9zQ\n// Truchet func 10\n",
         "children": [],
         "fileType": "file",
-        "_id": "642f047d3bb36654d9f77fd2",
         "isSelectedFile": true,
-        "createdAt": "2023-04-06T17:49:28.916Z",
-        "updatedAt": "2023-04-06T17:49:28.916Z",
+        "_id": "642f047d3bb36654d9f77fd2",
+        "createdAt": "2024-11-16T15:14:29.032Z",
+        "updatedAt": "2024-11-16T15:14:29.032Z",
         "id": "642f047d3bb36654d9f77fd2"
       },
       {
@@ -16417,10 +16636,10 @@
         "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
         "children": [],
         "fileType": "file",
-        "_id": "642f047d3bb36654d9f77fd1",
-        "createdAt": "2023-04-06T17:49:28.916Z",
-        "updatedAt": "2023-04-06T17:49:28.916Z",
         "isSelectedFile": false,
+        "_id": "642f047d3bb36654d9f77fd1",
+        "createdAt": "2024-11-16T15:14:29.032Z",
+        "updatedAt": "2024-11-16T15:14:29.032Z",
         "id": "642f047d3bb36654d9f77fd1"
       },
       {
@@ -16428,15 +16647,15 @@
         "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
         "children": [],
         "fileType": "file",
-        "_id": "642f047d3bb36654d9f77fd3",
-        "createdAt": "2023-04-06T17:49:28.916Z",
-        "updatedAt": "2023-04-06T17:49:28.916Z",
         "isSelectedFile": false,
+        "_id": "642f047d3bb36654d9f77fd3",
+        "createdAt": "2024-11-16T15:14:29.032Z",
+        "updatedAt": "2024-11-16T15:14:29.032Z",
         "id": "642f047d3bb36654d9f77fd3"
       }
     ],
     "createdAt": "2023-04-06T17:42:21.542Z",
-    "updatedAt": "2023-04-06T17:49:28.916Z",
+    "updatedAt": "2024-11-16T15:14:29.032Z",
     "id": "CYMdD77ySc"
   },
   {
@@ -19447,6 +19666,63 @@
     ],
     "createdAt": "2024-05-30T16:26:30.318Z",
     "id": "a-eGj5GxX"
+  },
+  {
+    "_id": "5k5yNIimz",
+    "name": "mo-gallery-rroom renewal-rroom copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6743eb77ff20b3ff837fccc5",
+          "6743eb77ff20b3ff837fccc6",
+          "6743eb77ff20b3ff837fccc7"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "6743eb77ff20b3ff837fccc4",
+        "createdAt": "2024-11-25T03:14:04.134Z",
+        "updatedAt": "2024-11-25T03:14:04.134Z",
+        "id": "6743eb77ff20b3ff837fccc4"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/p5name/sketches/td6gIUqHZ\n// mo-gallery-rroom renewal-rroom\n// Display images from Firebase storage as a billboard using createImg\n\nlet a_version = \"v9 \";\nlet galleryKey = \"mo-1/gallery-@r-rroom\";\nlet scrollYmax = (2000 - 300) * 2;\nlet scrollSpeed = 2;\n// window.scrollY > scrollYmax\n// let galleryKey = 'mo-gallery-ims-web';\nlet nitems = 0;\nlet updateCount = 0;\nlet doScroll = false;\nlet rdata; // Firebase object results from server. key is id\nlet rarr; // Array of items from server\n// let rwidth = 1920; // dimensions for image element\n// let rheight = 1080;\nlet rwidth = 1080; // dimensions for image element\nlet rheight = 1920;\nlet scrollLimit = 0;\nlet doSplat = 0;\nlet debug = 0;\n\nlet shuffleBtn;\nlet fullScreenBtn;\nlet toggleScrollBtn;\nlet splatBtn;\nlet imgs = [];\nlet totalHeight = 0;\nlet scrollStartTime;\nlet lastY;\nlet stallMaxTime = 1.0;\n\nfunction setup() {\n  noCanvas();\n  // console.log('app', fireb_.app);\n  if (debug) {\n    rwidth = rwidth / 4;\n    rheight = rheight / 4;\n    scrollLimit = 2;\n    doScroll = 1;\n  }\n  check_url_param();\n\n  // Setup listner for changes to firebase db\n  let galleryRef = fireb_.ref(fireb_.database, galleryKey);\n  fireb_.onValue(galleryRef, (snapshot) => {\n    const data = snapshot.val();\n    console.log(\"galleryRef data\", data);\n    received_gallery(data);\n  });\n\n  shuffleBtn = createButton(\"Shuffle\").mousePressed(() => {\n    //console.log('Shuffle');\n    received_gallery(rdata, { doShuffle: 1 });\n  });\n  shuffleBtn.style(\"font-size:42px\");\n\n  fullScreenBtn = createButton(\"Full Screen\").mousePressed(() => {\n    ui_toggleFullScreen();\n    ui_remove_all();\n  });\n  fullScreenBtn.style(\"font-size:42px\");\n\n  toggleScrollBtn = createButton(\"Scroll\").mousePressed(() => {\n    doScroll = !doScroll;\n    console.log(\"doScroll\", doScroll);\n    if (doScroll) {\n      if (displayWidth <= 1920) {\n        ui_toggleFullScreen();\n      }\n      ui_remove_all();\n    }\n    // window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });\n  });\n  toggleScrollBtn.style(\"font-size:42px\");\n\n  splatBtn = createButton(\"Splat\").mousePressed(() => {\n    console.log(\"splatBtn\", doSplat);\n    doSplat = !doSplat;\n    received_gallery(rdata);\n  });\n  splatBtn.style(\"font-size:42px\");\n\n  createElement(\"br\");\n\n  ui_init_update();\n}\n\nfunction draw() {\n  // calcTotalHeight();\n  // console.log('draw');\n  if (doScroll && frameCount % scrollSpeed == 0) {\n    // window.scrollBy({ top: window.scrollY + 1, behavior: 'smooth' });\n    window.scrollBy(0, 1); // 1\n    // let nlimit = scrollLimit || rarr.length;\n    // if (window.scrollY >= scrollYmax) {\n    if (scrollingStalled()) {\n      window.scrollTo(0, 0);\n      lastY = 0;\n      scrollStartTime = 0;\n    }\n  }\n}\n\n// window.scrollTo(0, 4900);\n\nfunction scrollingStalled() {\n  let now = millis() / 1000.0;\n  if (!scrollStartTime) scrollStartTime = now;\n  if (!lastY || lastY != window.scrollY) {\n    lastY = window.scrollY;\n    return false;\n  }\n  // window.scrollY not changed\n  //\n  let lapse = now - scrollStartTime;\n  if (lapse > stallMaxTime) {\n    return true;\n  }\n  return false;\n}\n\nfunction received_gallery(data, opts) {\n  window.scrollTo(0, 0);\n  let div = ui_div_empty(\"id_gallery\");\n  if (!data) {\n    return;\n  }\n  // div.style('width:1080px; display: flex; align-items: center;')\n  // div.style(\"width:1080px; align-items: center;\");\n  rdata = data;\n  updateCount += 1;\n\n  // for (key in data) {\n  //   console.log('key', key);\n  //   let val = data[key];\n\n  // Display in reverse order to see new additions first\n  rarr = Object.values(data).reverse();\n  if (opts && opts.doShuffle) {\n    rarr = shuffle(rarr);\n  }\n  // let r = rarr;\n  // rarr = [r[0],r[1],r[0],r[2],r[0],r[3],r[0],r[4],r[0],r[5]];\n\n  nitems = rarr.length;\n  for (let val of rarr) {\n    // console.log('received_gallery val', val);\n    // let img = createImg( 'https://p5js.org/assets/img/asterisk-01.png', 'the p5 magenta asterisk' );\n    // select full resolution media if available\n    //\n    // let path = val.mediaPathFullRez ?? val.mediaPath;\n    let path = val.mediaPathFullRez || val.mediaPath;\n    let img = createImg(path, val.authorEmail, \"\", imageLoaded);\n    div.child(img);\n\n    let iwidth = rwidth;\n    if (doSplat) {\n      iwidth = random(100, 400);\n    }\n    img.style('width: ' + iwidth + 'px;');\n    img.addClass('center-image')\n    imgs.push(img);\n    ui_init_update();\n  }\n}\n\nfunction imageLoaded(arg) {\n  // !!@ Displaying arg causes error\n  // console.log('imageLoaded', arg);\n  console.log(\"imageLoaded\");\n}\n\nfunction calcTotalHeight() {\n  totalHeight = 0;\n  for (let img of imgs) {\n    totalHeight += img.height;\n  }\n  // console.log('totalHeight', totalHeight)\n  if (totalHeight > 0) {\n    scrollYmax = totalHeight;\n  }\n}\n\nfunction ui_remove_all() {\n  shuffleBtn.remove();\n  fullScreenBtn.remove();\n  toggleScrollBtn.remove();\n  splatBtn.remove();\n}\n\nfunction ui_init_update() {\n  ui_span(\"date\", a_version + formatDate());\n  ui_span(\"updateCount\", \" updateCount:\" + updateCount);\n  ui_span(\"nitems\", \" nitems:\" + nitems);\n}\n\nfunction formatDate() {\n  // return '';\n  return new Date().toISOString();\n}\n\nfunction ui_div_empty(id) {\n  let div = select(\"#\" + id);\n  // console.log('ui_device_selection div', div);\n  if (!div) {\n    div = createDiv().id(id);\n  } else {\n    let children = div.child();\n    for (let index = children.length - 1; index >= 0; index--) {\n      let elm = children[index];\n      elm.remove();\n    }\n  }\n  return div;\n}\n\nfunction ui_span(id, html) {\n  let span = select(\"#\" + id);\n  if (document.fullscreenElement) {\n    if (span) {\n      span.remove();\n    }\n    return;\n  }\n  if (!span) {\n    span = createSpan().id(id);\n  }\n  span.html(html);\n}\n\nfunction ui_toggleFullScreen() {\n  if (!document.documentElement.requestFullscreen) {\n    console.log(\"NO document.documentElement.requestFullscreen\");\n    return;\n  }\n  if (!document.fullscreenElement) {\n    document.documentElement.requestFullscreen();\n  } else {\n    if (document.exitFullscreen) {\n      document.exitFullscreen();\n    }\n  }\n}\n\n// let galleryKey = 'mo-gallery-web';\n// let galleryKey = 'mo-gallery-ims-web';\n\nfunction check_url_param() {\n  let query = window.location.search;\n  console.log(\"query\", query);\n  if (query.length < 1) return;\n  let params = params_query(query);\n  let ngallery = params[\"gallery\"];\n  if (ngallery) {\n    // mo-gallery-web\n    // rasberry pie does not like back quote\n    // galleryKey = `mo-gallery-${ngallery}-web`;\n    // galleryKey = ngallery;\n    galleryKey = \"mo-gallery-\" + ngallery;\n  }\n  console.log(\"galleryKey\", galleryKey);\n}\n\n// https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams\nfunction params_query(query) {\n  // eg. query='abc=foo&def=%5Basf%5D&xyz=5'\n  // params={abc: \"foo\", def: \"[asf]\", xyz: \"5\"}\n  const urlParams = new URLSearchParams(query);\n  const params = Object.fromEntries(urlParams);\n  return params;\n}\n\n// https://mobilelabclass-itp.github.io/p5moLibrary/p5js_demo/createImg-board/\n// https://mobilelabclass-itp.github.io/p5moLibrary/p5js_demo/createImg-board/?gallery=ims-web\n// https://mobilelabclass-itp.github.io/p5moLibrary/p5js_demo/createImg-board/?gallery=web\n\n// https://editor.p5js.org/jht1493/sketches/2OYRyVuhx\n// firebase mo-gallery-1\n\n// https://molab-itp.github.io/p5moLibrary/src/demo/mo-gallery-1/?v=119\n\n// https://editor.p5js.org/p5name/sketches/8jzqiCbbk\n// https://editor.p5js.org/jht9629-nyu/sketches/VtqUmOlGB\n// firebase mo-gallery-ppt\n\n/* Full-page container to center the image */\n/* body, html {\n  height: 100%;\n  margin: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n */\n/* Optional styling for the image */\n/* img {\n  max-width: 100%;\n  height: auto;\n}\n */\n\n    // avoid backquote for rasberry pi browser\n    // img.style(`width: ${rwidth}px;`);\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "6743eb77ff20b3ff837fccc6",
+        "createdAt": "2024-11-25T03:14:04.134Z",
+        "updatedAt": "2024-11-25T03:14:04.134Z",
+        "id": "6743eb77ff20b3ff837fccc6"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js\"></script>\n<!--     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js\"></script> -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />\n    <meta charset=\"utf-8\" />\n  </head>\n  <body>\n    <!-- v2023-02-08 18:01:45 -->\n    <main></main>\n\n    <!-- Documentation reference -->\n    <!-- https://firebase.google.com/docs/web/alt-setup?authuser=0&hl=en -->\n\n    <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->\n    <script type=\"module\">\n      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js';\n\n      // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics\n      // import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js'\n\n      // Add Firebase products that you want to use\n      import { getAuth, signInAnonymously } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js';\n      // import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js'\n\n      import {\n        getDatabase,\n        ref,\n        child,\n        get,\n        onValue,\n      } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js';\n\n      // Your web app's Firebase configuration\n      // For Firebase JS SDK v7.20.0 and later, measurementId is optional\n      const firebaseConfig = {\n        apiKey: 'AIzaSyDLxi_fvCG2kzD2eJ4MxEZbOJ_GFSpIVe0',\n        authDomain: 'molab-485f5.firebaseapp.com',\n        databaseURL: 'https://molab-485f5-default-rtdb.firebaseio.com',\n        projectId: 'molab-485f5',\n        storageBucket: 'molab-485f5.appspot.com',\n        messagingSenderId: '219508380677',\n        appId: '1:219508380677:web:b5d846a150e7d60368b86c',\n        measurementId: 'G-40F0BN8L7L',\n      };\n\n      // Initialize Firebase\n      const fireb_ = {};\n      fireb_.app = initializeApp(firebaseConfig);\n\n      const auth = getAuth();\n      const database = getDatabase();\n      // console.log('database', database);\n      const dbRef = ref(getDatabase());\n\n      signInAnonymously(auth)\n        .then(() => {\n          console.log('signInAnonymously OK 4');\n          // check_gallery();\n        })\n        .catch((error) => {\n          const errorCode = error.code;\n          const errorMessage = error.message;\n          console.log('errorCode', errorCode);\n          console.log('errorMessage', errorMessage);\n        });\n\n      function check_gallery() {\n        get(child(dbRef, `mo-gallery-web`))\n          .then((snapshot) => {\n            if (snapshot.exists()) {\n              console.log('check_gallery snapshot', snapshot.val());\n            } else {\n              console.log('No data available');\n            }\n          })\n          .catch((error) => {\n            console.error('error', error);\n          });\n      }\n\n      // https://firebase.google.com/docs/database/web/read-and-write?hl=en&authuser=0\n\n      // const galleryRef = ref( getDatabase(), 'mo-gallery-1');\n      // fireb_.galleryRef = galleryRef;\n      // onValue(galleryRef, (snapshot) => {\n      //   const data = snapshot.val();\n      //   console.log('galleryRef data', data);\n      // });\n\n      window.fireb_ = fireb_;\n      fireb_.auth = auth;\n      fireb_.database = database;\n      fireb_.dbRef = dbRef;\n      fireb_.ref = ref;\n      fireb_.onValue = onValue;\n\n      // Callbacks are removed by calling the off() method on your Firebase database reference.\n    </script>\n\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6743eb77ff20b3ff837fccc5",
+        "createdAt": "2024-11-25T03:14:04.134Z",
+        "updatedAt": "2024-11-25T03:14:04.134Z",
+        "id": "6743eb77ff20b3ff837fccc5"
+      },
+      {
+        "name": "style.css",
+        "content": "html,\nbody {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n\n/* Full-page container to center the image */\n/* body, html {\n  height: 100%;\n  margin: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n */\n/* Optional styling for the image */\n/* img {\n  max-width: 100%;\n  height: auto;\n}\n */\n\n.center-image {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6743eb77ff20b3ff837fccc7",
+        "createdAt": "2024-11-25T03:14:04.134Z",
+        "updatedAt": "2024-11-25T03:14:04.134Z",
+        "id": "6743eb77ff20b3ff837fccc7"
+      }
+    ],
+    "createdAt": "2024-11-25T03:13:59.876Z",
+    "updatedAt": "2024-11-25T03:14:04.134Z",
+    "id": "5k5yNIimz"
   },
   {
     "_id": "7Wjlo3pPU",
@@ -29499,6 +29775,60 @@
     "id": "7X1wo51f1"
   },
   {
+    "_id": "X8Y1ZXt3Z",
+    "name": "Standing cowl",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "673f7c1257ab17fc4cfb4e1c",
+          "673f7c1257ab17fc4cfb4e1b",
+          "673f7c1257ab17fc4cfb4e1d"
+        ],
+        "fileType": "folder",
+        "_id": "673f7c1257ab17fc4cfb4e1e",
+        "createdAt": "2024-11-21T21:20:07.237Z",
+        "updatedAt": "2024-11-21T21:20:07.237Z",
+        "id": "673f7c1257ab17fc4cfb4e1e"
+      },
+      {
+        "name": "sketch.js",
+        "content": "let str = '❤️ man 男人';\n\nfunction setup() {\n  createCanvas(400, 400);\n  console.log(str);\n  for (let i = 0; i < str.length; i++) {\n    console.log('i', i, str[i]);\n  }\n}\n\nfunction draw() {\n  background(220);\n}",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "673f7c1257ab17fc4cfb4e1b",
+        "createdAt": "2024-11-21T21:20:07.237Z",
+        "updatedAt": "2024-11-21T21:20:07.237Z",
+        "id": "673f7c1257ab17fc4cfb4e1b"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "673f7c1257ab17fc4cfb4e1c",
+        "createdAt": "2024-11-21T21:20:07.238Z",
+        "updatedAt": "2024-11-21T21:20:07.238Z",
+        "id": "673f7c1257ab17fc4cfb4e1c"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "673f7c1257ab17fc4cfb4e1d",
+        "createdAt": "2024-11-21T21:20:07.238Z",
+        "updatedAt": "2024-11-21T21:20:07.238Z",
+        "id": "673f7c1257ab17fc4cfb4e1d"
+      }
+    ],
+    "updatedAt": "2024-11-21T21:20:07.238Z",
+    "createdAt": "2024-11-21T21:20:07.238Z",
+    "id": "X8Y1ZXt3Z"
+  },
+  {
     "_id": "Ng17FQFiA",
     "name": "Steady condition",
     "files": [
@@ -30804,6 +31134,145 @@
     "id": "38ZMRSo0H"
   },
   {
+    "_id": "ayJgJmo1h",
+    "name": "text points perlin noise copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "673ee23bca8c7c37018d5a79",
+          "673ee23bca8c7c37018d5a7a",
+          "673ee23bca8c7c37018d5a7b",
+          "673ee23bca8c7c37018d5a7c"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "673ee23bca8c7c37018d5a78",
+        "createdAt": "2024-11-21T07:38:25.901Z",
+        "updatedAt": "2024-11-21T07:38:25.901Z",
+        "id": "673ee23bca8c7c37018d5a78"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/ayJgJmo1h\n// text points perlin noise\n\nlet my = {};\n// my.font;\n// my.pts;\nmy.pt_size = 1;\nmy.text = 'ICM 2024';\n\nfunction preload() {\n  my.font = loadFont(\"LeagueGothic-Regular.otf\");\n}\n\nfunction setup() {\n  createCanvas(600, 400);\n  // let tz = 100;\n  let tz = 220;\n  let sf = 0.9;\n  // let sf = 0.09;\n  my.pts = my.font.textToPoints(my.text, 0, 0, tz, {\n    sampleFactor: sf,\n    simplifyThreshold: 0\n  });\n  console.log('my.pts.length', my.pts.length)\n}\n\nmy.xz = 0;\nmy.yz = 1000;\n\nfunction draw() {\n  background(0);\n  noStroke();\n  fill(0, 255, 0);\n  push();\n  translate(0, 275);\n  for (let i = 0; i < my.pts.length; i++) {\n    let xoff = ns(my.pts[i].x, my.pts[i].y, my.xz);\n    let yoff = ns(my.pts[i].y, my.pts[i].x, my.yz);\n    xoff += my.pts[i].x;\n    yoff +=  my.pts[i].y;\n    ellipse(xoff, yoff, my.pt_size, my.pt_size);\n  }\n  pop();\n  my.xz += 2;\n  my.yz += 2;\n}\n\nmy.scale = 0.005;\nmy.min = -50;\nmy.max = 50;\n\nfunction ns(x, y, z) {\n  let n = noise(x * my.scale, y * my.scale, z * my.scale);\n  return map(n, 0, 1, my.min, my.max);\n}\n\n// https://p5js.org/reference/#/p5.Font/textToPoints\n\n// remixed from\n// https://editor.p5js.org/allison.parrish/sketches/HJqO6tdQG\n\n// https://editor.p5js.org/jht1493/sketches/FoN8-xraX\n// text points perlin noise\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "673ee23bca8c7c37018d5a7b",
+        "createdAt": "2024-11-21T07:38:25.901Z",
+        "updatedAt": "2024-11-21T07:38:25.901Z",
+        "id": "673ee23bca8c7c37018d5a7b"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html>\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "673ee23bca8c7c37018d5a7a",
+        "createdAt": "2024-11-21T07:38:25.901Z",
+        "updatedAt": "2024-11-21T07:38:25.901Z",
+        "id": "673ee23bca8c7c37018d5a7a"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "673ee23bca8c7c37018d5a7c",
+        "createdAt": "2024-11-21T07:38:25.901Z",
+        "updatedAt": "2024-11-21T07:38:25.901Z",
+        "id": "673ee23bca8c7c37018d5a7c"
+      },
+      {
+        "name": "LeagueGothic-Regular.otf",
+        "content": "",
+        "url": "https://assets.editor.p5js.org/60261b883e600f00240bd343/93d4cbca-3254-4880-ba6c-e22365e2fd36.otf",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "673ee23bca8c7c37018d5a79",
+        "createdAt": "2024-11-21T07:38:25.901Z",
+        "updatedAt": "2024-11-21T07:38:25.901Z",
+        "id": "673ee23bca8c7c37018d5a79"
+      }
+    ],
+    "createdAt": "2024-11-21T07:33:15.913Z",
+    "updatedAt": "2024-11-21T07:38:25.901Z",
+    "id": "ayJgJmo1h"
+  },
+  {
+    "_id": "O4APPvw4J",
+    "name": "text points perlin noise copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "673ee22cca8c7c37018d5a74",
+          "673ee22cca8c7c37018d5a75",
+          "673ee22cca8c7c37018d5a76",
+          "673ee22cca8c7c37018d5a77"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "673ee22cca8c7c37018d5a73",
+        "createdAt": "2022-11-29T14:51:02.020Z",
+        "updatedAt": "2022-11-29T14:51:02.020Z",
+        "id": "673ee22cca8c7c37018d5a73"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht1493/sketches/FoN8-xraX\n// text points perlin noise\n\nlet a_font;\nlet a_pts;\nlet pt_size = 1;\nlet a_text = 'ICM 2022';\n\nfunction preload() {\n  a_font = loadFont(\"LeagueGothic-Regular.otf\");\n}\n\nfunction setup() {\n  createCanvas(600, 400);\n  // let tz = 100;\n  let tz = 220;\n  let sf = 0.9;\n  // let sf = 0.09;\n  a_pts = a_font.textToPoints(a_text, 0, 0, tz, {\n    sampleFactor: sf,\n    simplifyThreshold: 0\n  });\n  console.log('a_pts.length', a_pts.length)\n}\n\nlet xz = 0;\nlet yz = 1000;\n\nfunction draw() {\n  background(0);\n  noStroke();\n  fill(0, 255, 0);\n  push();\n  translate(0, 275);\n  for (let i = 0; i < a_pts.length; i++) {\n    let xoff = ns(a_pts[i].x, a_pts[i].y, xz);\n    let yoff = ns(a_pts[i].y, a_pts[i].x, yz);\n    xoff += a_pts[i].x;\n    yoff +=  a_pts[i].y;\n    ellipse(xoff, yoff, pt_size, pt_size);\n  }\n  pop();\n  xz += 2;\n  yz += 2;\n}\n\nlet a_scale = 0.005;\nlet a_min = -50;\nlet a_max = 50;\nfunction ns(x, y, z) {\n  let n = noise(x * a_scale, y * a_scale, z * a_scale);\n  return map(n, 0, 1, a_min, a_max);\n}\n\n// https://editor.p5js.org/jht1493/sketches/FoN8-xraX\n// text points perlin noise\n\n// remixed from\n// https://editor.p5js.org/allison.parrish/sketches/HJqO6tdQG\n\n// https://p5js.org/reference/#/p5.Font/textToPoints\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "673ee22cca8c7c37018d5a76",
+        "createdAt": "2022-11-29T14:51:02.020Z",
+        "updatedAt": "2022-11-29T14:51:02.020Z",
+        "id": "673ee22cca8c7c37018d5a76"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html>\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "673ee22cca8c7c37018d5a75",
+        "createdAt": "2022-11-29T14:51:02.020Z",
+        "updatedAt": "2022-11-29T14:51:02.020Z",
+        "id": "673ee22cca8c7c37018d5a75"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "673ee22cca8c7c37018d5a77",
+        "createdAt": "2022-11-29T14:51:02.020Z",
+        "updatedAt": "2022-11-29T14:51:02.020Z",
+        "id": "673ee22cca8c7c37018d5a77"
+      },
+      {
+        "name": "LeagueGothic-Regular.otf",
+        "content": "",
+        "url": "https://assets.editor.p5js.org/60261b883e600f00240bd343/384f731d-c4e5-4734-8e95-1c2cd6cc1186.otf",
+        "children": [],
+        "fileType": "file",
+        "_id": "673ee22cca8c7c37018d5a74",
+        "createdAt": "2022-11-29T14:51:02.020Z",
+        "updatedAt": "2022-11-29T14:51:02.020Z",
+        "id": "673ee22cca8c7c37018d5a74"
+      }
+    ],
+    "createdAt": "2024-11-21T07:33:01.015Z",
+    "updatedAt": "2024-11-21T07:33:01.015Z",
+    "id": "O4APPvw4J"
+  },
+  {
     "_id": "bn2zSATZ_",
     "name": "text points perlin noise copy",
     "files": [
@@ -31436,6 +31905,76 @@
     "createdAt": "2024-10-17T16:50:38.767Z",
     "updatedAt": "2024-10-17T16:56:23.470Z",
     "id": "DphKSdHsc"
+  },
+  {
+    "_id": "aj-hT_W1O",
+    "name": "Truchet Therapeutic - evolution",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6738b6b1a05c7a7a20cdeb2d",
+          "6738b6b1a05c7a7a20cdeb2e",
+          "6738b6b1a05c7a7a20cdeb2f",
+          "6738b6b1a05c7a7a20cdeb30"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "6738b6b1a05c7a7a20cdeb2c",
+        "createdAt": "2024-11-16T16:14:17.639Z",
+        "updatedAt": "2024-11-16T16:14:17.639Z",
+        "id": "6738b6b1a05c7a7a20cdeb2c"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/aj-hT_W1O\n// Truchet Therapeutic - evolution\n\nfunction setup() {\n  createCanvas(400, 400);\n  background(190)\n  noStroke();\n}\n\nfunction draw() {\n  let d = 100;\n  let x0 = 0;\n  let y0 = 0;\n  fill(220);\n  rect(x0, y0, d, d);\n  fill(0);\n  arc(x0, y0, d, d, HALF_PI * 0, HALF_PI * 1, PIE);\n  arc(x0 + 100, y0 + 100, d, d, HALF_PI * 2, HALF_PI * 3, PIE);\n  // arc(x, y, w, h, start, stop, [mode], [detail])\n  // CHORD, PIE or OPEN\n\n  x0 = 100;\n  fill(220);\n  rect(x0, y0, d, d);\n  fill(0);\n  arc(x0 + 100, y0, d, d, HALF_PI * 1, HALF_PI * 2, PIE);\n  arc(x0, y0 + 100, d, d, HALF_PI * 3, HALF_PI * 4, PIE);\n\n  x0 = 200;\n  fill(0);\n  rect(x0, y0, d, d);\n  fill(220);\n  arc(x0, y0, d, d, HALF_PI * 0, HALF_PI * 1, PIE);\n  arc(x0 + 100, y0 + 100, d, d, HALF_PI * 2, HALF_PI * 3, PIE);\n\n  x0 = 300;\n  fill(0);\n  rect(x0, y0, d, d);\n  fill(220);\n  arc(x0 + 100, y0, d, d, HALF_PI * 1, HALF_PI * 2, PIE);\n  arc(x0, y0 + 100, d, d, HALF_PI * 3, HALF_PI * 4, PIE);\n}\n\n// Compare and contrast with\n// https://openprocessing.org/sketch/1354815/\n// Truchet in p5js by Vamoss\n\n// https://editor.p5js.org/jht1493/sketches/jK_d9a5uK\n// Truchet Therapeutic - first rev\n\n// https://editor.p5js.org/jht1493/sketches/V2ifPvqiw\n// Truchet func\n\n// https://editor.p5js.org/jht1493/sketches/u13JQBCSD\n// Truchet func 2\n\n// https://editor.p5js.org/jht1493/sketches/f5vzsNvfR\n// Truchet func 3\n\n// https://editor.p5js.org/jht1493/sketches/zOy0N1rYt\n// Truchet func 4\n\n// https://editor.p5js.org/jht1493/sketches/FwfyGjYos\n// Truchet func 5\n\n// https://editor.p5js.org/jht1493/sketches/XoCFY-7Yi\n// Truchet func 6\n\n// https://editor.p5js.org/jht1493/sketches/3T3NmXA9n\n// Truchet func 7\n\n// https://editor.p5js.org/jht1493/sketches/eEkY6Puq2\n// Truchet func 8\n\n// https://editor.p5js.org/jht1493/sketches/6wi3Qiz6o\n// Truchet func 9\n\n// https://editor.p5js.org/jht1493/sketches/SQrWvF9zQ\n// Truchet func 10\n\n\n\n\n\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "6738b6b1a05c7a7a20cdeb2f",
+        "createdAt": "2024-11-16T16:14:17.639Z",
+        "updatedAt": "2024-11-16T16:14:17.639Z",
+        "id": "6738b6b1a05c7a7a20cdeb2f"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n    <img src=\"Truchet-IMG_2204.jpg\" alt=\"Truchet\" />\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6738b6b1a05c7a7a20cdeb2e",
+        "createdAt": "2024-11-16T16:14:17.639Z",
+        "updatedAt": "2024-11-16T16:14:17.639Z",
+        "id": "6738b6b1a05c7a7a20cdeb2e"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6738b6b1a05c7a7a20cdeb30",
+        "createdAt": "2024-11-16T16:14:17.639Z",
+        "updatedAt": "2024-11-16T16:14:17.639Z",
+        "id": "6738b6b1a05c7a7a20cdeb30"
+      },
+      {
+        "name": "Truchet-IMG_2204.jpg",
+        "content": "",
+        "url": "https://assets.editor.p5js.org/60261b883e600f00240bd343/8729fb91-dd4d-46ff-bfda-324f48ab4365.jpg",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6738b6b1a05c7a7a20cdeb2d",
+        "createdAt": "2024-11-16T16:14:17.639Z",
+        "updatedAt": "2024-11-16T16:14:17.639Z",
+        "id": "6738b6b1a05c7a7a20cdeb2d"
+      }
+    ],
+    "createdAt": "2024-11-16T15:13:54.237Z",
+    "updatedAt": "2024-11-16T16:14:17.639Z",
+    "id": "aj-hT_W1O"
   },
   {
     "_id": "lBrb1cBQ7",

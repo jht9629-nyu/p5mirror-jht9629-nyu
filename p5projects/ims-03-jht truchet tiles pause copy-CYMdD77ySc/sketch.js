@@ -103,3 +103,13 @@ function drawRight(x, y, half) {
 
 // https://editor.p5js.org/ambikajo/sketches/cKu3Gn0Po
 // truchet tiles by ambikajo
+
+// Compare and contrast with
+// https://openprocessing.org/sketch/1354815/
+// Truchet in p5js by Vamoss
+
+// https://editor.p5js.org/jht1493/sketches/jK_d9a5uK
+// Truchet Therapeutic - first rev
+
+// https://editor.p5js.org/jht1493/sketches/SQrWvF9zQ
+// Truchet func 10
