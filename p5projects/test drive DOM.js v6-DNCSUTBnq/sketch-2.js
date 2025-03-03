@@ -2,8 +2,6 @@
 // test drive DOM.js v6
 
 // https://github.com/lenincompres/DOM.js?tab=readme-ov-file#binding
-// !!@ p text changes, but input value does not change
-// if input is edited with click
 
 let counter = 0
 
@@ -19,7 +17,9 @@ const myMain = DOM.set(
     },
     button: {
       text: "Go Button",
-      onclick: (event) => (myBinder.value = "Go was clicked." + counter++),
+      onclick: (event) => {
+        myBinder.value = "Go was clicked. " + counter++
+      },
     },
   },
   "main"
@@ -63,3 +63,6 @@ DOM.set({
 // needed to add id_main
 
 // https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method
+
+// !!@ p text changes, but input value does not change
+// if input is edited with click

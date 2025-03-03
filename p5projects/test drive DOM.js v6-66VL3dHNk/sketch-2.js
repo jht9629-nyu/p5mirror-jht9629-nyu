@@ -17,7 +17,9 @@ const myMain = DOM.set(
       },
       input: {
         enabled: fieldEnabled,
-        value: fieldEnabled.as((value) => `The field is: ${value}.`),
+        value: fieldEnabled.as((value) => {
+          return `The field is: ${value}.`
+        }),
       },
       button: {
         class: {
@@ -25,7 +27,9 @@ const myMain = DOM.set(
           // classes passed as object keys can be bound as well.
         },
         text: "toggle",
-        onclick: () => (fieldEnabled.value = !fieldEnabled.value),
+        onclick: () => {
+          fieldEnabled.value = !fieldEnabled.value
+        },
       },
     },
   },

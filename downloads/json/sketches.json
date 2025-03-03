@@ -30982,7 +30982,7 @@
   {
     "_id": "Bv2yPxl9Y",
     "name": "test drive DOM.js v1",
-    "updatedAt": "2024-03-29T15:37:09.092Z",
+    "updatedAt": "2025-03-03T18:13:04.723Z",
     "files": [
       {
         "name": "root",
@@ -30994,10 +30994,10 @@
           "65f45611abceec5fd00e92ed"
         ],
         "fileType": "folder",
-        "_id": "65f45611abceec5fd00e92ee",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T15:37:09.092Z",
-        "updatedAt": "2024-03-29T15:37:09.092Z",
+        "_id": "65f45611abceec5fd00e92ee",
+        "createdAt": "2025-03-03T18:13:04.723Z",
+        "updatedAt": "2025-03-03T18:13:04.723Z",
         "id": "65f45611abceec5fd00e92ee"
       },
       {
@@ -31005,10 +31005,10 @@
         "content": "function setup() {\n  createCanvas(400, 100);\n\n  DOM.set({\n    header: {\n      h1: \"Page built with DOM.set\",\n    },\n    main: {\n      article: {\n        h2: \"Basic DOM element\",\n        p: \"<b>This</b> is a paragraph.\",\n      },\n    },\n    footer: {\n      p: \"Made with DOM.js\",\n    },\n  });\n}\n\nfunction draw() {\n  background(220);\n}\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f45611abceec5fd00e92eb",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T15:37:09.092Z",
-        "updatedAt": "2024-03-29T15:37:09.092Z",
+        "_id": "65f45611abceec5fd00e92eb",
+        "createdAt": "2025-03-03T18:13:04.723Z",
+        "updatedAt": "2025-03-03T18:13:04.723Z",
         "id": "65f45611abceec5fd00e92eb"
       },
       {
@@ -31016,10 +31016,10 @@
         "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n    <script src=\"https://cdn.jsdelivr.net/gh/lenincompres/DOM.js@latest/DOM.js\"></script>\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch-2.js\"></script>\n  </body>\n</html>\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f45611abceec5fd00e92ec",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T15:37:09.092Z",
-        "updatedAt": "2024-03-29T15:37:09.092Z",
+        "_id": "65f45611abceec5fd00e92ec",
+        "createdAt": "2025-03-03T18:13:04.723Z",
+        "updatedAt": "2025-03-03T18:13:04.723Z",
         "id": "65f45611abceec5fd00e92ec"
       },
       {
@@ -31027,10 +31027,10 @@
         "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f45611abceec5fd00e92ed",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T15:37:09.092Z",
-        "updatedAt": "2024-03-29T15:37:09.092Z",
+        "_id": "65f45611abceec5fd00e92ed",
+        "createdAt": "2025-03-03T18:13:04.723Z",
+        "updatedAt": "2025-03-03T18:13:04.723Z",
         "id": "65f45611abceec5fd00e92ed"
       },
       {
@@ -31038,10 +31038,10 @@
         "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\nDOM.set({\n  header: {\n    h1: \"Page built with DOM.set\",\n  },\n  main: {\n    id: \"someElement\",\n    article: {\n      h2: \"main: Basic DOM element\",\n      p: \"<b>This</b> is a paragraph.\",\n    },\n  },\n  footer: {\n    p: \"footer: Made with DOM.js\",\n  },\n});\n\nsomeElement.set({\n  h1: \"Hello world\",\n  p: \"This is a <b>paragraph</b>.\",\n});\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f456f3d76f7c001a46451a",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-29T15:37:09.092Z",
-        "createdAt": "2024-03-29T15:37:09.092Z",
+        "_id": "65f456f3d76f7c001a46451a",
+        "createdAt": "2025-03-03T18:13:04.723Z",
+        "updatedAt": "2025-03-03T18:13:04.723Z",
         "id": "65f456f3d76f7c001a46451a"
       }
     ],
@@ -31303,8 +31303,8 @@
         "fileType": "folder",
         "isSelectedFile": false,
         "_id": "67c5bc2fd50fa1da260478ad",
-        "createdAt": "2025-03-03T17:35:55.523Z",
-        "updatedAt": "2025-03-03T17:35:55.523Z",
+        "createdAt": "2025-03-03T21:34:40.217Z",
+        "updatedAt": "2025-03-03T21:34:40.217Z",
         "id": "67c5bc2fd50fa1da260478ad"
       },
       {
@@ -31314,8 +31314,8 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "67c5bc2fd50fa1da260478ae",
-        "createdAt": "2025-03-03T17:35:55.523Z",
-        "updatedAt": "2025-03-03T17:35:55.523Z",
+        "createdAt": "2025-03-03T21:34:40.217Z",
+        "updatedAt": "2025-03-03T21:34:40.217Z",
         "id": "67c5bc2fd50fa1da260478ae"
       },
       {
@@ -31325,24 +31325,24 @@
         "fileType": "file",
         "isSelectedFile": false,
         "_id": "67c5bc2fd50fa1da260478b0",
-        "createdAt": "2025-03-03T17:35:55.523Z",
-        "updatedAt": "2025-03-03T17:35:55.523Z",
+        "createdAt": "2025-03-03T21:34:40.217Z",
+        "updatedAt": "2025-03-03T21:34:40.217Z",
         "id": "67c5bc2fd50fa1da260478b0"
       },
       {
         "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/IrJGEcCs1\n// test drive DOM.js v12\n//\n// p5.js/1.11.1/p5.js\n// add id_ element id names\n// use tag.id style naming\n//\n// https://editor.p5js.org/lac567/sketches/rwmLo-LRo\n// test drive DOM.js v11 inputs copy copy\n\n// Button\n// text input\n// Slider\n// checkbox\n// radio button row\n// selection\n// color, note difference Safari vs. Chrome\n\nlet counter = 0;\n\nDOM.set({\n  // Each line will be a section\n  // could have been a paragraph (p:) also\n  //\n  section: [\n    {\n      // text input\n      // You also can use the tag as the property name\n      \"input#id_input\": {\n        id: \"id_input\",\n        placeholder: \"id_input placeholder\",\n        oninput: (event) => {\n          // console.log(\"id_input oninput: \" + id_input.value)\n        },\n        onchange: (event) => {\n          // console.log(\"id_input onchange: \" + id_input.value)\n        },\n        onclick: (event) => {\n          // console.log(\"id_input onclick \" + id_input.value)\n        },\n      },\n    },\n    {\n      // Button\n      // You can use the id as the property name\n      \"button#id_button\": {\n        id: \"id_button\",\n        text: \"Change Button\",\n        onclick: (event) => {\n          // !!@ console.log gives error message\n          // RangeError: Maximum call stack size exceeded\n          // console.log('id_button onclick');\n          // !!@ console.log gives crash!\n          // console.log('id_button onclick event', event);\n          // console.log(\"id_button onclick event.target\", event.target);\n          counter++;\n          id_input.value = \"Button pressed \" + counter;\n          // return false;\n        },\n      },\n    },\n    {\n      // You can also use selector notation for property names \n      // as: \"tag#id.class\"\n      // You can add multiple classes separated by dots. \n      // Slider input example with id = \"id_slider\"\n      // the class \"active\" is added to the input element\n      //\n      \"input#id_slider.active\": {\n        id: \"id_slider\",\n        type: \"range\",\n        min: 0,\n        max: 100,\n        // step: \"any\",\n        value: 50,\n        oninput: (event) => {\n          // console.log(\"id_slider oninput \");\n          // console.log(\"id_slider oninput: \" + id_slider.value);\n          id_slider_label.textContent = id_slider.value;\n        },\n        onchange: (event) => {\n          // console.log(\"id_slider onchange: \" + id_slider.value);\n          // id_slider_label.textContent = \"id_slider onchange: \" + id_slider.value;\n        },\n      },\n      \"label#id_slider_label\": {\n        id: \"id_slider_label\",\n        for: \"id_slider\",\n        text: \"50\",\n      },\n    },\n    {\n      // checkbox\n      //\n      \"input#id_checkbox\": {\n        id: \"id_checkbox\",\n        type: \"checkbox\",\n        // placeholder: \"id_checkbox placeholder\",\n        onchange: (event) => {\n          // console.log(\"id_checkbox onchange \")\n          // console.log(\"id_checkbox onchange: \" + id_checkbox.checked)\n        }\n      },\n      \"label#id_checkbox_label\": {\n        for: \"id_checkbox\",\n        text: \"Checkbox\",\n      },\n    },\n    {\n      // radio button row\n      //\n      \"input#id_radio1\": {\n        id: \"id_radio1\",\n        type: \"radio\",\n        onchange: (event) => {\n          // console.log(\"id_radio1 onchange: \" + id_radio1.checked)\n        }\n      },\n      \"label#id_radio1Label\": {\n        for: \"id_radio1\",\n        text: \"Heuy\",\n      },\n      \"input#id_radio2\": {\n        id: \"id_radio2\",\n        type: \"radio\",\n        onchange: (event) => {\n          // console.log(\"id_radio2 onchange: \" + id_radio2.checked)\n        }\n      },\n      \"label#id_radio2Label\": {\n        for: \"id_radio2\",\n        text: \"Dewey\",\n      },\n      \"input#id_radio3\": {\n        id: \"id_radio3\",\n        type: \"radio\",\n        onchange: (event) => {\n          // console.log(\"id_radio3 onchange: \" + id_radio3.checked)\n        }\n      },\n      \"label#id_radio3Label\": {\n        for: \"id_radio3\",\n        text: \"Louie\",\n      },\n    },\n    {\n      // selection\n      //\n      \"label#id_selection_label\": {\n        for: \"id_selection\",\n        text: \"Choose a pet:\",\n      },\n      \"select#id_selection\": {\n        id: \"id_selection\",\n        onchange: (event) => {\n          // console.log(\"id_selection onchange: \" + id_selection.value)\n        },\n        option: [\n          {\n            value: \"dog\",\n            text: \"Dog\",\n          },\n          {\n            value: \"cat\",\n            text: \"Cat\",\n          },\n          {\n            value: \"hamster\",\n            text: \"Hamster\",\n          },\n        ],\n      },\n    },\n    {\n      // color picker\n      //\n      \"label#id_color_label\": {\n        for: \"id_color\",\n        text: \"Choose a color:\",\n      },\n      \"input#id_color\": {\n        id: \"id_color\",\n        // tag: \"input\",\n        type: \"color\",\n        value: \"#FFFF00\",\n        onchange: (event) => {\n          console.log(\"id_color onchange: \" + id_color.value + '')\n        },\n        oninput: (event) => {\n          // console.log(\"id_color oninput: \" + id_color.value + '')\n        },\n      },\n    },\n  ],\n});\n\nid_checkbox.checked = true;\n\nfunction setup() {\n console.log('in setup');\n}\n\n/* -- DOM Reference\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/select\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset\n*/\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/G3arjv8UF\n// test drive DOM.js v10 inputs\n\n// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/IrJGEcCs1\n// test drive DOM.js v12\n//\n// p5.js/1.11.1/p5.js\n// add id_ element id names\n// use tag.id style naming\n//\n// https://editor.p5js.org/lac567/sketches/rwmLo-LRo\n// test drive DOM.js v11 inputs copy copy\n\n// Button\n// text input\n// Slider\n// checkbox\n// radio button row\n// selection\n// color, note difference Safari vs. Chrome\n\nlet counter = 0;\n\nDOM.set({\n  // Each line will be a section\n  // could have been a paragraph (p:) also\n  //\n  section: [\n    {\n      // text input\n      // You also can use the tag as the property name\n      \"input#id_input\": {\n        id: \"id_input\",\n        placeholder: \"id_input placeholder\",\n        oninput: (event) => {\n          // console.log(\"id_input oninput: \" + id_input.value)\n        },\n        onchange: (event) => {\n          // console.log(\"id_input onchange: \" + id_input.value)\n        },\n        onclick: (event) => {\n          // console.log(\"id_input onclick \" + id_input.value)\n        },\n      },\n    },\n    {\n      // Button\n      // You can use the id as the property name\n      \"button#id_button\": {\n        id: \"id_button\",\n        text: \"Change Button\",\n        onclick: (event) => {\n          // !!@ console.log gives error message\n          // RangeError: Maximum call stack size exceeded\n          // console.log('id_button onclick');\n          // !!@ console.log gives crash!\n          // console.log('id_button onclick event', event);\n          // console.log(\"id_button onclick event.target\", event.target);\n          counter++;\n          id_input.value = \"Button pressed \" + counter;\n          // return false;\n        },\n      },\n    },\n    {\n      // You can also use selector notation for property names \n      // as: \"tag#id.class\"\n      // You can add multiple classes separated by dots. \n      // Slider input example with id = \"id_slider\"\n      // the class \"active\" is added to the input element\n      //\n      \"input#id_slider.active\": {\n        id: \"id_slider\",\n        type: \"range\",\n        min: 0,\n        max: 100,\n        // step: \"any\",\n        value: 50,\n        oninput: (event) => {\n          // console.log(\"id_slider oninput \");\n          // console.log(\"id_slider oninput: \" + id_slider.value);\n          id_slider_label.textContent = id_slider.value;\n        },\n        onchange: (event) => {\n          // console.log(\"id_slider onchange: \" + id_slider.value);\n          // id_slider_label.textContent = \"id_slider onchange: \" + id_slider.value;\n        },\n      },\n      \"label#id_slider_label\": {\n        id: \"id_slider_label\",\n        for: \"id_slider\",\n        text: \"50\",\n      },\n    },\n    {\n      // checkbox\n      //\n      \"input#id_checkbox\": {\n        id: \"id_checkbox\",\n        type: \"checkbox\",\n        // placeholder: \"id_checkbox placeholder\",\n        onchange: (event) => {\n          // console.log(\"id_checkbox onchange \")\n          // console.log(\"id_checkbox onchange: \" + id_checkbox.checked)\n        }\n      },\n      \"label#id_checkbox_label\": {\n        for: \"id_checkbox\",\n        text: \"Checkbox\",\n      },\n    },\n    {\n      // radio button row\n      //\n      \"input#id_radio1\": {\n        id: \"id_radio1\",\n        type: \"radio\",\n        name: \"radio1\",\n        onchange: (event) => {\n          // console.log(\"id_radio1 onchange: \" + id_radio1.checked)\n        }\n      },\n      \"label#id_radio1Label\": {\n        for: \"id_radio1\",\n        text: \"Heuy\",\n      },\n      \"input#id_radio2\": {\n        id: \"id_radio2\",\n        type: \"radio\",\n        name: \"radio1\",\n        onchange: (event) => {\n          // console.log(\"id_radio2 onchange: \" + id_radio2.checked)\n        }\n      },\n      \"label#id_radio2Label\": {\n        for: \"id_radio2\",\n        text: \"Dewey\",\n      },\n      \"input#id_radio3\": {\n        id: \"id_radio3\",\n        type: \"radio\",\n        name: \"radio1\",\n        onchange: (event) => {\n          // console.log(\"id_radio3 onchange: \" + id_radio3.checked)\n        }\n      },\n      \"label#id_radio3Label\": {\n        for: \"id_radio3\",\n        text: \"Louie\",\n      },\n    },\n    {\n      // selection\n      //\n      \"label#id_selection_label\": {\n        for: \"id_selection\",\n        text: \"Choose a pet:\",\n      },\n      \"select#id_selection\": {\n        id: \"id_selection\",\n        onchange: (event) => {\n          // console.log(\"id_selection onchange: \" + id_selection.value)\n        },\n        option: [\n          {\n            value: \"dog\",\n            text: \"Dog\",\n          },\n          {\n            value: \"cat\",\n            text: \"Cat\",\n          },\n          {\n            value: \"hamster\",\n            text: \"Hamster\",\n          },\n        ],\n      },\n    },\n    {\n      // color picker\n      //\n      \"label#id_color_label\": {\n        for: \"id_color\",\n        text: \"Choose a color:\",\n      },\n      \"input#id_color\": {\n        id: \"id_color\",\n        // tag: \"input\",\n        type: \"color\",\n        value: \"#FFFF00\",\n        onchange: (event) => {\n          console.log(\"id_color onchange: \" + id_color.value + '')\n        },\n        oninput: (event) => {\n          // console.log(\"id_color oninput: \" + id_color.value + '')\n        },\n      },\n    },\n  ],\n});\n\nid_checkbox.checked = true;\n\nfunction setup() {\n console.log('in setup');\n}\n\n/* -- DOM Reference\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/select\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset\n*/\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/G3arjv8UF\n// test drive DOM.js v10 inputs\n\n// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n",
         "children": [],
         "fileType": "file",
         "isSelectedFile": true,
         "_id": "67c5bc2fd50fa1da260478af",
-        "createdAt": "2025-03-03T17:35:55.523Z",
-        "updatedAt": "2025-03-03T17:35:55.523Z",
+        "createdAt": "2025-03-03T21:34:40.217Z",
+        "updatedAt": "2025-03-03T21:34:40.217Z",
         "id": "67c5bc2fd50fa1da260478af"
       }
     ],
     "createdAt": "2025-03-03T14:26:56.067Z",
-    "updatedAt": "2025-03-03T17:35:55.523Z",
+    "updatedAt": "2025-03-03T21:34:40.217Z",
     "id": "IrJGEcCs1"
   },
   {
@@ -31635,10 +31635,10 @@
           "65f47084abceec5fd00e930c"
         ],
         "fileType": "folder",
-        "_id": "65f47084abceec5fd00e9308",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T16:22:56.463Z",
-        "updatedAt": "2024-03-29T16:22:56.463Z",
+        "_id": "65f47084abceec5fd00e9308",
+        "createdAt": "2025-03-03T18:08:00.700Z",
+        "updatedAt": "2025-03-03T18:08:00.700Z",
         "id": "65f47084abceec5fd00e9308"
       },
       {
@@ -31646,10 +31646,10 @@
         "content": "function setup() {\n  createCanvas(400, 100);\n\n  DOM.set({\n    header: {\n      h1: \"Page built with DOM.set\",\n    },\n    main: {\n      article: {\n        h2: \"Basic DOM element\",\n        p: \"<b>This</b> is a paragraph.\",\n      },\n    },\n    footer: {\n      p: \"Made with DOM.js\",\n    },\n  });\n}\n\nfunction draw() {\n  background(220);\n}\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f47084abceec5fd00e930a",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T16:22:56.463Z",
-        "updatedAt": "2024-03-29T16:22:56.463Z",
+        "_id": "65f47084abceec5fd00e930a",
+        "createdAt": "2025-03-03T18:08:00.700Z",
+        "updatedAt": "2025-03-03T18:08:00.700Z",
         "id": "65f47084abceec5fd00e930a"
       },
       {
@@ -31657,10 +31657,10 @@
         "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n    <script src=\"https://cdn.jsdelivr.net/gh/lenincompres/DOM.js@latest/DOM.js\"></script>\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch-2.js\"></script>\n  </body>\n</html>\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f47084abceec5fd00e9309",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T16:22:56.463Z",
-        "updatedAt": "2024-03-29T16:22:56.463Z",
+        "_id": "65f47084abceec5fd00e9309",
+        "createdAt": "2025-03-03T18:08:00.700Z",
+        "updatedAt": "2025-03-03T18:08:00.700Z",
         "id": "65f47084abceec5fd00e9309"
       },
       {
@@ -31668,26 +31668,26 @@
         "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f47084abceec5fd00e930c",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T16:22:56.463Z",
-        "updatedAt": "2024-03-29T16:22:56.463Z",
+        "_id": "65f47084abceec5fd00e930c",
+        "createdAt": "2025-03-03T18:08:00.700Z",
+        "updatedAt": "2025-03-03T18:08:00.700Z",
         "id": "65f47084abceec5fd00e930c"
       },
       {
         "name": "sketch-2.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk\n// test drive DOM.js v7\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#binding-functions\n// !!@ Maximum call stack size exceeded\n\nconst fieldEnabled = new Binder(false);\n\nconst myMain = DOM.set(\n  {\n    div: {\n      style: {\n        background: fieldEnabled.as({\n          true: \"green\",\n          false: \"gray\",\n        }),\n      },\n      input: {\n        enabled: fieldEnabled,\n        value: fieldEnabled.as((value) => `The field is: ${value}.`),\n      },\n      button: {\n        class: {\n          //enablebutton: fieldEnabled,\n          // classes passed as object keys can be bound as well.\n        },\n        text: \"toggle\",\n        onclick: () => (fieldEnabled.value = !fieldEnabled.value),\n      },\n    },\n  },\n  \"main\"\n);\n\nDOM.set({\n  header: {\n    h1: \"Example of binding\",\n  },\n  main: myMain,\n  footer: \"the footer\",\n});\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/66VL3dHNk\n// test drive DOM.js v7\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#binding-functions\n// !!@ Maximum call stack size exceeded\n\nconst fieldEnabled = new Binder(false);\n\nconst myMain = DOM.set(\n  {\n    div: {\n      style: {\n        background: fieldEnabled.as({\n          true: \"green\",\n          false: \"gray\",\n        }),\n      },\n      input: {\n        enabled: fieldEnabled,\n        value: fieldEnabled.as((value) => {\n          return `The field is: ${value}.`\n        }),\n      },\n      button: {\n        class: {\n          //enablebutton: fieldEnabled,\n          // classes passed as object keys can be bound as well.\n        },\n        text: \"toggle\",\n        onclick: () => {\n          fieldEnabled.value = !fieldEnabled.value\n        },\n      },\n    },\n  },\n  \"main\"\n);\n\nDOM.set({\n  header: {\n    h1: \"Example of binding\",\n  },\n  main: myMain,\n  footer: \"the footer\",\n});\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f47084abceec5fd00e930b",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-29T16:22:56.463Z",
-        "createdAt": "2024-03-29T16:22:56.463Z",
+        "_id": "65f47084abceec5fd00e930b",
+        "createdAt": "2025-03-03T18:08:00.700Z",
+        "updatedAt": "2025-03-03T18:08:00.700Z",
         "id": "65f47084abceec5fd00e930b"
       }
     ],
     "createdAt": "2024-03-15T16:00:04.553Z",
-    "updatedAt": "2024-03-29T16:22:56.463Z",
+    "updatedAt": "2025-03-03T18:08:00.700Z",
     "id": "66VL3dHNk"
   },
   {
@@ -31704,10 +31704,10 @@
           "65f45ee2abceec5fd00e9307"
         ],
         "fileType": "folder",
-        "_id": "65f45ee2abceec5fd00e9303",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T15:59:56.823Z",
-        "updatedAt": "2024-03-29T15:59:56.823Z",
+        "_id": "65f45ee2abceec5fd00e9303",
+        "createdAt": "2025-03-03T18:04:54.776Z",
+        "updatedAt": "2025-03-03T18:04:54.776Z",
         "id": "65f45ee2abceec5fd00e9303"
       },
       {
@@ -31715,10 +31715,10 @@
         "content": "function setup() {\n  createCanvas(400, 100);\n\n  DOM.set({\n    header: {\n      h1: \"Page built with DOM.set\",\n    },\n    main: {\n      article: {\n        h2: \"Basic DOM element\",\n        p: \"<b>This</b> is a paragraph.\",\n      },\n    },\n    footer: {\n      p: \"Made with DOM.js\",\n    },\n  });\n}\n\nfunction draw() {\n  background(220);\n}\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f45ee2abceec5fd00e9305",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T15:59:56.823Z",
-        "updatedAt": "2024-03-29T15:59:56.823Z",
+        "_id": "65f45ee2abceec5fd00e9305",
+        "createdAt": "2025-03-03T18:04:54.776Z",
+        "updatedAt": "2025-03-03T18:04:54.776Z",
         "id": "65f45ee2abceec5fd00e9305"
       },
       {
@@ -31726,10 +31726,10 @@
         "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n    <script src=\"https://cdn.jsdelivr.net/gh/lenincompres/DOM.js@latest/DOM.js\"></script>\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch-2.js\"></script>\n  </body>\n</html>\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f45ee2abceec5fd00e9304",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T15:59:56.823Z",
-        "updatedAt": "2024-03-29T15:59:56.823Z",
+        "_id": "65f45ee2abceec5fd00e9304",
+        "createdAt": "2025-03-03T18:04:54.776Z",
+        "updatedAt": "2025-03-03T18:04:54.776Z",
         "id": "65f45ee2abceec5fd00e9304"
       },
       {
@@ -31737,26 +31737,26 @@
         "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f45ee2abceec5fd00e9307",
         "isSelectedFile": false,
-        "createdAt": "2024-03-29T15:59:56.823Z",
-        "updatedAt": "2024-03-29T15:59:56.823Z",
+        "_id": "65f45ee2abceec5fd00e9307",
+        "createdAt": "2025-03-03T18:04:54.776Z",
+        "updatedAt": "2025-03-03T18:04:54.776Z",
         "id": "65f45ee2abceec5fd00e9307"
       },
       {
         "name": "sketch-2.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#binding\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n\nlet counter = 0\n\nconst myBinder = new Binder(\"Default value\");\n\nconst myMain = DOM.set(\n  {\n    input: {\n      value: myBinder,\n    },\n    p: {\n      text: myBinder,\n    },\n    button: {\n      text: \"Go Button\",\n      onclick: (event) => (myBinder.value = \"Go was clicked.\" + counter++),\n    },\n  },\n  \"main\"\n);\n\nDOM.set({\n  header: {\n    h1: \"Example of binding\",\n  },\n  main: myMain,\n  footer: \"the footer\",\n});\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/DNCSUTBnq\n// test drive DOM.js v6\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#binding\n\nlet counter = 0\n\nconst myBinder = new Binder(\"Default value\");\n\nconst myMain = DOM.set(\n  {\n    input: {\n      value: myBinder,\n    },\n    p: {\n      text: myBinder,\n    },\n    button: {\n      text: \"Go Button\",\n      onclick: (event) => {\n        myBinder.value = \"Go was clicked. \" + counter++\n      },\n    },\n  },\n  \"main\"\n);\n\nDOM.set({\n  header: {\n    h1: \"Example of binding\",\n  },\n  main: myMain,\n  footer: \"the footer\",\n});\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/0qT4LoFse\n// test drive DOM.js v5\n// !!@ mySection undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Hl1Tu1U1U\n// test drive DOM.js v4\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#creating-an-element\n// !!@ myButton undefined\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n// !!@ p text changes, but input value does not change\n// if input is edited with click\n",
         "children": [],
         "fileType": "file",
-        "_id": "65f45ee2abceec5fd00e9306",
         "isSelectedFile": true,
-        "updatedAt": "2024-03-29T15:59:56.823Z",
-        "createdAt": "2024-03-29T15:59:56.823Z",
+        "_id": "65f45ee2abceec5fd00e9306",
+        "createdAt": "2025-03-03T18:04:54.776Z",
+        "updatedAt": "2025-03-03T18:04:54.776Z",
         "id": "65f45ee2abceec5fd00e9306"
       }
     ],
     "createdAt": "2024-03-15T14:44:50.439Z",
-    "updatedAt": "2024-03-29T15:59:56.823Z",
+    "updatedAt": "2025-03-03T18:04:54.776Z",
     "id": "DNCSUTBnq"
   },
   {

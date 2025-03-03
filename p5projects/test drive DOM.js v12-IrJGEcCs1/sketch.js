@@ -112,6 +112,7 @@ DOM.set({
       "input#id_radio1": {
         id: "id_radio1",
         type: "radio",
+        name: "radio1",
         onchange: (event) => {
           // console.log("id_radio1 onchange: " + id_radio1.checked)
         }
@@ -123,6 +124,7 @@ DOM.set({
       "input#id_radio2": {
         id: "id_radio2",
         type: "radio",
+        name: "radio1",
         onchange: (event) => {
           // console.log("id_radio2 onchange: " + id_radio2.checked)
         }
@@ -134,6 +136,7 @@ DOM.set({
       "input#id_radio3": {
         id: "id_radio3",
         type: "radio",
+        name: "radio1",
         onchange: (event) => {
           // console.log("id_radio3 onchange: " + id_radio3.checked)
         }
