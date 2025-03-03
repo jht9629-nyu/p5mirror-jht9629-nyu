@@ -1,5 +1,5 @@
-let str = '❤️ man 男人';
-
+let str = '❤️ man 攳柣男人';
+// 攳 柣
 function setup() {
   createCanvas(400, 400);
   console.log(str);

@@ -676,6 +676,63 @@
     "id": "J7Zhes2Tc"
   },
   {
+    "_id": "bup1GMVe3",
+    "name": "11.4: Brightness getpixel copy copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "67896c68f3d4c2062457a429",
+          "67896c68f3d4c2062457a42a",
+          "67896c68f3d4c2062457a42b"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "67896c68f3d4c2062457a428",
+        "createdAt": "2023-03-18T17:06:22.284Z",
+        "updatedAt": "2023-03-18T17:06:22.284Z",
+        "id": "67896c68f3d4c2062457a428"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht1493/sketches/XFKWbV01m\n// 11.4: Brightness getpixel copy\n\np5.disableFriendlyErrors = true; // disables FES\n\nlet video;\n\nlet vScale = 16;\n\nfunction setup() {\n  createCanvas(640, 480);\n  pixelDensity(1);\n  video = createCapture(VIDEO);\n  video.size(width / vScale, height / vScale);\n  noStroke();\n  fill(255);\n  rectMode(CENTER);\n\n}\n\nfunction draw() {\n  background(51);\n\n  video.loadPixels();\n  for (var y = 0; y < video.height; y++) {\n    for (var x = 0; x < video.width; x++) {\n      var index = (video.width - x - 1 + y * video.width) * 4;\n      var r = video.pixels[index + 0];\n      var g = video.pixels[index + 1];\n      var b = video.pixels[index + 2];\n      var bright = (r + g + b) / 3;\n\n      // let col = video.get(x, y);\n      // let bright = (col[0] + col[1] + col[2]) / 3;\n      \n      let w = map(bright, 0, 255, 0, vScale);\n\n      rect(x * vScale, y * vScale, w, w);\n    }\n  }\n}\n\n// 2020-10-25 jht: Correct index, moved loadPixels\n// https://github.com/CodingTrain/website/tree/master/Tutorials/P5JS/p5.js_video\n\n// https://thecodingtrain.com/tracks/pixels/pixels/brightness-mirror\n// https://editor.p5js.org/codingtrain/sketches/nFOs57gVh\n// 11.4 Brightness Mirror\n\n\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "67896c68f3d4c2062457a42a",
+        "createdAt": "2023-03-18T17:06:22.284Z",
+        "updatedAt": "2023-03-18T17:06:22.284Z",
+        "id": "67896c68f3d4c2062457a42a"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js\"></script>\n<!--     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js\"></script> -->\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67896c68f3d4c2062457a429",
+        "createdAt": "2023-03-18T17:06:22.284Z",
+        "updatedAt": "2023-03-18T17:06:22.284Z",
+        "id": "67896c68f3d4c2062457a429"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67896c68f3d4c2062457a42b",
+        "createdAt": "2023-03-18T17:06:22.284Z",
+        "updatedAt": "2023-03-18T17:06:22.284Z",
+        "id": "67896c68f3d4c2062457a42b"
+      }
+    ],
+    "createdAt": "2025-01-16T20:30:32.293Z",
+    "updatedAt": "2025-01-16T20:30:32.293Z",
+    "id": "bup1GMVe3"
+  },
+  {
     "_id": "sd8fP5xtL",
     "name": "11.6 Painting with Pixels",
     "files": [
@@ -902,6 +959,168 @@
     "createdAt": "2024-12-04T21:16:13.473Z",
     "updatedAt": "2024-12-04T21:20:35.832Z",
     "id": "ejg95EK-5"
+  },
+  {
+    "_id": "CSZU8Pe9K",
+    "name": "122524b by __y",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6773e445ce2908f855342eae",
+          "6773e445ce2908f855342ead",
+          "6773e445ce2908f855342eaf"
+        ],
+        "fileType": "folder",
+        "_id": "6773e445ce2908f855342eb0",
+        "createdAt": "2024-12-31T19:45:02.048Z",
+        "updatedAt": "2024-12-31T19:45:02.048Z",
+        "id": "6773e445ce2908f855342eb0"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/CSZU8Pe9K\n// 122524b by __y\n\nlet squares = [];\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);\n  // background(15, 42, 42)\n  background(\"#0C5B6E\");\n}\n\nfunction draw() {\n  if (random() < 0.5) {\n    squares.push(new GradientSquare());\n  }\n\n  // Draw all squares\n  squares.forEach((square) => square.show());\n  filter(BLUR, 9);\n  // filter(POSTERIZE, 3);\n  // Optional: Limit the number of squares for performance\n  if (squares.length > 60) {\n    // background(15, 42, 42)\n    background(\"#0C5B6E\");\n    squares = [];\n  }\n}\n\nfunction keyTyped() {\n  if (key === \"s\" || key === \"S\") {\n    saveCanvas(\"myCanvas\", \"png\");\n  }\n  return false;\n}\n\nconst COLORS = [\n  \"#B8B3E9\", //'#FF6B6B', // coral red\n  \"#4ECDC4\", // turquoise\n  \"#45B7D1\", // sky blue\n  \"#96CEB4\", // sage green\n  \"#FFEEAD\", // cream\n  // '#D4A5A5'  // dusty rose\n];\n\nclass GradientSquare {\n  constructor() {\n    this.size = random([30, 30, 60, 60, 90, 120]);\n    // Constrain x and y positions to keep squares fully within canvas\n    this.x = random(this.size, width - this.size * 2);\n    this.y = random(this.size, height - this.size * 2);\n    // this.color1 = color(random(COLORS));\n    // this.color2 = color(random(COLORS));\n    let firstColor = random(COLORS);\n    let secondColor = random(\n      COLORS.filter(\n        (c) =>\n          !(\n            c[0] === firstColor[0] &&\n            c[1] === firstColor[1] &&\n            c[2] === firstColor[2]\n          )\n      )\n    );\n\n    this.color1 = color(firstColor);\n    this.color2 = color(secondColor);\n  }\n\n  show() {\n    // Create gradient\n    for (let i = 0; i < this.size; i++) {\n      let inter = map(i, 0, this.size, 0, 1);\n      let c = lerpColor(this.color1, this.color2, inter);\n      noStroke();\n      fill(c);\n      rect(this.x, this.y + i, this.size, 1);\n    }\n  }\n}\n\n// https://openprocessing.org/sketch/2496507/\n// 122524b by __y\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "6773e445ce2908f855342ead",
+        "createdAt": "2024-12-31T19:45:02.048Z",
+        "updatedAt": "2024-12-31T19:45:02.048Z",
+        "id": "6773e445ce2908f855342ead"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6773e445ce2908f855342eae",
+        "createdAt": "2024-12-31T19:45:02.048Z",
+        "updatedAt": "2024-12-31T19:45:02.048Z",
+        "id": "6773e445ce2908f855342eae"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6773e445ce2908f855342eaf",
+        "createdAt": "2024-12-31T19:45:02.048Z",
+        "updatedAt": "2024-12-31T19:45:02.048Z",
+        "id": "6773e445ce2908f855342eaf"
+      }
+    ],
+    "updatedAt": "2024-12-31T19:45:02.048Z",
+    "createdAt": "2024-12-31T12:34:49.815Z",
+    "id": "CSZU8Pe9K"
+  },
+  {
+    "_id": "xIttySvHu",
+    "name": "122524b by __y v2",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "677468d6bfd5357c39280967",
+          "677468d6bfd5357c39280968",
+          "677468d6bfd5357c39280969"
+        ],
+        "fileType": "folder",
+        "_id": "677468d6bfd5357c39280966",
+        "createdAt": "2024-12-31T22:07:37.484Z",
+        "updatedAt": "2024-12-31T22:07:37.484Z",
+        "id": "677468d6bfd5357c39280966"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/xIttySvHu\n// 122524b by __y v2\n\nlet squares = [];\nlet nsquaresLimit = 120;\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);\n  // background(15, 42, 42)\n  background(\"#0C5B6E\");\n}\n\nfunction draw() {\n  if (random() < 0.5) {\n    squares.push(new GradientSquare());\n  }\n\n  // Draw all squares\n  squares.forEach((square) => square.show());\n  filter(BLUR, 9);\n  // filter(POSTERIZE, 3);\n  // Optional: Limit the number of squares for performance\n  if (squares.length > nsquaresLimit) {\n    // background(15, 42, 42)\n    background(\"#0C5B6E\");\n    squares = [];\n  }\n}\n\nconst COLORS = [\n  \"#B8B3E9\", //'#FF6B6B', // coral red\n  \"#4ECDC4\", // turquoise\n  \"#45B7D1\", // sky blue\n  \"#96CEB4\", // sage green\n  \"#FFEEAD\", // cream\n  // '#D4A5A5'  // dusty rose\n];\n\nclass GradientSquare {\n  constructor() {\n    this.size = random([30, 30, 60, 60, 90, 120]);\n    // Constrain x and y positions to keep squares fully within canvas\n    this.x = random(this.size, width - this.size * 2);\n    this.y = random(this.size, height - this.size * 2);\n    // this.color1 = color(random(COLORS));\n    // this.color2 = color(random(COLORS));\n    // let firstColor = random(COLORS);\n    // let secondColor = random(\n    //   COLORS.filter(\n    //     (c) =>\n    //       !(\n    //         c[0] === firstColor[0] &&\n    //         c[1] === firstColor[1] &&\n    //         c[2] === firstColor[2]\n    //       )\n    //   )\n    // );\n    // this.color1 = color(firstColor);\n    // this.color2 = color(secondColor);\n    let ncolors = shuffle(COLORS);\n    this.color1 = color(ncolors[0]);\n    this.color2 = color(ncolors[1]);\n  }\n\n  show() {\n    // Create gradient\n    for (let i = 0; i < this.size; i++) {\n      let inter = map(i, 0, this.size, 0, 1);\n      let c = lerpColor(this.color1, this.color2, inter);\n      noStroke();\n      fill(c);\n      rect(this.x, this.y + i, this.size, 1);\n    }\n  }\n}\n\nfunction keyTyped() {\n  if (key === \"s\" || key === \"S\") {\n    saveCanvas(\"myCanvas\", \"png\");\n  }\n  return false;\n}\n\n// https://openprocessing.org/sketch/2496507/\n// 122524b by __y\n\n// https://editor.p5js.org/jht9629-nyu/sketches/CSZU8Pe9K\n// 122524b by __y\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "677468d6bfd5357c39280968",
+        "createdAt": "2024-12-31T22:07:37.484Z",
+        "updatedAt": "2024-12-31T22:07:37.484Z",
+        "id": "677468d6bfd5357c39280968"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "677468d6bfd5357c39280967",
+        "createdAt": "2024-12-31T22:07:37.484Z",
+        "updatedAt": "2024-12-31T22:07:37.484Z",
+        "id": "677468d6bfd5357c39280967"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "677468d6bfd5357c39280969",
+        "createdAt": "2024-12-31T22:07:37.484Z",
+        "updatedAt": "2024-12-31T22:07:37.484Z",
+        "id": "677468d6bfd5357c39280969"
+      }
+    ],
+    "createdAt": "2024-12-31T21:57:42.905Z",
+    "updatedAt": "2024-12-31T22:07:37.484Z",
+    "id": "xIttySvHu"
+  },
+  {
+    "_id": "tkkIMsZ9v",
+    "name": "122524b by __y v3",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6788171af147c375d226a4c4",
+          "6788171af147c375d226a4c5",
+          "6788171af147c375d226a4c6"
+        ],
+        "fileType": "folder",
+        "_id": "6788171af147c375d226a4c3",
+        "createdAt": "2025-01-15T23:49:19.300Z",
+        "updatedAt": "2025-01-15T23:49:19.300Z",
+        "id": "6788171af147c375d226a4c3"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/tkkIMsZ9v\n// 122524b by __y v3\n// slower\n\nlet squares = [];\nlet nsquaresLimit = 120;\nlet hold = 1;\nlet slow = 0;\nlet holdNow = 0;\n// squares.length\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);\n  // background(15, 42, 42)\n  background(\"#0C5B6E\");\n  if (slow) {\n    frameRate(1);\n    nsquaresLimit = 10;\n  }\n}\n\nfunction draw() {\n  if (random() < 0.5 && !holdNow) {\n    squares.push(new GradientSquare());\n  }\n\n  // Draw all squares\n  squares.forEach((square) => square.show());\n  filter(BLUR, 9);\n  // filter(POSTERIZE, 3);\n  // Optional: Limit the number of squares for performance\n  if (squares.length > nsquaresLimit) {\n    if (hold) {\n      holdNow = 1;\n    }\n    else {\n      background(\"#0C5B6E\");\n      squares = [];\n    }\n  }\n}\n\nconst COLORS = [\n  \"#B8B3E9\", //'#FF6B6B', // coral red\n  \"#4ECDC4\", // turquoise\n  \"#45B7D1\", // sky blue\n  \"#96CEB4\", // sage green\n  \"#FFEEAD\", // cream\n  // '#D4A5A5'  // dusty rose\n];\n\nclass GradientSquare {\n  constructor() {\n    this.size = random([30, 30, 60, 60, 90, 120]);\n    // Constrain x and y positions to keep squares fully within canvas\n    this.x = random(this.size, width - this.size * 2);\n    this.y = random(this.size, height - this.size * 2);\n    // Pick two random colors\n    let ncolors = shuffle(COLORS);\n    this.color1 = color(ncolors[0]);\n    this.color2 = color(ncolors[1]);\n  }\n\n  show() {\n    // Create gradient\n    for (let i = 0; i < this.size; i++) {\n      let inter = map(i, 0, this.size, 0, 1);\n      let c = lerpColor(this.color1, this.color2, inter);\n      noStroke();\n      fill(c);\n      rect(this.x, this.y + i, this.size, 1);\n    }\n  }\n}\n\nfunction keyTyped() {\n  if (key === \"s\" || key === \"S\") {\n    saveCanvas(\"myCanvas\", \"png\");\n  }\n  return false;\n}\n\n// https://openprocessing.org/sketch/2496507/\n// 122524b by __y\n\n// https://editor.p5js.org/jht9629-nyu/sketches/CSZU8Pe9K\n// 122524b by __y\n\n// https://editor.p5js.org/jht9629-nyu/sketches/xIttySvHu\n// 122524b by __y v2\n\n// this.color1 = color(random(COLORS));\n// this.color2 = color(random(COLORS));\n// let firstColor = random(COLORS);\n// let secondColor = random(\n//   COLORS.filter(\n//     (c) =>\n//       !(\n//         c[0] === firstColor[0] &&\n//         c[1] === firstColor[1] &&\n//         c[2] === firstColor[2]\n//       )\n//   )\n// );\n// this.color1 = color(firstColor);\n// this.color2 = color(secondColor);\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "6788171af147c375d226a4c5",
+        "createdAt": "2025-01-15T23:49:19.300Z",
+        "updatedAt": "2025-01-15T23:49:19.300Z",
+        "id": "6788171af147c375d226a4c5"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6788171af147c375d226a4c4",
+        "createdAt": "2025-01-15T23:49:19.300Z",
+        "updatedAt": "2025-01-15T23:49:19.300Z",
+        "id": "6788171af147c375d226a4c4"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "_id": "6788171af147c375d226a4c6",
+        "createdAt": "2025-01-15T23:49:19.300Z",
+        "updatedAt": "2025-01-15T23:49:19.300Z",
+        "id": "6788171af147c375d226a4c6"
+      }
+    ],
+    "createdAt": "2025-01-15T20:14:18.463Z",
+    "updatedAt": "2025-01-15T23:49:19.300Z",
+    "id": "tkkIMsZ9v"
   },
   {
     "_id": "-imqZQyIkv",
@@ -6847,6 +7066,87 @@
     ],
     "createdAt": "2024-03-07T18:17:37.141Z",
     "id": "23h3z1G82"
+  },
+  {
+    "_id": "gQ28Ql0zM",
+    "name": "Data Storytelling Finals",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6763a5d98709f00bb1b53fda",
+          "6763a5d98709f00bb1b53fdb",
+          "6763a5d98709f00bb1b53fdc",
+          "6763a5d98709f00bb1b53fdd",
+          "6763a5d98709f00bb1b53fde"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "6763a5d98709f00bb1b53fd9",
+        "createdAt": "2024-12-19T04:49:59.742Z",
+        "updatedAt": "2024-12-19T04:49:59.742Z",
+        "id": "6763a5d98709f00bb1b53fd9"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/gQ28Ql0zM\n// https://editor.p5js.org/_o.line/sketches/NRw2trXdp\n// Data Storytelling Finals\n\n// an array of ParticleSystems\nlet emitters = [];\n\nfunction setup() {\n  createCanvas(700, 550);\n  emitters.push(new Emitter(100, 60));\n}\n\nfunction draw() {\n  background(250);\n  for (let i = 0; i < emitters.length; i++) {\n    emitters[i].addParticle();\n    emitters[i].run();\n    console.log(mouseX, mouseY);\n  }\n\n  push();\n  noFill();\n  strokeWeight(1);\n  stroke(10);\n  quad(0, 0, 700, 0, 700, 550, 0, 550);\n  pop();\n\n  textAlign(CENTER);\n  fill(10);\n  textSize(42);\n  textFont(\"Raleway\");\n  text('\"Generative AI is not a', 350, 100);\n  text(\"replacement for human creativity,\", 350, 170);\n  text(\"but rather a tool \", 350, 240);\n  text('that can augment and enhance it\"', 350, 310);\n}\n\nfunction mousePressed() {\n  emitters.push(new Emitter(mouseX, mouseY));\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "6763a5d98709f00bb1b53fdd",
+        "createdAt": "2024-12-19T04:49:59.742Z",
+        "updatedAt": "2024-12-19T04:49:59.742Z",
+        "id": "6763a5d98709f00bb1b53fdd"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html>\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js\"></script>\n    <meta charset=\"utf-8\" />\n    <title>NOC_4_04_SystemofSystems</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />\n  </head>\n  <body>\n    <script src=\"particle.js\"></script>\n    <script src=\"emitter.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6763a5d98709f00bb1b53fdb",
+        "createdAt": "2024-12-19T04:49:59.742Z",
+        "updatedAt": "2024-12-19T04:49:59.742Z",
+        "id": "6763a5d98709f00bb1b53fdb"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6763a5d98709f00bb1b53fde",
+        "createdAt": "2024-12-19T04:49:59.742Z",
+        "updatedAt": "2024-12-19T04:49:59.742Z",
+        "id": "6763a5d98709f00bb1b53fde"
+      },
+      {
+        "name": "emitter.js",
+        "content": "// The Nature of Code\n// Daniel Shiffman\n// http://natureofcode.com\n\nclass Emitter {\n  constructor(x, y) {\n    this.origin = createVector(x, y);\n    this.particles = [];\n  }\n\n  addParticle() {\n    this.particles.push(new Particle(this.origin.x, this.origin.y));\n  }\n\n  run() {\n    // Looping through backwards to delete\n    for (let i = this.particles.length - 1; i >= 0; i--) {\n      this.particles[i].run();\n      if (this.particles[i].isDead()) {\n        // Remove the particle\n        this.particles.splice(i, 1);\n      }\n    }\n\n    // Run every particle\n    // ES6 for..of loop\n    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of\n    // https://www.youtube.com/watch?v=Y8sMnRQYr3c\n    // for (let particle of this.particles) {\n    //   particle.run();\n    // }\n\n    // Filter removes any elements of the array that do not pass the test\n    // I am also using ES6 arrow snytax\n    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions\n    // https://www.youtube.com/watch?v=mrYMzpbFz18\n    // this.particles = this.particles.filter(particle => !particle.isDead());\n\n    // Without ES6 arrow code would look like:\n    // this.particles = this.particles.filter(function(particle) {\n    //   return !particle.isDead();\n    // });\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6763a5d98709f00bb1b53fda",
+        "createdAt": "2024-12-19T04:49:59.742Z",
+        "updatedAt": "2024-12-19T04:49:59.742Z",
+        "id": "6763a5d98709f00bb1b53fda"
+      },
+      {
+        "name": "particle.js",
+        "content": "// The Nature of Code\n// Daniel Shiffman\n// http://natureofcode.com\n\n// Simple Particle System\n\n// A simple Particle class\n\nclass Particle {\n  constructor(x, y) {\n    //this.position = createVector((width/2)-40, 0);\n    this.position = createVector(158, 168);\n    this.acceleration = createVector(0, 0);\n    this.velocity = createVector(random(-1, 1), random(-1, 0));\n    this.lifespan = 255.0;\n  }\n\n  run() {\n    let gravity = createVector(0, 0);\n    this.applyForce(gravity);\n    this.update();\n    this.show();\n  }\n\n  applyForce(force) {\n    this.acceleration.add(force);\n  }\n\n  // Method to update position\n  update() {\n    this.velocity.add(this.acceleration);\n    \n    let timeVelocity = this.velocity.copy();\n    let t = map(mouseX,0,width,0,1);\n    timeVelocity.mult(t*10);\n    \n    this.position.add(timeVelocity);\n    \n    //console.log(mouseX);\n    if (mouseX >15){\n      this.lifespan -= 1;\n    }\n    if (mouseX <15){\n      this.lifespan -= 0.35;\n    }\n    \n    this.acceleration.mult(0);\n  }\n\n  // Method to display\n  show() {\n    //stroke(0, this.lifespan);\n    //strokeWeight(2);\n    noStroke();\n    fill(10, this.lifespan);\n    square(this.position.x, (this.position.y), 5);\n    //ellipse((this.position.x)+50, (this.position.y)-15, 1, 6);\n    //ellipse((this.position.x)-50, (this.position.y)-25, 1, 6);\n    //ellipse((this.position.x)+100, (this.position.y)-20, 1, 6);\n    //ellipse((this.position.x)-100, (this.position.y)-30, 1, 6);\n    //ellipse((this.position.x)+150, (this.position.y)-30, 1, 6);\n  }\n\n  // Is the particle still useful?\n  isDead() {\n    return this.lifespan < 0.0;\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6763a5d98709f00bb1b53fdc",
+        "createdAt": "2024-12-19T04:49:59.742Z",
+        "updatedAt": "2024-12-19T04:49:59.742Z",
+        "id": "6763a5d98709f00bb1b53fdc"
+      }
+    ],
+    "createdAt": "2024-12-19T04:49:29.463Z",
+    "updatedAt": "2024-12-19T04:49:59.742Z",
+    "id": "gQ28Ql0zM"
   },
   {
     "_id": "0omTMvKnK",
@@ -14533,6 +14833,128 @@
     "id": "rpyY0uqRR"
   },
   {
+    "_id": "vSZ72ZQ0Y",
+    "name": "ICM Final",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6761fb18e844cffd3641c9fc",
+          "6761fb18e844cffd3641c9fd",
+          "6761fb18e844cffd3641c9fe",
+          "6761fb18e844cffd3641c9ff",
+          "6761fb18e844cffd3641ca00",
+          "6761fb18e844cffd3641ca01",
+          "6761fb18e844cffd3641ca02",
+          "6761fb18e844cffd3641ca03"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "6761fb18e844cffd3641c9fb",
+        "createdAt": "2024-12-17T22:29:19.962Z",
+        "updatedAt": "2024-12-17T22:29:19.962Z",
+        "id": "6761fb18e844cffd3641c9fb"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/vSZ72ZQ0Y\n// https://editor.p5js.org/bm2699/sketches/FIeiCFGTb\n// ICM Final - Beatrice Mai\n\nlet posterImage;\nlet wbeechImage, redbudImage, survivorImage;\nlet currentHover = null;\nlet hoverEffects = {};  // Store animation states for each zone\n\n// Define hover zones with specific coordinates and content\nconst hoverZones = [\n    {\n        id: 'top',\n        x: 400,\n        y: 400,\n        radius: 30,\n        title: \"What is a Great Tree?\",\n        content: \"NYC Parks judges Great Trees based on Historic Significance, Ecological Significance, or Cultural Significance to determine if a nominated tree can join the initiative.\"\n    },\n    {\n        id: 'leafy',\n        x: 400,\n        y: 620,\n        radius: 40,\n        title: \"Botanical Significance\",\n        content: \"Great Trees may be rare species or varieties, remnants of historic or native ecosystems, trees with profound form or structure, or unique in other aesthetic or scientific ways.\",\n        image: 'weepingbeech.jpg',\n        story: \"The Weeping Beech, landmarked for its significance, thrived in this park from 1847 to 1998, living 151 years. Originating from a nobleman's estate in Beersal, Belgium, it was brought to New York by horticulturist Samuel Bowne Parsons (1819–1907), who planted it at his renowned nursery. The tree matured to 60 feet tall with an 80-foot-wide 'leaf curtain.' Its branches re-rooted to form a ring of offspring, earning it a legendary status as the progenitor of America's Weeping Beeches (Fagus sylvatica).\"\n    },\n    {\n        id: 'trunk',\n        x: 400,\n        y: 800,\n        radius: 35,\n        title: \"Cultural Significance\",\n        content: \"Some trees may have a strong association with a belief, person, place, or event of cultural importance to a community, reflect cultural expressions, or appear in works of art.\",\n        image: 'redbud.jpg',\n        story: \"This eastern redbud near the playground at Msgr. McGolrick Park has a striking umbrella-like shape with low, flexible branches that often attract climbing children. Bursting with pink buds in spring and showcasing its unique structure in autumn, it's a living tribute to nature's whimsy. Positioned along a main path, it regularly captivates pedestrians. Legend has it the tree came to the park through a gardener's arrangement with Prospect Park to adopt their surplus trees—an underdog tale in full bloom.\"\n    },\n    {\n        id: 'roots',\n        x: 400,\n        y: 1000,\n        radius: 35,\n        title: \"Historic Significance\",\n        content: \"Trees bear witness to many important historical moments across our city reflecting the diversity and lived experiences of New Yorkers.\",\n        image: 'survivortree.jpeg',\n        story: \"In October 2001, a callery pear tree was discovered in the rubble of the World Trade Center, damaged but alive. Transported to the Arthur Ross Nursery, it was nurtured by NYC Parks staff, growing from eight to over 30 feet tall. Renamed the 'Survivor Tree,' it was replanted at the Memorial Plaza on December 22, 2010, as a lasting symbol of resilience.\"\n    }\n];\n\nfunction preload() {\n    posterImage = loadImage('icmposter.jpg');\n    wbeechImage = loadImage('weepingbeech.jpg');\n    redbudImage = loadImage('redbud.jpg');\n    survivorImage = loadImage('survivortree.jpeg');\n}\n\nfunction setupHoverEffects() {\n    hoverZones.forEach(zone => {\n        hoverEffects[zone.id] = {\n            pulseSize: zone.radius,\n            ripples: [],\n            lastRippleTime: 0\n        };\n    });\n}\n\nfunction setup() {\n    createCanvas(800, 1400);\n    textAlign(LEFT, TOP);\n    setupHoverEffects();\n}\n\nfunction drawHoverEffect(zone) {\n    let effect = hoverEffects[zone.id];\n    \n    // Pulsing animation calculation\n    let pulseSpeed = 0.05;\n    let pulseRange = 5;\n    effect.pulseSize = zone.radius + sin(frameCount * pulseSpeed) * pulseRange;\n    \n    push();\n    blendMode(SCREEN);  // This helps create the glowing effect\n    \n    // Draw multiple layers of circles with decreasing opacity for glow effect\n    for (let i = 0; i < 8; i++) {\n        let size = effect.pulseSize * (1 + i * 0.2);\n        let alpha = map(i, 0, 7, 100, 0);\n        noFill();\n        stroke(188, 140, 140, alpha);\n        strokeWeight(1);\n        circle(zone.x, zone.y, size * 2);\n    }\n    \n    // Inner glow\n    for (let i = 0; i < 5; i++) {\n        let size = effect.pulseSize * (1 - i * 0.1);\n        let alpha = map(i, 0, 4, 80, 0);\n        fill(188, 140, 140, alpha);\n        noStroke();\n        circle(zone.x, zone.y, size * 2);\n    }\n    \n    // Ripple effect with glow\n    effect.ripples = effect.ripples.filter(ripple => {\n        ripple.size += 1;\n        ripple.alpha -= 1.5;\n        \n        if (ripple.alpha > 0) {\n            // Draw multiple layers for each ripple\n            for (let i = 0; i < 3; i++) {\n                let rippleAlpha = ripple.alpha * map(i, 0, 2, 1, 0.3);\n                stroke(188, 140, 140, rippleAlpha);\n                strokeWeight(1.5 - i * 0.5);\n                circle(zone.x, zone.y, (ripple.size + i * 5) * 2);\n            }\n            return true;\n        }\n        return false;\n    });\n    \n    // Create new ripples less frequently\n    if (millis() - effect.lastRippleTime > 2000) {\n        effect.ripples.push({\n            size: zone.radius,\n            alpha: 60\n        });\n        effect.lastRippleTime = millis();\n    }\n    \n    // Add subtle rotating particles with glow\n    let numParticles = 12;\n    for (let i = 0; i < numParticles; i++) {\n        let angle = frameCount * 0.02 + (TWO_PI * i) / numParticles;\n        let x = zone.x + cos(angle) * effect.pulseSize;\n        let y = zone.y + sin(angle) * effect.pulseSize;\n        \n        // Draw glowing particles\n        for (let j = 0; j < 3; j++) {\n            let particleSize = 3 - j;\n            let particleAlpha = map(j, 0, 2, 150, 30);\n            fill(188, 140, 140, particleAlpha);\n            noStroke();\n            circle(x, y, particleSize * 2);\n        }\n    }\n    \n    // Central glow\n    let centerGlow = 40 + sin(frameCount * 0.08) * 20;\n    fill(188, 140, 140, centerGlow);\n    noStroke();\n    circle(zone.x, zone.y, effect.pulseSize);\n    \n    pop();\n}\nfunction drawInfoPanel(zone) {\n    const panelWidth = 300;\n    const padding = 20;\n    const imageHeight = 180;\n    \n    // Better height calculations for text\n    let titleHeight = 30;\n    let contentHeight = ceil(textWidth(zone.content) / (panelWidth - padding * 2)) * 20;\n    let storyHeight = zone.story ? ceil(textWidth(zone.story) / (panelWidth - padding * 2)) * 16 : 0;\n    \n    // Calculate total panel height\n    let panelHeight = padding * 2 + titleHeight + contentHeight;\n    if (zone.image) {\n        panelHeight += imageHeight + padding + storyHeight + padding;\n    }\n    \n    // Position panel\n    let startX = mouseX + 20;\n    let startY = mouseY + 20;\n    \n    // Adjust panel position if it would go off screen\n    if (startX + panelWidth > width) {\n        startX = mouseX - panelWidth - 20;\n    }\n    if (startY + panelHeight > height) {\n        startY = mouseY - panelHeight - 20;\n    }\n    \n    // Draw panel background with guaranteed margins\n    fill(255, 250, 245, 240);\n    stroke(188, 140, 140);\n    strokeWeight(1);\n    rect(startX, startY, panelWidth, panelHeight, 10);\n    \n    // Draw title\n    noStroke();\n    fill(60, 60, 60);\n    textSize(16);\n    textStyle(BOLD);\n    text(zone.title, startX + padding, startY + padding);\n    textStyle(NORMAL);\n    \n    // Draw main content\n    textSize(13);\n    let currentY = startY + padding + titleHeight;\n    text(zone.content, startX + padding, currentY, panelWidth - padding * 2);\n    currentY += contentHeight + padding;\n    \n    // Draw image and story if available\n    if (zone.image) {\n        let img;\n        switch(zone.id) {\n            case 'leafy':\n                img = wbeechImage;\n                break;\n            case 'trunk':\n                img = redbudImage;\n                break;\n            case 'roots':\n                img = survivorImage;\n                break;\n        }\n        \n        if (img) {\n            // Calculate image dimensions\n            let imgWidth = panelWidth - padding * 2;\n            let imgHeight = (img.height * imgWidth) / img.width;\n            if (imgHeight > imageHeight) {\n                imgHeight = imageHeight;\n                imgWidth = (img.width * imgHeight) / img.height;\n            }\n            \n            // Center the image\n            let imgX = startX + padding + (panelWidth - padding * 2 - imgWidth) / 2;\n            \n            // Draw image with proper spacing\n            image(img, imgX, currentY, imgWidth, imgHeight);\n            currentY += imgHeight + padding;\n            \n            // Draw story text\n            textSize(11);\n            text(zone.story, startX + padding, currentY, panelWidth - padding * 2);\n        }\n    }\n}\n\nfunction draw() {\n    image(posterImage, 0, 0, width, height);\n    \n    // Check hover zones\n    currentHover = null;\n    for (let zone of hoverZones) {\n        let d = dist(mouseX, mouseY, zone.x, zone.y);\n        if (d < zone.radius) {\n            currentHover = zone;\n            drawHoverEffect(zone);\n            break;\n        }\n    }\n    \n    // Display information panel if hovering\n    if (currentHover) {\n        drawInfoPanel(currentHover);\n    }\n}\n\n// Helper function for positioning\nfunction mousePressed() {\n    console.log(`Clicked at: x: ${mouseX}, y: ${mouseY}`);\n}",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "6761fb18e844cffd3641ca00",
+        "createdAt": "2024-12-17T22:29:19.962Z",
+        "updatedAt": "2024-12-17T22:29:19.962Z",
+        "id": "6761fb18e844cffd3641ca00"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6761fb18e844cffd3641c9fd",
+        "createdAt": "2024-12-17T22:29:19.962Z",
+        "updatedAt": "2024-12-17T22:29:19.962Z",
+        "id": "6761fb18e844cffd3641c9fd"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6761fb18e844cffd3641ca01",
+        "createdAt": "2024-12-17T22:29:19.962Z",
+        "updatedAt": "2024-12-17T22:29:19.962Z",
+        "id": "6761fb18e844cffd3641ca01"
+      },
+      {
+        "name": "poster3small.jpg",
+        "content": "",
+        "url": "https://assets.editor.p5js.org/60261b883e600f00240bd343/ba6d7448-c383-40f1-b27c-3cb960a911e8.jpg",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6761fb18e844cffd3641c9fe",
+        "createdAt": "2024-12-17T22:29:19.962Z",
+        "updatedAt": "2024-12-17T22:29:19.962Z",
+        "id": "6761fb18e844cffd3641c9fe"
+      },
+      {
+        "name": "icmposter.jpg",
+        "content": "",
+        "url": "https://assets.editor.p5js.org/60261b883e600f00240bd343/ef4cfae4-0cc4-425d-98a8-3340b672241c.jpg",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6761fb18e844cffd3641c9fc",
+        "createdAt": "2024-12-17T22:29:19.962Z",
+        "updatedAt": "2024-12-17T22:29:19.962Z",
+        "id": "6761fb18e844cffd3641c9fc"
+      },
+      {
+        "name": "weepingbeech.jpg",
+        "content": "",
+        "url": "https://assets.editor.p5js.org/60261b883e600f00240bd343/988fd5ac-3437-495d-922c-52b8c8ac78b8.jpg",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6761fb18e844cffd3641ca03",
+        "createdAt": "2024-12-17T22:29:19.962Z",
+        "updatedAt": "2024-12-17T22:29:19.962Z",
+        "id": "6761fb18e844cffd3641ca03"
+      },
+      {
+        "name": "survivortree.jpeg",
+        "content": "",
+        "url": "https://assets.editor.p5js.org/60261b883e600f00240bd343/c260be6e-e416-46fe-b41c-12a2f12bbd10.jpeg",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6761fb18e844cffd3641ca02",
+        "createdAt": "2024-12-17T22:29:19.962Z",
+        "updatedAt": "2024-12-17T22:29:19.962Z",
+        "id": "6761fb18e844cffd3641ca02"
+      },
+      {
+        "name": "redbud.jpg",
+        "content": "",
+        "url": "https://assets.editor.p5js.org/60261b883e600f00240bd343/8f96a966-0266-4d87-90e9-c1c1a55563cd.jpg",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6761fb18e844cffd3641c9ff",
+        "createdAt": "2024-12-17T22:29:19.962Z",
+        "updatedAt": "2024-12-17T22:29:19.962Z",
+        "id": "6761fb18e844cffd3641c9ff"
+      }
+    ],
+    "createdAt": "2024-12-17T22:28:41.298Z",
+    "updatedAt": "2024-12-17T22:29:19.962Z",
+    "id": "vSZ72ZQ0Y"
+  },
+  {
     "_id": "6L3aL1OEy",
     "name": "ICM jht student selector textarea",
     "files": [
@@ -16488,63 +16910,6 @@
     "id": "G4K2yaPnz"
   },
   {
-    "_id": "Mpgun-Kti",
-    "name": "ims black-n white-1 bounce",
-    "files": [
-      {
-        "name": "root",
-        "content": "",
-        "children": [
-          "65b918eee0359f28373cec36",
-          "65b918eee0359f28373cec37",
-          "65b918eee0359f28373cec38"
-        ],
-        "fileType": "folder",
-        "_id": "65b918eee0359f28373cec35",
-        "createdAt": "2024-03-26T19:06:00.622Z",
-        "updatedAt": "2024-03-26T19:06:00.622Z",
-        "isSelectedFile": false,
-        "id": "65b918eee0359f28373cec35"
-      },
-      {
-        "name": "sketch.js",
-        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti\n// ims black-n white-1 bounce \n\nlet my = {};\n\nfunction setup() {\n  my.width = 400;\n  my.height = 400;\n  my.xpos = 0;\n  my.ypos = 0;\n  my.xspeed = 1;\n  my.yspeed = 1;\n  // my.xlen = 0;\n  // my.ylen = 0;\n  my.debug = 1;\n  // my.fullScreenBtn = 0;\n  my.startTime = 0;\n  my.changeTime = 1.0;\n\n  if (!my.debug) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  createCanvas(my.width, my.height);\n  noStroke();\n\n  my.fullScreenBtn = createButton(\"Full Screen\");\n  my.fullScreenBtn.mousePressed(full_screen_action);\n  my.fullScreenBtn.style(\"font-size:42px\");\n\n  my.startTime = millis() / 1000.0;\n\n  new_pos();\n\n  // init_dim();\n}\n\nfunction draw() {\n  background(0);\n  // strokeWeight(0);\n  // fill(\"black\");\n  // rect(0, 0, width, height);\n  check_time();\n  \n  strokeWeight(1);\n  stroke(255);\n\n  line(0, my.ypos, width, my.ypos);\n\n  line(my.xpos, 0, my.xpos, height);\n\n  my.ypos += my.yspeed;\n  if (my.ypos > height || my.ypos < 0) {\n    my.yspeed *= -1;\n  }\n  my.xpos += my.xspeed;\n  if (my.xpos > width || my.xpos < 0) {\n    my.xspeed *= -1;\n  }\n}\n\nfunction new_pos() {\n  my.xpos = random(0, width);\n  my.ypos = random(0, height);\n}\n\nfunction check_time() {\n  let now = millis() / 1000;\n  if (now - my.startTime > my.changeTime) {\n    my.startTime = now;\n    new_pos();\n  }\n}\n\n// function init_dim() {\n//   xlen = width / 3;\n//   ylen = height;\n// }\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  my.fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  // init_dim();\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P\n// ims black-n white-1\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65b918eee0359f28373cec37",
-        "isSelectedFile": true,
-        "createdAt": "2024-03-26T19:06:00.622Z",
-        "updatedAt": "2024-03-26T19:06:00.622Z",
-        "id": "65b918eee0359f28373cec37"
-      },
-      {
-        "name": "index.html",
-        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65b918eee0359f28373cec36",
-        "createdAt": "2024-03-26T19:06:00.622Z",
-        "updatedAt": "2024-03-26T19:06:00.622Z",
-        "isSelectedFile": false,
-        "id": "65b918eee0359f28373cec36"
-      },
-      {
-        "name": "style.css",
-        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
-        "children": [],
-        "fileType": "file",
-        "_id": "65b918eee0359f28373cec38",
-        "createdAt": "2024-03-26T19:06:00.622Z",
-        "updatedAt": "2024-03-26T19:06:00.622Z",
-        "isSelectedFile": false,
-        "id": "65b918eee0359f28373cec38"
-      }
-    ],
-    "createdAt": "2024-01-30T15:42:38.685Z",
-    "updatedAt": "2024-03-26T19:06:00.622Z",
-    "id": "Mpgun-Kti"
-  },
-  {
     "_id": "8Iazn1D_P",
     "name": "ims black-n white-1 jump",
     "files": [
@@ -16600,6 +16965,234 @@
     "createdAt": "2024-01-25T21:35:34.720Z",
     "updatedAt": "2024-01-30T15:42:32.105Z",
     "id": "8Iazn1D_P"
+  },
+  {
+    "_id": "Gt66WH-3V",
+    "name": "ims noise class copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "67b67d919cefeaf2ae557c5d",
+          "67b67d919cefeaf2ae557c5e",
+          "67b67d919cefeaf2ae557c5f"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "67b67d919cefeaf2ae557c5c",
+        "createdAt": "2025-02-20T00:56:35.373Z",
+        "updatedAt": "2025-02-20T00:56:35.373Z",
+        "id": "67b67d919cefeaf2ae557c5c"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/p5name/sketches/TU9CrJ1di\n// ims noise class\n\nlet my = {};\n\nlet alphaRed = [255, 0, 0, 80];\nlet alphaGreen = [0, 255, 0, 80];\nlet alphaGold = [255, 214, 0, 80];\nlet colors = [alphaRed, alphaGreen, alphaGold];\nlet colorIndex = 0;\nlet colorCount = 0;\nlet colorCountMax = 360;\n\nfunction setup() {\n  my.backAlpha = 10;\n  my.clearSecs = 60;\n  my.canv = createCanvas(windowWidth, windowHeight - 55);\n  my.ln1 = new LineNoise();\n  // my.ln2 = new LineNoise({ start: 10000, rot: 45, color: alphaRed });\n  // my.ln3 = new LineNoise({ start: 30000, rot: 90, color: alphaGreen });\n  // my.ln4 = new LineNoise({ start: 40000, rot: 180, color: alphaGold });\n\n  setup_fullScreenBtn();\n}\n\nfunction draw() {\n  let backAlpha = my.backAlpha;\n  let nframes = floor(frameRate() * my.clearSecs);\n  if (frameCount % nframes == 0) {\n    // backAlpha = 255;\n  }\n  background(0, backAlpha);\n  noFill();\n\n  set_color();\n\n  my.ln1.draw();\n  if (my.ln2) my.ln2.draw();\n  if (my.ln3) my.ln3.draw();\n  if (my.ln3) my.ln4.draw();\n}\n\nfunction set_color() {\n  let col = colors[colorIndex];\n  stroke(col);\n  colorCount = (colorCount + 1) % colorCountMax;\n  if (colorCount == 0) {\n    colorIndex = (colorIndex + 1) % colors.length;\n  }\n}\n\n// { inc, start, rot, rotDelta, incAccel }\nclass LineNoise {\n  constructor(props) {\n    // default properties\n    this.inc = 0.001;\n    // this. inc = 0.02;\n    this.start = 0;\n    this.rot = 0;\n    // this. rotDelta = 0.0;\n    this.rotDelta = 0.2;\n    this.incAccel = 6;\n    // this. incAccel = 2;\n    // this.color = 255;\n    Object.assign(this, props);\n    console.log('LineNoise start', this.start, this.color);\n  }\n\n  draw() {\n    push();\n\n    translate(width / 2, height / 2);\n    rotate(radians(this.rot));\n    this.rot = this.rot + this.rotDelta;\n    if (this.color) {\n      stroke(this.color);\n    }\n    beginShape();\n    let xoff = this.start;\n    for (let x = -width; x < width; x++) {\n      // let y = random(height);\n      let y = (noise(xoff) - 0.5) * height;\n      vertex(x, y);\n\n      xoff += this.inc;\n    }\n    endShape();\n\n    this.start += this.inc * this.incAccel;\n\n    pop();\n  }\n}\n\nfunction windowResized() {\n  resizeCanvas(windowWidth, windowHeight);\n}\n\nfunction setup_fullScreenBtn() {\n  my.fullScreenBtn = createButton('Full Screen');\n  my.fullScreenBtn.mousePressed(full_screen_action);\n  my.fullScreenBtn.style('font-size:42px');\n}\n\nfunction full_screen_action() {\n  my.fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  // init_dim();\n}\n\n// Graphing 1D Perlin Noise (1D Noise Graph)\n// The Coding Train / Daniel Shiffman\n// https://thecodingtrain.com/learning/noise/0.4-graphing-1d.html\n// https://youtu.be/y7sgcFhk6ZM\n\n// Adding Y-Axis: https://editor.p5js.org/codingtrain/sketches/nCYG2SCNq\n// Noise Graph: https://editor.p5js.org/codingtrain/sketches/EZeHXBhei\n// Noisy Sin: https://editor.p5js.org/codingtrain/sketches/M_kuAXwV2\n\n// This example has been updated to use es6 syntax. To learn more about es6 visit: https://thecodingtrain.com/Tutorials/16-javascript-es6\n\n// p5.js/1.11.1\n\n// https://editor.p5js.org/p5name/sketches/ZO-2p0H5_\n// ims noise rotate\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "67b67d919cefeaf2ae557c5e",
+        "createdAt": "2025-02-20T00:56:35.373Z",
+        "updatedAt": "2025-02-20T00:56:35.373Z",
+        "id": "67b67d919cefeaf2ae557c5e"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67b67d919cefeaf2ae557c5d",
+        "createdAt": "2025-02-20T00:56:35.373Z",
+        "updatedAt": "2025-02-20T00:56:35.373Z",
+        "id": "67b67d919cefeaf2ae557c5d"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67b67d919cefeaf2ae557c5f",
+        "createdAt": "2025-02-20T00:56:35.373Z",
+        "updatedAt": "2025-02-20T00:56:35.373Z",
+        "id": "67b67d919cefeaf2ae557c5f"
+      }
+    ],
+    "createdAt": "2025-02-20T00:55:45.401Z",
+    "updatedAt": "2025-02-20T00:56:35.373Z",
+    "id": "Gt66WH-3V"
+  },
+  {
+    "_id": "Zhkj6TLgv",
+    "name": "ims noise inst copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "678e9a30cc1891361f1d783e",
+          "678e9a30cc1891361f1d783f",
+          "678e9a30cc1891361f1d7840"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "678e9a30cc1891361f1d783d",
+        "createdAt": "2025-01-19T19:43:37.000Z",
+        "updatedAt": "2025-01-19T19:43:37.000Z",
+        "id": "678e9a30cc1891361f1d783d"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/p5name/sketches/TU9CrJ1di\n// ims noise inst\n\nlet my = {};\n\nlet alphaRed = [255, 0, 0, 80];\nlet alphaGreen = [0, 255, 0, 80];\nlet alphaGold = [255, 214, 0, 80];\nlet colors = [alphaRed, alphaGreen, alphaGold];\nlet colorIndex = 0;\nlet colorCount = 0;\nlet colorCountMax = 360;\n\nfunction setup() {\n  my.backAlpha = 10;\n  my.clearSecs = 60;\n  my.canv = createCanvas(windowWidth, windowHeight - 55);\n  my.ln1 = new LineNoise();\n  // my.ln2 = new LineNoise({ start: 10000, rot: 45, color: alphaRed });\n  // my.ln3 = new LineNoise({ start: 30000, rot: 90, color: alphaGreen });\n  // my.ln4 = new LineNoise({ start: 40000, rot: 180, color: alphaGold });\n\n  setup_fullScreenBtn();\n}\n\nfunction draw() {\n  let backAlpha = my.backAlpha;\n  let nframes = floor(frameRate() * my.clearSecs);\n  if (frameCount % nframes == 0) {\n    backAlpha = 255;\n  }\n  background(0, backAlpha);\n  noFill();\n\n  set_color();\n\n  my.ln1.draw();\n  // my.ln2.draw();\n  // my.ln3.draw();\n  // my.ln4.draw();\n}\n\nfunction set_color() {\n  let col = colors[colorIndex];\n  stroke(col);\n  colorCount = (colorCount + 1) % colorCountMax;\n  if (colorCount == 0) {\n    colorIndex = (colorIndex + 1) % colors.length;\n  }\n}\n\n// { inc, start, rot, rotDelta, incAccel }\nclass LineNoise {\n  constructor(props) {\n    // default properties\n    this.inc = 0.001;\n    // this. inc = 0.02;\n    this.start = 0;\n    this.rot = 0;\n    // this. rotDelta = 0.0;\n    this.rotDelta = 0.2;\n    this.incAccel = 6;\n    // this. incAccel = 2;\n    // this.color = 255;\n    Object.assign(this, props);\n    console.log('LineNoise start', this.start, this.color);\n  }\n\n  draw() {\n    push();\n\n    translate(width / 2, height / 2);\n    rotate(radians(this.rot));\n    this.rot = this.rot + this.rotDelta;\n    if (this.color) {\n      stroke(this.color);\n    }\n    beginShape();\n    let xoff = this.start;\n    for (let x = -width; x < width; x++) {\n      // let y = random(height);\n      let y = (noise(xoff) - 0.5) * height;\n      vertex(x, y);\n\n      xoff += this.inc;\n    }\n    endShape();\n\n    this.start += this.inc * this.incAccel;\n\n    pop();\n  }\n}\n\nfunction windowResized() {\n  resizeCanvas(windowWidth, windowHeight);\n}\n\nfunction setup_fullScreenBtn() {\n  my.fullScreenBtn = createButton('Full Screen');\n  my.fullScreenBtn.mousePressed(full_screen_action);\n  my.fullScreenBtn.style('font-size:42px');\n}\n\nfunction full_screen_action() {\n  my.fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  // init_dim();\n}\n\n// Graphing 1D Perlin Noise (1D Noise Graph)\n// The Coding Train / Daniel Shiffman\n// https://thecodingtrain.com/learning/noise/0.4-graphing-1d.html\n// https://youtu.be/y7sgcFhk6ZM\n\n// Adding Y-Axis: https://editor.p5js.org/codingtrain/sketches/nCYG2SCNq\n// Noise Graph: https://editor.p5js.org/codingtrain/sketches/EZeHXBhei\n// Noisy Sin: https://editor.p5js.org/codingtrain/sketches/M_kuAXwV2\n\n// This example has been updated to use es6 syntax. To learn more about es6 visit: https://thecodingtrain.com/Tutorials/16-javascript-es6\n\n// p5.js/1.11.1\n\n// https://editor.p5js.org/p5name/sketches/ZO-2p0H5_\n// ims noise rotate\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "678e9a30cc1891361f1d783f",
+        "createdAt": "2025-01-19T19:43:37.000Z",
+        "updatedAt": "2025-01-19T19:43:37.000Z",
+        "id": "678e9a30cc1891361f1d783f"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "678e9a30cc1891361f1d783e",
+        "createdAt": "2025-01-19T19:43:37.000Z",
+        "updatedAt": "2025-01-19T19:43:37.000Z",
+        "id": "678e9a30cc1891361f1d783e"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "678e9a30cc1891361f1d7840",
+        "createdAt": "2025-01-19T19:43:37.000Z",
+        "updatedAt": "2025-01-19T19:43:37.000Z",
+        "id": "678e9a30cc1891361f1d7840"
+      }
+    ],
+    "createdAt": "2025-01-20T18:47:12.649Z",
+    "updatedAt": "2025-01-20T18:47:12.649Z",
+    "id": "Zhkj6TLgv"
+  },
+  {
+    "_id": "Mpgun-Kti",
+    "name": "ims-01 bounce fullscreen",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "65b918eee0359f28373cec36",
+          "65b918eee0359f28373cec37",
+          "65b918eee0359f28373cec38"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "65b918eee0359f28373cec35",
+        "createdAt": "2025-02-13T15:46:49.038Z",
+        "updatedAt": "2025-02-13T15:46:49.038Z",
+        "id": "65b918eee0359f28373cec35"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti\n// ims-01 bounce fullscreen\n//\n// white cross bounces around \n// my.changeTime seconds to switches to random location \n// button to go fullscreen\n\nlet my = {};\n\nfunction setup() {\n  my.width = 400;\n  my.height = 400;\n  my.changeTime = 5.0;\n  my.debug = 1;\n\n  my.xpos = 0;\n  my.ypos = 0;\n  my.xspeed = 1;\n  my.yspeed = 1;\n  my.startTime = 0;\n\n  if (!my.debug) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  createCanvas(my.width, my.height);\n  noStroke();\n\n  my.fullScreenBtn = createButton(\"Full Screen\");\n  my.fullScreenBtn.mousePressed(full_screen_action);\n  my.fullScreenBtn.style(\"font-size:42px\");\n\n  my.startTime = millis() / 1000.0;\n\n  new_pos();\n}\n\nfunction draw() {\n  background(0);\n\n  check_time();\n  \n  strokeWeight(1);\n  stroke(255);\n\n  line(0, my.ypos, width, my.ypos);\n\n  line(my.xpos, 0, my.xpos, height);\n\n  my.ypos += my.yspeed;\n  if (my.ypos > height || my.ypos < 0) {\n    my.yspeed *= -1;\n  }\n  my.xpos += my.xspeed;\n  if (my.xpos > width || my.xpos < 0) {\n    my.xspeed *= -1;\n  }\n}\n\nfunction new_pos() {\n  my.xpos = random(0, width);\n  my.ypos = random(0, height);\n}\n\nfunction check_time() {\n  let now = millis() / 1000;\n  if (now - my.startTime > my.changeTime) {\n    my.startTime = now;\n    new_pos();\n  }\n}\n\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  my.fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  // init_dim();\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P\n// ims black-n white-1\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "65b918eee0359f28373cec37",
+        "createdAt": "2025-02-13T15:46:49.038Z",
+        "updatedAt": "2025-02-13T15:46:49.038Z",
+        "id": "65b918eee0359f28373cec37"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "65b918eee0359f28373cec36",
+        "createdAt": "2025-02-13T15:46:49.038Z",
+        "updatedAt": "2025-02-13T15:46:49.038Z",
+        "id": "65b918eee0359f28373cec36"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "65b918eee0359f28373cec38",
+        "createdAt": "2025-02-13T15:46:49.038Z",
+        "updatedAt": "2025-02-13T15:46:49.038Z",
+        "id": "65b918eee0359f28373cec38"
+      }
+    ],
+    "createdAt": "2024-01-30T15:42:38.685Z",
+    "updatedAt": "2025-02-13T15:46:49.038Z",
+    "id": "Mpgun-Kti"
+  },
+  {
+    "_id": "zFKAqeENv",
+    "name": "ims-01 bounce fullscreen deltaTime",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "67ae1f7deac1e26f89a2142c",
+          "67ae1f7deac1e26f89a2142d",
+          "67ae1f7deac1e26f89a2142e"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "67ae1f7deac1e26f89a2142b",
+        "createdAt": "2025-02-13T16:38:45.085Z",
+        "updatedAt": "2025-02-13T16:38:45.085Z",
+        "id": "67ae1f7deac1e26f89a2142b"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/zFKAqeENv\n// ims-01 bounce fullscreen deltaTime\n//\n// white cross bounces around \n// my.changeTime seconds to switches to random location \n// button to go fullscreen\n\nlet my = {};\n\nfunction setup() {\n  my.width = 400;\n  my.height = 400;\n  my.changeTime = 5.0;\n  my.debug = 1;\n\n  my.xpos = 0;\n  my.ypos = 0;\n  my.xspeed = 1;\n  my.yspeed = 1;\n  my.lapseTime = 0;\n\n  if (!my.debug) {\n    my.width = windowWidth;\n    my.height = windowHeight;\n  }\n  createCanvas(my.width, my.height);\n  noStroke();\n\n  my.fullScreenBtn = createButton(\"Full Screen\");\n  my.fullScreenBtn.mousePressed(full_screen_action);\n  my.fullScreenBtn.style(\"font-size:42px\");\n\n  my.lapseTime = 0.0;\n\n  new_pos();\n}\n\nfunction draw() {\n  background(0);\n\n  check_time();\n  \n  strokeWeight(1);\n  stroke(255);\n\n  line(0, my.ypos, width, my.ypos);\n\n  line(my.xpos, 0, my.xpos, height);\n\n  my.ypos += my.yspeed;\n  if (my.ypos > height || my.ypos < 0) {\n    my.yspeed *= -1;\n  }\n  my.xpos += my.xspeed;\n  if (my.xpos > width || my.xpos < 0) {\n    my.xspeed *= -1;\n  }\n}\n\nfunction new_pos() {\n  my.xpos = random(0, width);\n  my.ypos = random(0, height);\n}\n\nfunction check_time() {\n  my.lapseTime += deltaTime / 1000.0\n  if (my.lapseTime > my.changeTime) {\n    my.lapseTime = 0;\n    new_pos();\n  }\n}\n\n\n// From\n// https://editor.p5js.org/jht1493/sketches/5LgILr8RF\n\nfunction full_screen_action() {\n  my.fullScreenBtn.remove();\n  fullscreen(1);\n  let delay = 3000;\n  setTimeout(ui_present_window, delay);\n}\n\nfunction ui_present_window() {\n  resizeCanvas(windowWidth, windowHeight);\n  // init_dim();\n}\n\n// https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P\n// ims black-n white-1\n\n// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar\n// ims03-jht scrolling color bars\n\n// https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti\n// ims-01 bounce fullscreen\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "67ae1f7deac1e26f89a2142d",
+        "createdAt": "2025-02-13T16:38:45.085Z",
+        "updatedAt": "2025-02-13T16:38:45.085Z",
+        "id": "67ae1f7deac1e26f89a2142d"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67ae1f7deac1e26f89a2142c",
+        "createdAt": "2025-02-13T16:38:45.085Z",
+        "updatedAt": "2025-02-13T16:38:45.085Z",
+        "id": "67ae1f7deac1e26f89a2142c"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67ae1f7deac1e26f89a2142e",
+        "createdAt": "2025-02-13T16:38:45.085Z",
+        "updatedAt": "2025-02-13T16:38:45.085Z",
+        "id": "67ae1f7deac1e26f89a2142e"
+      }
+    ],
+    "createdAt": "2025-02-13T16:36:13.200Z",
+    "updatedAt": "2025-02-13T16:38:45.085Z",
+    "id": "zFKAqeENv"
   },
   {
     "_id": "CYMdD77ySc",
@@ -18948,6 +19541,75 @@
     "createdAt": "2023-09-18T14:31:25.436Z",
     "updatedAt": "2023-09-24T19:35:34.510Z",
     "id": "mupQOIvCw"
+  },
+  {
+    "_id": "2u6e-KY8S",
+    "name": "Marbling Color - animate ink",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6786df36678d2d06cfcf45a1",
+          "6786df36678d2d06cfcf45a2",
+          "6786df36678d2d06cfcf45a3",
+          "6786df36678d2d06cfcf45a4"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "6786df36678d2d06cfcf45a0",
+        "createdAt": "2025-01-14T22:04:24.492Z",
+        "updatedAt": "2025-01-14T22:04:24.492Z",
+        "id": "6786df36678d2d06cfcf45a0"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/2u6e-KY8S\n// Marbling Color - animate ink\n\nlet drops = [];\n\nlet r = 1;\nlet a = 0;\n\nlet palette;\nlet bk;\n\nlet newDrop = true;\nlet currentColor;\n\nfunction setup() {\n  createCanvas(windowWidth, windowHeight);\n  palette = [\n    color(11, 106, 136),\n    color(45, 197, 244),\n    color(112, 50, 126),\n    color(146, 83, 161),\n    color(164, 41, 99),\n    color(236, 1, 90),\n    color(240, 99, 164),\n    color(241, 97, 100),\n    color(248, 158, 79),\n    //\n  ];\n  bk = color(252, 238, 33); //random(palette);\n  currentColor = random(palette);\n}\n\nfunction tineLine(v, x, y, z, c) {\n  for (let drop of drops) {\n    drop.tine(v, x, y, z, c);\n  }\n}\n\nfunction addInk(x, y, r, col) {\n  let drop = new Drop(x, y, r, col);\n  for (let other of drops) {\n    other.marble(drop);\n  }\n  drops.push(drop);\n}\n\nfunction mouseReleased() {\n  newDrop = true;\n}\n\nlet val = 4;\nlet counter = 1;\n\nfunction draw() {\n  // if (mouseIsPressed) {\n  //   let v1 = createVector(pmouseX, pmouseY);\n  //   let v2 = createVector(mouseX, mouseY);\n  //   v2.sub(v1);\n  //   if (v2.mag() > 0.1) {\n  //     v2.normalize();\n  //     tineLine(v2, mouseX, mouseY, 2, 16);\n  //   }\n  // }\n\n  if (mouseIsPressed) {\n    if (newDrop) {\n      currentColor = palette[counter % palette.length];\n      newDrop = false;\n      counter++;\n    }\n    addInk(mouseX, mouseY, 12, currentColor);\n  }\n\n  background(bk);\n  for (let drop of drops) {\n    drop.show();\n  }\n}\n\n// https://editor.p5js.org/JimmyXwtx/sketches/NO_kg85ZT\n// Marbling Color - animate ink\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "6786df36678d2d06cfcf45a3",
+        "createdAt": "2025-01-14T22:04:24.492Z",
+        "updatedAt": "2025-01-14T22:04:24.492Z",
+        "id": "6786df36678d2d06cfcf45a3"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"ink.js\"></script>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6786df36678d2d06cfcf45a1",
+        "createdAt": "2025-01-14T22:04:24.492Z",
+        "updatedAt": "2025-01-14T22:04:24.492Z",
+        "id": "6786df36678d2d06cfcf45a1"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6786df36678d2d06cfcf45a4",
+        "createdAt": "2025-01-14T22:04:24.492Z",
+        "updatedAt": "2025-01-14T22:04:24.492Z",
+        "id": "6786df36678d2d06cfcf45a4"
+      },
+      {
+        "name": "ink.js",
+        "content": "\nclass Drop {\n  constructor(x, y, r, col) {\n    this.center = createVector(x, y);\n    this.r = r;\n    this.circleDetail = 200;//this.r * 16;\n    this.vertices = [];\n    for (let i = 0; i < this.circleDetail; i++) {\n      let angle = map(i, 0, this.circleDetail, 0, TWO_PI);\n      let v = createVector(cos(angle), sin(angle));\n      v.mult(this.r);\n      v.add(this.center);\n      this.vertices[i] = v;\n    }\n    this.col = col;\n  }\n\n\n  tine(m, x, y, z, c) {\n    let u = 1 / pow(2, 1 / c);\n    let b = createVector(x, y);\n    for (let v of this.vertices) {\n      let pb = p5.Vector.sub(v, b);\n      let n = m.copy().rotate(HALF_PI);\n      let d = abs(pb.dot(n));\n      let mag = z * pow(u, d);\n      v.add(m.copy().mult(mag));\n    }\n  }\n\n  marble(other) {\n    for (let v of this.vertices) {\n      let c = other.center;\n      let r = other.r;\n      let p = v.copy();\n      p.sub(c);\n      let m = p.mag();\n      let root = sqrt(1 + (r * r) / (m * m));\n      p.mult(root);\n      p.add(c);\n      v.set(p);\n    }\n  }\n\n  show() {\n    fill(this.col);\n    noStroke();\n    beginShape();\n    for (let v of this.vertices) {\n      vertex(v.x, v.y);\n    }\n    endShape(CLOSE);\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6786df36678d2d06cfcf45a2",
+        "createdAt": "2025-01-14T22:04:24.492Z",
+        "updatedAt": "2025-01-14T22:04:24.492Z",
+        "id": "6786df36678d2d06cfcf45a2"
+      }
+    ],
+    "createdAt": "2025-01-14T22:03:34.261Z",
+    "updatedAt": "2025-01-14T22:04:24.492Z",
+    "id": "2u6e-KY8S"
   },
   {
     "_id": "ZKPaZOjf_",
@@ -22450,6 +23112,63 @@
     ],
     "createdAt": "2024-03-22T18:18:50.566Z",
     "id": "KeRAIMzHN"
+  },
+  {
+    "_id": "ChKhQltFe",
+    "name": "p5moExamples videoKit 407",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "67a1971fe7d3a1c3da253472",
+          "67a1971fe7d3a1c3da253471",
+          "67a1971fe7d3a1c3da253473"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "67a1971fe7d3a1c3da253474",
+        "createdAt": "2025-02-04T04:30:00.997Z",
+        "updatedAt": "2025-02-04T04:30:00.997Z",
+        "id": "67a1971fe7d3a1c3da253474"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-gmail/sketches/u_Blv5bOK\n// p5moExamples videoKit 407\n\nlet videoKit; // home for library routines\n\nfunction setup() {\n  // Report startup time for debugging\n  let lapse = window.performance.now() - a_start_now;\n  console.log('setup lapse', lapse);\n\n  // Lowest pixel density for performance\n  pixelDensity(1);\n\n  // Need some starting dimensions for canvas.\n  // will get adjusted by videoKit later in startup\n  createCanvas(100, 100);\n  //\n  // must call createCanvas before new p5videoKit\n\n  // videoKit = new p5videoKit(a_config);\n\n  setup_videoKit();\n}\n\nasync function setup_videoKit() {\n  videoKit = await p5videoKit_init(a_config);\n\n  // videoKit.save_canvas_handler = save_canvas_handler;\n  // setup_dbase();\n}\n\nfunction draw() {\n  if (videoKit) {\n    videoKit.draw();\n  }\n}\n\nlet a_config = {\n  // hide_ui: 1,\n  // effects for import, will appear at top of the effect menu\n  // an EFFECT can have many PROPERTIES specific to the effect\n  // for example canvas size, color, cell size,\n  // to see this, choose \"circle\" in Effect1 and Effect2,\n  // then choose different properties like number of circles per frame\n  // or the video source\n  // the \"effects\" array creates a pull-down menu\n  // which offers a first selection of effects added to the VideoKit library,\n  // you could add some more !!!!\n  effects: [\n    // { label: 'a_live_tile_host', factory: eff_a_live_tile_host },\n    // { label: 'a_slit_scan', factory: eff_a_slit_scan },\n    // { label: 'a_ncell', factory: eff_a_ncell },\n    // { label: 'a_radial', factory: eff_a_radial },\n  ],\n  // settings for import, will appear in the settings menu\n  // SETTINGS will load a save .json file with predefined values\n  // for all the settings associated with the effect\n  // \"settings\" is an array of\n  // settings: [\n  // { label: 'videoKit', import_path: 'settings/videoKit.json' },\n  // ],\n};\n\n// track startup time for debugging\nlet a_start_now = window.performance.now();\n\n// disables FES to improve performance\np5.disableFriendlyErrors = true;\n\n// https://github.com/molab-itp/p5moExamples.git\n\n// https://molab-itp.github.io/p5moExamples/examples/video/?a=%7B%22setting%22%3A%22%22%2C%22comment%22%3A%22bright%20%7C%20diff%22%2C%22back_color%22%3A200%2C%22room_name%22%3A%22VideoKit-Room-1%22%2C%22patch_layout%22%3A%22Single%22%2C%22canvas_size%22%3A%22960x540%22%2C%22capture_size%22%3A%22default%22%2C%22render_size%22%3A%22Canvas%22%2C%22chat_name%22%3A%22jht%22%2C%22chat_chk%22%3A0%2C%22live_index%22%3A0%2C%22live_chk%22%3A0%2C%22urects_lock%22%3A0%2C%22urects_count%22%3A2%2C%22canvas_resize_ref%22%3A%22%22%2C%22canvas_data_chk%22%3A0%2C%22mediaDiv_states%22%3A%5Bnull%2C%7B%22vis%22%3A0%2C%22mute%22%3A1%7D%5D%2C%22patches%22%3A%5B%7B%22eff_spec%22%3A%7B%22ipatch%22%3A0%2C%22imedia%22%3A1%2C%22eff_label%22%3A%22bright%22%2C%22urect%22%3A%7B%22width%22%3A960%2C%22height%22%3A540%2C%22x0%22%3A0%2C%22y0%22%3A0%7D%7D%2C%22eff_props%22%3A%7B%22ncell%22%3A16%2C%22back_color%22%3A0%2C%22src_color%22%3A255%2C%22fill%22%3A1%2C%22invert%22%3A1%2C%22shape%22%3A%22rect%22%7D%7D%2C%7B%22eff_spec%22%3A%7B%22ipatch%22%3A1%2C%22imedia%22%3A1%2C%22eff_label%22%3A%22diff%22%2C%22urect%22%3A%7B%22width%22%3A960%2C%22height%22%3A540%2C%22x0%22%3A0%2C%22y0%22%3A0%7D%7D%2C%22eff_props%22%3A%7B%22threshold%22%3A16%2C%22period%22%3A0%2C%22back_color%22%3A%22clear%22%2C%22smooth%22%3A0%2C%22hold%22%3A0%7D%7D%5D%7D\n// bright | diff\n\n// https://editor.p5js.org/shawn/sketches/jZQ64AMJc\n// p5LiveMedia Test Video\n// https://github.com/vanevery/p5LiveMedia\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "67a1971fe7d3a1c3da253471",
+        "createdAt": "2025-02-04T04:30:00.997Z",
+        "updatedAt": "2025-02-04T04:30:00.997Z",
+        "id": "67a1971fe7d3a1c3da253471"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n    <script src=\"https://p5livemedia.itp.io/simplepeer.min.js\"></script>\n    <script src=\"https://p5livemedia.itp.io/socket.io.js\"></script>\n    <script src=\"https://p5livemedia.itp.io/p5livemedia.js\"></script>\n    <!-- <script src=\"https://unpkg.com/ml5@latest/dist/ml5.min.js\"></script> -->\n    <!-- Need to make ml5 explicit to avoid fetch failure in p5js editor -->\n    <script src=\"https://unpkg.com/ml5@0.12.2/dist/ml5.min.js\"></script>\n\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    \n    <script type=\"module\" src=\"https://molab-itp.github.io/p5moRelease/videoKit/407/a/a_lib.js\"></script>\n\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67a1971fe7d3a1c3da253472",
+        "createdAt": "2025-02-04T04:30:00.997Z",
+        "updatedAt": "2025-02-04T04:30:00.997Z",
+        "id": "67a1971fe7d3a1c3da253472"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67a1971fe7d3a1c3da253473",
+        "createdAt": "2025-02-04T04:30:00.997Z",
+        "updatedAt": "2025-02-04T04:30:00.997Z",
+        "id": "67a1971fe7d3a1c3da253473"
+      }
+    ],
+    "updatedAt": "2025-02-04T04:30:00.997Z",
+    "createdAt": "2025-02-04T04:27:28.546Z",
+    "id": "ChKhQltFe"
   },
   {
     "_id": "EEafnQwr1",
@@ -27030,6 +27749,63 @@
     "id": "Jwz8ZXsZg"
   },
   {
+    "_id": "BqWAQMAZd",
+    "name": "qrcode",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "679f2c5134daef325f33546e",
+          "679f2c5134daef325f33546f",
+          "679f2c5134daef325f335470"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "679f2c5134daef325f33546d",
+        "createdAt": "2025-02-02T08:36:08.703Z",
+        "updatedAt": "2025-02-02T08:36:08.703Z",
+        "id": "679f2c5134daef325f33546d"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "679f2c5134daef325f33546f",
+        "createdAt": "2025-02-02T08:36:08.703Z",
+        "updatedAt": "2025-02-02T08:36:08.703Z",
+        "id": "679f2c5134daef325f33546f"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta\n      name=\"viewport\"\n      content=\"width=device-width, \n                        initial-scale=1.0\"\n    />\n    <title>QR Code Generator</title>\n\n    <style>\n      h1, h3 {\n        color: green;\n      }\n      body, header {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n      }\n    </style>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js\"></script>\n  </head>\n\n  <body>\n    <header>\n      <h1>jht1493.net</h1>\n    </header>\n    <main>\n      <div id=\"qrcode\"></div>\n    </main>\n\n    <script>\n    var qrcode = new QRCode(\"qrcode\", {\n        text: \"https://jht1493.net\",\n        width: 512,\n        height: 512,\n        colorDark: \"#000000\",\n        colorLight: \"#ffffff\",\n        correctLevel: QRCode.CorrectLevel.H,\n      });\n      \n      // https://www.geeksforgeeks.org/how-to-make-a-qr-code-generator-using-qrcode-js/\n      \n    </script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "679f2c5134daef325f33546e",
+        "createdAt": "2025-02-02T08:36:08.703Z",
+        "updatedAt": "2025-02-02T08:36:08.703Z",
+        "id": "679f2c5134daef325f33546e"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "679f2c5134daef325f335470",
+        "createdAt": "2025-02-02T08:36:08.703Z",
+        "updatedAt": "2025-02-02T08:36:08.703Z",
+        "id": "679f2c5134daef325f335470"
+      }
+    ],
+    "createdAt": "2025-02-02T08:26:57.964Z",
+    "updatedAt": "2025-02-02T08:36:08.703Z",
+    "id": "BqWAQMAZd"
+  },
+  {
     "_id": "8GZfJMso-",
     "name": "Quill forsythia copy",
     "files": [
@@ -27872,6 +28648,63 @@
     ],
     "createdAt": "2023-07-27T03:32:46.619Z",
     "id": "JfRBSdz13"
+  },
+  {
+    "_id": "_Wgulb7od",
+    "name": "Seen cheshire",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "679f2be734daef325f33546a",
+          "679f2be734daef325f335469",
+          "679f2be734daef325f33546b"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "679f2be734daef325f33546c",
+        "createdAt": "2025-02-02T08:25:47.319Z",
+        "updatedAt": "2025-02-02T08:25:47.319Z",
+        "id": "679f2be734daef325f33546c"
+      },
+      {
+        "name": "sketch.js",
+        "content": "function setup() {\n  createCanvas(400, 400);\n}\n\nfunction draw() {\n  background(220);\n}",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "679f2be734daef325f335469",
+        "createdAt": "2025-02-02T08:25:47.319Z",
+        "updatedAt": "2025-02-02T08:25:47.319Z",
+        "id": "679f2be734daef325f335469"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" \n         content=\"width=device-width, \n                        initial-scale=1.0\" />\n    <title>QR Code Generator</title>\n   \n    <style>\n        h1, h3 {\n          color: green;\n        }\n        body, header {\n          display: flex;\n          flex-direction: column;\n          justify-content: center;\n          align-items: center;\n        }\n    </style>\n    <script src=\n\"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js\">\n    </script>\n</head>\n\n<body>\n    <header>\n        <h1>GeeksforGeeks</h1>\n        <h3>QR code generator using qrcode.js</h3>\n        <h3>To visit geeksforgeeks.org scan below code</h3>\n    </header>\n    <main>\n        <div id=\"qrcode\"></div>\n    </main>\n    \n    <script>\n        var qrcode = new QRCode(\"qrcode\",\n        \"https://www.geeksforgeeks.org\");\n    </script>\n</body>\n\n</html>",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "679f2be734daef325f33546a",
+        "createdAt": "2025-02-02T08:25:47.319Z",
+        "updatedAt": "2025-02-02T08:25:47.319Z",
+        "id": "679f2be734daef325f33546a"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "679f2be734daef325f33546b",
+        "createdAt": "2025-02-02T08:25:47.319Z",
+        "updatedAt": "2025-02-02T08:25:47.319Z",
+        "id": "679f2be734daef325f33546b"
+      }
+    ],
+    "updatedAt": "2025-02-02T08:25:47.319Z",
+    "createdAt": "2025-02-02T08:25:47.319Z",
+    "id": "_Wgulb7od"
   },
   {
     "_id": "Ne4uyMiF_",
@@ -29788,19 +30621,19 @@
         ],
         "fileType": "folder",
         "_id": "673f7c1257ab17fc4cfb4e1e",
-        "createdAt": "2024-11-21T21:20:07.237Z",
-        "updatedAt": "2024-11-21T21:20:07.237Z",
+        "createdAt": "2025-01-08T15:08:42.634Z",
+        "updatedAt": "2025-01-08T15:08:42.634Z",
         "id": "673f7c1257ab17fc4cfb4e1e"
       },
       {
         "name": "sketch.js",
-        "content": "let str = '❤️ man 男人';\n\nfunction setup() {\n  createCanvas(400, 400);\n  console.log(str);\n  for (let i = 0; i < str.length; i++) {\n    console.log('i', i, str[i]);\n  }\n}\n\nfunction draw() {\n  background(220);\n}",
+        "content": "let str = '❤️ man 攳柣男人';\n// 攳 柣\nfunction setup() {\n  createCanvas(400, 400);\n  console.log(str);\n  for (let i = 0; i < str.length; i++) {\n    console.log('i', i, str[i]);\n  }\n}\n\nfunction draw() {\n  background(220);\n}",
         "children": [],
         "fileType": "file",
         "isSelectedFile": true,
         "_id": "673f7c1257ab17fc4cfb4e1b",
-        "createdAt": "2024-11-21T21:20:07.237Z",
-        "updatedAt": "2024-11-21T21:20:07.237Z",
+        "createdAt": "2025-01-08T15:08:42.634Z",
+        "updatedAt": "2025-01-08T15:08:42.634Z",
         "id": "673f7c1257ab17fc4cfb4e1b"
       },
       {
@@ -29809,8 +30642,8 @@
         "children": [],
         "fileType": "file",
         "_id": "673f7c1257ab17fc4cfb4e1c",
-        "createdAt": "2024-11-21T21:20:07.238Z",
-        "updatedAt": "2024-11-21T21:20:07.238Z",
+        "createdAt": "2025-01-08T15:08:42.634Z",
+        "updatedAt": "2025-01-08T15:08:42.634Z",
         "id": "673f7c1257ab17fc4cfb4e1c"
       },
       {
@@ -29819,12 +30652,12 @@
         "children": [],
         "fileType": "file",
         "_id": "673f7c1257ab17fc4cfb4e1d",
-        "createdAt": "2024-11-21T21:20:07.238Z",
-        "updatedAt": "2024-11-21T21:20:07.238Z",
+        "createdAt": "2025-01-08T15:08:42.634Z",
+        "updatedAt": "2025-01-08T15:08:42.634Z",
         "id": "673f7c1257ab17fc4cfb4e1d"
       }
     ],
-    "updatedAt": "2024-11-21T21:20:07.238Z",
+    "updatedAt": "2025-01-08T15:08:42.634Z",
     "createdAt": "2024-11-21T21:20:07.238Z",
     "id": "X8Y1ZXt3Z"
   },
@@ -30397,6 +31230,120 @@
     "createdAt": "2024-05-25T00:47:37.507Z",
     "updatedAt": "2024-06-03T04:03:10.080Z",
     "id": "AwB8tHJ15"
+  },
+  {
+    "_id": "656yfHco8",
+    "name": "test drive DOM.js v11 inputs copy copy copy",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "67c291382232d9773dd5befc",
+          "67c291382232d9773dd5befd",
+          "67c291382232d9773dd5befe"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "67c291382232d9773dd5befb",
+        "createdAt": "2025-02-28T20:12:41.215Z",
+        "updatedAt": "2025-02-28T20:12:41.215Z",
+        "id": "67c291382232d9773dd5befb"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js\"></script>\n<!--     <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\"> -->\n    <meta charset=\"utf-8\" />\n\n    <script src=\"https://cdn.jsdelivr.net/gh/lenincompres/DOM.js@latest/DOM.js\"></script>\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n    \n    \n<!--     DOC.set appears to kill fieldset border -->\n<!-- <fieldset>\n  <legend>Select a maintenance drone:</legend>\n\n  <div>\n    <input type=\"radio\" id=\"huey\" name=\"drone\" value=\"huey\" checked />\n    <label for=\"huey\">Huey</label>\n  </div>\n\n  <div>\n    <input type=\"radio\" id=\"dewey\" name=\"drone\" value=\"dewey\" />\n    <label for=\"dewey\">Dewey</label>\n  </div>\n\n  <div>\n    <input type=\"radio\" id=\"louie\" name=\"drone\" value=\"louie\" />\n    <label for=\"louie\">Louie</label>\n  </div>\n</fieldset>\n     -->\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67c291382232d9773dd5befc",
+        "createdAt": "2025-02-28T20:12:41.215Z",
+        "updatedAt": "2025-02-28T20:12:41.215Z",
+        "id": "67c291382232d9773dd5befc"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67c291382232d9773dd5befe",
+        "createdAt": "2025-02-28T20:12:41.215Z",
+        "updatedAt": "2025-02-28T20:12:41.215Z",
+        "id": "67c291382232d9773dd5befe"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n\n// Button\n// text input\n// Slider\n// checkbox\n// radio button row\n// selection\n// color, note difference Safari vs. Chrome\n\n// I prefer DOM.set array style,\n//  less prone to error from duplicate propery names\n\nlet counter = 0;\n\n// function render() {\nDOM.set({\n  // Each line will be a section, could have been a paragraph (p:) also\n  section: [\n    {\n      // Button\n      // You can use the id as the property name\n      changeBtn: {\n        tag: \"button\",\n        text: \"Change Button\",\n        onclick: (event) => {\n          // console.log('changeBtn event', event);\n          // console.log(\"changeBtn event.target\", event.target);\n          counter++;\n          myInput.value = \"Button pressed \" + counter;\n        },\n      },\n    },\n    {\n      // text input\n      // You also can use the tag as the property name\n      input: {\n        id: \"myInput\",\n        placeholder: \"myInput placeholder\",\n        oninput: (event) => console.log(\"myInput oninput: \" + myInput.value),\n        onchange: (event) => console.log(\"myInput onchange: \" + myInput.value),\n        click: (event) => console.log(\"myInput click \" + myInput.value),\n      },\n    },\n    {\n      // You can also use selector notation for property names (as: \"tag#id.class\")\n      // Slider\n      \"input#myInput2.active\": {\n        type: \"range\",\n        min: 0,\n        max: 100,\n        // step: \"any\",\n        value: 50,\n        // placeholder: \"myInput2 placeholder\",\n        oninput: (event) => {\n          console.log(\"myInput2 oninput: \" + myInput2.value);\n          // myInput2_span.textContent = myInput2.value;\n          myInput2_label.textContent = \"myInput2 oninput: \" + myInput2.value;\n        },\n        onchange: (event) => {\n          console.log(\"myInput2 onchange: \" + myInput2.value);\n          // myInput2_span.textContent = myInput2.value;\n          // myInput2_label.textContent = myInput2.value;\n        },\n      },\n      //\n      label: {\n        id: \"myInput2_label\",\n        for: \"myInput2\",\n        text: \"50\",\n      },\n    },\n    {\n      //\n      // checkbox\n      myInput3: {\n        tag: \"input\",\n        type: \"checkbox\",\n        placeholder: \"myInput3 placeholder\",\n        onchange: (event) =>\n          console.log(\"myInput3 onchange: \" + myInput3.checked),\n      },\n      label: {\n        id: \"myInput3\",\n        for: \"myInput3\",\n        text: \"Checkbox\",\n      },\n    },\n    {\n      //\n      // radio button row\n      myInput4: {\n        tag: \"input\",\n        type: \"radio\",\n        name: \"drone\",\n        onchange: (event) =>\n          console.log(\"myInput4 onchange: \" + myInput4.checked),\n      },\n      myInput4Label: {\n        tag: \"label\",\n        for: \"myInput4\",\n        text: \"Heuy\",\n      },\n      myInput5: {\n        tag: \"input\",\n        type: \"radio\",\n        name: \"drone\",\n        onchange: (event) =>\n          console.log(\"myInput5 onchange: \" + myInput5.checked),\n      },\n      myInput5Label: {\n        tag: \"label\",\n        for: \"myInput5\",\n        text: \"Dewey\",\n      },\n      myInput6: {\n        tag: \"input\",\n        type: \"radio\",\n        name: \"drone\",\n        onchange: (event) =>\n          console.log(\"myInput6 onchange: \" + myInput6.checked),\n      },\n      myInput6Label: {\n        tag: \"label\",\n        for: \"myInput6\",\n        text: \"Louie\",\n      },\n    },\n    {\n      //\n      // selection\n      myInput7_label: {\n        tag: \"label\",\n        for: \"myInput7\",\n        text: \"Choose a pet:\",\n      },\n      myInput7: {\n        tag: \"select\",\n        onchange: (event) =>\n          console.log(\"myInput7 onchange: \" + myInput7.value),\n        option: [\n          {\n            value: \"dog\",\n            text: \"Dog\",\n          },\n          {\n            value: \"cat\",\n            text: \"Cat\",\n          },\n          {\n            value: \"hamster\",\n            text: \"Hamster\",\n          },\n        ],\n      },\n    },\n    {\n      //\n      // color\n      myInput8Label: {\n        tag: \"label\",\n        for: \"myInput8\",\n        text: \"Choose a color:\",\n      },\n      myInput8: {\n        tag: \"input\",\n        type: \"color\",\n        value: \"#FFFF00\",\n        onchange: (event) =>\n          console.log(\"myInput8 onchange: \" + myInput8.value),\n      },\n    },\n  ],\n});\n\n// myInput.style.border = \"none\";\n// changeBtn.click();\n\nmyInput3.checked = true;\n\n// }\n\n// function setup() {\n// render()\n// }\n\n/* -- DOM Reference\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/select\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset\n*/\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/G3arjv8UF\n// test drive DOM.js v10 inputs\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "67c291382232d9773dd5befd",
+        "createdAt": "2025-02-28T20:12:41.215Z",
+        "updatedAt": "2025-02-28T20:12:41.215Z",
+        "id": "67c291382232d9773dd5befd"
+      }
+    ],
+    "createdAt": "2025-03-01T04:46:49.138Z",
+    "updatedAt": "2025-03-01T04:46:49.138Z",
+    "id": "656yfHco8"
+  },
+  {
+    "_id": "IrJGEcCs1",
+    "name": "test drive DOM.js v12",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "67c5bc2fd50fa1da260478ae",
+          "67c5bc2fd50fa1da260478af",
+          "67c5bc2fd50fa1da260478b0"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "67c5bc2fd50fa1da260478ad",
+        "createdAt": "2025-03-03T17:35:55.523Z",
+        "updatedAt": "2025-03-03T17:35:55.523Z",
+        "id": "67c5bc2fd50fa1da260478ad"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n<!--     <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\"> -->\n    <meta charset=\"utf-8\" />\n\n    <script src=\"https://cdn.jsdelivr.net/gh/lenincompres/DOM.js@latest/DOM.js\"></script>\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n    \n    \n<!--     DOC.set appears to kill fieldset border -->\n<!-- <fieldset>\n  <legend>Select a maintenance drone:</legend>\n\n  <div>\n    <input type=\"radio\" id=\"huey\" name=\"drone\" value=\"huey\" checked />\n    <label for=\"huey\">Huey</label>\n  </div>\n\n  <div>\n    <input type=\"radio\" id=\"dewey\" name=\"drone\" value=\"dewey\" />\n    <label for=\"dewey\">Dewey</label>\n  </div>\n\n  <div>\n    <input type=\"radio\" id=\"louie\" name=\"drone\" value=\"louie\" />\n    <label for=\"louie\">Louie</label>\n  </div>\n</fieldset>\n     -->\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67c5bc2fd50fa1da260478ae",
+        "createdAt": "2025-03-03T17:35:55.523Z",
+        "updatedAt": "2025-03-03T17:35:55.523Z",
+        "id": "67c5bc2fd50fa1da260478ae"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "67c5bc2fd50fa1da260478b0",
+        "createdAt": "2025-03-03T17:35:55.523Z",
+        "updatedAt": "2025-03-03T17:35:55.523Z",
+        "id": "67c5bc2fd50fa1da260478b0"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/IrJGEcCs1\n// test drive DOM.js v12\n//\n// p5.js/1.11.1/p5.js\n// add id_ element id names\n// use tag.id style naming\n//\n// https://editor.p5js.org/lac567/sketches/rwmLo-LRo\n// test drive DOM.js v11 inputs copy copy\n\n// Button\n// text input\n// Slider\n// checkbox\n// radio button row\n// selection\n// color, note difference Safari vs. Chrome\n\nlet counter = 0;\n\nDOM.set({\n  // Each line will be a section\n  // could have been a paragraph (p:) also\n  //\n  section: [\n    {\n      // text input\n      // You also can use the tag as the property name\n      \"input#id_input\": {\n        id: \"id_input\",\n        placeholder: \"id_input placeholder\",\n        oninput: (event) => {\n          // console.log(\"id_input oninput: \" + id_input.value)\n        },\n        onchange: (event) => {\n          // console.log(\"id_input onchange: \" + id_input.value)\n        },\n        onclick: (event) => {\n          // console.log(\"id_input onclick \" + id_input.value)\n        },\n      },\n    },\n    {\n      // Button\n      // You can use the id as the property name\n      \"button#id_button\": {\n        id: \"id_button\",\n        text: \"Change Button\",\n        onclick: (event) => {\n          // !!@ console.log gives error message\n          // RangeError: Maximum call stack size exceeded\n          // console.log('id_button onclick');\n          // !!@ console.log gives crash!\n          // console.log('id_button onclick event', event);\n          // console.log(\"id_button onclick event.target\", event.target);\n          counter++;\n          id_input.value = \"Button pressed \" + counter;\n          // return false;\n        },\n      },\n    },\n    {\n      // You can also use selector notation for property names \n      // as: \"tag#id.class\"\n      // You can add multiple classes separated by dots. \n      // Slider input example with id = \"id_slider\"\n      // the class \"active\" is added to the input element\n      //\n      \"input#id_slider.active\": {\n        id: \"id_slider\",\n        type: \"range\",\n        min: 0,\n        max: 100,\n        // step: \"any\",\n        value: 50,\n        oninput: (event) => {\n          // console.log(\"id_slider oninput \");\n          // console.log(\"id_slider oninput: \" + id_slider.value);\n          id_slider_label.textContent = id_slider.value;\n        },\n        onchange: (event) => {\n          // console.log(\"id_slider onchange: \" + id_slider.value);\n          // id_slider_label.textContent = \"id_slider onchange: \" + id_slider.value;\n        },\n      },\n      \"label#id_slider_label\": {\n        id: \"id_slider_label\",\n        for: \"id_slider\",\n        text: \"50\",\n      },\n    },\n    {\n      // checkbox\n      //\n      \"input#id_checkbox\": {\n        id: \"id_checkbox\",\n        type: \"checkbox\",\n        // placeholder: \"id_checkbox placeholder\",\n        onchange: (event) => {\n          // console.log(\"id_checkbox onchange \")\n          // console.log(\"id_checkbox onchange: \" + id_checkbox.checked)\n        }\n      },\n      \"label#id_checkbox_label\": {\n        for: \"id_checkbox\",\n        text: \"Checkbox\",\n      },\n    },\n    {\n      // radio button row\n      //\n      \"input#id_radio1\": {\n        id: \"id_radio1\",\n        type: \"radio\",\n        onchange: (event) => {\n          // console.log(\"id_radio1 onchange: \" + id_radio1.checked)\n        }\n      },\n      \"label#id_radio1Label\": {\n        for: \"id_radio1\",\n        text: \"Heuy\",\n      },\n      \"input#id_radio2\": {\n        id: \"id_radio2\",\n        type: \"radio\",\n        onchange: (event) => {\n          // console.log(\"id_radio2 onchange: \" + id_radio2.checked)\n        }\n      },\n      \"label#id_radio2Label\": {\n        for: \"id_radio2\",\n        text: \"Dewey\",\n      },\n      \"input#id_radio3\": {\n        id: \"id_radio3\",\n        type: \"radio\",\n        onchange: (event) => {\n          // console.log(\"id_radio3 onchange: \" + id_radio3.checked)\n        }\n      },\n      \"label#id_radio3Label\": {\n        for: \"id_radio3\",\n        text: \"Louie\",\n      },\n    },\n    {\n      // selection\n      //\n      \"label#id_selection_label\": {\n        for: \"id_selection\",\n        text: \"Choose a pet:\",\n      },\n      \"select#id_selection\": {\n        id: \"id_selection\",\n        onchange: (event) => {\n          // console.log(\"id_selection onchange: \" + id_selection.value)\n        },\n        option: [\n          {\n            value: \"dog\",\n            text: \"Dog\",\n          },\n          {\n            value: \"cat\",\n            text: \"Cat\",\n          },\n          {\n            value: \"hamster\",\n            text: \"Hamster\",\n          },\n        ],\n      },\n    },\n    {\n      // color picker\n      //\n      \"label#id_color_label\": {\n        for: \"id_color\",\n        text: \"Choose a color:\",\n      },\n      \"input#id_color\": {\n        id: \"id_color\",\n        // tag: \"input\",\n        type: \"color\",\n        value: \"#FFFF00\",\n        onchange: (event) => {\n          console.log(\"id_color onchange: \" + id_color.value + '')\n        },\n        oninput: (event) => {\n          // console.log(\"id_color oninput: \" + id_color.value + '')\n        },\n      },\n    },\n  ],\n});\n\nid_checkbox.checked = true;\n\nfunction setup() {\n console.log('in setup');\n}\n\n/* -- DOM Reference\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/select\n\nhttps://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset\n*/\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/Bv2yPxl9Y\n// test drive DOM.js v1\n// someElement undefined\n// needed to add id_main\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#the-domset-method\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/2sNiJGe1x\n// test drive DOM.js v2\n// https://github.com/jht9629-nyu/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n// !!@ addEventListener does not appear to work\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/IJDh1-znl\n// test drive DOM.js v3\n// Correct addEventListener listerner --> listener\n// https://github.com/lenincompres/DOM.js?tab=readme-ov-file#properties-attributes-events-and-listeners\n\n// --\n// https://editor.p5js.org/jht9629-nyu/sketches/G3arjv8UF\n// test drive DOM.js v10 inputs\n\n// https://editor.p5js.org/jht9629-nyu/sketches/AwB8tHJ15\n// test drive DOM.js v11 inputs\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "67c5bc2fd50fa1da260478af",
+        "createdAt": "2025-03-03T17:35:55.523Z",
+        "updatedAt": "2025-03-03T17:35:55.523Z",
+        "id": "67c5bc2fd50fa1da260478af"
+      }
+    ],
+    "createdAt": "2025-03-03T14:26:56.067Z",
+    "updatedAt": "2025-03-03T17:35:55.523Z",
+    "id": "IrJGEcCs1"
   },
   {
     "_id": "2sNiJGe1x",
@@ -34623,6 +35570,63 @@
     "updatedAt": "2024-09-19T07:48:42.014Z",
     "createdAt": "2024-09-19T04:56:43.819Z",
     "id": "oboc_6nB3"
+  },
+  {
+    "_id": "2zou6hxJG",
+    "name": "wintershow2024-sunday",
+    "files": [
+      {
+        "name": "root",
+        "content": "",
+        "children": [
+          "6763a5308f452e28b726a66e",
+          "6763a5308f452e28b726a66f",
+          "6763a5308f452e28b726a670"
+        ],
+        "fileType": "folder",
+        "isSelectedFile": false,
+        "_id": "6763a5308f452e28b726a66d",
+        "createdAt": "2024-12-19T04:47:51.229Z",
+        "updatedAt": "2024-12-19T04:47:51.229Z",
+        "id": "6763a5308f452e28b726a66d"
+      },
+      {
+        "name": "sketch.js",
+        "content": "// https://editor.p5js.org/jht9629-nyu/sketches/2zou6hxJG\n// https://editor.p5js.org/_o.line/sketches/AJbihc14h\n// wintershow2024-sunday - caroline\n\nlet glitchX = 2;\nlet glitchY = 2;\nlet bgblink = 30;\nlet state = 0;\n\n//scroll text\n//3-Minute Creative Coding\n//Scrolling Text\n//Carrie Wang\nlet replace =\n  \"Don’t ask if AI can make art — ask how AI can be art | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Adobe has a new tool to protect artists’ work from AI | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | HarperCollins is asking authors to license their books for AI training | Meta announces Movie Gen, an AI-powered video generator                       \";\nlet create =\n  \"Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Google outlines plans to help you sort real images from fake | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | Not even Spotify is safe from AI slop | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Meta announces Movie Gen, an AI-powered video generator\";\nlet replacehd1 =\n  \"| ESPN’s AI-generated sports recaps are already missing the point | Taylor Swift endorses Kamala Harris in response to fake AI Trump endorsement | Google is using AI to make fake podcasts from your notes | Amazon is allowing Audible narrators to clone themselves with AI | OpenAI’s new model is better at reasoning and, occasionally, deceiving | The chatbot becomes the teacher | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Meta’s AI can now talk to you in the voices of Awkwafina, John Cena, and Judi Dench | Meta is working on recreating influencers with AI | Get ready to meet your AI best friend | Zoom will let AI avatars talk to your team for you | The Wall Street Journal is testing AI article summaries | ESPN is testing a generative AI avatar called ‘FACTS’ |\";\nlet replacehd2 =\n  \"| Copilot Pages is Microsoft’s new collaborative AI playground for businesses | YouTube will use AI to generate ideas, titles, and even full videos | Amazon is stuffing generative AI into its shopping experience | Max is getting Google AI-generated closed captions | Microsoft claims its AI safety tool not only finds errors but also fixes them | Meta’s Ray-Bans will now ‘remember’ things for you | A deepfake caller pretending to be a Ukrainian official almost tricked a US senator | Character.AI and Google sued after chatbot-obsessed teen’s death | Google’s AI ‘learning companion’ takes chatbot answers a step further | Microsoft’s new Copilot Actions use AI to automate repetitive tasks | AI landlord screening tool will stop scoring low-income tenants after discrimination suit |\";\nlet socialhd =\n  \"| Your public Facebook and Instagram posts were used to train Meta’s AI models | Meta fed its AI on almost everything you’ve posted publicly since 2007 | Facebook and Instagram are making AI labels less prominent on edited content | Snapchat’s AI selfie feature puts your face in personalized ads — here’s how to turn it off | SocialAI: we tried the Twitter clone where no other humans are allowed | LinkedIn is training AI models on your data | Friend’s AI chatbots have issues — and they want your help | Facebook officially embraces fake profiles | Meta’s AI chatbot plan includes a ‘sassy robot’ for younger users | Facebook can be sued over biased ad algorithm, says court | Facebook’s new AI-generated stickers are lewd, rude, and occasionally nude | Meta to require political advertisers disclose AI-generated content | Meta will hide suicide and eating disorder content from teens as government pressure mounts | 48,000 companies sent Facebook data on a single person | Instagram and Facebook knowingly platform parents who sexually exploit children for profit, say reports | Facebook will remove its News tab and stop paying publishers for news | GLAAD report says Meta allows anti-trans hate to ‘flourish’ on its platforms | Instagram and Facebook under EU investigation for causing child addiction and harm | Facebook and Instagram are making AI labels less prominent on edited content | Meta, Snap, and TikTok partner to stop the spread of suicide and self-harm content | Mark Zuckerberg says there’s ‘no causal connection’ between social media and teen mental health | Facebook is going to show you even more content from accounts you don’t follow | \";\nlet doom =\n  \"| Why is Mark Zuckerberg building a private apocalypse bunker in Hawaii? |\";\nlet xStart = 520; //starting position of the text wall\n\nfunction setup() {\n  createCanvas(1350, 600);\n}\n\nfunction draw() {\n  background(0);\n  scale(1.1);\n\n  if (state == 0) {\n    aicreativity();\n  }\n  if (state == 1) {\n    replacement();\n  }\n  if (state == 2) {\n    socialmedia();\n  }\n  if (state == 3) {\n    doomsday();\n  }\n}\n\nfunction doomsday() {\n  push();\n  fill(250, 98);\n  //quad(0, 143, 640, 143, 640, 185, 0, 185);\n  quad(0, 280, 640, 280, 640, 320, 0, 320);\n  pop();\n\n  //scroll text\n  push();\n  textFont(\"Raleway\");\n  textAlign(LEFT, TOP);\n  textSize(16);\n  for (let x = xStart; x < width; x += 850) {\n    fill(0);\n    //text(doom, x, 155);\n    text(doom, x, 295);\n  }\n  xStart--;\n  if (xStart <= -2800) {\n    state = 0;\n    xStart = 520;\n  }\n  pop();\n\n  push();\n  fill(0);\n  noStroke();\n  quad(630, 30, 1200, 30, 1200, 480, 630, 480);\n  pop();\n\n  push();\n  textAlign(LEFT);\n  fill(220);\n  textSize(48);\n  textFont(\"Raleway\");\n\n  text('\"AI is going to ', 650, 100);\n  text(\"make our lives better\", 650, 170);\n  text(\"in the future, and\", 650, 240);\n  text('doomsday scenarios', 650 + glitchX, 310 + glitchY);\n  text('are pretty irresponsible\"', 650 , 383);\n\n  textSize(22);\n  text(\"- Mark Zuckerberg\", 990, 460);\n\n  if (glitchX > 1) {\n    glitchX -= 3;\n    glitchY += 3;\n  } else {\n    glitchX += 3;\n    glitchY -= 3;\n  }\n  pop();\n\n  push();\n  textSize(12);\n  textFont(\"Raleway\");\n  textAlign(RIGHT);\n  if (bgblink > 0) {\n    bgblink -= 0.3;\n  }\n  if (bgblink <= 10) {\n    bgblink = 30;\n  }\n  fill(250, bgblink);\n  textWrap(WORD);\n  textAlign(LEFT);\n  text(\n    \"Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest\",\n    0,\n    0,\n    1240\n  );\n  pop();\n}\n\nfunction socialmedia() {\n  push();\n  fill(250, 98);\n  quad(0, 143, 640, 143, 640, 185, 0, 185);\n  //quad(0, 350, 640, 350, 640, 397, 0, 397);\n  pop();\n\n  //scroll text\n  push();\n  textFont(\"Raleway\");\n  textAlign(LEFT, TOP);\n  textSize(16);\n  for (let x = xStart; x < width; x += 11050) {\n    fill(0);\n    text(socialhd, x, 155);\n    //text(replacehd2, x, 365);\n  }\n  xStart--;\n  if (xStart <= -2800) {\n    state = 3;\n    xStart = 520;\n  }\n  pop();\n\n  push();\n  fill(0);\n  noStroke();\n  quad(630, 30, 1200, 30, 1200, 480, 630, 480);\n  pop();\n\n  push();\n  textAlign(LEFT);\n  fill(220);\n  textSize(48);\n  textFont(\"Raleway\");\n\n  text('\"It was built to accomplish', 650, 100);\n  text(\"a social mission\", 650 + glitchX, 170 + glitchY);\n  text(\"- to make the world\", 650, 240);\n  text('more open and connected.\"', 650, 310);\n  text(\" \", 650 - (glitchX - 1), 383 - (glitchY - 1));\n\n  textSize(22);\n  text(\"- Mark Zuckerberg\", 990, 460);\n\n  if (glitchX > 1) {\n    glitchX -= 3;\n    glitchY += 3;\n  } else {\n    glitchX += 3;\n    glitchY -= 3;\n  }\n  pop();\n\n  push();\n  textSize(12);\n  textFont(\"Raleway\");\n  textAlign(RIGHT);\n  if (bgblink > 0) {\n    bgblink -= 0.3;\n  }\n  if (bgblink <= 10) {\n    bgblink = 30;\n  }\n  fill(250, bgblink);\n  textWrap(WORD);\n  textAlign(LEFT);\n  text(\n    \"Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest\",\n    0,\n    0,\n    1240\n  );\n  pop();\n}\n\nfunction replacement() {\n  push();\n  fill(250, 98);\n  quad(0, 143, 640, 143, 640, 185, 0, 185);\n  quad(0, 350, 640, 350, 640, 397, 0, 397);\n  pop();\n\n  //scroll text\n  push();\n  textFont(\"Raleway\");\n  textAlign(LEFT, TOP);\n  textSize(16);\n  for (let x = xStart; x < width; x += 6750) {\n    fill(0);\n    text(replacehd1, x, 155);\n    text(replacehd2, x, 365);\n  }\n  xStart--;\n  if (xStart <= -2800) {\n    state = 2;\n    xStart = 520;\n  }\n  pop();\n\n  push();\n  fill(0);\n  noStroke();\n  quad(630, 30, 1200, 30, 1200, 480, 630, 480);\n  pop();\n\n  push();\n  textAlign(LEFT);\n  fill(220);\n  textSize(48);\n  textFont(\"Raleway\");\n\n  text(\"“AI is not about\", 650, 100);\n  text(\"replacing us,\", 650 + glitchX, 170 + glitchY);\n  text(\"but making\", 650, 240);\n  text(\"us better versions\", 650, 310);\n  text(\"of ourselves.”\", 650 - (glitchX - 1), 383 - (glitchY - 1));\n\n  textSize(22);\n  text(\"— Rana el Kaliouby\", 990, 460);\n\n  if (glitchX > 1) {\n    glitchX -= 3;\n    glitchY += 3;\n  } else {\n    glitchX += 3;\n    glitchY -= 3;\n  }\n  pop();\n\n  push();\n  textSize(12);\n  textFont(\"Raleway\");\n  textAlign(RIGHT);\n  if (bgblink > 0) {\n    bgblink -= 0.3;\n  }\n  if (bgblink <= 10) {\n    bgblink = 30;\n  }\n  fill(250, bgblink);\n  textWrap(WORD);\n  textAlign(LEFT);\n  text(\n    \"Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest\",\n    0,\n    0,\n    1240\n  );\n  pop();\n}\n\nfunction aicreativity() {\n  push();\n  fill(250, 98);\n  quad(0, 143, 640, 143, 640, 185, 0, 185);\n  quad(0, 350, 640, 350, 640, 397, 0, 397);\n  pop();\n\n  //scroll text\n  push();\n  textFont(\"Raleway\");\n  //textStyle(BOLD);\n  textAlign(LEFT, TOP);\n  textSize(16);\n  for (let x = xStart; x < width; x += 6750) {\n    fill(0);\n    text(replace, x, 155);\n    text(create, x, 365);\n  }\n  xStart--;\n  if (xStart <= -2800) {\n    state = 1;\n    xStart = 520;\n  }\n  pop();\n\n  push();\n  fill(0);\n  noStroke();\n  quad(630, 30, 1200, 30, 1200, 480, 630, 480);\n  pop();\n\n  push();\n  textAlign(LEFT);\n  fill(220);\n  textSize(48);\n  textFont(\"Raleway\");\n\n  text('\"Generative AI is', 650, 100);\n  text(\"not a replacement\", 650 + glitchX, 170 + glitchY);\n  text(\" for human creativity,\", 650, 240);\n  text(\"but rather a tool that can\", 650, 310);\n  text('augment and enhance it\"', 650 - (glitchX - 1), 383 - (glitchY - 1));\n\n  textSize(22);\n  text(\"- Sam Altman\", 990, 460);\n\n  if (glitchX > 1) {\n    glitchX -= 3;\n    glitchY += 3;\n  } else {\n    glitchX += 3;\n    glitchY -= 3;\n  }\n  pop();\n\n  push();\n  textSize(12);\n  textFont(\"Raleway\");\n  textAlign(RIGHT);\n  if (bgblink > 0) {\n    bgblink -= 0.3;\n  }\n  if (bgblink <= 10) {\n    bgblink = 30;\n  }\n  fill(250, bgblink);\n  textWrap(WORD);\n  textAlign(LEFT);\n  text(\n    \"Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest | Why comparing AI image editing to Photoshop downplays the risks | OpenAI releases o1, its first model with ‘reasoning’ abilities | Don’t ask if AI can make art — ask how AI can be art | Google outlines plans to help you sort real images from fake | California governor signs rules limiting AI actor clones | YouTube will use AI to generate ideas, titles, and even full videos | Lionsgate signs deal to train AI model on its movies and shows | Meta’s going to put AI-generated images in your Facebook and Instagram feeds | Mark Zuckerberg: creators and publishers ‘overestimate the value’ of their work for training AI | Microsoft Paint is getting Photoshop-like generative AI fill and erase features | Meta announces Movie Gen, an AI-powered video generator | Adobe has a new tool to protect artists’ work from AI | Meta is bringing AI-edited video ads to Facebook and Instagram | AI is fixing — and ruining — our photos | Meta suggests AI Northern Lights pics are as good as the real thing | Photoshop is getting a bunch of new AI tools | Adobe teases AI tools that build 3D scenes, animate text, and make distractions disappear | YouTube takes a baby step toward labeling authentic video | Penguin Random House books now explicitly say ‘no’ to AI training | Kevin Bacon, Kate McKinnon, and other creatives warn of ‘unjust’ AI threat | Adobe execs say artists need to embrace AI or get left behind | Universal Music partners with AI company building an ‘ethical’ music generator | The Beatles’ final song, restored using AI, is up for a Grammy | YouTube is testing music remixes made by AI | Not even Spotify is safe from AI slop | HarperCollins is asking authors to license their books for AI training | OpenAI accidentally erases potential evidence in training data lawsuit | Nvidia claims a new AI audio generator can make sounds never heard before | Artists say they leaked OpenAI’s Sora video model in protest\",\n    0,\n    0,\n    1240\n  );\n  pop();\n}\n\nfunction mousePressed() {\n  if (mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height) {\n    let fs = fullscreen();\n    fullscreen(!fs);\n  }\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": true,
+        "_id": "6763a5308f452e28b726a66f",
+        "createdAt": "2024-12-19T04:47:51.229Z",
+        "updatedAt": "2024-12-19T04:47:51.229Z",
+        "id": "6763a5308f452e28b726a66f"
+      },
+      {
+        "name": "index.html",
+        "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js\"></script>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">\n    <meta charset=\"utf-8\" />\n\n  </head>\n  <body>\n    <main>\n    </main>\n    <script src=\"sketch.js\"></script>\n  </body>\n</html>\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6763a5308f452e28b726a66e",
+        "createdAt": "2024-12-19T04:47:51.229Z",
+        "updatedAt": "2024-12-19T04:47:51.229Z",
+        "id": "6763a5308f452e28b726a66e"
+      },
+      {
+        "name": "style.css",
+        "content": "html, body {\n  margin: 0;\n  padding: 0;\n}\ncanvas {\n  display: block;\n}\n",
+        "children": [],
+        "fileType": "file",
+        "isSelectedFile": false,
+        "_id": "6763a5308f452e28b726a670",
+        "createdAt": "2024-12-19T04:47:51.229Z",
+        "updatedAt": "2024-12-19T04:47:51.229Z",
+        "id": "6763a5308f452e28b726a670"
+      }
+    ],
+    "createdAt": "2024-12-19T04:46:42.987Z",
+    "updatedAt": "2024-12-19T04:47:51.229Z",
+    "id": "2zou6hxJG"
   },
   {
     "_id": "dztGt4bvh",
