@@ -26,9 +26,7 @@ function setup() {
   createCanvas(my.width, my.height);
   noStroke();
 
-  my.fullScreenBtn = createButton("Full Screen");
-  my.fullScreenBtn.mousePressed(full_screen_action);
-  my.fullScreenBtn.style("font-size:42px");
+  setup_fullScreenBtn();
 
   my.startTime = millis() / 1000.0;
 
@@ -73,6 +71,16 @@ function check_time() {
 
 // From
 // https://editor.p5js.org/jht1493/sketches/5LgILr8RF
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+function setup_fullScreenBtn() {
+  my.fullScreenBtn = createButton('?=v6 Full Screen');
+  my.fullScreenBtn.mousePressed(full_screen_action);
+  my.fullScreenBtn.style('font-size:42px');
+}
 
 function full_screen_action() {
   my.fullScreenBtn.remove();

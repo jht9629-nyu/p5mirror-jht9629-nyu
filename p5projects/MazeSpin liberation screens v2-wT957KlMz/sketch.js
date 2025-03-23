@@ -7,7 +7,7 @@ let mazeSpin;
 
 function setup() {
   my.width = windowWidth;
-  my.height = windowHeight;
+  my.height = windowHeight-55;
   my.ncells = 9;
   my.strokeWeight = 0.5;
   my.delta = 1;
