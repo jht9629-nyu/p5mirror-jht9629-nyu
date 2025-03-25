@@ -58,6 +58,7 @@ function update_checkBox(chkProp, valProp, label) {
   //
   let ref = my[chkProp];
   let val = window[valProp];
+  if (val === null) return;
   let isChecked = ref.checked();
   let str = label;
   if (isChecked) str += ' ' + val.toFixed(3);

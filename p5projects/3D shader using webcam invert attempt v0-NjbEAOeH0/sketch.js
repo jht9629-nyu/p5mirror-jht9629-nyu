@@ -1,0 +1,47 @@
+// https://editor.p5js.org/jht9629-nyu/sketches/NjbEAOeH0
+// 3D: shader using webcam invert attempt v0
+
+ // this variable will hold our shader object
+ let theShader;
+ // this variable will hold our webcam video
+ let cam;
+
+ function preload(){
+   // load the shader
+   theShader = loadShader('assets/webcam.vert', 'assets/webcam.frag');
+ }
+
+ function setup() {
+   // shaders require WEBGL mode to work
+   createCanvas(710, 400, WEBGL);
+   noStroke();
+
+   cam = createCapture(VIDEO);
+   cam.size(710, 400);
+
+   cam.hide();
+ }
+
+ function draw() {
+   // shader() sets the active shader with our shader
+   shader(theShader);
+
+   // passing cam as a texture
+   theShader.setUniform('tex0', cam);
+
+   // rect gives us some geometry on the screen
+   rect(0,0,width,height);
+ }
+
+// https://editor.p5js.org/vl1201/sketches/WFTx82wmE
+// 3D: shader using webcam invert attempt v0
+
+// Original code: https://editor.p5js.org/p5/sketches/3D:_shader_using_webcam
+
+
+/*
+ * @name Shader Using Webcam
+ * @arialabel Neon texture added to the scene displayed by the user’s built-in webcam
+ * @description The webcam can be passed to shaders as a texture.
+ * <br> To learn more about using shaders in p5.js: <a href="https://itp-xstory.github.io/p5js-shaders/">p5.js Shaders</a>
+ */

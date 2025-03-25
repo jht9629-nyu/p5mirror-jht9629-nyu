@@ -45,6 +45,7 @@ function create_checkBox(prop) {
 function update_checkBox(chkProp, valProp, label) {
   let ref = my[chkProp];
   let val = window[valProp];
+  if (val === null) val = 0;
   let isChecked = ref.checked();
   let str = label;
   if (isChecked) str += ' ' + val.toFixed(3);

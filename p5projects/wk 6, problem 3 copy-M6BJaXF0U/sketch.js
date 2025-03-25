@@ -16,8 +16,9 @@ function draw() {
   pop();
 
   for (let i = 0; i < pNumber; i++) {
-    punkin = new Pumpkin(random(0, width), random(0, height))
-    pumpkins.push(punkin)
+    pumpkin = new Pumpkin(random(0, width), random(0, height))
+    // console.log('i', i, 'pumpkin', pumpkin)
+    pumpkins.push(pumpkin)
     // pumpkin = pumpkins[i];
     pumpkin.display();
     pumpkin.bounce();

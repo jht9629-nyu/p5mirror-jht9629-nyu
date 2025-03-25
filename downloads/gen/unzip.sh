@@ -1,178 +1,220 @@
 cd "/Users/jht2/Documents/projects/_repos/p5mo/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "ims-01 bounce fullscreen-Mpgun-Kti"
-rm -rf "./ims-01 bounce fullscreen-Mpgun-Kti"
-mkdir "./ims-01 bounce fullscreen-Mpgun-Kti"
-pushd "./ims-01 bounce fullscreen-Mpgun-Kti" > /dev/null
-unzip -q "../../downloads/zips/ims-01 bounce fullscreen-Mpgun-Kti"
+echo unzip 1 "Unexpected cut v1-bQHOejZlG"
+rm -rf "./Unexpected cut v1-bQHOejZlG"
+mkdir "./Unexpected cut v1-bQHOejZlG"
+pushd "./Unexpected cut v1-bQHOejZlG" > /dev/null
+unzip -q "../../downloads/zips/Unexpected cut v1-bQHOejZlG"
 popd > /dev/null
 #
-echo unzip 2 "ims1-leo copy-4Gab3LJD-"
-rm -rf "./ims1-leo copy-4Gab3LJD-"
-mkdir "./ims1-leo copy-4Gab3LJD-"
-pushd "./ims1-leo copy-4Gab3LJD-" > /dev/null
-unzip -q "../../downloads/zips/ims1-leo copy-4Gab3LJD-"
+echo unzip 2 "Unexpected cut by Fabr v1-xK1q0EIQz"
+rm -rf "./Unexpected cut by Fabr v1-xK1q0EIQz"
+mkdir "./Unexpected cut by Fabr v1-xK1q0EIQz"
+pushd "./Unexpected cut by Fabr v1-xK1q0EIQz" > /dev/null
+unzip -q "../../downloads/zips/Unexpected cut by Fabr v1-xK1q0EIQz"
 popd > /dev/null
 #
-echo unzip 3 "createCapture p5.js1.11.1-wUCxpCl6n"
-rm -rf "./createCapture p5.js1.11.1-wUCxpCl6n"
-mkdir "./createCapture p5.js1.11.1-wUCxpCl6n"
-pushd "./createCapture p5.js1.11.1-wUCxpCl6n" > /dev/null
-unzip -q "../../downloads/zips/createCapture p5.js1.11.1-wUCxpCl6n"
+echo unzip 3 "ims_week1 v0 Xueyu333 floMirror-jqtIfMAsE"
+rm -rf "./ims_week1 v0 Xueyu333 floMirror-jqtIfMAsE"
+mkdir "./ims_week1 v0 Xueyu333 floMirror-jqtIfMAsE"
+pushd "./ims_week1 v0 Xueyu333 floMirror-jqtIfMAsE" > /dev/null
+unzip -q "../../downloads/zips/ims_week1 v0 Xueyu333 floMirror-jqtIfMAsE"
 popd > /dev/null
 #
-echo unzip 4 "11.1 Live Video and createCapture copy-RU7UEI2x2"
-rm -rf "./11.1 Live Video and createCapture copy-RU7UEI2x2"
-mkdir "./11.1 Live Video and createCapture copy-RU7UEI2x2"
-pushd "./11.1 Live Video and createCapture copy-RU7UEI2x2" > /dev/null
-unzip -q "../../downloads/zips/11.1 Live Video and createCapture copy-RU7UEI2x2"
+echo unzip 4 "Unexpected cut by FabriGu v0-Z3eRvpZqL0"
+rm -rf "./Unexpected cut by FabriGu v0-Z3eRvpZqL0"
+mkdir "./Unexpected cut by FabriGu v0-Z3eRvpZqL0"
+pushd "./Unexpected cut by FabriGu v0-Z3eRvpZqL0" > /dev/null
+unzip -q "../../downloads/zips/Unexpected cut by FabriGu v0-Z3eRvpZqL0"
 popd > /dev/null
 #
-echo unzip 5 "MazeSpin liberation screens v2-wT957KlMz"
-rm -rf "./MazeSpin liberation screens v2-wT957KlMz"
-mkdir "./MazeSpin liberation screens v2-wT957KlMz"
-pushd "./MazeSpin liberation screens v2-wT957KlMz" > /dev/null
-unzip -q "../../downloads/zips/MazeSpin liberation screens v2-wT957KlMz"
+echo unzip 5 "Mercurial mum-kezJy85SZ"
+rm -rf "./Mercurial mum-kezJy85SZ"
+mkdir "./Mercurial mum-kezJy85SZ"
+pushd "./Mercurial mum-kezJy85SZ" > /dev/null
+unzip -q "../../downloads/zips/Mercurial mum-kezJy85SZ"
 popd > /dev/null
 #
-echo unzip 6 "OpenSimplex Noise - fullScreen-VDYJuuQ4B"
-rm -rf "./OpenSimplex Noise - fullScreen-VDYJuuQ4B"
-mkdir "./OpenSimplex Noise - fullScreen-VDYJuuQ4B"
-pushd "./OpenSimplex Noise - fullScreen-VDYJuuQ4B" > /dev/null
-unzip -q "../../downloads/zips/OpenSimplex Noise - fullScreen-VDYJuuQ4B"
+echo unzip 6 "Unexpected cut v0 - FabriGu-jNIoZhDk1"
+rm -rf "./Unexpected cut v0 - FabriGu-jNIoZhDk1"
+mkdir "./Unexpected cut v0 - FabriGu-jNIoZhDk1"
+pushd "./Unexpected cut v0 - FabriGu-jNIoZhDk1" > /dev/null
+unzip -q "../../downloads/zips/Unexpected cut v0 - FabriGu-jNIoZhDk1"
 popd > /dev/null
 #
-echo unzip 7 "OpenSimplex Noise - createGraphics-BSRsNJ1nj"
-rm -rf "./OpenSimplex Noise - createGraphics-BSRsNJ1nj"
-mkdir "./OpenSimplex Noise - createGraphics-BSRsNJ1nj"
-pushd "./OpenSimplex Noise - createGraphics-BSRsNJ1nj" > /dev/null
-unzip -q "../../downloads/zips/OpenSimplex Noise - createGraphics-BSRsNJ1nj"
+echo unzip 7 "IMS - Week 1 Assignment v0 by Prisha-DV5DSN8rd"
+rm -rf "./IMS - Week 1 Assignment v0 by Prisha-DV5DSN8rd"
+mkdir "./IMS - Week 1 Assignment v0 by Prisha-DV5DSN8rd"
+pushd "./IMS - Week 1 Assignment v0 by Prisha-DV5DSN8rd" > /dev/null
+unzip -q "../../downloads/zips/IMS - Week 1 Assignment v0 by Prisha-DV5DSN8rd"
 popd > /dev/null
 #
-echo unzip 8 "OpenSimplex Noise - gray-4n5f1O6HR"
-rm -rf "./OpenSimplex Noise - gray-4n5f1O6HR"
-mkdir "./OpenSimplex Noise - gray-4n5f1O6HR"
-pushd "./OpenSimplex Noise - gray-4n5f1O6HR" > /dev/null
-unzip -q "../../downloads/zips/OpenSimplex Noise - gray-4n5f1O6HR"
+echo unzip 8 "Stars in the bottle v0-ZDUKuR1Xu"
+rm -rf "./Stars in the bottle v0-ZDUKuR1Xu"
+mkdir "./Stars in the bottle v0-ZDUKuR1Xu"
+pushd "./Stars in the bottle v0-ZDUKuR1Xu" > /dev/null
+unzip -q "../../downloads/zips/Stars in the bottle v0-ZDUKuR1Xu"
 popd > /dev/null
 #
-echo unzip 9 "CC 137 4D OpenSimplex Noise Loop copy-U56rFgA-V"
-rm -rf "./CC 137 4D OpenSimplex Noise Loop copy-U56rFgA-V"
-mkdir "./CC 137 4D OpenSimplex Noise Loop copy-U56rFgA-V"
-pushd "./CC 137 4D OpenSimplex Noise Loop copy-U56rFgA-V" > /dev/null
-unzip -q "../../downloads/zips/CC 137 4D OpenSimplex Noise Loop copy-U56rFgA-V"
+echo unzip 9 "CC 86 Cube Wave v0-PzCu1wybC"
+rm -rf "./CC 86 Cube Wave v0-PzCu1wybC"
+mkdir "./CC 86 Cube Wave v0-PzCu1wybC"
+pushd "./CC 86 Cube Wave v0-PzCu1wybC" > /dev/null
+unzip -q "../../downloads/zips/CC 86 Cube Wave v0-PzCu1wybC"
 popd > /dev/null
 #
-echo unzip 10 "Worley Noise frameIndex bounce-O91vtOED4"
-rm -rf "./Worley Noise frameIndex bounce-O91vtOED4"
-mkdir "./Worley Noise frameIndex bounce-O91vtOED4"
-pushd "./Worley Noise frameIndex bounce-O91vtOED4" > /dev/null
-unzip -q "../../downloads/zips/Worley Noise frameIndex bounce-O91vtOED4"
+echo unzip 10 "particle light v0-JP2PNn3KE"
+rm -rf "./particle light v0-JP2PNn3KE"
+mkdir "./particle light v0-JP2PNn3KE"
+pushd "./particle light v0-JP2PNn3KE" > /dev/null
+unzip -q "../../downloads/zips/particle light v0-JP2PNn3KE"
 popd > /dev/null
 #
-echo unzip 11 "Worley Noise createGraphics-CRYzNz14L"
-rm -rf "./Worley Noise createGraphics-CRYzNz14L"
-mkdir "./Worley Noise createGraphics-CRYzNz14L"
-pushd "./Worley Noise createGraphics-CRYzNz14L" > /dev/null
-unzip -q "../../downloads/zips/Worley Noise createGraphics-CRYzNz14L"
+echo unzip 11 "ims-01-Weighted Voronoi Image Stippling v0-FogwwiKOk"
+rm -rf "./ims-01-Weighted Voronoi Image Stippling v0-FogwwiKOk"
+mkdir "./ims-01-Weighted Voronoi Image Stippling v0-FogwwiKOk"
+pushd "./ims-01-Weighted Voronoi Image Stippling v0-FogwwiKOk" > /dev/null
+unzip -q "../../downloads/zips/ims-01-Weighted Voronoi Image Stippling v0-FogwwiKOk"
 popd > /dev/null
 #
-echo unzip 12 "Cabana! - Worley Noise Port copy-1fcRQkDrn"
-rm -rf "./Cabana! - Worley Noise Port copy-1fcRQkDrn"
-mkdir "./Cabana! - Worley Noise Port copy-1fcRQkDrn"
-pushd "./Cabana! - Worley Noise Port copy-1fcRQkDrn" > /dev/null
-unzip -q "../../downloads/zips/Cabana! - Worley Noise Port copy-1fcRQkDrn"
+echo unzip 12 "Feather vest v0-nlt9KGP7M"
+rm -rf "./Feather vest v0-nlt9KGP7M"
+mkdir "./Feather vest v0-nlt9KGP7M"
+pushd "./Feather vest v0-nlt9KGP7M" > /dev/null
+unzip -q "../../downloads/zips/Feather vest v0-nlt9KGP7M"
 popd > /dev/null
 #
-echo unzip 13 "CC 102 - 2D Water Ripples copy-cg5iaifhV"
-rm -rf "./CC 102 - 2D Water Ripples copy-cg5iaifhV"
-mkdir "./CC 102 - 2D Water Ripples copy-cg5iaifhV"
-pushd "./CC 102 - 2D Water Ripples copy-cg5iaifhV" > /dev/null
-unzip -q "../../downloads/zips/CC 102 - 2D Water Ripples copy-cg5iaifhV"
+echo unzip 13 "ims01-omi v0-JEVQFVRSA"
+rm -rf "./ims01-omi v0-JEVQFVRSA"
+mkdir "./ims01-omi v0-JEVQFVRSA"
+pushd "./ims01-omi v0-JEVQFVRSA" > /dev/null
+unzip -q "../../downloads/zips/ims01-omi v0-JEVQFVRSA"
 popd > /dev/null
 #
-echo unzip 14 "ims-01 bounce fullscreen copy-N50_4c16_"
-rm -rf "./ims-01 bounce fullscreen copy-N50_4c16_"
-mkdir "./ims-01 bounce fullscreen copy-N50_4c16_"
-pushd "./ims-01 bounce fullscreen copy-N50_4c16_" > /dev/null
-unzip -q "../../downloads/zips/ims-01 bounce fullscreen copy-N50_4c16_"
+echo unzip 14 "ims01-omi copy-wlzgvuYeV"
+rm -rf "./ims01-omi copy-wlzgvuYeV"
+mkdir "./ims01-omi copy-wlzgvuYeV"
+pushd "./ims01-omi copy-wlzgvuYeV" > /dev/null
+unzip -q "../../downloads/zips/ims01-omi copy-wlzgvuYeV"
 popd > /dev/null
 #
-echo unzip 15 "ims black-n white-1 jump-8Iazn1D_P"
-rm -rf "./ims black-n white-1 jump-8Iazn1D_P"
-mkdir "./ims black-n white-1 jump-8Iazn1D_P"
-pushd "./ims black-n white-1 jump-8Iazn1D_P" > /dev/null
-unzip -q "../../downloads/zips/ims black-n white-1 jump-8Iazn1D_P"
+echo unzip 15 "ims01-omi copy-6eYsZyQGI"
+rm -rf "./ims01-omi copy-6eYsZyQGI"
+mkdir "./ims01-omi copy-6eYsZyQGI"
+pushd "./ims01-omi copy-6eYsZyQGI" > /dev/null
+unzip -q "../../downloads/zips/ims01-omi copy-6eYsZyQGI"
 popd > /dev/null
 #
-echo unzip 16 "Shape rect parameter errors-2v824hMIt"
-rm -rf "./Shape rect parameter errors-2v824hMIt"
-mkdir "./Shape rect parameter errors-2v824hMIt"
-pushd "./Shape rect parameter errors-2v824hMIt" > /dev/null
-unzip -q "../../downloads/zips/Shape rect parameter errors-2v824hMIt"
+echo unzip 16 "ims01-omi copy-C3EPiW7_3"
+rm -rf "./ims01-omi copy-C3EPiW7_3"
+mkdir "./ims01-omi copy-C3EPiW7_3"
+pushd "./ims01-omi copy-C3EPiW7_3" > /dev/null
+unzip -q "../../downloads/zips/ims01-omi copy-C3EPiW7_3"
 popd > /dev/null
 #
-echo unzip 17 "0_7_FFT by luisa_NYUpy-ZfrLYKf4u"
-rm -rf "./0_7_FFT by luisa_NYUpy-ZfrLYKf4u"
-mkdir "./0_7_FFT by luisa_NYUpy-ZfrLYKf4u"
-pushd "./0_7_FFT by luisa_NYUpy-ZfrLYKf4u" > /dev/null
-unzip -q "../../downloads/zips/0_7_FFT by luisa_NYUpy-ZfrLYKf4u"
+echo unzip 17 "portals by oliviaemlee v0-1nLfUa1PU"
+rm -rf "./portals by oliviaemlee v0-1nLfUa1PU"
+mkdir "./portals by oliviaemlee v0-1nLfUa1PU"
+pushd "./portals by oliviaemlee v0-1nLfUa1PU" > /dev/null
+unzip -q "../../downloads/zips/portals by oliviaemlee v0-1nLfUa1PU"
 popd > /dev/null
 #
-echo unzip 18 "0_7_FFT copy-3Z0ABF7of"
-rm -rf "./0_7_FFT copy-3Z0ABF7of"
-mkdir "./0_7_FFT copy-3Z0ABF7of"
-pushd "./0_7_FFT copy-3Z0ABF7of" > /dev/null
-unzip -q "../../downloads/zips/0_7_FFT copy-3Z0ABF7of"
+echo unzip 18 "3D shader using webcam invert attempt v0-NjbEAOeH0"
+rm -rf "./3D shader using webcam invert attempt v0-NjbEAOeH0"
+mkdir "./3D shader using webcam invert attempt v0-NjbEAOeH0"
+pushd "./3D shader using webcam invert attempt v0-NjbEAOeH0" > /dev/null
+unzip -q "../../downloads/zips/3D shader using webcam invert attempt v0-NjbEAOeH0"
 popd > /dev/null
 #
-echo unzip 19 "0_2_trigger_several_sounds luisa_NYU-8svv4J26x"
-rm -rf "./0_2_trigger_several_sounds luisa_NYU-8svv4J26x"
-mkdir "./0_2_trigger_several_sounds luisa_NYU-8svv4J26x"
-pushd "./0_2_trigger_several_sounds luisa_NYU-8svv4J26x" > /dev/null
-unzip -q "../../downloads/zips/0_2_trigger_several_sounds luisa_NYU-8svv4J26x"
+echo unzip 19 "Handtrack with shadertoy v0-1Qtz0w1Lf"
+rm -rf "./Handtrack with shadertoy v0-1Qtz0w1Lf"
+mkdir "./Handtrack with shadertoy v0-1Qtz0w1Lf"
+pushd "./Handtrack with shadertoy v0-1Qtz0w1Lf" > /dev/null
+unzip -q "../../downloads/zips/Handtrack with shadertoy v0-1Qtz0w1Lf"
 popd > /dev/null
 #
-echo unzip 20 "0_2_trigger_several_sounds copy-DCmsLNzk5"
-rm -rf "./0_2_trigger_several_sounds copy-DCmsLNzk5"
-mkdir "./0_2_trigger_several_sounds copy-DCmsLNzk5"
-pushd "./0_2_trigger_several_sounds copy-DCmsLNzk5" > /dev/null
-unzip -q "../../downloads/zips/0_2_trigger_several_sounds copy-DCmsLNzk5"
+echo unzip 20 "IM Screen week 1 v0-rVpG52-Ih"
+rm -rf "./IM Screen week 1 v0-rVpG52-Ih"
+mkdir "./IM Screen week 1 v0-rVpG52-Ih"
+pushd "./IM Screen week 1 v0-rVpG52-Ih" > /dev/null
+unzip -q "../../downloads/zips/IM Screen week 1 v0-rVpG52-Ih"
 popd > /dev/null
 #
-echo unzip 21 "qrcode-BqWAQMAZd"
-rm -rf "./qrcode-BqWAQMAZd"
-mkdir "./qrcode-BqWAQMAZd"
-pushd "./qrcode-BqWAQMAZd" > /dev/null
-unzip -q "../../downloads/zips/qrcode-BqWAQMAZd"
+echo unzip 21 "ims1-leo v0-iij0Chw7N"
+rm -rf "./ims1-leo v0-iij0Chw7N"
+mkdir "./ims1-leo v0-iij0Chw7N"
+pushd "./ims1-leo v0-iij0Chw7N" > /dev/null
+unzip -q "../../downloads/zips/ims1-leo v0-iij0Chw7N"
 popd > /dev/null
 #
-echo unzip 22 "week 8 picture edit effect v2-4JWrnpTsB"
-rm -rf "./week 8 picture edit effect v2-4JWrnpTsB"
-mkdir "./week 8 picture edit effect v2-4JWrnpTsB"
-pushd "./week 8 picture edit effect v2-4JWrnpTsB" > /dev/null
-unzip -q "../../downloads/zips/week 8 picture edit effect v2-4JWrnpTsB"
+echo unzip 22 "ims01-Vicky copy-DHSkFnUsK"
+rm -rf "./ims01-Vicky copy-DHSkFnUsK"
+mkdir "./ims01-Vicky copy-DHSkFnUsK"
+pushd "./ims01-Vicky copy-DHSkFnUsK" > /dev/null
+unzip -q "../../downloads/zips/ims01-Vicky copy-DHSkFnUsK"
 popd > /dev/null
 #
-echo unzip 23 "DOM.js console.log bug-VY-KQxJkA"
-rm -rf "./DOM.js console.log bug-VY-KQxJkA"
-mkdir "./DOM.js console.log bug-VY-KQxJkA"
-pushd "./DOM.js console.log bug-VY-KQxJkA" > /dev/null
-unzip -q "../../downloads/zips/DOM.js console.log bug-VY-KQxJkA"
+echo unzip 23 "ims01-Vi v1-87bm2iiek"
+rm -rf "./ims01-Vi v1-87bm2iiek"
+mkdir "./ims01-Vi v1-87bm2iiek"
+pushd "./ims01-Vi v1-87bm2iiek" > /dev/null
+unzip -q "../../downloads/zips/ims01-Vi v1-87bm2iiek"
 popd > /dev/null
 #
-echo unzip 24 "test drive DOM.js v12 copy-5nLN-iDkq"
-rm -rf "./test drive DOM.js v12 copy-5nLN-iDkq"
-mkdir "./test drive DOM.js v12 copy-5nLN-iDkq"
-pushd "./test drive DOM.js v12 copy-5nLN-iDkq" > /dev/null
-unzip -q "../../downloads/zips/test drive DOM.js v12 copy-5nLN-iDkq"
+echo unzip 24 "ims02-Vi v1-cc0BpWomv"
+rm -rf "./ims02-Vi v1-cc0BpWomv"
+mkdir "./ims02-Vi v1-cc0BpWomv"
+pushd "./ims02-Vi v1-cc0BpWomv" > /dev/null
+unzip -q "../../downloads/zips/ims02-Vi v1-cc0BpWomv"
 popd > /dev/null
 #
-echo unzip 25 "test drive DOM.js v12-IrJGEcCs1"
-rm -rf "./test drive DOM.js v12-IrJGEcCs1"
-mkdir "./test drive DOM.js v12-IrJGEcCs1"
-pushd "./test drive DOM.js v12-IrJGEcCs1" > /dev/null
-unzip -q "../../downloads/zips/test drive DOM.js v12-IrJGEcCs1"
+echo unzip 25 "week01 demo-zzhlY9VFr"
+rm -rf "./week01 demo-zzhlY9VFr"
+mkdir "./week01 demo-zzhlY9VFr"
+pushd "./week01 demo-zzhlY9VFr" > /dev/null
+unzip -q "../../downloads/zips/week01 demo-zzhlY9VFr"
+popd > /dev/null
+#
+echo unzip 26 "wk 6, problem 3 copy-M6BJaXF0U"
+rm -rf "./wk 6, problem 3 copy-M6BJaXF0U"
+mkdir "./wk 6, problem 3 copy-M6BJaXF0U"
+pushd "./wk 6, problem 3 copy-M6BJaXF0U" > /dev/null
+unzip -q "../../downloads/zips/wk 6, problem 3 copy-M6BJaXF0U"
+popd > /dev/null
+#
+echo unzip 27 "earth-xyz-bpsB_xmSH"
+rm -rf "./earth-xyz-bpsB_xmSH"
+mkdir "./earth-xyz-bpsB_xmSH"
+pushd "./earth-xyz-bpsB_xmSH" > /dev/null
+unzip -q "../../downloads/zips/earth-xyz-bpsB_xmSH"
+popd > /dev/null
+#
+echo unzip 28 "foo error-4DETmJP-l"
+rm -rf "./foo error-4DETmJP-l"
+mkdir "./foo error-4DETmJP-l"
+pushd "./foo error-4DETmJP-l" > /dev/null
+unzip -q "../../downloads/zips/foo error-4DETmJP-l"
+popd > /dev/null
+#
+echo unzip 29 "Standing cowl copy-pcU8eIbNe"
+rm -rf "./Standing cowl copy-pcU8eIbNe"
+mkdir "./Standing cowl copy-pcU8eIbNe"
+pushd "./Standing cowl copy-pcU8eIbNe" > /dev/null
+unzip -q "../../downloads/zips/Standing cowl copy-pcU8eIbNe"
+popd > /dev/null
+#
+echo unzip 30 "accelerationXYZ-RRtBxe8lI"
+rm -rf "./accelerationXYZ-RRtBxe8lI"
+mkdir "./accelerationXYZ-RRtBxe8lI"
+pushd "./accelerationXYZ-RRtBxe8lI" > /dev/null
+unzip -q "../../downloads/zips/accelerationXYZ-RRtBxe8lI"
+popd > /dev/null
+#
+echo unzip 31 "Day2-matching-bounce-Ll9Kd-9Ec"
+rm -rf "./Day2-matching-bounce-Ll9Kd-9Ec"
+mkdir "./Day2-matching-bounce-Ll9Kd-9Ec"
+pushd "./Day2-matching-bounce-Ll9Kd-9Ec" > /dev/null
+unzip -q "../../downloads/zips/Day2-matching-bounce-Ll9Kd-9Ec"
 popd > /dev/null
 
 cd ..
