@@ -1,10 +1,13 @@
 # Sketches for jht9629-nyu
-621 sketches  
+619 sketches  
+[ims01-omi v0](https://editor.p5js.org/jht9629-nyu/sketches/wlzgvuYeV)<!-- 2025-03-26T23:29:29.583Z -->  
+[ims-01 bounce fullscreen](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)<!-- 2025-03-26T22:15:38.105Z -->  
+[ims01-Vi v1](https://editor.p5js.org/jht9629-nyu/sketches/87bm2iiek)<!-- 2025-03-26T20:56:37.646Z -->  
+[ims01-Jiaz v0](https://editor.p5js.org/jht9629-nyu/sketches/lINisc3El)<!-- 2025-03-26T17:58:07.558Z -->  
 [video scan radial v8](https://editor.p5js.org/jht9629-nyu/sketches/2bjn_Nn9x)<!-- 2025-03-26T15:11:14.588Z -->  
 [ims04-jht scroll color rate](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)<!-- 2025-03-25T15:40:11.142Z -->  
 [ims04-jht scroll color bars](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)<!-- 2025-03-25T15:37:07.145Z -->  
 [MazeSpin liberation screens v7](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)<!-- 2025-03-25T15:25:03.501Z -->  
-[ims-01 bounce fullscreen](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)<!-- 2025-03-25T15:18:51.878Z -->  
 [Unexpected cut v1](https://editor.p5js.org/jht9629-nyu/sketches/bQHOejZlG)<!-- 2025-03-24T16:23:16.494Z -->  
 [Unexpected cut by Fabr v1](https://editor.p5js.org/jht9629-nyu/sketches/xK1q0EIQz)<!-- 2025-03-24T13:49:34.202Z -->  
 [ims\_week1 v0 Xueyu333 floMirror](https://editor.p5js.org/jht9629-nyu/sketches/jqtIfMAsE)<!-- 2025-03-24T13:38:33.551Z -->  
@@ -17,17 +20,12 @@
 [particle light v0](https://editor.p5js.org/jht9629-nyu/sketches/JP2PNn3KE)<!-- 2025-03-24T10:21:53.795Z -->  
 [ims-01-Weighted Voronoi Image Stippling v0](https://editor.p5js.org/jht9629-nyu/sketches/FogwwiKOk)<!-- 2025-03-24T10:19:59.983Z -->  
 [Feather vest v0](https://editor.p5js.org/jht9629-nyu/sketches/nlt9KGP7M)<!-- 2025-03-24T10:07:01.916Z -->  
-[ims01-omi v0](https://editor.p5js.org/jht9629-nyu/sketches/JEVQFVRSA)<!-- 2025-03-24T10:05:33.182Z -->  
-[ims01-omi copy](https://editor.p5js.org/jht9629-nyu/sketches/wlzgvuYeV)<!-- 2025-03-24T10:04:35.508Z -->  
-[ims01-omi copy](https://editor.p5js.org/jht9629-nyu/sketches/6eYsZyQGI)<!-- 2025-03-24T10:04:01.186Z -->  
-[ims01-omi copy](https://editor.p5js.org/jht9629-nyu/sketches/C3EPiW7_3)<!-- 2025-03-24T10:03:55.713Z -->  
 [portals by oliviaemlee v0](https://editor.p5js.org/jht9629-nyu/sketches/1nLfUa1PU)<!-- 2025-03-24T10:01:38.055Z -->  
 [3D: shader using webcam invert attempt v0](https://editor.p5js.org/jht9629-nyu/sketches/NjbEAOeH0)<!-- 2025-03-24T09:57:59.115Z -->  
 [Handtrack with shadertoy v0](https://editor.p5js.org/jht9629-nyu/sketches/1Qtz0w1Lf)<!-- 2025-03-24T09:52:34.065Z -->  
 [IM Screen week 1 v0](https://editor.p5js.org/jht9629-nyu/sketches/rVpG52-Ih)<!-- 2025-03-24T09:46:28.223Z -->  
 [ims1-leo v0](https://editor.p5js.org/jht9629-nyu/sketches/iij0Chw7N)<!-- 2025-03-24T09:41:58.064Z -->  
 [ims01-Vicky copy](https://editor.p5js.org/jht9629-nyu/sketches/DHSkFnUsK)<!-- 2025-03-24T09:38:44.267Z -->  
-[ims01-Vi v1](https://editor.p5js.org/jht9629-nyu/sketches/87bm2iiek)<!-- 2025-03-24T09:32:14.336Z -->  
 [ims02-Vi v1](https://editor.p5js.org/jht9629-nyu/sketches/cc0BpWomv)<!-- 2025-03-24T09:07:58.882Z -->  
 [week01 demo](https://editor.p5js.org/jht9629-nyu/sketches/zzhlY9VFr)<!-- 2025-03-23T23:11:07.149Z -->  
 [wk 6, problem 3 copy](https://editor.p5js.org/jht9629-nyu/sketches/M6BJaXF0U)<!-- 2025-03-23T22:58:21.383Z -->  

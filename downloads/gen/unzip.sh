@@ -1,4 +1,4 @@
-cd "/Users/jht2/Documents/projects/_repos/p5mo/p5mirror-jht9629-nyu/downloads/../p5projects"
+cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 
 cd ..
 # remove redundant p5.js p5.sound.min.js

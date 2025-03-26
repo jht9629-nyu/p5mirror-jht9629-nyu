@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[620 sketches 2025-03-26T15:11:14.588Z](./downloads/gen/sketches_recent.md)
+[618 sketches 2025-03-26T23:29:29.583Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [05\_multitouch-r1pNFuC1P](./p5projects/05_multitouch-r1pNFuC1P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)]
@@ -412,13 +412,11 @@
 - [ims-01 bounce fullscreen-Mpgun-Kti](./p5projects/ims-01%20bounce%20fullscreen-Mpgun-Kti) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)]
 - [ims-01-Weighted Voronoi Image Stippling v0-FogwwiKOk](./p5projects/ims-01-Weighted%20Voronoi%20Image%20Stippling%20v0-FogwwiKOk) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/FogwwiKOk)]
 - [ims-03-jht truchet tiles pause copy-CYMdD77ySc](./p5projects/ims-03-jht%20truchet%20tiles%20pause%20copy-CYMdD77ySc) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/YMdD77ySc)]
+- [ims01-Jiaz v0-lINisc3El](./p5projects/ims01-Jiaz%20v0-lINisc3El) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/lINisc3El)]
 - [ims01-Vi v1-87bm2iiek](./p5projects/ims01-Vi%20v1-87bm2iiek) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/87bm2iiek)]
 - [ims01-Vicky copy-DHSkFnUsK](./p5projects/ims01-Vicky%20copy-DHSkFnUsK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DHSkFnUsK)]
 - [ims01-jht-8N3rb3TMD](./p5projects/ims01-jht-8N3rb3TMD) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8N3rb3TMD)]
-- [ims01-omi copy-6eYsZyQGI](./p5projects/ims01-omi%20copy-6eYsZyQGI) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6eYsZyQGI)]
-- [ims01-omi copy-C3EPiW7\_3](./p5projects/ims01-omi%20copy-C3EPiW7_3) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/C3EPiW7_3)]
-- [ims01-omi copy-wlzgvuYeV](./p5projects/ims01-omi%20copy-wlzgvuYeV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wlzgvuYeV)]
-- [ims01-omi v0-JEVQFVRSA](./p5projects/ims01-omi%20v0-JEVQFVRSA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/JEVQFVRSA)]
+- [ims01-omi v0-wlzgvuYeV](./p5projects/ims01-omi%20v0-wlzgvuYeV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wlzgvuYeV)]
 - [ims02-Vi v1-cc0BpWomv](./p5projects/ims02-Vi%20v1-cc0BpWomv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cc0BpWomv)]
 - [ims03-jht scrolling color bars v2-zV3BsHs7X](./p5projects/ims03-jht%20scrolling%20color%20bars%20v2-zV3BsHs7X) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zV3BsHs7X)]
 - [ims03-jht scrolling color bars-3VKJ-q8ar](./p5projects/ims03-jht%20scrolling%20color%20bars-3VKJ-q8ar) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)]
