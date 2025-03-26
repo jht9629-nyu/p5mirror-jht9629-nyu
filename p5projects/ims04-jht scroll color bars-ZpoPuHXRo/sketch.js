@@ -24,8 +24,7 @@ function setup() {
   createCanvas(my.width, my.height);
   noStroke();
 
-  fullScreenBtn = createButton("Full Screen").mousePressed(full_screen_action);
-  fullScreenBtn.style("font-size:42px");
+  setup_fullScreenButton();
 
   my_setup();
 }
@@ -62,39 +61,28 @@ function draw() {
 // ims03-jht scrolling color bars
 // color pops on at wrap around
 
-// From
-// https://editor.p5js.org/jht1493/sketches/5LgILr8RF
+// --
+function setup_fullScreenButton() {
+  my.fullScreenButton = createButton("?=v7 Full Screen");
+  my.fullScreenButton.mousePressed(fullScreen_action);
+  my.fullScreenButton.style("font-size:42px");
+}
 
-function full_screen_action() {
-  ui_remove_all();
-  ui_toggleFullScreen();
+function fullScreen_action() {
+  my.fullScreenButton.remove();
+  fullscreen(1);
   let delay = 3000;
   setTimeout(ui_present_window, delay);
 }
 
 function ui_present_window() {
   resizeCanvas(windowWidth, windowHeight);
-  my_setup();
+  // init_dim();
 }
 
-function ui_remove_all() {
-  fullScreenBtn.remove();
+// Respond to window resizing event
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
-
-function ui_toggleFullScreen() {
-  fullscreen(1);
-  // if (!document.documentElement.requestFullscreen) {
-  //   console.log("NO document.documentElement.requestFullscreen");
-  //   return;
-  // }
-  // if (!document.fullscreenElement) {
-  //   document.documentElement.requestFullscreen();
-  // } else {
-  //   if (document.exitFullscreen) {
-  //     document.exitFullscreen();
-  //   }
-  // }
-}
-
 // https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar
 // ims03-jht scrolling color bars

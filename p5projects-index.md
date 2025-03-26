@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[619 sketches 2025-03-24T16:23:16.494Z](./downloads/gen/sketches_recent.md)
+[620 sketches 2025-03-26T15:11:14.588Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [05\_multitouch-r1pNFuC1P](./p5projects/05_multitouch-r1pNFuC1P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)]
@@ -203,7 +203,7 @@
 - [Marbling Color - animate ink-2u6e-KY8S](./p5projects/Marbling%20Color%20-%20animate%20ink-2u6e-KY8S) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2u6e-KY8S)]
 - [Mature sheep copy-zeUPP3rQe](./p5projects/Mature%20sheep%20copy-zeUPP3rQe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zeUPP3rQe)]
 - [MazeSpin liberation screens copy-PN3n1CXom](./p5projects/MazeSpin%20liberation%20screens%20copy-PN3n1CXom) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)]
-- [MazeSpin liberation screens v2-wT957KlMz](./p5projects/MazeSpin%20liberation%20screens%20v2-wT957KlMz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)]
+- [MazeSpin liberation screens v7-wT957KlMz](./p5projects/MazeSpin%20liberation%20screens%20v7-wT957KlMz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)]
 - [Melanie pong with object array-qfMmYs2br](./p5projects/Melanie%20pong%20with%20object%20array-qfMmYs2br) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qfMmYs2br)]
 - [Melanie pong with object literals-\_8fx3fhlQ](./p5projects/Melanie%20pong%20with%20object%20literals-_8fx3fhlQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_8fx3fhlQ)]
 - [Melted throat copy-cecKApAfd](./p5projects/Melted%20throat%20copy-cecKApAfd) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cecKApAfd)]
@@ -606,6 +606,7 @@
 - [video scan radial v6-1-ZyRuMxSDy](./p5projects/video%20scan%20radial%20v6-1-ZyRuMxSDy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZyRuMxSDy)]
 - [video scan radial v6-nkw-sZXwN](./p5projects/video%20scan%20radial%20v6-nkw-sZXwN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nkw-sZXwN)]
 - [video scan radial v7-i6akdNRS2](./p5projects/video%20scan%20radial%20v7-i6akdNRS2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/i6akdNRS2)]
+- [video scan radial v8-2bjn\_Nn9x](./p5projects/video%20scan%20radial%20v8-2bjn_Nn9x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2bjn_Nn9x)]
 - [video-tint-2x2-mobile-erHP1oZMO](./p5projects/video-tint-2x2-mobile-erHP1oZMO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/erHP1oZMO)]
 - [videoKit copy-tJp3lU5zf](./p5projects/videoKit%20copy-tJp3lU5zf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tJp3lU5zf)]
 - [videoKit copy-xSrdePcOW](./p5projects/videoKit%20copy-xSrdePcOW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/xSrdePcOW)]

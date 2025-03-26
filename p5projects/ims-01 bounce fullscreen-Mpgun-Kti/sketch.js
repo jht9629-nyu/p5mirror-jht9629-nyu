@@ -1,8 +1,8 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti
 // ims-01 bounce fullscreen
 //
-// white cross bounces around 
-// my.changeTime seconds to switches to random location 
+// white cross bounces around
+// my.changeTime seconds to switches to random location
 // button to go fullscreen
 
 let my = {};
@@ -17,7 +17,7 @@ function setup() {
   my.ypos = 0;
   my.xspeed = 1;
   my.yspeed = 1;
-  my.startTime = 0;
+  my.startTime = millis() / 1000.0;
 
   if (!my.debug) {
     my.width = windowWidth;
@@ -26,9 +26,7 @@ function setup() {
   createCanvas(my.width, my.height);
   noStroke();
 
-  setup_fullScreenBtn();
-
-  my.startTime = millis() / 1000.0;
+  setup_fullScreenButton();
 
   new_pos();
 }
@@ -37,7 +35,7 @@ function draw() {
   background(0);
 
   check_time();
-  
+
   strokeWeight(1);
   stroke(255);
 
@@ -68,22 +66,18 @@ function check_time() {
   }
 }
 
-
 // From
 // https://editor.p5js.org/jht1493/sketches/5LgILr8RF
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+// --
+function setup_fullScreenButton() {
+  my.fullScreenButton = createButton("?=v7 Full Screen");
+  my.fullScreenButton.mousePressed(fullScreen_action);
+  my.fullScreenButton.style("font-size:42px");
 }
 
-function setup_fullScreenBtn() {
-  my.fullScreenBtn = createButton('?=v6 Full Screen');
-  my.fullScreenBtn.mousePressed(full_screen_action);
-  my.fullScreenBtn.style('font-size:42px');
-}
-
-function full_screen_action() {
-  my.fullScreenBtn.remove();
+function fullScreen_action() {
+  my.fullScreenButton.remove();
   fullscreen(1);
   let delay = 3000;
   setTimeout(ui_present_window, delay);
@@ -92,6 +86,11 @@ function full_screen_action() {
 function ui_present_window() {
   resizeCanvas(windowWidth, windowHeight);
   // init_dim();
+}
+
+// Respond to window resizing event
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 // https://editor.p5js.org/jht9629-nyu/sketches/8Iazn1D_P

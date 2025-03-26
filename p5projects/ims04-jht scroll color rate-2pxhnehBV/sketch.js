@@ -5,13 +5,6 @@
 // scroll in my.scrollSeconds 
 // https://p5js.org/reference/#/p5/deltaTime
 
-let colorGold = [187, 165, 61];
-
-// double red
-// let colorPalette = ["red", "green", colorGold];
-// let colorPalette = ["red", "green", colorGold, "green"];
-let colorPalette = ["red", "green", colorGold, "black"];
-
 let my = {};
 
 function setup() {
@@ -30,9 +23,8 @@ function setup() {
   createCanvas(my.width, my.height);
   noStroke();
 
-  fullScreenBtn = createButton("Full Screen").mousePressed(full_screen_action);
-  fullScreenBtn.style("font-size:42px");
-
+  setup_fullScreenButton();
+  
   my_setup();
 }
 
@@ -68,19 +60,25 @@ function draw() {
   }
 }
 
-// --
-// https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo
-// ims04-jht scroll color bars - no pop 
+let colorGold = [187, 165, 61];
 
-// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar
-// ims03-jht scrolling color bars
-// color pops on at wrap around
+// double red
+// let colorPalette = ["red", "green", colorGold];
+// let colorPalette = ["red", "green", colorGold, "green"];
+let colorPalette = ["red", "green", colorGold, "black"];
 
 // From
 // https://editor.p5js.org/jht1493/sketches/5LgILr8RF
 
-function full_screen_action() {
-  fullScreenBtn.remove();
+// --
+function setup_fullScreenButton() {
+  my.fullScreenButton = createButton("?=v7 Full Screen");
+  my.fullScreenButton.mousePressed(fullScreen_action);
+  my.fullScreenButton.style("font-size:42px");
+}
+
+function fullScreen_action() {
+  my.fullScreenButton.remove();
   fullscreen(1);
   let delay = 3000;
   setTimeout(ui_present_window, delay);
@@ -90,6 +88,19 @@ function ui_present_window() {
   resizeCanvas(windowWidth, windowHeight);
   my_setup();
 }
+
+// Respond to window resizing event
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+// --
+// https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo
+// ims04-jht scroll color bars - no pop 
+
+// https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar
+// ims03-jht scrolling color bars
+// color pops on at wrap around
 
 // https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar
 // ims03-jht scrolling color bars
