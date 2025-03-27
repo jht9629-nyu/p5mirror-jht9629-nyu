@@ -1,0 +1,8 @@
+echo download 1 "ims02 Unexpected-cut-mask-v_diZAkZQ"
+curl -s https://editor.p5js.org/editor/projects/v_diZAkZQ/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/ims02 Unexpected-cut-mask-v_diZAkZQ.zip"
+echo download 2 "blendMode-h47LHGYre"
+curl -s https://editor.p5js.org/editor/projects/h47LHGYre/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/blendMode-h47LHGYre.zip"
+echo download 3 "bodySegmentation-mask-body-parts v0-J4z_gwHVu"
+curl -s https://editor.p5js.org/editor/projects/J4z_gwHVu/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/bodySegmentation-mask-body-parts v0-J4z_gwHVu.zip"
+echo download 4 "portals by oliviaemlee v0-1nLfUa1PU"
+curl -s https://editor.p5js.org/editor/projects/1nLfUa1PU/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/portals by oliviaemlee v0-1nLfUa1PU.zip"

@@ -133,8 +133,8 @@ function applyAnimatedFisheyeEffect(input, output, centerX, centerY) {
   output.updatePixels();
 }
 
-// https://editor.p5js.org/oliviaemlee/sketches/CDwTbFgAL
-// portals by oliviaemlee
-
 // Animated Fisheye Effect
 // https://editor.p5js.org/jeffThompson/sketches/amZAWPv9S
+
+// https://editor.p5js.org/oliviaemlee/sketches/CDwTbFgAL
+// portals by oliviaemlee
