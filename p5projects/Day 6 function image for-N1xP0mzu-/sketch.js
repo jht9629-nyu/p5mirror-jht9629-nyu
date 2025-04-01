@@ -18,7 +18,7 @@ function setup() {
       //i = (i + 1) % imgs.length
       i = (x+y)%imgs.length;
       drawImage(imgs[i], 50, x, y);
-      drawFlower(f[i], 40, x, y);
+      // drawFlower(f[i], 40, x, y);
       console.log('i', i, 'y', y, 'x', x);
     }
   }
