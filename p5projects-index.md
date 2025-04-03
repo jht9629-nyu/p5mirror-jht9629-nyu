@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[644 sketches 2025-04-01T13:05:29.259Z](./downloads/gen/sketches_recent.md)
+[648 sketches 2025-04-03T14:34:13.294Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [05\_multitouch-r1pNFuC1P](./p5projects/05_multitouch-r1pNFuC1P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)]
@@ -362,6 +362,8 @@
 - [createAudio BUG-MZfI2vmoC](./p5projects/createAudio%20BUG-MZfI2vmoC) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/MZfI2vmoC)]
 - [createCapture VIDEO flipped-Ddt4PnnER](./p5projects/createCapture%20VIDEO%20flipped-Ddt4PnnER) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)]
 - [createCapture p5.js1.11.1-wUCxpCl6n](./p5projects/createCapture%20p5.js1.11.1-wUCxpCl6n) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wUCxpCl6n)]
+- [createVideo v0-uAk60oX6b](./p5projects/createVideo%20v0-uAk60oX6b) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/uAk60oX6b)]
+- [createVideo v1-Yxy-nTZ0P](./p5projects/createVideo%20v1-Yxy-nTZ0P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Yxy-nTZ0P)]
 - [cv-examples Edge Detection -kylemcdonald-WqVG9-Rwn](./p5projects/cv-examples%20Edge%20Detection%20-kylemcdonald-WqVG9-Rwn) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/WqVG9-Rwn)]
 - [day 6 functions copy-KZPgTrgf0](./p5projects/day%206%20functions%20copy-KZPgTrgf0) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/KZPgTrgf0)]
 - [day 6 functions copy-XlZvUjCfX](./p5projects/day%206%20functions%20copy-XlZvUjCfX) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/XlZvUjCfX)]
@@ -401,6 +403,7 @@
 - [foo error-4DETmJP-l](./p5projects/foo%20error-4DETmJP-l) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/4DETmJP-l)]
 - [geolocation-DRpj2TQRg](./p5projects/geolocation-DRpj2TQRg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DRpj2TQRg)]
 - [get\_url\_params demo-5fTCCJ\_Sh](./p5projects/get_url_params%20demo-5fTCCJ_Sh) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/5fTCCJ_Sh)]
+- [get\_url\_params v2-I9vT\_uniR](./p5projects/get_url_params%20v2-I9vT_uniR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/I9vT_uniR)]
 - [global variable pattern animation-hzQ\_IGYd8](./p5projects/global%20variable%20pattern%20animation-hzQ_IGYd8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hzQ_IGYd8)]
 - [gravity ball two objects 1 copy-mYZwG-Lbj](./p5projects/gravity%20ball%20two%20objects%201%20copy-mYZwG-Lbj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/mYZwG-Lbj)]
 - [gravity ball two objects-IRcTMVa5eE](./p5projects/gravity%20ball%20two%20objects-IRcTMVa5eE) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RcTMVa5eE)]
@@ -468,6 +471,7 @@
 - [loadJSON c19 series brooklyn copy-u\_q1yOmY-](./p5projects/loadJSON%20c19%20series%20brooklyn%20copy-u_q1yOmY-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/u_q1yOmY-)]
 - [loadJSON c19 series brooklyn v1-u\_q1yOmY-](./p5projects/loadJSON%20c19%20series%20brooklyn%20v1-u_q1yOmY-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/u_q1yOmY-)]
 - [loadJSON c19 series brooklyn v2-kETGpr8\_k](./p5projects/loadJSON%20c19%20series%20brooklyn%20v2-kETGpr8_k) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kETGpr8_k)]
+- [localStorage v1-qz9-Y-Sc4](./p5projects/localStorage%20v1-qz9-Y-Sc4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qz9-Y-Sc4)]
 - [many circles object literal-mupQOIvCw](./p5projects/many%20circles%20object%20literal-mupQOIvCw) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/mupQOIvCw)]
 - [match pairs emoji-ZKPaZOjf\_](./p5projects/match%20pairs%20emoji-ZKPaZOjf_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZKPaZOjf_)]
 - [mic graph-pwLiHkndo](./p5projects/mic%20graph-pwLiHkndo) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pwLiHkndo)]

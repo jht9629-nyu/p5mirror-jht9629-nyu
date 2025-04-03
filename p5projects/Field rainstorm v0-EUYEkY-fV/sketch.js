@@ -1,6 +1,8 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/EUYEkY-fV
 // Field rainstorm v0
 
+// https://thecodingtrain.com/challenges/181-image-stippling
+// Organic Polygon Camera by C. Randall
 // https://editor.p5js.org/picticon/sketches/Ah-OhNJ-B
 // Field rainstorm by picticon
 

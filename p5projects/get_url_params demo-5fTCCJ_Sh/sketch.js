@@ -1,6 +1,7 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/5fTCCJ_Sh
 // get_url_params demo
 
+
 let my = {};
 
 function my_setup() {
@@ -17,13 +18,15 @@ function setup() {
   my.canvas = createCanvas(my.width, my.height);
 
   let urlParams = get_url_params();
-
+  
   console.log('urlParams', urlParams);
 }
 
 function draw() {
-  background(255);
+  background(200);
+
 }
+
 
 //
 function get_url_params() {
