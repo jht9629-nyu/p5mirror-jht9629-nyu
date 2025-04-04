@@ -1,59 +1,31 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "localStorage v1-qz9-Y-Sc4"
+echo unzip 1 "Responsive Highway copy-kuHV-Euaom"
+rm -rf "./Responsive Highway copy-kuHV-Euaom"
+mkdir "./Responsive Highway copy-kuHV-Euaom"
+pushd "./Responsive Highway copy-kuHV-Euaom" > /dev/null
+unzip -q "../../downloads/zips/Responsive Highway copy-kuHV-Euaom"
+popd > /dev/null
+#
+echo unzip 2 "ims02-shane copy-A0asfU9uE"
+rm -rf "./ims02-shane copy-A0asfU9uE"
+mkdir "./ims02-shane copy-A0asfU9uE"
+pushd "./ims02-shane copy-A0asfU9uE" > /dev/null
+unzip -q "../../downloads/zips/ims02-shane copy-A0asfU9uE"
+popd > /dev/null
+#
+echo unzip 3 "localStorage v1-qz9-Y-Sc4"
 rm -rf "./localStorage v1-qz9-Y-Sc4"
 mkdir "./localStorage v1-qz9-Y-Sc4"
 pushd "./localStorage v1-qz9-Y-Sc4" > /dev/null
 unzip -q "../../downloads/zips/localStorage v1-qz9-Y-Sc4"
 popd > /dev/null
 #
-echo unzip 2 "get_url_params v2-I9vT_uniR"
+echo unzip 4 "get_url_params v2-I9vT_uniR"
 rm -rf "./get_url_params v2-I9vT_uniR"
 mkdir "./get_url_params v2-I9vT_uniR"
 pushd "./get_url_params v2-I9vT_uniR" > /dev/null
 unzip -q "../../downloads/zips/get_url_params v2-I9vT_uniR"
-popd > /dev/null
-#
-echo unzip 3 "get_url_params demo-5fTCCJ_Sh"
-rm -rf "./get_url_params demo-5fTCCJ_Sh"
-mkdir "./get_url_params demo-5fTCCJ_Sh"
-pushd "./get_url_params demo-5fTCCJ_Sh" > /dev/null
-unzip -q "../../downloads/zips/get_url_params demo-5fTCCJ_Sh"
-popd > /dev/null
-#
-echo unzip 4 "createVideo v1-Yxy-nTZ0P"
-rm -rf "./createVideo v1-Yxy-nTZ0P"
-mkdir "./createVideo v1-Yxy-nTZ0P"
-pushd "./createVideo v1-Yxy-nTZ0P" > /dev/null
-unzip -q "../../downloads/zips/createVideo v1-Yxy-nTZ0P"
-popd > /dev/null
-#
-echo unzip 5 "createVideo v0-uAk60oX6b"
-rm -rf "./createVideo v0-uAk60oX6b"
-mkdir "./createVideo v0-uAk60oX6b"
-pushd "./createVideo v0-uAk60oX6b" > /dev/null
-unzip -q "../../downloads/zips/createVideo v0-uAk60oX6b"
-popd > /dev/null
-#
-echo unzip 6 "Field rainstorm v0-EUYEkY-fV"
-rm -rf "./Field rainstorm v0-EUYEkY-fV"
-mkdir "./Field rainstorm v0-EUYEkY-fV"
-pushd "./Field rainstorm v0-EUYEkY-fV" > /dev/null
-unzip -q "../../downloads/zips/Field rainstorm v0-EUYEkY-fV"
-popd > /dev/null
-#
-echo unzip 7 "Field rainstorm v1 responsive-kmsBYRROJ"
-rm -rf "./Field rainstorm v1 responsive-kmsBYRROJ"
-mkdir "./Field rainstorm v1 responsive-kmsBYRROJ"
-pushd "./Field rainstorm v1 responsive-kmsBYRROJ" > /dev/null
-unzip -q "../../downloads/zips/Field rainstorm v1 responsive-kmsBYRROJ"
-popd > /dev/null
-#
-echo unzip 8 "video radial bounce v2-pouiEda3o"
-rm -rf "./video radial bounce v2-pouiEda3o"
-mkdir "./video radial bounce v2-pouiEda3o"
-pushd "./video radial bounce v2-pouiEda3o" > /dev/null
-unzip -q "../../downloads/zips/video radial bounce v2-pouiEda3o"
 popd > /dev/null
 
 cd ..

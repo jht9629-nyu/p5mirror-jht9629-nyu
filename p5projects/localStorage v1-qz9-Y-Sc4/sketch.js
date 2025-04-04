@@ -26,17 +26,29 @@ function setup() {
 function draw() {
   background(200);
   let x = 10;
-  let y = height / 2;
-  let str = 'no params';
+  let y = height * 0.2;
+  let str1 = 'no params';
   let str2 = 'no params from storage';
-  if (my.urlParams) {
-    str = 'url: ' + JSON.stringify(my.urlParams, null, 2);
+  let params = my.urlParams;
+  if (params) {
+    str1 = 'url: ' + JSON.stringify(params, null, 2);
+    draw_params(params);
   }
   if (my.urlParamsFromStorage) {
     str2 = 'storage: ' + JSON.stringify(my.urlParamsFromStorage, null, 2);
   }
-  text(str, x, y);
-  text(str2, x, y + height * 0.1);
+  fill(0);
+  textSize(height * 0.05);
+  text(str1 + '\n' + str2, x, y);
+}
+
+function draw_params(params) {
+  let c = params.c;
+  let r = params.r * 0.01 * width;
+  let x = width * 0.5;
+  let y = height * 0.5;
+  fill(c);
+  circle(x, y, r);
 }
 
 function save_params() {

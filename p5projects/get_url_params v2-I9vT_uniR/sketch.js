@@ -4,24 +4,36 @@
 let my = {};
 
 function setup() {
-  my.version = "?v=2";
+  my.version = '?v=2';
 
   my.canvas = createCanvas(windowWidth, windowHeight);
 
   my.urlParams = get_url_params();
 
-  console.log("my.urlParams", my.urlParams);
+  console.log('my.urlParams', my.urlParams);
 }
 
 function draw() {
   background(200);
   let x = 10;
-  let y = height / 2;
-  let str = "no params";
-  if (my.urlParams) {
-    str = JSON.stringify(my.urlParams, null, 2);
+  let y = height * 0.2;
+  let str = 'no params';
+  let params = my.urlParams;
+  if (params) {
+    str = JSON.stringify(params, null, 2);
+    draw_params(params);
   }
+  textSize(height * 0.05);
   text(str, x, y);
+}
+
+function draw_params(params) {
+  let c = params.c;
+  let r = params.r * 0.01 * width;
+  let x = width * 0.5;
+  let y = height * 0.5;
+  fill(c);
+  circle(x, y, r);
 }
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
@@ -30,7 +42,7 @@ function draw() {
 function get_url_params() {
   let query = window.location.search;
   // console.log('query |' + query + '|');
-  console.log("query.length", query.length);
+  console.log('query.length', query.length);
   if (query.length < 1) return null;
   let params = params_query(query);
   return params;
