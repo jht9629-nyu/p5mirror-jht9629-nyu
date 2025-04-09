@@ -175,12 +175,26 @@ function prevent_scrolling() {
     return false;
   }
 }
+
 // localStorage.clear()
 
 // https://www.buildingh.org
 
-// https://editor.p5js.org/jht9629-nyu/sketches/MbS5C3j-F
-// Necessary-forgery-DrawPoints
+
+// Code! Programming with p5.js
+// The Coding Train / Daniel Shiffman
+// https://thecodingtrain.com/beginners/p5js/7.3-array-of-objects.html
+// https://youtu.be/fBqaA7zRO58
+// https://editor.p5js.org/codingtrain/sketches/1y_xfueO
+
+// TRY: use storeItem / getItem to save drawing locally
+// https://p5js.org/reference/#/p5/storeItem
+// https://p5js.org/reference/#/p5/getItem
+
+// project files created with p5.vscode "Create p5.js Project"
+// https://editor.p5js.org/jht9629-nyu/sketches/-t2O5JfBr
+// DrawPoints
+// !!@ p5.js/0.10.2
 
 // convert to my.
 // startTimedDraw as slider changes
@@ -189,17 +203,8 @@ function prevent_scrolling() {
 // remove class Point, use object literal for point
 // added funtion lineFrom
 
-// project files created with p5.vscode "Create p5.js Project"
-// https://editor.p5js.org/jht9629-nyu/sketches/-t2O5JfBr
-// DrawPoints
-// !!@ p5.js/0.10.2
+// https://editor.p5js.org/jht9629-nyu/sketches/MbS5C3j-F
+// Necessary-forgery-DrawPoints
 
-// TRY: use storeItem / getItem to save drawing locally
-// https://p5js.org/reference/#/p5/storeItem
-// https://p5js.org/reference/#/p5/getItem
 
-// Code! Programming with p5.js
-// The Coding Train / Daniel Shiffman
-// https://thecodingtrain.com/beginners/p5js/7.3-array-of-objects.html
-// https://youtu.be/fBqaA7zRO58
-// https://editor.p5js.org/codingtrain/sketches/1y_xfueO
+

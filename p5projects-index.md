@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[650 sketches 2025-04-04T14:11:05.110Z](./downloads/gen/sketches_recent.md)
+[652 sketches 2025-04-09T14:48:42.171Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [05\_multitouch-r1pNFuC1P](./p5projects/05_multitouch-r1pNFuC1P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)]
@@ -321,6 +321,7 @@
 - [Wk08 \#2c - alternate green cat3 copy-Fp4cObzIA](./p5projects/Wk08%20%232c%20-%20alternate%20green%20cat3%20copy-Fp4cObzIA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Fp4cObzIA)]
 - [Wk4 hw1 copy-B6L5fhfSn](./p5projects/Wk4%20hw1%20copy-B6L5fhfSn) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/B6L5fhfSn)]
 - [Wk\_02\_Q3 copy copy-CJzCppgJW](./p5projects/Wk_02_Q3%20copy%20copy-CJzCppgJW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CJzCppgJW)]
+- [Working particle ... two hands official v1-KaZd0xjnA](./p5projects/Working%20particle%20...%20two%20hands%20official%20v1-KaZd0xjnA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/KaZd0xjnA)]
 - [Worley Noise createGraphics-CRYzNz14L](./p5projects/Worley%20Noise%20createGraphics-CRYzNz14L) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CRYzNz14L)]
 - [Worley Noise frameIndex bounce-O91vtOED4](./p5projects/Worley%20Noise%20frameIndex%20bounce-O91vtOED4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/O91vtOED4)]
 - [acceleration-scope-Rdb\_xgkkW](./p5projects/acceleration-scope-Rdb_xgkkW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Rdb_xgkkW)]
@@ -438,6 +439,7 @@
 - [ims02 Unexpected-cut-mask-v\_diZAkZQ](./p5projects/ims02%20Unexpected-cut-mask-v_diZAkZQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/v_diZAkZQ)]
 - [ims02-Vi v1-cc0BpWomv](./p5projects/ims02-Vi%20v1-cc0BpWomv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cc0BpWomv)]
 - [ims02-shane copy-A0asfU9uE](./p5projects/ims02-shane%20copy-A0asfU9uE) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/A0asfU9uE)]
+- [ims02-vlera v1-APQGnfIvB](./p5projects/ims02-vlera%20v1-APQGnfIvB) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/APQGnfIvB)]
 - [ims03-jht scrolling color bars v2-zV3BsHs7X](./p5projects/ims03-jht%20scrolling%20color%20bars%20v2-zV3BsHs7X) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zV3BsHs7X)]
 - [ims03-jht scrolling color bars-3VKJ-q8ar](./p5projects/ims03-jht%20scrolling%20color%20bars-3VKJ-q8ar) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)]
 - [ims03-jht scrolling color time-ZGUqiovgG](./p5projects/ims03-jht%20scrolling%20color%20time-ZGUqiovgG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZGUqiovgG)]
@@ -447,7 +449,8 @@
 - [ims05-Ambra copy-Xp0RDXLSwr](./p5projects/ims05-Ambra%20copy-Xp0RDXLSwr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/p0RDXLSwr)]
 - [ims1-leo copy-4Gab3LJD-](./p5projects/ims1-leo%20copy-4Gab3LJD-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/4Gab3LJD-)]
 - [ims1-leo v0-iij0Chw7N](./p5projects/ims1-leo%20v0-iij0Chw7N) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/iij0Chw7N)]
-- [ims\_week1 v0 Xueyu333 floMirror-jqtIfMAsE](./p5projects/ims_week1%20v0%20Xueyu333%20floMirror-jqtIfMAsE) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jqtIfMAsE)]
+- [ims\_week1 v0 Xueyu333 floMirror fix-1MbhCPM60](./p5projects/ims_week1%20v0%20Xueyu333%20floMirror%20fix-1MbhCPM60) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1MbhCPM60)]
+- [ims\_week1 v0 Xueyu333 floMirror fix-jqtIfMAsE](./p5projects/ims_week1%20v0%20Xueyu333%20floMirror%20fix-jqtIfMAsE) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jqtIfMAsE)]
 - [input DOM element method-hmwAqitsO](./p5projects/input%20DOM%20element%20method-hmwAqitsO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hmwAqitsO)]
 - [jht - Ideal Text Input 2-zj4\_p71s1](./p5projects/jht%20-%20Ideal%20Text%20Input%202-zj4_p71s1) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zj4_p71s1)]
 - [jht preload imgs-j4tQqgSxZ](./p5projects/jht%20preload%20imgs-j4tQqgSxZ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/j4tQqgSxZ)]
@@ -467,10 +470,8 @@
 - [lit demo v3-HureJsyBs](./p5projects/lit%20demo%20v3-HureJsyBs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HureJsyBs)]
 - [lit try v1-ph3r7SnYK](./p5projects/lit%20try%20v1-ph3r7SnYK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ph3r7SnYK)]
 - [lit try v2-Ne1xB\_wOz](./p5projects/lit%20try%20v2-Ne1xB_wOz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ne1xB_wOz)]
-- [loadJSON c19 graph copy-vahJvTmV7](./p5projects/loadJSON%20c19%20graph%20copy-vahJvTmV7) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vahJvTmV7)]
 - [loadJSON c19 graph v1-vahJvTmV7](./p5projects/loadJSON%20c19%20graph%20v1-vahJvTmV7) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vahJvTmV7)]
 - [loadJSON c19 graph v2-ur8qo9DTS](./p5projects/loadJSON%20c19%20graph%20v2-ur8qo9DTS) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ur8qo9DTS)]
-- [loadJSON c19 series brooklyn copy-u\_q1yOmY-](./p5projects/loadJSON%20c19%20series%20brooklyn%20copy-u_q1yOmY-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/u_q1yOmY-)]
 - [loadJSON c19 series brooklyn v1-u\_q1yOmY-](./p5projects/loadJSON%20c19%20series%20brooklyn%20v1-u_q1yOmY-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/u_q1yOmY-)]
 - [loadJSON c19 series brooklyn v2-kETGpr8\_k](./p5projects/loadJSON%20c19%20series%20brooklyn%20v2-kETGpr8_k) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kETGpr8_k)]
 - [localStorage v1-qz9-Y-Sc4](./p5projects/localStorage%20v1-qz9-Y-Sc4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qz9-Y-Sc4)]
@@ -589,6 +590,7 @@
 - [sliding window v1 responsive-KfpABTqxn](./p5projects/sliding%20window%20v1%20responsive-KfpABTqxn) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/KfpABTqxn)]
 - [sound-note-envelope-hpcNjIm7v](./p5projects/sound-note-envelope-hpcNjIm7v) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hpcNjIm7v)]
 - [soundFile copy-z6Sg4ZYU3](./p5projects/soundFile%20copy-z6Sg4ZYU3) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/z6Sg4ZYU3)]
+- [spread da love\! (world scramble) v1-8a0WWnuT](./p5projects/spread%20da%20love!%20(world%20scramble)%20v1-8a0WWnuT) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-8a0WWnuT)]
 - [storinginput - from java-xM9WSCoMi](./p5projects/storinginput%20-%20from%20java-xM9WSCoMi) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/xM9WSCoMi)]
 - [system variables width height-m\_T2CwLIf](./p5projects/system%20variables%20width%20height-m_T2CwLIf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/m_T2CwLIf)]
 - [test drive DOM.js v1 copy-blOUI9E8f](./p5projects/test%20drive%20DOM.js%20v1%20copy-blOUI9E8f) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/blOUI9E8f)]

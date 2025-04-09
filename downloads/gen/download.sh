@@ -1,8 +1,0 @@
-echo download 1 "Responsive Highway copy-kuHV-Euaom"
-curl -s https://editor.p5js.org/editor/projects/kuHV-Euaom/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/Responsive Highway copy-kuHV-Euaom.zip"
-echo download 2 "ims02-shane copy-A0asfU9uE"
-curl -s https://editor.p5js.org/editor/projects/A0asfU9uE/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/ims02-shane copy-A0asfU9uE.zip"
-echo download 3 "localStorage v1-qz9-Y-Sc4"
-curl -s https://editor.p5js.org/editor/projects/qz9-Y-Sc4/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/localStorage v1-qz9-Y-Sc4.zip"
-echo download 4 "get_url_params v2-I9vT_uniR"
-curl -s https://editor.p5js.org/editor/projects/I9vT_uniR/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/get_url_params v2-I9vT_uniR.zip"
