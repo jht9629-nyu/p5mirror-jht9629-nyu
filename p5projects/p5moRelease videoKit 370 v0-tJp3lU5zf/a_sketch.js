@@ -1,5 +1,5 @@
-// https://editor.p5js.org/jht9629-gmail/sketches/u_Blv5bOK
-// p5moExamples video 370a
+// https://editor.p5js.org/jht9629-nyu/sketches/tJp3lU5zf
+// p5moRelease videoKit 370 v0
 
 let videoKit; // home for library routines
 

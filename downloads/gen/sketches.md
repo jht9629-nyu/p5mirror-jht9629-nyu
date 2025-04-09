@@ -404,7 +404,6 @@
 [p5moExamples pixel-grid](https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp)<!-- 2024-04-07T16:46:58.233Z -->  
 [p5moExamples shout 71](https://editor.p5js.org/jht9629-nyu/sketches/NEIgP4oAE)<!-- 2024-05-01T15:53:49.422Z -->  
 [p5moExamples video 366](https://editor.p5js.org/jht9629-nyu/sketches/KeRAIMzHN)<!-- 2024-03-23T18:32:34.166Z -->  
-[p5moExamples videoKit 407](https://editor.p5js.org/jht9629-nyu/sketches/ChKhQltFe)<!-- 2025-02-04T04:30:00.997Z -->  
 [p5moExamples vote](https://editor.p5js.org/jht9629-nyu/sketches/EEafnQwr1)<!-- 2024-03-16T16:37:44.885Z -->  
 [p5moExamples vote copy](https://editor.p5js.org/jht9629-nyu/sketches/B2hlGkA-d)<!-- 2024-03-14T19:38:59.280Z -->  
 [p5moExamples vote\_DOMjs 47](https://editor.p5js.org/jht9629-nyu/sketches/CAgivET8K)<!-- 2024-03-18T18:11:42.095Z -->  
@@ -412,6 +411,9 @@
 [p5moLibrary Astronomical 47 -- corrupt](https://editor.p5js.org/jht9629-nyu/sketches/T8RvLIFc2)<!-- 2024-03-22T23:18:08.590Z -->  
 [p5moLibrary DrawPoints](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)<!-- 2025-04-05T02:16:26.670Z -->  
 [p5moLibrary Heavenly3D](https://editor.p5js.org/jht9629-nyu/sketches/6VM5IMP4m)<!-- 2024-03-22T23:21:12.312Z -->  
+[p5moRelease videoKit 370 v0](https://editor.p5js.org/jht9629-nyu/sketches/tJp3lU5zf)<!-- 2025-04-09T15:39:13.284Z -->  
+[p5moRelease videoKit 370 v1](https://editor.p5js.org/jht9629-nyu/sketches/xSrdePcOW)<!-- 2025-04-09T15:41:22.509Z -->  
+[p5moRelease videoKit 407 v0](https://editor.p5js.org/jht9629-nyu/sketches/ChKhQltFe)<!-- 2025-04-09T15:39:34.474Z -->  
 [p5play-starter-code](https://editor.p5js.org/jht9629-nyu/sketches/r7vUnwdUz)<!-- 2023-07-31T01:25:13.847Z -->  
 [p5play-tumbler](https://editor.p5js.org/jht9629-nyu/sketches/UePTr_GLf)<!-- 2023-07-31T01:28:52.505Z -->  
 [pages](https://editor.p5js.org/jht9629-nyu/sketches/ZR8mNfmUZ)<!-- 2024-07-25T02:13:12.231Z -->  
@@ -595,8 +597,6 @@
 [video scan radial v7](https://editor.p5js.org/jht9629-nyu/sketches/i6akdNRS2)<!-- 2024-07-25T02:41:46.960Z -->  
 [video scan radial v8](https://editor.p5js.org/jht9629-nyu/sketches/2bjn_Nn9x)<!-- 2025-03-26T15:11:14.588Z -->  
 [video-tint-2x2-mobile](https://editor.p5js.org/jht9629-nyu/sketches/erHP1oZMO)<!-- 2023-07-01T04:01:02.506Z -->  
-[videoKit copy](https://editor.p5js.org/jht9629-nyu/sketches/xSrdePcOW)<!-- 2025-03-28T16:39:14.882Z -->  
-[videoKit copy](https://editor.p5js.org/jht9629-nyu/sketches/tJp3lU5zf)<!-- 2024-04-28T23:04:03.765Z -->  
 [Vigil copy](https://editor.p5js.org/jht9629-nyu/sketches/oRVIiwpzr)<!-- 2024-07-23T15:40:36.051Z -->  
 [W1: setup() v. draw() copy](https://editor.p5js.org/jht9629-nyu/sketches/NqzSdnl8u)<!-- 2024-09-12T16:36:44.473Z -->  
 [W4: Re-write as a loop - I copy](https://editor.p5js.org/jht9629-nyu/sketches/SBY8znaxT)<!-- 2024-08-27T17:35:20.538Z -->  

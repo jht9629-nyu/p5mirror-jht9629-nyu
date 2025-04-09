@@ -1,5 +1,8 @@
 # Sketches for jht9629-nyu
 652 sketches  
+[p5moRelease videoKit 370 v1](https://editor.p5js.org/jht9629-nyu/sketches/xSrdePcOW)<!-- 2025-04-09T15:41:22.509Z -->  
+[p5moRelease videoKit 407 v0](https://editor.p5js.org/jht9629-nyu/sketches/ChKhQltFe)<!-- 2025-04-09T15:39:34.474Z -->  
+[p5moRelease videoKit 370 v0](https://editor.p5js.org/jht9629-nyu/sketches/tJp3lU5zf)<!-- 2025-04-09T15:39:13.284Z -->  
 [Working particle ... two hands official v1](https://editor.p5js.org/jht9629-nyu/sketches/KaZd0xjnA)<!-- 2025-04-09T14:48:42.171Z -->  
 [ims\_week1 v0 Xueyu333 floMirror fix](https://editor.p5js.org/jht9629-nyu/sketches/1MbhCPM60)<!-- 2025-04-09T12:39:00.211Z -->  
 [ims\_week1 v0 Xueyu333 floMirror fix](https://editor.p5js.org/jht9629-nyu/sketches/jqtIfMAsE)<!-- 2025-04-09T12:37:28.024Z -->  
@@ -32,7 +35,6 @@
 [CC 181: Stippling Video v1](https://editor.p5js.org/jht9629-nyu/sketches/vF9SPE6kL)<!-- 2025-03-28T20:18:24.888Z -->  
 [sliding window v0](https://editor.p5js.org/jht9629-nyu/sketches/0OwCIFLm-)<!-- 2025-03-28T20:14:38.058Z -->  
 [Elon Mask v0](https://editor.p5js.org/jht9629-nyu/sketches/wFJKI3yrQ)<!-- 2025-03-28T20:14:25.703Z -->  
-[videoKit copy](https://editor.p5js.org/jht9629-nyu/sketches/xSrdePcOW)<!-- 2025-03-28T16:39:14.882Z -->  
 [FaceMesh  Stretch and Skew v0](https://editor.p5js.org/jht9629-nyu/sketches/7FHhttkYQ)<!-- 2025-03-28T16:30:07.998Z -->  
 [faceMesh mesh\_nits v9 bars](https://editor.p5js.org/jht9629-nyu/sketches/CMiG5M39F)<!-- 2025-03-27T23:31:11.013Z -->  
 [faceMesh mesh\_nits v9 bars copy](https://editor.p5js.org/jht9629-nyu/sketches/caFte_I0G)<!-- 2025-03-27T23:30:45.912Z -->  
@@ -102,7 +104,6 @@
 [test drive DOM.js v11 inputs copy copy copy](https://editor.p5js.org/jht9629-nyu/sketches/656yfHco8)<!-- 2025-03-01T04:46:49.138Z -->  
 [ims noise class copy](https://editor.p5js.org/jht9629-nyu/sketches/Gt66WH-3V)<!-- 2025-02-20T00:56:35.373Z -->  
 [ims-01 bounce fullscreen deltaTime](https://editor.p5js.org/jht9629-nyu/sketches/zFKAqeENv)<!-- 2025-02-13T16:38:45.085Z -->  
-[p5moExamples videoKit 407](https://editor.p5js.org/jht9629-nyu/sketches/ChKhQltFe)<!-- 2025-02-04T04:30:00.997Z -->  
 [Seen cheshire](https://editor.p5js.org/jht9629-nyu/sketches/_Wgulb7od)<!-- 2025-02-02T08:25:47.319Z -->  
 [ims noise inst copy](https://editor.p5js.org/jht9629-nyu/sketches/Zhkj6TLgv)<!-- 2025-01-20T18:47:12.649Z -->  
 [11.4: Brightness getpixel copy copy](https://editor.p5js.org/jht9629-nyu/sketches/bup1GMVe3)<!-- 2025-01-16T20:30:32.293Z -->  
@@ -385,7 +386,6 @@
 [FINAL 7.0 copy](https://editor.p5js.org/jht9629-nyu/sketches/aeDl-yo4p)<!-- 2024-04-29T15:17:04.115Z -->  
 [Aware mortarboard](https://editor.p5js.org/jht9629-nyu/sketches/Yyaf-yPvn)<!-- 2024-04-29T13:22:20.455Z -->  
 [Glass chokeberry](https://editor.p5js.org/jht9629-nyu/sketches/e2B51X-9p)<!-- 2024-04-29T13:17:19.661Z -->  
-[videoKit copy](https://editor.p5js.org/jht9629-nyu/sketches/tJp3lU5zf)<!-- 2024-04-28T23:04:03.765Z -->  
 [video scan radial v6-1](https://editor.p5js.org/jht9629-nyu/sketches/ZyRuMxSDy)<!-- 2024-04-26T17:56:11.486Z -->  
 [video radial perlin pix](https://editor.p5js.org/jht9629-nyu/sketches/J2p8pZTNH)<!-- 2024-04-26T17:32:19.463Z -->  
 [Acceleration Ball Bounce](https://editor.p5js.org/jht9629-nyu/sketches/wOBMJbldS)<!-- 2024-04-25T22:01:23.146Z -->  

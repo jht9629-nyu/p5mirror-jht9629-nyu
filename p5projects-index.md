@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[652 sketches 2025-04-09T14:48:42.171Z](./downloads/gen/sketches_recent.md)
+[652 sketches 2025-04-09T15:41:22.509Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [05\_multitouch-r1pNFuC1P](./p5projects/05_multitouch-r1pNFuC1P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)]
@@ -509,7 +509,6 @@
 - [p5moExamples pixel-grid-CntV1JQNp](./p5projects/p5moExamples%20pixel-grid-CntV1JQNp) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CntV1JQNp)]
 - [p5moExamples shout 71-NEIgP4oAE](./p5projects/p5moExamples%20shout%2071-NEIgP4oAE) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/NEIgP4oAE)]
 - [p5moExamples video 366-KeRAIMzHN](./p5projects/p5moExamples%20video%20366-KeRAIMzHN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/KeRAIMzHN)]
-- [p5moExamples videoKit 407-ChKhQltFe](./p5projects/p5moExamples%20videoKit%20407-ChKhQltFe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ChKhQltFe)]
 - [p5moExamples vote copy-B2hlGkA-d](./p5projects/p5moExamples%20vote%20copy-B2hlGkA-d) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/B2hlGkA-d)]
 - [p5moExamples vote-EEafnQwr1](./p5projects/p5moExamples%20vote-EEafnQwr1) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/EEafnQwr1)]
 - [p5moExamples vote\_DOMjs 47-CAgivET8K](./p5projects/p5moExamples%20vote_DOMjs%2047-CAgivET8K) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CAgivET8K)]
@@ -517,6 +516,9 @@
 - [p5moLibrary Astronomical 47-iIIAb8KIDr](./p5projects/p5moLibrary%20Astronomical%2047-iIIAb8KIDr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/IIAb8KIDr)]
 - [p5moLibrary DrawPoints-TQyVoswjQ](./p5projects/p5moLibrary%20DrawPoints-TQyVoswjQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)]
 - [p5moLibrary Heavenly3D-6VM5IMP4m](./p5projects/p5moLibrary%20Heavenly3D-6VM5IMP4m) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6VM5IMP4m)]
+- [p5moRelease videoKit 370 v0-tJp3lU5zf](./p5projects/p5moRelease%20videoKit%20370%20v0-tJp3lU5zf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tJp3lU5zf)]
+- [p5moRelease videoKit 370 v1-xSrdePcOW](./p5projects/p5moRelease%20videoKit%20370%20v1-xSrdePcOW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/xSrdePcOW)]
+- [p5moRelease videoKit 407 v0-ChKhQltFe](./p5projects/p5moRelease%20videoKit%20407%20v0-ChKhQltFe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ChKhQltFe)]
 - [p5play-starter-code-r7vUnwdUz](./p5projects/p5play-starter-code-r7vUnwdUz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r7vUnwdUz)]
 - [p5play-tumbler-UePTr\_GLf](./p5projects/p5play-tumbler-UePTr_GLf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/UePTr_GLf)]
 - [pages mouseClicked image copy-QaMUK0eDt](./p5projects/pages%20mouseClicked%20image%20copy-QaMUK0eDt) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/QaMUK0eDt)]
@@ -640,8 +642,6 @@
 - [video scan radial v7-i6akdNRS2](./p5projects/video%20scan%20radial%20v7-i6akdNRS2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/i6akdNRS2)]
 - [video scan radial v8-2bjn\_Nn9x](./p5projects/video%20scan%20radial%20v8-2bjn_Nn9x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2bjn_Nn9x)]
 - [video-tint-2x2-mobile-erHP1oZMO](./p5projects/video-tint-2x2-mobile-erHP1oZMO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/erHP1oZMO)]
-- [videoKit copy-tJp3lU5zf](./p5projects/videoKit%20copy-tJp3lU5zf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tJp3lU5zf)]
-- [videoKit copy-xSrdePcOW](./p5projects/videoKit%20copy-xSrdePcOW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/xSrdePcOW)]
 - [week 03 expressions millis-n4miyKkfv](./p5projects/week%2003%20expressions%20millis-n4miyKkfv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/n4miyKkfv)]
 - [week 03 expressions secs() play-feozaFv8R](./p5projects/week%2003%20expressions%20secs()%20play-feozaFv8R) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/feozaFv8R)]
 - [week 03 expressions secs()-i2VZolhwz](./p5projects/week%2003%20expressions%20secs()-i2VZolhwz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/i2VZolhwz)]
