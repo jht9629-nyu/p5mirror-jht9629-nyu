@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[652 sketches 2025-04-09T15:41:22.509Z](./downloads/gen/sketches_recent.md)
+[654 sketches 2025-04-10T15:11:25.475Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [05\_multitouch-r1pNFuC1P](./p5projects/05_multitouch-r1pNFuC1P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)]
@@ -204,6 +204,7 @@
 - [Lilypad copy-2O-WXFzMn](./p5projects/Lilypad%20copy-2O-WXFzMn) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2O-WXFzMn)]
 - [Lilypad copy-y5q5WOZUM](./p5projects/Lilypad%20copy-y5q5WOZUM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/y5q5WOZUM)]
 - [Literate fedora copy-b4x3rsrsb](./p5projects/Literate%20fedora%20copy-b4x3rsrsb) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/b4x3rsrsb)]
+- [Living QR code - JaapM v0-m\_O69wDFp](./p5projects/Living%20QR%20code%20-%20JaapM%20v0-m_O69wDFp) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/m_O69wDFp)]
 - [Longhaired sombrero-3fRppMjdU](./p5projects/Longhaired%20sombrero-3fRppMjdU) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3fRppMjdU)]
 - [Lying pillow-fbqvrSaz7](./p5projects/Lying%20pillow-fbqvrSaz7) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fbqvrSaz7)]
 - [Marbling Color - animate ink-2u6e-KY8S](./p5projects/Marbling%20Color%20-%20animate%20ink-2u6e-KY8S) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2u6e-KY8S)]
@@ -322,6 +323,7 @@
 - [Wk4 hw1 copy-B6L5fhfSn](./p5projects/Wk4%20hw1%20copy-B6L5fhfSn) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/B6L5fhfSn)]
 - [Wk\_02\_Q3 copy copy-CJzCppgJW](./p5projects/Wk_02_Q3%20copy%20copy-CJzCppgJW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CJzCppgJW)]
 - [Working particle ... two hands official v1-KaZd0xjnA](./p5projects/Working%20particle%20...%20two%20hands%20official%20v1-KaZd0xjnA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/KaZd0xjnA)]
+- [Working particle wave with full screen two hands official v1-MAT5wugoj](./p5projects/Working%20particle%20wave%20with%20full%20screen%20two%20hands%20official%20v1-MAT5wugoj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/MAT5wugoj)]
 - [Worley Noise createGraphics-CRYzNz14L](./p5projects/Worley%20Noise%20createGraphics-CRYzNz14L) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CRYzNz14L)]
 - [Worley Noise frameIndex bounce-O91vtOED4](./p5projects/Worley%20Noise%20frameIndex%20bounce-O91vtOED4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/O91vtOED4)]
 - [acceleration-scope-Rdb\_xgkkW](./p5projects/acceleration-scope-Rdb_xgkkW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Rdb_xgkkW)]

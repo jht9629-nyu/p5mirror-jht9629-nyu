@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-652 sketches  
+654 sketches  
 [0\_2\_trigger\_several\_sounds copy](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)<!-- 2025-03-10T21:47:40.953Z -->  
@@ -349,6 +349,7 @@
 [lit try v1](https://editor.p5js.org/jht9629-nyu/sketches/ph3r7SnYK)<!-- 2024-05-28T07:28:20.528Z -->  
 [lit try v2](https://editor.p5js.org/jht9629-nyu/sketches/Ne1xB_wOz)<!-- 2024-06-01T20:25:35.105Z -->  
 [Literate fedora copy](https://editor.p5js.org/jht9629-nyu/sketches/b4x3rsrsb)<!-- 2024-07-23T16:23:54.086Z -->  
+[Living QR code - JaapM v0](https://editor.p5js.org/jht9629-nyu/sketches/m_O69wDFp)<!-- 2025-04-09T18:36:09.320Z -->  
 [loadJSON c19 graph v1](https://editor.p5js.org/jht9629-nyu/sketches/vahJvTmV7)<!-- 2025-03-30T18:13:18.761Z -->  
 [loadJSON c19 graph v2](https://editor.p5js.org/jht9629-nyu/sketches/ur8qo9DTS)<!-- 2025-03-30T18:12:58.367Z -->  
 [loadJSON c19 series brooklyn v1](https://editor.p5js.org/jht9629-nyu/sketches/u_q1yOmY-)<!-- 2025-03-30T20:47:02.635Z -->  
@@ -412,7 +413,7 @@
 [p5moLibrary DrawPoints](https://editor.p5js.org/jht9629-nyu/sketches/TQyVoswjQ)<!-- 2025-04-05T02:16:26.670Z -->  
 [p5moLibrary Heavenly3D](https://editor.p5js.org/jht9629-nyu/sketches/6VM5IMP4m)<!-- 2024-03-22T23:21:12.312Z -->  
 [p5moRelease videoKit 370 v0](https://editor.p5js.org/jht9629-nyu/sketches/tJp3lU5zf)<!-- 2025-04-09T15:39:13.284Z -->  
-[p5moRelease videoKit 370 v1](https://editor.p5js.org/jht9629-nyu/sketches/xSrdePcOW)<!-- 2025-04-09T15:41:22.509Z -->  
+[p5moRelease videoKit 370 v1](https://editor.p5js.org/jht9629-nyu/sketches/xSrdePcOW)<!-- 2025-04-10T15:11:25.475Z -->  
 [p5moRelease videoKit 407 v0](https://editor.p5js.org/jht9629-nyu/sketches/ChKhQltFe)<!-- 2025-04-09T15:39:34.474Z -->  
 [p5play-starter-code](https://editor.p5js.org/jht9629-nyu/sketches/r7vUnwdUz)<!-- 2023-07-31T01:25:13.847Z -->  
 [p5play-tumbler](https://editor.p5js.org/jht9629-nyu/sketches/UePTr_GLf)<!-- 2023-07-31T01:28:52.505Z -->  
@@ -650,5 +651,6 @@
 [wk2-sketch copy](https://editor.p5js.org/jht9629-nyu/sketches/epi9TNVnh)<!-- 2023-09-25T19:45:10.098Z -->  
 [Wk4 hw1 copy](https://editor.p5js.org/jht9629-nyu/sketches/B6L5fhfSn)<!-- 2023-10-10T19:26:35.203Z -->  
 [Working particle ... two hands official v1](https://editor.p5js.org/jht9629-nyu/sketches/KaZd0xjnA)<!-- 2025-04-09T14:48:42.171Z -->  
+[Working particle wave with full screen two hands official v1](https://editor.p5js.org/jht9629-nyu/sketches/MAT5wugoj)<!-- 2025-04-10T13:40:15.463Z -->  
 [Worley Noise createGraphics](https://editor.p5js.org/jht9629-nyu/sketches/CRYzNz14L)<!-- 2025-03-14T19:50:44.592Z -->  
 [Worley Noise frameIndex bounce](https://editor.p5js.org/jht9629-nyu/sketches/O91vtOED4)<!-- 2025-03-14T19:57:48.919Z -->  
