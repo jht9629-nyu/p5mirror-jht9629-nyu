@@ -1,0 +1,191 @@
+// https://editor.p5js.org/jht9629-nyu/sketches/n4PPY4sF1
+// Slime Molds v2
+// reset when hit edges of canvas 
+// colorized
+
+let molds = [];
+let num = 4000;
+let d;
+let my = {};
+// Reset after my.resetTime secs
+// my.resetTime = 10.0;
+// my.lapseTime = 0;
+my.cycleIndex = 0;
+my.cycleColors = ['white', 'red', 'green', 'gold', 'black'];
+
+function setup() {
+  createCanvas(windowWidth, windowHeight - 60);
+  angleMode(DEGREES);
+  d = pixelDensity();
+
+  create_ui();
+
+  init_molds();
+}
+
+function init_molds() {
+  my.wrapX = 0;
+  my.wrapY = 0;
+  for (let i = 0; i < num; i++) {
+    molds[i] = new Mold();
+  }
+}
+
+function draw() {
+  background(0, 5);
+  loadPixels();
+
+  for (let i = 0; i < num; i++) {
+    molds[i].update();
+    molds[i].display();
+  }
+  if (my.wrapX && my.wrapY) {
+    my.cycleIndex = (my.cycleIndex + 1) % my.cycleColors.length;
+    init_molds();
+  }
+  // my.lapseTime += deltaTime / 1000.0;
+  // if (my.lapseTime > my.resetTime) {
+  //   my.lapseTime = 0;
+  //   init_molds();
+  // }
+}
+
+class Mold {
+  constructor() {
+    // Mold variables
+    // this.x = random(width);
+    // this.y = random(height);
+    this.x = random(width / 2 - 20, width / 2 + 20);
+    this.y = random(height / 2 - 20, height / 2 + 20);
+    this.r = 0.5;
+
+    this.heading = random(360);
+    this.vx = cos(this.heading);
+    this.vy = sin(this.heading);
+    this.rotAngle = 45;
+
+    // Sensor variables
+    this.rSensorPos = createVector(0, 0);
+    this.lSensorPos = createVector(0, 0);
+    this.fSensorPos = createVector(0, 0);
+    this.sensorAngle = 45;
+    this.sensorDist = 10;
+  }
+
+  update() {
+    this.vx = cos(this.heading);
+    this.vy = sin(this.heading);
+
+
+    this.wrapCheck();
+    // Using % Modulo expression to wrap around the canvas
+    this.x = (this.x + this.vx + width) % width;
+    this.y = (this.y + this.vy + height) % height;
+
+    // Get 3 sensor positions based on current position and heading
+    this.getSensorPos(this.rSensorPos, this.heading + this.sensorAngle);
+    this.getSensorPos(this.lSensorPos, this.heading - this.sensorAngle);
+    this.getSensorPos(this.fSensorPos, this.heading);
+
+    // Get indices of the 3 sensor positions and get the color values from those indices
+    let index, l, r, f;
+    index = 4 * (d * floor(this.rSensorPos.y)) * (d * width) + 4 * (d * floor(this.rSensorPos.x));
+    r = pixels[index];
+
+    index = 4 * (d * floor(this.lSensorPos.y)) * (d * width) + 4 * (d * floor(this.lSensorPos.x));
+    l = pixels[index];
+
+    index = 4 * (d * floor(this.fSensorPos.y)) * (d * width) + 4 * (d * floor(this.fSensorPos.x));
+    f = pixels[index];
+
+    // Compare values of f, l, and r to determine movement
+    if (f > l && f > r) {
+      this.heading += 0;
+    } else if (f < l && f < r) {
+      if (random(1) < 0.5) {
+        this.heading += this.rotAngle;
+      } else {
+        this.heading -= this.rotAngle;
+      }
+    } else if (l > r) {
+      this.heading += -this.rotAngle;
+    } else if (r > l) {
+      this.heading += this.rotAngle;
+    }
+  }
+
+  // set my.wrapped if x or y will wrap around
+  wrapCheck() {
+    let nx = this.x + this.vx;
+    let ny = this.y + this.vy;
+    if (nx >= width || nx <= 0) my.wrapX = 1;
+    if (ny >= height || ny <= 0) my.wrapY = 1;
+    // let willWrap = nx >= width || nx <= 0 || ny >= height || ny <= 0;
+    // if (willWrap) my.willWarp = 1;
+  }
+  
+  display() {
+    noStroke();
+    // fill(255);
+    let clr = my.cycleColors[my.cycleIndex];
+    fill(clr);
+    ellipse(this.x, this.y, this.r * 2, this.r * 2);
+
+    // line(this.x, this.y, this.x + this.r*3*this.vx, this.y + this.r*3*this.vy);
+    // fill(255, 0, 0);
+    // ellipse(this.rSensorPos.x, this.rSensorPos.y, this.r*2, this.r*2);
+    // ellipse(this.lSensorPos.x, this.lSensorPos.y, this.r*2, this.r*2);
+    // ellipse(this.fSensorPos.x, this.fSensorPos.y, this.r*2, this.r*2);
+  }
+
+  getSensorPos(sensor, angle) {
+    sensor.x = (this.x + this.sensorDist * cos(angle) + width) % width;
+    sensor.y = (this.y + this.sensorDist * sin(angle) + height) % height;
+  }
+}
+
+function create_ui() {
+  my.fullScreenBtn = createButton('?v=27 Full Screen');
+  my.fullScreenBtn.mousePressed(full_screen_action);
+  my.fullScreenBtn.style('font-size:42px');
+}
+
+function full_screen_action() {
+  my.fullScreenBtn.remove();
+  fullscreen(1);
+  let delay = 3000;
+  setTimeout(ui_present_window, delay);
+}
+
+function ui_present_window() {
+  resizeCanvas(windowWidth, windowHeight);
+  init_molds();
+}
+
+// function windowResized() {
+//   // resizeCanvas(windowWidth, windowHeight);
+//   ui_present_window();
+// }
+
+// https://editor.p5js.org/jht9629-nyu/sketches/Ol61gpdR1
+// Slime Molds v0
+
+// https://openprocessing.org/sketch/2213463
+
+/*
+----- Coding Tutorial by Patt Vira ----- 
+Name: Slime Molds (Physarum)
+Video Tutorial: https://youtu.be/VyXxSNcgDtg
+
+References: 
+1. Algorithm by Jeff Jones: 
+https://uwe-repository.worktribe.com/output/980579/characteristics-of-pattern-formation-and-evolution-in-approximations-of-physarum-transport-networks
+
+Connect with Patt: @pattvira
+https://www.pattvira.com/
+----------------------------------------
+*/
+
+// https://editor.p5js.org/jht9629-nyu/sketches/JG8Tv5W90
+// Slime Molds v1
+
