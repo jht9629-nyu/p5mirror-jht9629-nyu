@@ -4,7 +4,7 @@
 let my = {
   version: 7, // update to verify change on mobile
   width: 393, // canvas width
-  height: 600, // canvas height
+  height: 500, // canvas height
   score: 0,
 };
 
@@ -19,13 +19,13 @@ function setup() {
   let resetBtn = createButton("Reset");
   resetBtn.mousePressed(resetAction);
 
-  let leftBtn = createButton("Left");
+  let leftBtn = createButton("<-");
   leftBtn.mousePressed(leftAction);
 
   let stopBtn = createButton("Stop");
   stopBtn.mousePressed(paddleStopAction);
 
-  let rightBtn = createButton("Right");
+  let rightBtn = createButton("->");
   rightBtn.mousePressed(rightAction);
 }
 

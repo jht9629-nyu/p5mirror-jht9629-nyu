@@ -5,7 +5,8 @@ let my = {};
 
 function setup() {
   my.brushWidth = 20;
-  my.brushHeight = my.brushWidth * 4;
+  my.brushHeight = my.brushWidth ;
+  // my.brushHeight = my.brushWidth * 4;
   // my.shape = 'ellipse';
   my.shape = 'rect';
 

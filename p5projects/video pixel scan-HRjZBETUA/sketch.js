@@ -1,26 +1,18 @@
-// https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA
-// video pixel scan
-
-let my = { width: 640, height: 480, ncell: 40, vscale: 2 };
-
+let my = { width: 640, height: 480, ncell: 50, vscale: 2 };
 function setup() {
   createCanvas(my.width, my.height);
   background(200);
-  
   let vwidth = my.width / my.vscale;
   let vheight = my.height / my.vscale;
-  
   my.video = createCapture(VIDEO);
   my.video.size(vwidth, vheight);
   // my.video.hide();
-  
   my.x = 0;
   my.y = 0;
   my.cell = vwidth / my.ncell
   background(255)
   noStroke();
 }
-
 function draw() {
   let vcolor = my.video.get(my.x, my.y );
   fill(vcolor)
@@ -28,10 +20,10 @@ function draw() {
   let y = my.y * my.vscale;
   let cell = my.cell * my.vscale;
   rect(x, y, cell, cell)
-  my.x += my.cell;
+  my.x = my.x + my.cell;
   if (my.x > my.video.width) {
     my.x = 0;
-    my.y += my.cell;
+    my.y = my.y + my.cell;
     if (my.y > my.video.height) {
       my.y = 0;
     }
@@ -52,3 +44,6 @@ function draw() {
 //      optional subsection of source image
 // image(img, dx, dy, dWidth, dHeight,
 //    sx, sy, [sWidth], [sHeight])
+
+// https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA
+// video pixel scan

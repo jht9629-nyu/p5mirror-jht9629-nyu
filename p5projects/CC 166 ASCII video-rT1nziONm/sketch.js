@@ -2,9 +2,8 @@
 // CC 166: ASCII video
 
 const density = "Ñ@#W$9876543210?!abc;:+=-,._          ";
-
-//const density = '       .:-i|=+%O#@'
-//const density = '        .:░▒▓█';
+// const density = '       .:-i|=+%O#@'
+// const density = '        .:░▒▓█';
 
 let video;
 let asciiDiv;

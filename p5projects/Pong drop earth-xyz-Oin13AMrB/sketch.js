@@ -4,7 +4,7 @@
 let my = {
   version: 9, // update to verify change on mobile
   width: 393, // canvas width
-  height: 600, // canvas height
+  height: 500, // canvas height
   score: 0,
 };
 
@@ -15,21 +15,21 @@ function setup() {
   my.ding = loadSound("ding.mp3");
   my.puck = new Puck();
   my.paddle = new Paddle();
-  
+
   createSpan(my.version);
-  my.permBtn = createButton('iOS');
+  my.permBtn = createButton("iOS");
   my.permBtn.mousePressed(permissionAction);
 
   let resetBtn = createButton("Reset");
   resetBtn.mousePressed(resetAction);
 
-  let leftBtn = createButton("Left");
+  let leftBtn = createButton("<-");
   leftBtn.mousePressed(leftAction);
 
   let stopBtn = createButton("Stop");
   stopBtn.mousePressed(paddleStopAction);
 
-  let rightBtn = createButton("Right");
+  let rightBtn = createButton("->");
   rightBtn.mousePressed(rightAction);
 }
 
@@ -37,18 +37,18 @@ function draw() {
   background(0);
   window.scrollBy(0, 1);
 
-  if (rotationY < -10) {
-    leftAction()
-    // my.paddle.move(-5);
+  if (rotationY !== null) {
+    if (rotationY < -10) {
+      leftAction();
+      // my.paddle.move(-5);
+    } else if (rotationY > 10) {
+      rightAction();
+      // my.paddle.move(5);
+    } else if (rotationY != 0) {
+      paddleStopAction();
+    }
   }
-  else if (rotationY > 10) {
-    rightAction();
-    // my.paddle.move(5);
-  }
-  else if (rotationY != 0) {
-    paddleStopAction();
-  }
-  
+
   my.puck.checkPaddle(my.paddle);
 
   my.paddle.show();
@@ -147,7 +147,7 @@ class Puck {
     this.x = width / 2;
     this.y = 0;
     // let angle = random(radians(45), radians(90+45));
-    let angle = random(my.angles)
+    let angle = random(my.angles);
     this.xspeed = 5 * Math.cos(angle);
     // this.xspeed = 0;
     this.yspeed = 5 * Math.sin(angle);
@@ -171,14 +171,17 @@ class Puck {
 
 // Need for iOS mobile device to get motion events
 function permissionAction() {
-  if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
+  if (
+    typeof DeviceMotionEvent !== "undefined" &&
+    typeof DeviceMotionEvent.requestPermission === "function"
+  ) {
     // (optional) Do something before API request prompt.
     DeviceMotionEvent.requestPermission()
       .then((response) => {
-        console.log('requestPermission response', response);
+        console.log("requestPermission response", response);
         // (optional) Do something after API prompt dismissed.
-        if (response == 'granted') {
-          window.addEventListener('devicemotion', (e) => {
+        if (response == "granted") {
+          window.addEventListener("devicemotion", (e) => {
             // console.log('devicemotion e', e)
             // console.log('devicemotion e.beta', e.beta)
           });
@@ -186,7 +189,7 @@ function permissionAction() {
       })
       .catch(console.error);
   } else {
-    alert('DeviceMotionEvent is not defined');
+    alert("DeviceMotionEvent is not defined");
   }
 }
 

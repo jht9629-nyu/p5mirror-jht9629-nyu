@@ -3,6 +3,7 @@
 
 let ball1;
 let ball2;
+let ball3;
 // Global gravity variable
 let gravity = 0.1;
 
@@ -11,15 +12,18 @@ function setup() {
   // Create ball objects
   ball1 = new Ball(150, 0, 16);
   ball2 = new Ball(350, 50, 32);
+  ball3 = new Ball(80, 50, 50);
 }
 function draw() {
   background(51);
   // Display ball objects
   ball1.display();
   ball2.display();
+  ball3.display();
   // Move ball objects
   ball1.update();
   ball2.update();
+  ball3.update();
 }
 class Ball {
   constructor(x, y, w) {

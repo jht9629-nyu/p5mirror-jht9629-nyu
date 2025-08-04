@@ -22,6 +22,9 @@ function draw() {
   if (page == 2) {
     drawPage2();
   }
+  if (page == 3) {
+    drawPage3()
+  }
   
   drawHeader();
 }
@@ -36,7 +39,7 @@ function mousePressed() {
 function drawHeader() {
   fill("black");
   textSize(64);
-  text("Page "+page, 20, 64);
+  text("Page "+page, 20, height-64);
   // fill("red");
   // text("Hello class", 20, 150);
 }
@@ -46,6 +49,9 @@ function drawPage1() {
   let x0 = width / 2;
   let y0 = height / 2;
   rect(x0 - 50, y0 - 50, 100, 100);
+  // rect(x0 + 150, y0 - 50, 100, 100);
+  // rect(x0 - 300, y0 - 50, 100, 100);
+  // rect(x0 - 200, y0 - 50, 100, 100);
 }
 
 function drawPage2() {

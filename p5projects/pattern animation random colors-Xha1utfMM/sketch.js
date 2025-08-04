@@ -5,14 +5,15 @@ let x1;
 let y1;
 let w1;
 let h1;
-
+let s;
 function setup() {
   // size canvas to accommodate mobile window
   createCanvas(windowWidth, windowHeight);
+  s = 20;
   x1 = 0;
   y1 = 0;
-  w1 = width / 10;
-  h1 = height / 10;
+  w1 = width / s;
+  h1 = height / s;
   // frameRate(1);
 }
 

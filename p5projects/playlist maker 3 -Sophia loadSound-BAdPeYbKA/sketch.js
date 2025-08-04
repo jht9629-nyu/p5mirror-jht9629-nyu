@@ -45,18 +45,6 @@ function draw() {
   if (page == 3) {
     drawPage3();
   }
-  if (page == 4) {
-    drawPage4();
-  }
-  if (page == 5) {
-    drawPage5();
-  }
-  if (page == 6) {
-    drawPage6();
-  }
-  if (page == 7) {
-    drawPage7();
-  }
   drawHeader();
 }
 
@@ -112,11 +100,6 @@ function drawPage3() {
   text("-", 100, 300);
 }
 
-function drawPage4() {
-  fill("black");
-  textSize(64);
-  text("-", 100, 300);
-}
 
 // https://editor.p5js.org/jht9629-nyu/sketches/R_kTAFqeX
 // https://editor.p5js.org/soj8894/sketches/E6U3ejilz

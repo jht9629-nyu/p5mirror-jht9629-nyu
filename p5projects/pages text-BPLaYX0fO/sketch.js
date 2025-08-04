@@ -10,7 +10,7 @@ let c = "red"
 
 function setup() {
   createCanvas(windowWidth, windowHeight - 30);
-
+  frameRate(5)
   createDiv("Click the mouse to advance to next page");
 }
 
@@ -27,6 +27,27 @@ function draw() {
     drawPage3();
   }
   drawHeader();
+}
+
+function drawPage1() {
+  background(255);
+
+  fill(c);
+  textSize(64);
+
+  let y = height / 2;
+  // let y = mouseY;
+  let msg = "Hello - this is a message from the future";
+  text(msg, x, y);
+
+  x = x + s;
+  if (x > width) {
+    x = 0;
+  }
+  if (x < -width) {
+    c = random(["green", "red", "yellow"])
+    x = width / 2;
+  }
 }
 
 function mouseClicked() {
@@ -49,26 +70,6 @@ function drawHeader() {
 //   rect(x0 - 50, y0 - 50, 100, 100);
 // }
 
-function drawPage1() {
-  background(255);
-
-  fill(c);
-  textSize(64);
-
-  // let y = height / 2;
-  let y = mouseY;
-  let msg = "Hello - this is a message from the future";
-  text(msg, x, y);
-
-  x = x + s;
-  if (x > width) {
-    x = 0;
-  }
-  if (x < -width) {
-    c = random(["green", "red", "yellow"])
-    x = width / 2;
-  }
-}
 
 function drawPage2() {
   fill("green");

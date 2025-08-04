@@ -3,6 +3,7 @@ let i = 0;
 // Load the image and create a p5.Image object.
 let img1, img2, img3;
 let imgs = []
+let w = 50;
 function preload() {
   img1 = loadImage('cat1.png');
   img2 = loadImage('dog1.png');
@@ -13,12 +14,12 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(220);
   i = random([0,1,2,3])
-  for (let y = 0; y < height; y += 50) {
-    for (let x = 0; x < width; x += 50) {
-      //i = (i + 1) % imgs.length
+  for (let y = 0; y < height; y += 1) {
+    for (let x = 0; x < width; x += 1) {
       i = (x+y)%imgs.length;
-      drawImage(imgs[i], 50, x, y);
-      // drawFlower(f[i], 40, x, y);
+      drawImage(imgs[i], 50, x*w, y*w);
+      // i = (x + y ) % f.length
+      // drawFlower(f[i], 40, x*w, y*w);
       console.log('i', i, 'y', y, 'x', x);
     }
   }
