@@ -1,5 +1,5 @@
 // reconstruction of Sol LeWitt 'Bands of Equal Width in Color, Plate 7'
-// using color samples
+// match colors to original
 let my = {};
 
 function setup() {
@@ -8,7 +8,7 @@ function setup() {
   background(220);
 
   // Image source
-  // let img = createImg("Sol-LeWitt-bands-seven.jpg", "Sol-LeWitt-bands-seven.");
+  let img = createImg("Sol-LeWitt-bands-seven.jpg", "Sol-LeWitt-bands-seven.");
 
   init_vars();
   center_circles();
@@ -91,6 +91,7 @@ function init_vars() {
 
   let orang = [229, 87, 46]; // orange
   let ltblu = [0, 133, 186]; // lt blue
+  // let yello = [255, 180, 80]; // yellow
   let yello = [232, 167, 42]; // yellow
   let Red__ = [187, 12, 46]; // red
   let dkblu = [97, 71, 115]; // dk blue

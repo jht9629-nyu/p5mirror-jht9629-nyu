@@ -51,5 +51,9 @@ function polygon(x, y, radius, npoints) {
   endShape(CLOSE);
 }
 
+function mousePressed() {
+  draw()
+}
+
 // https://editor.p5js.org/elliotmersch/sketches/tFlNNcg8J
 // Pentagons by elliotmersch

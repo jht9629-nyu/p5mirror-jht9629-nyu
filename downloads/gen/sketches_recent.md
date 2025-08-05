@@ -1,9 +1,23 @@
 # Sketches for jht9629-nyu
-762 sketches  
-[Sol LeWitt Sq Lines v2](https://editor.p5js.org/jht9629-nyu/sketches/TVrRaFpHD)<!-- 2025-08-04T17:58:56.030Z -->  
+775 sketches  
+[shapes random pause v22](https://editor.p5js.org/jht9629-nyu/sketches/n0LYuXRmX)<!-- 2025-08-05T17:52:41.066Z -->  
+[test 2.0.4-rc.2 v2](https://editor.p5js.org/jht9629-nyu/sketches/IwNM5Ni_1)<!-- 2025-08-05T17:48:41.485Z -->  
+[Copy this sketch to test 2.0.4-rc.2 copy](https://editor.p5js.org/jht9629-nyu/sketches/hSsq9S2fq)<!-- 2025-08-05T17:27:13.489Z -->  
+[Pentagons v3 copy](https://editor.p5js.org/jht9629-nyu/sketches/q_-8SF2Cv)<!-- 2025-08-05T17:25:03.822Z -->  
+[Pentagons v3](https://editor.p5js.org/jht9629-nyu/sketches/9EL3bH5iq)<!-- 2025-08-05T17:24:57.362Z -->  
+[Pentagons v2](https://editor.p5js.org/jht9629-nyu/sketches/6-XJHNSfW)<!-- 2025-08-05T17:20:11.652Z -->  
+[Pentagons v1](https://editor.p5js.org/jht9629-nyu/sketches/VmN0o6MAz)<!-- 2025-08-05T16:57:05.650Z -->  
+[Sol LeWitt Sq Lines v4](https://editor.p5js.org/jht9629-nyu/sketches/2a4poWlZP)<!-- 2025-08-05T16:54:11.411Z -->  
+[Sol LeWitt Sq Lines v3](https://editor.p5js.org/jht9629-nyu/sketches/RDhYr14WW)<!-- 2025-08-05T12:29:26.279Z -->  
+[Sol LeWitt Sq Lines v2](https://editor.p5js.org/jht9629-nyu/sketches/TVrRaFpHD)<!-- 2025-08-05T12:22:24.947Z -->  
+[shapes random pause v21](https://editor.p5js.org/jht9629-nyu/sketches/Iru8nBTSf)<!-- 2025-08-05T12:21:20.204Z -->  
+[shapes random array circle v20](https://editor.p5js.org/jht9629-nyu/sketches/pW2RT5UHy)<!-- 2025-08-04T20:11:50.392Z -->  
+[shapes random array circle v19](https://editor.p5js.org/jht9629-nyu/sketches/J41cYBMg3)<!-- 2025-08-04T19:58:59.351Z -->  
+[shapes random array circle v18](https://editor.p5js.org/jht9629-nyu/sketches/tX_IoezHa)<!-- 2025-08-04T19:43:58.017Z -->  
+[shapes random array v17](https://editor.p5js.org/jht9629-nyu/sketches/GzlO70dCj)<!-- 2025-08-04T19:38:29.183Z -->  
+[shapes random frameRate v15](https://editor.p5js.org/jht9629-nyu/sketches/KpCniSa1w)<!-- 2025-08-04T18:53:48.159Z -->  
+[Motley protoceratops copy](https://editor.p5js.org/jht9629-nyu/sketches/rhv3pVskm)<!-- 2025-08-04T18:42:56.799Z -->  
 [Sol LeWitt Sq Lines v1](https://editor.p5js.org/jht9629-nyu/sketches/AUA0_JCfy)<!-- 2025-08-04T16:41:55.403Z -->  
-[shapes random frameRate v15](https://editor.p5js.org/jht9629-nyu/sketches/KpCniSa1w)<!-- 2025-08-04T14:43:26.881Z -->  
-[Pentagons v1](https://editor.p5js.org/jht9629-nyu/sketches/VmN0o6MAz)<!-- 2025-08-04T13:43:17.957Z -->  
 [Marbling Raster Pixels - Video copy](https://editor.p5js.org/jht9629-nyu/sketches/txPD89Zpi)<!-- 2025-08-04T12:29:38.675Z -->  
 [video pixel scan copy](https://editor.p5js.org/jht9629-nyu/sketches/heaOtyFJz)<!-- 2025-08-04T12:26:15.494Z -->  
 [shapes random v14](https://editor.p5js.org/jht9629-nyu/sketches/A8bN65XTn)<!-- 2025-08-03T23:18:25.818Z -->  
@@ -24,7 +38,6 @@
 [CCL day3 shapes random v7](https://editor.p5js.org/jht9629-nyu/sketches/n45gZBjch)<!-- 2025-08-03T12:48:54.261Z -->  
 [CCL day3 shapes random v6](https://editor.p5js.org/jht9629-nyu/sketches/sa292BQae)<!-- 2025-08-03T12:11:11.031Z -->  
 [CCL day3 shapes func v4](https://editor.p5js.org/jht9629-nyu/sketches/p_-jNlFk-)<!-- 2025-08-03T00:32:36.129Z -->  
-[Motley protoceratops copy](https://editor.p5js.org/jht9629-nyu/sketches/rhv3pVskm)<!-- 2025-08-02T00:04:01.647Z -->  
 [pattern animation random colors](https://editor.p5js.org/jht9629-nyu/sketches/Xha1utfMM)<!-- 2025-08-01T16:14:45.468Z -->  
 [p5js Code\! - createGraphics copy copy](https://editor.p5js.org/jht9629-nyu/sketches/cAUrGDLUK)<!-- 2025-08-01T14:42:54.135Z -->  
 [p5js Code\! - createGraphics copy](https://editor.p5js.org/jht9629-nyu/sketches/K-djE48EH)<!-- 2025-08-01T14:35:27.961Z -->  
