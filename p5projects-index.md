@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[776 sketches 2025-08-05T17:52:41.066Z](./downloads/gen/sketches_recent.md)
+[775 sketches 2025-08-06T01:21:29.129Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [05\_multitouch-r1pNFuC1P](./p5projects/05_multitouch-r1pNFuC1P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)]
@@ -147,7 +147,6 @@
 - [Day2-matching-bounce-Ll9Kd-9Ec](./p5projects/Day2-matching-bounce-Ll9Kd-9Ec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ll9Kd-9Ec)]
 - [Day2-matching-game-vEMkKSM1s](./p5projects/Day2-matching-game-vEMkKSM1s) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vEMkKSM1s)]
 - [Day2-matching-move-A25CBlLTl](./p5projects/Day2-matching-move-A25CBlLTl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/A25CBlLTl)]
-- [Day2-pattern-image-BDNT4XMEU](./p5projects/Day2-pattern-image-BDNT4XMEU) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BDNT4XMEU)]
 - [Day3-8DLaaau2E](./p5projects/Day3-8DLaaau2E) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8DLaaau2E)]
 - [Day4-slides-6Y5QBwf8n](./p5projects/Day4-slides-6Y5QBwf8n) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6Y5QBwf8n)]
 - [Day5-matching emoji array-pLglN2W9N](./p5projects/Day5-matching%20emoji%20array-pLglN2W9N) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pLglN2W9N)]

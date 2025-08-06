@@ -20,6 +20,22 @@ function draw() {
   black_lines();
 }
 
+function mousePressed() {
+  if (mouseY < height / 2) {
+    // mouse in upper half of canvas
+    if (mouseX < width / 2) {
+      // mouse in top left
+      my.diag_offset_delta ^= 1;
+    } else {
+      // mouse in top right
+      my.vert_offset_delta ^= 1;
+    }
+  } else {
+    // mouse in lower half of canvas
+    my.circle_offset_delta ^= 1;
+  }
+}
+
 function center_circles() {
   let w = my.w;
   let ww = w * 1.9;
@@ -36,7 +52,7 @@ function center_circles() {
     circle(x, y, r);
     r = r + ww;
   }
-  my.circle_offset = my.circle_offset + 1;
+  my.circle_offset = my.circle_offset + my.circle_offset_delta;
 }
 
 function vert_lines() {
@@ -58,7 +74,7 @@ function vert_lines() {
     y2 = y2 + w;
     x2 = x2 + w;
   }
-  my.vert_offset = my.vert_offset + 1;
+  my.vert_offset = my.vert_offset + my.vert_offset_delta;
 }
 
 function diag_lines() {
@@ -82,7 +98,7 @@ function diag_lines() {
     y = y - w;
     y2 = y2 - w;
   }
-  my.diag_offset = my.diag_offset + 1;
+  my.diag_offset = my.diag_offset + my.diag_offset_delta;
 }
 
 function init_vars() {
@@ -93,6 +109,9 @@ function init_vars() {
   my.diag_offset = 0;
   my.vert_offset = 0;
   my.circle_offset = 0;
+  my.diag_offset_delta = 0;
+  my.vert_offset_delta = 0;
+  my.circle_offset_delta = 0;
 
   let orang = [229, 87, 46]; // orange
   let ltblu = [0, 133, 186]; // lt blue

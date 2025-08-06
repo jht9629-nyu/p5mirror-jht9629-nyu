@@ -1,5 +1,5 @@
-// https://editor.p5js.org/jht9629-nyu/sketches/Iru8nBTSf
-// shapes random pause v21
+// https://editor.p5js.org/jht9629-nyu/sketches/n0LYuXRmX
+// shapes random pause v22
 let n, i, arr;
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -26,7 +26,7 @@ function draw() {
   i = i + 1;
 }
 function init_vars() {
-  let p = 17;
+  let p = 7;
   w = Math.floor(width / p);
   // w = Math.round(width / p);
   h = w;
@@ -99,3 +99,6 @@ function windowResized() {
 
 // https://editor.p5js.org/jht9629-nyu/sketches/pW2RT5UHy
 // shapes random array circle v20
+
+// https://editor.p5js.org/jht9629-nyu/sketches/Iru8nBTSf
+// shapes random pause v21
