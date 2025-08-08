@@ -1,10 +1,11 @@
 # Sketches for jht9629-nyu
-775 sketches  
+776 sketches  
+[Pentagons random v3](https://editor.p5js.org/jht9629-nyu/sketches/q_-8SF2Cv)<!-- 2025-08-07T21:01:06.493Z -->  
+[ims04-jht-scroll-color-v2](https://editor.p5js.org/jht9629-nyu/sketches/3OL8lIVMy)<!-- 2025-08-06T13:58:04.540Z -->  
 [shapes random pause v22](https://editor.p5js.org/jht9629-nyu/sketches/n0LYuXRmX)<!-- 2025-08-06T01:21:29.129Z -->  
 [Sol LeWitt Sq Lines v4](https://editor.p5js.org/jht9629-nyu/sketches/2a4poWlZP)<!-- 2025-08-05T18:33:10.252Z -->  
 [test 2.0.4-rc.2 v2](https://editor.p5js.org/jht9629-nyu/sketches/IwNM5Ni_1)<!-- 2025-08-05T17:48:41.485Z -->  
 [Copy this sketch to test 2.0.4-rc.2 copy](https://editor.p5js.org/jht9629-nyu/sketches/hSsq9S2fq)<!-- 2025-08-05T17:27:13.489Z -->  
-[Pentagons v3 copy](https://editor.p5js.org/jht9629-nyu/sketches/q_-8SF2Cv)<!-- 2025-08-05T17:25:03.822Z -->  
 [Pentagons v3](https://editor.p5js.org/jht9629-nyu/sketches/9EL3bH5iq)<!-- 2025-08-05T17:24:57.362Z -->  
 [Pentagons v2](https://editor.p5js.org/jht9629-nyu/sketches/6-XJHNSfW)<!-- 2025-08-05T17:20:11.652Z -->  
 [Pentagons v1](https://editor.p5js.org/jht9629-nyu/sketches/VmN0o6MAz)<!-- 2025-08-05T16:57:05.650Z -->  

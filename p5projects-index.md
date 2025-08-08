@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[775 sketches 2025-08-06T01:21:29.129Z](./downloads/gen/sketches_recent.md)
+[776 sketches 2025-08-07T21:01:06.493Z](./downloads/gen/sketches_recent.md)
 
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
 - [05\_multitouch-r1pNFuC1P](./p5projects/05_multitouch-r1pNFuC1P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)]
@@ -266,9 +266,9 @@
 - [Patch neem by bigmouthflower - jht9629-gmail remix copy-7cGhNLC0J](./p5projects/Patch%20neem%20by%20bigmouthflower%20-%20jht9629-gmail%20remix%20copy-7cGhNLC0J) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7cGhNLC0J)]
 - [Patch neem by bigmouthflower-R-l3T5FA4](./p5projects/Patch%20neem%20by%20bigmouthflower-R-l3T5FA4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/R-l3T5FA4)]
 - [Pear penalty-f6qbi-Yxc](./p5projects/Pear%20penalty-f6qbi-Yxc) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/f6qbi-Yxc)]
+- [Pentagons random v3-q\_-8SF2Cv](./p5projects/Pentagons%20random%20v3-q_-8SF2Cv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/q_-8SF2Cv)]
 - [Pentagons v1-VmN0o6MAz](./p5projects/Pentagons%20v1-VmN0o6MAz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/VmN0o6MAz)]
 - [Pentagons v2-6-XJHNSfW](./p5projects/Pentagons%20v2-6-XJHNSfW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6-XJHNSfW)]
-- [Pentagons v3 copy-q\_-8SF2Cv](./p5projects/Pentagons%20v3%20copy-q_-8SF2Cv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/q_-8SF2Cv)]
 - [Pentagons v3-9EL3bH5iq](./p5projects/Pentagons%20v3-9EL3bH5iq) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/9EL3bH5iq)]
 - [Physarum Letters - jht remix-zVQJNjK8R](./p5projects/Physarum%20Letters%20-%20jht%20remix-zVQJNjK8R) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zVQJNjK8R)]
 - [Pixelated mirror copy-8Vltq6LEw](./p5projects/Pixelated%20mirror%20copy-8Vltq6LEw) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8Vltq6LEw)]
@@ -525,6 +525,7 @@
 - [ims04-jht scroll color bars-ZpoPuHXRo](./p5projects/ims04-jht%20scroll%20color%20bars-ZpoPuHXRo) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)]
 - [ims04-jht scroll color rate-2pxhnehBV](./p5projects/ims04-jht%20scroll%20color%20rate-2pxhnehBV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)]
 - [ims04-jht scroll color v2-fo\_qEMenp](./p5projects/ims04-jht%20scroll%20color%20v2-fo_qEMenp) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fo_qEMenp)]
+- [ims04-jht-scroll-color-v2-3OL8lIVMy](./p5projects/ims04-jht-scroll-color-v2-3OL8lIVMy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3OL8lIVMy)]
 - [ims05-Ambra copy-Xp0RDXLSwr](./p5projects/ims05-Ambra%20copy-Xp0RDXLSwr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/p0RDXLSwr)]
 - [ims1-leo copy-4Gab3LJD-](./p5projects/ims1-leo%20copy-4Gab3LJD-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/4Gab3LJD-)]
 - [ims1-leo v0-iij0Chw7N](./p5projects/ims1-leo%20v0-iij0Chw7N) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/iij0Chw7N)]

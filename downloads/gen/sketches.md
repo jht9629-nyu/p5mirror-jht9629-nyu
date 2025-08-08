@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-775 sketches  
+776 sketches  
 [0\_2\_trigger\_several\_sounds copy](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)<!-- 2025-03-10T21:47:40.953Z -->  
@@ -379,6 +379,7 @@
 [ims04-jht scroll color bars](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)<!-- 2025-03-25T15:37:07.145Z -->  
 [ims04-jht scroll color rate](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)<!-- 2025-03-25T15:40:11.142Z -->  
 [ims04-jht scroll color v2](https://editor.p5js.org/jht9629-nyu/sketches/fo_qEMenp)<!-- 2024-08-17T14:08:43.114Z -->  
+[ims04-jht-scroll-color-v2](https://editor.p5js.org/jht9629-nyu/sketches/3OL8lIVMy)<!-- 2025-08-06T13:58:04.540Z -->  
 [ims05-Ambra copy](https://editor.p5js.org/jht9629-nyu/sketches/Xp0RDXLSwr)<!-- 2024-04-23T13:39:33.160Z -->  
 [ims1-leo copy](https://editor.p5js.org/jht9629-nyu/sketches/4Gab3LJD-)<!-- 2025-03-20T13:17:54.042Z -->  
 [ims1-leo v0](https://editor.p5js.org/jht9629-nyu/sketches/iij0Chw7N)<!-- 2025-03-24T09:41:58.064Z -->  
@@ -541,10 +542,10 @@
 [pattern-animation-shape console.log](https://editor.p5js.org/jht9629-nyu/sketches/R_QelHYEp)<!-- 2025-07-25T12:21:02.493Z -->  
 [pattern-animation-shape console.log copy](https://editor.p5js.org/jht9629-nyu/sketches/5K88nicwb)<!-- 2025-07-26T13:23:54.139Z -->  
 [Pear penalty](https://editor.p5js.org/jht9629-nyu/sketches/f6qbi-Yxc)<!-- 2024-10-24T18:30:10.364Z -->  
+[Pentagons random v3](https://editor.p5js.org/jht9629-nyu/sketches/q_-8SF2Cv)<!-- 2025-08-07T21:01:06.493Z -->  
 [Pentagons v1](https://editor.p5js.org/jht9629-nyu/sketches/VmN0o6MAz)<!-- 2025-08-05T16:57:05.650Z -->  
 [Pentagons v2](https://editor.p5js.org/jht9629-nyu/sketches/6-XJHNSfW)<!-- 2025-08-05T17:20:11.652Z -->  
 [Pentagons v3](https://editor.p5js.org/jht9629-nyu/sketches/9EL3bH5iq)<!-- 2025-08-05T17:24:57.362Z -->  
-[Pentagons v3 copy](https://editor.p5js.org/jht9629-nyu/sketches/q_-8SF2Cv)<!-- 2025-08-05T17:25:03.822Z -->  
 [photo-booth 31](https://editor.p5js.org/jht9629-nyu/sketches/Kwe9ZrOpK)<!-- 2025-04-25T15:51:36.277Z -->  
 [Physarum Letters -- jht remix](https://editor.p5js.org/jht9629-nyu/sketches/zVQJNjK8R)<!-- 2023-10-10T14:15:37.222Z -->  
 [pixel-center](https://editor.p5js.org/jht9629-nyu/sketches/BtTb0NzK9)<!-- 2023-05-24T00:18:58.680Z -->  
