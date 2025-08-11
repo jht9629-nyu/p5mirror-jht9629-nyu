@@ -2,7 +2,7 @@
 // shapes random pause v23
 let my = {};
 function setup() {
-  my.nwidth = 9;
+  my.nwidth = 8;
   my.pmargin = 0.02;
   createCanvas(windowWidth, windowHeight);
   init_page();

@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[778 sketches 2025-08-10T19:48:50.097Z](./downloads/gen/sketches_recent.md)
+[788 sketches 2025-08-11T02:43:14.436Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -324,6 +324,7 @@
 - [Steady condition-Ng17FQFiA](./p5projects/Steady%20condition-Ng17FQFiA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ng17FQFiA)]
 - [Stormy oviraptor-6A3mSelw8](./p5projects/Stormy%20oviraptor-6A3mSelw8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6A3mSelw8)]
 - [Stupendous tellurium copy-6FRgWWxc\_](./p5projects/Stupendous%20tellurium%20copy-6FRgWWxc_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6FRgWWxc_)]
+- [Technology by Vamoss-syH2Nh5RO](./p5projects/Technology%20by%20Vamoss-syH2Nh5RO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/syH2Nh5RO)]
 - [Text banner textWidth-38ZMRSo0H](./p5projects/Text%20banner%20textWidth-38ZMRSo0H) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/38ZMRSo0H)]
 - [Text banner-FGY0TBrSEf](./p5projects/Text%20banner-FGY0TBrSEf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/GY0TBrSEf)]
 - [The Snake Game -codingtrain-BHb6jIKeH](./p5projects/The%20Snake%20Game%20-codingtrain-BHb6jIKeH) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BHb6jIKeH)]
@@ -386,6 +387,8 @@
 - [acceleration-scope-Rdb\_xgkkW](./p5projects/acceleration-scope-Rdb_xgkkW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Rdb_xgkkW)]
 - [accelerationXYZ-RRtBxe8lI](./p5projects/accelerationXYZ-RRtBxe8lI) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RRtBxe8lI)]
 - [animations starfield-planes-2f6U9wtOS](./p5projects/animations%20starfield-planes-2f6U9wtOS) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2f6U9wtOS)]
+- [arc overlap free v29-oX\_IJ2zVt](./p5projects/arc%20overlap%20free%20v29-oX_IJ2zVt) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/oX_IJ2zVt)]
+- [arc test-Bvg-sIWPw](./p5projects/arc%20test-Bvg-sIWPw) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Bvg-sIWPw)]
 - [assignment week 3 copy-fpytkwPBO](./p5projects/assignment%20week%203%20copy-fpytkwPBO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fpytkwPBO)]
 - [async-await-setTimeout-dxElfI0pB](./p5projects/async-await-setTimeout-dxElfI0pB) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/dxElfI0pB)]
 - [audio amplitudes v6 copy-hQmTAh6Hh](./p5projects/audio%20amplitudes%20v6%20copy-hQmTAh6Hh) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hQmTAh6Hh)]
@@ -532,6 +535,7 @@
 - [ims1-leo v0-iij0Chw7N](./p5projects/ims1-leo%20v0-iij0Chw7N) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/iij0Chw7N)]
 - [ims\_week1 v0 Xueyu333 floMirror fix-1MbhCPM60](./p5projects/ims_week1%20v0%20Xueyu333%20floMirror%20fix-1MbhCPM60) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1MbhCPM60)]
 - [ims\_week1 v0 Xueyu333 floMirror fix-jqtIfMAsE](./p5projects/ims_week1%20v0%20Xueyu333%20floMirror%20fix-jqtIfMAsE) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jqtIfMAsE)]
+- [innerCount overlap free v28-Vz7S8m4vY](./p5projects/innerCount%20overlap%20free%20v28-Vz7S8m4vY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Vz7S8m4vY)]
 - [input DOM element method-hmwAqitsO](./p5projects/input%20DOM%20element%20method-hmwAqitsO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hmwAqitsO)]
 - [jht - Ideal Text Input 2-zj4\_p71s1](./p5projects/jht%20-%20Ideal%20Text%20Input%202-zj4_p71s1) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zj4_p71s1)]
 - [jht preload imgs-j4tQqgSxZ](./p5projects/jht%20preload%20imgs-j4tQqgSxZ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/j4tQqgSxZ)]
@@ -676,6 +680,9 @@
 - [preload loadImage-Q5q1\_WZVS](./p5projects/preload%20loadImage-Q5q1_WZVS) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Q5q1_WZVS)]
 - [prompt confirm-Jwz8ZXsZg](./p5projects/prompt%20confirm-Jwz8ZXsZg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Jwz8ZXsZg)]
 - [qrcode-BqWAQMAZd](./p5projects/qrcode-BqWAQMAZd) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BqWAQMAZd)]
+- [random bg fg v1-cN8bDbHgE](./p5projects/random%20bg%20fg%20v1-cN8bDbHgE) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cN8bDbHgE)]
+- [random innerCount overlap v26-L4ClpFHhJ](./p5projects/random%20innerCount%20overlap%20v26-L4ClpFHhJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/L4ClpFHhJ)]
+- [random innerCount overlap v27-9GoF-em-1](./p5projects/random%20innerCount%20overlap%20v27-9GoF-em-1) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/9GoF-em-1)]
 - [real pong copy (day 3) copy-32\_bqUtVh](./p5projects/real%20pong%20copy%20(day%203)%20copy-32_bqUtVh) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/32_bqUtVh)]
 - [red-green-gold-flag-dkTJsQsua](./p5projects/red-green-gold-flag-dkTJsQsua) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/dkTJsQsua)]
 - [rotationX-G6Zr5SBuq](./p5projects/rotationX-G6Zr5SBuq) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/G6Zr5SBuq)]
@@ -691,6 +698,9 @@
 - [shapes random array circle v20-pW2RT5UHy](./p5projects/shapes%20random%20array%20circle%20v20-pW2RT5UHy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pW2RT5UHy)]
 - [shapes random array v17-GzlO70dCj](./p5projects/shapes%20random%20array%20v17-GzlO70dCj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/GzlO70dCj)]
 - [shapes random frameRate v15-KpCniSa1w](./p5projects/shapes%20random%20frameRate%20v15-KpCniSa1w) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/KpCniSa1w)]
+- [shapes random innerCount v25-6vzZeu7LG](./p5projects/shapes%20random%20innerCount%20v25-6vzZeu7LG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6vzZeu7LG)]
+- [shapes random ninner v24-npE4WZS\_0](./p5projects/shapes%20random%20ninner%20v24-npE4WZS_0) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/npE4WZS_0)]
+- [shapes random noutter v26-Ukn0gpH4r](./p5projects/shapes%20random%20noutter%20v26-Ukn0gpH4r) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ukn0gpH4r)]
 - [shapes random pause v21-Iru8nBTSf](./p5projects/shapes%20random%20pause%20v21-Iru8nBTSf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Iru8nBTSf)]
 - [shapes random pause v22-n0LYuXRmX](./p5projects/shapes%20random%20pause%20v22-n0LYuXRmX) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/n0LYuXRmX)]
 - [shapes random pause v23-\_waqMsgSP](./p5projects/shapes%20random%20pause%20v23-_waqMsgSP) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_waqMsgSP)]
