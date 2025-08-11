@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[788 sketches 2025-08-11T02:43:14.436Z](./downloads/gen/sketches_recent.md)
+[795 sketches 2025-08-11T11:51:29.801Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -324,6 +324,7 @@
 - [Steady condition-Ng17FQFiA](./p5projects/Steady%20condition-Ng17FQFiA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ng17FQFiA)]
 - [Stormy oviraptor-6A3mSelw8](./p5projects/Stormy%20oviraptor-6A3mSelw8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6A3mSelw8)]
 - [Stupendous tellurium copy-6FRgWWxc\_](./p5projects/Stupendous%20tellurium%20copy-6FRgWWxc_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6FRgWWxc_)]
+- [Technology by Vamoss v2-UZtQLw\_Rr](./p5projects/Technology%20by%20Vamoss%20v2-UZtQLw_Rr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/UZtQLw_Rr)]
 - [Technology by Vamoss-syH2Nh5RO](./p5projects/Technology%20by%20Vamoss-syH2Nh5RO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/syH2Nh5RO)]
 - [Text banner textWidth-38ZMRSo0H](./p5projects/Text%20banner%20textWidth-38ZMRSo0H) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/38ZMRSo0H)]
 - [Text banner-FGY0TBrSEf](./p5projects/Text%20banner-FGY0TBrSEf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/GY0TBrSEf)]
@@ -392,6 +393,7 @@
 - [assignment week 3 copy-fpytkwPBO](./p5projects/assignment%20week%203%20copy-fpytkwPBO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fpytkwPBO)]
 - [async-await-setTimeout-dxElfI0pB](./p5projects/async-await-setTimeout-dxElfI0pB) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/dxElfI0pB)]
 - [audio amplitudes v6 copy-hQmTAh6Hh](./p5projects/audio%20amplitudes%20v6%20copy-hQmTAh6Hh) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hQmTAh6Hh)]
+- [bezier demo-AAanDlE3D](./p5projects/bezier%20demo-AAanDlE3D) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/AAanDlE3D)]
 - [blendMode-h47LHGYre](./p5projects/blendMode-h47LHGYre) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/h47LHGYre)]
 - [bodySegmentation-mask-body-parts v0-J4z\_gwHVu](./p5projects/bodySegmentation-mask-body-parts%20v0-J4z_gwHVu) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/J4z_gwHVu)]
 - [bodySegmentation-mask-body-parts-0fneGHlBO](./p5projects/bodySegmentation-mask-body-parts-0fneGHlBO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/0fneGHlBO)]
@@ -422,6 +424,10 @@
 - [circleX circleY copy-bVG9wVwpo](./p5projects/circleX%20circleY%20copy-bVG9wVwpo) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/bVG9wVwpo)]
 - [circleX follow copy-qmtBJEwMe](./p5projects/circleX%20follow%20copy-qmtBJEwMe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qmtBJEwMe)]
 - [circleX modulo copy-HkG6bo5KG](./p5projects/circleX%20modulo%20copy-HkG6bo5KG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HkG6bo5KG)]
+- [claude bezier draw dom v3-HLRNocFdW](./p5projects/claude%20bezier%20draw%20dom%20v3-HLRNocFdW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HLRNocFdW)]
+- [claude bezier draw quadraticVertex-nywPqiEH8](./p5projects/claude%20bezier%20draw%20quadraticVertex-nywPqiEH8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nywPqiEH8)]
+- [claude bezier draw rainbow v4-gkCRgN3Ke](./p5projects/claude%20bezier%20draw%20rainbow%20v4-gkCRgN3Ke) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/gkCRgN3Ke)]
+- [claude bezier draw v2-fys4OYczY](./p5projects/claude%20bezier%20draw%20v2-fys4OYczY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fys4OYczY)]
 - [claude-waveform-v1-jE5tS4vo5](./p5projects/claude-waveform-v1-jE5tS4vo5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jE5tS4vo5)]
 - [close enough, welcome back heart prism symmetry copy-ju7yiIAGk](./p5projects/close%20enough%2C%20welcome%20back%20heart%20prism%20symmetry%20copy-ju7yiIAGk) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ju7yiIAGk)]
 - [colorMode-rainbow copy-YsCNS7L7](./p5projects/colorMode-rainbow%20copy-YsCNS7L7) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-YsCNS7L7)]
@@ -503,6 +509,7 @@
 - [ims-01 bounce fullscreen-Mpgun-Kti](./p5projects/ims-01%20bounce%20fullscreen-Mpgun-Kti) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)]
 - [ims-01-Weighted Voronoi Image Stippling v0-FogwwiKOk](./p5projects/ims-01-Weighted%20Voronoi%20Image%20Stippling%20v0-FogwwiKOk) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/FogwwiKOk)]
 - [ims-03-jht truchet tiles pause copy-CYMdD77ySc](./p5projects/ims-03-jht%20truchet%20tiles%20pause%20copy-CYMdD77ySc) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/YMdD77ySc)]
+- [ims-03-jht truchet tiles pause v2-CYMdD77ySc](./p5projects/ims-03-jht%20truchet%20tiles%20pause%20v2-CYMdD77ySc) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/YMdD77ySc)]
 - [ims-Hazel-2025-03-u3HnuOLS5](./p5projects/ims-Hazel-2025-03-u3HnuOLS5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/u3HnuOLS5)]
 - [ims-Luka-2025-03-pRden1AkV](./p5projects/ims-Luka-2025-03-pRden1AkV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pRden1AkV)]
 - [ims-Vicky-2025-03-tf5\_F9y7q](./p5projects/ims-Vicky-2025-03-tf5_F9y7q) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tf5_F9y7q)]

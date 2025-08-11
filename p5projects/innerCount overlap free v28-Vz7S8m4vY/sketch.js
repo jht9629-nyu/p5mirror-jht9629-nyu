@@ -99,13 +99,13 @@ function windowResized() {
 function setup_fullScreenButton() {
   my.fullScreenButton = createButton("?=v27 Full");
   my.fullScreenButton.mousePressed(fullScreen_action);
-  my.fullScreenButton.style("font-size:42px");
+  my.fullScreenButton.style("font-size:30px");
   my.plusButton = createButton("[+]");
   my.plusButton.mousePressed(plusButton_action);
-  my.plusButton.style("font-size:42px");
+  my.plusButton.style("font-size:30px");
   my.minusButton = createButton("[-]");
   my.minusButton.mousePressed(minusButton_action);
-  my.minusButton.style("font-size:42px");
+  my.minusButton.style("font-size:30px");
 }
 function plusButton_action() {
   my.nwidth += 1;
