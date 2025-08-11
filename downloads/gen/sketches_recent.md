@@ -1,9 +1,11 @@
 # Sketches for jht9629-nyu
-794 sketches  
+796 sketches  
+[bezier draw rainbow noise v5](https://editor.p5js.org/jht9629-nyu/sketches/vFHFG2gSC)<!-- 2025-08-11T21:28:33.240Z -->  
+[video radial perlin pix v2](https://editor.p5js.org/jht9629-nyu/sketches/L66GVfjl0)<!-- 2025-08-11T19:07:39.528Z -->  
+[claude bezier draw rainbow v4](https://editor.p5js.org/jht9629-nyu/sketches/gkCRgN3Ke)<!-- 2025-08-11T17:04:10.973Z -->  
 [ims-03-jht truchet tiles pause v2](https://editor.p5js.org/jht9629-nyu/sketches/CYMdD77ySc)<!-- 2025-08-11T11:51:29.801Z -->  
 [Technology by Vamoss v2](https://editor.p5js.org/jht9629-nyu/sketches/UZtQLw_Rr)<!-- 2025-08-11T11:04:20.921Z -->  
 [innerCount overlap free v28](https://editor.p5js.org/jht9629-nyu/sketches/Vz7S8m4vY)<!-- 2025-08-11T09:21:00.977Z -->  
-[claude bezier draw rainbow v4](https://editor.p5js.org/jht9629-nyu/sketches/gkCRgN3Ke)<!-- 2025-08-11T04:41:45.665Z -->  
 [claude bezier draw dom v3](https://editor.p5js.org/jht9629-nyu/sketches/HLRNocFdW)<!-- 2025-08-11T04:37:14.164Z -->  
 [claude bezier draw v2](https://editor.p5js.org/jht9629-nyu/sketches/fys4OYczY)<!-- 2025-08-11T03:50:39.119Z -->  
 [claude bezier draw quadraticVertex](https://editor.p5js.org/jht9629-nyu/sketches/nywPqiEH8)<!-- 2025-08-11T03:35:52.760Z -->  

@@ -1,0 +1,40 @@
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+ */
+body {
+  margin: 0;
+  padding: 0;
+  background: #1a1a1a;
+  font-family: Arial, sans-serif;
+}
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 100;
+}
+.controls button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.controls button:hover {
+  background: #45a049;
+}
+.controls input[type="range"] {
+  margin: 5px;
+}

@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-794 sketches  
+796 sketches  
 [0\_2\_trigger\_several\_sounds copy](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)<!-- 2025-03-10T21:47:40.953Z -->  
@@ -73,6 +73,7 @@
 [Beaded scorpio](https://editor.p5js.org/jht9629-nyu/sketches/D5NJlDzOC)<!-- 2023-07-27T15:43:26.080Z -->  
 [Bedecked kangaroo copy](https://editor.p5js.org/jht9629-nyu/sketches/JDCmTP9Wv)<!-- 2023-10-03T08:31:39.860Z -->  
 [bezier demo](https://editor.p5js.org/jht9629-nyu/sketches/AAanDlE3D)<!-- 2025-08-11T03:10:11.479Z -->  
+[bezier draw rainbow noise v5](https://editor.p5js.org/jht9629-nyu/sketches/vFHFG2gSC)<!-- 2025-08-11T21:28:33.240Z -->  
 [Bird evening](https://editor.p5js.org/jht9629-nyu/sketches/Fv5l9D4BS)<!-- 2023-11-14T13:53:03.058Z -->  
 [blendMode](https://editor.p5js.org/jht9629-nyu/sketches/h47LHGYre)<!-- 2025-03-27T13:52:15.509Z -->  
 [Blink animation](https://editor.p5js.org/jht9629-nyu/sketches/j1Zb2s-xI)<!-- 2024-07-24T15:43:48.992Z -->  
@@ -167,7 +168,7 @@
 [circleX modulo copy](https://editor.p5js.org/jht9629-nyu/sketches/HkG6bo5KG)<!-- 2023-09-18T15:05:00.338Z -->  
 [claude bezier draw dom v3](https://editor.p5js.org/jht9629-nyu/sketches/HLRNocFdW)<!-- 2025-08-11T04:37:14.164Z -->  
 [claude bezier draw quadraticVertex](https://editor.p5js.org/jht9629-nyu/sketches/nywPqiEH8)<!-- 2025-08-11T03:35:52.760Z -->  
-[claude bezier draw rainbow v4](https://editor.p5js.org/jht9629-nyu/sketches/gkCRgN3Ke)<!-- 2025-08-11T04:41:45.665Z -->  
+[claude bezier draw rainbow v4](https://editor.p5js.org/jht9629-nyu/sketches/gkCRgN3Ke)<!-- 2025-08-11T17:04:10.973Z -->  
 [claude bezier draw v2](https://editor.p5js.org/jht9629-nyu/sketches/fys4OYczY)<!-- 2025-08-11T03:50:39.119Z -->  
 [claude-waveform-v1](https://editor.p5js.org/jht9629-nyu/sketches/jE5tS4vo5)<!-- 2025-05-18T15:47:25.028Z -->  
 [close enough, welcome back heart prism symmetry copy](https://editor.p5js.org/jht9629-nyu/sketches/ju7yiIAGk)<!-- 2024-07-23T15:35:40.571Z -->  
@@ -725,6 +726,7 @@
 [video pixel scan random](https://editor.p5js.org/jht9629-nyu/sketches/3ZwzK2buW)<!-- 2023-05-09T23:54:56.678Z -->  
 [video radial bounce v2](https://editor.p5js.org/jht9629-nyu/sketches/pouiEda3o)<!-- 2025-04-01T18:59:28.452Z -->  
 [video radial perlin pix](https://editor.p5js.org/jht9629-nyu/sketches/J2p8pZTNH)<!-- 2024-04-26T17:32:19.463Z -->  
+[video radial perlin pix v2](https://editor.p5js.org/jht9629-nyu/sketches/L66GVfjl0)<!-- 2025-08-11T19:07:39.528Z -->  
 [video scan radial bounce](https://editor.p5js.org/jht9629-nyu/sketches/hmPJyOAk1)<!-- 2024-07-29T00:33:45.789Z -->  
 [video scan radial v2](https://editor.p5js.org/jht9629-nyu/sketches/cKzXO8eUG)<!-- 2024-03-30T17:22:33.321Z -->  
 [video scan radial v3](https://editor.p5js.org/jht9629-nyu/sketches/WdNVtxQzf)<!-- 2024-03-30T17:45:27.162Z -->  
