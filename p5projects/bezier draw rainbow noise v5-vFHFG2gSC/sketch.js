@@ -6,8 +6,8 @@ let currentPath = [];
 let isDrawing = false;
 let strokeWeightSlider, smoothnessSlider;
 let strokeWeightSpan, smoothnessSpan;
-let strokeWeightValue = 10,
-  smoothnessValue = 1;
+let strokeWeightValue = 10;
+let smoothnessValue = 1;
 let clearButton, toggleButton;
 let controlsDiv;
 let isColorful = true;
@@ -29,6 +29,7 @@ function setup() {
 
   my.canvas.mousePressed(canvas_mousePressed);
   my.canvas.mouseReleased(canvas_mouseReleased);
+  my.canvas.touchEnded(canvas_mouseReleased);
 }
 
 function draw() {
@@ -51,9 +52,26 @@ function draw() {
 function canvas_mousePressed() {
   // Only start drawing if not clicking on controls (rough area check)
   // if (mouse_onCanvas()) {
+  console.log("in canvas_mousePressed");
   start_draw(mouseX, mouseY);
   // }
 }
+
+function mouseDragged() {
+  let onCanvas = mouse_onCanvas();
+  console.log("in mouseDragged");
+  if (isDrawing && onCanvas) {
+    draw_to(mouseX, mouseY);
+  }
+  // return false; // required to prevent touch drag moving canvas on mobile
+  return !onCanvas;
+}
+
+function canvas_mouseReleased() {
+  console.log("in canvas_mouseReleased");
+  stop_draw();
+}
+
 function mouse_onCanvas() {
   return mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;
 }
@@ -105,15 +123,6 @@ function add_point(x, y) {
   // hueOffset = random(0, 360);
 }
 
-function mouseDragged() {
-  let onCanvas = mouse_onCanvas()
-  if (isDrawing && onCanvas) {
-    draw_to(mouseX, mouseY);
-  }
-    // return false; // required to prevent touch drag moving canvas on mobile
-  return !onCanvas;
-}
-
 function draw_to(x, y) {
   let distance = dist(x, y, lastPoint.x, lastPoint.y);
   if (distance > 5) {
@@ -121,9 +130,6 @@ function draw_to(x, y) {
   }
 }
 
-function canvas_mouseReleased() {
-  stop_draw();
-}
 
 function stop_draw() {
   if (isDrawing && currentPath.length > 1) {
@@ -210,7 +216,7 @@ function setupUI() {
   controlsDiv.style("font-family", "Arial, sans-serif");
 
   // Title
-  let title = createDiv("Drag mouse to draw smooth Bézier curves");
+  let title = createDiv("v5.1 Drag mouse to draw smooth Bézier curves");
   title.parent(controlsDiv);
   title.style("margin-bottom", "10px");
 
