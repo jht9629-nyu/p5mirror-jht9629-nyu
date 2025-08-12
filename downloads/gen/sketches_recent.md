@@ -1,6 +1,6 @@
 # Sketches for jht9629-nyu
 796 sketches  
-[bezier draw rainbow noise v5](https://editor.p5js.org/jht9629-nyu/sketches/vFHFG2gSC)<!-- 2025-08-12T01:20:48.793Z -->  
+[bezier draw rainbow noise v5](https://editor.p5js.org/jht9629-nyu/sketches/vFHFG2gSC)<!-- 2025-08-12T01:31:04.321Z -->  
 [video radial perlin pix v2](https://editor.p5js.org/jht9629-nyu/sketches/L66GVfjl0)<!-- 2025-08-11T19:07:39.528Z -->  
 [claude bezier draw rainbow v4](https://editor.p5js.org/jht9629-nyu/sketches/gkCRgN3Ke)<!-- 2025-08-11T17:04:10.973Z -->  
 [ims-03-jht truchet tiles pause v2](https://editor.p5js.org/jht9629-nyu/sketches/CYMdD77ySc)<!-- 2025-08-11T11:51:29.801Z -->  

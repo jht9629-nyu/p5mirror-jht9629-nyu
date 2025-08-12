@@ -19,7 +19,7 @@ let pathsMax = 1000;
 let my = {};
 
 function setup() {
-  my.title = "v5.2 Drag mouse to draw smooth Bézier curves";
+  my.title = "v5.3 Drag mouse to draw smooth Bézier curves";
   
   my.canvas = createCanvas(windowWidth, windowHeight);
 
@@ -31,7 +31,9 @@ function setup() {
 
   my.canvas.mousePressed(canvas_mousePressed);
   my.canvas.mouseReleased(canvas_mouseReleased);
-  my.canvas.touchEnded(canvas_mouseReleased);
+  my.canvas.touchStarted(canvas_touchStarted);
+  my.canvas.touchEnded(canvas_touchEnded);
+  
 }
 
 function draw() {
@@ -51,12 +53,14 @@ function draw() {
   }
 }
 
+function canvas_touchStarted() {
+  console.log("in canvas_touchStarted");
+  start_draw(mouseX, mouseY);
+}
+
 function canvas_mousePressed() {
-  // Only start drawing if not clicking on controls (rough area check)
-  // if (mouse_onCanvas()) {
   console.log("in canvas_mousePressed");
   start_draw(mouseX, mouseY);
-  // }
 }
 
 function mouseDragged() {
@@ -67,6 +71,11 @@ function mouseDragged() {
   }
   // return false; // required to prevent touch drag moving canvas on mobile
   return !onCanvas;
+}
+
+function canvas_touchEnded() {
+  console.log("in canvas_touchEnded");
+  stop_draw();
 }
 
 function canvas_mouseReleased() {
