@@ -73,7 +73,7 @@
 [Beaded scorpio](https://editor.p5js.org/jht9629-nyu/sketches/D5NJlDzOC)<!-- 2023-07-27T15:43:26.080Z -->  
 [Bedecked kangaroo copy](https://editor.p5js.org/jht9629-nyu/sketches/JDCmTP9Wv)<!-- 2023-10-03T08:31:39.860Z -->  
 [bezier demo](https://editor.p5js.org/jht9629-nyu/sketches/AAanDlE3D)<!-- 2025-08-11T03:10:11.479Z -->  
-[bezier draw rainbow noise v5](https://editor.p5js.org/jht9629-nyu/sketches/vFHFG2gSC)<!-- 2025-08-12T00:26:11.990Z -->  
+[bezier draw rainbow noise v5](https://editor.p5js.org/jht9629-nyu/sketches/vFHFG2gSC)<!-- 2025-08-12T00:53:11.349Z -->  
 [Bird evening](https://editor.p5js.org/jht9629-nyu/sketches/Fv5l9D4BS)<!-- 2023-11-14T13:53:03.058Z -->  
 [blendMode](https://editor.p5js.org/jht9629-nyu/sketches/h47LHGYre)<!-- 2025-03-27T13:52:15.509Z -->  
 [Blink animation](https://editor.p5js.org/jht9629-nyu/sketches/j1Zb2s-xI)<!-- 2024-07-24T15:43:48.992Z -->  

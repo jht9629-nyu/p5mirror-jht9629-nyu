@@ -6,7 +6,8 @@ let currentPath = [];
 let isDrawing = false;
 let strokeWeightSlider, smoothnessSlider;
 let strokeWeightSpan, smoothnessSpan;
-let strokeWeightValue = 10, smoothnessValue = 1;
+let strokeWeightValue = 10,
+  smoothnessValue = 1;
 let clearButton, toggleButton;
 let controlsDiv;
 let isColorful = true;
@@ -18,12 +19,16 @@ let pathsMax = 1000;
 let my = {};
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  my.canvas = createCanvas(windowWidth, windowHeight);
+
   lastPoint = { x: width / 2, y: height / 2 };
   colorMode(RGB, 255);
   background(20);
   // Create all UI elements using p5.js DOM functions
   setupUI();
+
+  my.canvas.mousePressed(canvas_mousePressed);
+  my.canvas.mouseReleased(canvas_mouseReleased);
 }
 
 function draw() {
@@ -43,14 +48,14 @@ function draw() {
   }
 }
 
-function mousePressed() {
+function canvas_mousePressed() {
   // Only start drawing if not clicking on controls (rough area check)
-  if (mouse_onCanvas()) {
-    start_draw(mouseX, mouseY);
-  }
+  // if (mouse_onCanvas()) {
+  start_draw(mouseX, mouseY);
+  // }
 }
 function mouse_onCanvas() {
-  return mouseX > 0 && mouseX < width && mouseY > 0 && mouseY < height;
+  return mouseX >= 0 && mouseX < width && mouseY >= 0 && mouseY < height;
 }
 
 function autoMode_check() {
@@ -101,9 +106,12 @@ function add_point(x, y) {
 }
 
 function mouseDragged() {
-  if (isDrawing && mouse_onCanvas()) {
+  let onCanvas = mouse_onCanvas()
+  if (isDrawing && onCanvas) {
     draw_to(mouseX, mouseY);
   }
+    // return false; // required to prevent touch drag moving canvas on mobile
+  return !onCanvas;
 }
 
 function draw_to(x, y) {
@@ -113,7 +121,7 @@ function draw_to(x, y) {
   }
 }
 
-function mouseReleased() {
+function canvas_mouseReleased() {
   stop_draw();
 }
 
@@ -259,12 +267,12 @@ function create_sliders() {
   strokeWeightSlider.parent(strokeDiv);
   strokeWeightSlider.style("margin", "0 10px");
 
-  strokeWeightSpan = createSpan(strokeWeightValue+"");
+  strokeWeightSpan = createSpan(strokeWeightValue + "");
   strokeWeightSpan.parent(strokeDiv);
 
   // Update stroke weight display when slider changes
   strokeWeightSlider.input(() => {
-    strokeWeightValue = strokeWeightSlider.value()
+    strokeWeightValue = strokeWeightSlider.value();
     strokeWeightSpan.html(strokeWeightValue);
   });
 
@@ -309,7 +317,7 @@ function fullScreen_action() {
 
 function ui_present_window() {
   resizeCanvas(windowWidth, windowHeight);
-  clearCanvas()
+  clearCanvas();
   // init_vars();
 }
 // https://editor.p5js.org/jht9629-nyu/sketches/nywPqiEH8
