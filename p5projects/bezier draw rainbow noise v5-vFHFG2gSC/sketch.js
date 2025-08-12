@@ -19,6 +19,8 @@ let pathsMax = 1000;
 let my = {};
 
 function setup() {
+  my.title = "v5.2 Drag mouse to draw smooth Bézier curves";
+  
   my.canvas = createCanvas(windowWidth, windowHeight);
 
   lastPoint = { x: width / 2, y: height / 2 };
@@ -216,7 +218,7 @@ function setupUI() {
   controlsDiv.style("font-family", "Arial, sans-serif");
 
   // Title
-  let title = createDiv("v5.1 Drag mouse to draw smooth Bézier curves");
+  let title = createDiv(my.title);
   title.parent(controlsDiv);
   title.style("margin-bottom", "10px");
 
