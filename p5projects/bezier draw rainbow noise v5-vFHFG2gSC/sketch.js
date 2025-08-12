@@ -6,6 +6,7 @@ let currentPath = [];
 let isDrawing = false;
 let strokeWeightSlider, smoothnessSlider;
 let strokeWeightSpan, smoothnessSpan;
+let strokeWeightValue = 10, smoothnessValue = 1;
 let clearButton, toggleButton;
 let controlsDiv;
 let isColorful = true;
@@ -92,7 +93,7 @@ function add_point(x, y) {
   }
   // currentColor = color(hueOffset % 360, 80, 90);
   let strokeColor = currentColor;
-  let weight = strokeWeightSlider.value();
+  let weight = strokeWeightValue;
   weight = weight / 4 + weight * noise(0.1 * frameCount + 20000);
   lastPoint = { x, y, strokeColor, weight };
   currentPath.push(lastPoint);
@@ -131,7 +132,7 @@ function stop_draw() {
 function drawBezierPath(points) {
   if (points.length < 2) return;
   noFill();
-  let smoothness = smoothnessSlider.value() / 10; // Convert to 0.1-1.0 range
+  let smoothness = smoothnessValue; // Convert to 0.1-1.0 range
   // For paths with only 2 points, draw a simple line
   if (points.length == 2) {
     line(points[0].x, points[0].y, points[1].x, points[1].y);
@@ -254,16 +255,17 @@ function create_sliders() {
   strokeLabel.parent(strokeDiv);
 
   // createSlider(min, max, [value], [step])
-  strokeWeightSlider = createSlider(1, 40, 10);
+  strokeWeightSlider = createSlider(1, 40, strokeWeightValue);
   strokeWeightSlider.parent(strokeDiv);
   strokeWeightSlider.style("margin", "0 10px");
 
-  strokeWeightSpan = createSpan("10");
+  strokeWeightSpan = createSpan(strokeWeightValue+"");
   strokeWeightSpan.parent(strokeDiv);
 
   // Update stroke weight display when slider changes
   strokeWeightSlider.input(() => {
-    strokeWeightSpan.html(strokeWeightSlider.value());
+    strokeWeightValue = strokeWeightSlider.value()
+    strokeWeightSpan.html(strokeWeightValue);
   });
 
   // Smoothness controls
@@ -279,13 +281,13 @@ function create_sliders() {
   smoothnessSlider.parent(smoothDiv);
   smoothnessSlider.style("margin", "0 10px");
 
-  smoothnessSpan = createSpan("1.0");
+  smoothnessSpan = createSpan(smoothnessValue.toFixed(1));
   smoothnessSpan.parent(smoothDiv);
 
   // Update smoothness display when slider changes
   smoothnessSlider.input(() => {
-    let value = smoothnessSlider.value() / 10; // Convert to 0.1-1.0 range
-    smoothnessSpan.html(value.toFixed(1));
+    smoothnessValue = smoothnessSlider.value() / 10; // Convert to 0.1-1.0 range
+    smoothnessSpan.html(smoothnessValue.toFixed(1));
   });
 }
 
@@ -298,7 +300,8 @@ function create_sliders() {
 
 function fullScreen_action() {
   // my.fullScreenButton.remove();
-  controlsDiv.hide();
+  // controlsDiv.hide();
+  controlsDiv.remove();
   fullscreen(1);
   let delay = 3000;
   setTimeout(ui_present_window, delay);

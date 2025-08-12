@@ -1,0 +1,2 @@
+echo download 1 "bezier draw rainbow noise v5-vFHFG2gSC"
+curl -s https://editor.p5js.org/editor/projects/vFHFG2gSC/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/bezier draw rainbow noise v5-vFHFG2gSC.zip"
