@@ -19,7 +19,7 @@ let pathsMax = 1000;
 let my = {};
 
 function setup() {
-  my.title = "v5.3 Drag mouse to draw smooth Bézier curves";
+  my.title = "v5.4 Drag mouse to draw smooth Bézier curves";
   
   my.canvas = createCanvas(windowWidth, windowHeight);
 
@@ -31,6 +31,7 @@ function setup() {
 
   my.canvas.mousePressed(canvas_mousePressed);
   my.canvas.mouseReleased(canvas_mouseReleased);
+  // !!@ p5 docs not correct, must deal with touch events explictly
   my.canvas.touchStarted(canvas_touchStarted);
   my.canvas.touchEnded(canvas_touchEnded);
   
@@ -355,3 +356,5 @@ convert to use p5 dom functions
 
 // https://editor.p5js.org/jht9629-nyu/sketches/gkCRgN3Ke
 // claude bezier draw rainbow v4
+
+// !!@ Error: Fullscreen not enabled in this browser.

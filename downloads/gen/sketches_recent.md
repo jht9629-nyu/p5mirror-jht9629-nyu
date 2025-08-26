@@ -1,6 +1,14 @@
 # Sketches for jht9629-nyu
-796 sketches  
-[bezier draw rainbow noise v5](https://editor.p5js.org/jht9629-nyu/sketches/vFHFG2gSC)<!-- 2025-08-12T01:31:04.321Z -->  
+802 sketches  
+[video pixel scan copy](https://editor.p5js.org/jht9629-nyu/sketches/heaOtyFJz)<!-- 2025-08-25T00:56:30.720Z -->  
+[Sol LeWitt Sq Lines v4](https://editor.p5js.org/jht9629-nyu/sketches/2a4poWlZP)<!-- 2025-08-25T00:36:22.675Z -->  
+[Scarce abacus truchet v1](https://editor.p5js.org/jht9629-nyu/sketches/FkiTjW9bk)<!-- 2025-08-20T16:23:31.146Z -->  
+[ims-03-jht truchet tiles pause v4](https://editor.p5js.org/jht9629-nyu/sketches/ZU4qwXI2E)<!-- 2025-08-20T16:21:39.199Z -->  
+[Scarce abacus truchet v0](https://editor.p5js.org/jht9629-nyu/sketches/_5metu1S4)<!-- 2025-08-20T08:25:00.238Z -->  
+[ims-03-jht truchet tiles pause v3](https://editor.p5js.org/jht9629-nyu/sketches/zZsfxeZjs)<!-- 2025-08-19T22:59:18.851Z -->  
+[noise fill fail v2](https://editor.p5js.org/jht9629-nyu/sketches/QyQLw6ZC_)<!-- 2025-08-13T02:17:20.186Z -->  
+[noise fill fail](https://editor.p5js.org/jht9629-nyu/sketches/B2PQd1dxF)<!-- 2025-08-13T02:10:59.768Z -->  
+[bezier draw rainbow noise v5](https://editor.p5js.org/jht9629-nyu/sketches/vFHFG2gSC)<!-- 2025-08-12T01:43:33.938Z -->  
 [video radial perlin pix v2](https://editor.p5js.org/jht9629-nyu/sketches/L66GVfjl0)<!-- 2025-08-11T19:07:39.528Z -->  
 [claude bezier draw rainbow v4](https://editor.p5js.org/jht9629-nyu/sketches/gkCRgN3Ke)<!-- 2025-08-11T17:04:10.973Z -->  
 [ims-03-jht truchet tiles pause v2](https://editor.p5js.org/jht9629-nyu/sketches/CYMdD77ySc)<!-- 2025-08-11T11:51:29.801Z -->  
@@ -24,7 +32,6 @@
 [Pentagons random v3](https://editor.p5js.org/jht9629-nyu/sketches/q_-8SF2Cv)<!-- 2025-08-07T21:01:06.493Z -->  
 [ims04-jht-scroll-color-v2](https://editor.p5js.org/jht9629-nyu/sketches/3OL8lIVMy)<!-- 2025-08-06T13:58:04.540Z -->  
 [shapes random pause v22](https://editor.p5js.org/jht9629-nyu/sketches/n0LYuXRmX)<!-- 2025-08-06T01:21:29.129Z -->  
-[Sol LeWitt Sq Lines v4](https://editor.p5js.org/jht9629-nyu/sketches/2a4poWlZP)<!-- 2025-08-05T18:33:10.252Z -->  
 [test 2.0.4-rc.2 v2](https://editor.p5js.org/jht9629-nyu/sketches/IwNM5Ni_1)<!-- 2025-08-05T17:48:41.485Z -->  
 [Copy this sketch to test 2.0.4-rc.2 copy](https://editor.p5js.org/jht9629-nyu/sketches/hSsq9S2fq)<!-- 2025-08-05T17:27:13.489Z -->  
 [Pentagons v3](https://editor.p5js.org/jht9629-nyu/sketches/9EL3bH5iq)<!-- 2025-08-05T17:24:57.362Z -->  
@@ -41,7 +48,6 @@
 [Motley protoceratops copy](https://editor.p5js.org/jht9629-nyu/sketches/rhv3pVskm)<!-- 2025-08-04T18:42:56.799Z -->  
 [Sol LeWitt Sq Lines v1](https://editor.p5js.org/jht9629-nyu/sketches/AUA0_JCfy)<!-- 2025-08-04T16:41:55.403Z -->  
 [Marbling Raster Pixels - Video copy](https://editor.p5js.org/jht9629-nyu/sketches/txPD89Zpi)<!-- 2025-08-04T12:29:38.675Z -->  
-[video pixel scan copy](https://editor.p5js.org/jht9629-nyu/sketches/heaOtyFJz)<!-- 2025-08-04T12:26:15.494Z -->  
 [shapes random v14](https://editor.p5js.org/jht9629-nyu/sketches/A8bN65XTn)<!-- 2025-08-03T23:18:25.818Z -->  
 [p5js Code\! - The Bouncing Ball copy](https://editor.p5js.org/jht9629-nyu/sketches/cn6c7BVBv)<!-- 2025-08-03T21:39:14.733Z -->  
 [p5js Code\! - 2.2 - make your own variable copy](https://editor.p5js.org/jht9629-nyu/sketches/c_Fn1F24M)<!-- 2025-08-03T16:52:41.171Z -->  

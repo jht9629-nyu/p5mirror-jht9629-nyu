@@ -1,4 +1,4 @@
-let my = { width: 640, height: 480, ncell: 20, vscale: 4 };
+let my = { width: 640, height: 480, ncell: 30, vscale: 8 };
 function setup() {
   createCanvas(my.width, my.height);
   background(200);

@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[796 sketches 2025-08-12T01:31:04.321Z](./downloads/gen/sketches_recent.md)
+[802 sketches 2025-08-25T00:56:30.720Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -293,6 +293,8 @@
 - [RiveScript Cheatsheet copy-yL9w9HZOb](./p5projects/RiveScript%20Cheatsheet%20copy-yL9w9HZOb) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/yL9w9HZOb)]
 - [Rose locket-ysqJbVHzc](./p5projects/Rose%20locket-ysqJbVHzc) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ysqJbVHzc)]
 - [Rural sardine-uFdR26C9p](./p5projects/Rural%20sardine-uFdR26C9p) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/uFdR26C9p)]
+- [Scarce abacus truchet v0-\_5metu1S4](./p5projects/Scarce%20abacus%20truchet%20v0-_5metu1S4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_5metu1S4)]
+- [Scarce abacus truchet v1-FkiTjW9bk](./p5projects/Scarce%20abacus%20truchet%20v1-FkiTjW9bk) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/FkiTjW9bk)]
 - [Scratched sputter-fgWtAlOV8](./p5projects/Scratched%20sputter-fgWtAlOV8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fgWtAlOV8)]
 - [Scrawny cephalopod-JfRBSdz13](./p5projects/Scrawny%20cephalopod-JfRBSdz13) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/JfRBSdz13)]
 - [Seen cheshire-\_Wgulb7od](./p5projects/Seen%20cheshire-_Wgulb7od) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_Wgulb7od)]
@@ -510,6 +512,8 @@
 - [ims-01 bounce fullscreen-Mpgun-Kti](./p5projects/ims-01%20bounce%20fullscreen-Mpgun-Kti) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)]
 - [ims-01-Weighted Voronoi Image Stippling v0-FogwwiKOk](./p5projects/ims-01-Weighted%20Voronoi%20Image%20Stippling%20v0-FogwwiKOk) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/FogwwiKOk)]
 - [ims-03-jht truchet tiles pause v2-CYMdD77ySc](./p5projects/ims-03-jht%20truchet%20tiles%20pause%20v2-CYMdD77ySc) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/YMdD77ySc)]
+- [ims-03-jht truchet tiles pause v3-zZsfxeZjs](./p5projects/ims-03-jht%20truchet%20tiles%20pause%20v3-zZsfxeZjs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zZsfxeZjs)]
+- [ims-03-jht truchet tiles pause v4-ZU4qwXI2E](./p5projects/ims-03-jht%20truchet%20tiles%20pause%20v4-ZU4qwXI2E) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZU4qwXI2E)]
 - [ims-Hazel-2025-03-u3HnuOLS5](./p5projects/ims-Hazel-2025-03-u3HnuOLS5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/u3HnuOLS5)]
 - [ims-Luka-2025-03-pRden1AkV](./p5projects/ims-Luka-2025-03-pRden1AkV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pRden1AkV)]
 - [ims-Vicky-2025-03-tf5\_F9y7q](./p5projects/ims-Vicky-2025-03-tf5_F9y7q) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tf5_F9y7q)]
@@ -593,6 +597,8 @@
 - [my first sketch copy-1Aw2s7t6f](./p5projects/my%20first%20sketch%20copy-1Aw2s7t6f) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1Aw2s7t6f)]
 - [my first sketch-GmkAvUauV](./p5projects/my%20first%20sketch-GmkAvUauV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/GmkAvUauV)]
 - [noise detecter copy-GXm\_kvVjg5](./p5projects/noise%20detecter%20copy-GXm_kvVjg5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Xm_kvVjg5)]
+- [noise fill fail v2-QyQLw6ZC\_](./p5projects/noise%20fill%20fail%20v2-QyQLw6ZC_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/QyQLw6ZC_)]
+- [noise fill fail-B2PQd1dxF](./p5projects/noise%20fill%20fail-B2PQd1dxF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/B2PQd1dxF)]
 - [p5.Envelope setADSR-RMLnbEz8y](./p5projects/p5.Envelope%20setADSR-RMLnbEz8y) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RMLnbEz8y)]
 - [p5.js Code\! - 2.4 random() - Random Square Design copy-M0g7m\_9Lp](./p5projects/p5.js%20Code!%20-%202.4%20random()%20-%20Random%20Square%20Design%20copy-M0g7m_9Lp) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/M0g7m_9Lp)]
 - [p5Live many-lqMJIQoIs](./p5projects/p5Live%20many-lqMJIQoIs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/lqMJIQoIs)]

@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-796 sketches  
+802 sketches  
 [0\_2\_trigger\_several\_sounds copy](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)<!-- 2025-03-10T21:47:40.953Z -->  
@@ -73,7 +73,7 @@
 [Beaded scorpio](https://editor.p5js.org/jht9629-nyu/sketches/D5NJlDzOC)<!-- 2023-07-27T15:43:26.080Z -->  
 [Bedecked kangaroo copy](https://editor.p5js.org/jht9629-nyu/sketches/JDCmTP9Wv)<!-- 2023-10-03T08:31:39.860Z -->  
 [bezier demo](https://editor.p5js.org/jht9629-nyu/sketches/AAanDlE3D)<!-- 2025-08-11T03:10:11.479Z -->  
-[bezier draw rainbow noise v5](https://editor.p5js.org/jht9629-nyu/sketches/vFHFG2gSC)<!-- 2025-08-12T01:31:04.321Z -->  
+[bezier draw rainbow noise v5](https://editor.p5js.org/jht9629-nyu/sketches/vFHFG2gSC)<!-- 2025-08-12T01:43:33.938Z -->  
 [Bird evening](https://editor.p5js.org/jht9629-nyu/sketches/Fv5l9D4BS)<!-- 2023-11-14T13:53:03.058Z -->  
 [blendMode](https://editor.p5js.org/jht9629-nyu/sketches/h47LHGYre)<!-- 2025-03-27T13:52:15.509Z -->  
 [Blink animation](https://editor.p5js.org/jht9629-nyu/sketches/j1Zb2s-xI)<!-- 2024-07-24T15:43:48.992Z -->  
@@ -362,6 +362,8 @@
 [ims-01 bounce fullscreen deltaTime](https://editor.p5js.org/jht9629-nyu/sketches/zFKAqeENv)<!-- 2025-02-13T16:38:45.085Z -->  
 [ims-01-Weighted Voronoi Image Stippling v0](https://editor.p5js.org/jht9629-nyu/sketches/FogwwiKOk)<!-- 2025-03-24T10:19:59.983Z -->  
 [ims-03-jht truchet tiles pause v2](https://editor.p5js.org/jht9629-nyu/sketches/CYMdD77ySc)<!-- 2025-08-11T11:51:29.801Z -->  
+[ims-03-jht truchet tiles pause v3](https://editor.p5js.org/jht9629-nyu/sketches/zZsfxeZjs)<!-- 2025-08-19T22:59:18.851Z -->  
+[ims-03-jht truchet tiles pause v4](https://editor.p5js.org/jht9629-nyu/sketches/ZU4qwXI2E)<!-- 2025-08-20T16:21:39.199Z -->  
 [ims-Hazel-2025-03](https://editor.p5js.org/jht9629-nyu/sketches/u3HnuOLS5)<!-- 2025-05-02T12:39:00.374Z -->  
 [ims-luka-2025-03](https://editor.p5js.org/jht9629-nyu/sketches/PwJIUG1y5)<!-- 2025-05-02T12:39:37.277Z -->  
 [ims-Luka-2025-03](https://editor.p5js.org/jht9629-nyu/sketches/pRden1AkV)<!-- 2025-05-02T12:35:06.193Z -->  
@@ -467,6 +469,8 @@
 [my first sketch copy](https://editor.p5js.org/jht9629-nyu/sketches/1Aw2s7t6f)<!-- 2024-07-24T13:55:49.166Z -->  
 [Necessary-forgery-timed-drawing](https://editor.p5js.org/jht9629-nyu/sketches/MbS5C3j-F)<!-- 2023-04-23T21:46:34.983Z -->  
 [noise detecter copy](https://editor.p5js.org/jht9629-nyu/sketches/GXm_kvVjg5)<!-- 2024-11-14T18:49:39.460Z -->  
+[noise fill fail](https://editor.p5js.org/jht9629-nyu/sketches/B2PQd1dxF)<!-- 2025-08-13T02:10:59.768Z -->  
+[noise fill fail v2](https://editor.p5js.org/jht9629-nyu/sketches/QyQLw6ZC_)<!-- 2025-08-13T02:17:20.186Z -->  
 [Onward & Fight\! RPG copy copy](https://editor.p5js.org/jht9629-nyu/sketches/ml8Xk_mG8)<!-- 2024-08-02T14:33:13.812Z -->  
 [OpenSimplex Noise -- createGraphics](https://editor.p5js.org/jht9629-nyu/sketches/BSRsNJ1nj)<!-- 2025-03-14T20:35:22.489Z -->  
 [OpenSimplex Noise -- fullScreen](https://editor.p5js.org/jht9629-nyu/sketches/VDYJuuQ4B)<!-- 2025-03-14T20:44:53.851Z -->  
@@ -601,6 +605,8 @@
 [rotationX](https://editor.p5js.org/jht9629-nyu/sketches/G6Zr5SBuq)<!-- 2023-05-11T04:07:26.445Z -->  
 [rotationXYZ](https://editor.p5js.org/jht9629-nyu/sketches/TXvXSJY6L)<!-- 2023-05-12T21:32:19.966Z -->  
 [Rural sardine](https://editor.p5js.org/jht9629-nyu/sketches/uFdR26C9p)<!-- 2023-07-27T15:19:50.937Z -->  
+[Scarce abacus truchet v0](https://editor.p5js.org/jht9629-nyu/sketches/_5metu1S4)<!-- 2025-08-20T08:25:00.238Z -->  
+[Scarce abacus truchet v1](https://editor.p5js.org/jht9629-nyu/sketches/FkiTjW9bk)<!-- 2025-08-20T16:23:31.146Z -->  
 [Scratched sputter](https://editor.p5js.org/jht9629-nyu/sketches/fgWtAlOV8)<!-- 2023-07-27T13:32:59.814Z -->  
 [Scrawny cephalopod](https://editor.p5js.org/jht9629-nyu/sketches/JfRBSdz13)<!-- 2023-07-27T03:33:09.779Z -->  
 [Seen cheshire](https://editor.p5js.org/jht9629-nyu/sketches/_Wgulb7od)<!-- 2025-02-02T08:25:47.319Z -->  
@@ -656,7 +662,7 @@
 [Sol LeWitt Sq Lines v1](https://editor.p5js.org/jht9629-nyu/sketches/AUA0_JCfy)<!-- 2025-08-04T16:41:55.403Z -->  
 [Sol LeWitt Sq Lines v2](https://editor.p5js.org/jht9629-nyu/sketches/TVrRaFpHD)<!-- 2025-08-05T12:22:24.947Z -->  
 [Sol LeWitt Sq Lines v3](https://editor.p5js.org/jht9629-nyu/sketches/RDhYr14WW)<!-- 2025-08-05T12:29:26.279Z -->  
-[Sol LeWitt Sq Lines v4](https://editor.p5js.org/jht9629-nyu/sketches/2a4poWlZP)<!-- 2025-08-05T18:33:10.252Z -->  
+[Sol LeWitt Sq Lines v4](https://editor.p5js.org/jht9629-nyu/sketches/2a4poWlZP)<!-- 2025-08-25T00:36:22.675Z -->  
 [sound-note-envelope](https://editor.p5js.org/jht9629-nyu/sketches/hpcNjIm7v)<!-- 2023-08-04T13:51:23.239Z -->  
 [soundFile copy](https://editor.p5js.org/jht9629-nyu/sketches/z6Sg4ZYU3)<!-- 2023-10-29T23:43:35.346Z -->  
 [South coral](https://editor.p5js.org/jht9629-nyu/sketches/nH-IvlQGD)<!-- 2023-07-25T02:08:56.783Z -->  
@@ -722,7 +728,7 @@
 [video pixel](https://editor.p5js.org/jht9629-nyu/sketches/sJM2AMf5T)<!-- 2023-05-10T00:20:57.826Z -->  
 [video pixel meter](https://editor.p5js.org/jht9629-nyu/sketches/p0ato8vra)<!-- 2023-05-09T15:45:14.893Z -->  
 [video pixel scan](https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA)<!-- 2025-07-25T14:35:33.056Z -->  
-[video pixel scan copy](https://editor.p5js.org/jht9629-nyu/sketches/heaOtyFJz)<!-- 2025-08-04T12:26:15.494Z -->  
+[video pixel scan copy](https://editor.p5js.org/jht9629-nyu/sketches/heaOtyFJz)<!-- 2025-08-25T00:56:30.720Z -->  
 [video pixel scan random](https://editor.p5js.org/jht9629-nyu/sketches/3ZwzK2buW)<!-- 2023-05-09T23:54:56.678Z -->  
 [video radial bounce v2](https://editor.p5js.org/jht9629-nyu/sketches/pouiEda3o)<!-- 2025-04-01T18:59:28.452Z -->  
 [video radial perlin pix](https://editor.p5js.org/jht9629-nyu/sketches/J2p8pZTNH)<!-- 2024-04-26T17:32:19.463Z -->  

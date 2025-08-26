@@ -1,5 +1,8 @@
+// https://editor.p5js.org/jht9629-nyu/sketches/2a4poWlZP
+// Sol LeWitt Sq Lines v4
 // reconstruction of Sol LeWitt 'Bands of Equal Width in Color, Plate 7'
-// color animation
+// mouse press to animate each section
+
 let my = {};
 
 function setup() {
