@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Physics Launcher - p5.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: Arial, sans-serif;
+        }
+        #container {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 90%;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 0 0 10px 0;
+        }
+        .instruction {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        #emoji-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .emoji-btn {
+            font-size: 30px;
+            padding: 8px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background: #e0e0e0;
+            transition: all 0.2s;
+        }
+        .emoji-btn:hover {
+            background: #d0d0d0;
+        }
+        .emoji-btn.selected {
+            background: #667eea;
+            transform: scale(1.1);
+        }
+        #controls {
+            margin-top: 20px;
+        }
+        .control-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: #e0e0e0;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #dc2626;
+        }
+        .info {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        #canvasContainer {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>🎯 Emoji Physics Launcher</h1>
+        <p class="instruction">Click anywhere on the canvas to launch emojis!</p>
+        
+        <div id="canvasContainer"></div>
+        
+        <div class="control-group">
+            <label>Select Emoji:</label>
+            <div id="emoji-selector"></div>
+        </div>
+        
+        <div id="controls">
+            <div class="control-group">
+                <label>Launch Power: <span id="powerValue">50</span>%</label>
+                <input type="range" id="powerSlider" min="10" max="100" value="50">
+            </div>
+            
+            <button id="clearBtn">Clear All Emojis</button>
+        </div>
+        
+        <p class="info">Physics includes: gravity, air resistance, bouncing, and rotation!</p>
+    </div>
+
+    <script>
+        const emojiOptions = ['🚀', '⚽', '🏀', '⭐', '🎈', '🍕', '🎯', '💎', '🔥', '❤️'];
+        let selectedEmoji = '🚀';
+        let power = 50;
+        let emojis = [];
+        
+        const GRAVITY = 980;
+        const AIR_RESISTANCE = 0.02;
+        const BOUNCE_DAMPING = 0.7;
+        const ROTATION_SPEED = 360;
+        const CANVAS_WIDTH = 750;
+        const CANVAS_HEIGHT = 400;
+
+        const emojiSelector = document.getElementById('emoji-selector');
+        emojiOptions.forEach(function(emoji) {
+            const btn = document.createElement('button');
+            btn.className = 'emoji-btn';
+            btn.textContent = emoji;
+            if (emoji === selectedEmoji) btn.classList.add('selected');
+            btn.onclick = function() {
+                selectedEmoji = emoji;
+                document.querySelectorAll('.emoji-btn').forEach(function(b) {
+                    b.classList.remove('selected');
+                });
+                btn.classList.add('selected');
+            };
+            emojiSelector.appendChild(btn);
+        });
+
+        const powerSlider = document.getElementById('powerSlider');
+        const powerValue = document.getElementById('powerValue');
+        powerSlider.oninput = function(e) {
+            power = parseInt(e.target.value);
+            powerValue.textContent = power;
+        };
+
+        document.getElementById('clearBtn').onclick = function() {
+            emojis = [];
+        };
+
+        function setup() {
+            let canvas = createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
+            canvas.parent('canvasContainer');
+            textAlign(CENTER, CENTER);
+            textSize(40);
+        }
+
+        function draw() {
+            var i;
+            for (i = 0; i < height; i++) {
+                var inter = map(i, 0, height, 0, 1);
+                var c = lerpColor(color(135, 206, 235), color(176, 224, 230), inter);
+                stroke(c);
+                line(0, i, width, i);
+            }
+
+            var dt = 0.016;
+
+            for (var i = emojis.length - 1; i >= 0; i--) {
+                var e = emojis[i];
+
+                e.vy += GRAVITY * dt;
+
+                var speed = sqrt(e.vx * e.vx + e.vy * e.vy);
+                var dragForce = AIR_RESISTANCE * speed;
+                e.vx -= e.vx * dragForce * dt;
+                e.vy -= e.vy * dragForce * dt;
+
+                e.x += e.vx * dt;
+                e.y += e.vy * dt;
+
+                e.rotation += e.rotationSpeed * dt;
+
+                if (e.y + 20 > height) {
+                    e.y = height - 20;
+                    e.vy = -abs(e.vy) * BOUNCE_DAMPING;
+                    e.vx *= 0.95;
+                    e.rotationSpeed *= 0.8;
+                }
+
+                if (e.x - 20 < 0) {
+                    e.x = 20;
+                    e.vx = abs(e.vx) * BOUNCE_DAMPING;
+                } else if (e.x + 20 > width) {
+                    e.x = width - 20;
+                    e.vx = -abs(e.vx) * BOUNCE_DAMPING;
+                }
+
+                e.life -= dt;
+
+                if (e.life <= 0 || e.y > height + 50) {
+                    emojis.splice(i, 1);
+                    continue;
+                }
+
+                push();
+                translate(e.x, e.y);
+                rotate(radians(e.rotation));
+                text(e.emoji, 0, 0);
+                pop();
+            }
+
+            noStroke();
+            fill(100, 100, 100, 150);
+            ellipse(width / 2, height - 20, 30, 30);
+        }
+
+        function mousePressed() {
+            if (mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height) {
+                var startX = width / 2;
+                var startY = height - 20;
+
+                var dx = mouseX - startX;
+                var dy = mouseY - startY;
+                var angle = atan2(dy, dx);
+
+                var velocity = power * 10;
+                var vx = cos(angle) * velocity;
+                var vy = sin(angle) * velocity;
+
+                emojis.push({
+                    emoji: selectedEmoji,
+                    x: startX,
+                    y: startY,
+                    vx: vx,
+                    vy: vy,
+                    rotation: 0,
+                    rotationSpeed: (random() - 0.5) * ROTATION_SPEED,
+                    life: 10
+                });
+            }
+        }
+    </script>
+</body>
+</html>

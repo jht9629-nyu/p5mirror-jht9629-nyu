@@ -1,5 +1,6 @@
 # Sketches for jht9629-nyu
-868 sketches  
+869 sketches  
+[Emoji Physics Launcher - p5.js](https://editor.p5js.org/jht9629-nyu/sketches/fZXlgta_H)<!-- 2025-11-09T23:17:08.235Z -->  
 [emoji-shoorter](https://editor.p5js.org/jht9629-nyu/sketches/QWZJTndDe)<!-- 2025-11-09T22:56:31.291Z -->  
 [Althea——week 08 copy](https://editor.p5js.org/jht9629-nyu/sketches/UOlifYbXf)<!-- 2025-11-03T18:35:13.524Z -->  
 [cute image circles copy](https://editor.p5js.org/jht9629-nyu/sketches/EDq9fVdIR)<!-- 2025-11-03T18:18:46.981Z -->  

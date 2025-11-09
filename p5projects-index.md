@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[870 sketches 2025-11-09T22:56:31.291Z](./downloads/gen/sketches_recent.md)
+[869 sketches 2025-11-09T23:17:08.235Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -58,7 +58,6 @@
 - [5.17 Matter.js tutorial-LdXXFo6gn](./p5projects/5.17%20Matter.js%20tutorial-LdXXFo6gn) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/LdXXFo6gn)]
 - [7.3 Arrays of objects 1 copy-IwaHqYnDn](./p5projects/7.3%20Arrays%20of%20objects%201%20copy-IwaHqYnDn) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/IwaHqYnDn)]
 - [ASCII video Ahmed copy-guijEPz0b](./p5projects/ASCII%20video%20Ahmed%20copy-guijEPz0b) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/guijEPz0b)]
-- [Abyssinian bounce size copy-tHxSN4ui5](./p5projects/Abyssinian%20bounce%20size%20copy-tHxSN4ui5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tHxSN4ui5)]
 - [Abyssinian bounce size-ucLGWWvBW](./p5projects/Abyssinian%20bounce%20size-ucLGWWvBW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ucLGWWvBW)]
 - [Abyssinian bounce-iU0-c-7SR](./p5projects/Abyssinian%20bounce-iU0-c-7SR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/iU0-c-7SR)]
 - [Acceleration Ball Bounce-wOBMJbldS](./p5projects/Acceleration%20Ball%20Bounce-wOBMJbldS) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wOBMJbldS)]
@@ -174,6 +173,7 @@
 - [EasyQRCodeJS-ayDLiNEnF](./p5projects/EasyQRCodeJS-ayDLiNEnF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ayDLiNEnF)]
 - [Ellipse Pixels copy-ZAi4hI8dF](./p5projects/Ellipse%20Pixels%20copy-ZAi4hI8dF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZAi4hI8dF)]
 - [Elon Mask v0-wFJKI3yrQ](./p5projects/Elon%20Mask%20v0-wFJKI3yrQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wFJKI3yrQ)]
+- [Emoji Physics Launcher - p5.js-fZXlgta\_H](./p5projects/Emoji%20Physics%20Launcher%20-%20p5.js-fZXlgta_H) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fZXlgta_H)]
 - [Emoji yu copy-CpBl1AoDw](./p5projects/Emoji%20yu%20copy-CpBl1AoDw) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CpBl1AoDw)]
 - [Enstars Trip Album - Trickstar copy-kPKQiy0j6](./p5projects/Enstars%20Trip%20Album%20-%20Trickstar%20copy-kPKQiy0j6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kPKQiy0j6)]
 - [Ex 6.2 JitterBug line copy-UNvoQ8ZKy](./p5projects/Ex%206.2%20JitterBug%20line%20copy-UNvoQ8ZKy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/UNvoQ8ZKy)]
@@ -466,7 +466,6 @@
 - [circleX circleY copy-ZHq9Gwmnx](./p5projects/circleX%20circleY%20copy-ZHq9Gwmnx) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZHq9Gwmnx)]
 - [circleX circleY copy-bVG9wVwpo](./p5projects/circleX%20circleY%20copy-bVG9wVwpo) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/bVG9wVwpo)]
 - [circleX follow copy-qmtBJEwMe](./p5projects/circleX%20follow%20copy-qmtBJEwMe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qmtBJEwMe)]
-- [circleX modulo copy-HkG6bo5KG](./p5projects/circleX%20modulo%20copy-HkG6bo5KG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HkG6bo5KG)]
 - [circleX remainder operator-HkG6bo5KG](./p5projects/circleX%20remainder%20operator-HkG6bo5KG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HkG6bo5KG)]
 - [claude bezier draw dom v3-HLRNocFdW](./p5projects/claude%20bezier%20draw%20dom%20v3-HLRNocFdW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HLRNocFdW)]
 - [claude bezier draw quadraticVertex-nywPqiEH8](./p5projects/claude%20bezier%20draw%20quadraticVertex-nywPqiEH8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nywPqiEH8)]

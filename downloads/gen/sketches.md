@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-868 sketches  
+869 sketches  
 [0\_2\_trigger\_several\_sounds copy](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)<!-- 2025-03-10T21:47:40.953Z -->  
@@ -255,6 +255,7 @@
 [echo echo taoyan\! copy](https://editor.p5js.org/jht9629-nyu/sketches/WNMTMLxG-)<!-- 2025-10-14T12:03:15.363Z -->  
 [Ellipse Pixels copy](https://editor.p5js.org/jht9629-nyu/sketches/ZAi4hI8dF)<!-- 2023-11-13T18:50:28.824Z -->  
 [Elon Mask v0](https://editor.p5js.org/jht9629-nyu/sketches/wFJKI3yrQ)<!-- 2025-03-28T20:14:25.703Z -->  
+[Emoji Physics Launcher - p5.js](https://editor.p5js.org/jht9629-nyu/sketches/fZXlgta_H)<!-- 2025-11-09T23:17:08.235Z -->  
 [Emoji yu copy](https://editor.p5js.org/jht9629-nyu/sketches/CpBl1AoDw)<!-- 2024-07-29T15:30:15.116Z -->  
 [emoji-shoorter](https://editor.p5js.org/jht9629-nyu/sketches/QWZJTndDe)<!-- 2025-11-09T22:56:31.291Z -->  
 [Enstars Trip Album - Trickstar copy](https://editor.p5js.org/jht9629-nyu/sketches/kPKQiy0j6)<!-- 2024-07-31T14:36:10.734Z -->  
