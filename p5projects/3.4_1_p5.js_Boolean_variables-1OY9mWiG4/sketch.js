@@ -1,5 +1,6 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/1OY9mWiG4
 // 3.4_1_p5.js_Boolean_variables
+// let isGreen function rectTest()
 
 // Correction to sketch link in video
 // https://thecodingtrain.com/tracks/code-programming-with-p5-js/code/3-conditionals/4-boolean
@@ -7,7 +8,7 @@
 // 3.4_1_p5.js_Boolean_variables
 // https://github.com/Codingrainbow/Rainbow-Code/blob/master/p5.js/3.4_1_p5.js_Boolean_variables%20/sketch.js
 
-var isGreen = false;
+let isGreen = false;
 
 function setup() {
   createCanvas(600, 400);
@@ -32,19 +33,18 @@ function draw() {
 
 function mousePressed() {
   if (rectTest()) {
-    // if (isGreen) {
-    //   isGreen = false;
-    // } else {
-    //   isGreen = true;
-    // }
     isGreen = !isGreen;
   }
 }
 
-function testRect(x,y,w,h) {
-  return mouseX > x && mouseX < x+w && mouseY > y && mouseY < y+h;
+function rectTest() {
+  // return mouseX > 300 && mouseX < 300+100 
+  // && mouseY > 200 && mouseY < 200+100;
+  return mouseInRect(300, 200, 100, 100);
 }
 
-function rectTest() {
-  return mouseX > 300 && mouseX < 300+100 && mouseY > 200 && mouseY < 200+100;
+function mouseInRect(x,y,w,h) {
+  let inx = mouseX > x && mouseX < x+w
+  let iny = mouseY > y && mouseY < y+h
+  return inx && iny;
 }

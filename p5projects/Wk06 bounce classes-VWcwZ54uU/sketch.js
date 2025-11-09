@@ -3,12 +3,14 @@
 
 // { x, y, xs, ys, c }
 let faces = [];
+let colors = ["red", "green", "gold"];
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   // randomSeed(0);
   for (let i = 0; i < 3; i++) {
-    faces.push(new Face());
+    let c = colors[i];
+    faces.push(new Face(c));
   }
 }
 function draw() {
@@ -16,26 +18,28 @@ function draw() {
   // circle(xp, yp, 20);
   for (let i = 0; i < faces.length; i++) {
     let face = faces[i];
-    face.drawFace();
+    face.drawFace(30);
     face.bounce();
   }
 }
 
 class Face {
-  constructor() {
+  constructor(c) {
     this.x = width / 2;
     this.y = height / 2;
     this.xs = random(-5, 5);
     this.ys = random(-5, 5);
-    this.c = random(["red", "green", "gold"]);
+    this.c = c;
   }
-  drawFace() {
+  drawFace(wt) {
     // background(220);
     push();
     noFill();
     stroke(this.c);
-    strokeWeight(8);
+    // strokeWeight(8);
+    strokeWeight(wt);
     translate(this.x - 200, this.y - 200);
+    scale(0.5);
     this.drawHead();
     this.drawEyes();
     this.drawMouth();

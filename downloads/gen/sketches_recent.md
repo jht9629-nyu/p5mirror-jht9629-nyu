@@ -1,5 +1,76 @@
 # Sketches for jht9629-nyu
-802 sketches  
+868 sketches  
+[emoji-shoorter](https://editor.p5js.org/jht9629-nyu/sketches/QWZJTndDe)<!-- 2025-11-09T22:56:31.291Z -->  
+[Althea——week 08 copy](https://editor.p5js.org/jht9629-nyu/sketches/UOlifYbXf)<!-- 2025-11-03T18:35:13.524Z -->  
+[cute image circles copy](https://editor.p5js.org/jht9629-nyu/sketches/EDq9fVdIR)<!-- 2025-11-03T18:18:46.981Z -->  
+[1103-2 copy](https://editor.p5js.org/jht9629-nyu/sketches/sScS-vubo)<!-- 2025-11-03T17:47:07.338Z -->  
+[w8/ws.2/EE copy](https://editor.p5js.org/jht9629-nyu/sketches/A0a6UGby4)<!-- 2025-11-03T17:38:49.703Z -->  
+[cute image circles copy copy](https://editor.p5js.org/jht9629-nyu/sketches/i7Lj3oMCW)<!-- 2025-11-03T16:42:01.815Z -->  
+[cute image circles copy](https://editor.p5js.org/jht9629-nyu/sketches/1Ri1MGLwp)<!-- 2025-11-03T16:36:23.669Z -->  
+[Althea——week 08 copy](https://editor.p5js.org/jht9629-nyu/sketches/wlSB1gmGG)<!-- 2025-11-03T16:29:07.977Z -->  
+[cute image circles copy](https://editor.p5js.org/jht9629-nyu/sketches/5gx5B08Kn)<!-- 2025-11-03T16:26:57.528Z -->  
+[Althea——week 08 copy](https://editor.p5js.org/jht9629-nyu/sketches/ujeTIAQw6)<!-- 2025-11-03T16:14:00.631Z -->  
+[Week 8 Project 1 copy copy](https://editor.p5js.org/jht9629-nyu/sketches/yvbPLpSYi)<!-- 2025-11-03T15:30:04.561Z -->  
+[Week 8 Project 1 copy](https://editor.p5js.org/jht9629-nyu/sketches/RkKgMSVwG)<!-- 2025-11-03T15:28:51.276Z -->  
+[ICM-Week8-Homework copy](https://editor.p5js.org/jht9629-nyu/sketches/R9O5ynUQt)<!-- 2025-11-03T14:58:03.922Z -->  
+[PoseNet Example 1 copy](https://editor.p5js.org/jht9629-nyu/sketches/lrITLfSgG)<!-- 2025-11-03T14:26:30.575Z -->  
+[PoseNet multi copy](https://editor.p5js.org/jht9629-nyu/sketches/uJOTYsTAH)<!-- 2025-11-03T14:20:31.463Z -->  
+[WK9 PosetNet Keypoints Demo copy](https://editor.p5js.org/jht9629-nyu/sketches/q7Ltjsc_y)<!-- 2025-11-03T14:19:44.237Z -->  
+[2:2 HSB swatches ui copy](https://editor.p5js.org/jht9629-nyu/sketches/7Zs1cu5Ci)<!-- 2025-11-03T14:17:56.696Z -->  
+[2:2 Tri-Color Background-Foreground ui copy](https://editor.p5js.org/jht9629-nyu/sketches/SecsAyLXs)<!-- 2025-11-03T04:28:39.721Z -->  
+[Fourth crowberry](https://editor.p5js.org/jht9629-nyu/sketches/2TYbiA2ZK)<!-- 2025-10-27T18:16:15.675Z -->  
+[Althea\_firewroks copy](https://editor.p5js.org/jht9629-nyu/sketches/fdcMZR9eS)<!-- 2025-10-27T16:53:22.887Z -->  
+[Althea\_firewroks copy](https://editor.p5js.org/jht9629-nyu/sketches/sRTIkJfLv)<!-- 2025-10-27T13:31:49.760Z -->  
+[1025-midterm copy](https://editor.p5js.org/jht9629-nyu/sketches/astPSoZKX)<!-- 2025-10-27T13:31:38.650Z -->  
+[week 6 ICM Part 3 copy](https://editor.p5js.org/jht9629-nyu/sketches/QbX47jbFK)<!-- 2025-10-20T16:49:12.483Z -->  
+[Daffodil canoe](https://editor.p5js.org/jht9629-nyu/sketches/yXss8NsVdb)<!-- 2025-10-20T16:43:05.098Z -->  
+[ICM - WK6 Practice - with objects copy](https://editor.p5js.org/jht9629-nyu/sketches/Gj02NIAzg)<!-- 2025-10-14T18:49:40.495Z -->  
+[ICM - WK6 Practice - with objects copy](https://editor.p5js.org/jht9629-nyu/sketches/05XPik8Ut)<!-- 2025-10-14T18:46:17.252Z -->  
+[ICM - WK6 Practice - with objects copy](https://editor.p5js.org/jht9629-nyu/sketches/mGxggRvhM)<!-- 2025-10-14T18:46:09.411Z -->  
+[Wk06 bounce object literal](https://editor.p5js.org/jht9629-nyu/sketches/X8Sb1d65c)<!-- 2025-10-14T18:34:22.790Z -->  
+[Wk06 bounce classes](https://editor.p5js.org/jht9629-nyu/sketches/VWcwZ54uU)<!-- 2025-10-14T18:09:31.483Z -->  
+[random 1 of 13 objects](https://editor.p5js.org/jht9629-nyu/sketches/6UcTbJ40F)<!-- 2025-10-14T17:55:17.651Z -->  
+[random 1 of 13 names norepeat](https://editor.p5js.org/jht9629-nyu/sketches/PFolm23Rc)<!-- 2025-10-14T17:50:30.192Z -->  
+[echo echo taoyan\! copy](https://editor.p5js.org/jht9629-nyu/sketches/_2w0NVWwa)<!-- 2025-10-14T17:13:36.509Z -->  
+[ICM-wk5-Self portrait has bg copy](https://editor.p5js.org/jht9629-nyu/sketches/8jAgwd_bf)<!-- 2025-10-14T12:05:28.647Z -->  
+[echo echo taoyan\! copy](https://editor.p5js.org/jht9629-nyu/sketches/WNMTMLxG-)<!-- 2025-10-14T12:03:15.363Z -->  
+[Ex 6.2 JitterBug line copy](https://editor.p5js.org/jht9629-nyu/sketches/UNvoQ8ZKy)<!-- 2025-10-13T13:45:53.997Z -->  
+[p5js Code\! - Function Basics object arrays](https://editor.p5js.org/jht9629-nyu/sketches/DGk7h4FrI)<!-- 2025-10-06T18:58:47.866Z -->  
+[p5js Code\! - Function Basics object literals](https://editor.p5js.org/jht9629-nyu/sketches/cMP27JljG)<!-- 2025-10-06T18:33:54.968Z -->  
+[ICM week4 pattern\_beaded curtain copy](https://editor.p5js.org/jht9629-nyu/sketches/prS68eB32)<!-- 2025-10-06T18:15:46.064Z -->  
+[ICM Week 04 Circles](https://editor.p5js.org/jht9629-nyu/sketches/FKwP_H6CG)<!-- 2025-10-06T15:47:36.217Z -->  
+[20 columns - while loop copy](https://editor.p5js.org/jht9629-nyu/sketches/0FlUdupcA)<!-- 2025-10-06T15:09:15.085Z -->  
+[flower copy copy](https://editor.p5js.org/jht9629-nyu/sketches/fGxV3hC-6)<!-- 2025-10-06T13:40:27.966Z -->  
+[flower copy](https://editor.p5js.org/jht9629-nyu/sketches/F9lp6QHtA)<!-- 2025-10-06T13:28:39.793Z -->  
+[ICM WK3-5 copy copy](https://editor.p5js.org/jht9629-nyu/sketches/Q0EU9wHN1)<!-- 2025-09-29T20:24:52.093Z -->  
+[Week03 assignment\_Helena&Jackie&Althea copy](https://editor.p5js.org/jht9629-nyu/sketches/ihAtC3aDx)<!-- 2025-09-29T18:25:12.701Z -->  
+[Jelly idea copy copy](https://editor.p5js.org/jht9629-nyu/sketches/FGifOAiKP)<!-- 2025-09-29T18:07:07.378Z -->  
+[outfit randomizer by RaFia and Emilia copy](https://editor.p5js.org/jht9629-nyu/sketches/SZvZUdgLx)<!-- 2025-09-29T17:56:44.724Z -->  
+[ICM WK3-5 copy copy](https://editor.p5js.org/jht9629-nyu/sketches/1TIu3nNl6)<!-- 2025-09-29T17:43:39.595Z -->  
+[ICM WK3-5 copy](https://editor.p5js.org/jht9629-nyu/sketches/YdUcII2n3)<!-- 2025-09-29T17:22:51.059Z -->  
+[Althea- ICM practice copy](https://editor.p5js.org/jht9629-nyu/sketches/I0KMlv0Bm)<!-- 2025-09-29T17:00:25.715Z -->  
+[Week 3 Practice 1 copy](https://editor.p5js.org/jht9629-nyu/sketches/q__wSkkx1)<!-- 2025-09-29T16:35:00.122Z -->  
+[outfit randomizer by RaFia and Emilia](https://editor.p5js.org/jht9629-nyu/sketches/o2mlDMWY2)<!-- 2025-09-29T14:51:28.862Z -->  
+[aperiodic monotile hatviz h7h8](https://editor.p5js.org/jht9629-nyu/sketches/U03P1q0bJ)<!-- 2025-09-29T13:09:31.014Z -->  
+[random 1 of 13 names](https://editor.p5js.org/jht9629-nyu/sketches/D71gHB2X6)<!-- 2025-09-29T03:21:02.054Z -->  
+[3.4\_1\_p5.js\_Boolean\_variables](https://editor.p5js.org/jht9629-nyu/sketches/1OY9mWiG4)<!-- 2025-09-23T18:45:50.912Z -->  
+[p5js Code\! - else and else if, AND and OR copy](https://editor.p5js.org/jht9629-nyu/sketches/XFxeceno9)<!-- 2025-09-22T18:45:39.899Z -->  
+[pink purple circles copy](https://editor.p5js.org/jht9629-nyu/sketches/ANfC_Xawe)<!-- 2025-09-22T18:03:46.467Z -->  
+[ICM-week2-03 by Amanda copy](https://editor.p5js.org/jht9629-nyu/sketches/3NH2-WIyF)<!-- 2025-09-22T16:40:19.482Z -->  
+[Rogue heath copy](https://editor.p5js.org/jht9629-nyu/sketches/HqDBhpPzE)<!-- 2025-09-22T16:33:33.294Z -->  
+[random 1 or 13](https://editor.p5js.org/jht9629-nyu/sketches/QS31TLmOi)<!-- 2025-09-22T15:37:13.968Z -->  
+[Rats by ChanningMu](https://editor.p5js.org/jht9629-nyu/sketches/gekE9hlfL)<!-- 2025-09-22T12:59:09.640Z -->  
+[week 2 project 3 copy](https://editor.p5js.org/jht9629-nyu/sketches/zyNXB05eI)<!-- 2025-09-22T08:15:01.786Z -->  
+[p5.js Code\! - 2.4 random() - Random Square Design copy](https://editor.p5js.org/jht9629-nyu/sketches/Aq6yPWhM3)<!-- 2025-09-15T18:23:51.422Z -->  
+[p5js Code\! - 2.2 - make your own variable copy](https://editor.p5js.org/jht9629-nyu/sketches/LlurMJrUk)<!-- 2025-09-15T18:07:20.109Z -->  
+[Self Portrait\_Althea Xiu copy](https://editor.p5js.org/jht9629-nyu/sketches/aCHUn_-u7)<!-- 2025-09-15T16:58:27.388Z -->  
+[circleX remainder operator](https://editor.p5js.org/jht9629-nyu/sketches/HkG6bo5KG)<!-- 2025-09-15T14:13:48.990Z -->  
+[ICM-Week1-02 copy](https://editor.p5js.org/jht9629-nyu/sketches/mg-bxwkqY)<!-- 2025-09-15T13:54:11.332Z -->  
+[RaFia self portrait copy](https://editor.p5js.org/jht9629-nyu/sketches/WcFLrf2hA)<!-- 2025-09-15T13:23:04.731Z -->  
+[Self Portrait\_Althea Xiu copy](https://editor.p5js.org/jht9629-nyu/sketches/t7H7YaU49)<!-- 2025-09-15T12:55:21.781Z -->  
+[icm 2025 week 01 v1](https://editor.p5js.org/jht9629-nyu/sketches/REjT1D-nC)<!-- 2025-09-08T20:21:48.793Z -->  
+[law of detachment f2](https://editor.p5js.org/jht9629-nyu/sketches/SrelAPCUk)<!-- 2025-09-03T12:52:39.113Z -->  
+[law of detachment copy](https://editor.p5js.org/jht9629-nyu/sketches/PQzI4NS3O)<!-- 2025-09-03T12:50:21.677Z -->  
 [video pixel scan copy](https://editor.p5js.org/jht9629-nyu/sketches/heaOtyFJz)<!-- 2025-08-25T00:56:30.720Z -->  
 [Sol LeWitt Sq Lines v4](https://editor.p5js.org/jht9629-nyu/sketches/2a4poWlZP)<!-- 2025-08-25T00:36:22.675Z -->  
 [Scarce abacus truchet v1](https://editor.p5js.org/jht9629-nyu/sketches/FkiTjW9bk)<!-- 2025-08-20T16:23:31.146Z -->  
@@ -317,12 +388,10 @@
 [Pixelated mirror copy](https://editor.p5js.org/jht9629-nyu/sketches/8Vltq6LEw)<!-- 2024-10-24T12:08:30.780Z -->  
 [3.5 circleX slider](https://editor.p5js.org/jht9629-nyu/sketches/h64xxtnIM)<!-- 2024-10-17T18:13:49.244Z -->  
 [Sparkly trail](https://editor.p5js.org/jht9629-nyu/sketches/Q26aAbQDY)<!-- 2024-10-17T17:51:22.925Z -->  
-[Wk06 bounce object literal](https://editor.p5js.org/jht9629-nyu/sketches/X8Sb1d65c)<!-- 2024-10-17T17:37:42.345Z -->  
 [Speckled grey copy](https://editor.p5js.org/jht9629-nyu/sketches/tcvC5s9TS)<!-- 2024-10-17T17:18:54.066Z -->  
 [Bouncing Text Class with TimeReverse copy](https://editor.p5js.org/jht9629-nyu/sketches/gxWbyxP_-)<!-- 2024-10-17T17:01:55.879Z -->  
 [Trial\_ Mid term Project 01 copy](https://editor.p5js.org/jht9629-nyu/sketches/DphKSdHsc)<!-- 2024-10-17T16:56:23.470Z -->  
 [2 week assignment copy](https://editor.p5js.org/jht9629-nyu/sketches/3e2XRkb2y)<!-- 2024-10-17T16:35:41.525Z -->  
-[Wk06 bounce classes](https://editor.p5js.org/jht9629-nyu/sketches/VWcwZ54uU)<!-- 2024-10-17T14:20:54.197Z -->  
 [firebase mo-gallery-1](https://editor.p5js.org/jht9629-nyu/sketches/2OYRyVuhx)<!-- 2024-10-13T18:27:01.419Z -->  
 [firebase mo-gallery-ppt](https://editor.p5js.org/jht9629-nyu/sketches/VtqUmOlGB)<!-- 2024-10-13T18:26:08.018Z -->  
 [Wk06 bounce array](https://editor.p5js.org/jht9629-nyu/sketches/PUyKtLtsk)<!-- 2024-10-10T18:54:35.222Z -->  
@@ -360,7 +429,6 @@
 [Abyssinian bounce size](https://editor.p5js.org/jht9629-nyu/sketches/ucLGWWvBW)<!-- 2024-09-26T17:24:42.548Z -->  
 [Abyssinian bounce](https://editor.p5js.org/jht9629-nyu/sketches/iU0-c-7SR)<!-- 2024-09-26T17:09:40.398Z -->  
 [W4: Toggle lightswitch copy](https://editor.p5js.org/jht9629-nyu/sketches/cnklfGg2K)<!-- 2024-09-26T16:47:09.517Z -->  
-[ICM Week 04 Circles](https://editor.p5js.org/jht9629-nyu/sketches/FKwP_H6CG)<!-- 2024-09-26T15:12:19.414Z -->  
 [ICM - WK4 - drawing columns with a for loop - counting by columns copy](https://editor.p5js.org/jht9629-nyu/sketches/hetGTTVPe)<!-- 2024-09-24T17:50:11.988Z -->  
 [ICM - WK4 - loop as counter (anatomy of for loop) copy](https://editor.p5js.org/jht9629-nyu/sketches/dMBfA4xQe)<!-- 2024-09-24T17:11:10.386Z -->  
 [columns if-else](https://editor.p5js.org/jht9629-nyu/sketches/sGs7VbA-y)<!-- 2024-09-19T18:40:19.340Z -->  
@@ -639,7 +707,6 @@
 [Week3 homework - V3 copy](https://editor.p5js.org/jht9629-nyu/sketches/Vu5Sesf0Q)<!-- 2023-10-02T20:25:55.268Z -->  
 [assignment week 3 copy](https://editor.p5js.org/jht9629-nyu/sketches/fpytkwPBO)<!-- 2023-10-02T20:05:05.481Z -->  
 [ICM 2023 jht student selector](https://editor.p5js.org/jht9629-nyu/sketches/rpyY0uqRR)<!-- 2023-10-02T05:27:35.618Z -->  
-[3.4\_1\_p5.js\_Boolean\_variables](https://editor.p5js.org/jht9629-nyu/sketches/1OY9mWiG4)<!-- 2023-09-25T22:18:55.377Z -->  
 [3.4\_1\_p5.js\_Boolean\_variables copy copy copy copy](https://editor.p5js.org/jht9629-nyu/sketches/mw9zNJ2EA)<!-- 2023-09-25T21:42:48.429Z -->  
 [3.4\_1\_p5.js\_Boolean\_variables copy copy copy](https://editor.p5js.org/jht9629-nyu/sketches/yQr7TCMaE)<!-- 2023-09-25T21:30:56.852Z -->  
 [3.4\_1\_p5.js\_Boolean\_variables copy copy](https://editor.p5js.org/jht9629-nyu/sketches/K49FS1RJL)<!-- 2023-09-25T21:24:01.101Z -->  
@@ -659,7 +726,6 @@
 [ICM Week 1 Assignment - Self Portrait copy](https://editor.p5js.org/jht9629-nyu/sketches/Wkl-MS8LU)<!-- 2023-09-18T19:47:58.465Z -->  
 [ICM Week 1 Assignment - Self Portrait](https://editor.p5js.org/jht9629-nyu/sketches/tOvM0opxr)<!-- 2023-09-18T15:22:45.964Z -->  
 [circleX buttons copy](https://editor.p5js.org/jht9629-nyu/sketches/57DXiQJnK)<!-- 2023-09-18T15:06:36.838Z -->  
-[circleX modulo copy](https://editor.p5js.org/jht9629-nyu/sketches/HkG6bo5KG)<!-- 2023-09-18T15:05:00.338Z -->  
 [two circles object literal](https://editor.p5js.org/jht9629-nyu/sketches/N5pj99g-N)<!-- 2023-09-18T14:49:27.440Z -->  
 [2.2.3 circleX width ui v1 object literal](https://editor.p5js.org/jht9629-nyu/sketches/DfGSm6IZH)<!-- 2023-09-18T14:06:44.220Z -->  
 [2.2.3 circleX width ui local vars](https://editor.p5js.org/jht9629-nyu/sketches/Av1a8fSj4)<!-- 2023-09-18T14:05:45.924Z -->  
