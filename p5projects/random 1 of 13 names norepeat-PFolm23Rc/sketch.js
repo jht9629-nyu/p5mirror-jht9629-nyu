@@ -2,12 +2,7 @@
 // random 1 of 13 names norepeat
 
 let a_students;
-
 let i_student;
-
-function randomColor() {
-  return color(random(255), random(255), random(255));
-}
 
 function setup() {
   createCanvas(windowWidth, windowHeight - 30);
@@ -38,6 +33,10 @@ function draw() {
   // fill(randomColor())
   fill(stu.c);
   text(txt, width * 0.1, height * 0.5);
+}
+
+function randomColor() {
+  return color(random(255), random(255), random(255));
 }
 
 function selectStudent() {
