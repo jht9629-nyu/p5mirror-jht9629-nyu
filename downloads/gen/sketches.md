@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-886 sketches  
+901 sketches  
 [0\_2\_trigger\_several\_sounds copy](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)<!-- 2025-03-10T21:47:40.953Z -->  
@@ -34,6 +34,7 @@
 [2 week assignment copy](https://editor.p5js.org/jht9629-nyu/sketches/3e2XRkb2y)<!-- 2024-10-17T16:35:41.525Z -->  
 [2:2 HSB swatches ui copy](https://editor.p5js.org/jht9629-nyu/sketches/7Zs1cu5Ci)<!-- 2025-11-03T14:17:56.696Z -->  
 [2:2 Tri-Color Background-Foreground ui copy](https://editor.p5js.org/jht9629-nyu/sketches/SecsAyLXs)<!-- 2025-11-03T04:28:39.721Z -->  
+[2:4 Record and Loop copy](https://editor.p5js.org/jht9629-nyu/sketches/3oY5haTyE)<!-- 2025-11-10T23:06:40.660Z -->  
 [2:4 Record and Loop copy](https://editor.p5js.org/jht9629-nyu/sketches/9FhHU-yap)<!-- 2025-11-10T15:02:18.373Z -->  
 [2.2.3 circleX width ui](https://editor.p5js.org/jht9629-nyu/sketches/rXhPgZ1k6)<!-- 2023-12-06T15:55:34.924Z -->  
 [2.2.3 circleX width ui local vars](https://editor.p5js.org/jht9629-nyu/sketches/Av1a8fSj4)<!-- 2023-09-18T14:05:45.924Z -->  
@@ -196,6 +197,16 @@
 [colorMode-rainbow-single](https://editor.p5js.org/jht9629-nyu/sketches/IQ8NRl6C8)<!-- 2023-07-28T04:05:46.588Z -->  
 [columns](https://editor.p5js.org/jht9629-nyu/sketches/gzDpaj7mt)<!-- 2024-09-19T18:31:25.654Z -->  
 [columns if-else](https://editor.p5js.org/jht9629-nyu/sketches/sGs7VbA-y)<!-- 2024-09-19T18:40:19.340Z -->  
+[Conditionals - Bouncing Ball with Gravity v10](https://editor.p5js.org/jht9629-nyu/sketches/0nSrecmFq)<!-- 2025-11-11T14:54:20.668Z -->  
+[Conditionals - Bouncing Ball with Gravity v11](https://editor.p5js.org/jht9629-nyu/sketches/_um4LG0SL)<!-- 2025-11-11T17:22:41.390Z -->  
+[Conditionals - Bouncing Ball with Gravity v2](https://editor.p5js.org/jht9629-nyu/sketches/dVHK9-Ns7)<!-- 2025-11-11T02:22:56.122Z -->  
+[Conditionals - Bouncing Ball with Gravity v3](https://editor.p5js.org/jht9629-nyu/sketches/BtdFgAST_)<!-- 2025-11-11T02:28:21.590Z -->  
+[Conditionals - Bouncing Ball with Gravity v4](https://editor.p5js.org/jht9629-nyu/sketches/-GzgH4Gnf)<!-- 2025-11-11T03:16:38.234Z -->  
+[Conditionals - Bouncing Ball with Gravity v5](https://editor.p5js.org/jht9629-nyu/sketches/250TAeMiE)<!-- 2025-11-11T03:32:36.543Z -->  
+[Conditionals - Bouncing Ball with Gravity v6](https://editor.p5js.org/jht9629-nyu/sketches/whU0iYX5y)<!-- 2025-11-11T03:39:16.188Z -->  
+[Conditionals - Bouncing Ball with Gravity v7](https://editor.p5js.org/jht9629-nyu/sketches/suNS9CAwt)<!-- 2025-11-11T03:45:45.506Z -->  
+[Conditionals - Bouncing Ball with Gravity v8](https://editor.p5js.org/jht9629-nyu/sketches/aipAPmiUT)<!-- 2025-11-11T04:04:39.089Z -->  
+[Conditionals - Bouncing Ball with Gravity v9](https://editor.p5js.org/jht9629-nyu/sketches/pbEo73JbQ)<!-- 2025-11-11T04:42:16.129Z -->  
 [Conscious record](https://editor.p5js.org/jht9629-nyu/sketches/uRhqvIbXy)<!-- 2024-09-12T18:18:14.488Z -->  
 [console.log frameCount](https://editor.p5js.org/jht9629-nyu/sketches/O2Pgf8nC5)<!-- 2023-07-23T23:07:23.632Z -->  
 [Copy this sketch to test 2.0.4-rc.2 copy](https://editor.p5js.org/jht9629-nyu/sketches/hSsq9S2fq)<!-- 2025-08-05T17:27:13.489Z -->  
@@ -517,6 +528,7 @@
 [my face bounce](https://editor.p5js.org/jht9629-nyu/sketches/lvp2Q2sYk)<!-- 2025-07-22T14:48:05.409Z -->  
 [my first sketch](https://editor.p5js.org/jht9629-nyu/sketches/GmkAvUauV)<!-- 2024-07-24T02:29:02.215Z -->  
 [my first sketch copy](https://editor.p5js.org/jht9629-nyu/sketches/1Aw2s7t6f)<!-- 2024-07-24T13:55:49.166Z -->  
+[Nature of Code 2: Forces 1 - Simulating Force v2](https://editor.p5js.org/jht9629-nyu/sketches/ZjsUT0L6e)<!-- 2025-11-11T02:13:55.115Z -->  
 [Necessary-forgery-timed-drawing](https://editor.p5js.org/jht9629-nyu/sketches/MbS5C3j-F)<!-- 2023-04-23T21:46:34.983Z -->  
 [noise detecter copy](https://editor.p5js.org/jht9629-nyu/sketches/GXm_kvVjg5)<!-- 2024-11-14T18:49:39.460Z -->  
 [noise fill fail](https://editor.p5js.org/jht9629-nyu/sketches/B2PQd1dxF)<!-- 2025-08-13T02:10:59.768Z -->  
@@ -533,6 +545,8 @@
 [p5.Sound: Microphone Input -p5 1.11.11 lib](https://editor.p5js.org/jht9629-nyu/sketches/XkD6Gw5jKX)<!-- 2025-11-10T16:19:38.562Z -->  
 [p5.Sound: Microphone Input -p5 2.0 lib](https://editor.p5js.org/jht9629-nyu/sketches/ZeYQbRb5F)<!-- 2025-11-10T16:20:32.037Z -->  
 [p5.Sound: Microphone Input -p5 x](https://editor.p5js.org/jht9629-nyu/sketches/hlh5C9GM5)<!-- 2025-11-10T16:26:26.782Z -->  
+[p5.Sound: Microphone Input copy](https://editor.p5js.org/jht9629-nyu/sketches/pk9OG8zlf)<!-- 2025-11-10T22:53:23.786Z -->  
+[p5.SoundRecorder](https://editor.p5js.org/jht9629-nyu/sketches/ZU0Alw_l8)<!-- 2025-11-10T23:01:21.362Z -->  
 [p5js Code\! - 2.2 - make your own variable copy](https://editor.p5js.org/jht9629-nyu/sketches/LlurMJrUk)<!-- 2025-09-15T18:07:20.109Z -->  
 [p5js Code\! - 2.2 - make your own variable copy](https://editor.p5js.org/jht9629-nyu/sketches/c_Fn1F24M)<!-- 2025-08-03T16:52:41.171Z -->  
 [p5js Code\! - 2.2 - make your own variable copy](https://editor.p5js.org/jht9629-nyu/sketches/fxKlGB30J)<!-- 2023-09-20T15:28:23.401Z -->  
@@ -663,7 +677,8 @@
 [random innerCount overlap v26](https://editor.p5js.org/jht9629-nyu/sketches/L4ClpFHhJ)<!-- 2025-08-11T00:51:31.349Z -->  
 [random innerCount overlap v27](https://editor.p5js.org/jht9629-nyu/sketches/9GoF-em-1)<!-- 2025-08-11T00:57:13.713Z -->  
 [Random Skulls 💀💀💀 -KevinWorkman](https://editor.p5js.org/jht9629-nyu/sketches/N0sHpW32g)<!-- 2024-07-31T00:10:02.639Z -->  
-[random student 2025](https://editor.p5js.org/jht9629-nyu/sketches/DB-crS54Z)<!-- 2025-11-10T22:42:26.258Z -->  
+[random student 2025](https://editor.p5js.org/jht9629-nyu/sketches/DB-crS54Z)<!-- 2025-11-10T23:11:56.910Z -->  
+[random student 2025 v2](https://editor.p5js.org/jht9629-nyu/sketches/vdo1kdgAn)<!-- 2025-11-11T01:31:11.980Z -->  
 [Random Walker remix](https://editor.p5js.org/jht9629-nyu/sketches/nUcojQexI)<!-- 2024-07-30T11:03:37.531Z -->  
 [Rats by ChanningMu](https://editor.p5js.org/jht9629-nyu/sketches/gekE9hlfL)<!-- 2025-09-22T12:59:09.640Z -->  
 [real pong copy (day 3) copy](https://editor.p5js.org/jht9629-nyu/sketches/32_bqUtVh)<!-- 2024-07-19T01:56:50.368Z -->  

@@ -9,7 +9,6 @@ function setup() {
 
   setup_students();
   shuffle(a_students, true);
-
   {
     let btn = createButton("next");
     btn.mousePressed(nextStudent);
@@ -88,7 +87,7 @@ function setup_students() {
     { name: "09-Althea", c: randomColor() },
     { name: "10-Emily Xu", c: randomColor() },
     { name: "11-Emily Ye", c: randomColor() },
-    { name: "12-Amanda Zhang", c: randomColor() },
+    { name: "12-Amanda", c: randomColor() },
     { name: "13-Helena", c: randomColor() },
   ];
 }
