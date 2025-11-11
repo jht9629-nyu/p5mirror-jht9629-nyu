@@ -12,7 +12,7 @@ function setup() {
 
   create_ui();
 
-  let ball1 = new Ball(width / 2, height / 2);
+  new Ball(width / 2, height / 2);
 
   let ball2 = new Ball(width / 2, height / 2);
   ball2.drop();
@@ -136,9 +136,10 @@ class Ball {
 
 function mouseDragged() {
   // console.log('mouseDragged');
+  
+  // prevent canvas_mouseReleased actions
   useMousePressed = false;
-  // ball.x = mouseX;
-  // ball.y = mouseY;
+
   // apply velocity based on mouse drag direction and speed
   let dx = mouseX - pmouseX;
   let dy = mouseY - pmouseY;
@@ -146,7 +147,7 @@ function mouseDragged() {
   // wind algorithm
   // from https://editor.p5js.org/yh6371/sketches/cl9-Q8POR
   let windScale = 0.06;
-  // only balls within this range of pixles are affected
+  // only balls within this range are affected
   let range = width * 0.2;
   // for (const d of dots) {
   //   const dd = dist(mouseX, mouseY, d.x, d.y);
@@ -166,7 +167,7 @@ function mouseDragged() {
   }
 
   if (keyIsDown(SHIFT)) {
-    let ball = new Ball(mouseX, mouseY);
+    new Ball(mouseX, mouseY);
   }
 }
 
@@ -178,7 +179,7 @@ function canvas_mousePressed() {
 function canvas_mouseReleased() {
   // console.log('mouseReleased');
   if (!useMousePressed) return;
-  let ball = new Ball(mouseX, mouseY);
+  new Ball(mouseX, mouseY);
 }
 
 // https://p5js.org/reference/p5/mouseReleased/
@@ -192,7 +193,6 @@ function canvas_mouseReleased() {
 // added friction
 
 // https://editor.p5js.org/codingtrain/sketches/JTIN5dIVB
-//
 // Bouncing ball with gravity
 // The Coding Train / Daniel Shiffman
 
