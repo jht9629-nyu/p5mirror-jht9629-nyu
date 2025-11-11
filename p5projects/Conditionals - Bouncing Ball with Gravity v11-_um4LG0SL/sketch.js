@@ -60,25 +60,26 @@ class Ball {
   //
   constructor(x, y) {
     //
+    // initial position
+    this.x = x;
+    this.y = y;
+    
+    // appearance
+    this.radius = 25;
+    // random color with alpha
+    this.color = [random(255), random(255), random(255), 100];
+
+    // x and y velocity. begin at rest
+    this.vx = 0;
+    this.vy = 0;
+
     // Air resistance
     this.drag = 0.995;
 
     // Energy retained on edge bounce
     this.bounce = 0.5;
 
-    // Begin at rest
-    this.vx = 0;
-    this.vy = 0;
-
-    // initial position
-    this.x = x;
-    this.y = y;
-    
-    this.radius = 25;
-    // random color with alpha
-    this.color = [random(255), random(255), random(255), 100];
-
-    // For drop to bottom of canvas behavior
+    // for drop to bottom of canvas behavior
     this.gravityY = 0.1;
     this.isDropping = false;
     
