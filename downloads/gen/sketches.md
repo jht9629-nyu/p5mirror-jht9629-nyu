@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-901 sketches  
+902 sketches  
 [0\_2\_trigger\_several\_sounds copy](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)<!-- 2025-03-10T21:47:40.953Z -->  
@@ -198,7 +198,8 @@
 [columns](https://editor.p5js.org/jht9629-nyu/sketches/gzDpaj7mt)<!-- 2024-09-19T18:31:25.654Z -->  
 [columns if-else](https://editor.p5js.org/jht9629-nyu/sketches/sGs7VbA-y)<!-- 2024-09-19T18:40:19.340Z -->  
 [Conditionals - Bouncing Ball with Gravity v10](https://editor.p5js.org/jht9629-nyu/sketches/0nSrecmFq)<!-- 2025-11-11T14:54:20.668Z -->  
-[Conditionals - Bouncing Ball with Gravity v11](https://editor.p5js.org/jht9629-nyu/sketches/_um4LG0SL)<!-- 2025-11-11T17:56:47.025Z -->  
+[Conditionals - Bouncing Ball with Gravity v11](https://editor.p5js.org/jht9629-nyu/sketches/_um4LG0SL)<!-- 2025-11-11T19:35:20.955Z -->  
+[Conditionals - Bouncing Ball with Gravity v12](https://editor.p5js.org/jht9629-nyu/sketches/wVJMa3eK4)<!-- 2025-11-11T19:31:49.777Z -->  
 [Conditionals - Bouncing Ball with Gravity v2](https://editor.p5js.org/jht9629-nyu/sketches/dVHK9-Ns7)<!-- 2025-11-11T02:22:56.122Z -->  
 [Conditionals - Bouncing Ball with Gravity v3](https://editor.p5js.org/jht9629-nyu/sketches/BtdFgAST_)<!-- 2025-11-11T02:28:21.590Z -->  
 [Conditionals - Bouncing Ball with Gravity v4](https://editor.p5js.org/jht9629-nyu/sketches/-GzgH4Gnf)<!-- 2025-11-11T03:16:38.234Z -->  

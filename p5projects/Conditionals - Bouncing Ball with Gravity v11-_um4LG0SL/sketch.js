@@ -91,10 +91,9 @@ class Ball {
     this.x += this.vx;
     this.y += this.vy;
     this.vx *= this.drag;
+    this.vy *= this.drag;
     if (this.isDropping) {
       this.vy += this.gravityY;
-    } else {
-      this.vy *= this.drag;
     }
     if (this.y < this.radius || this.y > height - this.radius) {
       // reduce the speed each time ball hits floor

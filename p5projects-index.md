@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[901 sketches 2025-11-11T17:56:47.025Z](./downloads/gen/sketches_recent.md)
+[902 sketches 2025-11-11T19:35:20.955Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -146,6 +146,7 @@
 - [Coding Train ml5 collaboration\_faceMeshOnly copy-vd3vqwbyh](./p5projects/Coding%20Train%20ml5%20collaboration_faceMeshOnly%20copy-vd3vqwbyh) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vd3vqwbyh)]
 - [Conditionals - Bouncing Ball with Gravity v10-0nSrecmFq](./p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v10-0nSrecmFq) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/0nSrecmFq)]
 - [Conditionals - Bouncing Ball with Gravity v11-\_um4LG0SL](./p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v11-_um4LG0SL) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_um4LG0SL)]
+- [Conditionals - Bouncing Ball with Gravity v12-wVJMa3eK4](./p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v12-wVJMa3eK4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wVJMa3eK4)]
 - [Conditionals - Bouncing Ball with Gravity v2-dVHK9-Ns7](./p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v2-dVHK9-Ns7) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/dVHK9-Ns7)]
 - [Conditionals - Bouncing Ball with Gravity v3-BtdFgAST\_](./p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v3-BtdFgAST_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BtdFgAST_)]
 - [Conditionals - Bouncing Ball with Gravity v4-GzgH4Gnf](./p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v4-GzgH4Gnf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-GzgH4Gnf)]

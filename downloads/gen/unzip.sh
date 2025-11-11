@@ -6,6 +6,13 @@ mkdir "./Conditionals - Bouncing Ball with Gravity v11-_um4LG0SL"
 pushd "./Conditionals - Bouncing Ball with Gravity v11-_um4LG0SL" > /dev/null
 unzip -q "../../downloads/zips/Conditionals - Bouncing Ball with Gravity v11-_um4LG0SL"
 popd > /dev/null
+#
+echo unzip 2 "Conditionals - Bouncing Ball with Gravity v12-wVJMa3eK4"
+rm -rf "./Conditionals - Bouncing Ball with Gravity v12-wVJMa3eK4"
+mkdir "./Conditionals - Bouncing Ball with Gravity v12-wVJMa3eK4"
+pushd "./Conditionals - Bouncing Ball with Gravity v12-wVJMa3eK4" > /dev/null
+unzip -q "../../downloads/zips/Conditionals - Bouncing Ball with Gravity v12-wVJMa3eK4"
+popd > /dev/null
 
 cd ..
 # remove redundant p5.js p5.sound.min.js
