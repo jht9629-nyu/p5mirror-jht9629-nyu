@@ -18,7 +18,7 @@ function setup() {
   // }
   create_button("previous", previousStudent);
   create_button("changeColor", changeColor);
-  create_button("toggle 👍🏾", toggleSelected);
+  // create_button("toggle 👍🏾", toggleSelected);
   create_button("toggle ✔️", toggleChecked);
 }
 

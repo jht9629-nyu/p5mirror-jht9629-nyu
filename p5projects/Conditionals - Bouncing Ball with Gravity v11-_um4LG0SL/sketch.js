@@ -6,7 +6,7 @@ let balls = [];
 let useMousePressed = false;
 
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight - 50);
+  let canvas = createCanvas(windowWidth, windowHeight - 80);
   canvas.mousePressed(canvas_mousePressed);
   canvas.mouseReleased(canvas_mouseReleased);
 
@@ -38,6 +38,15 @@ function create_ui() {
   createButton("stop") //
     .mousePressed(stopAction)
     .style("font-size:28px");
+  createButton("random") //
+    .mousePressed(randomAction)
+    .style("font-size:28px");
+}
+
+function randomAction() {
+  for (let ball of balls) {
+    ball.random();
+  }
 }
 
 function stopAction() {
@@ -63,7 +72,7 @@ class Ball {
     // initial position
     this.x = x;
     this.y = y;
-    
+
     // appearance
     this.radius = 25;
     // random color with alpha
@@ -82,7 +91,7 @@ class Ball {
     // for drop to bottom of canvas behavior
     this.gravityY = 0.1;
     this.isDropping = false;
-    
+
     // add to list
     balls.push(this);
   }
@@ -131,11 +140,16 @@ class Ball {
     this.vx = vx;
     this.vy = vy;
   }
+  
+  random() {
+    this.x = random(width);
+    this.y = random(height);
+  }
 }
 
 function mouseDragged() {
   // console.log('mouseDragged');
-  
+
   // prevent canvas_mouseReleased actions
   useMousePressed = false;
 
