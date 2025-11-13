@@ -45,9 +45,9 @@ function create_ui() {
 }
 
 function randomAction() {
+  console.log('Balls randomAction balls.length', balls.length);
   for (let ball of balls) {
     ball.random();
-    console.log('Balls random balls.length', balls.length);
   }
 }
 

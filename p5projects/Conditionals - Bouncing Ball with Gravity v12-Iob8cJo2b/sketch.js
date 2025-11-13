@@ -1,14 +1,15 @@
-// https://editor.p5js.org/jht9629-nyu/sketches/wVJMa3eK4
+// https://editor.p5js.org/jht9629-nyu/sketches/Iob8cJo2b
 // Conditionals - Bouncing Ball with Gravity v12
-// Ball class - wind algorithm - gravity drop + drag
+// Ball class - wind algorithm - gravity drop - 10k
 
 let balls = [];
 let useMousePressed = false;
 
 function setup() {
-  let canvas = createCanvas(windowWidth, windowHeight - 50);
+  let canvas = createCanvas(windowWidth, windowHeight - 80);
   canvas.mousePressed(canvas_mousePressed);
   canvas.mouseReleased(canvas_mouseReleased);
+  canvas.touchEnded(canvas_mouseReleased);
 
   create_ui();
 
@@ -38,6 +39,25 @@ function create_ui() {
   createButton("stop") //
     .mousePressed(stopAction)
     .style("font-size:28px");
+  createButton("random") //
+    .mousePressed(randomAction)
+    .style("font-size:28px");
+  createButton("10k") //
+    .mousePressed(tenkAction)
+    .style("font-size:28px");
+}
+
+function tenkAction() {
+  for (let i = 0; i < 10000; i++) {
+    new Ball(random(width), random(height));
+  }
+}
+
+function randomAction() {
+  console.log('Balls randomAction balls.length', balls.length);
+  for (let ball of balls) {
+    ball.random();
+  }
 }
 
 function stopAction() {
@@ -63,7 +83,7 @@ class Ball {
     // initial position
     this.x = x;
     this.y = y;
-    
+
     // appearance
     this.radius = 25;
     // random color with alpha
@@ -82,7 +102,7 @@ class Ball {
     // for drop to bottom of canvas behavior
     this.gravityY = 0.1;
     this.isDropping = false;
-    
+
     // add to list
     balls.push(this);
   }
@@ -131,11 +151,17 @@ class Ball {
     this.vx = vx;
     this.vy = vy;
   }
+  
+  random() {
+    this.x = random(width);
+    this.y = random(height);
+    this.stop();
+  }
 }
 
 function mouseDragged() {
   // console.log('mouseDragged');
-  
+
   // prevent canvas_mouseReleased actions
   useMousePressed = false;
 
@@ -168,6 +194,12 @@ function mouseDragged() {
   if (keyIsDown(SHIFT)) {
     new Ball(mouseX, mouseY);
   }
+  
+  let inX = mouseX >= 0 && mouseX < width;
+  let inY = mouseY >= 0 && mouseY < height;
+  let onCanvas = inX && inY;
+  // required to prevent touch drag moving canvas on mobile
+  return !onCanvas;
 }
 
 function canvas_mousePressed() {
@@ -177,6 +209,7 @@ function canvas_mousePressed() {
 
 function canvas_mouseReleased() {
   // console.log('mouseReleased');
+  console.log('canvas_mouseReleased balls.length', balls.length);
   if (!useMousePressed) return;
   new Ball(mouseX, mouseY);
 }
