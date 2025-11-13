@@ -47,6 +47,7 @@ function create_ui() {
 function randomAction() {
   for (let ball of balls) {
     ball.random();
+    console.log('Balls random balls.length', balls.length);
   }
 }
 
@@ -146,7 +147,6 @@ class Ball {
     this.x = random(width);
     this.y = random(height);
     this.stop();
-    console.log('Balls random balls.length', balls.length);
   }
 }
 
