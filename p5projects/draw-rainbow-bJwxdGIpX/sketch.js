@@ -1,5 +1,5 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/bJwxdGIpX
-// draw-rainbow
+// draw-rainbow 
 let hue = 0;
 let rate = 2;
 function setup() {

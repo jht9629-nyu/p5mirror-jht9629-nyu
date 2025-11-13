@@ -1,5 +1,5 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/BDNT4XMEU
-// CCL Day2-pattern-image
+// CCL Day2-pattern-image 
 let x;
 let y;
 let im;

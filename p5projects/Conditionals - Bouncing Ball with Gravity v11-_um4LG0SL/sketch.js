@@ -9,6 +9,7 @@ function setup() {
   let canvas = createCanvas(windowWidth, windowHeight - 80);
   canvas.mousePressed(canvas_mousePressed);
   canvas.mouseReleased(canvas_mouseReleased);
+  canvas.touchEnded(canvas_mouseReleased);
 
   create_ui();
 
@@ -182,6 +183,12 @@ function mouseDragged() {
   if (keyIsDown(SHIFT)) {
     new Ball(mouseX, mouseY);
   }
+  
+  let inX = mouseX >= 0 && mouseX < width;
+  let inY = mouseY >= 0 && mouseY < height;
+  let onCanvas = inX && inY;
+  // return false; // required to prevent touch drag moving canvas on mobile
+  return !onCanvas;
 }
 
 function canvas_mousePressed() {

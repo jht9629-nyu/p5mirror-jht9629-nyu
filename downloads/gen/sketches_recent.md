@@ -1,6 +1,8 @@
 # Sketches for jht9629-nyu
 902 sketches  
-[Conditionals - Bouncing Ball with Gravity v11](https://editor.p5js.org/jht9629-nyu/sketches/_um4LG0SL)<!-- 2025-11-11T21:15:08.841Z -->  
+[draw-rainbow](https://editor.p5js.org/jht9629-nyu/sketches/bJwxdGIpX)<!-- 2025-11-13T05:50:13.672Z -->  
+[CCL Day2-pattern-image](https://editor.p5js.org/jht9629-nyu/sketches/BDNT4XMEU)<!-- 2025-11-13T05:49:50.414Z -->  
+[Conditionals - Bouncing Ball with Gravity v11](https://editor.p5js.org/jht9629-nyu/sketches/_um4LG0SL)<!-- 2025-11-13T05:31:46.122Z -->  
 [random student 2025 v2](https://editor.p5js.org/jht9629-nyu/sketches/vdo1kdgAn)<!-- 2025-11-11T20:15:37.795Z -->  
 [Conditionals - Bouncing Ball with Gravity v12](https://editor.p5js.org/jht9629-nyu/sketches/wVJMa3eK4)<!-- 2025-11-11T19:31:49.777Z -->  
 [Conditionals - Bouncing Ball with Gravity v10](https://editor.p5js.org/jht9629-nyu/sketches/0nSrecmFq)<!-- 2025-11-11T14:54:20.668Z -->  
@@ -200,7 +202,6 @@
 [gravity ball two objects](https://editor.p5js.org/jht9629-nyu/sketches/IRcTMVa5eE)<!-- 2025-07-28T14:39:01.963Z -->  
 [gravity ball single](https://editor.p5js.org/jht9629-nyu/sketches/csLgYCa6h)<!-- 2025-07-28T14:35:07.965Z -->  
 [Wk06 bounce](https://editor.p5js.org/jht9629-nyu/sketches/bauV8dDz1)<!-- 2025-07-28T14:17:56.139Z -->  
-[CCL Day2-pattern-image](https://editor.p5js.org/jht9629-nyu/sketches/BDNT4XMEU)<!-- 2025-07-28T14:00:48.739Z -->  
 [5 copy](https://editor.p5js.org/jht9629-nyu/sketches/L7KpCXliZ)<!-- 2025-07-28T13:46:43.355Z -->  
 [5 ccl ye](https://editor.p5js.org/jht9629-nyu/sketches/uwdOhUe_d)<!-- 2025-07-27T15:06:44.262Z -->  
 [CCL Circles by sai remix](https://editor.p5js.org/jht9629-nyu/sketches/eL5d3vX85)<!-- 2025-07-27T15:06:07.156Z -->  
@@ -210,7 +211,6 @@
 [pattern-animation-shape console.log](https://editor.p5js.org/jht9629-nyu/sketches/R_QelHYEp)<!-- 2025-07-25T12:21:02.493Z -->  
 [CC 166: ASCII video](https://editor.p5js.org/jht9629-nyu/sketches/rT1nziONm)<!-- 2025-07-24T23:33:55.322Z -->  
 [video scan radial v7](https://editor.p5js.org/jht9629-nyu/sketches/i6akdNRS2)<!-- 2025-07-24T23:33:48.429Z -->  
-[draw-rainbow](https://editor.p5js.org/jht9629-nyu/sketches/bJwxdGIpX)<!-- 2025-07-24T15:10:01.587Z -->  
 [simple-draw](https://editor.p5js.org/jht9629-nyu/sketches/owix6hP8S)<!-- 2025-07-24T14:24:02.270Z -->  
 [simple-draw copy](https://editor.p5js.org/jht9629-nyu/sketches/X0cRmaYNH)<!-- 2025-07-24T14:23:39.806Z -->  
 [CCL day3 squares](https://editor.p5js.org/jht9629-nyu/sketches/WHyLQog-U)<!-- 2025-07-24T13:33:41.462Z -->  
