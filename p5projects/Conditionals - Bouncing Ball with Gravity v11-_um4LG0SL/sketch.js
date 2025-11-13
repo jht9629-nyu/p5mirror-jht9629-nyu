@@ -145,6 +145,8 @@ class Ball {
   random() {
     this.x = random(width);
     this.y = random(height);
+    this.stop();
+    console.log('Balls random balls.length', balls.length);
   }
 }
 
@@ -187,7 +189,7 @@ function mouseDragged() {
   let inX = mouseX >= 0 && mouseX < width;
   let inY = mouseY >= 0 && mouseY < height;
   let onCanvas = inX && inY;
-  // return false; // required to prevent touch drag moving canvas on mobile
+  // required to prevent touch drag moving canvas on mobile
   return !onCanvas;
 }
 
@@ -198,6 +200,7 @@ function canvas_mousePressed() {
 
 function canvas_mouseReleased() {
   // console.log('mouseReleased');
+  console.log('canvas_mouseReleased balls.length', balls.length);
   if (!useMousePressed) return;
   new Ball(mouseX, mouseY);
 }

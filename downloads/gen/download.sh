@@ -1,6 +1,2 @@
-echo download 1 "draw-rainbow-bJwxdGIpX"
-curl -s https://editor.p5js.org/editor/projects/bJwxdGIpX/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/draw-rainbow-bJwxdGIpX.zip"
-echo download 2 "CCL Day2-pattern-image-BDNT4XMEU"
-curl -s https://editor.p5js.org/editor/projects/BDNT4XMEU/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/CCL Day2-pattern-image-BDNT4XMEU.zip"
-echo download 3 "Conditionals - Bouncing Ball with Gravity v11-_um4LG0SL"
+echo download 1 "Conditionals - Bouncing Ball with Gravity v11-_um4LG0SL"
 curl -s https://editor.p5js.org/editor/projects/_um4LG0SL/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/Conditionals - Bouncing Ball with Gravity v11-_um4LG0SL.zip"
