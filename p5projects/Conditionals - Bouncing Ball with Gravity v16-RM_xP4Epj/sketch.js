@@ -16,12 +16,13 @@ function setup() {
   my.pixAlpha = 200;
   my.last_nose_pos = [];
 
-  let canvas = createCanvas(windowWidth, windowHeight - 80);
+  let canvas = createCanvas(windowWidth, windowHeight);
+  // let canvas = createCanvas(windowWidth, windowHeight - 80);
   canvas.mousePressed(canvas_mousePressed);
   canvas.mouseReleased(canvas_mouseReleased);
   canvas.touchEnded(canvas_mouseReleased);
 
-  create_ui();
+  // create_ui();
 
   create_video();
 
@@ -77,7 +78,7 @@ function create_video() {
   // my.video = createCapture(VIDEO);
   // my.video.size(width, height);
   console.log("my.video.width", my.video.width, "height", my.video.height);
-  // my.video.hide();
+  my.video.hide();
   my.videoImage = my.video.get();
 }
 
