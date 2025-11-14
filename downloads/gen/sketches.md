@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-902 sketches  
+905 sketches  
 [0\_2\_trigger\_several\_sounds copy](../../p5projects/0_2_trigger_several_sounds%20copy-DCmsLNzk5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)]<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](../../p5projects/0_2_trigger_several_sounds%20luisa_NYU-8svv4J26x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)]<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](../../p5projects/0_7_FFT%20by%20luisa_NYUpy-ZfrLYKf4u) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)]<!-- 2025-03-10T21:47:40.953Z -->  
@@ -199,7 +199,10 @@
 [columns if-else](../../p5projects/columns%20if-else-sGs7VbA-y) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sGs7VbA-y)]<!-- 2024-09-19T18:40:19.340Z -->  
 [Conditionals - Bouncing Ball with Gravity v10](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v10-0nSrecmFq) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/0nSrecmFq)]<!-- 2025-11-11T14:54:20.668Z -->  
 [Conditionals - Bouncing Ball with Gravity v11](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v11-_um4LG0SL) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_um4LG0SL)]<!-- 2025-11-13T16:32:33.692Z -->  
-[Conditionals - Bouncing Ball with Gravity v12](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v12-Iob8cJo2b) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Iob8cJo2b)]<!-- 2025-11-13T16:40:41.974Z -->  
+[Conditionals - Bouncing Ball with Gravity v12](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v12-Iob8cJo2b) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Iob8cJo2b)]<!-- 2025-11-13T19:52:20.765Z -->  
+[Conditionals - Bouncing Ball with Gravity v13](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v13-HILRsnSsG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HILRsnSsG)]<!-- 2025-11-13T23:30:54.238Z -->  
+[Conditionals - Bouncing Ball with Gravity v14](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v14-5sLlOgTDg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/5sLlOgTDg)]<!-- 2025-11-14T02:43:16.729Z -->  
+[Conditionals - Bouncing Ball with Gravity v15](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v15-MxSKByJA0) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/MxSKByJA0)]<!-- 2025-11-14T03:57:56.873Z -->  
 [Conditionals - Bouncing Ball with Gravity v2](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v2-dVHK9-Ns7) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/dVHK9-Ns7)]<!-- 2025-11-11T02:22:56.122Z -->  
 [Conditionals - Bouncing Ball with Gravity v3](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v3-BtdFgAST_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BtdFgAST_)]<!-- 2025-11-11T02:28:21.590Z -->  
 [Conditionals - Bouncing Ball with Gravity v4](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v4-GzgH4Gnf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-GzgH4Gnf)]<!-- 2025-11-11T03:16:38.234Z -->  
@@ -214,7 +217,7 @@
 [CORS bug demo](../../p5projects/CORS%20bug%20demo-EY7PtpKAG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/EY7PtpKAG)]<!-- 2024-05-01T01:47:04.108Z -->  
 [createAudio BUG](../../p5projects/createAudio%20BUG-MZfI2vmoC) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/MZfI2vmoC)]<!-- 2024-07-30T15:59:30.436Z -->  
 [createCapture p5.js/1.11.1](../../p5projects/createCapture%20p5.js1.11.1-wUCxpCl6n) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wUCxpCl6n)]<!-- 2025-03-17T12:48:15.254Z -->  
-[createCapture VIDEO flipped](../../p5projects/createCapture%20VIDEO%20flipped-Ddt4PnnER) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)]<!-- 2024-09-05T20:46:36.523Z -->  
+[createCapture VIDEO flipped](../../p5projects/createCapture%20VIDEO%20flipped-Ddt4PnnER) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)]<!-- 2025-11-13T20:26:07.280Z -->  
 [createVideo v0](../../p5projects/createVideo%20v0-uAk60oX6b) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/uAk60oX6b)]<!-- 2025-04-03T01:29:09.962Z -->  
 [createVideo v1](../../p5projects/createVideo%20v1-Yxy-nTZ0P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Yxy-nTZ0P)]<!-- 2025-04-03T02:44:19.630Z -->  
 [cute image circles copy](../../p5projects/cute%20image%20circles%20copy-EDq9fVdIR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/EDq9fVdIR)]<!-- 2025-11-03T18:18:46.981Z -->  
@@ -816,7 +819,7 @@
 [video meter rgb long](../../p5projects/video%20meter%20rgb%20long-aJkcqKahg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/aJkcqKahg)]<!-- 2023-05-09T23:50:31.282Z -->  
 [video pixel](../../p5projects/video%20pixel-sJM2AMf5T) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sJM2AMf5T)]<!-- 2023-05-10T00:20:57.826Z -->  
 [video pixel meter](../../p5projects/video%20pixel%20meter-p0ato8vra) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/p0ato8vra)]<!-- 2023-05-09T15:45:14.893Z -->  
-[video pixel scan](../../p5projects/video%20pixel%20scan-HRjZBETUA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA)]<!-- 2025-07-25T14:35:33.056Z -->  
+[video pixel scan](../../p5projects/video%20pixel%20scan-HRjZBETUA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA)]<!-- 2025-11-13T20:28:19.790Z -->  
 [video pixel scan copy](../../p5projects/video%20pixel%20scan%20copy-heaOtyFJz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/heaOtyFJz)]<!-- 2025-08-25T00:56:30.720Z -->  
 [video pixel scan random](../../p5projects/video%20pixel%20scan%20random-3ZwzK2buW) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3ZwzK2buW)]<!-- 2023-05-09T23:54:56.678Z -->  
 [video radial bounce v2](../../p5projects/video%20radial%20bounce%20v2-pouiEda3o) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pouiEda3o)]<!-- 2025-04-01T18:59:28.452Z -->  

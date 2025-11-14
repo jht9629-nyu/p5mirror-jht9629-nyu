@@ -1,3 +1,6 @@
+// https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA
+// video pixel scan
+
 let my = { width: 640, height: 480, ncell: 50, vscale: 2 };
 function setup() {
   createCanvas(my.width, my.height);
@@ -45,5 +48,3 @@ function draw() {
 // image(img, dx, dy, dWidth, dHeight,
 //    sx, sy, [sWidth], [sHeight])
 
-// https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA
-// video pixel scan

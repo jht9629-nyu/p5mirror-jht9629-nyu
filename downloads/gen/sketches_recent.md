@@ -1,6 +1,11 @@
 # Sketches for jht9629-nyu
-902 sketches  
-[Conditionals - Bouncing Ball with Gravity v12](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v12-Iob8cJo2b) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Iob8cJo2b)]<!-- 2025-11-13T16:40:41.974Z -->  
+905 sketches  
+[Conditionals - Bouncing Ball with Gravity v15](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v15-MxSKByJA0) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/MxSKByJA0)]<!-- 2025-11-14T03:57:56.873Z -->  
+[Conditionals - Bouncing Ball with Gravity v14](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v14-5sLlOgTDg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/5sLlOgTDg)]<!-- 2025-11-14T02:43:16.729Z -->  
+[Conditionals - Bouncing Ball with Gravity v13](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v13-HILRsnSsG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HILRsnSsG)]<!-- 2025-11-13T23:30:54.238Z -->  
+[video pixel scan](../../p5projects/video%20pixel%20scan-HRjZBETUA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA)]<!-- 2025-11-13T20:28:19.790Z -->  
+[createCapture VIDEO flipped](../../p5projects/createCapture%20VIDEO%20flipped-Ddt4PnnER) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)]<!-- 2025-11-13T20:26:07.280Z -->  
+[Conditionals - Bouncing Ball with Gravity v12](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v12-Iob8cJo2b) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Iob8cJo2b)]<!-- 2025-11-13T19:52:20.765Z -->  
 [Conditionals - Bouncing Ball with Gravity v11](../../p5projects/Conditionals%20-%20Bouncing%20Ball%20with%20Gravity%20v11-_um4LG0SL) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_um4LG0SL)]<!-- 2025-11-13T16:32:33.692Z -->  
 [draw-rainbow](../../p5projects/draw-rainbow-bJwxdGIpX) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/bJwxdGIpX)]<!-- 2025-11-13T05:50:13.672Z -->  
 [CCL Day2-pattern-image](../../p5projects/CCL%20Day2-pattern-image-BDNT4XMEU) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BDNT4XMEU)]<!-- 2025-11-13T05:49:50.414Z -->  
@@ -206,7 +211,6 @@
 [5 ccl ye](../../p5projects/5%20ccl%20ye-uwdOhUe_d) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/uwdOhUe_d)]<!-- 2025-07-27T15:06:44.262Z -->  
 [CCL Circles by sai remix](../../p5projects/CCL%20Circles%20by%20sai%20remix-eL5d3vX85) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/eL5d3vX85)]<!-- 2025-07-27T15:06:07.156Z -->  
 [pattern-animation-shape console.log copy](../../p5projects/pattern-animation-shape%20console.log%20copy-5K88nicwb) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/5K88nicwb)]<!-- 2025-07-26T13:23:54.139Z -->  
-[video pixel scan](../../p5projects/video%20pixel%20scan-HRjZBETUA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HRjZBETUA)]<!-- 2025-07-25T14:35:33.056Z -->  
 [pattern-animation-shape](../../p5projects/pattern-animation-shape-1Tc2xb_4m) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1Tc2xb_4m)]<!-- 2025-07-25T14:08:15.033Z -->  
 [pattern-animation-shape console.log](../../p5projects/pattern-animation-shape%20console.log-R_QelHYEp) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/R_QelHYEp)]<!-- 2025-07-25T12:21:02.493Z -->  
 [CC 166: ASCII video](../../p5projects/CC%20166%20ASCII%20video-rT1nziONm) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/rT1nziONm)]<!-- 2025-07-24T23:33:55.322Z -->  
@@ -487,7 +491,6 @@
 [05\_multitouch](../../p5projects/05_multitouch-r1pNFuC1P) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/r1pNFuC1P)]<!-- 2024-09-07T17:17:45.965Z -->  
 [week 03 expressions millis](../../p5projects/week%2003%20expressions%20millis-n4miyKkfv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/n4miyKkfv)]<!-- 2024-09-07T13:35:29.064Z -->  
 [jht week 01 ex 2 random](../../p5projects/jht%20week%2001%20ex%202%20random-VWGjK5A9p) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/VWGjK5A9p)]<!-- 2024-09-07T13:28:47.971Z -->  
-[createCapture VIDEO flipped](../../p5projects/createCapture%20VIDEO%20flipped-Ddt4PnnER) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ddt4PnnER)]<!-- 2024-09-05T20:46:36.523Z -->  
 [jht week 01 ex 2](../../p5projects/jht%20week%2001%20ex%202-CXOBqb6oj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CXOBqb6oj)]<!-- 2024-09-05T20:45:44.605Z -->  
 [jht week 01 in class](../../p5projects/jht%20week%2001%20in%20class-oBBTcsqwh) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/oBBTcsqwh)]<!-- 2024-09-05T17:40:48.994Z -->  
 [chatgpt bouncing ball](../../p5projects/chatgpt%20bouncing%20ball-8uQ3OCxZH) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8uQ3OCxZH)]<!-- 2024-09-05T15:41:59.043Z -->  

@@ -1,9 +1,10 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/Iob8cJo2b
 // Conditionals - Bouncing Ball with Gravity v12
-// Ball class - wind algorithm - gravity drop - 10k
+// Ball class - wind algorithm - gravity drop - add
 
 let balls = [];
 let useMousePressed = false;
+let defaultRadius = 20;
 
 function setup() {
   let canvas = createCanvas(windowWidth, windowHeight - 80);
@@ -42,12 +43,12 @@ function create_ui() {
   createButton("random") //
     .mousePressed(randomAction)
     .style("font-size:28px");
-  createButton("10k") //
-    .mousePressed(tenkAction)
+  createButton("add") //
+    .mousePressed(addAction)
     .style("font-size:28px");
 }
 
-function tenkAction() {
+function addAction() {
   for (let i = 0; i < 10000; i++) {
     new Ball(random(width), random(height));
   }
@@ -85,7 +86,7 @@ class Ball {
     this.y = y;
 
     // appearance
-    this.radius = 25;
+    this.radius = defaultRadius;
     // random color with alpha
     this.color = [random(255), random(255), random(255), 100];
 
@@ -127,7 +128,8 @@ class Ball {
       this.x = constrain(this.x, this.radius, width - this.radius);
     }
     fill(this.color);
-    circle(this.x, this.y, this.radius * 2);
+    // circle(this.x, this.y, this.radius * 2);
+    rect(this.x-this.radius, this.y-this.radius, this.radius * 2);
   }
 
   stop() {
