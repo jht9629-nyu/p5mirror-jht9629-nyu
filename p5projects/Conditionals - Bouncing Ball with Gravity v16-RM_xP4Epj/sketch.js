@@ -12,6 +12,7 @@ function setup() {
   my.restoreSteps = 20;
   my.doColor = true;
   my.pixAlpha = 200;
+  my.last_nose_pos = [];
 
   let canvas = createCanvas(windowWidth, windowHeight - 80);
   canvas.mousePressed(canvas_mousePressed);
@@ -46,17 +47,12 @@ function draw() {
     ball.draw();
   }
   bodyPose_draw();
-  image(
-    my.layer,
-    0,
-    0,
-    width,
-    my.dHeight,
-    0,
-    0,
-    my.layer.width,
-    my.layer.height
-  );
+  image_layer(my.layer, my.dHeight);
+  apply_nose_wind();
+}
+
+function image_layer(layer, dH) {
+  image(layer, 0, 0, width, dH, 0, 0, layer.width, layer.height);
 }
 
 // image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight], [fit], [xAlign], [yAlign])
@@ -73,7 +69,7 @@ function create_video() {
     // },
     video: true,
     audio: false,
-    flipped:true,
+    flipped: true,
   };
   my.video = createCapture(constraints, create_video_ready);
   // my.video = createCapture(VIDEO);
@@ -110,30 +106,8 @@ function mouseDragged() {
   // apply velocity based on mouse drag direction and speed
   let mpt = canvas_to_video_point(mouseX, mouseY);
   let ppt = canvas_to_video_point(pmouseX, pmouseY);
-  let dx = mpt.x - ppt.x;
-  let dy = mpt.y - ppt.y;
 
-  // wind algorithm
-  // from https://editor.p5js.org/yh6371/sketches/cl9-Q8POR
-  let windScale = 0.06;
-  // only balls within this range are affected
-  let range = width * 0.2;
-  // for (const d of dots) {
-  //   const dd = dist(mouseX, mouseY, d.x, d.y);
-  //   if (dd < radius) {
-  //     const falloff = (radius - dd) / radius;
-  //     d.applyForce(dx * windScale * falloff, dy * windScale * falloff);
-  //   }
-  // }
-  for (let ball of balls) {
-    let dd = dist(mpt.x, mpt.y, ball.x, ball.y);
-    if (dd < range) {
-      let falloff = (range - dd) / range;
-      let ndx = dx * windScale * falloff;
-      let ndy = dy * windScale * falloff;
-      ball.add_velocity(ndx, ndy);
-    }
-  }
+  apply_wind(mpt, ppt);
 
   if (keyIsDown(SHIFT)) {
     new Ball(mouseX, mouseY);
@@ -144,6 +118,36 @@ function mouseDragged() {
   let onCanvas = inX && inY;
   // required to prevent touch drag moving canvas on mobile
   return !onCanvas;
+}
+
+function apply_nose_wind() {
+  for (let ent of my.last_nose_pos) {
+    if (ent.length < 2) {
+      return;
+    }
+    let mpt = ent[1]
+    let ppt = ent[0]
+    apply_wind(mpt, ppt);
+  }
+}
+
+function apply_wind(mpt, ppt) {
+  let dx = mpt.x - ppt.x;
+  let dy = mpt.y - ppt.y;
+  // wind algorithm
+  // from https://editor.p5js.org/yh6371/sketches/cl9-Q8POR
+  let windScale = 0.06;
+  // only balls within this range are affected
+  let range = width * 0.2;
+  for (let ball of balls) {
+    let dd = dist(mpt.x, mpt.y, ball.x, ball.y);
+    if (dd < range) {
+      let falloff = (range - dd) / range;
+      let ndx = dx * windScale * falloff;
+      let ndy = dy * windScale * falloff;
+      ball.add_velocity(ndx, ndy);
+    }
+  }
 }
 
 // Convert canvas point to video

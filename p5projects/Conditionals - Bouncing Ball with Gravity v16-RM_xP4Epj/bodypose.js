@@ -70,6 +70,20 @@ function bodyPose_draw() {
         layer.circle(keypoint.x, keypoint.y, 10);
       }
     }
+    {
+      let x = pose.nose.x;
+      let y = pose.nose.y;
+      let ent = my.last_nose_pos[i];
+      if (! ent) {
+        ent = [];
+        my.last_nose_pos[i] = ent;
+      }
+      ent.push({ x, y });
+      if (ent.length >= 3) {
+        ent.splice(0,1);
+      }
+      y -= (y - pose.left_eye.y) * 2;
+      layer.text(i, x, y);
+    }
   }
 }
-
