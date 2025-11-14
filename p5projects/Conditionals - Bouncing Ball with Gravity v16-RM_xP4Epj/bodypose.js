@@ -15,13 +15,6 @@ function preload() {
 }
 
 function bodyPose_setup() {
-  // createCanvas(640, 480);
-
-  // Create the video and hide it
-  // video = createCapture(VIDEO);
-  // video.size(640, 480);
-  // video.hide();
-
   // Start detecting poses in the webcam video
   my.bodyPose.detectStart(my.video, bodyPose_gotPoses);
   // Get the skeleton connection information
@@ -36,9 +29,6 @@ function bodyPose_gotPoses(results) {
 }
 
 function bodyPose_draw() {
-  // Draw the webcam video
-  // image(video, 0, 0, width, height);
-
   // Draw the skeleton connections
   let connections = my.connections;
   let poses = my.poses;
@@ -71,7 +61,7 @@ function bodyPose_draw() {
         layer.circle(keypoint.x, keypoint.y, 10);
       }
     }
-    {
+    { // Update my.last_nose_pos
       let x = pose.nose.x;
       let y = pose.nose.y;
       let ent = my.last_nose_pos[i];
@@ -86,5 +76,8 @@ function bodyPose_draw() {
       y -= (y - pose.left_eye.y) * 2;
       layer.text(i, x, y);
     }
+  }
+  if (my.last_nose_pos.length > poses.length) {
+    my.last_nose_pos.splice(0, my.last_nose_pos.length - poses.length);
   }
 }
