@@ -8,6 +8,8 @@ let my = {};
 
 function setup() {
   //
+  pixelDensity(1);
+  
   my.gridSize = 10;
   my.restoreSteps = 20;
   my.doColor = true;
