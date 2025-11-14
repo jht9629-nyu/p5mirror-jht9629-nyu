@@ -26,6 +26,7 @@ function bodyPose_setup() {
   my.bodyPose.detectStart(my.video, bodyPose_gotPoses);
   // Get the skeleton connection information
   my.connections = my.bodyPose.getSkeleton();
+  my.poses = [];
 }
 
 // Callback function for when bodyPose outputs data
