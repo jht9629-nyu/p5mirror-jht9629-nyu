@@ -17,8 +17,8 @@ function setup() {
   my.pixAlpha = 200;
   my.last_nose_pos = [];
 
-  let canvas = createCanvas(windowWidth, windowHeight);
-  // let canvas = createCanvas(windowWidth, windowHeight - 80);
+  // let canvas = createCanvas(windowWidth, windowHeight);
+  let canvas = createCanvas(windowWidth, windowHeight - 100);
   canvas.mousePressed(canvas_mousePressed);
   canvas.mouseReleased(canvas_mouseReleased);
   canvas.touchEnded(canvas_mouseReleased);
