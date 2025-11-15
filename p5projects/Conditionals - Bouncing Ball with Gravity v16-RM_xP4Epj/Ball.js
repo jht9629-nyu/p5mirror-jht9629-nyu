@@ -43,7 +43,9 @@ class Ball {
       this.x += (this.init_x - this.x) / my.restoreSteps;
       this.y += (this.init_y - this.y) / my.restoreSteps;
     }
-
+    let layer = my.layer;
+    if (! layer) return;
+    let { width, height } = layer;
     if (this.y < 0 || this.y > height - this.gridSize) {
       // reduce the speed each time ball hits floor
       // negative to reverse direction
@@ -55,8 +57,6 @@ class Ball {
       this.vx *= -this.bounce;
       this.x = constrain(this.x, 0, width - this.gridSize);
     }
-    let layer = my.layer;
-    if (! layer) return;
     if (my.doColor) {
       // this.color = [random(255), random(255), random(255), 100];
       let color = my.videoImage.get(this.init_x, this.init_y);
