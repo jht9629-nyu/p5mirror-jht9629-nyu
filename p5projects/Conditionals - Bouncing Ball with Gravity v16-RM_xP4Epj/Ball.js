@@ -16,16 +16,18 @@ class Ball {
     this.vy = 0;
 
     // Air resistance
-    // this.drag = 0.5;
-    this.drag = 0.995;
+    this.drag = 0.99;
+    // this.drag = 0.995;
 
     // Energy retained on edge bounce
+    // this.bounce = 0.2;
     this.bounce = 0.5;
 
     // for drop to bottom of canvas behavior
     this.gravityY = 0.1;
     this.isDropping = false;
-    this.isRestoreing = false;
+    this.isRestoreing = true;
+    // this.isRestoreing = false;
 
     // add to list
     balls.push(this);

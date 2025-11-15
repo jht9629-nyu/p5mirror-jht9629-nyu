@@ -9,10 +9,11 @@ let my = {};
 function setup() {
   //
   pixelDensity(1);
-  
+
   my.gridSize = 10;
-  my.restoreSteps = 20;
+  my.restoreSteps = 10;
   my.doColor = true;
+  my.showPose = false;
   my.pixAlpha = 200;
   my.last_nose_pos = [];
 
@@ -22,7 +23,7 @@ function setup() {
   canvas.mouseReleased(canvas_mouseReleased);
   canvas.touchEnded(canvas_mouseReleased);
 
-  // create_ui();
+  create_ui();
 
   create_video();
 
@@ -55,7 +56,11 @@ function draw() {
 }
 
 function image_layer(layer, dH) {
+  push();
+  translate(width, 0);
+  scale(-1, 1);
   image(layer, 0, 0, width, dH, 0, 0, layer.width, layer.height);
+  pop();
 }
 
 // image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight], [fit], [xAlign], [yAlign])
@@ -97,7 +102,7 @@ function create_video_ready() {
   my.vscale = my.layer.width / width;
 
   addAction();
-  restoreAction();
+  // restoreAction();
 }
 
 function mouseDragged() {
@@ -113,7 +118,7 @@ function mouseDragged() {
   apply_wind(mpt, ppt);
 
   if (keyIsDown(SHIFT)) {
-    new Ball(mouseX, mouseY);
+    new Ball(mpt.x, mpt.y);
   }
 
   let inX = mouseX >= 0 && mouseX < width;
@@ -128,8 +133,8 @@ function apply_nose_wind() {
     if (ent.length < 2) {
       return;
     }
-    let mpt = ent[1]
-    let ppt = ent[0]
+    let mpt = ent[1];
+    let ppt = ent[0];
     apply_wind(mpt, ppt);
   }
 }
@@ -155,6 +160,7 @@ function apply_wind(mpt, ppt) {
 
 // Convert canvas point to video
 function canvas_to_video_point(x, y) {
+  x = width - x;
   x *= my.vscale;
   y *= my.vscale;
   return { x, y };
@@ -169,7 +175,8 @@ function canvas_mouseReleased() {
   // console.log('mouseReleased');
   console.log("canvas_mouseReleased balls.length", balls.length);
   if (!useMousePressed) return;
-  new Ball(mouseX, mouseY);
+  let mpt = canvas_to_video_point(mouseX, mouseY);
+  new Ball(mpt.x, mpt.y);
 }
 
 // https://p5js.org/reference/p5/mouseReleased/
