@@ -1,2 +1,2 @@
-echo download 1 "Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
-curl -s https://editor.p5js.org/editor/projects/RM_xP4Epj/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj.zip"
+echo download 1 "IMC-Week9-HW copy-Ch009Xmlf"
+curl -s https://editor.p5js.org/editor/projects/Ch009Xmlf/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/IMC-Week9-HW copy-Ch009Xmlf.zip"

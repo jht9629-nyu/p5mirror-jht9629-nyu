@@ -1,10 +1,10 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
-rm -rf "./Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
-mkdir "./Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
-pushd "./Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj" > /dev/null
-unzip -q "../../downloads/zips/Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
+echo unzip 1 "IMC-Week9-HW copy-Ch009Xmlf"
+rm -rf "./IMC-Week9-HW copy-Ch009Xmlf"
+mkdir "./IMC-Week9-HW copy-Ch009Xmlf"
+pushd "./IMC-Week9-HW copy-Ch009Xmlf" > /dev/null
+unzip -q "../../downloads/zips/IMC-Week9-HW copy-Ch009Xmlf"
 popd > /dev/null
 
 cd ..
