@@ -9,17 +9,16 @@ function create_ui() {
     .changed(function () {
       my.showPose = this.checked();
     });
-  createCheckbox("restore", my.doRestore) //
-    .style("font-size:28px;display:inline")
-    .changed(function () {
-      my.doRestore = this.checked();
-    });
-  createCheckbox("pulse", my.pulseRestore) //
-    .style("font-size:28px;display:inline")
-    .changed(function () {
-      my.pulseRestore = this.checked();
-    });
-  // my.pulseRestore
+  // createCheckbox("restore", my.doRestore) //
+  //   .style("font-size:28px;display:inline")
+  //   .changed(function () {
+  //     my.doRestore = this.checked();
+  //   });
+  // createCheckbox("pulse", my.pulseRestore) //
+  //   .style("font-size:28px;display:inline")
+  //   .changed(function () {
+  //     my.pulseRestore = this.checked();
+  //   });
   createButton("clear") //
     .mousePressed(clearAction)
     .style("font-size:28px");

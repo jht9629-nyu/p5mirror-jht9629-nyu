@@ -1,4 +1,11 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
+#
+echo unzip 1 "Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
+rm -rf "./Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
+mkdir "./Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
+pushd "./Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj" > /dev/null
+unzip -q "../../downloads/zips/Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
+popd > /dev/null
 
 cd ..
 # remove redundant p5.js p5.sound.min.js ml5.min.js

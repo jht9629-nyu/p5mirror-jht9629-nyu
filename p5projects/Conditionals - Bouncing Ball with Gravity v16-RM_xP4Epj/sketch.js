@@ -13,15 +13,15 @@ function setup() {
   my.gridSize = 10;
   my.restoreSteps = 50;
   my.doRestore = true;
-  my.pulseRestore = true;
+  // my.pulseRestore = true;
   my.doColor = true;
   my.showPose = false;
   // my.showPose = false;
   my.pixAlpha = 200;
   my.last_nose_pos = [];
   my.periodTime = 0;
-  my.restorePause = false;
   my.restorePauseSecs = 1;
+  my.moveThreshold = 5;
   
   // let canvas = createCanvas(windowWidth, windowHeight);
   let canvas = createCanvas(windowWidth, windowHeight - 100);
@@ -63,14 +63,8 @@ function draw() {
   if (my.periodTime > my.restorePauseSecs) {
     console.log('my.periodTime > my.restorePauseSecs');
     my.doRestore = true;
-    my.restorePause = false;
     my.periodTime = 0;
   }
-  // if (my.pulseRestore) {
-  //   if (frameCount % (30 * 5) == 0) {
-  //     my.doRestore = !my.doRestore;
-  //   }
-  // }
 }
 
 function image_layer(layer, dH) {
@@ -159,9 +153,9 @@ function apply_nose_wind() {
     n += 1;
   }
   // console.log('sumd', sumd);
-  let still = sumd < 2;
-  if (! still ) {
-    console.log('not still')
+  let moving = sumd > my.moveThreshold;
+  if (moving ) {
+    // console.log('moving')
     my.doRestore = false;
     my.periodTime = 0;
   }
