@@ -10,7 +10,7 @@ function setup() {
   my.useMousePressed = false;
   my.items = [];
   my.doPaint = false;
-  my.gridCount = 50;
+  my.gridCount = 100;
   my.restoreSteps = 50;
   my.doRestore = true;
   my.doColor = true;

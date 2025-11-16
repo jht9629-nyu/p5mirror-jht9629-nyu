@@ -6,13 +6,6 @@ mkdir "./Unruly fat pixels v16-Lx4gj-rT2"
 pushd "./Unruly fat pixels v16-Lx4gj-rT2" > /dev/null
 unzip -q "../../downloads/zips/Unruly fat pixels v16-Lx4gj-rT2"
 popd > /dev/null
-#
-echo unzip 2 "Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
-rm -rf "./Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
-mkdir "./Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
-pushd "./Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj" > /dev/null
-unzip -q "../../downloads/zips/Conditionals - Bouncing Ball with Gravity v16-RM_xP4Epj"
-popd > /dev/null
 
 cd ..
 # remove redundant p5.js p5.sound.min.js ml5.min.js
