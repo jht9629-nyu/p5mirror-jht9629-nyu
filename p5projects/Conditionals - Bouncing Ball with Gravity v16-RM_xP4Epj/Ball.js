@@ -26,7 +26,7 @@ class Ball {
     // for drop to bottom of canvas behavior
     this.gravityY = 0.1;
     this.isDropping = false;
-    this.isRestoreing = true;
+    // this.isRestoreing = true;
     // this.isRestoreing = false;
 
     // add to list
@@ -41,7 +41,8 @@ class Ball {
     if (this.isDropping) {
       this.vy += this.gravityY;
     }
-    if (this.isRestoreing) {
+    if (my.doRestore) {
+    // if (this.isRestoreing) {
       this.x += (this.init_x - this.x) / my.restoreSteps;
       this.y += (this.init_y - this.y) / my.restoreSteps;
     }
@@ -82,7 +83,7 @@ class Ball {
     this.vx = 0;
     this.vy = 0;
     this.isDropping = false;
-    this.isRestoreing = false;
+    // this.isRestoreing = false;
   }
 
   // Fall to bottom of canvas using gravityY
@@ -90,7 +91,7 @@ class Ball {
     this.vx = 0;
     this.vy = 0;
     this.isDropping = true;
-    this.isRestoreing = false;
+    // this.isRestoreing = false;
   }
 
   add_velocity(dx, dy) {
@@ -108,7 +109,7 @@ class Ball {
     this.stop();
   }
 
-  restore() {
-    this.isRestoreing = true;
-  }
+  // restore() {
+  //   this.isRestoreing = true;
+  // }
 }

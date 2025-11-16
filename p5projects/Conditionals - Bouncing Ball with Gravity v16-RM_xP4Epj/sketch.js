@@ -11,12 +11,18 @@ function setup() {
   pixelDensity(1);
 
   my.gridSize = 10;
-  my.restoreSteps = 10;
+  my.restoreSteps = 50;
+  my.doRestore = true;
+  my.pulseRestore = true;
   my.doColor = true;
   my.showPose = false;
+  // my.showPose = false;
   my.pixAlpha = 200;
   my.last_nose_pos = [];
-
+  my.periodTime = 0;
+  my.restorePause = false;
+  my.restorePauseSecs = 1;
+  
   // let canvas = createCanvas(windowWidth, windowHeight);
   let canvas = createCanvas(windowWidth, windowHeight - 100);
   canvas.mousePressed(canvas_mousePressed);
@@ -53,6 +59,18 @@ function draw() {
   bodyPose_draw();
   image_layer(my.layer, my.dHeight);
   apply_nose_wind();
+  my.periodTime += deltaTime/1000;
+  if (my.periodTime > my.restorePauseSecs) {
+    console.log('my.periodTime > my.restorePauseSecs');
+    my.doRestore = true;
+    my.restorePause = false;
+    my.periodTime = 0;
+  }
+  // if (my.pulseRestore) {
+  //   if (frameCount % (30 * 5) == 0) {
+  //     my.doRestore = !my.doRestore;
+  //   }
+  // }
 }
 
 function image_layer(layer, dH) {
@@ -129,13 +147,23 @@ function mouseDragged() {
 }
 
 function apply_nose_wind() {
+  let sumd = 0;
+  let n = 0;
   for (let ent of my.last_nose_pos) {
     if (ent.length < 2) {
       return;
     }
     let mpt = ent[1];
     let ppt = ent[0];
-    apply_wind(mpt, ppt);
+    sumd += apply_wind(mpt, ppt);
+    n += 1;
+  }
+  // console.log('sumd', sumd);
+  let still = sumd < 2;
+  if (! still ) {
+    console.log('not still')
+    my.doRestore = false;
+    my.periodTime = 0;
   }
 }
 
@@ -147,6 +175,7 @@ function apply_wind(mpt, ppt) {
   let windScale = 0.06;
   // only balls within this range are affected
   let range = width * 0.2;
+  let someWind = false;
   for (let ball of balls) {
     let dd = dist(mpt.x, mpt.y, ball.x, ball.y);
     if (dd < range) {
@@ -154,8 +183,11 @@ function apply_wind(mpt, ppt) {
       let ndx = dx * windScale * falloff;
       let ndy = dy * windScale * falloff;
       ball.add_velocity(ndx, ndy);
+      someWind = true;
     }
   }
+  return (abs(dx) + abs(dy)) / 2;
+  // my.doRestore = !someWind;
 }
 
 // Convert canvas point to video

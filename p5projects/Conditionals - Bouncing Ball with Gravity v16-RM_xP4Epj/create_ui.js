@@ -4,6 +4,22 @@ function create_ui() {
   //
   createSpan("click to add a rect - shift to paint - drag to apply wind") //
     .style("font-size:28px");
+  createCheckbox("showPose", my.showPose) //
+    .style("font-size:28px;display:inline")
+    .changed(function () {
+      my.showPose = this.checked();
+    });
+  createCheckbox("restore", my.doRestore) //
+    .style("font-size:28px;display:inline")
+    .changed(function () {
+      my.doRestore = this.checked();
+    });
+  createCheckbox("pulse", my.pulseRestore) //
+    .style("font-size:28px;display:inline")
+    .changed(function () {
+      my.pulseRestore = this.checked();
+    });
+  // my.pulseRestore
   createButton("clear") //
     .mousePressed(clearAction)
     .style("font-size:28px");
@@ -19,17 +35,17 @@ function create_ui() {
   createButton("add") //
     .mousePressed(addAction)
     .style("font-size:28px");
-  createButton("restore") //
-    .mousePressed(restoreAction)
-    .style("font-size:28px");
+  // createButton("restore") //
+  //   .mousePressed(restoreAction)
+  //   .style("font-size:28px");
 }
 
-function restoreAction() {
-  console.log("Balls restoreAction balls.length", balls.length);
-  for (let ball of balls) {
-    ball.restore();
-  }
-}
+// function restoreAction() {
+//   console.log("Balls restoreAction balls.length", balls.length);
+//   for (let ball of balls) {
+//     ball.restore();
+//   }
+// }
 
 function addAction() {
   let w = my.gridSize;
