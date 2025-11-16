@@ -10,19 +10,18 @@ function setup() {
   //
   pixelDensity(1);
 
-  my.gridSize = 10;
+  my.doPaint = false;
+  my.gridCount = 50;
   my.restoreSteps = 50;
   my.doRestore = true;
-  // my.pulseRestore = true;
   my.doColor = true;
   my.showPose = false;
-  // my.showPose = false;
   my.pixAlpha = 200;
   my.last_nose_pos = [];
   my.periodTime = 0;
   my.restorePauseSecs = 1;
   my.moveThreshold = 5;
-  
+
   // let canvas = createCanvas(windowWidth, windowHeight);
   let canvas = createCanvas(windowWidth, windowHeight - 100);
   canvas.mousePressed(canvas_mousePressed);
@@ -34,12 +33,6 @@ function setup() {
   create_video();
 
   bodyPose_setup();
-
-  // addAction();
-  // new Ball(width / 2, height / 2);
-
-  // let ball2 = new Ball(width / 2, height / 2);
-  // ball2.drop();
 }
 
 function draw() {
@@ -59,9 +52,9 @@ function draw() {
   bodyPose_draw();
   image_layer(my.layer, my.dHeight);
   apply_nose_wind();
-  my.periodTime += deltaTime/1000;
+  my.periodTime += deltaTime / 1000;
   if (my.periodTime > my.restorePauseSecs) {
-    console.log('my.periodTime > my.restorePauseSecs');
+    // console.log("my.periodTime > my.restorePauseSecs");
     my.doRestore = true;
     my.periodTime = 0;
   }
@@ -80,19 +73,11 @@ function image_layer(layer, dH) {
 function create_video() {
   // Create a constraints object.
   let constraints = {
-    // video: {
-    //   mandatory: {
-    //     minWidth: 1280,
-    //     minHeight: 720
-    //   },
-    //   optional: [{ maxFrameRate: 10 }]
-    // },
     video: true,
     audio: false,
-    flipped: true,
+    // flipped: true,
   };
   my.video = createCapture(constraints, create_video_ready);
-  // my.video = createCapture(VIDEO);
   // my.video.size(width, height);
   console.log("my.video.width", my.video.width, "height", my.video.height);
   my.video.hide();
@@ -113,8 +98,9 @@ function create_video_ready() {
   my.dHeight = width * my.aspect;
   my.vscale = my.layer.width / width;
 
-  addAction();
-  // restoreAction();
+  my.gridSize = int(my.layer.width / my.gridCount);
+
+  fillAction();
 }
 
 function mouseDragged() {
@@ -129,8 +115,9 @@ function mouseDragged() {
 
   apply_wind(mpt, ppt);
 
-  if (keyIsDown(SHIFT)) {
-    new Ball(mpt.x, mpt.y);
+  if (my.doPaint) {
+    // if (keyIsDown(SHIFT)) {
+    new FatPixel(mpt.x, mpt.y);
   }
 
   let inX = mouseX >= 0 && mouseX < width;
@@ -154,7 +141,7 @@ function apply_nose_wind() {
   }
   // console.log('sumd', sumd);
   let moving = sumd > my.moveThreshold;
-  if (moving ) {
+  if (moving) {
     // console.log('moving')
     my.doRestore = false;
     my.periodTime = 0;
@@ -202,7 +189,7 @@ function canvas_mouseReleased() {
   console.log("canvas_mouseReleased balls.length", balls.length);
   if (!useMousePressed) return;
   let mpt = canvas_to_video_point(mouseX, mouseY);
-  new Ball(mpt.x, mpt.y);
+  new FatPixel(mpt.x, mpt.y);
 }
 
 // https://p5js.org/reference/p5/mouseReleased/

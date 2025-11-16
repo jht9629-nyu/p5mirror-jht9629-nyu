@@ -1,6 +1,11 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
+  font-size: 28px;
+}
+button {
+  font-size: 28px;
 }
 canvas {
   display: block;
