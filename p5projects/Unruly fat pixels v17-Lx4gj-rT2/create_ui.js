@@ -2,7 +2,7 @@
 
 function create_ui() {
   //
-  createSpan("v17.1 click to add a fat pixel - drag to apply wind") //
+  createSpan("v17.2 click to add a fat pixel - drag to apply wind") //
   createSpan('[')
   createCheckbox("doPaint", my.doPaint) //
     .style("display:inline")

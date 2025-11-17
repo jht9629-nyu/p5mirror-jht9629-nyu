@@ -1,7 +1,6 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/Lx4gj-rT2
 // Unruly fat pixels v17
 
-// let items = [];
 let my = {};
 
 function setup() {
@@ -94,13 +93,14 @@ function create_video_ready() {
     my.video.height
   );
   my.layer = createGraphics(my.video.width, my.video.height);
-  my.layer.noStroke();
+  let layer = my.layer;
+  layer.noStroke();
 
-  my.aspect = my.layer.height / my.layer.width;
+  my.aspect = layer.height / layer.width;
   my.dHeight = width * my.aspect;
-  my.vscale = my.layer.width / width;
+  my.vscale = layer.width / width;
 
-  my.gridSize = int(my.layer.width / my.gridCount);
+  my.gridSize = int(layer.width / my.gridCount);
 
   fillAction();
 }
