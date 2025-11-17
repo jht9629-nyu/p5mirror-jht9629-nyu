@@ -9,8 +9,8 @@ function setup() {
   my.useMousePressed = false;
   my.items = [];
   my.doPaint = false;
-  my.gridCount = 100;
-  my.restoreSteps = 50;
+  my.gridCount = 128;
+  my.restoreSteps = 16;
   my.doRestore = true;
   my.doColor = true;
   my.showPose = false;
@@ -118,7 +118,6 @@ function mouseDragged() {
   apply_wind(mpt, ppt);
 
   if (my.doPaint) {
-    // if (keyIsDown(SHIFT)) {
     new FatPixel(mpt.x, mpt.y);
   }
 
@@ -141,6 +140,7 @@ function apply_nose_wind() {
     sumd += apply_wind(mpt, ppt);
     n += 1;
   }
+  if (n > 0) sumd = sumd / n;
   // console.log('sumd', sumd);
   let moving = sumd > my.moveThreshold;
   if (moving) {

@@ -103,6 +103,9 @@ class FatPixel {
   }
 
   random() {
+    let layer = my.layer;
+    if (! layer) return;
+    let { width, height } = layer;
     this.x = random(width);
     this.y = random(height);
     this.stop();
