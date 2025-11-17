@@ -185,7 +185,7 @@ function canvas_mousePressed() {
 
 function canvas_mouseReleased() {
   // console.log('mouseReleased');
-  console.log("canvas_mouseReleased items.length", items.length);
+  console.log("canvas_mouseReleased items.length", my.items.length);
   if (!my.useMousePressed) return;
   let mpt = canvas_to_video_point(mouseX, mouseY);
   new FatPixel(mpt.x, mpt.y);
