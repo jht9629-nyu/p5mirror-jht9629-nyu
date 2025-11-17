@@ -9,26 +9,14 @@ function setup() {
 
   setup_students();
   shuffle(a_students, true);
-  {
-    let btn = createButton("next");
-    btn.mousePressed(nextStudent);
-    btn.style("font-size:28px");
-  }
-  {
-    let btn = createButton("previous");
-    btn.mousePressed(previousStudent);
-    btn.style("font-size:28px");
-  }
-  {
-    let btn = createButton("changeColor");
-    btn.mousePressed(changeColor);
-    btn.style("font-size:28px");
-  }
-  {
-    let btn = createButton("toggleSelected");
-    btn.mousePressed(toggleSelected);
-    btn.style("font-size:28px");
-  }
+  createButton("next") //
+    .mousePressed(nextStudent);
+  createButton("previous") //
+    .mousePressed(previousStudent);
+  createButton("changeColor") //
+    .mousePressed(changeColor);
+  createButton("toggleSelected") //
+    .mousePressed(toggleSelected);
 }
 
 function toggleSelected() {
@@ -49,7 +37,7 @@ function draw() {
   background(220);
   textSize(60);
   let stu = a_students[i_student];
-  let txt = '[' + i_student + '] ' + stu.name;
+  let txt = "[" + i_student + "] " + stu.name;
   if (stu.selected) {
     txt = "👍🏾" + txt;
   }

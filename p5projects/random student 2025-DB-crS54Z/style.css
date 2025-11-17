@@ -5,3 +5,6 @@ html, body {
 canvas {
   display: block;
 }
+button {
+  font-size:28px
+}
