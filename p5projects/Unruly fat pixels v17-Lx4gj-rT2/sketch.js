@@ -10,6 +10,7 @@ function setup() {
   my.items = [];
   my.doPaint = false;
   my.gridCount = 128;
+  if (windowWidth < 600) my.gridCount = 32;
   my.restoreSteps = 16;
   my.doRestore = true;
   my.doColor = true;
