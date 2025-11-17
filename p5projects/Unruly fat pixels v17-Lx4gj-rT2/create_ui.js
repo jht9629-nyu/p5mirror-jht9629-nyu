@@ -2,30 +2,30 @@
 
 function create_ui() {
   //
-  createSpan("v17.3 click to add a fat pixel - drag to apply wind") //
-  createSpan('[')
+  createSpan("v17.4 click to add a fat pixel - drag to apply wind"); //
+  createSpan("[");
   createCheckbox("doPaint", my.doPaint) //
     .style("display:inline")
     .changed(function () {
       my.doPaint = this.checked();
     });
-  createSpan('][')
+  createSpan("][");
   createCheckbox("showPose", my.showPose) //
     .style("display:inline")
     .changed(function () {
       my.showPose = this.checked();
     });
-  createSpan(']')
+  createSpan("]");
   createButton("fill") //
-    .mousePressed(fillAction)
+    .mousePressed(fillAction);
   createButton("clear") //
-    .mousePressed(clearAction)
+    .mousePressed(clearAction);
   createButton("drop") //
-    .mousePressed(dropAction)
+    .mousePressed(dropAction);
   createButton("stop") //
-    .mousePressed(stopAction)
+    .mousePressed(stopAction);
   createButton("random") //
-    .mousePressed(randomAction)
+    .mousePressed(randomAction);
 }
 
 function fillAction() {
@@ -39,7 +39,7 @@ function fillAction() {
 }
 
 function randomAction() {
-  console.log("Balls randomAction my.items.length", my.items.length);
+  console.log("randomAction my.items.length", my.items.length);
   for (let item of my.items) {
     item.random();
   }
