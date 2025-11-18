@@ -2,9 +2,15 @@
 
 function create_ui() {
   //
-  createSpan("v18.1 click to add a fat pixel - drag to apply wind") //
+  createSpan("v18.2 click to add a fat pixel - drag to apply wind") //
     .id("id_first");
   createSpan("[");
+  createCheckbox("doRadiate", my.doRadiate) //
+    .style("display:inline")
+    .changed(function () {
+      my.doRadiate = this.checked();
+    });
+  createSpan("][");
   createCheckbox("doPaint", my.doPaint) //
     .style("display:inline")
     .changed(function () {
@@ -39,6 +45,16 @@ function fillAction() {
       new FatPixel(x + w / 2, y + w / 2);
     }
   }
+  if (!my.itemTrimCount) {
+    my.itemTrimCount = my.items.length;
+  }
+}
+
+function items_add(item, opt) {
+  my.items.push(item);
+  if (opt.replace && my.items.length > my.itemTrimCount) {
+    my.items.splice(0, 1);
+  }
 }
 
 function randomAction() {
@@ -69,15 +85,20 @@ function clearAction() {
 
 function fullScreenAction() {
   //
+  my.bodyPose.detectStop();
   my.layer.remove();
   my.layer = null;
-
   my.video.remove();
   my.video = null;
-
   removeElements();
+  clearAction();
 
-  fullscreen(1);
+  try {
+    fullscreen(1);
+  } catch (err) {
+    alert("fullscreen err " + err);
+  }
+
   let delay = 3000;
   setTimeout(ui_present_window, delay);
 }

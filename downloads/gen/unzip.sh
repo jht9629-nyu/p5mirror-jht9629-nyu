@@ -1,4 +1,18 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
+#
+echo unzip 1 "Unruly fat pixels v19-7nGbPQ4qP"
+rm -rf "./Unruly fat pixels v19-7nGbPQ4qP"
+mkdir "./Unruly fat pixels v19-7nGbPQ4qP"
+pushd "./Unruly fat pixels v19-7nGbPQ4qP" > /dev/null
+unzip -q "../../downloads/zips/Unruly fat pixels v19-7nGbPQ4qP"
+popd > /dev/null
+#
+echo unzip 2 "Unruly fat pixels v18-m483LSIQy"
+rm -rf "./Unruly fat pixels v18-m483LSIQy"
+mkdir "./Unruly fat pixels v18-m483LSIQy"
+pushd "./Unruly fat pixels v18-m483LSIQy" > /dev/null
+unzip -q "../../downloads/zips/Unruly fat pixels v18-m483LSIQy"
+popd > /dev/null
 
 cd ..
 # remove redundant p5.js p5.sound.min.js ml5.min.js

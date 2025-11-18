@@ -84,7 +84,8 @@ function bodyPose_record_nose(layer, pose, i) {
     ent = [];
     my.last_nose_pos[i] = ent;
   }
-  ent.push({ x, y });
+  let w = pose.left_ear.x - pose.right_ear.x;
+  ent.push({ x, y, w});
   if (ent.length >= 3) {
     ent.splice(0, 1);
   }

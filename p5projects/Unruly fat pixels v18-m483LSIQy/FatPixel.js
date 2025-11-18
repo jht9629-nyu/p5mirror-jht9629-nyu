@@ -2,7 +2,7 @@
 
 class FatPixel {
   //
-  constructor(x, y) {
+  constructor(x, y, opt = {}) {
     //
     // initial position centered at x, y
     let w = my.gridSize / 2;
@@ -31,7 +31,7 @@ class FatPixel {
     // this.isRestoreing = false;
 
     // add to list
-    my.items.push(this);
+    items_add(this, opt);
   }
 
   draw() {
@@ -43,7 +43,6 @@ class FatPixel {
       this.vy += this.gravityY;
     }
     if (my.doRestore) {
-    // if (this.isRestoreing) {
       this.x += (this.init_x - this.x) / my.restoreSteps;
       this.y += (this.init_y - this.y) / my.restoreSteps;
     }

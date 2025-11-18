@@ -23,6 +23,8 @@ function setup() {
   my.restorePauseSecs = 3;
   my.moveThreshold = 5;
   my.rangeFactor = 0.1;
+  my.doRadiate = false;
+  my.radiateAngle = 0;
 
   // let canvas = createCanvas(windowWidth, windowHeight);
   let canvas = createCanvas(windowWidth, windowHeight - 100);
@@ -51,18 +53,41 @@ function draw() {
   for (let item of my.items) {
     item.draw();
   }
-
+  apply_radiate();
   bodyPose_draw();
   image_layer(my.layer, my.dHeight);
   apply_nose_wind();
 
   my.periodTime += deltaTime / 1000;
   if (my.periodTime > my.restorePauseSecs) {
-    console.log("my.periodTime expired");
+    // console.log("my.periodTime expired");
     my.doRestore = true;
     my.periodTime = 0;
     stopAction();
   }
+}
+
+function apply_radiate() {
+  if (!my.doRadiate) return;
+  for (let ent of my.last_nose_pos) {
+    if (ent.length < 1) {
+      continue;
+    }
+    let pt = ent[0];
+    let x = pt.x;
+    let y = pt.y;
+    let r = pt.w;
+    let a = radians(my.radiateAngle);
+    let x1 = x + r * cos(a);
+    let y1 = y + r * sin(a);
+    // console.log('r', r, 'a', a)
+    // console.log('x', x, 'y', y)
+    // console.log('x1', x1, 'y1', y1);
+
+    // paint_line({ x: x1, y: y1 }, { x, y });
+    paint_line({ x, y }, { x: x1, y: y1 });
+  }
+  my.radiateAngle = (my.radiateAngle + 1) % 360;
 }
 
 function image_layer(layer, dH) {
@@ -105,8 +130,12 @@ function create_video_ready() {
   my.gridSize = int(d / my.gridCount);
   console.log("create_video_ready my.gridSize", my.gridSize);
 
-  fillAction();
-  
+  if (my.doRadiate) {
+    clearAction();
+  } else {
+    fillAction();
+  }
+
   init_screen_dim();
 }
 
@@ -143,6 +172,7 @@ function paint_line(mpt, ppt) {
   let y1 = ppt.y;
   let x2 = mpt.x;
   let y2 = mpt.y;
+  // console.log('x1', x1, 'y1', y1, 'x2', x2, 'y2', y2);
 
   let dx = x2 - x1;
   let dy = y2 - y1;
@@ -158,7 +188,7 @@ function paint_line(mpt, ppt) {
   dx = dx * g;
   dy = dy * g;
   for (let i = 0; i <= step; i += g) {
-    new FatPixel(x, y);
+    new FatPixel(x, y, { replace: 1 });
     x = x + dx;
     y = y + dy;
   }
@@ -172,7 +202,7 @@ function apply_nose_wind() {
   let n = 0;
   for (let ent of my.last_nose_pos) {
     if (ent.length < 2) {
-      return;
+      continue;
     }
     let mpt = ent[1];
     let ppt = ent[0];
@@ -183,7 +213,7 @@ function apply_nose_wind() {
   // console.log('sumd', sumd);
   let moving = sumd > my.moveThreshold;
   if (moving) {
-    console.log("moving");
+    // console.log("moving");
     my.doRestore = false;
     my.periodTime = 0;
   }
