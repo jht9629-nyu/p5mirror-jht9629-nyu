@@ -1,17 +1,24 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "ICM-Week10-HW copy-aV8UdcIVx"
-rm -rf "./ICM-Week10-HW copy-aV8UdcIVx"
-mkdir "./ICM-Week10-HW copy-aV8UdcIVx"
-pushd "./ICM-Week10-HW copy-aV8UdcIVx" > /dev/null
-unzip -q "../../downloads/zips/ICM-Week10-HW copy-aV8UdcIVx"
+echo unzip 1 "Unruly fat pixels v18-m483LSIQy"
+rm -rf "./Unruly fat pixels v18-m483LSIQy"
+mkdir "./Unruly fat pixels v18-m483LSIQy"
+pushd "./Unruly fat pixels v18-m483LSIQy" > /dev/null
+unzip -q "../../downloads/zips/Unruly fat pixels v18-m483LSIQy"
 popd > /dev/null
 #
-echo unzip 2 "random student 2025-DB-crS54Z"
-rm -rf "./random student 2025-DB-crS54Z"
-mkdir "./random student 2025-DB-crS54Z"
-pushd "./random student 2025-DB-crS54Z" > /dev/null
-unzip -q "../../downloads/zips/random student 2025-DB-crS54Z"
+echo unzip 2 "Unruly fat pixels v17 copy-_-U-TMjNe"
+rm -rf "./Unruly fat pixels v17 copy-_-U-TMjNe"
+mkdir "./Unruly fat pixels v17 copy-_-U-TMjNe"
+pushd "./Unruly fat pixels v17 copy-_-U-TMjNe" > /dev/null
+unzip -q "../../downloads/zips/Unruly fat pixels v17 copy-_-U-TMjNe"
+popd > /dev/null
+#
+echo unzip 3 "Unruly fat pixels v17-Lx4gj-rT2"
+rm -rf "./Unruly fat pixels v17-Lx4gj-rT2"
+mkdir "./Unruly fat pixels v17-Lx4gj-rT2"
+pushd "./Unruly fat pixels v17-Lx4gj-rT2" > /dev/null
+unzip -q "../../downloads/zips/Unruly fat pixels v17-Lx4gj-rT2"
 popd > /dev/null
 
 cd ..

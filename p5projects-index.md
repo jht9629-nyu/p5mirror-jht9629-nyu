@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[909 sketches 2025-11-17T17:28:32.293Z](./downloads/gen/sketches_recent.md)
+[911 sketches 2025-11-18T18:33:37.130Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -398,7 +398,9 @@
 - [Unexpected cut by FabriGu v0-Z3eRvpZqL0](./p5projects/Unexpected%20cut%20by%20FabriGu%20v0-Z3eRvpZqL0) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3eRvpZqL0)]
 - [Unexpected cut v0 - FabriGu-jNIoZhDk1](./p5projects/Unexpected%20cut%20v0%20-%20FabriGu-jNIoZhDk1) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jNIoZhDk1)]
 - [Unexpected cut v1-bQHOejZlG](./p5projects/Unexpected%20cut%20v1-bQHOejZlG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/bQHOejZlG)]
+- [Unruly fat pixels v17 copy-\_-U-TMjNe](./p5projects/Unruly%20fat%20pixels%20v17%20copy-_-U-TMjNe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_-U-TMjNe)]
 - [Unruly fat pixels v17-Lx4gj-rT2](./p5projects/Unruly%20fat%20pixels%20v17-Lx4gj-rT2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Lx4gj-rT2)]
+- [Unruly fat pixels v18-m483LSIQy](./p5projects/Unruly%20fat%20pixels%20v18-m483LSIQy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/m483LSIQy)]
 - [Vigil copy-oRVIiwpzr](./p5projects/Vigil%20copy-oRVIiwpzr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/oRVIiwpzr)]
 - [W1 setup() v. draw() copy-NqzSdnl8u](./p5projects/W1%20setup()%20v.%20draw()%20copy-NqzSdnl8u) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/NqzSdnl8u)]
 - [W4 Re-write as a loop - I copy-NLVK9ZI7a](./p5projects/W4%20Re-write%20as%20a%20loop%20-%20I%20copy-NLVK9ZI7a) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/NLVK9ZI7a)]
