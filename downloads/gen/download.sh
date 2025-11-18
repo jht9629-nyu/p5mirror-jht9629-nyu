@@ -1,6 +1,0 @@
-echo download 1 "Unruly fat pixels v18-m483LSIQy"
-curl -s https://editor.p5js.org/editor/projects/m483LSIQy/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/Unruly fat pixels v18-m483LSIQy.zip"
-echo download 2 "Unruly fat pixels v17 copy-_-U-TMjNe"
-curl -s https://editor.p5js.org/editor/projects/_-U-TMjNe/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/Unruly fat pixels v17 copy-_-U-TMjNe.zip"
-echo download 3 "Unruly fat pixels v17-Lx4gj-rT2"
-curl -s https://editor.p5js.org/editor/projects/Lx4gj-rT2/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/Unruly fat pixels v17-Lx4gj-rT2.zip"
