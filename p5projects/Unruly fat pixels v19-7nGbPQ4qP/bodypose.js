@@ -77,6 +77,7 @@ function bodyPose_draw_skeleton(layer, pose, connections) {
 
 function bodyPose_record_nose(layer, pose, i) {
   // Update my.last_nose_pos
+  if (pose.nose.confidence < 0.1) return;
   let x = pose.nose.x;
   let y = pose.nose.y;
   let ent = my.last_nose_pos[i];

@@ -1,6 +1,7 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/7nGbPQ4qP
 // Unruly fat pixels v19
 // circle cross
+// opposite points on circle inconsistent
 
 let my = {};
 
@@ -83,6 +84,8 @@ function apply_radiate() {
     let x2 = x + r * cos(a);
     let y2 = y + r * cos(a);
 
+    // my.layer.stroke('green');
+    // my.layer.line(x1, y1, x2, y2);
     paint_line({ x: x1, y: y1 }, { x: x2, y: y2 });
     // paint_line({ x: x2, y: y2 }, { x: x1, y: y1 });
   }
