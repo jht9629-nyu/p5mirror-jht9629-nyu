@@ -1,6 +1,13 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "Unruly fat pixels v19-7nGbPQ4qP"
+echo unzip 1 "Unruly pixel reveal v20-D0fROhx4T"
+rm -rf "./Unruly pixel reveal v20-D0fROhx4T"
+mkdir "./Unruly pixel reveal v20-D0fROhx4T"
+pushd "./Unruly pixel reveal v20-D0fROhx4T" > /dev/null
+unzip -q "../../downloads/zips/Unruly pixel reveal v20-D0fROhx4T"
+popd > /dev/null
+#
+echo unzip 2 "Unruly fat pixels v19-7nGbPQ4qP"
 rm -rf "./Unruly fat pixels v19-7nGbPQ4qP"
 mkdir "./Unruly fat pixels v19-7nGbPQ4qP"
 pushd "./Unruly fat pixels v19-7nGbPQ4qP" > /dev/null

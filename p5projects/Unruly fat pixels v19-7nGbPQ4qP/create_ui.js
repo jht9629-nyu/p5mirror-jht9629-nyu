@@ -2,7 +2,7 @@
 
 function create_ui() {
   //
-  createSpan("v19.3"); //
+  createSpan("v19.3") //
   createSpan("[");
   createCheckbox("doRadiate", my.doRadiate) //
     .style("display:inline")

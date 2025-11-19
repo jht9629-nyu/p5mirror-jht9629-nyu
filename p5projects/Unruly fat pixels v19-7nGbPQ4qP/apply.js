@@ -1,6 +1,5 @@
 //
 
-
 function apply_radiate() {
   if (!my.doRadiate) return;
   for (let ent of my.last_nose_pos) {

@@ -1,7 +1,6 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/7nGbPQ4qP
 // Unruly fat pixels v19
 // circle cross
-// opposite points on circle inconsistent
 
 let my = {};
 
