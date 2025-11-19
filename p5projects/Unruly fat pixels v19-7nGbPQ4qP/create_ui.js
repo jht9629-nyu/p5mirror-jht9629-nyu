@@ -2,8 +2,7 @@
 
 function create_ui() {
   //
-  createSpan("v18.2 click to add a fat pixel - drag to apply wind") //
-    .id("id_first");
+  createSpan("v19.3"); //
   createSpan("[");
   createCheckbox("doRadiate", my.doRadiate) //
     .style("display:inline")
