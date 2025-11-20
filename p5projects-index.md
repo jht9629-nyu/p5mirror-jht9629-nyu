@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[912 sketches 2025-11-19T20:10:14.441Z](./downloads/gen/sketches_recent.md)
+[917 sketches 2025-11-20T06:13:48.602Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -779,6 +779,7 @@
 - [pattern-animation-shape-1Tc2xb\_4m](./p5projects/pattern-animation-shape-1Tc2xb_4m) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1Tc2xb_4m)]
 - [photo-booth 31-Kwe9ZrOpK](./p5projects/photo-booth%2031-Kwe9ZrOpK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Kwe9ZrOpK)]
 - [pink purple circles copy-ANfC\_Xawe](./p5projects/pink%20purple%20circles%20copy-ANfC_Xawe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ANfC_Xawe)]
+- [pixel reveal oval v21-6DRHLF0ZJ](./p5projects/pixel%20reveal%20oval%20v21-6DRHLF0ZJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6DRHLF0ZJ)]
 - [pixel-center-BtTb0NzK9](./p5projects/pixel-center-BtTb0NzK9) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BtTb0NzK9)]
 - [pixel-grid-twgS6eWRZ](./p5projects/pixel-grid-twgS6eWRZ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/twgS6eWRZ)]
 - [pixel-scope v2-i2P\_11fWZ](./p5projects/pixel-scope%20v2-i2P_11fWZ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/i2P_11fWZ)]
@@ -788,6 +789,10 @@
 - [playlist maker 3 -Sophia loadSound-BAdPeYbKA](./p5projects/playlist%20maker%203%20-Sophia%20loadSound-BAdPeYbKA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BAdPeYbKA)]
 - [playlist maker 3 copy-KPP-Xm03Y](./p5projects/playlist%20maker%203%20copy-KPP-Xm03Y) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/KPP-Xm03Y)]
 - [playlist maker 3 copy-NeJM9CfsJ](./p5projects/playlist%20maker%203%20copy-NeJM9CfsJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/NeJM9CfsJ)]
+- [pointInEllipse-bUW-v4yCt](./p5projects/pointInEllipse-bUW-v4yCt) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/bUW-v4yCt)]
+- [polar ellipse-89QM7p9Gb](./p5projects/polar%20ellipse-89QM7p9Gb) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/89QM7p9Gb)]
+- [polar heart v0-phdkJtq2y](./p5projects/polar%20heart%20v0-phdkJtq2y) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/phdkJtq2y)]
+- [polar heart v1-JZ3TXy0tu](./p5projects/polar%20heart%20v1-JZ3TXy0tu) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/JZ3TXy0tu)]
 - [portals by oliviaemlee v0-1nLfUa1PU](./p5projects/portals%20by%20oliviaemlee%20v0-1nLfUa1PU) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1nLfUa1PU)]
 - [preload data url-al6qh\_HwA](./p5projects/preload%20data%20url-al6qh_HwA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/al6qh_HwA)]
 - [preload loadImage scale-uGJhjABpY](./p5projects/preload%20loadImage%20scale-uGJhjABpY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/uGJhjABpY)]

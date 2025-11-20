@@ -36,57 +36,34 @@ function apply_radiate() {
   my.radiateAngle = (my.radiateAngle + 1) % 360;
 }
 
-function image_layer(layer, dH) {
-  push();
-  // Flip on the x horizontal axis
-  translate(width, 0);
-  scale(-1, 1);
-  image(layer, 0, 0, width, dH, 0, 0, layer.width, layer.height);
-  pop();
-}
+function paint_line(mpt, ppt) {
+  let x1 = ppt.x;
+  let y1 = ppt.y;
+  let x2 = mpt.x;
+  let y2 = mpt.y;
+  // console.log('paint_line x1', x1, 'y1', y1, 'x2', x2, 'y2', y2);
 
-// image(img, dx, dy, dWidth, dHeight, sx, sy, [sWidth], [sHeight], [fit], [xAlign], [yAlign])
-
-function create_video() {
-  // Create a constraints object.
-  let constraints = {
-    video: true,
-    audio: false,
-  };
-  my.video = createCapture(constraints, create_video_ready);
-  // my.video.size(width, height);
-  console.log("my.video.width", my.video.width, "height", my.video.height);
-  my.video.hide();
-  my.videoImage = my.video.get();
-}
-
-function create_video_ready() {
-  console.log(
-    "create_video_ready my.video.width",
-    my.video.width,
-    "height",
-    my.video.height
-  );
-  if (!my.overLayer) {
-    my.overLayer = createGraphics(my.video.width, my.video.height);
+  let dx = x2 - x1;
+  let dy = y2 - y1;
+  let step = abs(dy);
+  if (abs(dx) >= abs(dy)) {
+    step = abs(dx);
   }
-  my.layer = createGraphics(my.video.width, my.video.height);
-  let layer = my.layer;
-  layer.background(0);
-  layer.noStroke();
-
-  my.aspect = layer.height / layer.width;
-  let d = max(layer.width, layer.height);
-  my.gridSize = int(d / my.gridCount);
-  console.log("create_video_ready my.gridSize", my.gridSize);
-
-  my.dHeight = width * my.aspect;
-  my.vscale = layer.width / width;
-
-  if (my.doTrack) {
-    clearAction();
-  } else {
-    fillAction();
+  dx = dx / step;
+  dy = dy / step;
+  if (step < 2) { 
+    // console.log('step', step, 'dx', dx);
+    return;
+  }
+  let x = x1;
+  let y = y1;
+  let g = my.gridSize;
+  dx = dx * g;
+  dy = dy * g;
+  for (let i = 0; i <= step; i += g) {
+    new FatPixel(x, y, { replace: 1 });
+    x = x + dx;
+    y = y + dy;
   }
 }
 
@@ -133,10 +110,3 @@ function apply_wind(mpt, ppt) {
   return (abs(dx) + abs(dy)) / 2;
 }
 
-// Convert canvas point to video
-function canvas_to_video_point(x, y) {
-  x = width - x;
-  x *= my.vscale;
-  y *= my.vscale;
-  return { x, y };
-}

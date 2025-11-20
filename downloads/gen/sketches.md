@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-912 sketches  
+917 sketches  
 [0\_2\_trigger\_several\_sounds copy](../../p5projects/0_2_trigger_several_sounds%20copy-DCmsLNzk5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)]<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](../../p5projects/0_2_trigger_several_sounds%20luisa_NYU-8svv4J26x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)]<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](../../p5projects/0_7_FFT%20by%20luisa_NYUpy-ZfrLYKf4u) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)]<!-- 2025-03-10T21:47:40.953Z -->  
@@ -644,6 +644,7 @@
 [photo-booth 31](../../p5projects/photo-booth%2031-Kwe9ZrOpK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Kwe9ZrOpK)]<!-- 2025-04-25T15:51:36.277Z -->  
 [Physarum Letters -- jht remix](../../p5projects/Physarum%20Letters%20-%20jht%20remix-zVQJNjK8R) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zVQJNjK8R)]<!-- 2023-10-10T14:15:37.222Z -->  
 [pink purple circles copy](../../p5projects/pink%20purple%20circles%20copy-ANfC_Xawe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ANfC_Xawe)]<!-- 2025-09-22T18:03:46.467Z -->  
+[pixel reveal oval v21](../../p5projects/pixel%20reveal%20oval%20v21-6DRHLF0ZJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6DRHLF0ZJ)]<!-- 2025-11-20T06:13:48.602Z -->  
 [pixel-center](../../p5projects/pixel-center-BtTb0NzK9) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BtTb0NzK9)]<!-- 2023-05-24T00:18:58.680Z -->  
 [pixel-grid](../../p5projects/pixel-grid-twgS6eWRZ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/twgS6eWRZ)]<!-- 2024-07-24T11:10:57.831Z -->  
 [pixel-scope](../../p5projects/pixel-scope-_0fWGg7ni) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_0fWGg7ni)]<!-- 2025-07-30T15:17:03.698Z -->  
@@ -657,6 +658,10 @@
 [playlist maker :3 -Sophia loadSound](../../p5projects/playlist%20maker%203%20-Sophia%20loadSound-BAdPeYbKA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BAdPeYbKA)]<!-- 2025-07-30T15:15:11.350Z -->  
 [playlist maker :3 copy](../../p5projects/playlist%20maker%203%20copy-NeJM9CfsJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/NeJM9CfsJ)]<!-- 2024-07-30T15:12:59.417Z -->  
 [playlist maker :3 copy](../../p5projects/playlist%20maker%203%20copy-KPP-Xm03Y) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/KPP-Xm03Y)]<!-- 2024-07-30T14:47:31.493Z -->  
+[pointInEllipse](../../p5projects/pointInEllipse-bUW-v4yCt) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/bUW-v4yCt)]<!-- 2025-11-20T04:32:10.864Z -->  
+[polar ellipse](../../p5projects/polar%20ellipse-89QM7p9Gb) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/89QM7p9Gb)]<!-- 2025-11-20T04:38:52.951Z -->  
+[polar heart v0](../../p5projects/polar%20heart%20v0-phdkJtq2y) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/phdkJtq2y)]<!-- 2025-11-20T05:34:26.600Z -->  
+[polar heart v1](../../p5projects/polar%20heart%20v1-JZ3TXy0tu) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/JZ3TXy0tu)]<!-- 2025-11-20T05:44:40.100Z -->  
 [PolySynth](../../p5projects/PolySynth-pFVPjcFSr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pFVPjcFSr)]<!-- 2023-08-04T13:49:54.259Z -->  
 [Pong Chaos startup mostly](../../p5projects/Pong%20Chaos%20startup%20mostly-9Ss9owTn5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/9Ss9owTn5)]<!-- 2023-08-13T17:10:31.538Z -->  
 [Pong Chords Chaos](../../p5projects/Pong%20Chords%20Chaos-mMwCV6fhx) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/mMwCV6fhx)]<!-- 2023-08-05T10:29:16.020Z -->  
@@ -821,7 +826,7 @@
 [Unruly fat pixels v17](../../p5projects/Unruly%20fat%20pixels%20v17-Lx4gj-rT2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Lx4gj-rT2)]<!-- 2025-11-17T18:38:50.781Z -->  
 [Unruly fat pixels v18](../../p5projects/Unruly%20fat%20pixels%20v18-m483LSIQy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/m483LSIQy)]<!-- 2025-11-18T21:13:25.080Z -->  
 [Unruly fat pixels v19](../../p5projects/Unruly%20fat%20pixels%20v19-7nGbPQ4qP) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7nGbPQ4qP)]<!-- 2025-11-19T19:22:51.347Z -->  
-[Unruly pixel reveal v20](../../p5projects/Unruly%20pixel%20reveal%20v20-D0fROhx4T) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/D0fROhx4T)]<!-- 2025-11-19T20:10:14.441Z -->  
+[Unruly pixel reveal v20](../../p5projects/Unruly%20pixel%20reveal%20v20-D0fROhx4T) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/D0fROhx4T)]<!-- 2025-11-20T05:56:10.958Z -->  
 [usa-flag-v0](../../p5projects/usa-flag-v0-pBmL5LYfO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pBmL5LYfO)]<!-- 2025-05-25T19:03:08.772Z -->  
 [video meter rgb long](../../p5projects/video%20meter%20rgb%20long-aJkcqKahg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/aJkcqKahg)]<!-- 2023-05-09T23:50:31.282Z -->  
 [video pixel](../../p5projects/video%20pixel-sJM2AMf5T) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sJM2AMf5T)]<!-- 2023-05-10T00:20:57.826Z -->  

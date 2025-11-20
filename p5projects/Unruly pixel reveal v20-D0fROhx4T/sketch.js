@@ -67,7 +67,6 @@ function draw() {
   }
 }
 
-
 function mouseDragged() {
   // console.log('mouseDragged');
 
@@ -89,37 +88,6 @@ function mouseDragged() {
   let onCanvas = inX && inY;
   // required to prevent touch drag moving canvas on mobile
   return !onCanvas;
-}
-
-function paint_line(mpt, ppt) {
-  let x1 = ppt.x;
-  let y1 = ppt.y;
-  let x2 = mpt.x;
-  let y2 = mpt.y;
-  // console.log('paint_line x1', x1, 'y1', y1, 'x2', x2, 'y2', y2);
-
-  let dx = x2 - x1;
-  let dy = y2 - y1;
-  let step = abs(dy);
-  if (abs(dx) >= abs(dy)) {
-    step = abs(dx);
-  }
-  dx = dx / step;
-  dy = dy / step;
-  if (step < 2) { 
-    // console.log('step', step, 'dx', dx);
-    return;
-  }
-  let x = x1;
-  let y = y1;
-  let g = my.gridSize;
-  dx = dx * g;
-  dy = dy * g;
-  for (let i = 0; i <= step; i += g) {
-    new FatPixel(x, y, { replace: 1 });
-    x = x + dx;
-    y = y + dy;
-  }
 }
 
 // https://en.wikipedia.org/wiki/Digital_differential_analyzer_(graphics_algorithm)
