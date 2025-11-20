@@ -77,7 +77,7 @@ function dropAction() {
 }
 
 function clearAction() {
-  my.layer.background(0);
+  if (my.layer) my.layer.background(0);
   my.items = [];
 }
 
