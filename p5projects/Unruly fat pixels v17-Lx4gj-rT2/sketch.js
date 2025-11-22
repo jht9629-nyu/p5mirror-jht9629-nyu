@@ -9,9 +9,9 @@ function setup() {
   my.useMousePressed = false;
   my.items = [];
   my.doPaint = false;
-  my.gridCount = 128;
+  my.gridCount = 64;
   if (windowWidth < 600) my.gridCount = 32;
-  my.restoreSteps = 16;
+  my.restoreSteps = 8;
   my.doRestore = true;
   my.doColor = true;
   my.showPose = false;
@@ -101,7 +101,8 @@ function create_video_ready() {
   my.dHeight = width * my.aspect;
   my.vscale = layer.width / width;
 
-  my.gridSize = int(layer.width / my.gridCount);
+  let m = max(layer.width, layer.height);
+  my.gridSize = int(m / my.gridCount);
 
   fillAction();
 }

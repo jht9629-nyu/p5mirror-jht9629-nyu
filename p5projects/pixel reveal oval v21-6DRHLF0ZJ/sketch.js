@@ -68,6 +68,8 @@ function draw() {
     my.periodTime = 0;
     stopAction();
   }
+  
+  my.fpsSpan.html(frameRate().toFixed(1));
 }
 
 function mouseDragged() {
@@ -92,9 +94,6 @@ function mouseDragged() {
   // required to prevent touch drag moving canvas on mobile
   return !onCanvas;
 }
-
-// https://en.wikipedia.org/wiki/Digital_differential_analyzer_(graphics_algorithm)
-// https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
 
 function canvas_mousePressed() {
   // console.log('mousePressed');

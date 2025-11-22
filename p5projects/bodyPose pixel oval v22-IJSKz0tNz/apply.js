@@ -11,6 +11,7 @@ function apply_oval() {
       let pt = ent[0];
       let x = pt.x;
       let y = pt.y + pt.w * 0.1;
+      // let rx = pt.w * 1.8;
       let rx = pt.w * 0.8;
       let ry = pt.w;
 
@@ -95,6 +96,9 @@ function paint_line(mpt, ppt) {
     y = y + dy;
   }
 }
+
+// https://en.wikipedia.org/wiki/Digital_differential_analyzer_(graphics_algorithm)
+// https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
 
 function apply_nose_wind() {
   if (!my.doWind) return;

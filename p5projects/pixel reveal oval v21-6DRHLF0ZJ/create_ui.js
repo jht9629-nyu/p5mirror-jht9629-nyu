@@ -2,7 +2,7 @@
 
 function create_ui() {
   //
-  createSpan("v19.3") //
+  createSpan("v19.3"); //
   createSpan("[");
   createCheckbox("doTrack", my.doTrack) //
     .style("display:inline")
@@ -34,6 +34,7 @@ function create_ui() {
     .mousePressed(stopAction);
   createButton("random") //
     .mousePressed(randomAction);
+  my.fpsSpan = createSpan("");
 }
 
 function fillAction() {
@@ -50,7 +51,10 @@ function fillAction() {
 }
 
 function items_add(item, opt) {
-  if (! my.doPaint) return;
+  if (my.doPaint) {
+    item.draw();
+    return;
+  }
   my.items.push(item);
   if (opt.replace && my.items.length > my.itemTrimCount) {
     my.items.splice(0, 1);

@@ -2,7 +2,7 @@
 
 function apply_oval() {
   if (!my.doOval) return;
-  my.radiateAngle = random(360);
+  // my.radiateAngle = random(360);
   for (let ent of my.last_nose_pos) {
     if (ent.length < 1) {
       continue;
@@ -24,7 +24,7 @@ function apply_oval() {
     paint_line({ x: x1, y: y1 }, { x: x2, y: y2 });
     // paint_line({ x: x2, y: y2 }, { x: x1, y: y1 });
   }
-  // my.radiateAngle = (my.radiateAngle + 1) % 360;
+  my.radiateAngle = (my.radiateAngle + 1) % 360;
 }
 
 function apply_track() {
@@ -93,6 +93,9 @@ function paint_line(mpt, ppt) {
     y = y + dy;
   }
 }
+
+// https://en.wikipedia.org/wiki/Digital_differential_analyzer_(graphics_algorithm)
+// https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm
 
 function apply_nose_wind() {
   if (!my.doWind) return;

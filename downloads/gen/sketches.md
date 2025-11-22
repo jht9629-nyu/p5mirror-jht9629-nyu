@@ -99,7 +99,7 @@
 [BodyPose - Nose](../../p5projects/BodyPose%20-%20Nose-ZTHbl3gj6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZTHbl3gj6)]<!-- 2024-10-30T01:06:46.763Z -->  
 [BodyPose - Nose v2](../../p5projects/BodyPose%20-%20Nose%20v2-R_V1zXMRt) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/R_V1zXMRt)]<!-- 2024-10-30T01:16:45.085Z -->  
 [BodyPose - single image v0](../../p5projects/BodyPose%20-%20single%20image%20v0-JWggodbvY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/JWggodbvY)]<!-- 2025-11-20T19:25:52.769Z -->  
-[bodyPose pixel oval v22](../../p5projects/bodyPose%20pixel%20oval%20v22-IJSKz0tNz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/IJSKz0tNz)]<!-- 2025-11-20T20:18:59.158Z -->  
+[bodyPose pixel oval v22](../../p5projects/bodyPose%20pixel%20oval%20v22-IJSKz0tNz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/IJSKz0tNz)]<!-- 2025-11-21T02:32:43.815Z -->  
 [bodyPose-blazePose-keypoints v0](../../p5projects/bodyPose-blazePose-keypoints%20v0-lbIuVFbNG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/lbIuVFbNG)]<!-- 2025-11-20T17:17:07.266Z -->  
 [bodySegmentation-mask-body-parts](../../p5projects/bodySegmentation-mask-body-parts-0fneGHlBO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/0fneGHlBO)]<!-- 2024-10-30T13:05:27.736Z -->  
 [bodySegmentation-mask-body-parts v0](../../p5projects/bodySegmentation-mask-body-parts%20v0-J4z_gwHVu) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/J4z_gwHVu)]<!-- 2025-03-27T02:35:58.726Z -->  
@@ -647,7 +647,7 @@
 [photo-booth 31](../../p5projects/photo-booth%2031-Kwe9ZrOpK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Kwe9ZrOpK)]<!-- 2025-04-25T15:51:36.277Z -->  
 [Physarum Letters -- jht remix](../../p5projects/Physarum%20Letters%20-%20jht%20remix-zVQJNjK8R) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zVQJNjK8R)]<!-- 2023-10-10T14:15:37.222Z -->  
 [pink purple circles copy](../../p5projects/pink%20purple%20circles%20copy-ANfC_Xawe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ANfC_Xawe)]<!-- 2025-09-22T18:03:46.467Z -->  
-[pixel reveal oval v21](../../p5projects/pixel%20reveal%20oval%20v21-6DRHLF0ZJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6DRHLF0ZJ)]<!-- 2025-11-20T06:42:02.080Z -->  
+[pixel reveal oval v21](../../p5projects/pixel%20reveal%20oval%20v21-6DRHLF0ZJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6DRHLF0ZJ)]<!-- 2025-11-21T02:29:42.230Z -->  
 [pixel-center](../../p5projects/pixel-center-BtTb0NzK9) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/BtTb0NzK9)]<!-- 2023-05-24T00:18:58.680Z -->  
 [pixel-grid](../../p5projects/pixel-grid-twgS6eWRZ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/twgS6eWRZ)]<!-- 2024-07-24T11:10:57.831Z -->  
 [pixel-scope](../../p5projects/pixel-scope-_0fWGg7ni) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_0fWGg7ni)]<!-- 2025-07-30T15:17:03.698Z -->  
@@ -827,7 +827,7 @@
 [Unexpected cut by FabriGu v0](../../p5projects/Unexpected%20cut%20by%20FabriGu%20v0-Z3eRvpZqL0) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Z3eRvpZqL0)]<!-- 2025-03-24T12:35:48.087Z -->  
 [Unexpected cut v0 - FabriGu](../../p5projects/Unexpected%20cut%20v0%20-%20FabriGu-jNIoZhDk1) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jNIoZhDk1)]<!-- 2025-03-24T10:29:38.783Z -->  
 [Unexpected cut v1](../../p5projects/Unexpected%20cut%20v1-bQHOejZlG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/bQHOejZlG)]<!-- 2025-03-24T16:23:16.494Z -->  
-[Unruly fat pixels v17](../../p5projects/Unruly%20fat%20pixels%20v17-Lx4gj-rT2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Lx4gj-rT2)]<!-- 2025-11-17T18:38:50.781Z -->  
+[Unruly fat pixels v17](../../p5projects/Unruly%20fat%20pixels%20v17-Lx4gj-rT2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Lx4gj-rT2)]<!-- 2025-11-22T17:54:28.416Z -->  
 [Unruly fat pixels v18](../../p5projects/Unruly%20fat%20pixels%20v18-m483LSIQy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/m483LSIQy)]<!-- 2025-11-18T21:13:25.080Z -->  
 [Unruly fat pixels v19](../../p5projects/Unruly%20fat%20pixels%20v19-7nGbPQ4qP) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7nGbPQ4qP)]<!-- 2025-11-19T19:22:51.347Z -->  
 [Unruly pixel reveal v20](../../p5projects/Unruly%20pixel%20reveal%20v20-D0fROhx4T) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/D0fROhx4T)]<!-- 2025-11-20T05:56:10.958Z -->  
