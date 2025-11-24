@@ -1,2 +1,0 @@
-echo download 1 "Unruly fat pixels v17-Lx4gj-rT2"
-curl -s https://editor.p5js.org/editor/projects/Lx4gj-rT2/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/Unruly fat pixels v17-Lx4gj-rT2.zip"
