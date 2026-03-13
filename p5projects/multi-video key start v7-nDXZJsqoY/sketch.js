@@ -2,6 +2,9 @@
 // multi-video key start v7
 // preload vs. completion call back
 
+// eg. https://p5videokit.github.io/ims03-olivia-GirlTime/images/1.mov
+// repo https://github.com/p5videokit/ims03-olivia-GirlTime
+
 // keys to start/stop video 1,2 | 3,4 | 5,6 | 7,8 | 9,0 | -,=
 // 6 videos are layout in top quarter of canvas
 // space key OR mouse press to show next 1 of 12 videos

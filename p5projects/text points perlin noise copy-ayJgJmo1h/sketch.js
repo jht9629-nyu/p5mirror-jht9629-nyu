@@ -5,7 +5,7 @@ let my = {};
 // my.font;
 // my.pts;
 my.pt_size = 1;
-my.text = 'ICM 2024';
+my.text = 'ICM 2025';
 
 function preload() {
   my.font = loadFont("LeagueGothic-Regular.otf");

@@ -1,5 +1,20 @@
 # Sketches for jht9629-nyu
-921 sketches  
+933 sketches  
+[Potent scribe](../../p5projects/Potent%20scribe-y7LZlOIu0) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/y7LZlOIu0)]<!-- 2026-03-13T15:07:51.345Z -->  
+[faceMesh-keypoints --ml5 v1](../../p5projects/faceMesh-keypoints%20-ml5%20v1-fonbbWC06) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fonbbWC06)]<!-- 2026-03-13T10:13:24.900Z -->  
+[Fast speak](../../p5projects/Fast%20speak-5wnAEBJnR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/5wnAEBJnR)]<!-- 2026-03-12T21:39:42.283Z -->  
+[P\_3\_2\_4\_01 v0](../../p5projects/P_3_2_4_01%20v0-a-yLz4ucR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/a-yLz4ucR)]<!-- 2026-03-05T04:38:38.999Z -->  
+[Atom brontomerus](../../p5projects/Atom%20brontomerus-oc6ZatqXA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/oc6ZatqXA)]<!-- 2026-03-04T12:30:16.784Z -->  
+[faceMesh-keypoints v1](../../p5projects/faceMesh-keypoints%20v1-tnEBxY2SB) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tnEBxY2SB)]<!-- 2026-03-04T12:29:09.660Z -->  
+[faceMesh-keypoints --ml5](../../p5projects/faceMesh-keypoints%20-ml5-9fOM25TRl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl)]<!-- 2026-03-03T01:24:24.814Z -->  
+[Final copy](../../p5projects/Final%20copy-Aw9yteNgV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Aw9yteNgV)]<!-- 2025-12-08T20:19:49.750Z -->  
+[OpenAI API Example-ArtistBot copy](../../p5projects/OpenAI%20API%20Example-ArtistBot%20copy-2szUX-iU7) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2szUX-iU7)]<!-- 2025-12-08T20:09:13.681Z -->  
+[Final copy](../../p5projects/Final%20copy-HJlpNjs7w) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/HJlpNjs7w)]<!-- 2025-12-08T19:30:34.490Z -->  
+[P.Comp - p5.web serial test copy](../../p5projects/P.Comp%20-%20p5.web%20serial%20test%20copy-0zXo9HbXn) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/0zXo9HbXn)]<!-- 2025-12-03T20:28:03.548Z -->  
+[multi-video key start v7](../../p5projects/multi-video%20key%20start%20v7-nDXZJsqoY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nDXZJsqoY)]<!-- 2025-11-24T20:26:53.329Z -->  
+[bouncing ball drum machine copy](../../p5projects/bouncing%20ball%20drum%20machine%20copy-jIQFCU1Q2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jIQFCU1Q2)]<!-- 2025-11-24T20:05:56.386Z -->  
+[bouncing ball drum machine copy](../../p5projects/bouncing%20ball%20drum%20machine%20copy-EHkBqp3wX) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/EHkBqp3wX)]<!-- 2025-11-24T17:39:50.618Z -->  
+[text points perlin noise copy](../../p5projects/text%20points%20perlin%20noise%20copy-ayJgJmo1h) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ayJgJmo1h)]<!-- 2025-11-24T15:56:01.695Z -->  
 [Unruly fat pixels v17](../../p5projects/Unruly%20fat%20pixels%20v17-Lx4gj-rT2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Lx4gj-rT2)]<!-- 2025-11-22T18:05:38.141Z -->  
 [bodyPose pixel oval v22](../../p5projects/bodyPose%20pixel%20oval%20v22-IJSKz0tNz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/IJSKz0tNz)]<!-- 2025-11-21T02:32:43.815Z -->  
 [pixel reveal oval v21](../../p5projects/pixel%20reveal%20oval%20v21-6DRHLF0ZJ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6DRHLF0ZJ)]<!-- 2025-11-21T02:29:42.230Z -->  
@@ -276,7 +291,6 @@
 [Slime Molds v2](../../p5projects/Slime%20Molds%20v2-n4PPY4sF1) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/n4PPY4sF1)]<!-- 2025-04-23T22:31:31.598Z -->  
 [Slime Molds v1](../../p5projects/Slime%20Molds%20v1-JG8Tv5W90) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/JG8Tv5W90)]<!-- 2025-04-21T16:58:56.085Z -->  
 [Slime Molds v0](../../p5projects/Slime%20Molds%20v0-Ol61gpdR1) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Ol61gpdR1)]<!-- 2025-04-21T16:46:03.272Z -->  
-[multi-video key start v7](../../p5projects/multi-video%20key%20start%20v7-nDXZJsqoY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nDXZJsqoY)]<!-- 2025-04-18T11:27:29.280Z -->  
 [localStorage v1](../../p5projects/localStorage%20v1-qz9-Y-Sc4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qz9-Y-Sc4)]<!-- 2025-04-17T21:10:26.144Z -->  
 [get\_url\_params v2](../../p5projects/get_url_params%20v2-I9vT_uniR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/I9vT_uniR)]<!-- 2025-04-17T21:07:24.530Z -->  
 [lib videoKit v1](../../p5projects/lib%20videoKit%20v1-CAtSXsCDI) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CAtSXsCDI)]<!-- 2025-04-17T01:12:48.395Z -->  
@@ -414,7 +428,6 @@
 [2024-11-30-Matter Triangle](../../p5projects/2024-11-30-Matter%20Triangle-R-BDJJkkR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/R-BDJJkkR)]<!-- 2024-11-30T16:00:26.053Z -->  
 [mo-gallery-rroom renewal-rroom copy](../../p5projects/mo-gallery-rroom%20renewal-rroom%20copy-5k5yNIimz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/5k5yNIimz)]<!-- 2024-11-25T03:14:04.134Z -->  
 [2024-11-21-yoga5.js](../../p5projects/2024-11-21-yoga5.js-uiGpjxuK4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/uiGpjxuK4)]<!-- 2024-11-21T07:51:46.631Z -->  
-[text points perlin noise copy](../../p5projects/text%20points%20perlin%20noise%20copy-ayJgJmo1h) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ayJgJmo1h)]<!-- 2024-11-21T07:38:25.901Z -->  
 [text points perlin noise copy](../../p5projects/text%20points%20perlin%20noise%20copy-O4APPvw4J) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/O4APPvw4J)]<!-- 2024-11-21T07:33:01.015Z -->  
 [Truchet Therapeutic - evolution](../../p5projects/Truchet%20Therapeutic%20-%20evolution-aj-hT_W1O) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/aj-hT_W1O)]<!-- 2024-11-16T16:14:17.639Z -->  
 [noise detecter copy](../../p5projects/noise%20detecter%20copy-GXm_kvVjg5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/GXm_kvVjg5)]<!-- 2024-11-14T18:49:39.460Z -->  
@@ -522,7 +535,6 @@
 [faceMesh mesh\_nits v3](../../p5projects/faceMesh%20mesh_nits%20v3-hFnQmY-Jy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hFnQmY-Jy)]<!-- 2024-08-15T01:23:10.153Z -->  
 [faceMesh mesh\_nits v2](../../p5projects/faceMesh%20mesh_nits%20v2-7y2gqHeZz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz)]<!-- 2024-08-15T01:07:59.493Z -->  
 [faceMesh mesh\_nits](../../p5projects/faceMesh%20mesh_nits-PrJvjyxb6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6)]<!-- 2024-08-13T12:53:58.965Z -->  
-[faceMesh-keypoints --ml5](../../p5projects/faceMesh-keypoints%20-ml5-9fOM25TRl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/9fOM25TRl)]<!-- 2024-08-13T01:43:28.980Z -->  
 [faceMesh-keypoints --ml5](../../p5projects/faceMesh-keypoints%20-ml5-L6iIpOR5H) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/L6iIpOR5H)]<!-- 2024-08-13T01:41:18.216Z -->  
 [Coding Train ml5 collaboration\_Final copy](../../p5projects/Coding%20Train%20ml5%20collaboration_Final%20copy-6rcDqwU3-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/6rcDqwU3-)]<!-- 2024-08-12T20:23:04.139Z -->  
 [Coding Train ml5 collaboration\_faceMeshOnly copy](../../p5projects/Coding%20Train%20ml5%20collaboration_faceMeshOnly%20copy-vd3vqwbyh) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vd3vqwbyh)]<!-- 2024-08-12T20:21:57.655Z -->  
