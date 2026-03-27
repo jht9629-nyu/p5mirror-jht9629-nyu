@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[933 sketches 2026-03-13T15:07:51.345Z](./downloads/gen/sketches_recent.md)
+[941 sketches 2026-03-27T15:16:19.170Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -244,6 +244,7 @@
 - [Handtrack with shadertoy v0-1Qtz0w1Lf](./p5projects/Handtrack%20with%20shadertoy%20v0-1Qtz0w1Lf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1Qtz0w1Lf)]
 - [Harmless tortellini-prAzhqM4x](./p5projects/Harmless%20tortellini-prAzhqM4x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/prAzhqM4x)]
 - [Heathered jackal-3q30yHV1e](./p5projects/Heathered%20jackal-3q30yHV1e) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3q30yHV1e)]
+- [Hello, p5.js 2.0\! Example VF Sketch v0-L7ob7qccY](./p5projects/Hello%2C%20p5.js%202.0!%20Example%20VF%20Sketch%20v0-L7ob7qccY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/L7ob7qccY)]
 - [ICM - WK2 - animated shape copy-RxiAfmzEx](./p5projects/ICM%20-%20WK2%20-%20animated%20shape%20copy-RxiAfmzEx) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RxiAfmzEx)]
 - [ICM - WK2 - variable scope-O43o-j1F8](./p5projects/ICM%20-%20WK2%20-%20variable%20scope-O43o-j1F8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/O43o-j1F8)]
 - [ICM - WK3 - checking multiple conditions copy-WkmsJvRHs](./p5projects/ICM%20-%20WK3%20-%20checking%20multiple%20conditions%20copy-WkmsJvRHs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/WkmsJvRHs)]
@@ -609,6 +610,7 @@
 - [ims noise class copy-Gt66WH-3V](./p5projects/ims%20noise%20class%20copy-Gt66WH-3V) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Gt66WH-3V)]
 - [ims noise inst copy-Zhkj6TLgv](./p5projects/ims%20noise%20inst%20copy-Zhkj6TLgv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Zhkj6TLgv)]
 - [ims-01 bounce fullscreen copy-N50\_4c16\_](./p5projects/ims-01%20bounce%20fullscreen%20copy-N50_4c16_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/N50_4c16_)]
+- [ims-01 bounce fullscreen deltaTime-mWssDB4v-](./p5projects/ims-01%20bounce%20fullscreen%20deltaTime-mWssDB4v-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/mWssDB4v-)]
 - [ims-01 bounce fullscreen deltaTime-zFKAqeENv](./p5projects/ims-01%20bounce%20fullscreen%20deltaTime-zFKAqeENv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zFKAqeENv)]
 - [ims-01 bounce fullscreen-Mpgun-Kti](./p5projects/ims-01%20bounce%20fullscreen-Mpgun-Kti) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)]
 - [ims-01-Weighted Voronoi Image Stippling v0-FogwwiKOk](./p5projects/ims-01-Weighted%20Voronoi%20Image%20Stippling%20v0-FogwwiKOk) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/FogwwiKOk)]
@@ -622,10 +624,15 @@
 - [ims-luka-2025-03-PwJIUG1y5](./p5projects/ims-luka-2025-03-PwJIUG1y5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PwJIUG1y5)]
 - [ims-sibo-2025-03-1RcbLNxFg](./p5projects/ims-sibo-2025-03-1RcbLNxFg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1RcbLNxFg)]
 - [ims-valera-2025-03-xoAveFPvO](./p5projects/ims-valera-2025-03-xoAveFPvO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/xoAveFPvO)]
+- [ims01-Althea copy-8knza3JaF](./p5projects/ims01-Althea%20copy-8knza3JaF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8knza3JaF)]
+- [ims01-Arial copy-vBGuTcWj6](./p5projects/ims01-Arial%20copy-vBGuTcWj6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vBGuTcWj6)]
 - [ims01-Jiaz v0-lINisc3El](./p5projects/ims01-Jiaz%20v0-lINisc3El) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/lINisc3El)]
 - [ims01-Vi v1-87bm2iiek](./p5projects/ims01-Vi%20v1-87bm2iiek) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/87bm2iiek)]
 - [ims01-Vicky copy-DHSkFnUsK](./p5projects/ims01-Vicky%20copy-DHSkFnUsK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DHSkFnUsK)]
+- [ims01-gabriel copy-b4GdH7TSy](./p5projects/ims01-gabriel%20copy-b4GdH7TSy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/b4GdH7TSy)]
+- [ims01-gabriel copy-vB0QRSxBI](./p5projects/ims01-gabriel%20copy-vB0QRSxBI) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vB0QRSxBI)]
 - [ims01-jht-8N3rb3TMD](./p5projects/ims01-jht-8N3rb3TMD) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8N3rb3TMD)]
+- [ims01-jht-ov1oy3CM8](./p5projects/ims01-jht-ov1oy3CM8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ov1oy3CM8)]
 - [ims01-omi v0-wlzgvuYeV](./p5projects/ims01-omi%20v0-wlzgvuYeV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wlzgvuYeV)]
 - [ims02 Unexpected-cut-mask-v\_diZAkZQ](./p5projects/ims02%20Unexpected-cut-mask-v_diZAkZQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/v_diZAkZQ)]
 - [ims02-Vi v1-cc0BpWomv](./p5projects/ims02-Vi%20v1-cc0BpWomv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cc0BpWomv)]
@@ -900,6 +907,7 @@
 - [two circles object literal-N5pj99g-N](./p5projects/two%20circles%20object%20literal-N5pj99g-N) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/N5pj99g-N)]
 - [two columns draw\_random, draw\_bright-D1lGG8qKZ](./p5projects/two%20columns%20draw_random%2C%20draw_bright-D1lGG8qKZ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/D1lGG8qKZ)]
 - [usa-flag-v0-pBmL5LYfO](./p5projects/usa-flag-v0-pBmL5LYfO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pBmL5LYfO)]
+- [video glitch thing copy copy-tF1Dwm4Aa](./p5projects/video%20glitch%20thing%20copy%20copy-tF1Dwm4Aa) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tF1Dwm4Aa)]
 - [video meter rgb long-aJkcqKahg](./p5projects/video%20meter%20rgb%20long-aJkcqKahg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/aJkcqKahg)]
 - [video pixel meter-p0ato8vra](./p5projects/video%20pixel%20meter-p0ato8vra) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/p0ato8vra)]
 - [video pixel scan copy-heaOtyFJz](./p5projects/video%20pixel%20scan%20copy-heaOtyFJz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/heaOtyFJz)]

@@ -1,108 +1,59 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "Potent scribe-y7LZlOIu0"
-rm -rf "./Potent scribe-y7LZlOIu0"
-mkdir "./Potent scribe-y7LZlOIu0"
-pushd "./Potent scribe-y7LZlOIu0" > /dev/null
-unzip -q "../../downloads/zips/Potent scribe-y7LZlOIu0"
+echo unzip 1 "ims01-jht-ov1oy3CM8"
+rm -rf "./ims01-jht-ov1oy3CM8"
+mkdir "./ims01-jht-ov1oy3CM8"
+pushd "./ims01-jht-ov1oy3CM8" > /dev/null
+unzip -q "../../downloads/zips/ims01-jht-ov1oy3CM8"
 popd > /dev/null
 #
-echo unzip 2 "faceMesh-keypoints -ml5 v1-fonbbWC06"
-rm -rf "./faceMesh-keypoints -ml5 v1-fonbbWC06"
-mkdir "./faceMesh-keypoints -ml5 v1-fonbbWC06"
-pushd "./faceMesh-keypoints -ml5 v1-fonbbWC06" > /dev/null
-unzip -q "../../downloads/zips/faceMesh-keypoints -ml5 v1-fonbbWC06"
+echo unzip 2 "video glitch thing copy copy-tF1Dwm4Aa"
+rm -rf "./video glitch thing copy copy-tF1Dwm4Aa"
+mkdir "./video glitch thing copy copy-tF1Dwm4Aa"
+pushd "./video glitch thing copy copy-tF1Dwm4Aa" > /dev/null
+unzip -q "../../downloads/zips/video glitch thing copy copy-tF1Dwm4Aa"
 popd > /dev/null
 #
-echo unzip 3 "Fast speak-5wnAEBJnR"
-rm -rf "./Fast speak-5wnAEBJnR"
-mkdir "./Fast speak-5wnAEBJnR"
-pushd "./Fast speak-5wnAEBJnR" > /dev/null
-unzip -q "../../downloads/zips/Fast speak-5wnAEBJnR"
+echo unzip 3 "ims01-gabriel copy-b4GdH7TSy"
+rm -rf "./ims01-gabriel copy-b4GdH7TSy"
+mkdir "./ims01-gabriel copy-b4GdH7TSy"
+pushd "./ims01-gabriel copy-b4GdH7TSy" > /dev/null
+unzip -q "../../downloads/zips/ims01-gabriel copy-b4GdH7TSy"
 popd > /dev/null
 #
-echo unzip 4 "P_3_2_4_01 v0-a-yLz4ucR"
-rm -rf "./P_3_2_4_01 v0-a-yLz4ucR"
-mkdir "./P_3_2_4_01 v0-a-yLz4ucR"
-pushd "./P_3_2_4_01 v0-a-yLz4ucR" > /dev/null
-unzip -q "../../downloads/zips/P_3_2_4_01 v0-a-yLz4ucR"
+echo unzip 4 "ims01-gabriel copy-vB0QRSxBI"
+rm -rf "./ims01-gabriel copy-vB0QRSxBI"
+mkdir "./ims01-gabriel copy-vB0QRSxBI"
+pushd "./ims01-gabriel copy-vB0QRSxBI" > /dev/null
+unzip -q "../../downloads/zips/ims01-gabriel copy-vB0QRSxBI"
 popd > /dev/null
 #
-echo unzip 5 "Atom brontomerus-oc6ZatqXA"
-rm -rf "./Atom brontomerus-oc6ZatqXA"
-mkdir "./Atom brontomerus-oc6ZatqXA"
-pushd "./Atom brontomerus-oc6ZatqXA" > /dev/null
-unzip -q "../../downloads/zips/Atom brontomerus-oc6ZatqXA"
+echo unzip 5 "ims01-Arial copy-vBGuTcWj6"
+rm -rf "./ims01-Arial copy-vBGuTcWj6"
+mkdir "./ims01-Arial copy-vBGuTcWj6"
+pushd "./ims01-Arial copy-vBGuTcWj6" > /dev/null
+unzip -q "../../downloads/zips/ims01-Arial copy-vBGuTcWj6"
 popd > /dev/null
 #
-echo unzip 6 "faceMesh-keypoints v1-tnEBxY2SB"
-rm -rf "./faceMesh-keypoints v1-tnEBxY2SB"
-mkdir "./faceMesh-keypoints v1-tnEBxY2SB"
-pushd "./faceMesh-keypoints v1-tnEBxY2SB" > /dev/null
-unzip -q "../../downloads/zips/faceMesh-keypoints v1-tnEBxY2SB"
+echo unzip 6 "ims01-Althea copy-8knza3JaF"
+rm -rf "./ims01-Althea copy-8knza3JaF"
+mkdir "./ims01-Althea copy-8knza3JaF"
+pushd "./ims01-Althea copy-8knza3JaF" > /dev/null
+unzip -q "../../downloads/zips/ims01-Althea copy-8knza3JaF"
 popd > /dev/null
 #
-echo unzip 7 "faceMesh-keypoints -ml5-9fOM25TRl"
-rm -rf "./faceMesh-keypoints -ml5-9fOM25TRl"
-mkdir "./faceMesh-keypoints -ml5-9fOM25TRl"
-pushd "./faceMesh-keypoints -ml5-9fOM25TRl" > /dev/null
-unzip -q "../../downloads/zips/faceMesh-keypoints -ml5-9fOM25TRl"
+echo unzip 7 "Hello, p5.js 2.0! Example VF Sketch v0-L7ob7qccY"
+rm -rf "./Hello, p5.js 2.0! Example VF Sketch v0-L7ob7qccY"
+mkdir "./Hello, p5.js 2.0! Example VF Sketch v0-L7ob7qccY"
+pushd "./Hello, p5.js 2.0! Example VF Sketch v0-L7ob7qccY" > /dev/null
+unzip -q "../../downloads/zips/Hello, p5.js 2.0! Example VF Sketch v0-L7ob7qccY"
 popd > /dev/null
 #
-echo unzip 8 "Final copy-Aw9yteNgV"
-rm -rf "./Final copy-Aw9yteNgV"
-mkdir "./Final copy-Aw9yteNgV"
-pushd "./Final copy-Aw9yteNgV" > /dev/null
-unzip -q "../../downloads/zips/Final copy-Aw9yteNgV"
-popd > /dev/null
-#
-echo unzip 9 "OpenAI API Example-ArtistBot copy-2szUX-iU7"
-rm -rf "./OpenAI API Example-ArtistBot copy-2szUX-iU7"
-mkdir "./OpenAI API Example-ArtistBot copy-2szUX-iU7"
-pushd "./OpenAI API Example-ArtistBot copy-2szUX-iU7" > /dev/null
-unzip -q "../../downloads/zips/OpenAI API Example-ArtistBot copy-2szUX-iU7"
-popd > /dev/null
-#
-echo unzip 10 "Final copy-HJlpNjs7w"
-rm -rf "./Final copy-HJlpNjs7w"
-mkdir "./Final copy-HJlpNjs7w"
-pushd "./Final copy-HJlpNjs7w" > /dev/null
-unzip -q "../../downloads/zips/Final copy-HJlpNjs7w"
-popd > /dev/null
-#
-echo unzip 11 "P.Comp - p5.web serial test copy-0zXo9HbXn"
-rm -rf "./P.Comp - p5.web serial test copy-0zXo9HbXn"
-mkdir "./P.Comp - p5.web serial test copy-0zXo9HbXn"
-pushd "./P.Comp - p5.web serial test copy-0zXo9HbXn" > /dev/null
-unzip -q "../../downloads/zips/P.Comp - p5.web serial test copy-0zXo9HbXn"
-popd > /dev/null
-#
-echo unzip 12 "multi-video key start v7-nDXZJsqoY"
-rm -rf "./multi-video key start v7-nDXZJsqoY"
-mkdir "./multi-video key start v7-nDXZJsqoY"
-pushd "./multi-video key start v7-nDXZJsqoY" > /dev/null
-unzip -q "../../downloads/zips/multi-video key start v7-nDXZJsqoY"
-popd > /dev/null
-#
-echo unzip 13 "bouncing ball drum machine copy-jIQFCU1Q2"
-rm -rf "./bouncing ball drum machine copy-jIQFCU1Q2"
-mkdir "./bouncing ball drum machine copy-jIQFCU1Q2"
-pushd "./bouncing ball drum machine copy-jIQFCU1Q2" > /dev/null
-unzip -q "../../downloads/zips/bouncing ball drum machine copy-jIQFCU1Q2"
-popd > /dev/null
-#
-echo unzip 14 "bouncing ball drum machine copy-EHkBqp3wX"
-rm -rf "./bouncing ball drum machine copy-EHkBqp3wX"
-mkdir "./bouncing ball drum machine copy-EHkBqp3wX"
-pushd "./bouncing ball drum machine copy-EHkBqp3wX" > /dev/null
-unzip -q "../../downloads/zips/bouncing ball drum machine copy-EHkBqp3wX"
-popd > /dev/null
-#
-echo unzip 15 "text points perlin noise copy-ayJgJmo1h"
-rm -rf "./text points perlin noise copy-ayJgJmo1h"
-mkdir "./text points perlin noise copy-ayJgJmo1h"
-pushd "./text points perlin noise copy-ayJgJmo1h" > /dev/null
-unzip -q "../../downloads/zips/text points perlin noise copy-ayJgJmo1h"
+echo unzip 8 "ims-01 bounce fullscreen deltaTime-mWssDB4v-"
+rm -rf "./ims-01 bounce fullscreen deltaTime-mWssDB4v-"
+mkdir "./ims-01 bounce fullscreen deltaTime-mWssDB4v-"
+pushd "./ims-01 bounce fullscreen deltaTime-mWssDB4v-" > /dev/null
+unzip -q "../../downloads/zips/ims-01 bounce fullscreen deltaTime-mWssDB4v-"
 popd > /dev/null
 
 cd ..

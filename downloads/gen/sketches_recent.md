@@ -1,5 +1,13 @@
 # Sketches for jht9629-nyu
-933 sketches  
+941 sketches  
+[ims01-jht](../../p5projects/ims01-jht-ov1oy3CM8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ov1oy3CM8)]<!-- 2026-03-27T15:16:19.170Z -->  
+[video glitch thing copy copy](../../p5projects/video%20glitch%20thing%20copy%20copy-tF1Dwm4Aa) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tF1Dwm4Aa)]<!-- 2026-03-27T14:25:28.416Z -->  
+[ims01-gabriel copy](../../p5projects/ims01-gabriel%20copy-b4GdH7TSy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/b4GdH7TSy)]<!-- 2026-03-27T14:21:01.949Z -->  
+[ims01-gabriel copy](../../p5projects/ims01-gabriel%20copy-vB0QRSxBI) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vB0QRSxBI)]<!-- 2026-03-27T14:20:44.077Z -->  
+[ims01-Arial copy](../../p5projects/ims01-Arial%20copy-vBGuTcWj6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vBGuTcWj6)]<!-- 2026-03-27T14:07:16.507Z -->  
+[ims01-Althea copy](../../p5projects/ims01-Althea%20copy-8knza3JaF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8knza3JaF)]<!-- 2026-03-27T13:55:37.489Z -->  
+[Hello, p5.js 2.0\! Example VF Sketch v0](../../p5projects/Hello%2C%20p5.js%202.0!%20Example%20VF%20Sketch%20v0-L7ob7qccY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/L7ob7qccY)]<!-- 2026-03-27T12:49:02.511Z -->  
+[ims-01 bounce fullscreen deltaTime](../../p5projects/ims-01%20bounce%20fullscreen%20deltaTime-mWssDB4v-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/mWssDB4v-)]<!-- 2026-03-27T12:38:39.737Z -->  
 [Potent scribe](../../p5projects/Potent%20scribe-y7LZlOIu0) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/y7LZlOIu0)]<!-- 2026-03-13T15:07:51.345Z -->  
 [faceMesh-keypoints --ml5 v1](../../p5projects/faceMesh-keypoints%20-ml5%20v1-fonbbWC06) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fonbbWC06)]<!-- 2026-03-13T10:13:24.900Z -->  
 [Fast speak](../../p5projects/Fast%20speak-5wnAEBJnR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/5wnAEBJnR)]<!-- 2026-03-12T21:39:42.283Z -->  

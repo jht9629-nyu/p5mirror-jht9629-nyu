@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-933 sketches  
+941 sketches  
 [0\_2\_trigger\_several\_sounds copy](../../p5projects/0_2_trigger_several_sounds%20copy-DCmsLNzk5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)]<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](../../p5projects/0_2_trigger_several_sounds%20luisa_NYU-8svv4J26x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)]<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](../../p5projects/0_7_FFT%20by%20luisa_NYUpy-ZfrLYKf4u) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)]<!-- 2025-03-10T21:47:40.953Z -->  
@@ -368,6 +368,7 @@
 [heavy RAM webcam copy](../../p5projects/heavy%20RAM%20webcam%20copy-wKnsTemeO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wKnsTemeO)]<!-- 2025-11-10T15:30:03.835Z -->  
 [heavy RAM webcam copy](../../p5projects/heavy%20RAM%20webcam%20copy-dpsVadEzr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/dpsVadEzr)]<!-- 2025-11-10T18:46:57.830Z -->  
 [hello-p5-song](../../p5projects/hello-p5-song-NeWYQtl2J) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/NeWYQtl2J)]<!-- 2023-08-02T15:09:43.632Z -->  
+[Hello, p5.js 2.0\! Example VF Sketch v0](../../p5projects/Hello%2C%20p5.js%202.0!%20Example%20VF%20Sketch%20v0-L7ob7qccY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/L7ob7qccY)]<!-- 2026-03-27T12:49:02.511Z -->  
 [ICM - WK2 - animated shape copy](../../p5projects/ICM%20-%20WK2%20-%20animated%20shape%20copy-RxiAfmzEx) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RxiAfmzEx)]<!-- 2024-09-10T18:00:20.824Z -->  
 [ICM - WK2 - variable scope](../../p5projects/ICM%20-%20WK2%20-%20variable%20scope-O43o-j1F8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/O43o-j1F8)]<!-- 2024-09-10T18:02:36.250Z -->  
 [ICM - WK3 - checking multiple conditions copy](../../p5projects/ICM%20-%20WK3%20-%20checking%20multiple%20conditions%20copy-WkmsJvRHs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/WkmsJvRHs)]<!-- 2024-09-17T17:41:54.060Z -->  
@@ -436,6 +437,7 @@
 [ims-01 bounce fullscreen](../../p5projects/ims-01%20bounce%20fullscreen-Mpgun-Kti) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)]<!-- 2025-03-26T22:15:38.105Z -->  
 [ims-01 bounce fullscreen copy](../../p5projects/ims-01%20bounce%20fullscreen%20copy-N50_4c16_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/N50_4c16_)]<!-- 2025-03-13T14:47:42.613Z -->  
 [ims-01 bounce fullscreen deltaTime](../../p5projects/ims-01%20bounce%20fullscreen%20deltaTime-zFKAqeENv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zFKAqeENv)]<!-- 2025-02-13T16:38:45.085Z -->  
+[ims-01 bounce fullscreen deltaTime](../../p5projects/ims-01%20bounce%20fullscreen%20deltaTime-mWssDB4v-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/mWssDB4v-)]<!-- 2026-03-27T12:38:39.737Z -->  
 [ims-01-Weighted Voronoi Image Stippling v0](../../p5projects/ims-01-Weighted%20Voronoi%20Image%20Stippling%20v0-FogwwiKOk) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/FogwwiKOk)]<!-- 2025-03-24T10:19:59.983Z -->  
 [ims-03-jht truchet tiles pause v2](../../p5projects/ims-03-jht%20truchet%20tiles%20pause%20v2-CYMdD77ySc) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CYMdD77ySc)]<!-- 2025-08-11T11:51:29.801Z -->  
 [ims-03-jht truchet tiles pause v3](../../p5projects/ims-03-jht%20truchet%20tiles%20pause%20v3-zZsfxeZjs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zZsfxeZjs)]<!-- 2025-08-19T22:59:18.851Z -->  
@@ -447,7 +449,12 @@
 [ims-valera-2025-03](../../p5projects/ims-valera-2025-03-xoAveFPvO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/xoAveFPvO)]<!-- 2025-05-02T12:39:54.677Z -->  
 [ims-Vicky-2025-03](../../p5projects/ims-Vicky-2025-03-tf5_F9y7q) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tf5_F9y7q)]<!-- 2025-05-02T12:39:11.577Z -->  
 [ims-W3-luna copy](../../p5projects/ims-W3-luna%20copy-OCp9BTPYo) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/OCp9BTPYo)]<!-- 2025-04-11T14:13:46.132Z -->  
+[ims01-Althea copy](../../p5projects/ims01-Althea%20copy-8knza3JaF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8knza3JaF)]<!-- 2026-03-27T13:55:37.489Z -->  
+[ims01-Arial copy](../../p5projects/ims01-Arial%20copy-vBGuTcWj6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vBGuTcWj6)]<!-- 2026-03-27T14:07:16.507Z -->  
+[ims01-gabriel copy](../../p5projects/ims01-gabriel%20copy-vB0QRSxBI) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vB0QRSxBI)]<!-- 2026-03-27T14:20:44.077Z -->  
+[ims01-gabriel copy](../../p5projects/ims01-gabriel%20copy-b4GdH7TSy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/b4GdH7TSy)]<!-- 2026-03-27T14:21:01.949Z -->  
 [ims01-jht](../../p5projects/ims01-jht-8N3rb3TMD) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8N3rb3TMD)]<!-- 2024-03-12T15:41:39.534Z -->  
+[ims01-jht](../../p5projects/ims01-jht-ov1oy3CM8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ov1oy3CM8)]<!-- 2026-03-27T15:16:19.170Z -->  
 [ims01-Jiaz v0](../../p5projects/ims01-Jiaz%20v0-lINisc3El) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/lINisc3El)]<!-- 2025-03-26T17:58:07.558Z -->  
 [ims01-omi v0](../../p5projects/ims01-omi%20v0-wlzgvuYeV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wlzgvuYeV)]<!-- 2025-03-26T23:29:29.583Z -->  
 [ims01-Vi v1](../../p5projects/ims01-Vi%20v1-87bm2iiek) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/87bm2iiek)]<!-- 2025-03-26T20:56:37.646Z -->  
@@ -844,6 +851,7 @@
 [Unruly fat pixels v19](../../p5projects/Unruly%20fat%20pixels%20v19-7nGbPQ4qP) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7nGbPQ4qP)]<!-- 2025-11-19T19:22:51.347Z -->  
 [Unruly pixel reveal v20](../../p5projects/Unruly%20pixel%20reveal%20v20-D0fROhx4T) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/D0fROhx4T)]<!-- 2025-11-20T05:56:10.958Z -->  
 [usa-flag-v0](../../p5projects/usa-flag-v0-pBmL5LYfO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pBmL5LYfO)]<!-- 2025-05-25T19:03:08.772Z -->  
+[video glitch thing copy copy](../../p5projects/video%20glitch%20thing%20copy%20copy-tF1Dwm4Aa) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tF1Dwm4Aa)]<!-- 2026-03-27T14:25:28.416Z -->  
 [video meter rgb long](../../p5projects/video%20meter%20rgb%20long-aJkcqKahg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/aJkcqKahg)]<!-- 2023-05-09T23:50:31.282Z -->  
 [video pixel](../../p5projects/video%20pixel-sJM2AMf5T) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sJM2AMf5T)]<!-- 2023-05-10T00:20:57.826Z -->  
 [video pixel meter](../../p5projects/video%20pixel%20meter-p0ato8vra) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/p0ato8vra)]<!-- 2023-05-09T15:45:14.893Z -->  
