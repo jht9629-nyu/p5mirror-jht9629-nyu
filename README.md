@@ -13,6 +13,9 @@ open https://nodejs.org/en/download
 
 # Fork this repo and name it p5mirror-p5name
 # where p5name is our editor.p5js user name
+# Edit settings to enable github pages
+# Edit repository details to point to your github page for repo
+
 # run this bash script in the root of your repo
 
 bin/mirror.sh --user p5name
@@ -20,7 +23,7 @@ bin/mirror.sh --user p5name
 # and then commit changes in github desktop
 
 # keep p5js editor changes in sync by running the command again
-# editte scripts will be downloaded
+# editted scripts will be downloaded
 
 ```
 
@@ -120,39 +123,25 @@ Generated listing of editor.p5js projects
 ## Usage
 
 ```
-
 # p5name is the place holder for your editor.p5js user name
-
 # fork this repo and name it p5mirror-p5name
-
 # in p5mirror-p5name folder, run bin/mirror.sh to
-
 # download p5js scripts for a user account
-
 # and create markdown listing files
-
 # only projects updated since last mirror are downloaded
-
 #
-
 bin/mirror.sh --user p5name
 
 # full update, download all projects
-
 #
-
 bin/mirror.sh --user p5name --full
 
 # run in verbose mode to show details of steps for debugging
-
 #
-
 bin/mirror.sh --user p5name --verbose
 
 # remove sketches not present online
-
 #
-
 bin/mirror.sh --user p5name --clean
 
 ```
