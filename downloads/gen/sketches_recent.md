@@ -1,8 +1,12 @@
 # Sketches for jht9629-nyu
-941 sketches  
-[ims01-jht](../../p5projects/ims01-jht-ov1oy3CM8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ov1oy3CM8)]<!-- 2026-03-27T15:16:19.170Z -->  
-[video glitch thing copy copy](../../p5projects/video%20glitch%20thing%20copy%20copy-tF1Dwm4Aa) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tF1Dwm4Aa)]<!-- 2026-03-27T14:25:28.416Z -->  
-[ims01-gabriel copy](../../p5projects/ims01-gabriel%20copy-b4GdH7TSy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/b4GdH7TSy)]<!-- 2026-03-27T14:21:01.949Z -->  
+944 sketches  
+[ims02-shader-trail](../../p5projects/ims02-shader-trail-kVeqUFD1O) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kVeqUFD1O)]<!-- 2026-04-01T18:19:16.277Z -->  
+[ims01-jerry](../../p5projects/ims01-jerry-tF1Dwm4Aa) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tF1Dwm4Aa)]<!-- 2026-04-01T18:12:37.290Z -->  
+[ims01-kylie](../../p5projects/ims01-kylie-sbenoMi1u) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sbenoMi1u)]<!-- 2026-04-01T17:58:35.303Z -->  
+[ims-01 bounce fullscreen](../../p5projects/ims-01%20bounce%20fullscreen-Mpgun-Kti) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)]<!-- 2026-04-01T17:51:35.344Z -->  
+[ims01-jht v2](../../p5projects/ims01-jht%20v2-_-jCP70dr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_-jCP70dr)]<!-- 2026-03-27T16:46:44.555Z -->  
+[ims01-jht](../../p5projects/ims01-jht-ov1oy3CM8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ov1oy3CM8)]<!-- 2026-03-27T16:46:01.184Z -->  
+[nametest01](../../p5projects/nametest01-Yt3xKiXE3) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Yt3xKiXE3)]<!-- 2026-03-27T16:45:24.510Z -->  
 [ims01-gabriel copy](../../p5projects/ims01-gabriel%20copy-vB0QRSxBI) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vB0QRSxBI)]<!-- 2026-03-27T14:20:44.077Z -->  
 [ims01-Arial copy](../../p5projects/ims01-Arial%20copy-vBGuTcWj6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vBGuTcWj6)]<!-- 2026-03-27T14:07:16.507Z -->  
 [ims01-Althea copy](../../p5projects/ims01-Althea%20copy-8knza3JaF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8knza3JaF)]<!-- 2026-03-27T13:55:37.489Z -->  
@@ -361,7 +365,6 @@
 [bodySegmentation-mask-body-parts v0](../../p5projects/bodySegmentation-mask-body-parts%20v0-J4z_gwHVu) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/J4z_gwHVu)]<!-- 2025-03-27T02:35:58.726Z -->  
 [portals by oliviaemlee v0](../../p5projects/portals%20by%20oliviaemlee%20v0-1nLfUa1PU) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1nLfUa1PU)]<!-- 2025-03-26T23:35:00.365Z -->  
 [ims01-omi v0](../../p5projects/ims01-omi%20v0-wlzgvuYeV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wlzgvuYeV)]<!-- 2025-03-26T23:29:29.583Z -->  
-[ims-01 bounce fullscreen](../../p5projects/ims-01%20bounce%20fullscreen-Mpgun-Kti) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)]<!-- 2025-03-26T22:15:38.105Z -->  
 [ims01-Vi v1](../../p5projects/ims01-Vi%20v1-87bm2iiek) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/87bm2iiek)]<!-- 2025-03-26T20:56:37.646Z -->  
 [ims01-Jiaz v0](../../p5projects/ims01-Jiaz%20v0-lINisc3El) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/lINisc3El)]<!-- 2025-03-26T17:58:07.558Z -->  
 [video scan radial v8](../../p5projects/video%20scan%20radial%20v8-2bjn_Nn9x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2bjn_Nn9x)]<!-- 2025-03-26T15:11:14.588Z -->  
