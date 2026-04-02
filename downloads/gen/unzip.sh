@@ -1,10 +1,17 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "ims02-shader-trail-kVeqUFD1O"
-rm -rf "./ims02-shader-trail-kVeqUFD1O"
-mkdir "./ims02-shader-trail-kVeqUFD1O"
-pushd "./ims02-shader-trail-kVeqUFD1O" > /dev/null
-unzip -q "../../downloads/zips/ims02-shader-trail-kVeqUFD1O"
+echo unzip 1 "get_url_params v2-I9vT_uniR"
+rm -rf "./get_url_params v2-I9vT_uniR"
+mkdir "./get_url_params v2-I9vT_uniR"
+pushd "./get_url_params v2-I9vT_uniR" > /dev/null
+unzip -q "../../downloads/zips/get_url_params v2-I9vT_uniR"
+popd > /dev/null
+#
+echo unzip 2 "localStorage v1-qz9-Y-Sc4"
+rm -rf "./localStorage v1-qz9-Y-Sc4"
+mkdir "./localStorage v1-qz9-Y-Sc4"
+pushd "./localStorage v1-qz9-Y-Sc4" > /dev/null
+unzip -q "../../downloads/zips/localStorage v1-qz9-Y-Sc4"
 popd > /dev/null
 
 cd ..
