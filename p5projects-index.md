@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[943 sketches 2026-04-02T07:03:37.817Z](./downloads/gen/sketches_recent.md)
+[944 sketches 2026-04-02T16:58:38.374Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -638,6 +638,7 @@
 - [ims01-omi v0-wlzgvuYeV](./p5projects/ims01-omi%20v0-wlzgvuYeV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wlzgvuYeV)]
 - [ims02 Unexpected-cut-mask-v\_diZAkZQ](./p5projects/ims02%20Unexpected-cut-mask-v_diZAkZQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/v_diZAkZQ)]
 - [ims02-Vi v1-cc0BpWomv](./p5projects/ims02-Vi%20v1-cc0BpWomv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cc0BpWomv)]
+- [ims02-shader-trail-kVeqUFD1O](./p5projects/ims02-shader-trail-kVeqUFD1O) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kVeqUFD1O)]
 - [ims02-shane copy-A0asfU9uE](./p5projects/ims02-shane%20copy-A0asfU9uE) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/A0asfU9uE)]
 - [ims02-shane v0-SR9AyZCYt](./p5projects/ims02-shane%20v0-SR9AyZCYt) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/SR9AyZCYt)]
 - [ims02-shane v0-l1LZchKgQ](./p5projects/ims02-shane%20v0-l1LZchKgQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/l1LZchKgQ)]

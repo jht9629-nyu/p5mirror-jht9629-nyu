@@ -1,8 +1,8 @@
 # Sketches for jht9629-nyu
 944 sketches  
+[ims02-shader-trail](../../p5projects/ims02-shader-trail-kVeqUFD1O) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kVeqUFD1O)]<!-- 2026-04-02T16:58:38.374Z -->  
 [get\_url\_params v2](../../p5projects/get_url_params%20v2-I9vT_uniR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/I9vT_uniR)]<!-- 2026-04-02T07:03:37.817Z -->  
 [localStorage v1](../../p5projects/localStorage%20v1-qz9-Y-Sc4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qz9-Y-Sc4)]<!-- 2026-04-02T07:03:28.773Z -->  
-[ims02-shader-trail](../../p5projects/ims02-shader-trail-kVeqUFD1O) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kVeqUFD1O)]<!-- 2026-04-02T06:53:06.134Z -->  
 [ims01-jerry](../../p5projects/ims01-jerry-tF1Dwm4Aa) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tF1Dwm4Aa)]<!-- 2026-04-01T18:12:37.290Z -->  
 [ims01-kylie](../../p5projects/ims01-kylie-sbenoMi1u) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sbenoMi1u)]<!-- 2026-04-01T17:58:35.303Z -->  
 [ims-01 bounce fullscreen](../../p5projects/ims-01%20bounce%20fullscreen-Mpgun-Kti) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)]<!-- 2026-04-01T17:51:35.344Z -->  
