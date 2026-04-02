@@ -1,6 +1,6 @@
 # Sketches for jht9629-nyu
 944 sketches  
-[ims02-shader-trail](../../p5projects/ims02-shader-trail-kVeqUFD1O) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kVeqUFD1O)]<!-- 2026-04-01T18:19:16.277Z -->  
+[ims02-shader-trail](../../p5projects/ims02-shader-trail-kVeqUFD1O) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kVeqUFD1O)]<!-- 2026-04-02T06:53:06.134Z -->  
 [ims01-jerry](../../p5projects/ims01-jerry-tF1Dwm4Aa) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/tF1Dwm4Aa)]<!-- 2026-04-01T18:12:37.290Z -->  
 [ims01-kylie](../../p5projects/ims01-kylie-sbenoMi1u) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sbenoMi1u)]<!-- 2026-04-01T17:58:35.303Z -->  
 [ims-01 bounce fullscreen](../../p5projects/ims-01%20bounce%20fullscreen-Mpgun-Kti) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mpgun-Kti)]<!-- 2026-04-01T17:51:35.344Z -->  

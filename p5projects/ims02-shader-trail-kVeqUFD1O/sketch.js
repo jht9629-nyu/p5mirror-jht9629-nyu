@@ -1,6 +1,7 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/kVeqUFD1O
 // ims02-shader-trail
 /*
+- added windowResized
 - openprocessing download file fails
 - source files copy and pasted from openprocessing
 - removed // min(windowWidth, windowHeight)
@@ -77,7 +78,6 @@ function draw() {
     if (trail.length == 0) {
       break;
     }
-
     if (mouseIsPressed || trail.length > MAX_TRAIL_COUNT) {
       trail.splice(0, 1);
     }
@@ -162,4 +162,16 @@ function serializeSketch() {
   }
 
   return data;
+}
+
+// Respond to window resizing event
+function windowResized() {
+  console.log("windowResized");
+  resizeCanvas(windowWidth, windowHeight);
+  // !!@ fails
+  // if (shaderTexture) {
+  //   shaderTexture.remove();
+  //   shaderTexture = createGraphics(width, height, WEBGL);
+  //   shaderTexture.noStroke();
+  // }
 }

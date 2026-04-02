@@ -1,0 +1,2 @@
+echo download 1 "ims02-shader-trail-kVeqUFD1O"
+curl -s https://editor.p5js.org/editor/projects/kVeqUFD1O/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/ims02-shader-trail-kVeqUFD1O.zip"
