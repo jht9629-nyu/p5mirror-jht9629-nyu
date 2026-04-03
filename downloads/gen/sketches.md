@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-944 sketches  
+945 sketches  
 [0\_2\_trigger\_several\_sounds copy](../../p5projects/0_2_trigger_several_sounds%20copy-DCmsLNzk5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)]<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](../../p5projects/0_2_trigger_several_sounds%20luisa_NYU-8svv4J26x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)]<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](../../p5projects/0_7_FFT%20by%20luisa_NYUpy-ZfrLYKf4u) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)]<!-- 2025-03-10T21:47:40.953Z -->  
@@ -365,6 +365,7 @@
 [Heathered jackal](../../p5projects/Heathered%20jackal-3q30yHV1e) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3q30yHV1e)]<!-- 2024-07-25T18:41:06.070Z -->  
 [heavy RAM webcam copy](../../p5projects/heavy%20RAM%20webcam%20copy-dpsVadEzr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/dpsVadEzr)]<!-- 2025-11-10T18:46:57.830Z -->  
 [heavy RAM webcam copy](../../p5projects/heavy%20RAM%20webcam%20copy-wKnsTemeO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wKnsTemeO)]<!-- 2026-04-03T12:16:09.297Z -->  
+[heavy RAM webcam v2](../../p5projects/heavy%20RAM%20webcam%20v2-OBYuc5crK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/OBYuc5crK)]<!-- 2026-04-03T13:01:04.015Z -->  
 [hello-p5-song](../../p5projects/hello-p5-song-NeWYQtl2J) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/NeWYQtl2J)]<!-- 2023-08-02T15:09:43.632Z -->  
 [Hello, p5.js 2.0\! Example VF Sketch v0](../../p5projects/Hello%2C%20p5.js%202.0!%20Example%20VF%20Sketch%20v0-L7ob7qccY) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/L7ob7qccY)]<!-- 2026-03-27T12:49:02.511Z -->  
 [ICM - WK2 - animated shape copy](../../p5projects/ICM%20-%20WK2%20-%20animated%20shape%20copy-RxiAfmzEx) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RxiAfmzEx)]<!-- 2024-09-10T18:00:20.824Z -->  

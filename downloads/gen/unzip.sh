@@ -1,24 +1,10 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "heavy RAM webcam copy-wKnsTemeO"
-rm -rf "./heavy RAM webcam copy-wKnsTemeO"
-mkdir "./heavy RAM webcam copy-wKnsTemeO"
-pushd "./heavy RAM webcam copy-wKnsTemeO" > /dev/null
-unzip -q "../../downloads/zips/heavy RAM webcam copy-wKnsTemeO"
-popd > /dev/null
-#
-echo unzip 2 "Unruly pixel reveal v20-D0fROhx4T"
-rm -rf "./Unruly pixel reveal v20-D0fROhx4T"
-mkdir "./Unruly pixel reveal v20-D0fROhx4T"
-pushd "./Unruly pixel reveal v20-D0fROhx4T" > /dev/null
-unzip -q "../../downloads/zips/Unruly pixel reveal v20-D0fROhx4T"
-popd > /dev/null
-#
-echo unzip 3 "Unruly fat pixels v17-Lx4gj-rT2"
-rm -rf "./Unruly fat pixels v17-Lx4gj-rT2"
-mkdir "./Unruly fat pixels v17-Lx4gj-rT2"
-pushd "./Unruly fat pixels v17-Lx4gj-rT2" > /dev/null
-unzip -q "../../downloads/zips/Unruly fat pixels v17-Lx4gj-rT2"
+echo unzip 1 "heavy RAM webcam v2-OBYuc5crK"
+rm -rf "./heavy RAM webcam v2-OBYuc5crK"
+mkdir "./heavy RAM webcam v2-OBYuc5crK"
+pushd "./heavy RAM webcam v2-OBYuc5crK" > /dev/null
+unzip -q "../../downloads/zips/heavy RAM webcam v2-OBYuc5crK"
 popd > /dev/null
 
 cd ..

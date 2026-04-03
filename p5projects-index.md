@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[944 sketches 2026-04-03T12:16:09.297Z](./downloads/gen/sketches_recent.md)
+[945 sketches 2026-04-03T13:01:04.015Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -587,6 +587,7 @@
 - [handPose-keypoints copy-b0zUBI\_5H](./p5projects/handPose-keypoints%20copy-b0zUBI_5H) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/b0zUBI_5H)]
 - [heavy RAM webcam copy-dpsVadEzr](./p5projects/heavy%20RAM%20webcam%20copy-dpsVadEzr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/dpsVadEzr)]
 - [heavy RAM webcam copy-wKnsTemeO](./p5projects/heavy%20RAM%20webcam%20copy-wKnsTemeO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wKnsTemeO)]
+- [heavy RAM webcam v2-OBYuc5crK](./p5projects/heavy%20RAM%20webcam%20v2-OBYuc5crK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/OBYuc5crK)]
 - [hello-p5-song-NeWYQtl2J](./p5projects/hello-p5-song-NeWYQtl2J) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/NeWYQtl2J)]
 - [icm 2025 week 01 v1-REjT1D-nC](./p5projects/icm%202025%20week%2001%20v1-REjT1D-nC) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/REjT1D-nC)]
 - [if, boolean - match-miVmKSy3t](./p5projects/if%2C%20boolean%20-%20match-miVmKSy3t) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/miVmKSy3t)]

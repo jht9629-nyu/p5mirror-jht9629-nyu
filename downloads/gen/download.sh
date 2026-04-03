@@ -1,6 +1,2 @@
-echo download 1 "heavy RAM webcam copy-wKnsTemeO"
-curl -s https://editor.p5js.org/editor/projects/wKnsTemeO/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/heavy RAM webcam copy-wKnsTemeO.zip"
-echo download 2 "Unruly pixel reveal v20-D0fROhx4T"
-curl -s https://editor.p5js.org/editor/projects/D0fROhx4T/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/Unruly pixel reveal v20-D0fROhx4T.zip"
-echo download 3 "Unruly fat pixels v17-Lx4gj-rT2"
-curl -s https://editor.p5js.org/editor/projects/Lx4gj-rT2/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/Unruly fat pixels v17-Lx4gj-rT2.zip"
+echo download 1 "heavy RAM webcam v2-OBYuc5crK"
+curl -s https://editor.p5js.org/editor/projects/OBYuc5crK/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/heavy RAM webcam v2-OBYuc5crK.zip"
