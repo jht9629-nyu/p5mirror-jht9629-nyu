@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[945 sketches 2026-04-03T13:01:04.015Z](./downloads/gen/sketches_recent.md)
+[947 sketches 2026-04-03T13:43:45.742Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -639,6 +639,8 @@
 - [ims02-Arial v0-PPWkffd8](./p5projects/ims02-Arial%20v0-PPWkffd8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-PPWkffd8)]
 - [ims02-Vi v1-cc0BpWomv](./p5projects/ims02-Vi%20v1-cc0BpWomv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cc0BpWomv)]
 - [ims02-gabriel v0-XJKDhlmkj](./p5projects/ims02-gabriel%20v0-XJKDhlmkj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/XJKDhlmkj)]
+- [ims02-kayla copy-3bE5kzmG6](./p5projects/ims02-kayla%20copy-3bE5kzmG6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3bE5kzmG6)]
+- [ims02-kayla v0-aq-2DY7gX](./p5projects/ims02-kayla%20v0-aq-2DY7gX) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/aq-2DY7gX)]
 - [ims02-shader-trail-kVeqUFD1O](./p5projects/ims02-shader-trail-kVeqUFD1O) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kVeqUFD1O)]
 - [ims02-shane copy-A0asfU9uE](./p5projects/ims02-shane%20copy-A0asfU9uE) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/A0asfU9uE)]
 - [ims02-shane v0-SR9AyZCYt](./p5projects/ims02-shane%20v0-SR9AyZCYt) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/SR9AyZCYt)]
