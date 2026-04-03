@@ -1,2 +1,0 @@
-echo download 1 "heavy RAM webcam v2-OBYuc5crK"
-curl -s https://editor.p5js.org/editor/projects/OBYuc5crK/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/heavy RAM webcam v2-OBYuc5crK.zip"
