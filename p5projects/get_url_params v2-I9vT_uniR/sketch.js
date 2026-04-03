@@ -30,6 +30,7 @@ function draw() {
 function draw_params(params) {
   let c = params.c;
   let r = params.r * 0.01 * width;
+  console.log('c', c, 'r', r);
   let x = width * 0.5;
   let y = height * 0.5;
   fill(c);

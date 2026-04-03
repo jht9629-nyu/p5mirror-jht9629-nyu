@@ -1,2 +1,6 @@
-echo download 1 "ims02-shader-trail-kVeqUFD1O"
-curl -s https://editor.p5js.org/editor/projects/kVeqUFD1O/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/ims02-shader-trail-kVeqUFD1O.zip"
+echo download 1 "video scan radial v8-2bjn_Nn9x"
+curl -s https://editor.p5js.org/editor/projects/2bjn_Nn9x/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/video scan radial v8-2bjn_Nn9x.zip"
+echo download 2 "get_url_params v2-I9vT_uniR"
+curl -s https://editor.p5js.org/editor/projects/I9vT_uniR/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/get_url_params v2-I9vT_uniR.zip"
+echo download 3 "MazeSpin liberation screens v7-wT957KlMz"
+curl -s https://editor.p5js.org/editor/projects/wT957KlMz/zip -o "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/zips/MazeSpin liberation screens v7-wT957KlMz.zip"

@@ -352,7 +352,7 @@
 [Garrulous amphibian](../../p5projects/Garrulous%20amphibian-W8Do-exuT) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/W8Do-exuT)]<!-- 2023-11-13T17:22:51.927Z -->  
 [geolocation](../../p5projects/geolocation-DRpj2TQRg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DRpj2TQRg)]<!-- 2023-05-12T23:44:11.759Z -->  
 [get\_url\_params demo](../../p5projects/get_url_params%20demo-5fTCCJ_Sh) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/5fTCCJ_Sh)]<!-- 2025-04-03T09:11:11.935Z -->  
-[get\_url\_params v2](../../p5projects/get_url_params%20v2-I9vT_uniR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/I9vT_uniR)]<!-- 2026-04-02T07:03:37.817Z -->  
+[get\_url\_params v2](../../p5projects/get_url_params%20v2-I9vT_uniR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/I9vT_uniR)]<!-- 2026-04-02T19:26:38.634Z -->  
 [Glass chokeberry](../../p5projects/Glass%20chokeberry-e2B51X-9p) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/e2B51X-9p)]<!-- 2024-04-29T13:17:19.661Z -->  
 [global variable pattern animation](../../p5projects/global%20variable%20pattern%20animation-hzQ_IGYd8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hzQ_IGYd8)]<!-- 2023-07-16T22:39:32.375Z -->  
 [gravity ball single](../../p5projects/gravity%20ball%20single-csLgYCa6h) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/csLgYCa6h)]<!-- 2025-07-28T14:35:07.965Z -->  
@@ -528,7 +528,7 @@
 [match pairs emoji](../../p5projects/match%20pairs%20emoji-ZKPaZOjf_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZKPaZOjf_)]<!-- 2023-08-11T19:07:54.439Z -->  
 [Mature sheep copy](../../p5projects/Mature%20sheep%20copy-zeUPP3rQe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zeUPP3rQe)]<!-- 2024-07-25T01:58:10.162Z -->  
 [MazeSpin liberation screens copy](../../p5projects/MazeSpin%20liberation%20screens%20copy-PN3n1CXom) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)]<!-- 2024-04-13T12:39:55.764Z -->  
-[MazeSpin liberation screens v7](../../p5projects/MazeSpin%20liberation%20screens%20v7-wT957KlMz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)]<!-- 2025-03-25T15:25:03.501Z -->  
+[MazeSpin liberation screens v7](../../p5projects/MazeSpin%20liberation%20screens%20v7-wT957KlMz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)]<!-- 2026-04-02T19:21:40.228Z -->  
 [Melanie pong with object array](../../p5projects/Melanie%20pong%20with%20object%20array-qfMmYs2br) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qfMmYs2br)]<!-- 2023-08-02T18:30:00.620Z -->  
 [Melanie pong with object literals](../../p5projects/Melanie%20pong%20with%20object%20literals-_8fx3fhlQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_8fx3fhlQ)]<!-- 2023-08-02T18:08:32.872Z -->  
 [Melted throat copy](../../p5projects/Melted%20throat%20copy-cecKApAfd) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cecKApAfd)]<!-- 2024-07-23T14:53:25.076Z -->  
@@ -872,7 +872,7 @@
 [video scan radial v6](../../p5projects/video%20scan%20radial%20v6-nkw-sZXwN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nkw-sZXwN)]<!-- 2024-03-30T20:02:37.863Z -->  
 [video scan radial v6-1](../../p5projects/video%20scan%20radial%20v6-1-ZyRuMxSDy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZyRuMxSDy)]<!-- 2024-04-26T17:56:11.486Z -->  
 [video scan radial v7](../../p5projects/video%20scan%20radial%20v7-i6akdNRS2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/i6akdNRS2)]<!-- 2025-07-24T23:33:48.429Z -->  
-[video scan radial v8](../../p5projects/video%20scan%20radial%20v8-2bjn_Nn9x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2bjn_Nn9x)]<!-- 2025-03-26T15:11:14.588Z -->  
+[video scan radial v8](../../p5projects/video%20scan%20radial%20v8-2bjn_Nn9x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2bjn_Nn9x)]<!-- 2026-04-02T23:11:38.179Z -->  
 [video-tint-2x2-mobile](../../p5projects/video-tint-2x2-mobile-erHP1oZMO) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/erHP1oZMO)]<!-- 2023-07-01T04:01:02.506Z -->  
 [Vigil copy](../../p5projects/Vigil%20copy-oRVIiwpzr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/oRVIiwpzr)]<!-- 2024-07-23T15:40:36.051Z -->  
 [W1: setup() v. draw() copy](../../p5projects/W1%20setup()%20v.%20draw()%20copy-NqzSdnl8u) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/NqzSdnl8u)]<!-- 2024-09-12T16:36:44.473Z -->  

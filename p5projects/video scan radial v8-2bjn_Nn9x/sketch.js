@@ -39,7 +39,7 @@ function setup_my() {
   // my.y0;
   // my.capture;
   my.ang = 0;
-  my.astep = 0.005;
+  my.astep = 0.05;
   // my.astep = 0.5;
   // my.astep = 1;
   // my.renderFullFrame = 1;
