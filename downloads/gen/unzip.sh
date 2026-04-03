@@ -1,31 +1,24 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "ims-2026-w2 v0-vLFTabVbU"
-rm -rf "./ims-2026-w2 v0-vLFTabVbU"
-mkdir "./ims-2026-w2 v0-vLFTabVbU"
-pushd "./ims-2026-w2 v0-vLFTabVbU" > /dev/null
-unzip -q "../../downloads/zips/ims-2026-w2 v0-vLFTabVbU"
+echo unzip 1 "heavy RAM webcam copy-wKnsTemeO"
+rm -rf "./heavy RAM webcam copy-wKnsTemeO"
+mkdir "./heavy RAM webcam copy-wKnsTemeO"
+pushd "./heavy RAM webcam copy-wKnsTemeO" > /dev/null
+unzip -q "../../downloads/zips/heavy RAM webcam copy-wKnsTemeO"
 popd > /dev/null
 #
-echo unzip 2 "ims02-gabriel v0-XJKDhlmkj"
-rm -rf "./ims02-gabriel v0-XJKDhlmkj"
-mkdir "./ims02-gabriel v0-XJKDhlmkj"
-pushd "./ims02-gabriel v0-XJKDhlmkj" > /dev/null
-unzip -q "../../downloads/zips/ims02-gabriel v0-XJKDhlmkj"
+echo unzip 2 "Unruly pixel reveal v20-D0fROhx4T"
+rm -rf "./Unruly pixel reveal v20-D0fROhx4T"
+mkdir "./Unruly pixel reveal v20-D0fROhx4T"
+pushd "./Unruly pixel reveal v20-D0fROhx4T" > /dev/null
+unzip -q "../../downloads/zips/Unruly pixel reveal v20-D0fROhx4T"
 popd > /dev/null
 #
-echo unzip 3 "ims02-Arial v0-PPWkffd8"
-rm -rf "./ims02-Arial v0-PPWkffd8"
-mkdir "./ims02-Arial v0-PPWkffd8"
-pushd "./ims02-Arial v0-PPWkffd8" > /dev/null
-unzip -q "../../downloads/zips/ims02-Arial v0-PPWkffd8"
-popd > /dev/null
-#
-echo unzip 4 "ims02-Althea v0-ZPcc7Kigl"
-rm -rf "./ims02-Althea v0-ZPcc7Kigl"
-mkdir "./ims02-Althea v0-ZPcc7Kigl"
-pushd "./ims02-Althea v0-ZPcc7Kigl" > /dev/null
-unzip -q "../../downloads/zips/ims02-Althea v0-ZPcc7Kigl"
+echo unzip 3 "Unruly fat pixels v17-Lx4gj-rT2"
+rm -rf "./Unruly fat pixels v17-Lx4gj-rT2"
+mkdir "./Unruly fat pixels v17-Lx4gj-rT2"
+pushd "./Unruly fat pixels v17-Lx4gj-rT2" > /dev/null
+unzip -q "../../downloads/zips/Unruly fat pixels v17-Lx4gj-rT2"
 popd > /dev/null
 
 cd ..

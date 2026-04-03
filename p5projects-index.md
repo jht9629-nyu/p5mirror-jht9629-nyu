@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[948 sketches 2026-04-03T11:27:33.469Z](./downloads/gen/sketches_recent.md)
+[944 sketches 2026-04-03T12:16:09.297Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -70,8 +70,6 @@
 - [Althea\_firewroks copy-sRTIkJfLv](./p5projects/Althea_firewroks%20copy-sRTIkJfLv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sRTIkJfLv)]
 - [Althea——week 08 copy copy-DMRE8MvxF](./p5projects/Althea%E2%80%94%E2%80%94week%2008%20copy%20copy-DMRE8MvxF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DMRE8MvxF)]
 - [Althea——week 08 copy-UOlifYbXf](./p5projects/Althea%E2%80%94%E2%80%94week%2008%20copy-UOlifYbXf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/UOlifYbXf)]
-- [Althea——week 08 copy-ujeTIAQw6](./p5projects/Althea%E2%80%94%E2%80%94week%2008%20copy-ujeTIAQw6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ujeTIAQw6)]
-- [Althea——week 08 copy-wlSB1gmGG](./p5projects/Althea%E2%80%94%E2%80%94week%2008%20copy-wlSB1gmGG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wlSB1gmGG)]
 - [Ambiguous gouda copy-PsdLPXmRj](./p5projects/Ambiguous%20gouda%20copy-PsdLPXmRj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PsdLPXmRj)]
 - [Amused crest-x061G2JEL](./p5projects/Amused%20crest-x061G2JEL) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/x061G2JEL)]
 - [Arcs -KevinWorkman-YlrsaxftE](./p5projects/Arcs%20-KevinWorkman-YlrsaxftE) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/YlrsaxftE)]
@@ -258,9 +256,7 @@
 - [ICM - WK6 - bouncing ball objects from a class copy-mohBYb3kS](./p5projects/ICM%20-%20WK6%20-%20bouncing%20ball%20objects%20from%20a%20class%20copy-mohBYb3kS) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/mohBYb3kS)]
 - [ICM - WK6 - make objects from a class with mouse press (ripples in a pond) copy-TFVLQN\_lK](./p5projects/ICM%20-%20WK6%20-%20make%20objects%20from%20a%20class%20with%20mouse%20press%20(ripples%20in%20a%20pond)%20copy-TFVLQN_lK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/TFVLQN_lK)]
 - [ICM - WK6 - practicing with objects copy-wxcIn0BaK](./p5projects/ICM%20-%20WK6%20-%20practicing%20with%20objects%20copy-wxcIn0BaK) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wxcIn0BaK)]
-- [ICM - WK6 Practice - with objects copy-05XPik8Ut](./p5projects/ICM%20-%20WK6%20Practice%20-%20with%20objects%20copy-05XPik8Ut) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/05XPik8Ut)]
 - [ICM - WK6 Practice - with objects copy-Gj02NIAzg](./p5projects/ICM%20-%20WK6%20Practice%20-%20with%20objects%20copy-Gj02NIAzg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Gj02NIAzg)]
-- [ICM - WK6 Practice - with objects copy-mGxggRvhM](./p5projects/ICM%20-%20WK6%20Practice%20-%20with%20objects%20copy-mGxggRvhM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/mGxggRvhM)]
 - [ICM 2023 jht student selector-rpyY0uqRR](./p5projects/ICM%202023%20jht%20student%20selector-rpyY0uqRR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/rpyY0uqRR)]
 - [ICM Final-vSZ72ZQ0Y](./p5projects/ICM%20Final-vSZ72ZQ0Y) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vSZ72ZQ0Y)]
 - [ICM WK3-5 copy copy-1TIu3nNl6](./p5projects/ICM%20WK3-5%20copy%20copy-1TIu3nNl6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1TIu3nNl6)]

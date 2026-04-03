@@ -1,15 +1,6 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/wKnsTemeO
 // https://editor.p5js.org/rafiiia/sketches/hOGUXUHzU
 
-// to consider all neighboring pixels we use a 3x3 array
-// and normalize these values
-// kernel is the 3x3 matrix of normalized values
-let kernel = [
-  [-1, -1, -1],
-  [-1, 9, -1],
-  [-1, -1, -1],
-];
-
 let img;
 let pixelColor;
 let numSlices;
@@ -44,6 +35,6 @@ function draw_one(img2) {
 
   fill(pixelColor);
   circle(x, y, 10);
-  fill(pixelColor);
+  // fill(pixelColor);
   // circle(mouseX, mouseY, 50); //reverse
 }
