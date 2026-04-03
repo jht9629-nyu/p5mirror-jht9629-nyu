@@ -1,24 +1,31 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "video scan radial v8-2bjn_Nn9x"
-rm -rf "./video scan radial v8-2bjn_Nn9x"
-mkdir "./video scan radial v8-2bjn_Nn9x"
-pushd "./video scan radial v8-2bjn_Nn9x" > /dev/null
-unzip -q "../../downloads/zips/video scan radial v8-2bjn_Nn9x"
+echo unzip 1 "ims-2026-w2 v0-vLFTabVbU"
+rm -rf "./ims-2026-w2 v0-vLFTabVbU"
+mkdir "./ims-2026-w2 v0-vLFTabVbU"
+pushd "./ims-2026-w2 v0-vLFTabVbU" > /dev/null
+unzip -q "../../downloads/zips/ims-2026-w2 v0-vLFTabVbU"
 popd > /dev/null
 #
-echo unzip 2 "get_url_params v2-I9vT_uniR"
-rm -rf "./get_url_params v2-I9vT_uniR"
-mkdir "./get_url_params v2-I9vT_uniR"
-pushd "./get_url_params v2-I9vT_uniR" > /dev/null
-unzip -q "../../downloads/zips/get_url_params v2-I9vT_uniR"
+echo unzip 2 "ims02-gabriel v0-XJKDhlmkj"
+rm -rf "./ims02-gabriel v0-XJKDhlmkj"
+mkdir "./ims02-gabriel v0-XJKDhlmkj"
+pushd "./ims02-gabriel v0-XJKDhlmkj" > /dev/null
+unzip -q "../../downloads/zips/ims02-gabriel v0-XJKDhlmkj"
 popd > /dev/null
 #
-echo unzip 3 "MazeSpin liberation screens v7-wT957KlMz"
-rm -rf "./MazeSpin liberation screens v7-wT957KlMz"
-mkdir "./MazeSpin liberation screens v7-wT957KlMz"
-pushd "./MazeSpin liberation screens v7-wT957KlMz" > /dev/null
-unzip -q "../../downloads/zips/MazeSpin liberation screens v7-wT957KlMz"
+echo unzip 3 "ims02-Arial v0-PPWkffd8"
+rm -rf "./ims02-Arial v0-PPWkffd8"
+mkdir "./ims02-Arial v0-PPWkffd8"
+pushd "./ims02-Arial v0-PPWkffd8" > /dev/null
+unzip -q "../../downloads/zips/ims02-Arial v0-PPWkffd8"
+popd > /dev/null
+#
+echo unzip 4 "ims02-Althea v0-ZPcc7Kigl"
+rm -rf "./ims02-Althea v0-ZPcc7Kigl"
+mkdir "./ims02-Althea v0-ZPcc7Kigl"
+pushd "./ims02-Althea v0-ZPcc7Kigl" > /dev/null
+unzip -q "../../downloads/zips/ims02-Althea v0-ZPcc7Kigl"
 popd > /dev/null
 
 cd ..

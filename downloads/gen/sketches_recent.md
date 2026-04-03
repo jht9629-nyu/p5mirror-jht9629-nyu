@@ -1,5 +1,9 @@
 # Sketches for jht9629-nyu
-944 sketches  
+948 sketches  
+[ims-2026-w2 v0](../../p5projects/ims-2026-w2%20v0-vLFTabVbU) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vLFTabVbU)]<!-- 2026-04-03T11:27:33.469Z -->  
+[ims02-gabriel v0](../../p5projects/ims02-gabriel%20v0-XJKDhlmkj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/XJKDhlmkj)]<!-- 2026-04-03T11:26:20.675Z -->  
+[ims02-Arial v0](../../p5projects/ims02-Arial%20v0-PPWkffd8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-PPWkffd8)]<!-- 2026-04-03T11:23:58.386Z -->  
+[ims02-Althea v0](../../p5projects/ims02-Althea%20v0-ZPcc7Kigl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZPcc7Kigl)]<!-- 2026-04-03T11:22:48.843Z -->  
 [video scan radial v8](../../p5projects/video%20scan%20radial%20v8-2bjn_Nn9x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2bjn_Nn9x)]<!-- 2026-04-02T23:11:38.179Z -->  
 [get\_url\_params v2](../../p5projects/get_url_params%20v2-I9vT_uniR) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/I9vT_uniR)]<!-- 2026-04-02T19:26:38.634Z -->  
 [MazeSpin liberation screens v7](../../p5projects/MazeSpin%20liberation%20screens%20v7-wT957KlMz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)]<!-- 2026-04-02T19:21:40.228Z -->  
