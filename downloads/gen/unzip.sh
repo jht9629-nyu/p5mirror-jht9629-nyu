@@ -1,17 +1,24 @@
 cd "/Users/jht2/Documents/projects/_2025/p5-mirrors/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "ims02-kayla copy-3bE5kzmG6"
-rm -rf "./ims02-kayla copy-3bE5kzmG6"
-mkdir "./ims02-kayla copy-3bE5kzmG6"
-pushd "./ims02-kayla copy-3bE5kzmG6" > /dev/null
-unzip -q "../../downloads/zips/ims02-kayla copy-3bE5kzmG6"
+echo unzip 1 "ims04-image-particle-584bCKj5G"
+rm -rf "./ims04-image-particle-584bCKj5G"
+mkdir "./ims04-image-particle-584bCKj5G"
+pushd "./ims04-image-particle-584bCKj5G" > /dev/null
+unzip -q "../../downloads/zips/ims04-image-particle-584bCKj5G"
 popd > /dev/null
 #
-echo unzip 2 "ims02-kayla v0-aq-2DY7gX"
-rm -rf "./ims02-kayla v0-aq-2DY7gX"
-mkdir "./ims02-kayla v0-aq-2DY7gX"
-pushd "./ims02-kayla v0-aq-2DY7gX" > /dev/null
-unzip -q "../../downloads/zips/ims02-kayla v0-aq-2DY7gX"
+echo unzip 2 "ims04-video-particle-TtVWUuKVC"
+rm -rf "./ims04-video-particle-TtVWUuKVC"
+mkdir "./ims04-video-particle-TtVWUuKVC"
+pushd "./ims04-video-particle-TtVWUuKVC" > /dev/null
+unzip -q "../../downloads/zips/ims04-video-particle-TtVWUuKVC"
+popd > /dev/null
+#
+echo unzip 3 "heavy RAM webcam v2-OBYuc5crK"
+rm -rf "./heavy RAM webcam v2-OBYuc5crK"
+mkdir "./heavy RAM webcam v2-OBYuc5crK"
+pushd "./heavy RAM webcam v2-OBYuc5crK" > /dev/null
+unzip -q "../../downloads/zips/heavy RAM webcam v2-OBYuc5crK"
 popd > /dev/null
 
 cd ..

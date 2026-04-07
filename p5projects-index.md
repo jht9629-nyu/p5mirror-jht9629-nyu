@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[947 sketches 2026-04-03T13:43:45.742Z](./downloads/gen/sketches_recent.md)
+[949 sketches 2026-04-07T18:51:32.802Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -651,10 +651,12 @@
 - [ims03-jht scrolling color bars-3VKJ-q8ar](./p5projects/ims03-jht%20scrolling%20color%20bars-3VKJ-q8ar) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3VKJ-q8ar)]
 - [ims03-jht scrolling color time-ZGUqiovgG](./p5projects/ims03-jht%20scrolling%20color%20time-ZGUqiovgG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZGUqiovgG)]
 - [ims03-olivia v1-X7LY4-mHp](./p5projects/ims03-olivia%20v1-X7LY4-mHp) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/X7LY4-mHp)]
+- [ims04-image-particle-584bCKj5G](./p5projects/ims04-image-particle-584bCKj5G) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/584bCKj5G)]
 - [ims04-jht scroll color bars-ZpoPuHXRo](./p5projects/ims04-jht%20scroll%20color%20bars-ZpoPuHXRo) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZpoPuHXRo)]
 - [ims04-jht scroll color rate-2pxhnehBV](./p5projects/ims04-jht%20scroll%20color%20rate-2pxhnehBV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2pxhnehBV)]
 - [ims04-jht scroll color v2-fo\_qEMenp](./p5projects/ims04-jht%20scroll%20color%20v2-fo_qEMenp) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fo_qEMenp)]
 - [ims04-jht-scroll-color-v2-3OL8lIVMy](./p5projects/ims04-jht-scroll-color-v2-3OL8lIVMy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/3OL8lIVMy)]
+- [ims04-video-particle-TtVWUuKVC](./p5projects/ims04-video-particle-TtVWUuKVC) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/TtVWUuKVC)]
 - [ims05-Ambra copy-Xp0RDXLSwr](./p5projects/ims05-Ambra%20copy-Xp0RDXLSwr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/p0RDXLSwr)]
 - [ims1-leo copy-4Gab3LJD-](./p5projects/ims1-leo%20copy-4Gab3LJD-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/4Gab3LJD-)]
 - [ims1-leo v0-iij0Chw7N](./p5projects/ims1-leo%20v0-iij0Chw7N) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/iij0Chw7N)]
