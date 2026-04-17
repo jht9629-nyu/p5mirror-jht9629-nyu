@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[955 sketches 2026-04-15T15:41:52.385Z](./downloads/gen/sketches_recent.md)
+[958 sketches 2026-04-16T21:25:13.241Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -343,6 +343,7 @@
 - [PoseNet Example 1 copy-lrITLfSgG](./p5projects/PoseNet%20Example%201%20copy-lrITLfSgG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/lrITLfSgG)]
 - [PoseNet multi copy-uJOTYsTAH](./p5projects/PoseNet%20multi%20copy-uJOTYsTAH) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/uJOTYsTAH)]
 - [Potent scribe-y7LZlOIu0](./p5projects/Potent%20scribe-y7LZlOIu0) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/y7LZlOIu0)]
+- [Profuse othnielia-GvOgKqBR8](./p5projects/Profuse%20othnielia-GvOgKqBR8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/GvOgKqBR8)]
 - [Quill forsythia copy-8GZfJMso-](./p5projects/Quill%20forsythia%20copy-8GZfJMso-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8GZfJMso-)]
 - [RaFia self portrait copy-WcFLrf2hA](./p5projects/RaFia%20self%20portrait%20copy-WcFLrf2hA) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/WcFLrf2hA)]
 - [Rainbow Canvas-lNRQmapgz](./p5projects/Rainbow%20Canvas-lNRQmapgz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/lNRQmapgz)]
@@ -615,6 +616,7 @@
 - [ims-03-jht truchet tiles pause v2-CYMdD77ySc](./p5projects/ims-03-jht%20truchet%20tiles%20pause%20v2-CYMdD77ySc) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/YMdD77ySc)]
 - [ims-03-jht truchet tiles pause v3-zZsfxeZjs](./p5projects/ims-03-jht%20truchet%20tiles%20pause%20v3-zZsfxeZjs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zZsfxeZjs)]
 - [ims-03-jht truchet tiles pause v4-ZU4qwXI2E](./p5projects/ims-03-jht%20truchet%20tiles%20pause%20v4-ZU4qwXI2E) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZU4qwXI2E)]
+- [ims-05-video shader-l-iDtUbG](./p5projects/ims-05-video%20shader-l-iDtUbG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/-l-iDtUbG)]
 - [ims-2026-w2 v0-vLFTabVbU](./p5projects/ims-2026-w2%20v0-vLFTabVbU) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vLFTabVbU)]
 - [ims-Hazel-2025-03-u3HnuOLS5](./p5projects/ims-Hazel-2025-03-u3HnuOLS5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/u3HnuOLS5)]
 - [ims-Luka-2025-03-pRden1AkV](./p5projects/ims-Luka-2025-03-pRden1AkV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pRden1AkV)]
@@ -882,6 +884,7 @@
 - [simple-draw copy-X0cRmaYNH](./p5projects/simple-draw%20copy-X0cRmaYNH) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/X0cRmaYNH)]
 - [simple-draw-owix6hP8S](./p5projects/simple-draw-owix6hP8S) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/owix6hP8S)]
 - [sliding window v0-0OwCIFLm-](./p5projects/sliding%20window%20v0-0OwCIFLm-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/0OwCIFLm-)]
+- [sliding window v1 debug-YWxHLeQsl](./p5projects/sliding%20window%20v1%20debug-YWxHLeQsl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/YWxHLeQsl)]
 - [sliding window v1 responsive copy-FMZ9qAfBr](./p5projects/sliding%20window%20v1%20responsive%20copy-FMZ9qAfBr) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/FMZ9qAfBr)]
 - [sliding window v1 responsive horizontal two hands copy-Y8xEY-4dj](./p5projects/sliding%20window%20v1%20responsive%20horizontal%20two%20hands%20copy-Y8xEY-4dj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Y8xEY-4dj)]
 - [sliding window v1 responsive-KfpABTqxn](./p5projects/sliding%20window%20v1%20responsive-KfpABTqxn) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/KfpABTqxn)]

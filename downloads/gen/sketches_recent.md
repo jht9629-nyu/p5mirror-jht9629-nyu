@@ -1,5 +1,8 @@
 # Sketches for jht9629-nyu
-954 sketches  
+957 sketches  
+[ims-05-video shader](../../p5projects/ims-05-video%20shader-l-iDtUbG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/l--iDtUbG)]<!-- 2026-04-16T21:25:13.241Z -->  
+[Profuse othnielia](../../p5projects/Profuse%20othnielia-GvOgKqBR8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/GvOgKqBR8)]<!-- 2026-04-15T20:41:19.337Z -->  
+[sliding window v1 debug](../../p5projects/sliding%20window%20v1%20debug-YWxHLeQsl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/YWxHLeQsl)]<!-- 2026-04-15T18:17:52.975Z -->  
 [sliding window v1 responsive horizontal two hands copy](../../p5projects/sliding%20window%20v1%20responsive%20horizontal%20two%20hands%20copy-Y8xEY-4dj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Y8xEY-4dj)]<!-- 2026-04-15T15:41:52.385Z -->  
 [ims04-media-particle](../../p5projects/ims04-media-particle-CDlUfTNmy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CDlUfTNmy)]<!-- 2026-04-12T02:41:12.344Z -->  
 [ims03-Arial copy](../../p5projects/ims03-Arial%20copy-c0DCRqGto) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/c0DCRqGto)]<!-- 2026-04-10T14:06:59.723Z -->  
