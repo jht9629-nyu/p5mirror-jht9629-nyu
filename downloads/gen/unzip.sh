@@ -1,24 +1,38 @@
 cd "/Users/jht2/Documents/projects/_2026/p5mirror-jht9629-nyu/downloads/../p5projects"
 #
-echo unzip 1 "ims-05-video shader-l-iDtUbG"
-rm -rf "./ims-05-video shader-l-iDtUbG"
-mkdir "./ims-05-video shader-l-iDtUbG"
-pushd "./ims-05-video shader-l-iDtUbG" > /dev/null
-unzip -q "../../downloads/zips/ims-05-video shader-l-iDtUbG"
+echo unzip 1 "p5LiveMedia Test Video - p5@2.2.2-w4tbUyhAN"
+rm -rf "./p5LiveMedia Test Video - p5@2.2.2-w4tbUyhAN"
+mkdir "./p5LiveMedia Test Video - p5@2.2.2-w4tbUyhAN"
+pushd "./p5LiveMedia Test Video - p5@2.2.2-w4tbUyhAN" > /dev/null
+unzip -q "../../downloads/zips/p5LiveMedia Test Video - p5@2.2.2-w4tbUyhAN"
 popd > /dev/null
 #
-echo unzip 2 "Profuse othnielia-GvOgKqBR8"
+echo unzip 2 "p5LiveMedia Test Video - p5@1.11.13-y8LVIMEn3"
+rm -rf "./p5LiveMedia Test Video - p5@1.11.13-y8LVIMEn3"
+mkdir "./p5LiveMedia Test Video - p5@1.11.13-y8LVIMEn3"
+pushd "./p5LiveMedia Test Video - p5@1.11.13-y8LVIMEn3" > /dev/null
+unzip -q "../../downloads/zips/p5LiveMedia Test Video - p5@1.11.13-y8LVIMEn3"
+popd > /dev/null
+#
+echo unzip 3 "p5LiveMedia Test Video - p5.js1.1.9-7bEgwEtLF"
+rm -rf "./p5LiveMedia Test Video - p5.js1.1.9-7bEgwEtLF"
+mkdir "./p5LiveMedia Test Video - p5.js1.1.9-7bEgwEtLF"
+pushd "./p5LiveMedia Test Video - p5.js1.1.9-7bEgwEtLF" > /dev/null
+unzip -q "../../downloads/zips/p5LiveMedia Test Video - p5.js1.1.9-7bEgwEtLF"
+popd > /dev/null
+#
+echo unzip 4 "Profuse othnielia-GvOgKqBR8"
 rm -rf "./Profuse othnielia-GvOgKqBR8"
 mkdir "./Profuse othnielia-GvOgKqBR8"
 pushd "./Profuse othnielia-GvOgKqBR8" > /dev/null
 unzip -q "../../downloads/zips/Profuse othnielia-GvOgKqBR8"
 popd > /dev/null
 #
-echo unzip 3 "sliding window v1 debug-YWxHLeQsl"
-rm -rf "./sliding window v1 debug-YWxHLeQsl"
-mkdir "./sliding window v1 debug-YWxHLeQsl"
-pushd "./sliding window v1 debug-YWxHLeQsl" > /dev/null
-unzip -q "../../downloads/zips/sliding window v1 debug-YWxHLeQsl"
+echo unzip 5 "Metal straw-yr5vFpXlt"
+rm -rf "./Metal straw-yr5vFpXlt"
+mkdir "./Metal straw-yr5vFpXlt"
+pushd "./Metal straw-yr5vFpXlt" > /dev/null
+unzip -q "../../downloads/zips/Metal straw-yr5vFpXlt"
 popd > /dev/null
 
 cd ..
