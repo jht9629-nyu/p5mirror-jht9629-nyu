@@ -1,7 +1,13 @@
 # Sketches for jht9629-nyu
-961 sketches  
-[p5LiveMedia Test Video - p5@2.2.2](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5%402.2.2-w4tbUyhAN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/w4tbUyhAN)]<!-- 2026-04-23T07:23:06.712Z -->  
-[p5LiveMedia Test Video - p5@1.11.13](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5%401.11.13-y8LVIMEn3) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/y8LVIMEn3)]<!-- 2026-04-23T07:07:43.779Z -->  
+967 sketches  
+[matt-parker-oct-16](../../p5projects/matt-parker-oct-16-RoplKxfBB) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RoplKxfBB)]<!-- 2026-05-01T12:18:34.697Z -->  
+[face doodle v3 yifan](../../p5projects/face%20doodle%20v3%20yifan-sDA_AH3Gm) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sDA_AH3Gm)]<!-- 2026-05-01T11:18:58.165Z -->  
+[matt-parker-nov15 copy](../../p5projects/matt-parker-nov15%20copy-EE84Ci6hM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/EE84Ci6hM)]<!-- 2026-04-25T07:45:11.846Z -->  
+[matt-parker-nov15](../../p5projects/matt-parker-nov15-jr1ok4EaN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jr1ok4EaN)]<!-- 2026-04-25T07:44:31.714Z -->  
+[Butterfly copy](../../p5projects/Butterfly%20copy-iCJlXu0CP) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/iCJlXu0CP)]<!-- 2026-04-24T14:40:27.197Z -->  
+[Althea-genie copy](../../p5projects/Althea-genie%20copy-Mvo2b44O-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mvo2b44O-)]<!-- 2026-04-24T14:05:09.327Z -->  
+[p5LiveMedia Test Video - p5@1.11.13](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5%401.11.13-y8LVIMEn3) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/y8LVIMEn3)]<!-- 2026-04-23T09:18:05.495Z -->  
+[p5LiveMedia Test Video - p5@2.2.2](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5%402.2.2-w4tbUyhAN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/w4tbUyhAN)]<!-- 2026-04-23T09:16:20.772Z -->  
 [p5LiveMedia Test Video - p5.js/1.1.9](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5.js1.1.9-7bEgwEtLF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7bEgwEtLF)]<!-- 2026-04-23T07:02:09.699Z -->  
 [Profuse othnielia](../../p5projects/Profuse%20othnielia-GvOgKqBR8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/GvOgKqBR8)]<!-- 2026-04-20T05:18:21.629Z -->  
 [Metal straw](../../p5projects/Metal%20straw-yr5vFpXlt) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/yr5vFpXlt)]<!-- 2026-04-18T18:09:06.636Z -->  

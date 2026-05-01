@@ -1,6 +1,7 @@
 // https://editor.p5js.org/jht9629-nyu/sketches/w4tbUyhAN
 // p5LiveMedia Test Video - p5@2.2.2
 // !!@ Error 🌸 p5.js says: Expected object at the second parameter in createCapture(). 
+// new p5LiveMedia(p5.instance
 
 // https://editor.p5js.org/jht9629-nyu/sketches/y8LVIMEn3
 // p5LiveMedia Test Video - p5@1.11.13
@@ -17,13 +18,15 @@
 
 let myVideo;
 let otherVideo;
+// p5.disableFriendlyErrors = true; // disables FES
 
 function setup() {
   createCanvas(400, 400);
   
     myVideo = createCapture(VIDEO, 
       function(stream) {
-        let p5l = new p5LiveMedia(this, "CAPTURE", stream, "jZQ64AMJc_TESTTEST");
+        let p5l = new p5LiveMedia(p5.instance, "CAPTURE", stream, "jZQ64AMJc_TESTTEST");
+        // let p5l = new p5LiveMedia(this, "CAPTURE", stream, "jZQ64AMJc_TESTTEST");
         p5l.on('stream', gotStream);
       }
     );  

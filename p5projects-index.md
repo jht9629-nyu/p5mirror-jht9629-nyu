@@ -1,5 +1,5 @@
 # jht9629-nyu p5projects
-[962 sketches 2026-04-23T07:23:06.712Z](./downloads/gen/sketches_recent.md)
+[968 sketches 2026-05-01T12:18:34.697Z](./downloads/gen/sketches_recent.md)
 
 - [011-ReverbDecayTime-CjG\_BTXec](./p5projects/011-ReverbDecayTime-CjG_BTXec) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/CjG_BTXec)]
 - [03-jht-hatviz-7hzeHDSIl](./p5projects/03-jht-hatviz-7hzeHDSIl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7hzeHDSIl)]
@@ -66,6 +66,7 @@
 - [Actually fukuiraptor-smY9fVlJg](./p5projects/Actually%20fukuiraptor-smY9fVlJg) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/smY9fVlJg)]
 - [Actually marmoset copy-WFWXaeHms](./p5projects/Actually%20marmoset%20copy-WFWXaeHms) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/WFWXaeHms)]
 - [Althea- ICM practice copy-I0KMlv0Bm](./p5projects/Althea-%20ICM%20practice%20copy-I0KMlv0Bm) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/I0KMlv0Bm)]
+- [Althea-genie copy-Mvo2b44O-](./p5projects/Althea-genie%20copy-Mvo2b44O-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mvo2b44O-)]
 - [Althea\_firewroks copy-fdcMZR9eS](./p5projects/Althea_firewroks%20copy-fdcMZR9eS) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fdcMZR9eS)]
 - [Althea\_firewroks copy-sRTIkJfLv](./p5projects/Althea_firewroks%20copy-sRTIkJfLv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sRTIkJfLv)]
 - [Althea——week 08 copy copy-DMRE8MvxF](./p5projects/Althea%E2%80%94%E2%80%94week%2008%20copy%20copy-DMRE8MvxF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DMRE8MvxF)]
@@ -89,6 +90,7 @@
 - [Bouncing Ball copy-nEtIPPdvM](./p5projects/Bouncing%20Ball%20copy-nEtIPPdvM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nEtIPPdvM)]
 - [Bouncing Text Class with TimeReverse copy-gxWbyxP\_-](./p5projects/Bouncing%20Text%20Class%20with%20TimeReverse%20copy-gxWbyxP_-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/gxWbyxP_-)]
 - [Breezy packet-1uFrAUdQF](./p5projects/Breezy%20packet-1uFrAUdQF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1uFrAUdQF)]
+- [Butterfly copy-iCJlXu0CP](./p5projects/Butterfly%20copy-iCJlXu0CP) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/iCJlXu0CP)]
 - [CC 102 - 2D Water Ripples copy-cg5iaifhV](./p5projects/CC%20102%20-%202D%20Water%20Ripples%20copy-cg5iaifhV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cg5iaifhV)]
 - [CC 137 4D OpenSimplex Noise Loop copy-U56rFgA-V](./p5projects/CC%20137%204D%20OpenSimplex%20Noise%20Loop%20copy-U56rFgA-V) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/U56rFgA-V)]
 - [CC 166 ASCII video-rT1nziONm](./p5projects/CC%20166%20ASCII%20video-rT1nziONm) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/rT1nziONm)]
@@ -557,6 +559,7 @@
 - [echo echo taoyan\! copy-\_2w0NVWwa](./p5projects/echo%20echo%20taoyan!%20copy-_2w0NVWwa) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/_2w0NVWwa)]
 - [emoji-shoorter-QWZJTndDe](./p5projects/emoji-shoorter-QWZJTndDe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/QWZJTndDe)]
 - [explore colors-JVbkxuTr9](./p5projects/explore%20colors-JVbkxuTr9) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/JVbkxuTr9)]
+- [face doodle v3 yifan-sDA\_AH3Gm](./p5projects/face%20doodle%20v3%20yifan-sDA_AH3Gm) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sDA_AH3Gm)]
 - [faceMesh mesh\_nits v10-a0KTD3RB2](./p5projects/faceMesh%20mesh_nits%20v10-a0KTD3RB2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/a0KTD3RB2)]
 - [faceMesh mesh\_nits v2-7y2gqHeZz](./p5projects/faceMesh%20mesh_nits%20v2-7y2gqHeZz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7y2gqHeZz)]
 - [faceMesh mesh\_nits v3-hFnQmY-Jy](./p5projects/faceMesh%20mesh_nits%20v3-hFnQmY-Jy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hFnQmY-Jy)]
@@ -701,6 +704,9 @@
 - [localStorage v1-qz9-Y-Sc4](./p5projects/localStorage%20v1-qz9-Y-Sc4) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qz9-Y-Sc4)]
 - [many circles object literal-mupQOIvCw](./p5projects/many%20circles%20object%20literal-mupQOIvCw) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/mupQOIvCw)]
 - [match pairs emoji-ZKPaZOjf\_](./p5projects/match%20pairs%20emoji-ZKPaZOjf_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZKPaZOjf_)]
+- [matt-parker-nov15 copy-EE84Ci6hM](./p5projects/matt-parker-nov15%20copy-EE84Ci6hM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/EE84Ci6hM)]
+- [matt-parker-nov15-jr1ok4EaN](./p5projects/matt-parker-nov15-jr1ok4EaN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jr1ok4EaN)]
+- [matt-parker-oct-16-RoplKxfBB](./p5projects/matt-parker-oct-16-RoplKxfBB) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RoplKxfBB)]
 - [mic graph-pwLiHkndo](./p5projects/mic%20graph-pwLiHkndo) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/pwLiHkndo)]
 - [mo-gallery-rroom renewal-rroom copy-5k5yNIimz](./p5projects/mo-gallery-rroom%20renewal-rroom%20copy-5k5yNIimz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/5k5yNIimz)]
 - [mo-pixel-grid-7Wjlo3pPU](./p5projects/mo-pixel-grid-7Wjlo3pPU) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7Wjlo3pPU)]

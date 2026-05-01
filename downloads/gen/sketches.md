@@ -1,5 +1,5 @@
 # Sketches for jht9629-nyu
-961 sketches  
+967 sketches  
 [0\_2\_trigger\_several\_sounds copy](../../p5projects/0_2_trigger_several_sounds%20copy-DCmsLNzk5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DCmsLNzk5)]<!-- 2025-03-10T21:11:37.793Z -->  
 [0\_2\_trigger\_several\_sounds luisa\_NYU](../../p5projects/0_2_trigger_several_sounds%20luisa_NYU-8svv4J26x) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8svv4J26x)]<!-- 2025-03-10T21:20:21.055Z -->  
 [0\_7\_FFT by luisa\_NYUpy](../../p5projects/0_7_FFT%20by%20luisa_NYUpy-ZfrLYKf4u) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZfrLYKf4u)]<!-- 2025-03-10T21:47:40.953Z -->  
@@ -68,6 +68,7 @@
 [Althea\_firewroks copy](../../p5projects/Althea_firewroks%20copy-sRTIkJfLv) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sRTIkJfLv)]<!-- 2025-10-27T13:31:49.760Z -->  
 [Althea\_firewroks copy](../../p5projects/Althea_firewroks%20copy-fdcMZR9eS) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/fdcMZR9eS)]<!-- 2025-10-27T16:53:22.887Z -->  
 [Althea- ICM practice copy](../../p5projects/Althea-%20ICM%20practice%20copy-I0KMlv0Bm) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/I0KMlv0Bm)]<!-- 2025-09-29T17:00:25.715Z -->  
+[Althea-genie copy](../../p5projects/Althea-genie%20copy-Mvo2b44O-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mvo2b44O-)]<!-- 2026-04-24T14:05:09.327Z -->  
 [Althea——week 08 copy](../../p5projects/Althea%E2%80%94%E2%80%94week%2008%20copy-UOlifYbXf) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/UOlifYbXf)]<!-- 2025-11-03T18:35:13.524Z -->  
 [Althea——week 08 copy copy](../../p5projects/Althea%E2%80%94%E2%80%94week%2008%20copy%20copy-DMRE8MvxF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/DMRE8MvxF)]<!-- 2025-11-10T18:20:31.805Z -->  
 [Ambiguous gouda copy](../../p5projects/Ambiguous%20gouda%20copy-PsdLPXmRj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PsdLPXmRj)]<!-- 2024-07-22T17:32:46.912Z -->  
@@ -109,6 +110,7 @@
 [bouncing ball drum machine copy](../../p5projects/bouncing%20ball%20drum%20machine%20copy-jIQFCU1Q2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jIQFCU1Q2)]<!-- 2025-11-24T20:05:56.386Z -->  
 [Bouncing Text Class with TimeReverse copy](../../p5projects/Bouncing%20Text%20Class%20with%20TimeReverse%20copy-gxWbyxP_-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/gxWbyxP_-)]<!-- 2024-10-17T17:01:55.879Z -->  
 [Breezy packet](../../p5projects/Breezy%20packet-1uFrAUdQF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1uFrAUdQF)]<!-- 2023-07-26T23:26:13.118Z -->  
+[Butterfly copy](../../p5projects/Butterfly%20copy-iCJlXu0CP) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/iCJlXu0CP)]<!-- 2026-04-24T14:40:27.197Z -->  
 [Cabana\! - Worley Noise Port copy](../../p5projects/Cabana!%20-%20Worley%20Noise%20Port%20copy-1fcRQkDrn) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/1fcRQkDrn)]<!-- 2025-03-14T14:56:11.020Z -->  
 [captureVideo img = get()](../../p5projects/captureVideo%20img%20%3D%20get()-qYGpv4-I2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/qYGpv4-I2)]<!-- 2024-10-24T12:16:54.601Z -->  
 [CC 102 - 2D Water Ripples copy](../../p5projects/CC%20102%20-%202D%20Water%20Ripples%20copy-cg5iaifhV) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/cg5iaifhV)]<!-- 2025-03-14T13:03:44.122Z -->  
@@ -286,6 +288,7 @@
 [Enstars Trip Album - Trickstar copy](../../p5projects/Enstars%20Trip%20Album%20-%20Trickstar%20copy-kPKQiy0j6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/kPKQiy0j6)]<!-- 2024-07-31T14:36:10.734Z -->  
 [Ex 6.2 JitterBug line copy](../../p5projects/Ex%206.2%20JitterBug%20line%20copy-UNvoQ8ZKy) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/UNvoQ8ZKy)]<!-- 2025-10-13T13:45:53.997Z -->  
 [explore colors](../../p5projects/explore%20colors-JVbkxuTr9) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/JVbkxuTr9)]<!-- 2025-07-21T15:32:38.524Z -->  
+[face doodle v3 yifan](../../p5projects/face%20doodle%20v3%20yifan-sDA_AH3Gm) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sDA_AH3Gm)]<!-- 2026-05-01T11:18:58.165Z -->  
 [FaceMesh  Stretch and Skew v0](../../p5projects/FaceMesh%20Stretch%20and%20Skew%20v0-7FHhttkYQ) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7FHhttkYQ)]<!-- 2025-03-28T16:30:07.998Z -->  
 [faceMesh mesh\_nits](../../p5projects/faceMesh%20mesh_nits-PrJvjyxb6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PrJvjyxb6)]<!-- 2024-08-13T12:53:58.965Z -->  
 [faceMesh mesh\_nits v10](../../p5projects/faceMesh%20mesh_nits%20v10-a0KTD3RB2) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/a0KTD3RB2)]<!-- 2025-03-31T15:52:28.779Z -->  
@@ -536,6 +539,9 @@
 [Marbling Color - animate ink](../../p5projects/Marbling%20Color%20-%20animate%20ink-2u6e-KY8S) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/2u6e-KY8S)]<!-- 2025-01-14T22:04:24.492Z -->  
 [Marbling Raster Pixels - Video copy](../../p5projects/Marbling%20Raster%20Pixels%20-%20Video%20copy-txPD89Zpi) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/txPD89Zpi)]<!-- 2025-08-04T12:29:38.675Z -->  
 [match pairs emoji](../../p5projects/match%20pairs%20emoji-ZKPaZOjf_) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/ZKPaZOjf_)]<!-- 2023-08-11T19:07:54.439Z -->  
+[matt-parker-nov15](../../p5projects/matt-parker-nov15-jr1ok4EaN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jr1ok4EaN)]<!-- 2026-04-25T07:44:31.714Z -->  
+[matt-parker-nov15 copy](../../p5projects/matt-parker-nov15%20copy-EE84Ci6hM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/EE84Ci6hM)]<!-- 2026-04-25T07:45:11.846Z -->  
+[matt-parker-oct-16](../../p5projects/matt-parker-oct-16-RoplKxfBB) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RoplKxfBB)]<!-- 2026-05-01T12:18:34.697Z -->  
 [Mature sheep copy](../../p5projects/Mature%20sheep%20copy-zeUPP3rQe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zeUPP3rQe)]<!-- 2024-07-25T01:58:10.162Z -->  
 [MazeSpin liberation screens copy](../../p5projects/MazeSpin%20liberation%20screens%20copy-PN3n1CXom) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)]<!-- 2024-04-13T12:39:55.764Z -->  
 [MazeSpin liberation screens v7](../../p5projects/MazeSpin%20liberation%20screens%20v7-wT957KlMz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)]<!-- 2026-04-02T19:21:40.228Z -->  
@@ -620,8 +626,8 @@
 [p5js editor setup let width bug fix](../../p5projects/p5js%20editor%20setup%20let%20width%20bug%20fix-FOOXmSPz5) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/FOOXmSPz5)]<!-- 2024-02-27T17:32:51.830Z -->  
 [p5Live  many](../../p5projects/p5Live%20many-lqMJIQoIs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/lqMJIQoIs)]<!-- 2023-07-26T03:48:05.822Z -->  
 [p5LiveMedia Test Video - p5.js/1.1.9](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5.js1.1.9-7bEgwEtLF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7bEgwEtLF)]<!-- 2026-04-23T07:02:09.699Z -->  
-[p5LiveMedia Test Video - p5@1.11.13](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5%401.11.13-y8LVIMEn3) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/y8LVIMEn3)]<!-- 2026-04-23T07:07:43.779Z -->  
-[p5LiveMedia Test Video - p5@2.2.2](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5%402.2.2-w4tbUyhAN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/w4tbUyhAN)]<!-- 2026-04-23T07:23:06.712Z -->  
+[p5LiveMedia Test Video - p5@1.11.13](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5%401.11.13-y8LVIMEn3) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/y8LVIMEn3)]<!-- 2026-04-23T09:18:05.495Z -->  
+[p5LiveMedia Test Video - p5@2.2.2](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5%402.2.2-w4tbUyhAN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/w4tbUyhAN)]<!-- 2026-04-23T09:16:20.772Z -->  
 [p5moExamples iframe\_player 47](../../p5projects/p5moExamples%20iframe_player%2047-88yxquMBl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/88yxquMBl)]<!-- 2025-03-27T20:33:53.642Z -->  
 [p5moExamples lobby](../../p5projects/p5moExamples%20lobby-vP6sWN4Cu) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/vP6sWN4Cu)]<!-- 2024-05-07T20:49:26.961Z -->  
 [p5moExamples paint](../../p5projects/p5moExamples%20paint-nBefVKAbH) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/nBefVKAbH)]<!-- 2024-03-14T17:33:03.685Z -->  

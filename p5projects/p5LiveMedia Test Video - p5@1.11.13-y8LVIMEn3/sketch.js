@@ -3,6 +3,7 @@
 // !!@ Fails on mobile
 // mobile video feed appears for a few seconds then freezes
 // https://github.com/vanevery/p5LiveMedia#examples
+// new p5LiveMedia(p5.instance
 
 // https://editor.p5js.org/jht9629-nyu/sketches/7bEgwEtLF
 // p5.js/1.1.9
@@ -19,7 +20,8 @@ function setup() {
   
     myVideo = createCapture(VIDEO, 
       function(stream) {
-        let p5l = new p5LiveMedia(this, "CAPTURE", stream, "jZQ64AMJc_TESTTEST");
+        let p5l = new p5LiveMedia(p5.instance, "CAPTURE", stream, "jZQ64AMJc_TESTTEST");
+        // let p5l = new p5LiveMedia(this, "CAPTURE", stream, "jZQ64AMJc_TESTTEST");
         p5l.on('stream', gotStream);
       }
     );  
