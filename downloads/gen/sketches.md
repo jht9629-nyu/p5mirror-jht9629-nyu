@@ -549,7 +549,7 @@
 [matt-parker-nov15 v2](../../p5projects/matt-parker-nov15%20v2-EE84Ci6hM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/EE84Ci6hM)]<!-- 2026-05-25T07:35:22.717Z -->  
 [matt-parker-oct-16](../../p5projects/matt-parker-oct-16-RoplKxfBB) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RoplKxfBB)]<!-- 2026-05-25T02:54:38.665Z -->  
 [matt-parker-oct-16 v2](../../p5projects/matt-parker-oct-16%20v2-7rR7pHX_l) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7rR7pHX_l)]<!-- 2026-05-25T07:38:15.100Z -->  
-[matt-parker-oct-16 v3](../../p5projects/matt-parker-oct-16%20v3-8DQnfxeLs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8DQnfxeLs)]<!-- 2026-05-25T07:42:21.356Z -->  
+[matt-parker-oct-16 v3](../../p5projects/matt-parker-oct-16%20v3-8DQnfxeLs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8DQnfxeLs)]<!-- 2026-05-25T07:50:50.695Z -->  
 [Mature sheep copy](../../p5projects/Mature%20sheep%20copy-zeUPP3rQe) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/zeUPP3rQe)]<!-- 2024-07-25T01:58:10.162Z -->  
 [MazeSpin liberation screens copy](../../p5projects/MazeSpin%20liberation%20screens%20copy-PN3n1CXom) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PN3n1CXom)]<!-- 2024-04-13T12:39:55.764Z -->  
 [MazeSpin liberation screens v7](../../p5projects/MazeSpin%20liberation%20screens%20v7-wT957KlMz) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/wT957KlMz)]<!-- 2026-04-02T19:21:40.228Z -->  
