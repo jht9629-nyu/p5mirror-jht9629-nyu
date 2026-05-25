@@ -3,8 +3,14 @@
 
 // matt-parker
 // https://www.madparker.com/work/art/p5t
+// https://www.youtube.com/watch?v=p07CAS2mWGc
 // https://x.com/madparker/status/1328187155794055169?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1328187155794055169%7Ctwgr%5E653cfbd5e4ab1ca5094889bbf6ea0a9c7eff133a%7Ctwcon%5Es1_&ref_url=https%3A%2F%2F1420826402-atari-embeds.googleusercontent.com%2Fembeds%2F16cb204cf3a9d4d223a0a3fd8b0eec5d%2Finner-frame-minified.html%3Fjsh%3Dm3B2F_2Fscs2Fabc-static2F_2Fjs2Fk3Dgapi.lb.en.HLcjcliCxoY.O2Fd3D12Frs3DAHpOoo-EKlLcELGvY6Qdg_kTBmN3Ra8MLw2Fm3D__features__
 // 11:04 PM · Nov 15, 2020
+// int m,x,y,o,p,n=480;void setup(){size(480,480);colorMode(3);}void draw(){if(m<1|m>=n*n){set(n-1,n-1,o=p);set(9,9,p=color(random(n),n,n));}for(m=x=0;x<n;x++)for(y=0;y<n;y++)m+=c(o)+c(p);}int c(int l){if(get(x,y)==l){set(int(random(4))-2+x,int(random(4))-2+y,l);return 1;}return 0;}
+// https://github.com/madparker/-p5t
+// https://github.com/madparker/-p5t/blob/main/%23p5t/ArtSketch/11_15_2020/ColorStorm/ColorStorm.pde
+// int m,x,y,o,p,n=480;void setup(){size(480,480);colorMode(3);}void draw(){if(m<1|m>=n*n){set(n-1,n-1,o=p);set(9,9,p=color(random(n),n,n));}for(m=x=0;x<n;x++)for(y=0;y<n;y++)m+=c(o)+c(p);}int c(int l){if(get(x,y)==l){set(int(random(4))-2+x,int(random(4))-2+y,l);return 1;}return 0;}
+
 // no paint on canvas
 
 let m = 0,

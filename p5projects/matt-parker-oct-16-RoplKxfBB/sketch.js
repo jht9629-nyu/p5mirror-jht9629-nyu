@@ -3,8 +3,8 @@
 // Matt Parker 6:24 PM · Oct 16, 2020
 // https://x.com/madparker/status/1317229846511144961
 
-let x = 0,
-  y = 0,
+let x = 200,
+  y = 200,
   s = 0,
   o = 0,
   p = 0,

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doodle Face Sketch Camera</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+  <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #f5f0e6;
+      font-family: Arial, sans-serif;
+    }
+
+    .ui {
+      position: fixed;
+      left: 18px;
+      top: 18px;
+      z-index: 10;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    button, select, label {
+      border: 1px solid #222;
+      background: rgba(255, 252, 245, 0.88);
+      padding: 8px 12px;
+      border-radius: 18px;
+      font-size: 14px;
+      cursor: pointer;
+      color: #222;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hint {
+      position: fixed;
+      left: 22px;
+      bottom: 18px;
+      z-index: 10;
+      font-size: 13px;
+      color: #333;
+      background: rgba(255, 252, 245, 0.72);
+      padding: 8px 12px;
+      border-radius: 16px;
+      max-width: 620px;
+      line-height: 1.35;
+    }
+  </style>
+</head>
+<body>
+  <div class="ui">
+    <select id="styleSelect">
+      <option value="kid">Kid Doodle</option>
+      <option value="pencil">Pencil Sketch</option>
+      <option value="comic">Comic Face</option>
+    </select>
+
+    <label><input type="checkbox" id="mirrorToggle" checked /> Mirror</label>
+    <label><input type="checkbox" id="drawToggle" checked /> Finger Drawing</label>
+
+    <button id="hairBtn">Random Look</button>
+    <button id="sceneBtn">New Scene</button>
+    <button id="clearBtn">Clear Drawing</button>
+    <button id="saveBtn">Save Image</button>
+    <button id="fullBtn">Fullscreen</button>
+  </div>
+
+  <div class="hint">
+    Allow camera access. Multiple people can appear. Face shapes, eyes, nose, mouth, lips, and hair are exaggerated based on detected proportions. Use your index finger to draw. Click "Random Look" to reroll hair + outfit colors, or "New Scene" for a new doodle background.
+  </div>
+
+
+<script src="sketch.js"></script>
+</body>
+</html>

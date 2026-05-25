@@ -1,16 +1,25 @@
 # Sketches for jht9629-nyu
-967 sketches  
-[matt-parker-oct-16](../../p5projects/matt-parker-oct-16-RoplKxfBB) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RoplKxfBB)]<!-- 2026-05-01T12:18:34.697Z -->  
+976 sketches  
+[matt-parker-oct-16 v3](../../p5projects/matt-parker-oct-16%20v3-8DQnfxeLs) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/8DQnfxeLs)]<!-- 2026-05-25T07:42:21.356Z -->  
+[matt-parker-oct-16 v2](../../p5projects/matt-parker-oct-16%20v2-7rR7pHX_l) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7rR7pHX_l)]<!-- 2026-05-25T07:38:15.100Z -->  
+[matt-parker-nov15 v2](../../p5projects/matt-parker-nov15%20v2-EE84Ci6hM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/EE84Ci6hM)]<!-- 2026-05-25T07:35:22.717Z -->  
+[matt-parker-oct-16](../../p5projects/matt-parker-oct-16-RoplKxfBB) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/RoplKxfBB)]<!-- 2026-05-25T02:54:38.665Z -->  
+[matt-parker-nov15](../../p5projects/matt-parker-nov15-jr1ok4EaN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jr1ok4EaN)]<!-- 2026-05-22T12:08:51.865Z -->  
+[baredom custom-elements v1](../../p5projects/baredom%20custom-elements%20v1-z4DzWsVot) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/z4DzWsVot)]<!-- 2026-05-18T03:21:24.841Z -->  
+[BareDOM Binder v1](../../p5projects/BareDOM%20Binder%20v1-H5u5fc4HI) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/H5u5fc4HI)]<!-- 2026-05-18T00:14:10.597Z -->  
+[test drive DOM.js v11 inputs copy](../../p5projects/test%20drive%20DOM.js%20v11%20inputs%20copy-4Uf3CBcAD) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/4Uf3CBcAD)]<!-- 2026-05-17T19:40:16.877Z -->  
+[ims07\_ksc kayla](../../p5projects/ims07_ksc%20kayla-u85KyE3l6) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/u85KyE3l6)]<!-- 2026-05-01T20:11:14.373Z -->  
+[kylie\_final](../../p5projects/kylie_final-UDsjInX5Z) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/UDsjInX5Z)]<!-- 2026-05-01T20:09:02.149Z -->  
+[face doodle v3 yifan](../../p5projects/face%20doodle%20v3%20yifan-hLfNIM9Av) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/hLfNIM9Av)]<!-- 2026-05-01T14:58:19.702Z -->  
+[Althea-genie copy](../../p5projects/Althea-genie%20copy-PL6eK4yHS) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/PL6eK4yHS)]<!-- 2026-05-01T14:00:54.291Z -->  
+[Metal straw](../../p5projects/Metal%20straw-yr5vFpXlt) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/yr5vFpXlt)]<!-- 2026-05-01T12:48:48.513Z -->  
 [face doodle v3 yifan](../../p5projects/face%20doodle%20v3%20yifan-sDA_AH3Gm) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/sDA_AH3Gm)]<!-- 2026-05-01T11:18:58.165Z -->  
-[matt-parker-nov15 copy](../../p5projects/matt-parker-nov15%20copy-EE84Ci6hM) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/EE84Ci6hM)]<!-- 2026-04-25T07:45:11.846Z -->  
-[matt-parker-nov15](../../p5projects/matt-parker-nov15-jr1ok4EaN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/jr1ok4EaN)]<!-- 2026-04-25T07:44:31.714Z -->  
 [Butterfly copy](../../p5projects/Butterfly%20copy-iCJlXu0CP) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/iCJlXu0CP)]<!-- 2026-04-24T14:40:27.197Z -->  
 [Althea-genie copy](../../p5projects/Althea-genie%20copy-Mvo2b44O-) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Mvo2b44O-)]<!-- 2026-04-24T14:05:09.327Z -->  
 [p5LiveMedia Test Video - p5@1.11.13](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5%401.11.13-y8LVIMEn3) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/y8LVIMEn3)]<!-- 2026-04-23T09:18:05.495Z -->  
 [p5LiveMedia Test Video - p5@2.2.2](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5%402.2.2-w4tbUyhAN) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/w4tbUyhAN)]<!-- 2026-04-23T09:16:20.772Z -->  
 [p5LiveMedia Test Video - p5.js/1.1.9](../../p5projects/p5LiveMedia%20Test%20Video%20-%20p5.js1.1.9-7bEgwEtLF) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/7bEgwEtLF)]<!-- 2026-04-23T07:02:09.699Z -->  
 [Profuse othnielia](../../p5projects/Profuse%20othnielia-GvOgKqBR8) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/GvOgKqBR8)]<!-- 2026-04-20T05:18:21.629Z -->  
-[Metal straw](../../p5projects/Metal%20straw-yr5vFpXlt) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/yr5vFpXlt)]<!-- 2026-04-18T18:09:06.636Z -->  
 [ims-05-video shader](../../p5projects/ims-05-video%20shader-l-iDtUbG) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/l--iDtUbG)]<!-- 2026-04-16T21:25:13.241Z -->  
 [sliding window v1 debug](../../p5projects/sliding%20window%20v1%20debug-YWxHLeQsl) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/YWxHLeQsl)]<!-- 2026-04-15T18:17:52.975Z -->  
 [sliding window v1 responsive horizontal two hands copy](../../p5projects/sliding%20window%20v1%20responsive%20horizontal%20two%20hands%20copy-Y8xEY-4dj) [[p5js](https://editor.p5js.org/jht9629-nyu/sketches/Y8xEY-4dj)]<!-- 2026-04-15T15:41:52.385Z -->  
