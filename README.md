@@ -15,8 +15,11 @@ bin/mirror.sh --user jht9629-nyu --clean
 bin/build.sh --user jht9629-nyu --check
 bin/mirror.sh --user jht9629-nyu --full
 bin/mirror.sh --user jht9629-nyu
-
 ```
+
+# Summary
+
+[summary](./summary.md)
 
 # Notes
 

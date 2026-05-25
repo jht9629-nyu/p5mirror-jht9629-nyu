@@ -2,10 +2,6 @@
 
 mirror of jht9629-nyu p5js sketches
 
-# Summary
-
-[summary](./summary.md)
-
 ## Generated files
 
 - [p5projects-index](./p5projects-index.md)
